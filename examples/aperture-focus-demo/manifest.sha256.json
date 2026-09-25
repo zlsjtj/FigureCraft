@@ -1,0 +1,32 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Current public example files; not historical first-load evidence.",
+  "files": {
+    "audit/label-load.json": "daa57d318a1099cfbdaf2357d9bd06b3d0fb91dc5c89e60ef45a40397ffd232d",
+    "audit/portable-rebuild.json": "07f18b936a4f6ab5f9a6fed1485b4a0466f74f219f7a6d219e6c66049c9ba038",
+    "audit/review-scope.json": "c0d57f404e1b9818ac75a039afbc8219125b5093903503d527ca6fc4a2e15a5e",
+    "audit/semantic-checks.json": "eb7a64a40d17e49c7cdbfa8d16399a4c6e81b719e5dce87e38ac8602b3f7980a",
+    "brief.md": "6a681401952cd1d05a9951b66d87a4a1d41abb1890348554d1f2669e897c1acf",
+    "caption.md": "b7095c42db9292418d0580d562ce3d2e3e919edfa114f9aad73d73b577c824a6",
+    "exports/baseline/figure.pdf": "01ccef51639e2e3b56da6ff39c3e0185e85b68b6924764284b410f1dc1553151",
+    "exports/baseline/figure.png": "6c6b4a1dc29e13c41b289a93d89638bfddccc4275f7c5e3393f799c447d3cf04",
+    "exports/baseline/figure.svg": "28f1da715146cb2c5a9b448513f0cd9d7a27c60049092e4148daa0aa3e1b2a91",
+    "exports/final/figure.pdf": "e3406f7c0a61c44bc6e7d4b56bac2374285153a38e170772b783d8b5b5c6d97f",
+    "exports/final/figure.png": "c118a09269dd6579466d345703945df4ca9f9cffb850519b94b5041e79504b39",
+    "exports/final/figure.svg": "a28bb45b666833fce2f160dc9f0bc00d47613315090e1bca965b0dc31c099213",
+    "exports/final/figure_deuteranomaly100.png": "f396513a22402143b1d3dba582eb69ec749a60b7ee9c0ba24b437608bd8c8338",
+    "exports/final/figure_grayscale.png": "a9eab8412123ab53cd15360ed822a051001972c7b4ecc9d9ff56a7ecba92eed0",
+    "exports/first/figure.pdf": "e268edd42a9a851bc862bf3bbc99d6d3da51a6a1a92178c344d86d39ec19e5f6",
+    "exports/first/figure.png": "11ffec144eb4bdf90158af4cc4c59123c19cead3256309adc4aa6c2fb123a14d",
+    "exports/first/figure.svg": "0a5c7a5ad3cb2c70380ad152d4ec1267ca53fa07208a540a45f9801ee6e45d3f",
+    "figure_spec.json": "5b4f53dd08cc082d8859b33e2fa4080c3d17b5ef3583a42ba6c6cd3fcdafa1f8",
+    "README.md": "21c6afe6233667d952cae3039f586cc1ea088539df9bd3652e2f45d6f2f163cf",
+    "requirements.txt": "f2b5e9651f4dfb9a9309674bd98edd741bfc95324f9bf07bf1bf07668c936c7c",
+    "review.md": "de3a71fb49459c15d9fb6a63647c444281884c02feb96fc0eb1b7320789a7ab1",
+    "scripts/audit.py": "3bd2c8d63ccf7e69f73016e598d27c5fd6263f2d4b1ec77b8c56e3b55c9fb1b1",
+    "scripts/rebuild.py": "46c6989242a84340173332141d177563c459bd8002622c61e838577d608f4003",
+    "source/baseline.json": "de02ba3fef6d1048e0a69a9485c22014a55cc7cda0e546139ff12c9665a0b639",
+    "source/final.json": "db72b7aeeb074e5892e5767e38ca66b8462bef629af8b1bfcdbc063544c944cb",
+    "source/first.json": "b8a6eaa6ebafc90d4fc43b7b1097462820be42cfff691dfc9924f54b0980a47b"
+  }
+}

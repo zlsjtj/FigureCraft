@@ -1,0 +1,52 @@
+{
+  "kind": "mechanism",
+  "source": "../brief.md",
+  "opening": 3,
+  "diameters": {
+    "A": 2,
+    "B": 4
+  },
+  "unit_mm": 10,
+  "wall_x": 88,
+  "center_y": 46,
+  "A_x": 135,
+  "labels": [
+    {
+      "id": "disk-B-label",
+      "text": "B: d = 4",
+      "position": "B",
+      "y": 47.2,
+      "size": 11,
+      "bold": true
+    },
+    {
+      "id": "disk-A-label",
+      "text": "A: d = 2",
+      "position": "A",
+      "y": 47.2,
+      "size": 10,
+      "bold": true
+    },
+    {
+      "id": "opening-label",
+      "text": "3",
+      "x": 111,
+      "y": 43.5,
+      "size": 11
+    },
+    {
+      "id": "B-outcome-label",
+      "text": "Blocked",
+      "position": "B",
+      "y": 71,
+      "size": 10
+    },
+    {
+      "id": "A-outcome-label",
+      "text": "Passed",
+      "position": "A",
+      "y": 64,
+      "size": 10
+    }
+  ]
+}

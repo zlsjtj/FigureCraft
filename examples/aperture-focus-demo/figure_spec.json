@@ -1,0 +1,115 @@
+{
+  "source": {
+    "path": "brief.md",
+    "sha256": "6a681401952cd1d05a9951b66d87a4a1d41abb1890348554d1f2669e897c1acf",
+    "evidence_status": "CONSTRUCTED_DEMO",
+    "note": "Public fact sheet adapted from the original task; export content unchanged."
+  },
+  "question": "Why does one aperture pass A and retain B?",
+  "main_action": "The same opening admits the smaller disk and excludes the larger disk.",
+  "output": {
+    "width_mm": 160,
+    "height_mm": 84,
+    "placement_width_mm": 160,
+    "depth": "D0, no simulated thickness or 2.5D"
+  },
+  "entities": [
+    {
+      "id": "wall",
+      "type": "rigid barrier",
+      "count": 1,
+      "representation": "two shoulders of the same cropped barrier; one opening"
+    },
+    {
+      "id": "A",
+      "type": "rigid disk",
+      "diameter": 2,
+      "state": "passed_right",
+      "primary_svg_id": "disk-A"
+    },
+    {
+      "id": "B",
+      "type": "rigid disk",
+      "diameter": 4,
+      "state": "blocked_left",
+      "primary_svg_id": "disk-B"
+    }
+  ],
+  "locked_values": {
+    "opening": 3,
+    "diameters": {
+      "A": 2,
+      "B": 4
+    },
+    "pass_rule": "d < 3",
+    "equality": "blocked",
+    "checks": [
+      [
+        2,
+        "pass"
+      ],
+      [
+        2.5,
+        "pass"
+      ],
+      [
+        3,
+        "block"
+      ],
+      [
+        4,
+        "block"
+      ]
+    ]
+  },
+  "relations": [
+    {
+      "id": "B-approaches-right",
+      "from": "left",
+      "to": "B",
+      "kind": "illustrative motion direction",
+      "actual_arrow": "B-approach-head"
+    },
+    {
+      "id": "A-exits-right",
+      "from": "opening",
+      "to": "A",
+      "kind": "illustrative passage direction",
+      "actual_arrow": "A-through-head"
+    }
+  ],
+  "color_roles": {
+    "A": {
+      "fill": "#A7D4DB",
+      "stroke": "#216B7A"
+    },
+    "B": {
+      "fill": "#F3C3A0",
+      "stroke": "#A64E24"
+    },
+    "barrier": {
+      "fill": "#A9B6C0",
+      "stroke": "#536572"
+    },
+    "text": "#243340"
+  },
+  "color_source": "New explicit colors, not a copied reference palette. Labels, circle size, and position provide non-color cues.",
+  "exact_labels": [
+    "B: d = 4",
+    "A: d = 2",
+    "3",
+    "Blocked",
+    "Passed"
+  ],
+  "text_budget": {
+    "initial_target": "<= 30 explanatory English tokens, no paragraph",
+    "actual_latin_tokens_including_identifiers": 6,
+    "numeric_tokens": 3,
+    "text_nodes": 5,
+    "minimum_pt": 10
+  },
+  "geometry_source": "Circle/aperture dimensions from brief. B tangent contact placement is an illustrative construction, not a force or dynamics calculation. Horizontal travel distance is not data.",
+  "final_svg_sha256": "a28bb45b666833fce2f160dc9f0bc00d47613315090e1bca965b0dc31c099213",
+  "final_pdf_sha256": "e3406f7c0a61c44bc6e7d4b56bac2374285153a38e170772b783d8b5b5c6d97f",
+  "scope_limit": "No scene-engine PASS claimed; custom actual-SVG audit only."
+}

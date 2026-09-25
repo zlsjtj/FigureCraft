@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="84mm" viewBox="0 0 160 84">
+<title>Ideal geometric aperture DEMO</title>
+<desc>Constructed schematic, not experimental measurements.</desc>
+<rect id="background"  fill="#FFFFFF" stroke="none" stroke-width="0" x="0" y="0" width="160" height="84"/>
+<rect id="barrier-upper" data-entity="barrier" data-object-part="primary" data-logical-id="wall" data-role="rigid_barrier" fill="#A9B6C0" stroke="#536572" stroke-width="0.45" x="88" y="15" width="8" height="16.0"/>
+<rect id="barrier-lower" data-entity="barrier" data-object-part="decoration" data-logical-id="wall" data-role="rigid_barrier" fill="#A9B6C0" stroke="#536572" stroke-width="0.45" x="88" y="61.0" width="8" height="15.0"/>
+<line id="centerline-left" data-role="approach_centerline" fill="none" stroke="#92A0AB" stroke-width="0.25" x1="9" y1="46" x2="53.771243444677054" y2="46" stroke-dasharray="1.2,1.2"/>
+<line id="centerline-right" data-role="approach_centerline" fill="none" stroke="#92A0AB" stroke-width="0.25" x1="96" y1="46" x2="151" y2="46" stroke-dasharray="1.2,1.2"/>
+<line id="B-approach-shaft" data-relation="B-approaches-right" fill="none" stroke="#A64E24" stroke-width="0.7" x1="20" y1="46" x2="51.011243444677056" y2="46.0"/>
+<polygon id="B-approach-head" data-relation="B-approaches-right" fill="#A64E24" stroke="#A64E24" stroke-width="0.1" points="52.771243444677054,46 50.57124344467705,47.1 50.57124344467705,44.9"/>
+<line id="A-through-shaft" data-relation="A-exits-right" fill="none" stroke="#216B7A" stroke-width="0.7" x1="97.5" y1="46" x2="121.24" y2="46.0"/>
+<polygon id="A-through-head" data-relation="A-exits-right" fill="#216B7A" stroke="#216B7A" stroke-width="0.1" points="123.0,46 120.8,47.1 120.8,44.9"/>
+<circle id="disk-B" data-entity="disk" data-object-part="primary" data-logical-id="B" data-role="disk_B" data-state="blocked_left" fill="#F3C3A0" stroke="#A64E24" stroke-width="0.65" cx="74.77124344467705" cy="46" r="20.0"/>
+<circle id="disk-A" data-entity="disk" data-object-part="primary" data-logical-id="A" data-role="disk_A" data-state="passed_right" fill="#A7D4DB" stroke="#216B7A" stroke-width="0.65" cx="135" cy="46" r="10.0"/>
+<line id="opening-extension-top"  fill="none" stroke="#536572" stroke-width="0.25" x1="96.6" y1="31.0" x2="110" y2="31.0"/>
+<line id="opening-extension-bottom"  fill="none" stroke="#536572" stroke-width="0.25" x1="96.6" y1="61.0" x2="110" y2="61.0"/>
+<line id="opening-dimension-top-shaft"  fill="none" stroke="#536572" stroke-width="0.3" x1="107" y1="42" x2="107.0" y2="32.28"/>
+<polygon id="opening-dimension-top-head"  fill="#536572" stroke="#536572" stroke-width="0.1" points="107,31.0 107.8,32.6 106.2,32.6"/>
+<line id="opening-dimension-bottom-shaft"  fill="none" stroke="#536572" stroke-width="0.3" x1="107" y1="50" x2="107.0" y2="59.72"/>
+<polygon id="opening-dimension-bottom-head"  fill="#536572" stroke="#536572" stroke-width="0.1" points="107,61.0 106.2,59.4 107.8,59.4"/>
+<text id="disk-B-label" data-role="label" x="74.77124344467705" y="47.2" fill="#243340" font-family="Arial" font-size="3.880555555555555" font-weight="bold" text-anchor="middle">B: d = 4</text>
+<text id="disk-A-label" data-role="label" x="135" y="47.2" fill="#243340" font-family="Arial" font-size="3.5277777777777772" font-weight="bold" text-anchor="middle">A: d = 2</text>
+<text id="opening-label" data-role="label" x="111" y="43.5" fill="#243340" font-family="Arial" font-size="3.880555555555555" font-weight="normal" text-anchor="middle">3</text>
+<text id="B-outcome-label" data-role="label" x="74.77124344467705" y="71" fill="#243340" font-family="Arial" font-size="3.5277777777777772" font-weight="normal" text-anchor="middle">Blocked</text>
+<text id="A-outcome-label" data-role="label" x="135" y="64" fill="#243340" font-family="Arial" font-size="3.5277777777777772" font-weight="normal" text-anchor="middle">Passed</text>
+</svg>

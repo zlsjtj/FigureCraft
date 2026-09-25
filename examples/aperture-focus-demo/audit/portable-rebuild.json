@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "scope": "Copied this public example to a new directory and invoked all three variants from a different working directory. Generated outputs remain outside the package. This verifies portability, not a second generation trial.",
+  "variants": [
+    {
+      "name": "baseline",
+      "exit_code": 0,
+      "matching_export_hashes": 5
+    },
+    {
+      "name": "first",
+      "exit_code": 0,
+      "matching_export_hashes": 5
+    },
+    {
+      "name": "final",
+      "exit_code": 0,
+      "matching_export_hashes": 5
+    }
+  ],
+  "total_matching_export_hashes": 15,
+  "audit_exit_code": 0,
+  "audit_conditions": 17,
+  "script_sha256": "46c6989242a84340173332141d177563c459bd8002622c61e838577d608f4003",
+  "input_sha256": {
+    "baseline.json": "de02ba3fef6d1048e0a69a9485c22014a55cc7cda0e546139ff12c9665a0b639",
+    "final.json": "db72b7aeeb074e5892e5767e38ca66b8462bef629af8b1bfcdbc063544c944cb",
+    "first.json": "b8a6eaa6ebafc90d4fc43b7b1097462820be42cfff691dfc9924f54b0980a47b"
+  },
+  "public_private_path_scan": "PASS",
+  "independent_blind_review": "NOT_RUN",
+  "author_acceptance": "REVIEW_REQUIRED"
+}

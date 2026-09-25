@@ -1,0 +1,66 @@
+{
+  "kind": "mechanism",
+  "source": "../brief.md",
+  "opening": 3,
+  "diameters": {
+    "A": 2,
+    "B": 4
+  },
+  "unit_mm": 10,
+  "wall_x": 88,
+  "center_y": 46,
+  "A_x": 135,
+  "labels": [
+    {
+      "id": "barrier-label",
+      "text": "Rigid barrier",
+      "position": "wall",
+      "y": 10,
+      "size": 10
+    },
+    {
+      "id": "disk-B-label",
+      "text": "B: d = 4",
+      "position": "B",
+      "y": 47.2,
+      "size": 11,
+      "bold": true
+    },
+    {
+      "id": "disk-A-label",
+      "text": "A: d = 2",
+      "position": "A",
+      "y": 47.2,
+      "size": 10,
+      "bold": true
+    },
+    {
+      "id": "opening-label",
+      "text": "3",
+      "x": 107,
+      "y": 47.2,
+      "size": 11
+    },
+    {
+      "id": "B-outcome-label",
+      "text": "Too large: blocked",
+      "position": "B",
+      "y": 71,
+      "size": 10
+    },
+    {
+      "id": "A-outcome-label",
+      "text": "Small enough: passes",
+      "position": "A",
+      "y": 64,
+      "size": 10
+    },
+    {
+      "id": "rule-label",
+      "text": "Only d < 3 passes; contact is blocked.",
+      "x": 80,
+      "y": 82,
+      "size": 10
+    }
+  ]
+}

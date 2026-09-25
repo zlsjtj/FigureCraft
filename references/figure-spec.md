@@ -9,7 +9,7 @@
 | source_refs, forbidden_implications | 原始材料/出处/哈希、不能引申的结论 |
 | entities | id、semantic_role、description；可数对象也在locked_values记录 |
 | relations | id/from/to/kind/meaning；端点为实体id，含义不能只写arrow |
-| exact_labels, locked_values | 不得丢失的实际文字与数字/单位；自动presence检查不等于数值真实性 |
+| exact_labels, locked_values | exact_labels 仅列必须图内出现的精确标签；locked_values 保存科学事实，不强制全部来源细节上图。移到 caption/正文的内容在 design-review 中绑定目的位置；presence 检查不证明真实性 |
 | count_constraints | 可数图必填。新图使用完整scope、expected_logical_ids及必要的expected_states/state_styles，见[语义约束](semantic-constraints.md)。旧item_ids仍兼容，但只能验证枚举对象存在，其额外对象与状态检查为REVIEW_REQUIRED。 |
 | reference_palette, role_map | 色卡id；角色→swatch或base，衍生token由脚本写入manifest |
 | layout, depth | archetype/reading_order；mode:D0或D1_shallow_2_5d，affects_quantitative_encoding必须false |

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="84mm" viewBox="0 0 160 84">
+<title>Ideal geometric aperture DEMO</title>
+<desc>Constructed schematic, not experimental measurements.</desc>
+<rect id="background"  fill="#FFFFFF" stroke="none" stroke-width="0" x="0" y="0" width="160" height="84"/>
+<rect id="box-0"  fill="#F2F5F7" stroke="#657482" stroke-width="0.3" x="4" y="13" width="28" height="18"/>
+<text id="box-label-0"  x="18" y="22" fill="#243340" font-family="Arial" font-size="3.175" font-weight="normal" text-anchor="middle">Disks</text>
+<line id="flow-0-shaft"  fill="none" stroke="#243340" stroke-width="0.3" x1="32.3" y1="22" x2="33.72" y2="22.0"/>
+<polygon id="flow-0-head"  fill="#243340" stroke="#243340" stroke-width="0.1" points="34.6,22 33.5,22.55 33.5,21.45"/>
+<rect id="box-1"  fill="#F2F5F7" stroke="#657482" stroke-width="0.3" x="35" y="13" width="28" height="18"/>
+<text id="box-label-1"  x="49" y="22" fill="#243340" font-family="Arial" font-size="3.175" font-weight="normal" text-anchor="middle">Read diameter</text>
+<line id="flow-1-shaft"  fill="none" stroke="#243340" stroke-width="0.3" x1="63.3" y1="22" x2="64.72" y2="22.0"/>
+<polygon id="flow-1-head"  fill="#243340" stroke="#243340" stroke-width="0.1" points="65.6,22 64.5,22.55 64.5,21.45"/>
+<rect id="box-2"  fill="#F2F5F7" stroke="#657482" stroke-width="0.3" x="66" y="13" width="28" height="18"/>
+<text id="box-label-2"  x="80" y="22" fill="#243340" font-family="Arial" font-size="3.175" font-weight="normal" text-anchor="middle">Compare with</text>
+<text id="box-label-opening"  x="80" y="26" fill="#243340" font-family="Arial" font-size="3.175" font-weight="normal" text-anchor="middle">opening</text>
+<line id="flow-2-shaft"  fill="none" stroke="#243340" stroke-width="0.3" x1="94.3" y1="22" x2="95.72" y2="22.0"/>
+<polygon id="flow-2-head"  fill="#243340" stroke="#243340" stroke-width="0.1" points="96.6,22 95.5,22.55 95.5,21.45"/>
+<rect id="box-3"  fill="#F2F5F7" stroke="#657482" stroke-width="0.3" x="97" y="13" width="28" height="18"/>
+<text id="box-label-3"  x="111" y="22" fill="#243340" font-family="Arial" font-size="3.175" font-weight="normal" text-anchor="middle">Move or stop</text>
+<line id="flow-3-shaft"  fill="none" stroke="#243340" stroke-width="0.3" x1="125.3" y1="22" x2="126.72" y2="22.0"/>
+<polygon id="flow-3-head"  fill="#243340" stroke="#243340" stroke-width="0.1" points="127.6,22 126.5,22.55 126.5,21.45"/>
+<rect id="box-4"  fill="#F2F5F7" stroke="#657482" stroke-width="0.3" x="128" y="13" width="28" height="18"/>
+<text id="box-label-4"  x="142" y="22" fill="#243340" font-family="Arial" font-size="3.175" font-weight="normal" text-anchor="middle">Record result</text>
+<text id="old-explanation-0"  x="80" y="43" fill="#243340" font-family="Arial" font-size="3.5277777777777772" font-weight="normal" text-anchor="middle">Opening width = 3</text>
+<text id="old-explanation-1"  x="80" y="50" fill="#243340" font-family="Arial" font-size="3.5277777777777772" font-weight="normal" text-anchor="middle">A: diameter 2; passes</text>
+<text id="old-explanation-2"  x="80" y="57" fill="#243340" font-family="Arial" font-size="3.5277777777777772" font-weight="normal" text-anchor="middle">B: diameter 4; blocked</text>
+<text id="old-explanation-3"  x="80" y="64" fill="#243340" font-family="Arial" font-size="3.5277777777777772" font-weight="normal" text-anchor="middle">Checks: 2, 2.5, 3, 4</text>
+<text id="reconstruction-note"  x="80" y="79" fill="#596774" font-family="Arial" font-size="3.175" font-weight="normal" text-anchor="middle">Reconstructed from the supplied description</text>
+</svg>

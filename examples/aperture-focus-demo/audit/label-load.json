@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "source_sha256": "28f1da715146cb2c5a9b448513f0cd9d7a27c60049092e4148daa0aa3e1b2a91",
+    "declared_text_elements": 11,
+    "latin_tokens": 25,
+    "numeric_tokens": 7,
+    "minimum_pt": 9,
+    "size_mm": [
+      160,
+      84
+    ]
+  },
+  "first": {
+    "source_sha256": "0a5c7a5ad3cb2c70380ad152d4ec1267ca53fa07208a540a45f9801ee6e45d3f",
+    "declared_text_elements": 7,
+    "latin_tokens": 18,
+    "numeric_tokens": 4,
+    "minimum_pt": 10,
+    "size_mm": [
+      160,
+      84
+    ]
+  },
+  "final": {
+    "source_sha256": "a28bb45b666833fce2f160dc9f0bc00d47613315090e1bca965b0dc31c099213",
+    "declared_text_elements": 5,
+    "latin_tokens": 6,
+    "numeric_tokens": 3,
+    "minimum_pt": 10,
+    "size_mm": [
+      160,
+      84
+    ]
+  },
+  "scope": "Counts from actual SVG text nodes; identifiers included, numeric tokens separate. Baseline includes seven reconstruction-notice tokens. Counts do not measure readability."
+}

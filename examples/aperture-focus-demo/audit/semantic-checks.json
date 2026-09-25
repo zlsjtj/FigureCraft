@@ -1,0 +1,48 @@
+{
+  "source_svg_sha256": "a28bb45b666833fce2f160dc9f0bc00d47613315090e1bca965b0dc31c099213",
+  "source_pdf_sha256": "e3406f7c0a61c44bc6e7d4b56bac2374285153a38e170772b783d8b5b5c6d97f",
+  "checks": {
+    "exact_circle_count_2": true,
+    "identities_exactly_A_B": true,
+    "all_circles_primary": true,
+    "A_diameter_2": true,
+    "B_diameter_4": true,
+    "opening_3": true,
+    "shared_centerline": true,
+    "single_shared_wall_ID": true,
+    "A_right_of_wall": true,
+    "B_center_left_of_wall": true,
+    "B_touches_both_corners": true,
+    "no_ghosts_or_extra_disks": true,
+    "dimensions_160_by_84": true,
+    "B-approach_rightward": true,
+    "A-through_rightward": true,
+    "pdf_min_font_at_least_10pt": true,
+    "four_constructed_checks": true
+  },
+  "constructed_checks": [
+    {
+      "d": 2,
+      "result": "pass",
+      "evidence": "constructed rule check"
+    },
+    {
+      "d": 2.5,
+      "result": "pass",
+      "evidence": "constructed rule check"
+    },
+    {
+      "d": 3,
+      "result": "block",
+      "evidence": "constructed rule check"
+    },
+    {
+      "d": 4,
+      "result": "block",
+      "evidence": "constructed rule check"
+    }
+  ],
+  "minimum_pdf_tf_pt": 10.0,
+  "status": "PASS",
+  "scope": "Actual SVG primitives and decoded PDF stream. Geometrically constructed tangent B placement, no dynamics or forces. Does not certify visual quality. Uses independent arithmetic, not FigureCraft scene engine."
+}
