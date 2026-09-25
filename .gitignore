@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+test-output*/
+runtime*.json
+*-local.json
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
+~$*

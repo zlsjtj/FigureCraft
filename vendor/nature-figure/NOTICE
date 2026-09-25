@@ -1,0 +1,7 @@
+Reused unmodified file: audit_pdf_text.py
+Source: Yuan1z0825/nature-skills, skills/nature-figure/scripts/audit_pdf_text.py
+Commit: 79c9f986501ff462f4b9d1294c8223bfee1a5149
+URL: https://github.com/Yuan1z0825/nature-skills/blob/79c9f986501ff462f4b9d1294c8223bfee1a5149/skills/nature-figure/scripts/audit_pdf_text.py
+License: Apache-2.0; see LICENSE retained in this directory.
+Modifications: none. Runtime invocation explicitly supplies --min-pt 8.
+No upstream endorsement or journal certification is implied.

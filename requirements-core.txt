@@ -1,0 +1,6 @@
+# Python 3.12.14 下验证；请安装在自行选择的环境中。
+reportlab==4.4.9
+pypdf==6.7.5
+Pillow==12.3.0
+numpy==2.3.5
+# PNG 导出使用 Poppler pdftoppm；字体由使用者提供。

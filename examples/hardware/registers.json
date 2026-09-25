@@ -1,0 +1,5003 @@
+{
+  "schema_version": 1,
+  "figure_id": "register_capacity",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "Three teaching snapshots show occupancy, with fixed capacity of 32 cells.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    "Original teaching specification in this example; no scientific measurements"
+  ],
+  "forbidden_implications": [
+    "No measured performance, transport rate, material effectiveness or journal endorsement"
+  ],
+  "entities": [
+    {
+      "id": "snapshot-0",
+      "semantic_role": "input",
+      "description": "32 cells; 19 occupied; illustrative occupancy only"
+    },
+    {
+      "id": "snapshot-1",
+      "semantic_role": "input",
+      "description": "32 cells; 7 occupied; illustrative occupancy only"
+    },
+    {
+      "id": "snapshot-2",
+      "semantic_role": "input",
+      "description": "32 cells; 28 occupied; illustrative occupancy only"
+    }
+  ],
+  "relations": [
+    {
+      "id": "release",
+      "from": "snapshot-0",
+      "to": "snapshot-1",
+      "kind": "dependency",
+      "meaning": "Illustrative release transition"
+    },
+    {
+      "id": "pack",
+      "from": "snapshot-1",
+      "to": "snapshot-2",
+      "kind": "dependency",
+      "meaning": "Four independent seven-cell groups in fixed capacity"
+    }
+  ],
+  "exact_labels": [
+    "Fixed capacity, changing occupancy",
+    "DEMO  /  each panel contains exactly 32 register cells",
+    "a  Initial live set",
+    "19 / 32 occupied",
+    "b  After release",
+    "7 / 32 occupied",
+    "c  Four groups fit",
+    "28 / 32 occupied",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "4 groups × 7 cells = 28 cells; 4 cells remain free.",
+    "Capacity illustration only. No 4× speedup or measured runtime is implied."
+  ],
+  "locked_values": {
+    "cells_per_snapshot": 32,
+    "occupied": [
+      19,
+      7,
+      28
+    ],
+    "groups_final": 4,
+    "cells_per_group": 7
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "input": {
+      "swatch": "sky_blue"
+    },
+    "blocked": {
+      "swatch": "gold"
+    },
+    "structure": {
+      "swatch": "coral_pink"
+    },
+    "neutral": {
+      "base": "#D8DFE3"
+    }
+  },
+  "layout": {
+    "archetype": "same_capacity_snapshots",
+    "reading_order": "left_to_right"
+  },
+  "depth": {
+    "mode": "D1_shallow_2_5d",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 180,
+    "view_width": 900,
+    "view_height": 520,
+    "font_profile": "generic_readable_draft"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 520,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Fixed capacity, changing occupancy",
+      "x": 36,
+      "y": 46,
+      "size": 26,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "subtitle",
+      "type": "text",
+      "text": "DEMO  /  each panel contains exactly 32 register cells",
+      "x": 36,
+      "y": 77,
+      "size": 17,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "panel-0",
+      "type": "text",
+      "text": "a  Initial live set",
+      "x": 80,
+      "y": 125,
+      "size": 20,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "cell-0-0-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          159
+        ],
+        [
+          122,
+          156
+        ],
+        [
+          122,
+          177
+        ],
+        [
+          118,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-0",
+      "type": "rect",
+      "x": 88,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 0
+    },
+    {
+      "id": "cell-0-0-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          184
+        ],
+        [
+          122,
+          181
+        ],
+        [
+          122,
+          202
+        ],
+        [
+          118,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-1",
+      "type": "rect",
+      "x": 88,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 1
+    },
+    {
+      "id": "cell-0-0-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          209
+        ],
+        [
+          122,
+          206
+        ],
+        [
+          122,
+          227
+        ],
+        [
+          118,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-2",
+      "type": "rect",
+      "x": 88,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 2
+    },
+    {
+      "id": "cell-0-0-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          234
+        ],
+        [
+          122,
+          231
+        ],
+        [
+          122,
+          252
+        ],
+        [
+          118,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-3",
+      "type": "rect",
+      "x": 88,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 3
+    },
+    {
+      "id": "cell-0-0-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          259
+        ],
+        [
+          122,
+          256
+        ],
+        [
+          122,
+          277
+        ],
+        [
+          118,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-4",
+      "type": "rect",
+      "x": 88,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 4
+    },
+    {
+      "id": "cell-0-0-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          284
+        ],
+        [
+          122,
+          281
+        ],
+        [
+          122,
+          302
+        ],
+        [
+          118,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-5",
+      "type": "rect",
+      "x": 88,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 5
+    },
+    {
+      "id": "cell-0-0-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          309
+        ],
+        [
+          122,
+          306
+        ],
+        [
+          122,
+          327
+        ],
+        [
+          118,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-6",
+      "type": "rect",
+      "x": 88,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 6
+    },
+    {
+      "id": "cell-0-0-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          334
+        ],
+        [
+          122,
+          331
+        ],
+        [
+          122,
+          352
+        ],
+        [
+          118,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-0-7",
+      "type": "rect",
+      "x": 88,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 7
+    },
+    {
+      "id": "cell-0-1-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          159
+        ],
+        [
+          160,
+          156
+        ],
+        [
+          160,
+          177
+        ],
+        [
+          156,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-0",
+      "type": "rect",
+      "x": 126,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 8
+    },
+    {
+      "id": "cell-0-1-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          184
+        ],
+        [
+          160,
+          181
+        ],
+        [
+          160,
+          202
+        ],
+        [
+          156,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-1",
+      "type": "rect",
+      "x": 126,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 9
+    },
+    {
+      "id": "cell-0-1-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          209
+        ],
+        [
+          160,
+          206
+        ],
+        [
+          160,
+          227
+        ],
+        [
+          156,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-2",
+      "type": "rect",
+      "x": 126,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 10
+    },
+    {
+      "id": "cell-0-1-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          234
+        ],
+        [
+          160,
+          231
+        ],
+        [
+          160,
+          252
+        ],
+        [
+          156,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-3",
+      "type": "rect",
+      "x": 126,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 11
+    },
+    {
+      "id": "cell-0-1-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          259
+        ],
+        [
+          160,
+          256
+        ],
+        [
+          160,
+          277
+        ],
+        [
+          156,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-4",
+      "type": "rect",
+      "x": 126,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 12
+    },
+    {
+      "id": "cell-0-1-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          284
+        ],
+        [
+          160,
+          281
+        ],
+        [
+          160,
+          302
+        ],
+        [
+          156,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-5",
+      "type": "rect",
+      "x": 126,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 13
+    },
+    {
+      "id": "cell-0-1-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          309
+        ],
+        [
+          160,
+          306
+        ],
+        [
+          160,
+          327
+        ],
+        [
+          156,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-6",
+      "type": "rect",
+      "x": 126,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 14
+    },
+    {
+      "id": "cell-0-1-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          156,
+          334
+        ],
+        [
+          160,
+          331
+        ],
+        [
+          160,
+          352
+        ],
+        [
+          156,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-1-7",
+      "type": "rect",
+      "x": 126,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 15
+    },
+    {
+      "id": "cell-0-2-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          159
+        ],
+        [
+          198,
+          156
+        ],
+        [
+          198,
+          177
+        ],
+        [
+          194,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-0",
+      "type": "rect",
+      "x": 164,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 16
+    },
+    {
+      "id": "cell-0-2-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          184
+        ],
+        [
+          198,
+          181
+        ],
+        [
+          198,
+          202
+        ],
+        [
+          194,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-1",
+      "type": "rect",
+      "x": 164,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 17
+    },
+    {
+      "id": "cell-0-2-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          209
+        ],
+        [
+          198,
+          206
+        ],
+        [
+          198,
+          227
+        ],
+        [
+          194,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-2",
+      "type": "rect",
+      "x": 164,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 18
+    },
+    {
+      "id": "cell-0-2-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          234
+        ],
+        [
+          198,
+          231
+        ],
+        [
+          198,
+          252
+        ],
+        [
+          194,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-3",
+      "type": "rect",
+      "x": 164,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 19
+    },
+    {
+      "id": "empty-0-2-3",
+      "type": "line",
+      "points": [
+        [
+          175,
+          244
+        ],
+        [
+          183,
+          244
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-2-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          259
+        ],
+        [
+          198,
+          256
+        ],
+        [
+          198,
+          277
+        ],
+        [
+          194,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-4",
+      "type": "rect",
+      "x": 164,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 20
+    },
+    {
+      "id": "empty-0-2-4",
+      "type": "line",
+      "points": [
+        [
+          175,
+          269
+        ],
+        [
+          183,
+          269
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-2-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          284
+        ],
+        [
+          198,
+          281
+        ],
+        [
+          198,
+          302
+        ],
+        [
+          194,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-5",
+      "type": "rect",
+      "x": 164,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 21
+    },
+    {
+      "id": "empty-0-2-5",
+      "type": "line",
+      "points": [
+        [
+          175,
+          294
+        ],
+        [
+          183,
+          294
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-2-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          309
+        ],
+        [
+          198,
+          306
+        ],
+        [
+          198,
+          327
+        ],
+        [
+          194,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-6",
+      "type": "rect",
+      "x": 164,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 22
+    },
+    {
+      "id": "empty-0-2-6",
+      "type": "line",
+      "points": [
+        [
+          175,
+          319
+        ],
+        [
+          183,
+          319
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-2-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          194,
+          334
+        ],
+        [
+          198,
+          331
+        ],
+        [
+          198,
+          352
+        ],
+        [
+          194,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-2-7",
+      "type": "rect",
+      "x": 164,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 23
+    },
+    {
+      "id": "empty-0-2-7",
+      "type": "line",
+      "points": [
+        [
+          175,
+          344
+        ],
+        [
+          183,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          159
+        ],
+        [
+          236,
+          156
+        ],
+        [
+          236,
+          177
+        ],
+        [
+          232,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-0",
+      "type": "rect",
+      "x": 202,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 24
+    },
+    {
+      "id": "empty-0-3-0",
+      "type": "line",
+      "points": [
+        [
+          213,
+          169
+        ],
+        [
+          221,
+          169
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          184
+        ],
+        [
+          236,
+          181
+        ],
+        [
+          236,
+          202
+        ],
+        [
+          232,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-1",
+      "type": "rect",
+      "x": 202,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 25
+    },
+    {
+      "id": "empty-0-3-1",
+      "type": "line",
+      "points": [
+        [
+          213,
+          194
+        ],
+        [
+          221,
+          194
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          209
+        ],
+        [
+          236,
+          206
+        ],
+        [
+          236,
+          227
+        ],
+        [
+          232,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-2",
+      "type": "rect",
+      "x": 202,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 26
+    },
+    {
+      "id": "empty-0-3-2",
+      "type": "line",
+      "points": [
+        [
+          213,
+          219
+        ],
+        [
+          221,
+          219
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          234
+        ],
+        [
+          236,
+          231
+        ],
+        [
+          236,
+          252
+        ],
+        [
+          232,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-3",
+      "type": "rect",
+      "x": 202,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 27
+    },
+    {
+      "id": "empty-0-3-3",
+      "type": "line",
+      "points": [
+        [
+          213,
+          244
+        ],
+        [
+          221,
+          244
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          259
+        ],
+        [
+          236,
+          256
+        ],
+        [
+          236,
+          277
+        ],
+        [
+          232,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-4",
+      "type": "rect",
+      "x": 202,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 28
+    },
+    {
+      "id": "empty-0-3-4",
+      "type": "line",
+      "points": [
+        [
+          213,
+          269
+        ],
+        [
+          221,
+          269
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          284
+        ],
+        [
+          236,
+          281
+        ],
+        [
+          236,
+          302
+        ],
+        [
+          232,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-5",
+      "type": "rect",
+      "x": 202,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 29
+    },
+    {
+      "id": "empty-0-3-5",
+      "type": "line",
+      "points": [
+        [
+          213,
+          294
+        ],
+        [
+          221,
+          294
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          309
+        ],
+        [
+          236,
+          306
+        ],
+        [
+          236,
+          327
+        ],
+        [
+          232,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-6",
+      "type": "rect",
+      "x": 202,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 30
+    },
+    {
+      "id": "empty-0-3-6",
+      "type": "line",
+      "points": [
+        [
+          213,
+          319
+        ],
+        [
+          221,
+          319
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "cell-0-3-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          232,
+          334
+        ],
+        [
+          236,
+          331
+        ],
+        [
+          236,
+          352
+        ],
+        [
+          232,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-0",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-0-3-7",
+      "type": "rect",
+      "x": 202,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-0",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 31
+    },
+    {
+      "id": "empty-0-3-7",
+      "type": "line",
+      "points": [
+        [
+          213,
+          344
+        ],
+        [
+          221,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-0"
+    },
+    {
+      "id": "count-0",
+      "type": "text",
+      "text": "19 / 32 occupied",
+      "x": 157,
+      "y": 382,
+      "size": 22,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "panel-1",
+      "type": "text",
+      "text": "b  After release",
+      "x": 363,
+      "y": 125,
+      "size": 20,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "cell-1-0-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          159
+        ],
+        [
+          405,
+          156
+        ],
+        [
+          405,
+          177
+        ],
+        [
+          401,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-0",
+      "type": "rect",
+      "x": 371,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 0
+    },
+    {
+      "id": "cell-1-0-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          184
+        ],
+        [
+          405,
+          181
+        ],
+        [
+          405,
+          202
+        ],
+        [
+          401,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-1",
+      "type": "rect",
+      "x": 371,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 1
+    },
+    {
+      "id": "cell-1-0-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          209
+        ],
+        [
+          405,
+          206
+        ],
+        [
+          405,
+          227
+        ],
+        [
+          401,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-2",
+      "type": "rect",
+      "x": 371,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 2
+    },
+    {
+      "id": "cell-1-0-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          234
+        ],
+        [
+          405,
+          231
+        ],
+        [
+          405,
+          252
+        ],
+        [
+          401,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-3",
+      "type": "rect",
+      "x": 371,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 3
+    },
+    {
+      "id": "cell-1-0-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          259
+        ],
+        [
+          405,
+          256
+        ],
+        [
+          405,
+          277
+        ],
+        [
+          401,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-4",
+      "type": "rect",
+      "x": 371,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 4
+    },
+    {
+      "id": "cell-1-0-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          284
+        ],
+        [
+          405,
+          281
+        ],
+        [
+          405,
+          302
+        ],
+        [
+          401,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-5",
+      "type": "rect",
+      "x": 371,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 5
+    },
+    {
+      "id": "cell-1-0-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          309
+        ],
+        [
+          405,
+          306
+        ],
+        [
+          405,
+          327
+        ],
+        [
+          401,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-6",
+      "type": "rect",
+      "x": 371,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 6
+    },
+    {
+      "id": "cell-1-0-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          401,
+          334
+        ],
+        [
+          405,
+          331
+        ],
+        [
+          405,
+          352
+        ],
+        [
+          401,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-0-7",
+      "type": "rect",
+      "x": 371,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 7
+    },
+    {
+      "id": "empty-1-0-7",
+      "type": "line",
+      "points": [
+        [
+          382,
+          344
+        ],
+        [
+          390,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          159
+        ],
+        [
+          443,
+          156
+        ],
+        [
+          443,
+          177
+        ],
+        [
+          439,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-0",
+      "type": "rect",
+      "x": 409,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 8
+    },
+    {
+      "id": "empty-1-1-0",
+      "type": "line",
+      "points": [
+        [
+          420,
+          169
+        ],
+        [
+          428,
+          169
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          184
+        ],
+        [
+          443,
+          181
+        ],
+        [
+          443,
+          202
+        ],
+        [
+          439,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-1",
+      "type": "rect",
+      "x": 409,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 9
+    },
+    {
+      "id": "empty-1-1-1",
+      "type": "line",
+      "points": [
+        [
+          420,
+          194
+        ],
+        [
+          428,
+          194
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          209
+        ],
+        [
+          443,
+          206
+        ],
+        [
+          443,
+          227
+        ],
+        [
+          439,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-2",
+      "type": "rect",
+      "x": 409,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 10
+    },
+    {
+      "id": "empty-1-1-2",
+      "type": "line",
+      "points": [
+        [
+          420,
+          219
+        ],
+        [
+          428,
+          219
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          234
+        ],
+        [
+          443,
+          231
+        ],
+        [
+          443,
+          252
+        ],
+        [
+          439,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-3",
+      "type": "rect",
+      "x": 409,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 11
+    },
+    {
+      "id": "empty-1-1-3",
+      "type": "line",
+      "points": [
+        [
+          420,
+          244
+        ],
+        [
+          428,
+          244
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          259
+        ],
+        [
+          443,
+          256
+        ],
+        [
+          443,
+          277
+        ],
+        [
+          439,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-4",
+      "type": "rect",
+      "x": 409,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 12
+    },
+    {
+      "id": "empty-1-1-4",
+      "type": "line",
+      "points": [
+        [
+          420,
+          269
+        ],
+        [
+          428,
+          269
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          284
+        ],
+        [
+          443,
+          281
+        ],
+        [
+          443,
+          302
+        ],
+        [
+          439,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-5",
+      "type": "rect",
+      "x": 409,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 13
+    },
+    {
+      "id": "empty-1-1-5",
+      "type": "line",
+      "points": [
+        [
+          420,
+          294
+        ],
+        [
+          428,
+          294
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          309
+        ],
+        [
+          443,
+          306
+        ],
+        [
+          443,
+          327
+        ],
+        [
+          439,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-6",
+      "type": "rect",
+      "x": 409,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 14
+    },
+    {
+      "id": "empty-1-1-6",
+      "type": "line",
+      "points": [
+        [
+          420,
+          319
+        ],
+        [
+          428,
+          319
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-1-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          439,
+          334
+        ],
+        [
+          443,
+          331
+        ],
+        [
+          443,
+          352
+        ],
+        [
+          439,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-1-7",
+      "type": "rect",
+      "x": 409,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 15
+    },
+    {
+      "id": "empty-1-1-7",
+      "type": "line",
+      "points": [
+        [
+          420,
+          344
+        ],
+        [
+          428,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          159
+        ],
+        [
+          481,
+          156
+        ],
+        [
+          481,
+          177
+        ],
+        [
+          477,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-0",
+      "type": "rect",
+      "x": 447,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 16
+    },
+    {
+      "id": "empty-1-2-0",
+      "type": "line",
+      "points": [
+        [
+          458,
+          169
+        ],
+        [
+          466,
+          169
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          184
+        ],
+        [
+          481,
+          181
+        ],
+        [
+          481,
+          202
+        ],
+        [
+          477,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-1",
+      "type": "rect",
+      "x": 447,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 17
+    },
+    {
+      "id": "empty-1-2-1",
+      "type": "line",
+      "points": [
+        [
+          458,
+          194
+        ],
+        [
+          466,
+          194
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          209
+        ],
+        [
+          481,
+          206
+        ],
+        [
+          481,
+          227
+        ],
+        [
+          477,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-2",
+      "type": "rect",
+      "x": 447,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 18
+    },
+    {
+      "id": "empty-1-2-2",
+      "type": "line",
+      "points": [
+        [
+          458,
+          219
+        ],
+        [
+          466,
+          219
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          234
+        ],
+        [
+          481,
+          231
+        ],
+        [
+          481,
+          252
+        ],
+        [
+          477,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-3",
+      "type": "rect",
+      "x": 447,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 19
+    },
+    {
+      "id": "empty-1-2-3",
+      "type": "line",
+      "points": [
+        [
+          458,
+          244
+        ],
+        [
+          466,
+          244
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          259
+        ],
+        [
+          481,
+          256
+        ],
+        [
+          481,
+          277
+        ],
+        [
+          477,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-4",
+      "type": "rect",
+      "x": 447,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 20
+    },
+    {
+      "id": "empty-1-2-4",
+      "type": "line",
+      "points": [
+        [
+          458,
+          269
+        ],
+        [
+          466,
+          269
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          284
+        ],
+        [
+          481,
+          281
+        ],
+        [
+          481,
+          302
+        ],
+        [
+          477,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-5",
+      "type": "rect",
+      "x": 447,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 21
+    },
+    {
+      "id": "empty-1-2-5",
+      "type": "line",
+      "points": [
+        [
+          458,
+          294
+        ],
+        [
+          466,
+          294
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          309
+        ],
+        [
+          481,
+          306
+        ],
+        [
+          481,
+          327
+        ],
+        [
+          477,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-6",
+      "type": "rect",
+      "x": 447,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 22
+    },
+    {
+      "id": "empty-1-2-6",
+      "type": "line",
+      "points": [
+        [
+          458,
+          319
+        ],
+        [
+          466,
+          319
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-2-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          477,
+          334
+        ],
+        [
+          481,
+          331
+        ],
+        [
+          481,
+          352
+        ],
+        [
+          477,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-2-7",
+      "type": "rect",
+      "x": 447,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 23
+    },
+    {
+      "id": "empty-1-2-7",
+      "type": "line",
+      "points": [
+        [
+          458,
+          344
+        ],
+        [
+          466,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          159
+        ],
+        [
+          519,
+          156
+        ],
+        [
+          519,
+          177
+        ],
+        [
+          515,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-0",
+      "type": "rect",
+      "x": 485,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 24
+    },
+    {
+      "id": "empty-1-3-0",
+      "type": "line",
+      "points": [
+        [
+          496,
+          169
+        ],
+        [
+          504,
+          169
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          184
+        ],
+        [
+          519,
+          181
+        ],
+        [
+          519,
+          202
+        ],
+        [
+          515,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-1",
+      "type": "rect",
+      "x": 485,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 25
+    },
+    {
+      "id": "empty-1-3-1",
+      "type": "line",
+      "points": [
+        [
+          496,
+          194
+        ],
+        [
+          504,
+          194
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          209
+        ],
+        [
+          519,
+          206
+        ],
+        [
+          519,
+          227
+        ],
+        [
+          515,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-2",
+      "type": "rect",
+      "x": 485,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 26
+    },
+    {
+      "id": "empty-1-3-2",
+      "type": "line",
+      "points": [
+        [
+          496,
+          219
+        ],
+        [
+          504,
+          219
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          234
+        ],
+        [
+          519,
+          231
+        ],
+        [
+          519,
+          252
+        ],
+        [
+          515,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-3",
+      "type": "rect",
+      "x": 485,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 27
+    },
+    {
+      "id": "empty-1-3-3",
+      "type": "line",
+      "points": [
+        [
+          496,
+          244
+        ],
+        [
+          504,
+          244
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          259
+        ],
+        [
+          519,
+          256
+        ],
+        [
+          519,
+          277
+        ],
+        [
+          515,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-4",
+      "type": "rect",
+      "x": 485,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 28
+    },
+    {
+      "id": "empty-1-3-4",
+      "type": "line",
+      "points": [
+        [
+          496,
+          269
+        ],
+        [
+          504,
+          269
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          284
+        ],
+        [
+          519,
+          281
+        ],
+        [
+          519,
+          302
+        ],
+        [
+          515,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-5",
+      "type": "rect",
+      "x": 485,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 29
+    },
+    {
+      "id": "empty-1-3-5",
+      "type": "line",
+      "points": [
+        [
+          496,
+          294
+        ],
+        [
+          504,
+          294
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          309
+        ],
+        [
+          519,
+          306
+        ],
+        [
+          519,
+          327
+        ],
+        [
+          515,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-6",
+      "type": "rect",
+      "x": 485,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 30
+    },
+    {
+      "id": "empty-1-3-6",
+      "type": "line",
+      "points": [
+        [
+          496,
+          319
+        ],
+        [
+          504,
+          319
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "cell-1-3-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          515,
+          334
+        ],
+        [
+          519,
+          331
+        ],
+        [
+          519,
+          352
+        ],
+        [
+          515,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-1",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-1-3-7",
+      "type": "rect",
+      "x": 485,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-1",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 31
+    },
+    {
+      "id": "empty-1-3-7",
+      "type": "line",
+      "points": [
+        [
+          496,
+          344
+        ],
+        [
+          504,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-1"
+    },
+    {
+      "id": "count-1",
+      "type": "text",
+      "text": "7 / 32 occupied",
+      "x": 440,
+      "y": 382,
+      "size": 22,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "panel-2",
+      "type": "text",
+      "text": "c  Four groups fit",
+      "x": 646,
+      "y": 125,
+      "size": 20,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "cell-2-0-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          159
+        ],
+        [
+          688,
+          156
+        ],
+        [
+          688,
+          177
+        ],
+        [
+          684,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-0",
+      "type": "rect",
+      "x": 654,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 0
+    },
+    {
+      "id": "cell-2-0-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          184
+        ],
+        [
+          688,
+          181
+        ],
+        [
+          688,
+          202
+        ],
+        [
+          684,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-1",
+      "type": "rect",
+      "x": 654,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 1
+    },
+    {
+      "id": "cell-2-0-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          209
+        ],
+        [
+          688,
+          206
+        ],
+        [
+          688,
+          227
+        ],
+        [
+          684,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-2",
+      "type": "rect",
+      "x": 654,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 2
+    },
+    {
+      "id": "cell-2-0-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          234
+        ],
+        [
+          688,
+          231
+        ],
+        [
+          688,
+          252
+        ],
+        [
+          684,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-3",
+      "type": "rect",
+      "x": 654,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 3
+    },
+    {
+      "id": "cell-2-0-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          259
+        ],
+        [
+          688,
+          256
+        ],
+        [
+          688,
+          277
+        ],
+        [
+          684,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-4",
+      "type": "rect",
+      "x": 654,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 4
+    },
+    {
+      "id": "cell-2-0-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          284
+        ],
+        [
+          688,
+          281
+        ],
+        [
+          688,
+          302
+        ],
+        [
+          684,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-5",
+      "type": "rect",
+      "x": 654,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 5
+    },
+    {
+      "id": "cell-2-0-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          309
+        ],
+        [
+          688,
+          306
+        ],
+        [
+          688,
+          327
+        ],
+        [
+          684,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-6",
+      "type": "rect",
+      "x": 654,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 6
+    },
+    {
+      "id": "cell-2-0-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          684,
+          334
+        ],
+        [
+          688,
+          331
+        ],
+        [
+          688,
+          352
+        ],
+        [
+          684,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-0-7",
+      "type": "rect",
+      "x": 654,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 7
+    },
+    {
+      "id": "empty-2-0-7",
+      "type": "line",
+      "points": [
+        [
+          665,
+          344
+        ],
+        [
+          673,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-2"
+    },
+    {
+      "id": "cell-2-1-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          159
+        ],
+        [
+          726,
+          156
+        ],
+        [
+          726,
+          177
+        ],
+        [
+          722,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-0",
+      "type": "rect",
+      "x": 692,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 8
+    },
+    {
+      "id": "cell-2-1-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          184
+        ],
+        [
+          726,
+          181
+        ],
+        [
+          726,
+          202
+        ],
+        [
+          722,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-1",
+      "type": "rect",
+      "x": 692,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 9
+    },
+    {
+      "id": "cell-2-1-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          209
+        ],
+        [
+          726,
+          206
+        ],
+        [
+          726,
+          227
+        ],
+        [
+          722,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-2",
+      "type": "rect",
+      "x": 692,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 10
+    },
+    {
+      "id": "cell-2-1-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          234
+        ],
+        [
+          726,
+          231
+        ],
+        [
+          726,
+          252
+        ],
+        [
+          722,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-3",
+      "type": "rect",
+      "x": 692,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 11
+    },
+    {
+      "id": "cell-2-1-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          259
+        ],
+        [
+          726,
+          256
+        ],
+        [
+          726,
+          277
+        ],
+        [
+          722,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-4",
+      "type": "rect",
+      "x": 692,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 12
+    },
+    {
+      "id": "cell-2-1-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          284
+        ],
+        [
+          726,
+          281
+        ],
+        [
+          726,
+          302
+        ],
+        [
+          722,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-5",
+      "type": "rect",
+      "x": 692,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 13
+    },
+    {
+      "id": "cell-2-1-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          309
+        ],
+        [
+          726,
+          306
+        ],
+        [
+          726,
+          327
+        ],
+        [
+          722,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-6",
+      "type": "rect",
+      "x": 692,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 14
+    },
+    {
+      "id": "cell-2-1-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          722,
+          334
+        ],
+        [
+          726,
+          331
+        ],
+        [
+          726,
+          352
+        ],
+        [
+          722,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-1-7",
+      "type": "rect",
+      "x": 692,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 15
+    },
+    {
+      "id": "empty-2-1-7",
+      "type": "line",
+      "points": [
+        [
+          703,
+          344
+        ],
+        [
+          711,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-2"
+    },
+    {
+      "id": "cell-2-2-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          159
+        ],
+        [
+          764,
+          156
+        ],
+        [
+          764,
+          177
+        ],
+        [
+          760,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-0",
+      "type": "rect",
+      "x": 730,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 16
+    },
+    {
+      "id": "cell-2-2-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          184
+        ],
+        [
+          764,
+          181
+        ],
+        [
+          764,
+          202
+        ],
+        [
+          760,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-1",
+      "type": "rect",
+      "x": 730,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 17
+    },
+    {
+      "id": "cell-2-2-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          209
+        ],
+        [
+          764,
+          206
+        ],
+        [
+          764,
+          227
+        ],
+        [
+          760,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-2",
+      "type": "rect",
+      "x": 730,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 18
+    },
+    {
+      "id": "cell-2-2-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          234
+        ],
+        [
+          764,
+          231
+        ],
+        [
+          764,
+          252
+        ],
+        [
+          760,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-3",
+      "type": "rect",
+      "x": 730,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 19
+    },
+    {
+      "id": "cell-2-2-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          259
+        ],
+        [
+          764,
+          256
+        ],
+        [
+          764,
+          277
+        ],
+        [
+          760,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-4",
+      "type": "rect",
+      "x": 730,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 20
+    },
+    {
+      "id": "cell-2-2-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          284
+        ],
+        [
+          764,
+          281
+        ],
+        [
+          764,
+          302
+        ],
+        [
+          760,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-5",
+      "type": "rect",
+      "x": 730,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 21
+    },
+    {
+      "id": "cell-2-2-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          309
+        ],
+        [
+          764,
+          306
+        ],
+        [
+          764,
+          327
+        ],
+        [
+          760,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-6",
+      "type": "rect",
+      "x": 730,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 22
+    },
+    {
+      "id": "cell-2-2-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          760,
+          334
+        ],
+        [
+          764,
+          331
+        ],
+        [
+          764,
+          352
+        ],
+        [
+          760,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-2-7",
+      "type": "rect",
+      "x": 730,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 23
+    },
+    {
+      "id": "empty-2-2-7",
+      "type": "line",
+      "points": [
+        [
+          741,
+          344
+        ],
+        [
+          749,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-2"
+    },
+    {
+      "id": "cell-2-3-0-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          159
+        ],
+        [
+          802,
+          156
+        ],
+        [
+          802,
+          177
+        ],
+        [
+          798,
+          180
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-0",
+      "type": "rect",
+      "x": 768,
+      "y": 159,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 24
+    },
+    {
+      "id": "cell-2-3-1-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          184
+        ],
+        [
+          802,
+          181
+        ],
+        [
+          802,
+          202
+        ],
+        [
+          798,
+          205
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-1",
+      "type": "rect",
+      "x": 768,
+      "y": 184,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 25
+    },
+    {
+      "id": "cell-2-3-2-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          209
+        ],
+        [
+          802,
+          206
+        ],
+        [
+          802,
+          227
+        ],
+        [
+          798,
+          230
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-2",
+      "type": "rect",
+      "x": 768,
+      "y": 209,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 26
+    },
+    {
+      "id": "cell-2-3-3-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          234
+        ],
+        [
+          802,
+          231
+        ],
+        [
+          802,
+          252
+        ],
+        [
+          798,
+          255
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-3",
+      "type": "rect",
+      "x": 768,
+      "y": 234,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 27
+    },
+    {
+      "id": "cell-2-3-4-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          259
+        ],
+        [
+          802,
+          256
+        ],
+        [
+          802,
+          277
+        ],
+        [
+          798,
+          280
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-4",
+      "type": "rect",
+      "x": 768,
+      "y": 259,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 28
+    },
+    {
+      "id": "cell-2-3-5-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          284
+        ],
+        [
+          802,
+          281
+        ],
+        [
+          802,
+          302
+        ],
+        [
+          798,
+          305
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-5",
+      "type": "rect",
+      "x": 768,
+      "y": 284,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 29
+    },
+    {
+      "id": "cell-2-3-6-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          309
+        ],
+        [
+          802,
+          306
+        ],
+        [
+          802,
+          327
+        ],
+        [
+          798,
+          330
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-6",
+      "type": "rect",
+      "x": 768,
+      "y": 309,
+      "w": 30,
+      "h": 21,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "input",
+      "occupied": true,
+      "cell_index": 30
+    },
+    {
+      "id": "cell-2-3-7-side",
+      "type": "polygon",
+      "points": [
+        [
+          798,
+          334
+        ],
+        [
+          802,
+          331
+        ],
+        [
+          802,
+          352
+        ],
+        [
+          798,
+          355
+        ]
+      ],
+      "fill": "@neutral.shadow",
+      "entity": "snapshot-2",
+      "decorative_depth": true
+    },
+    {
+      "id": "cell-2-3-7",
+      "type": "rect",
+      "x": 768,
+      "y": 334,
+      "w": 30,
+      "h": 21,
+      "fill": "#FFFFFF",
+      "stroke": "#78858D",
+      "stroke_width": 1,
+      "entity": "snapshot-2",
+      "role": "neutral",
+      "occupied": false,
+      "cell_index": 31
+    },
+    {
+      "id": "empty-2-3-7",
+      "type": "line",
+      "points": [
+        [
+          779,
+          344
+        ],
+        [
+          787,
+          344
+        ]
+      ],
+      "stroke": "#9EA8AE",
+      "stroke_width": 1.7,
+      "entity": "snapshot-2"
+    },
+    {
+      "id": "count-2",
+      "type": "text",
+      "text": "28 / 32 occupied",
+      "x": 723,
+      "y": 382,
+      "size": 22,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "group-0",
+      "type": "text",
+      "text": "G1",
+      "x": 669,
+      "y": 148,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "group-1",
+      "type": "text",
+      "text": "G2",
+      "x": 707,
+      "y": 148,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "group-2",
+      "type": "text",
+      "text": "G3",
+      "x": 745,
+      "y": 148,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "group-3",
+      "type": "text",
+      "text": "G4",
+      "x": 783,
+      "y": 148,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "release-arrow",
+      "type": "line",
+      "points": [
+        [
+          267,
+          245
+        ],
+        [
+          338,
+          245
+        ]
+      ],
+      "stroke": "#24323B",
+      "stroke_width": 1.7,
+      "relation": "release"
+    },
+    {
+      "id": "release-arrow-head",
+      "type": "polygon",
+      "points": [
+        [
+          338,
+          245
+        ],
+        [
+          328.0,
+          249.5
+        ],
+        [
+          328.0,
+          240.5
+        ]
+      ],
+      "fill": "#24323B",
+      "relation": "release"
+    },
+    {
+      "id": "pack-arrow",
+      "type": "line",
+      "points": [
+        [
+          551,
+          245
+        ],
+        [
+          620,
+          245
+        ]
+      ],
+      "stroke": "#24323B",
+      "stroke_width": 1.7,
+      "relation": "pack"
+    },
+    {
+      "id": "pack-arrow-head",
+      "type": "polygon",
+      "points": [
+        [
+          620,
+          245
+        ],
+        [
+          610.0,
+          249.5
+        ],
+        [
+          610.0,
+          240.5
+        ]
+      ],
+      "fill": "#24323B",
+      "relation": "pack"
+    },
+    {
+      "id": "group-equation",
+      "type": "text",
+      "text": "4 groups × 7 cells = 28 cells; 4 cells remain free.",
+      "x": 36,
+      "y": 446,
+      "size": 20,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "footer",
+      "type": "text",
+      "text": "Capacity illustration only. No 4× speedup or measured runtime is implied.",
+      "x": 36,
+      "y": 484,
+      "size": 16,
+      "align": "left",
+      "fill": "#24323B"
+    }
+  ],
+  "count_constraints": [
+    {
+      "name": "snapshot-0",
+      "expected": 32,
+      "item_ids": [
+        "cell-0-0-0",
+        "cell-0-0-1",
+        "cell-0-0-2",
+        "cell-0-0-3",
+        "cell-0-0-4",
+        "cell-0-0-5",
+        "cell-0-0-6",
+        "cell-0-0-7",
+        "cell-0-1-0",
+        "cell-0-1-1",
+        "cell-0-1-2",
+        "cell-0-1-3",
+        "cell-0-1-4",
+        "cell-0-1-5",
+        "cell-0-1-6",
+        "cell-0-1-7",
+        "cell-0-2-0",
+        "cell-0-2-1",
+        "cell-0-2-2",
+        "cell-0-2-3",
+        "cell-0-2-4",
+        "cell-0-2-5",
+        "cell-0-2-6",
+        "cell-0-2-7",
+        "cell-0-3-0",
+        "cell-0-3-1",
+        "cell-0-3-2",
+        "cell-0-3-3",
+        "cell-0-3-4",
+        "cell-0-3-5",
+        "cell-0-3-6",
+        "cell-0-3-7"
+      ]
+    },
+    {
+      "name": "snapshot-1",
+      "expected": 32,
+      "item_ids": [
+        "cell-1-0-0",
+        "cell-1-0-1",
+        "cell-1-0-2",
+        "cell-1-0-3",
+        "cell-1-0-4",
+        "cell-1-0-5",
+        "cell-1-0-6",
+        "cell-1-0-7",
+        "cell-1-1-0",
+        "cell-1-1-1",
+        "cell-1-1-2",
+        "cell-1-1-3",
+        "cell-1-1-4",
+        "cell-1-1-5",
+        "cell-1-1-6",
+        "cell-1-1-7",
+        "cell-1-2-0",
+        "cell-1-2-1",
+        "cell-1-2-2",
+        "cell-1-2-3",
+        "cell-1-2-4",
+        "cell-1-2-5",
+        "cell-1-2-6",
+        "cell-1-2-7",
+        "cell-1-3-0",
+        "cell-1-3-1",
+        "cell-1-3-2",
+        "cell-1-3-3",
+        "cell-1-3-4",
+        "cell-1-3-5",
+        "cell-1-3-6",
+        "cell-1-3-7"
+      ]
+    },
+    {
+      "name": "snapshot-2",
+      "expected": 32,
+      "item_ids": [
+        "cell-2-0-0",
+        "cell-2-0-1",
+        "cell-2-0-2",
+        "cell-2-0-3",
+        "cell-2-0-4",
+        "cell-2-0-5",
+        "cell-2-0-6",
+        "cell-2-0-7",
+        "cell-2-1-0",
+        "cell-2-1-1",
+        "cell-2-1-2",
+        "cell-2-1-3",
+        "cell-2-1-4",
+        "cell-2-1-5",
+        "cell-2-1-6",
+        "cell-2-1-7",
+        "cell-2-2-0",
+        "cell-2-2-1",
+        "cell-2-2-2",
+        "cell-2-2-3",
+        "cell-2-2-4",
+        "cell-2-2-5",
+        "cell-2-2-6",
+        "cell-2-2-7",
+        "cell-2-3-0",
+        "cell-2-3-1",
+        "cell-2-3-2",
+        "cell-2-3-3",
+        "cell-2-3-4",
+        "cell-2-3-5",
+        "cell-2-3-6",
+        "cell-2-3-7"
+      ]
+    }
+  ],
+  "caption": "DEMO: 19 → 7 → 28 are occupied cell counts, not performance. Fourfold group capacity is conditional on seven cells per group and no additional reserved cells.",
+  "alt_text": "Three teaching snapshots show occupancy, with fixed capacity of 32 cells. DEMO: 19 → 7 → 28 are occupied cell counts, not performance. Fourfold group capacity is conditional on seven cells per group and no additional reserved cells."
+}

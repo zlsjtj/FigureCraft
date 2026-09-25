@@ -1,0 +1,21 @@
+{
+  "scope": "原创结构示意，可编辑 2.5D；不是实测数据",
+  "files": {
+    "A": {
+      "figure.pdf": "d5b4fbd5961718b7ebaba909facb68cd14aadb4d2b7b9b4dc3dba04c485dd3b3",
+      "figure.png": "f59dbca4e41d8e7db1efb2aae4ef943d0bf6f1f5b90b31bd16e028eae03dd090",
+      "figure.svg": "ac0682d224f0e001cabd9845bdfdbc2683962c3b4e7a3fcea95f50f60a87ee9d",
+      "figure_spec.json": "5570f9e05915029a6fedcd0628abc7a041b5dda966d2e8a8cdfe9cdcc5acce1e",
+      "qa-deuteranopia.png": "48b413128233c513274589cceb1a6a93136aabf461407e255fecd5c69caaf792",
+      "qa-grayscale.png": "956ed6a993fd508280e1f0c97cb1867e15b9f0bc44e638a613d67e1c46c986de"
+    },
+    "B": {
+      "figure.pdf": "d123e6692ac5bccdc20d3a221b6e8a995994acea5043cd320baffaec679d6cd2",
+      "figure.png": "8b389672a7ae55e257076c94af71158fa0809940b86ca2dbccb819f006b10817",
+      "figure.svg": "f0b2daa9f4c0b8aa007f1242c0a246b8a47f1c77d268a98f400611fd72ca7e23",
+      "figure_spec.json": "28608b5a72ce212f71cce446c93a2626316d0093a84f111ecfeb0936af9cee5f",
+      "qa-deuteranopia.png": "c591581e0b2a7ba6d738873af02770a6e516f118ea66025c05fa6e9a712b93b9",
+      "qa-grayscale.png": "b6eb12d05e6ac9e4c16430f54542850876641a001126bcd9768f377b2e1c0515"
+    }
+  }
+}

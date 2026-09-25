@@ -1,0 +1,17 @@
+{
+  "reference_palette": "blue_teal_peach",
+  "role_map": {
+    "input": {
+      "swatch": "sky_blue"
+    },
+    "blocked": {
+      "swatch": "peach"
+    },
+    "structure": {
+      "swatch": "deep_blue"
+    },
+    "neutral": {
+      "base": "#D8DFE3"
+    }
+  }
+}

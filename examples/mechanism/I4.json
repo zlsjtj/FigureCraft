@@ -1,0 +1,792 @@
+{
+  "schema_version": 1,
+  "figure_id": "mechanism_D",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "A hypothetical boundary passes round probes and stops triangular probes.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    "Original teaching specification in this example; no scientific measurements"
+  ],
+  "forbidden_implications": [
+    "No measured performance, transport rate, material effectiveness or journal endorsement"
+  ],
+  "entities": [
+    {
+      "id": "feed",
+      "semantic_role": "neutral",
+      "description": "Feed-side region"
+    },
+    {
+      "id": "boundary",
+      "semantic_role": "structure",
+      "description": "Barrier with one open pore"
+    },
+    {
+      "id": "receiver",
+      "semantic_role": "neutral",
+      "description": "Receiving region"
+    },
+    {
+      "id": "round",
+      "semantic_role": "input",
+      "description": "Six visible round probes"
+    },
+    {
+      "id": "triangle",
+      "semantic_role": "blocked",
+      "description": "Three visible triangular probes"
+    }
+  ],
+  "relations": [
+    {
+      "id": "pass",
+      "from": "round",
+      "to": "receiver",
+      "kind": "flow",
+      "meaning": "Round probes traverse the pore"
+    },
+    {
+      "id": "stop",
+      "from": "triangle",
+      "to": "boundary",
+      "kind": "inhibition",
+      "meaning": "Triangular probes do not cross this hypothetical boundary"
+    }
+  ],
+  "exact_labels": [
+    "Selective transfer at a boundary",
+    "DEMO  /  specified relations, no measured transport",
+    "Feed side",
+    "Open pore",
+    "Receiving side",
+    "Pass",
+    "Blocked",
+    "Round probe",
+    "Triangular probe",
+    "Symbol shape and direct labels retain meaning without color."
+  ],
+  "locked_values": {
+    "round_probes": 6,
+    "triangular_probes": 3,
+    "pore_count": 1
+  },
+  "reference_palette": "blue_teal_peach",
+  "role_map": {
+    "input": {
+      "swatch": "sky_blue"
+    },
+    "blocked": {
+      "swatch": "peach"
+    },
+    "structure": {
+      "swatch": "deep_blue"
+    },
+    "neutral": {
+      "base": "#D8DFE3"
+    }
+  },
+  "layout": {
+    "archetype": "spatial_boundary",
+    "reading_order": "left_to_right",
+    "hierarchy": "enlarged pore and shortened object-to-label travel"
+  },
+  "depth": {
+    "mode": "D1_shallow_2_5d",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 180,
+    "view_width": 900,
+    "view_height": 530,
+    "font_profile": "generic_readable_draft"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 530,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Selective transfer at a boundary",
+      "x": 36,
+      "y": 48,
+      "size": 26,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "subtitle",
+      "type": "text",
+      "text": "DEMO  /  specified relations, no measured transport",
+      "x": 36,
+      "y": 78,
+      "size": 16,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "feed-name",
+      "type": "text",
+      "text": "Feed side",
+      "x": 115,
+      "y": 122,
+      "size": 21,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "boundary-name",
+      "type": "text",
+      "text": "Open pore",
+      "x": 485.0,
+      "y": 122,
+      "size": 21,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "receiver-name",
+      "type": "text",
+      "text": "Receiving side",
+      "x": 650,
+      "y": 122,
+      "size": 21,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "top-wall",
+      "type": "line",
+      "points": [
+        [
+          66,
+          145
+        ],
+        [
+          820,
+          145
+        ]
+      ],
+      "stroke": "#76848C",
+      "stroke_width": 1.7,
+      "entity": "feed"
+    },
+    {
+      "id": "bottom-wall",
+      "type": "line",
+      "points": [
+        [
+          66,
+          380
+        ],
+        [
+          820,
+          380
+        ]
+      ],
+      "stroke": "#76848C",
+      "stroke_width": 1.7,
+      "entity": "receiver"
+    },
+    {
+      "id": "plate-side-0",
+      "type": "polygon",
+      "points": [
+        [
+          532,
+          135
+        ],
+        [
+          545,
+          126
+        ],
+        [
+          545,
+          209
+        ],
+        [
+          532,
+          218
+        ]
+      ],
+      "fill": "@structure.shadow",
+      "entity": "boundary",
+      "role": "structure",
+      "decorative_depth": true
+    },
+    {
+      "id": "plate-top-0",
+      "type": "polygon",
+      "points": [
+        [
+          438,
+          135
+        ],
+        [
+          451,
+          126
+        ],
+        [
+          545,
+          126
+        ],
+        [
+          532,
+          135
+        ]
+      ],
+      "fill": "@structure.highlight",
+      "entity": "boundary",
+      "role": "structure",
+      "decorative_depth": true
+    },
+    {
+      "id": "plate-face-0",
+      "type": "rect",
+      "x": 438,
+      "y": 135,
+      "w": 94,
+      "h": 83,
+      "fill": "@structure.fill",
+      "stroke": "@structure.stroke",
+      "stroke_width": 1.7,
+      "entity": "boundary",
+      "role": "structure"
+    },
+    {
+      "id": "plate-side-1",
+      "type": "polygon",
+      "points": [
+        [
+          532,
+          255
+        ],
+        [
+          545,
+          246
+        ],
+        [
+          545,
+          373
+        ],
+        [
+          532,
+          382
+        ]
+      ],
+      "fill": "@structure.shadow",
+      "entity": "boundary",
+      "role": "structure",
+      "decorative_depth": true
+    },
+    {
+      "id": "plate-top-1",
+      "type": "polygon",
+      "points": [
+        [
+          438,
+          255
+        ],
+        [
+          451,
+          246
+        ],
+        [
+          545,
+          246
+        ],
+        [
+          532,
+          255
+        ]
+      ],
+      "fill": "@structure.highlight",
+      "entity": "boundary",
+      "role": "structure",
+      "decorative_depth": true
+    },
+    {
+      "id": "plate-face-1",
+      "type": "rect",
+      "x": 438,
+      "y": 255,
+      "w": 94,
+      "h": 127,
+      "fill": "@structure.fill",
+      "stroke": "@structure.stroke",
+      "stroke_width": 1.7,
+      "entity": "boundary",
+      "role": "structure"
+    },
+    {
+      "id": "round-0",
+      "type": "circle",
+      "x": 145,
+      "y": 236,
+      "r": 14,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1.5,
+      "role": "input",
+      "entity": "round"
+    },
+    {
+      "id": "round-0-shade",
+      "type": "circle",
+      "x": 147,
+      "y": 238,
+      "r": 11.479999999999999,
+      "fill": "@input.fill",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-0-light",
+      "type": "ellipse",
+      "x": 141.78,
+      "y": 232.36,
+      "rx": 5.88,
+      "ry": 3.9200000000000004,
+      "fill": "@input.highlight",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-1",
+      "type": "circle",
+      "x": 216,
+      "y": 190,
+      "r": 14,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1.5,
+      "role": "input",
+      "entity": "round"
+    },
+    {
+      "id": "round-1-shade",
+      "type": "circle",
+      "x": 218,
+      "y": 192,
+      "r": 11.479999999999999,
+      "fill": "@input.fill",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-1-light",
+      "type": "ellipse",
+      "x": 212.78,
+      "y": 186.36,
+      "rx": 5.88,
+      "ry": 3.9200000000000004,
+      "fill": "@input.highlight",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-2",
+      "type": "circle",
+      "x": 229,
+      "y": 333,
+      "r": 14,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1.5,
+      "role": "input",
+      "entity": "round"
+    },
+    {
+      "id": "round-2-shade",
+      "type": "circle",
+      "x": 231,
+      "y": 335,
+      "r": 11.479999999999999,
+      "fill": "@input.fill",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-2-light",
+      "type": "ellipse",
+      "x": 225.78,
+      "y": 329.36,
+      "rx": 5.88,
+      "ry": 3.9200000000000004,
+      "fill": "@input.highlight",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-3",
+      "type": "circle",
+      "x": 650,
+      "y": 237,
+      "r": 14,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1.5,
+      "role": "input",
+      "entity": "round"
+    },
+    {
+      "id": "round-3-shade",
+      "type": "circle",
+      "x": 652,
+      "y": 239,
+      "r": 11.479999999999999,
+      "fill": "@input.fill",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-3-light",
+      "type": "ellipse",
+      "x": 646.78,
+      "y": 233.36,
+      "rx": 5.88,
+      "ry": 3.9200000000000004,
+      "fill": "@input.highlight",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-4",
+      "type": "circle",
+      "x": 719,
+      "y": 194,
+      "r": 14,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1.5,
+      "role": "input",
+      "entity": "round"
+    },
+    {
+      "id": "round-4-shade",
+      "type": "circle",
+      "x": 721,
+      "y": 196,
+      "r": 11.479999999999999,
+      "fill": "@input.fill",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-4-light",
+      "type": "ellipse",
+      "x": 715.78,
+      "y": 190.36,
+      "rx": 5.88,
+      "ry": 3.9200000000000004,
+      "fill": "@input.highlight",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-5",
+      "type": "circle",
+      "x": 725,
+      "y": 331,
+      "r": 14,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1.5,
+      "role": "input",
+      "entity": "round"
+    },
+    {
+      "id": "round-5-shade",
+      "type": "circle",
+      "x": 727,
+      "y": 333,
+      "r": 11.479999999999999,
+      "fill": "@input.fill",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "round-5-light",
+      "type": "ellipse",
+      "x": 721.78,
+      "y": 327.36,
+      "rx": 5.88,
+      "ry": 3.9200000000000004,
+      "fill": "@input.highlight",
+      "role": "input",
+      "entity": "round",
+      "decorative_depth": true
+    },
+    {
+      "id": "triangle-0",
+      "type": "polygon",
+      "points": [
+        [
+          115,
+          290
+        ],
+        [
+          100,
+          317
+        ],
+        [
+          130,
+          317
+        ]
+      ],
+      "fill": "@blocked.fill",
+      "stroke": "@blocked.stroke",
+      "stroke_width": 1.7,
+      "entity": "triangle",
+      "role": "blocked"
+    },
+    {
+      "id": "triangle-1",
+      "type": "polygon",
+      "points": [
+        [
+          278,
+          272
+        ],
+        [
+          263,
+          299
+        ],
+        [
+          293,
+          299
+        ]
+      ],
+      "fill": "@blocked.fill",
+      "stroke": "@blocked.stroke",
+      "stroke_width": 1.7,
+      "entity": "triangle",
+      "role": "blocked"
+    },
+    {
+      "id": "triangle-2",
+      "type": "polygon",
+      "points": [
+        [
+          354,
+          311
+        ],
+        [
+          339,
+          338
+        ],
+        [
+          369,
+          338
+        ]
+      ],
+      "fill": "@blocked.fill",
+      "stroke": "@blocked.stroke",
+      "stroke_width": 1.7,
+      "entity": "triangle",
+      "role": "blocked"
+    },
+    {
+      "id": "pore-flow",
+      "type": "line",
+      "points": [
+        [
+          250,
+          236
+        ],
+        [
+          620,
+          236
+        ]
+      ],
+      "stroke": "@input.stroke",
+      "stroke_width": 1.7,
+      "relation": "pass"
+    },
+    {
+      "id": "pore-flow-head",
+      "type": "polygon",
+      "points": [
+        [
+          620,
+          236
+        ],
+        [
+          610.0,
+          240.5
+        ],
+        [
+          610.0,
+          231.5
+        ]
+      ],
+      "fill": "@input.stroke",
+      "relation": "pass"
+    },
+    {
+      "id": "blocked-path",
+      "type": "line",
+      "points": [
+        [
+          365,
+          310
+        ],
+        [
+          428,
+          310
+        ]
+      ],
+      "stroke": "@blocked.stroke",
+      "stroke_width": 1.7,
+      "relation": "stop"
+    },
+    {
+      "id": "blocked-path-stop",
+      "type": "line",
+      "points": [
+        [
+          428.0,
+          319.0
+        ],
+        [
+          428.0,
+          301.0
+        ]
+      ],
+      "stroke": "@blocked.stroke",
+      "stroke_width": 1.7,
+      "relation": "stop"
+    },
+    {
+      "id": "flow-label",
+      "type": "text",
+      "text": "Pass",
+      "x": 575,
+      "y": 215,
+      "size": 18,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "stop-label",
+      "type": "text",
+      "text": "Blocked",
+      "x": 413,
+      "y": 353,
+      "size": 18,
+      "align": "right",
+      "fill": "#24323B"
+    },
+    {
+      "id": "legend-round",
+      "type": "circle",
+      "x": 85,
+      "y": 430,
+      "r": 10,
+      "fill": "@input.fill",
+      "stroke": "@input.stroke",
+      "stroke_width": 1.5,
+      "role": "input",
+      "entity": "round"
+    },
+    {
+      "id": "legend-round-label",
+      "type": "text",
+      "text": "Round probe",
+      "x": 105,
+      "y": 436,
+      "size": 18,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "legend-triangle",
+      "type": "polygon",
+      "points": [
+        [
+          314,
+          418
+        ],
+        [
+          302,
+          439
+        ],
+        [
+          326,
+          439
+        ]
+      ],
+      "fill": "@blocked.fill",
+      "stroke": "@blocked.stroke",
+      "entity": "triangle",
+      "role": "blocked"
+    },
+    {
+      "id": "legend-triangle-label",
+      "type": "text",
+      "text": "Triangular probe",
+      "x": 342,
+      "y": 436,
+      "size": 18,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "footer",
+      "type": "text",
+      "text": "Symbol shape and direct labels retain meaning without color.",
+      "x": 36,
+      "y": 494,
+      "size": 16,
+      "align": "left",
+      "fill": "#24323B"
+    }
+  ],
+  "count_constraints": [
+    {
+      "name": "round_probes",
+      "expected": 6,
+      "item_ids": [
+        "round-0",
+        "round-1",
+        "round-2",
+        "round-3",
+        "round-4",
+        "round-5"
+      ]
+    },
+    {
+      "name": "triangular_probes",
+      "expected": 3,
+      "item_ids": [
+        "triangle-0",
+        "triangle-1",
+        "triangle-2"
+      ]
+    }
+  ],
+  "caption": "DEMO. Shape-based selectivity is stipulated for drawing tests, not inferred from a material or experiment.",
+  "alt_text": "A hypothetical boundary passes round probes and stops triangular probes. DEMO. Shape-based selectivity is stipulated for drawing tests, not inferred from a material or experiment."
+}

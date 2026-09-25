@@ -1,0 +1,6 @@
+interface:
+  display_name: "FigureCraft｜科研绘图与配色"
+  short_description: "按科学对象组织构图，以语义配色、清楚剖面和可编辑矢量交付实图"
+  default_prompt: "使用 $scientific-figure-studio，先核对科学对象、关系和数据，再改善造型、语义配色和阅读路径。按最终入稿尺寸检查，交付可编辑图源、实际前后对照及分别记录的技术、科学和视觉审阅。"
+policy:
+  allow_implicit_invocation: true

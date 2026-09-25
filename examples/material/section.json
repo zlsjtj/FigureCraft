@@ -1,0 +1,920 @@
+{
+  "schema_version": 1,
+  "figure_id": "coated_particles",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "A constructed layered composite shows coated cores on a substrate and a section of one core.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    "Original teaching specification in this example; no scientific measurements"
+  ],
+  "forbidden_implications": [
+    "No measured performance, transport rate, material effectiveness or journal endorsement"
+  ],
+  "entities": [
+    {
+      "id": "substrate",
+      "semantic_role": "base",
+      "description": "Lower structural slab"
+    },
+    {
+      "id": "layer",
+      "semantic_role": "support",
+      "description": "Upper support layer"
+    },
+    {
+      "id": "coating",
+      "semantic_role": "coating",
+      "description": "Blue shells around each core"
+    },
+    {
+      "id": "core",
+      "semantic_role": "core",
+      "description": "Six yellow cores; right section is a repeated view of a core"
+    }
+  ],
+  "relations": [
+    {
+      "id": "shell-contains",
+      "from": "coating",
+      "to": "core",
+      "kind": "containment",
+      "meaning": "Shell surrounds core; no mechanistic efficacy claimed"
+    },
+    {
+      "id": "zoom",
+      "from": "core",
+      "to": "core",
+      "kind": "detail",
+      "meaning": "Right cross-section repeats the front-right particle"
+    }
+  ],
+  "exact_labels": [
+    "Coating, core and supporting layers",
+    "DEMO  /  vector 2.5D schematic, not to scale",
+    "Layered composite",
+    "Local section",
+    "Core",
+    "Coating",
+    "Support layer",
+    "Substrate",
+    "Section repeats one particle;",
+    "it is not an additional core.",
+    "Six cores in the overview. Depth explains layers; it does not encode measured values."
+  ],
+  "locked_values": {
+    "cores_in_overview": 6,
+    "detail_views": 1,
+    "layers": 2
+  },
+  "reference_palette": "yellow_blue_sage",
+  "role_map": {
+    "core": {
+      "swatch": "yellow"
+    },
+    "coating": {
+      "swatch": "blue"
+    },
+    "base": {
+      "swatch": "sage"
+    },
+    "support": {
+      "swatch": "lilac"
+    },
+    "neutral": {
+      "base": "#D8DFE3"
+    }
+  },
+  "layout": {
+    "archetype": "cutaway_with_detail",
+    "reading_order": "left_to_right"
+  },
+  "depth": {
+    "mode": "D1_vector_2_5d_not_3D_scene",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 180,
+    "view_width": 900,
+    "view_height": 560,
+    "font_profile": "generic_readable_draft"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 560,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Coating, core and supporting layers",
+      "x": 36,
+      "y": 47,
+      "size": 26,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "subtitle",
+      "type": "text",
+      "text": "DEMO  /  vector 2.5D schematic, not to scale",
+      "x": 36,
+      "y": 78,
+      "size": 17,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "substrate-front",
+      "type": "polygon",
+      "points": [
+        [
+          60,
+          340
+        ],
+        [
+          366,
+          340
+        ],
+        [
+          366,
+          372
+        ],
+        [
+          60,
+          372
+        ]
+      ],
+      "fill": "@base.shadow",
+      "stroke": "@base.stroke",
+      "entity": "substrate",
+      "role": "base"
+    },
+    {
+      "id": "substrate-side",
+      "type": "polygon",
+      "points": [
+        [
+          366,
+          340
+        ],
+        [
+          491,
+          250
+        ],
+        [
+          491,
+          282
+        ],
+        [
+          366,
+          372
+        ]
+      ],
+      "fill": "@base.fill",
+      "stroke": "@base.stroke",
+      "entity": "substrate",
+      "role": "base"
+    },
+    {
+      "id": "substrate-top",
+      "type": "polygon",
+      "points": [
+        [
+          60,
+          340
+        ],
+        [
+          185,
+          250
+        ],
+        [
+          491,
+          250
+        ],
+        [
+          366,
+          340
+        ]
+      ],
+      "fill": "@base.highlight",
+      "stroke": "@base.stroke",
+      "entity": "substrate",
+      "role": "base"
+    },
+    {
+      "id": "support-front",
+      "type": "polygon",
+      "points": [
+        [
+          60,
+          322
+        ],
+        [
+          366,
+          322
+        ],
+        [
+          366,
+          340
+        ],
+        [
+          60,
+          340
+        ]
+      ],
+      "fill": "@support.shadow",
+      "stroke": "@support.stroke",
+      "entity": "layer",
+      "role": "support"
+    },
+    {
+      "id": "support-side",
+      "type": "polygon",
+      "points": [
+        [
+          366,
+          322
+        ],
+        [
+          491,
+          232
+        ],
+        [
+          491,
+          250
+        ],
+        [
+          366,
+          340
+        ]
+      ],
+      "fill": "@support.fill",
+      "stroke": "@support.stroke",
+      "entity": "layer",
+      "role": "support"
+    },
+    {
+      "id": "support-top",
+      "type": "polygon",
+      "points": [
+        [
+          60,
+          322
+        ],
+        [
+          185,
+          232
+        ],
+        [
+          491,
+          232
+        ],
+        [
+          366,
+          322
+        ]
+      ],
+      "fill": "@support.highlight",
+      "stroke": "@support.stroke",
+      "entity": "layer",
+      "role": "support"
+    },
+    {
+      "id": "shell-0",
+      "type": "circle",
+      "x": 219,
+      "y": 196,
+      "r": 36,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 1.5,
+      "role": "coating",
+      "entity": "coating"
+    },
+    {
+      "id": "shell-0-shade",
+      "type": "circle",
+      "x": 221,
+      "y": 198,
+      "r": 29.52,
+      "fill": "@coating.fill",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-0-light",
+      "type": "ellipse",
+      "x": 210.72,
+      "y": 186.64,
+      "rx": 15.12,
+      "ry": 10.080000000000002,
+      "fill": "@coating.highlight",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-0",
+      "type": "circle",
+      "x": 220,
+      "y": 201,
+      "r": 25,
+      "fill": "@core.fill",
+      "stroke": "@core.stroke",
+      "stroke_width": 1.5,
+      "role": "core",
+      "entity": "core"
+    },
+    {
+      "id": "core-0-shade",
+      "type": "circle",
+      "x": 222,
+      "y": 203,
+      "r": 20.5,
+      "fill": "@core.fill",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-0-light",
+      "type": "ellipse",
+      "x": 214.25,
+      "y": 194.5,
+      "rx": 10.5,
+      "ry": 7.000000000000001,
+      "fill": "@core.highlight",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-1",
+      "type": "circle",
+      "x": 299,
+      "y": 196,
+      "r": 36,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 1.5,
+      "role": "coating",
+      "entity": "coating"
+    },
+    {
+      "id": "shell-1-shade",
+      "type": "circle",
+      "x": 301,
+      "y": 198,
+      "r": 29.52,
+      "fill": "@coating.fill",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-1-light",
+      "type": "ellipse",
+      "x": 290.72,
+      "y": 186.64,
+      "rx": 15.12,
+      "ry": 10.080000000000002,
+      "fill": "@coating.highlight",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-1",
+      "type": "circle",
+      "x": 300,
+      "y": 201,
+      "r": 25,
+      "fill": "@core.fill",
+      "stroke": "@core.stroke",
+      "stroke_width": 1.5,
+      "role": "core",
+      "entity": "core"
+    },
+    {
+      "id": "core-1-shade",
+      "type": "circle",
+      "x": 302,
+      "y": 203,
+      "r": 20.5,
+      "fill": "@core.fill",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-1-light",
+      "type": "ellipse",
+      "x": 294.25,
+      "y": 194.5,
+      "rx": 10.5,
+      "ry": 7.000000000000001,
+      "fill": "@core.highlight",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-2",
+      "type": "circle",
+      "x": 379,
+      "y": 196,
+      "r": 36,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 1.5,
+      "role": "coating",
+      "entity": "coating"
+    },
+    {
+      "id": "shell-2-shade",
+      "type": "circle",
+      "x": 381,
+      "y": 198,
+      "r": 29.52,
+      "fill": "@coating.fill",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-2-light",
+      "type": "ellipse",
+      "x": 370.72,
+      "y": 186.64,
+      "rx": 15.12,
+      "ry": 10.080000000000002,
+      "fill": "@coating.highlight",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-2",
+      "type": "circle",
+      "x": 380,
+      "y": 201,
+      "r": 25,
+      "fill": "@core.fill",
+      "stroke": "@core.stroke",
+      "stroke_width": 1.5,
+      "role": "core",
+      "entity": "core"
+    },
+    {
+      "id": "core-2-shade",
+      "type": "circle",
+      "x": 382,
+      "y": 203,
+      "r": 20.5,
+      "fill": "@core.fill",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-2-light",
+      "type": "ellipse",
+      "x": 374.25,
+      "y": 194.5,
+      "rx": 10.5,
+      "ry": 7.000000000000001,
+      "fill": "@core.highlight",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-3",
+      "type": "circle",
+      "x": 148,
+      "y": 256,
+      "r": 36,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 1.5,
+      "role": "coating",
+      "entity": "coating"
+    },
+    {
+      "id": "shell-3-shade",
+      "type": "circle",
+      "x": 150,
+      "y": 258,
+      "r": 29.52,
+      "fill": "@coating.fill",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-3-light",
+      "type": "ellipse",
+      "x": 139.72,
+      "y": 246.64,
+      "rx": 15.12,
+      "ry": 10.080000000000002,
+      "fill": "@coating.highlight",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-3",
+      "type": "circle",
+      "x": 149,
+      "y": 261,
+      "r": 25,
+      "fill": "@core.fill",
+      "stroke": "@core.stroke",
+      "stroke_width": 1.5,
+      "role": "core",
+      "entity": "core"
+    },
+    {
+      "id": "core-3-shade",
+      "type": "circle",
+      "x": 151,
+      "y": 263,
+      "r": 20.5,
+      "fill": "@core.fill",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-3-light",
+      "type": "ellipse",
+      "x": 143.25,
+      "y": 254.5,
+      "rx": 10.5,
+      "ry": 7.000000000000001,
+      "fill": "@core.highlight",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-4",
+      "type": "circle",
+      "x": 228,
+      "y": 256,
+      "r": 36,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 1.5,
+      "role": "coating",
+      "entity": "coating"
+    },
+    {
+      "id": "shell-4-shade",
+      "type": "circle",
+      "x": 230,
+      "y": 258,
+      "r": 29.52,
+      "fill": "@coating.fill",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-4-light",
+      "type": "ellipse",
+      "x": 219.72,
+      "y": 246.64,
+      "rx": 15.12,
+      "ry": 10.080000000000002,
+      "fill": "@coating.highlight",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-4",
+      "type": "circle",
+      "x": 229,
+      "y": 261,
+      "r": 25,
+      "fill": "@core.fill",
+      "stroke": "@core.stroke",
+      "stroke_width": 1.5,
+      "role": "core",
+      "entity": "core"
+    },
+    {
+      "id": "core-4-shade",
+      "type": "circle",
+      "x": 231,
+      "y": 263,
+      "r": 20.5,
+      "fill": "@core.fill",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-4-light",
+      "type": "ellipse",
+      "x": 223.25,
+      "y": 254.5,
+      "rx": 10.5,
+      "ry": 7.000000000000001,
+      "fill": "@core.highlight",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-5",
+      "type": "circle",
+      "x": 308,
+      "y": 256,
+      "r": 36,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 1.5,
+      "role": "coating",
+      "entity": "coating"
+    },
+    {
+      "id": "shell-5-shade",
+      "type": "circle",
+      "x": 310,
+      "y": 258,
+      "r": 29.52,
+      "fill": "@coating.fill",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "shell-5-light",
+      "type": "ellipse",
+      "x": 299.72,
+      "y": 246.64,
+      "rx": 15.12,
+      "ry": 10.080000000000002,
+      "fill": "@coating.highlight",
+      "role": "coating",
+      "entity": "coating",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-5",
+      "type": "circle",
+      "x": 309,
+      "y": 261,
+      "r": 25,
+      "fill": "@core.fill",
+      "stroke": "@core.stroke",
+      "stroke_width": 1.5,
+      "role": "core",
+      "entity": "core"
+    },
+    {
+      "id": "core-5-shade",
+      "type": "circle",
+      "x": 311,
+      "y": 263,
+      "r": 20.5,
+      "fill": "@core.fill",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "core-5-light",
+      "type": "ellipse",
+      "x": 303.25,
+      "y": 254.5,
+      "rx": 10.5,
+      "ry": 7.000000000000001,
+      "fill": "@core.highlight",
+      "role": "core",
+      "entity": "core",
+      "decorative_depth": true
+    },
+    {
+      "id": "overview-label",
+      "type": "text",
+      "text": "Layered composite",
+      "x": 86,
+      "y": 144,
+      "size": 20,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "zoom-leader",
+      "type": "line",
+      "points": [
+        [
+          345,
+          270
+        ],
+        [
+          503,
+          195
+        ],
+        [
+          574,
+          195
+        ]
+      ],
+      "stroke": "#65747F",
+      "stroke_width": 1.7,
+      "relation": "zoom",
+      "dash": [
+        5,
+        4
+      ]
+    },
+    {
+      "id": "section-title",
+      "type": "text",
+      "text": "Local section",
+      "x": 638,
+      "y": 145,
+      "size": 20,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "section-shell",
+      "type": "circle",
+      "x": 659,
+      "y": 262,
+      "r": 76,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 2,
+      "entity": "coating",
+      "role": "coating"
+    },
+    {
+      "id": "section-core",
+      "type": "circle",
+      "x": 659,
+      "y": 262,
+      "r": 55,
+      "fill": "@core.fill",
+      "stroke": "@core.stroke",
+      "stroke_width": 1.5,
+      "entity": "core",
+      "role": "core"
+    },
+    {
+      "id": "core-label",
+      "type": "text",
+      "text": "Core",
+      "x": 659,
+      "y": 268,
+      "size": 19,
+      "align": "center",
+      "fill": "#24323B",
+      "background": "@core.fill"
+    },
+    {
+      "id": "coating-leader",
+      "type": "line",
+      "points": [
+        [
+          723,
+          225
+        ],
+        [
+          761,
+          203
+        ]
+      ],
+      "stroke": "#536571",
+      "stroke_width": 1.7,
+      "entity": "coating"
+    },
+    {
+      "id": "coating-label",
+      "type": "text",
+      "text": "Coating",
+      "x": 758,
+      "y": 188,
+      "size": 19,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "layer-leader",
+      "type": "line",
+      "points": [
+        [
+          224,
+          331
+        ],
+        [
+          224,
+          402
+        ]
+      ],
+      "stroke": "#536571",
+      "stroke_width": 1.7,
+      "entity": "layer"
+    },
+    {
+      "id": "layer-label",
+      "type": "text",
+      "text": "Support layer",
+      "x": 224,
+      "y": 429,
+      "size": 18,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "substrate-leader",
+      "type": "line",
+      "points": [
+        [
+          85,
+          359
+        ],
+        [
+          69,
+          444
+        ]
+      ],
+      "stroke": "#536571",
+      "stroke_width": 1.7,
+      "entity": "substrate"
+    },
+    {
+      "id": "substrate-label",
+      "type": "text",
+      "text": "Substrate",
+      "x": 79,
+      "y": 469,
+      "size": 18,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "shell-note",
+      "type": "text",
+      "text": "Section repeats one particle;",
+      "x": 560,
+      "y": 388,
+      "size": 17,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "shell-note-2",
+      "type": "text",
+      "text": "it is not an additional core.",
+      "x": 560,
+      "y": 411,
+      "size": 17,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "footer",
+      "type": "text",
+      "text": "Six cores in the overview. Depth explains layers; it does not encode measured values.",
+      "x": 36,
+      "y": 528,
+      "size": 16,
+      "align": "left",
+      "fill": "#24323B"
+    }
+  ],
+  "count_constraints": [
+    {
+      "name": "overview_cores",
+      "expected": 6,
+      "item_ids": [
+        "core-0",
+        "core-1",
+        "core-2",
+        "core-3",
+        "core-4",
+        "core-5"
+      ]
+    }
+  ],
+  "caption": "Original DEMO: six coated cores over two slabs, with a repeated local section. Core cut faces are exposed schematically. No microscopy, transport physics, 3D mesh or calibrated size is claimed.",
+  "alt_text": "A constructed layered composite shows coated cores on a substrate and a section of one core. Original DEMO: six coated cores over two slabs, with a repeated local section. Core cut faces are exposed schematically. No microscopy, transport physics, 3D mesh or calibrated size is claimed."
+}

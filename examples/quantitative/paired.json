@@ -1,0 +1,664 @@
+{
+  "schema_version": 1,
+  "figure_id": "paired_times",
+  "mode": "quantitative",
+  "demo": true,
+  "scientific_message": "Paired DEMO times retain an improvement, a tie and a regression.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    "Original teaching specification in this example; no scientific measurements"
+  ],
+  "forbidden_implications": [
+    "No measured performance, transport rate, material effectiveness or journal endorsement"
+  ],
+  "entities": [
+    {
+      "id": "control",
+      "semantic_role": "control",
+      "description": "Control time, circular symbol"
+    },
+    {
+      "id": "candidate",
+      "semantic_role": "candidate",
+      "description": "Candidate time, diamond symbol"
+    }
+  ],
+  "relations": [],
+  "exact_labels": [
+    "All outcomes remain visible",
+    "DEMO  /  paired illustrative times; no uncertainty estimates",
+    "Control",
+    "Candidate",
+    "0",
+    "4",
+    "8",
+    "12",
+    "16",
+    "Time change",
+    "A",
+    "10",
+    "8",
+    "-20%",
+    "B",
+    "10",
+    "10",
+    "0%",
+    "C",
+    "10",
+    "12",
+    "+20%",
+    "Time (ms) — lower is faster",
+    "DEMO values only. Both methods and all cases are retained."
+  ],
+  "locked_values": {
+    "rows": 3,
+    "time_unit": "ms",
+    "ratio": "control / candidate",
+    "uncertainty": "none; no replicate records"
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "control": {
+      "swatch": "sky_blue"
+    },
+    "candidate": {
+      "swatch": "gold"
+    },
+    "structure": {
+      "swatch": "coral_pink"
+    },
+    "neutral": {
+      "base": "#D8DFE3"
+    }
+  },
+  "layout": {
+    "archetype": "paired_position_plot",
+    "reading_order": "left_to_right"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 180,
+    "view_width": 900,
+    "view_height": 515,
+    "font_profile": "generic_readable_draft"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 515,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "All outcomes remain visible",
+      "x": 36,
+      "y": 46,
+      "size": 26,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "subtitle",
+      "type": "text",
+      "text": "DEMO  /  paired illustrative times; no uncertainty estimates",
+      "x": 36,
+      "y": 77,
+      "size": 17,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "legend-control",
+      "type": "circle",
+      "x": 520,
+      "y": 111,
+      "r": 6,
+      "fill": "@control.fill",
+      "stroke": "@control.stroke",
+      "stroke_width": 1.5,
+      "role": "control",
+      "entity": "control"
+    },
+    {
+      "id": "control-key",
+      "type": "text",
+      "text": "Control",
+      "x": 536,
+      "y": 117,
+      "size": 16,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "legend-candidate",
+      "type": "polygon",
+      "points": [
+        [
+          687,
+          103
+        ],
+        [
+          695,
+          111
+        ],
+        [
+          687,
+          119
+        ],
+        [
+          679,
+          111
+        ]
+      ],
+      "fill": "@candidate.fill",
+      "stroke": "@candidate.stroke",
+      "entity": "candidate"
+    },
+    {
+      "id": "candidate-key",
+      "type": "text",
+      "text": "Candidate",
+      "x": 706,
+      "y": 117,
+      "size": 16,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "grid-0",
+      "type": "line",
+      "points": [
+        [
+          156.0,
+          145
+        ],
+        [
+          156.0,
+          400
+        ]
+      ],
+      "stroke": "#DCE2E6",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "tick-0",
+      "type": "text",
+      "text": "0",
+      "x": 156.0,
+      "y": 425,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "grid-4",
+      "type": "line",
+      "points": [
+        [
+          277.5,
+          145
+        ],
+        [
+          277.5,
+          400
+        ]
+      ],
+      "stroke": "#DCE2E6",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "tick-4",
+      "type": "text",
+      "text": "4",
+      "x": 277.5,
+      "y": 425,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "grid-8",
+      "type": "line",
+      "points": [
+        [
+          399.0,
+          145
+        ],
+        [
+          399.0,
+          400
+        ]
+      ],
+      "stroke": "#DCE2E6",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "tick-8",
+      "type": "text",
+      "text": "8",
+      "x": 399.0,
+      "y": 425,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "grid-12",
+      "type": "line",
+      "points": [
+        [
+          520.5,
+          145
+        ],
+        [
+          520.5,
+          400
+        ]
+      ],
+      "stroke": "#DCE2E6",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "tick-12",
+      "type": "text",
+      "text": "12",
+      "x": 520.5,
+      "y": 425,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "grid-16",
+      "type": "line",
+      "points": [
+        [
+          642.0,
+          145
+        ],
+        [
+          642.0,
+          400
+        ]
+      ],
+      "stroke": "#DCE2E6",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "tick-16",
+      "type": "text",
+      "text": "16",
+      "x": 642.0,
+      "y": 425,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "effect-heading",
+      "type": "text",
+      "text": "Time change",
+      "x": 730,
+      "y": 143,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "case-0",
+      "type": "text",
+      "text": "A",
+      "x": 80,
+      "y": 194,
+      "size": 20,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "pair-0",
+      "type": "line",
+      "points": [
+        [
+          459.75,
+          188
+        ],
+        [
+          399.0,
+          188
+        ]
+      ],
+      "stroke": "#73838F",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "control-0",
+      "type": "circle",
+      "x": 459.75,
+      "y": 188,
+      "r": 7,
+      "fill": "@control.fill",
+      "stroke": "@control.stroke",
+      "stroke_width": 2,
+      "entity": "control",
+      "role": "control",
+      "data_value": 10.0,
+      "data_case": "A"
+    },
+    {
+      "id": "candidate-0",
+      "type": "polygon",
+      "points": [
+        [
+          399.0,
+          179
+        ],
+        [
+          408.0,
+          188
+        ],
+        [
+          399.0,
+          197
+        ],
+        [
+          390.0,
+          188
+        ]
+      ],
+      "fill": "@candidate.fill",
+      "stroke": "@candidate.stroke",
+      "stroke_width": 2,
+      "entity": "candidate",
+      "role": "candidate",
+      "data_value": 8.0,
+      "data_case": "A"
+    },
+    {
+      "id": "control-value-0",
+      "type": "text",
+      "text": "10",
+      "x": 459.75,
+      "y": 166,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "candidate-value-0",
+      "type": "text",
+      "text": "8",
+      "x": 399.0,
+      "y": 223,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "change-0",
+      "type": "text",
+      "text": "-20%",
+      "x": 730,
+      "y": 194,
+      "size": 21,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "case-1",
+      "type": "text",
+      "text": "B",
+      "x": 80,
+      "y": 279,
+      "size": 20,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "pair-1",
+      "type": "line",
+      "points": [
+        [
+          459.75,
+          273
+        ],
+        [
+          459.75,
+          273
+        ]
+      ],
+      "stroke": "#73838F",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "control-1",
+      "type": "circle",
+      "x": 459.75,
+      "y": 266,
+      "r": 7,
+      "fill": "@control.fill",
+      "stroke": "@control.stroke",
+      "stroke_width": 2,
+      "entity": "control",
+      "role": "control",
+      "data_value": 10.0,
+      "data_case": "B"
+    },
+    {
+      "id": "candidate-1",
+      "type": "polygon",
+      "points": [
+        [
+          459.75,
+          272
+        ],
+        [
+          468.75,
+          281
+        ],
+        [
+          459.75,
+          290
+        ],
+        [
+          450.75,
+          281
+        ]
+      ],
+      "fill": "@candidate.fill",
+      "stroke": "@candidate.stroke",
+      "stroke_width": 2,
+      "entity": "candidate",
+      "role": "candidate",
+      "data_value": 10.0,
+      "data_case": "B"
+    },
+    {
+      "id": "control-value-1",
+      "type": "text",
+      "text": "10",
+      "x": 459.75,
+      "y": 251,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "candidate-value-1",
+      "type": "text",
+      "text": "10",
+      "x": 459.75,
+      "y": 308,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "change-1",
+      "type": "text",
+      "text": "0%",
+      "x": 730,
+      "y": 279,
+      "size": 21,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "case-2",
+      "type": "text",
+      "text": "C",
+      "x": 80,
+      "y": 364,
+      "size": 20,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "pair-2",
+      "type": "line",
+      "points": [
+        [
+          459.75,
+          358
+        ],
+        [
+          520.5,
+          358
+        ]
+      ],
+      "stroke": "#73838F",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "control-2",
+      "type": "circle",
+      "x": 459.75,
+      "y": 358,
+      "r": 7,
+      "fill": "@control.fill",
+      "stroke": "@control.stroke",
+      "stroke_width": 2,
+      "entity": "control",
+      "role": "control",
+      "data_value": 10.0,
+      "data_case": "C"
+    },
+    {
+      "id": "candidate-2",
+      "type": "polygon",
+      "points": [
+        [
+          520.5,
+          349
+        ],
+        [
+          529.5,
+          358
+        ],
+        [
+          520.5,
+          367
+        ],
+        [
+          511.5,
+          358
+        ]
+      ],
+      "fill": "@candidate.fill",
+      "stroke": "@candidate.stroke",
+      "stroke_width": 2,
+      "entity": "candidate",
+      "role": "candidate",
+      "data_value": 12.0,
+      "data_case": "C"
+    },
+    {
+      "id": "control-value-2",
+      "type": "text",
+      "text": "10",
+      "x": 459.75,
+      "y": 336,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "candidate-value-2",
+      "type": "text",
+      "text": "12",
+      "x": 520.5,
+      "y": 393,
+      "size": 16,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "change-2",
+      "type": "text",
+      "text": "+20%",
+      "x": 730,
+      "y": 364,
+      "size": 21,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "x-axis",
+      "type": "text",
+      "text": "Time (ms) — lower is faster",
+      "x": 393,
+      "y": 457,
+      "size": 18,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "footer",
+      "type": "text",
+      "text": "DEMO values only. Both methods and all cases are retained.",
+      "x": 36,
+      "y": 497,
+      "size": 16,
+      "align": "left",
+      "fill": "#24323B"
+    }
+  ],
+  "data": [
+    {
+      "case": "A",
+      "control_ms": 10.0,
+      "candidate_ms": 8.0,
+      "ratio": 1.25,
+      "change_percent": -19.999999999999996
+    },
+    {
+      "case": "B",
+      "control_ms": 10.0,
+      "candidate_ms": 10.0,
+      "ratio": 1.0,
+      "change_percent": 0.0
+    },
+    {
+      "case": "C",
+      "control_ms": 10.0,
+      "candidate_ms": 12.0,
+      "ratio": 0.8333333333333334,
+      "change_percent": 19.999999999999996
+    }
+  ],
+  "data_source": "DEMO_times.csv",
+  "data_sha256": "324754975390ded76796434c6a463b4091f06938412d1b5b4536e986d56fa95f",
+  "caption": "DEMO: supplied single illustrative values, not empirical measurements or replicate statistics. Relative changes use (candidate / control − 1) × 100. There are no fabricated error bars. Equal times use a small vertical separation at the same x value; vertical position does not encode time.",
+  "alt_text": "Paired DEMO times retain an improvement, a tie and a regression. DEMO: supplied single illustrative values, not empirical measurements or replicate statistics. Relative changes use (candidate / control − 1) × 100. There are no fabricated error bars. Equal times use a small vertical separation at the same x value; vertical position does not encode time."
+}

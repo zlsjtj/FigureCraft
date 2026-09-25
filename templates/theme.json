@@ -1,0 +1,7 @@
+{
+  "reference_palette": "blue_teal_peach",
+  "role_map": {
+    "boundary": {"swatch": "deep_blue"},
+    "object": {"swatch": "sky_blue"}
+  }
+}

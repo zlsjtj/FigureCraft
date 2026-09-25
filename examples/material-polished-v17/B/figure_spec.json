@@ -1,0 +1,1296 @@
+{
+  "schema_version": 1,
+  "figure_id": "material_v17_B_cap_section_and_context",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "Six coated particles on two support layers; the cut repeats the front-right P6.",
+  "evidence_status": "User-stipulated structural DEMO; no measured dimensions, transport or performance.",
+  "source_refs": [
+    {
+      "kind": "stipulated_demo",
+      "description": "Six coated particles; two contiguous layers; one repeated P6 view."
+    }
+  ],
+  "forbidden_implications": [
+    "A seventh particle",
+    "Measured dimensions",
+    "Physical 3D simulation",
+    "Transport or performance"
+  ],
+  "entities": [
+    {
+      "id": "particles",
+      "semantic_role": "coating",
+      "description": "Six intact coated particles P1 to P6; the repeated cut is the same P6."
+    },
+    {
+      "id": "layers",
+      "semantic_role": "lower",
+      "description": "Two contiguous support layers."
+    }
+  ],
+  "relations": [
+    {
+      "id": "same-P6",
+      "from": "particles",
+      "to": "particles",
+      "kind": "detail",
+      "meaning": "Repeated view of the same logical object; not an additional particle",
+      "geometry": {
+        "item_id": "same-P6",
+        "from": [
+          293,
+          240
+        ],
+        "to": [
+          525.4,
+          230.1
+        ],
+        "arrow_required": false
+      }
+    }
+  ],
+  "exact_labels": [
+    "DEMO · Not to scale",
+    "A coating opening reveals the intact core",
+    "P6",
+    "Six particles · same P6",
+    "P6 · local cutaway",
+    "Core",
+    "Coating",
+    "Upper layer",
+    "Lower layer"
+  ],
+  "locked_values": {
+    "particles": 6,
+    "supporting_layers": 2,
+    "repeated_detail": 1,
+    "detail_source": "P6"
+  },
+  "reference_palette": "yellow_blue_sage",
+  "role_map": {
+    "core": {
+      "swatch": "yellow"
+    },
+    "coating": {
+      "swatch": "blue"
+    },
+    "upper": {
+      "swatch": "lilac"
+    },
+    "lower": {
+      "swatch": "sage"
+    }
+  },
+  "layout": {
+    "archetype": "large_cap_section_with_compact_context",
+    "reading_order": "curved coating, flat cut face, same P6 in context"
+  },
+  "depth": {
+    "mode": "D1_analytic_vector_projection",
+    "affects_quantitative_encoding": false,
+    "light_direction": "upper_left"
+  },
+  "output": {
+    "width_mm": 160,
+    "view_width": 900,
+    "view_height": 390,
+    "font_profile": "generic_readable_draft",
+    "placement_width_mm": 160
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 390,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "text": "DEMO · Not to scale",
+      "x": 26,
+      "y": 379,
+      "size": 18,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "A coating opening reveals the intact core",
+      "x": 26,
+      "y": 32,
+      "size": 23,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "lower-layer-front",
+      "type": "polygon",
+      "points": [
+        [
+          43,
+          291
+        ],
+        [
+          300,
+          291
+        ],
+        [
+          300,
+          313
+        ],
+        [
+          43,
+          313
+        ]
+      ],
+      "fill": "@lower.base",
+      "object_part": "decoration",
+      "entity": "layers",
+      "role": "lower",
+      "logical_id": "lower-layer",
+      "stroke": "@lower.stroke",
+      "stroke_width": 0.75
+    },
+    {
+      "id": "lower-layer-side",
+      "type": "polygon",
+      "points": [
+        [
+          300,
+          291
+        ],
+        [
+          367,
+          216
+        ],
+        [
+          367,
+          238
+        ],
+        [
+          300,
+          313
+        ]
+      ],
+      "fill": "@lower.shadow",
+      "object_part": "decoration",
+      "entity": "layers",
+      "role": "lower",
+      "logical_id": "lower-layer",
+      "stroke": "@lower.stroke",
+      "stroke_width": 0.75
+    },
+    {
+      "id": "lower-layer-top",
+      "type": "polygon",
+      "points": [
+        [
+          43,
+          291
+        ],
+        [
+          300,
+          291
+        ],
+        [
+          367,
+          216
+        ],
+        [
+          110,
+          216
+        ]
+      ],
+      "fill": "@lower.highlight",
+      "object_part": "primary",
+      "entity": "layers",
+      "role": "lower",
+      "logical_id": "lower-layer",
+      "stroke": "@lower.stroke",
+      "stroke_width": 0.75
+    },
+    {
+      "id": "upper-layer-front",
+      "type": "polygon",
+      "points": [
+        [
+          43,
+          278
+        ],
+        [
+          300,
+          278
+        ],
+        [
+          300,
+          291
+        ],
+        [
+          43,
+          291
+        ]
+      ],
+      "fill": "@upper.fill",
+      "object_part": "decoration",
+      "entity": "layers",
+      "role": "upper",
+      "logical_id": "upper-layer",
+      "stroke": "@upper.stroke",
+      "stroke_width": 0.75
+    },
+    {
+      "id": "upper-layer-side",
+      "type": "polygon",
+      "points": [
+        [
+          300,
+          278
+        ],
+        [
+          367,
+          203
+        ],
+        [
+          367,
+          216
+        ],
+        [
+          300,
+          291
+        ]
+      ],
+      "fill": "@upper.shadow",
+      "object_part": "decoration",
+      "entity": "layers",
+      "role": "upper",
+      "logical_id": "upper-layer",
+      "stroke": "@upper.stroke",
+      "stroke_width": 0.75
+    },
+    {
+      "id": "upper-layer-top",
+      "type": "polygon",
+      "points": [
+        [
+          43,
+          278
+        ],
+        [
+          300,
+          278
+        ],
+        [
+          367,
+          203
+        ],
+        [
+          110,
+          203
+        ]
+      ],
+      "fill": "@upper.highlight",
+      "object_part": "primary",
+      "entity": "layers",
+      "role": "upper",
+      "logical_id": "upper-layer",
+      "stroke": "@upper.stroke",
+      "stroke_width": 0.75
+    },
+    {
+      "id": "P1-contact",
+      "type": "ellipse",
+      "x": 111,
+      "y": 214,
+      "rx": 20.009999999999998,
+      "ry": 3.335,
+      "fill": "#3D4955",
+      "opacity": 0.19,
+      "entity": "particles",
+      "logical_id": "P1",
+      "object_part": "decoration",
+      "decorative_depth": true
+    },
+    {
+      "id": "P1-shell",
+      "type": "circle",
+      "role": "coating",
+      "object_part": "primary",
+      "entity": "particles",
+      "logical_id": "P1",
+      "x": 109,
+      "y": 186,
+      "r": 29,
+      "fill": "@coating.base",
+      "stroke": "@coating.stroke",
+      "stroke_width": 0.8,
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 99.72,
+        "cy": 174.4,
+        "r": 46.400000000000006,
+        "stops": [
+          [
+            0,
+            "@coating.highlight"
+          ],
+          [
+            0.3,
+            "@coating.fill"
+          ],
+          [
+            0.63,
+            "@coating.base"
+          ],
+          [
+            1,
+            "@coating.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P2-contact",
+      "type": "ellipse",
+      "x": 184,
+      "y": 214,
+      "rx": 20.009999999999998,
+      "ry": 3.335,
+      "fill": "#3D4955",
+      "opacity": 0.19,
+      "entity": "particles",
+      "logical_id": "P2",
+      "object_part": "decoration",
+      "decorative_depth": true
+    },
+    {
+      "id": "P2-shell",
+      "type": "circle",
+      "role": "coating",
+      "object_part": "primary",
+      "entity": "particles",
+      "logical_id": "P2",
+      "x": 182,
+      "y": 186,
+      "r": 29,
+      "fill": "@coating.base",
+      "stroke": "@coating.stroke",
+      "stroke_width": 0.8,
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 172.72,
+        "cy": 174.4,
+        "r": 46.400000000000006,
+        "stops": [
+          [
+            0,
+            "@coating.highlight"
+          ],
+          [
+            0.3,
+            "@coating.fill"
+          ],
+          [
+            0.63,
+            "@coating.base"
+          ],
+          [
+            1,
+            "@coating.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P3-contact",
+      "type": "ellipse",
+      "x": 257,
+      "y": 214,
+      "rx": 20.009999999999998,
+      "ry": 3.335,
+      "fill": "#3D4955",
+      "opacity": 0.19,
+      "entity": "particles",
+      "logical_id": "P3",
+      "object_part": "decoration",
+      "decorative_depth": true
+    },
+    {
+      "id": "P3-shell",
+      "type": "circle",
+      "role": "coating",
+      "object_part": "primary",
+      "entity": "particles",
+      "logical_id": "P3",
+      "x": 255,
+      "y": 186,
+      "r": 29,
+      "fill": "@coating.base",
+      "stroke": "@coating.stroke",
+      "stroke_width": 0.8,
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 245.72,
+        "cy": 174.4,
+        "r": 46.400000000000006,
+        "stops": [
+          [
+            0,
+            "@coating.highlight"
+          ],
+          [
+            0.3,
+            "@coating.fill"
+          ],
+          [
+            0.63,
+            "@coating.base"
+          ],
+          [
+            1,
+            "@coating.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P4-contact",
+      "type": "ellipse",
+      "x": 92,
+      "y": 268,
+      "rx": 20.009999999999998,
+      "ry": 3.335,
+      "fill": "#3D4955",
+      "opacity": 0.19,
+      "entity": "particles",
+      "logical_id": "P4",
+      "object_part": "decoration",
+      "decorative_depth": true
+    },
+    {
+      "id": "P4-shell",
+      "type": "circle",
+      "role": "coating",
+      "object_part": "primary",
+      "entity": "particles",
+      "logical_id": "P4",
+      "x": 90,
+      "y": 240,
+      "r": 29,
+      "fill": "@coating.base",
+      "stroke": "@coating.stroke",
+      "stroke_width": 0.8,
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 80.72,
+        "cy": 228.4,
+        "r": 46.400000000000006,
+        "stops": [
+          [
+            0,
+            "@coating.highlight"
+          ],
+          [
+            0.3,
+            "@coating.fill"
+          ],
+          [
+            0.63,
+            "@coating.base"
+          ],
+          [
+            1,
+            "@coating.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P5-contact",
+      "type": "ellipse",
+      "x": 179,
+      "y": 268,
+      "rx": 20.009999999999998,
+      "ry": 3.335,
+      "fill": "#3D4955",
+      "opacity": 0.19,
+      "entity": "particles",
+      "logical_id": "P5",
+      "object_part": "decoration",
+      "decorative_depth": true
+    },
+    {
+      "id": "P5-shell",
+      "type": "circle",
+      "role": "coating",
+      "object_part": "primary",
+      "entity": "particles",
+      "logical_id": "P5",
+      "x": 177,
+      "y": 240,
+      "r": 29,
+      "fill": "@coating.base",
+      "stroke": "@coating.stroke",
+      "stroke_width": 0.8,
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 167.72,
+        "cy": 228.4,
+        "r": 46.400000000000006,
+        "stops": [
+          [
+            0,
+            "@coating.highlight"
+          ],
+          [
+            0.3,
+            "@coating.fill"
+          ],
+          [
+            0.63,
+            "@coating.base"
+          ],
+          [
+            1,
+            "@coating.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P6-contact",
+      "type": "ellipse",
+      "x": 266,
+      "y": 268,
+      "rx": 20.009999999999998,
+      "ry": 3.335,
+      "fill": "#3D4955",
+      "opacity": 0.19,
+      "entity": "particles",
+      "logical_id": "P6",
+      "object_part": "decoration",
+      "decorative_depth": true
+    },
+    {
+      "id": "P6-shell",
+      "type": "circle",
+      "role": "coating",
+      "object_part": "primary",
+      "entity": "particles",
+      "logical_id": "P6",
+      "x": 264,
+      "y": 240,
+      "r": 29,
+      "fill": "@coating.base",
+      "stroke": "@coating.stroke",
+      "stroke_width": 0.8,
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 254.72,
+        "cy": 228.4,
+        "r": 46.400000000000006,
+        "stops": [
+          [
+            0,
+            "@coating.highlight"
+          ],
+          [
+            0.3,
+            "@coating.fill"
+          ],
+          [
+            0.63,
+            "@coating.base"
+          ],
+          [
+            1,
+            "@coating.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P6-label",
+      "type": "text",
+      "text": "P6",
+      "x": 264,
+      "y": 246.7,
+      "size": 19,
+      "align": "center",
+      "fill": "#24323B",
+      "background": "@coating.fill",
+      "entity": "particles",
+      "logical_id": "P6",
+      "object_part": "decoration"
+    },
+    {
+      "id": "P6-detail-shell",
+      "type": "path",
+      "role": "coating",
+      "entity": "particles",
+      "logical_id": "P6",
+      "object_part": "detail",
+      "commands": [
+        [
+          "M",
+          671.1848560440799,
+          74.76529053231194
+        ],
+        [
+          "C",
+          621.0476782495524,
+          66.3512109300186,
+          570.6833129545764,
+          88.40605483023471,
+          542.8642769805327,
+          130.95760674351573
+        ],
+        [
+          "C",
+          515.045241006489,
+          173.50915865679679,
+          515.045241006489,
+          228.49084134320321,
+          542.8642769805327,
+          271.0423932564842
+        ],
+        [
+          "C",
+          570.6833129545763,
+          313.5939451697653,
+          621.0476782495524,
+          335.6487890699814,
+          671.1848560440798,
+          327.23470946768805
+        ],
+        [
+          "C",
+          689.3477507366872,
+          324.1865913151671,
+          705.6074509248249,
+          299.4825540306176,
+          714.3370300807873,
+          261.67182060889354
+        ],
+        [
+          "C",
+          723.0666092367496,
+          223.8610871871695,
+          723.0666092367496,
+          178.1389128128305,
+          714.3370300807873,
+          140.32817939110646
+        ],
+        [
+          "C",
+          705.6074509248249,
+          102.5174459693824,
+          689.3477507366872,
+          77.8134086848329,
+          671.1848560440798,
+          74.76529053231194
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "@coating.base",
+      "stroke": "@coating.stroke",
+      "stroke_width": 0.9,
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 605.2,
+        "cy": 149.8,
+        "r": 211.2,
+        "stops": [
+          [
+            0,
+            "@coating.highlight"
+          ],
+          [
+            0.28,
+            "@coating.fill"
+          ],
+          [
+            0.66,
+            "@coating.base"
+          ],
+          [
+            1,
+            "@coating.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P6-detail-cut-face",
+      "type": "ellipse",
+      "role": "coating",
+      "entity": "particles",
+      "logical_id": "P6",
+      "object_part": "detail",
+      "x": 667.4011095111036,
+      "y": 201,
+      "rx": 53.4831049366554,
+      "ry": 126.55180757302521,
+      "fill": "@coating.fill",
+      "stroke": "@coating.stroke",
+      "stroke_width": 1
+    },
+    {
+      "id": "P6-detail-core",
+      "type": "path",
+      "role": "core",
+      "entity": "particles",
+      "logical_id": "P6",
+      "object_part": "detail",
+      "fill": "@core.base",
+      "stroke": "@core.stroke",
+      "stroke_width": 0.9,
+      "commands": [
+        [
+          "M",
+          671.1848560440799,
+          120.542297606807
+        ],
+        [
+          "C",
+          707.7302882933127,
+          130.16486571700665,
+          733.2,
+          163.20896355855396,
+          733.2,
+          201.0
+        ],
+        [
+          "C",
+          733.2,
+          238.79103644144604,
+          707.7302882933127,
+          271.83513428299335,
+          671.1848560440799,
+          281.457702393193
+        ],
+        [
+          "C",
+          658.1347156385217,
+          284.89385999679575,
+          645.4048079121737,
+          270.3539809996097,
+          638.4239694145484,
+          244.0387880009067
+        ],
+        [
+          "C",
+          631.4431309169231,
+          217.7235950022037,
+          631.4431309169231,
+          184.27640499779625,
+          638.4239694145484,
+          157.96121199909325
+        ],
+        [
+          "C",
+          645.4048079121737,
+          131.6460190003903,
+          658.1347156385217,
+          117.10614000320423,
+          671.1848560440798,
+          120.54229760680701
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill_gradient": {
+        "kind": "radial",
+        "cx": 623.376,
+        "cy": 167.72,
+        "r": 133.12,
+        "stops": [
+          [
+            0,
+            "@core.highlight"
+          ],
+          [
+            0.3,
+            "@core.fill"
+          ],
+          [
+            0.66,
+            "@core.base"
+          ],
+          [
+            1,
+            "@core.shadow"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "same-P6",
+      "type": "line",
+      "points": [
+        [
+          293,
+          240
+        ],
+        [
+          479,
+          240
+        ],
+        [
+          525.4,
+          230.1
+        ]
+      ],
+      "stroke": "#6A7C8B",
+      "stroke_width": 1.5,
+      "dash": [
+        5,
+        4
+      ],
+      "relation": "same-P6"
+    },
+    {
+      "id": "context-name",
+      "type": "text",
+      "text": "Six particles · same P6",
+      "x": 210,
+      "y": 107,
+      "size": 21,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "detail-name",
+      "type": "text",
+      "text": "P6 · local cutaway",
+      "x": 650,
+      "y": 58,
+      "size": 21,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "core-name-leader",
+      "type": "line",
+      "points": [
+        [
+          723,
+          190
+        ],
+        [
+          797,
+          183
+        ]
+      ],
+      "stroke": "#5F7180",
+      "stroke_width": 1
+    },
+    {
+      "id": "core-name",
+      "type": "text",
+      "text": "Core",
+      "x": 810,
+      "y": 190,
+      "size": 19,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "coating-name-leader",
+      "type": "line",
+      "points": [
+        [
+          701.7793866919508,
+          297.94430895797814
+        ],
+        [
+          789,
+          283
+        ]
+      ],
+      "stroke": "#5F7180",
+      "stroke_width": 1
+    },
+    {
+      "id": "coating-name",
+      "type": "text",
+      "text": "Coating",
+      "x": 802,
+      "y": 290,
+      "size": 19,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "upper-name-leader",
+      "type": "line",
+      "points": [
+        [
+          290,
+          285
+        ],
+        [
+          290,
+          319
+        ]
+      ],
+      "stroke": "#5F7180",
+      "stroke_width": 1
+    },
+    {
+      "id": "upper-name",
+      "type": "text",
+      "text": "Upper layer",
+      "x": 294,
+      "y": 341,
+      "size": 19,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "lower-name-leader",
+      "type": "line",
+      "points": [
+        [
+          101,
+          302
+        ],
+        [
+          101,
+          319
+        ]
+      ],
+      "stroke": "#5F7180",
+      "stroke_width": 1
+    },
+    {
+      "id": "lower-name",
+      "type": "text",
+      "text": "Lower layer",
+      "x": 101,
+      "y": 341,
+      "size": 19,
+      "align": "center",
+      "fill": "#24323B"
+    }
+  ],
+  "object_model": {
+    "P1": {
+      "core": "P1.core",
+      "coating": "P1.coating",
+      "overview_state": "intact",
+      "core_visible_in_overview": false
+    },
+    "P2": {
+      "core": "P2.core",
+      "coating": "P2.coating",
+      "overview_state": "intact",
+      "core_visible_in_overview": false
+    },
+    "P3": {
+      "core": "P3.core",
+      "coating": "P3.coating",
+      "overview_state": "intact",
+      "core_visible_in_overview": false
+    },
+    "P4": {
+      "core": "P4.core",
+      "coating": "P4.coating",
+      "overview_state": "intact",
+      "core_visible_in_overview": false
+    },
+    "P5": {
+      "core": "P5.core",
+      "coating": "P5.coating",
+      "overview_state": "intact",
+      "core_visible_in_overview": false
+    },
+    "P6": {
+      "core": "P6.core",
+      "coating": "P6.coating",
+      "overview_state": "intact",
+      "core_visible_in_overview": false
+    }
+  },
+  "count_constraints": [
+    {
+      "name": "six_particles",
+      "expected": 6,
+      "scope": {
+        "entity": "particles"
+      },
+      "expected_logical_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ]
+    },
+    {
+      "name": "two_layers",
+      "expected": 2,
+      "scope": {
+        "entity": "layers"
+      },
+      "expected_logical_ids": [
+        "lower-layer",
+        "upper-layer"
+      ]
+    }
+  ],
+  "component_constraints": [
+    {
+      "id": "lower-layer",
+      "kind": "slab",
+      "logical_id": "lower-layer",
+      "entity": "layers",
+      "primary": "lower-layer-top",
+      "parts": [
+        "lower-layer-front",
+        "lower-layer-side",
+        "lower-layer-top"
+      ],
+      "geometry": {
+        "x": 43,
+        "y": 291,
+        "width": 257,
+        "depth_x": 67,
+        "depth_y": -75,
+        "thickness": 22
+      }
+    },
+    {
+      "id": "upper-layer",
+      "kind": "slab",
+      "logical_id": "upper-layer",
+      "entity": "layers",
+      "primary": "upper-layer-top",
+      "parts": [
+        "upper-layer-front",
+        "upper-layer-side",
+        "upper-layer-top"
+      ],
+      "geometry": {
+        "x": 43,
+        "y": 278,
+        "width": 257,
+        "depth_x": 67,
+        "depth_y": -75,
+        "thickness": 13
+      }
+    },
+    {
+      "id": "P1",
+      "kind": "rounded_coated_particle",
+      "logical_id": "P1",
+      "entity": "particles",
+      "primary": "P1-shell",
+      "parts": [
+        "P1-shell"
+      ],
+      "detail_of": null,
+      "view": "whole",
+      "shell_role": "coating",
+      "core_role": "core",
+      "geometry": {
+        "x": 109,
+        "y": 186,
+        "radius": 29,
+        "core_radius": 18.85,
+        "section_aspect": 0.56
+      },
+      "light_direction": "upper_left",
+      "depth_mode": "D1_vector_2_5d_not_physical_3D"
+    },
+    {
+      "id": "P2",
+      "kind": "rounded_coated_particle",
+      "logical_id": "P2",
+      "entity": "particles",
+      "primary": "P2-shell",
+      "parts": [
+        "P2-shell"
+      ],
+      "detail_of": null,
+      "view": "whole",
+      "shell_role": "coating",
+      "core_role": "core",
+      "geometry": {
+        "x": 182,
+        "y": 186,
+        "radius": 29,
+        "core_radius": 18.85,
+        "section_aspect": 0.56
+      },
+      "light_direction": "upper_left",
+      "depth_mode": "D1_vector_2_5d_not_physical_3D"
+    },
+    {
+      "id": "P3",
+      "kind": "rounded_coated_particle",
+      "logical_id": "P3",
+      "entity": "particles",
+      "primary": "P3-shell",
+      "parts": [
+        "P3-shell"
+      ],
+      "detail_of": null,
+      "view": "whole",
+      "shell_role": "coating",
+      "core_role": "core",
+      "geometry": {
+        "x": 255,
+        "y": 186,
+        "radius": 29,
+        "core_radius": 18.85,
+        "section_aspect": 0.56
+      },
+      "light_direction": "upper_left",
+      "depth_mode": "D1_vector_2_5d_not_physical_3D"
+    },
+    {
+      "id": "P4",
+      "kind": "rounded_coated_particle",
+      "logical_id": "P4",
+      "entity": "particles",
+      "primary": "P4-shell",
+      "parts": [
+        "P4-shell"
+      ],
+      "detail_of": null,
+      "view": "whole",
+      "shell_role": "coating",
+      "core_role": "core",
+      "geometry": {
+        "x": 90,
+        "y": 240,
+        "radius": 29,
+        "core_radius": 18.85,
+        "section_aspect": 0.56
+      },
+      "light_direction": "upper_left",
+      "depth_mode": "D1_vector_2_5d_not_physical_3D"
+    },
+    {
+      "id": "P5",
+      "kind": "rounded_coated_particle",
+      "logical_id": "P5",
+      "entity": "particles",
+      "primary": "P5-shell",
+      "parts": [
+        "P5-shell"
+      ],
+      "detail_of": null,
+      "view": "whole",
+      "shell_role": "coating",
+      "core_role": "core",
+      "geometry": {
+        "x": 177,
+        "y": 240,
+        "radius": 29,
+        "core_radius": 18.85,
+        "section_aspect": 0.56
+      },
+      "light_direction": "upper_left",
+      "depth_mode": "D1_vector_2_5d_not_physical_3D"
+    },
+    {
+      "id": "P6",
+      "kind": "rounded_coated_particle",
+      "logical_id": "P6",
+      "entity": "particles",
+      "primary": "P6-shell",
+      "parts": [
+        "P6-shell"
+      ],
+      "detail_of": null,
+      "view": "whole",
+      "shell_role": "coating",
+      "core_role": "core",
+      "geometry": {
+        "x": 264,
+        "y": 240,
+        "radius": 29,
+        "core_radius": 18.85,
+        "section_aspect": 0.56
+      },
+      "light_direction": "upper_left",
+      "depth_mode": "D1_vector_2_5d_not_physical_3D"
+    },
+    {
+      "id": "P6-detail",
+      "kind": "opened_coating_particle",
+      "view": "coating_cap_removed_core_intact",
+      "logical_id": "P6",
+      "entity": "particles",
+      "primary": "P6-detail-shell",
+      "parts": [
+        "P6-detail-shell",
+        "P6-detail-cut-face",
+        "P6-detail-core"
+      ],
+      "detail_of": "P6",
+      "shell_role": "coating",
+      "core_role": "core",
+      "light_direction": "upper_left",
+      "depth_mode": "D1_analytic_projection_not_physical_3D",
+      "geometry": {
+        "x": 650,
+        "y": 201,
+        "radius": 128,
+        "core_radius": 83.2,
+        "cut_offset": 0.15,
+        "normal_angle_deg": 65,
+        "face_direction": "right"
+      },
+      "core_state": "intact",
+      "coating_state": "illustrative_cap_removed"
+    }
+  ],
+  "occlusion_constraints": [
+    {
+      "back": "lower-layer-top",
+      "front": "upper-layer-top"
+    },
+    {
+      "back": "upper-layer-top",
+      "front": "P1-shell"
+    },
+    {
+      "back": "upper-layer-top",
+      "front": "P2-shell"
+    },
+    {
+      "back": "upper-layer-top",
+      "front": "P3-shell"
+    },
+    {
+      "back": "upper-layer-top",
+      "front": "P4-shell"
+    },
+    {
+      "back": "upper-layer-top",
+      "front": "P5-shell"
+    },
+    {
+      "back": "upper-layer-top",
+      "front": "P6-shell"
+    }
+  ],
+  "caption": "Structural DEMO, not to scale. The large view repeats the front-right P6 from the six-particle overview. Only an illustrative cap of the coating is removed, exposing part of the intact curved core. The flat annular coating rim and the exposed core share the same oblique plane intersection; the core remains uncut and projects in front of that rim. This is editable analytic 2.5D geometry, not physical 3D, a measured fracture or a material-performance claim. The overview retains six intact particles and two contiguous supporting layers.",
+  "alt_text": "Six coated particles on two support layers; the cut repeats the front-right P6. Structural DEMO, not to scale. The large view repeats the front-right P6 from the six-particle overview. Only an illustrative cap of the coating is removed, exposing part of the intact curved core. The flat annular coating rim and the exposed core share the same oblique plane intersection; the core remains uncut and projects in front of that rim. This is editable analytic 2.5D geometry, not physical 3D, a measured fracture or a material-performance claim. The overview retains six intact particles and two contiguous supporting layers."
+}

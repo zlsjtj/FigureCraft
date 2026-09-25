@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "figure_id": "minimal_DEMO",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "DEMO: one object inside a bounded region.",
+  "evidence_status": "DEMO_not_research",
+  "source_refs": ["Original template; replace with authorized scientific sources."],
+  "forbidden_implications": ["No measured size, mechanism or performance implied."],
+  "entities": [
+    {"id": "region", "semantic_role": "boundary", "description": "Containing region"},
+    {"id": "object", "semantic_role": "object", "description": "One contained object"}
+  ],
+  "relations": [{"id": "contains", "from": "region", "to": "object", "kind": "containment", "meaning": "Object is inside the region"}],
+  "exact_labels": ["One object in a region", "DEMO / content and geometry must come from your task"],
+  "locked_values": {"objects": 1, "regions": 1},
+  "count_constraints": [{"name":"objects","expected":1,"item_ids":["object"]}],
+  "reference_palette": "blue_gold_coral",
+  "role_map": {"boundary": {"swatch": "coral_pink"}, "object": {"swatch": "sky_blue"}},
+  "layout": {"archetype": "containment", "reading_order": "title_then_region"},
+  "depth": {"mode": "D0", "affects_quantitative_encoding": false},
+  "edit_scope": {"allowed": ["new_authorized_geometry_and_content"], "protected": ["scientific_evidence_boundaries"]},
+  "publication": {"target_journal": null, "eligibility": "unverified"},
+  "output": {"width_mm": 180, "view_width": 900, "view_height": 400, "font_profile": "generic_readable_draft"},
+  "items": [
+    {"id": "canvas", "type": "rect", "x": 0, "y": 0, "w": 900, "h": 400, "fill": "#FFFFFF"},
+    {"id": "title", "type": "text", "x": 36, "y": 48, "size": 26, "text": "One object in a region", "fill": "#24323B"},
+    {"id": "region", "type": "rect", "x": 210, "y": 110, "w": 480, "h": 190, "fill": "none", "stroke": "@boundary.stroke", "stroke_width": 3, "entity": "region", "relation": "contains"},
+    {"id": "object", "type": "circle", "x": 450, "y": 205, "r": 40, "fill": "@object.fill", "stroke": "@object.stroke", "stroke_width": 2, "entity": "object", "role": "object"},
+    {"id": "footer", "type": "text", "x": 36, "y": 370, "size": 16, "text": "DEMO / content and geometry must come from your task", "fill": "#24323B"}
+  ],
+  "caption": "Original minimal DEMO; not a measured spatial model.",
+  "alt_text": "One circular object inside a rectangular boundary."
+}

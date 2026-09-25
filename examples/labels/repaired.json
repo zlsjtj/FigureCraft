@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "figure_id": "labels_repaired",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "A Chinese-label stress test preserves two near-color roles with redundant symbols.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    "Original teaching specification in this example; no scientific measurements"
+  ],
+  "forbidden_implications": [
+    "No measured performance, transport rate, material effectiveness or journal endorsement"
+  ],
+  "entities": [
+    {
+      "id": "kept",
+      "semantic_role": "round",
+      "description": "Retained old input, circle"
+    },
+    {
+      "id": "updated",
+      "semantic_role": "square",
+      "description": "Updated value, square"
+    }
+  ],
+  "relations": [
+    {
+      "id": "dependency",
+      "from": "kept",
+      "to": "updated",
+      "kind": "dependency",
+      "meaning": "Old input is retained until dependent update completes"
+    }
+  ],
+  "exact_labels": [
+    "长标签与近色对象：保持非颜色线索",
+    "DEMO  /  中文、英文与上下标；字号不随拥挤缩小",
+    "保留旧输入，直到所有依赖它的局\n部更新完成后再执行写回",
+    "新值写回对应位置，同时保留其他\n尚未完成更新所需的数据",
+    "旧输入  x₀, x₁",
+    "新值  y₂  /  V²",
+    "形状 + 文字区分角色；浅色只用于填充，文字保持深色。"
+  ],
+  "locked_values": {},
+  "reference_palette": "aqua_lilac_peach",
+  "role_map": {
+    "round": {
+      "base": "#C4D8EA"
+    },
+    "square": {
+      "base": "#CED6EC"
+    },
+    "neutral": {
+      "base": "#D8DFE3"
+    }
+  },
+  "layout": {
+    "archetype": "spatial_boundary",
+    "reading_order": "left_to_right"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 180,
+    "view_width": 900,
+    "view_height": 470,
+    "font_profile": "generic_readable_draft"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 470,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "长标签与近色对象：保持非颜色线索",
+      "x": 36,
+      "y": 47,
+      "size": 25,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "subtitle",
+      "type": "text",
+      "text": "DEMO  /  中文、英文与上下标；字号不随拥挤缩小",
+      "x": 36,
+      "y": 82,
+      "size": 17,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "kept-symbol",
+      "type": "circle",
+      "x": 170,
+      "y": 190,
+      "r": 45,
+      "fill": "@round.fill",
+      "stroke": "@round.stroke",
+      "stroke_width": 1.5,
+      "role": "round",
+      "entity": "kept"
+    },
+    {
+      "id": "updated-symbol",
+      "type": "rect",
+      "x": 571,
+      "y": 145,
+      "w": 90,
+      "h": 90,
+      "fill": "@square.fill",
+      "stroke": "@square.stroke",
+      "stroke_width": 2,
+      "entity": "updated",
+      "role": "square"
+    },
+    {
+      "id": "dependency-arrow",
+      "type": "line",
+      "points": [
+        [
+          235,
+          190
+        ],
+        [
+          540,
+          190
+        ]
+      ],
+      "stroke": "#24323B",
+      "stroke_width": 1.7,
+      "relation": "dependency"
+    },
+    {
+      "id": "dependency-arrow-head",
+      "type": "polygon",
+      "points": [
+        [
+          540,
+          190
+        ],
+        [
+          530.0,
+          194.5
+        ],
+        [
+          530.0,
+          185.5
+        ]
+      ],
+      "fill": "#24323B",
+      "relation": "dependency"
+    },
+    {
+      "id": "label-left",
+      "type": "text",
+      "text": "保留旧输入，直到所有依赖它的局\n部更新完成后再执行写回",
+      "x": 170,
+      "y": 280,
+      "size": 20,
+      "align": "center",
+      "fill": "#24323B",
+      "max_width": 305,
+      "leading": 29
+    },
+    {
+      "id": "label-right",
+      "type": "text",
+      "text": "新值写回对应位置，同时保留其他\n尚未完成更新所需的数据",
+      "x": 616,
+      "y": 280,
+      "size": 20,
+      "align": "center",
+      "fill": "#24323B",
+      "max_width": 305,
+      "leading": 29
+    },
+    {
+      "id": "math-left",
+      "type": "text",
+      "text": "旧输入  x₀, x₁",
+      "x": 170,
+      "y": 387,
+      "size": 19,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "math-right",
+      "type": "text",
+      "text": "新值  y₂  /  V²",
+      "x": 616,
+      "y": 387,
+      "size": 19,
+      "align": "center",
+      "fill": "#24323B"
+    },
+    {
+      "id": "footer",
+      "type": "text",
+      "text": "形状 + 文字区分角色；浅色只用于填充，文字保持深色。",
+      "x": 36,
+      "y": 441,
+      "size": 17,
+      "align": "left",
+      "fill": "#24323B"
+    }
+  ],
+  "caption": "DEMO only. Repaired version wraps at measured glyph widths without reducing the 20-unit label size. Circle/square and direct labels remain usable in grayscale.",
+  "alt_text": "A Chinese-label stress test preserves two near-color roles with redundant symbols. DEMO only. Repaired version wraps at measured glyph widths without reducing the 20-unit label size. Circle/square and direct labels remain usable in grayscale."
+}

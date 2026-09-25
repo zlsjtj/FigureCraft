@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "figure_id": "semantic_contract_DEMO",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "DEMO: two storage cells and one directed transfer.",
+  "evidence_status": "DEMO_not_research",
+  "source_refs": ["Original validation fixture; no research performance claim."],
+  "forbidden_implications": ["Occupancy is not throughput or speedup."],
+  "entities": [
+    {"id":"source","semantic_role":"storage","description":"One occupied source cell"},
+    {"id":"target","semantic_role":"storage","description":"One empty target cell"}
+  ],
+  "relations": [{"id":"transfer","from":"source","to":"target","kind":"flow","meaning":"Possible transfer toward the target; no state change is claimed in this snapshot.",
+    "geometry":{"item_id":"transfer-line","from":[300,165],"to":[480,165],"tolerance":0.1,
+      "arrow":{"item_id":"transfer-head","tip":[480,165],"base":[463,165]}}}],
+  "exact_labels": ["Source: occupied", "Target: empty", "DEMO / no measured performance"],
+  "locked_values": {"cells":2,"occupied":1},
+  "count_constraints": [{"name":"storage cells","expected":2,"scope":{"id_prefix":"cell-"},
+    "expected_logical_ids":["source-cell","target-cell"],
+    "expected_states":{"source-cell":true,"target-cell":false},"state_field":"occupied",
+    "state_styles":[{"state":true,"style":{"fill":"@storage.fill"}},{"state":false,"style":{"fill":"#FFFFFF"}}]}],
+  "reference_palette":"blue_gold_coral",
+  "role_map":{"storage":{"swatch":"sky_blue"}},
+  "layout":{"archetype":"objects_and_directed_relation","reading_order":"left_to_right"},
+  "depth":{"mode":"D1_shallow_2_5d","affects_quantitative_encoding":false},
+  "edit_scope":{"allowed":["authorized_content_and_geometry"],"protected":["evidence_boundaries"]},
+  "output":{"width_mm":180,"placement_width_mm":160,"view_width":800,"view_height":300},
+  "items":[
+    {"id":"canvas","type":"rect","x":0,"y":0,"w":800,"h":300,"fill":"#FFFFFF"},
+    {"id":"cell-source-side","type":"polygon","points":[[290,118],[300,110],[300,210],[290,218]],"fill":"@storage.shadow","entity":"source","logical_id":"source-cell","object_part":"decoration"},
+    {"id":"cell-source","type":"rect","x":190,"y":118,"w":100,"h":100,"fill":"@storage.fill","stroke":"@storage.stroke","stroke_width":2,"entity":"source","logical_id":"source-cell","object_part":"primary","occupied":true},
+    {"id":"cell-target","type":"rect","x":490,"y":118,"w":100,"h":100,"fill":"#FFFFFF","stroke":"@storage.stroke","stroke_width":2,"entity":"target","logical_id":"target-cell","object_part":"primary","occupied":false},
+    {"id":"transfer-line","type":"line","points":[[300,165],[480,165]],"fill":"none","stroke":"#24323B","stroke_width":3,"relation":"transfer"},
+    {"id":"transfer-head","type":"polygon","points":[[480,165],[463,157],[463,173]],"fill":"#24323B","relation":"transfer"},
+    {"id":"source-label","type":"text","x":240,"y":75,"size":20,"align":"center","text":"Source: occupied","fill":"#24323B"},
+    {"id":"target-label","type":"text","x":540,"y":75,"size":20,"align":"center","text":"Target: empty","fill":"#24323B"},
+    {"id":"footer","type":"text","x":400,"y":270,"size":16,"align":"center","text":"DEMO / no measured performance","fill":"#24323B"}
+  ],
+  "caption":"Original DEMO: two logical cells, one occupied and one empty. The side face is decorative and represents the source cell, not a third cell. The arrow expresses a permitted direction, not a measured transfer.",
+  "alt_text":"An occupied blue source cell points right toward one empty outlined cell."
+}
