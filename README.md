@@ -2,7 +2,7 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑 SVG、矢量 PDF、PNG 和检查记录。
 
-当前版本 **1.7.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
+当前版本 **1.8.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
 ## 示例
 
@@ -34,8 +34,8 @@ git clone https://github.com/zlsjtj/FigureCraft.git (Join-Path $skillRoot 'scien
 
 ```powershell
 python -m pip install -r requirements-core.txt
-$figureFont = 'C:WindowsFontsarial.ttf'
-$figureCjk = 'C:WindowsFontsmsyh.ttc'
+$figureFont = (Join-Path $env:WINDIR 'Fonts/arial.ttf')
+$figureCjk = (Join-Path $env:WINDIR 'Fonts/msyh.ttc')
 $figureRaster = (Get-Command pdftoppm).Source
 python scripts/probe_runtime.py --font $figureFont --cjk-font $figureCjk --pdftoppm $figureRaster --out runtime.json
 python examples/material-polished-v17/build_material_v17.py --out material-source
@@ -47,13 +47,16 @@ python scripts/check_figure.py material-A --placement-width-mm 160
 
 渲染器接收场景 JSON，不直接从自然语言推断科学关系。新图先读材料、确定结构，再编写场景或沿用已有绘图代码。接口见[场景规格](references/figure-spec.md)和[对象组件](references/scene-components.md)。
 
+已有 SVG 可直接使用 `audit_svg_labels.py`，不必改成场景 JSON。它检查实际字号、有限直线穿字和声明的标签区域；CSS、曲线等未覆盖内容仍待审，见[使用方法](references/existing-svg-review.md)。
+
 ## 检查与复用
 
 ```powershell
-python tests/run_all_tests.py --out test-output --font C:WindowsFontssegoeui.ttf --cjk-font $figureCjk --pdftoppm $figureRaster
+python tests/run_all_tests.py --out test-output/core --font (Join-Path $env:WINDIR 'Fonts/segoeui.ttf') --cjk-font $figureCjk --pdftoppm $figureRaster
+python tests/run_svg_label_tests.py --out test-output/svg-labels --font $figureFont --bold-font (Join-Path $env:WINDIR 'Fonts/arialbd.ttf')
 ```
 
-八组回归共 133 项，覆盖数量、状态、连线方向、尺寸、剖面、开口、只换色范围以及失败状态传播。结果见[验收记录](provenance/acceptance-v1.7.md)。
+原八组回归共 133 项，新增已有 SVG 标签检查 17 项，共 150 项，覆盖数量、状态、连线方向、尺寸、剖面、开口、只换色范围以及失败状态传播。结果见[验收记录](provenance/acceptance-v1.8.md)。
 
 技术检查、科学内容审阅和视觉审阅分别报告。`status` 是旧技术状态字段；判断完整状态应看 `overall_status`。缺少科学或视觉审阅时保留 `REVIEW_REQUIRED`，脚本不会替作者确认图片。
 

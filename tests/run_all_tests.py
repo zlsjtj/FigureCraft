@@ -1,6 +1,6 @@
 """Run the eight real suites in a new directory with explicit local runtimes."""
 from pathlib import Path
-import argparse,hashlib,json,subprocess,sys
+import argparse,hashlib,json,subprocess,sys,re
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True)
@@ -25,7 +25,7 @@ def main():
         rows.append(row)
     after={str(f.relative_to(root)):sha(f) for folder in ('scripts','tests') for f in (root/folder).glob('*.py')}
     record={'status':'PASS' if all(r['exit_code']==0 for r in rows) and before==after else 'FAIL',
-            'total':sum(r['count'] for r in rows),'version':'1.7.0','source_unchanged':before==after,
+            'total':sum(r['count'] for r in rows),'version':re.search(r'version:\s*"([^"]+)"',(root/'SKILL.md').read_text(encoding='utf-8')).group(1),'source_unchanged':before==after,
             'source_hashes':before,'suites':rows,'effect_review':'NOT_TESTED_BY_SUITES','author_acceptance':'PENDING'}
     (a.out/'test-summary.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
     print(json.dumps({'status':record['status'],'total':record['total'],'source_unchanged':record['source_unchanged']}));return int(record['status']!='PASS')

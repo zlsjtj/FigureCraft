@@ -1,0 +1,166 @@
+{
+  "version": "1.8.0",
+  "status": "PASS",
+  "total": 150,
+  "suites": [
+    {
+      "suite": "core",
+      "count": 27,
+      "status": "PASS",
+      "receipt_sha256": "7ea437989d2ae3896128fffbf4c08e22eb9e490efb9e069b7838387f56a00f8a"
+    },
+    {
+      "suite": "semantic",
+      "count": 20,
+      "status": "PASS",
+      "receipt_sha256": "4883534f968e12820904cc639f825aa34e2cb6ec28f2390c8795d79d3d23bfce"
+    },
+    {
+      "suite": "comparison",
+      "count": 18,
+      "status": "PASS",
+      "receipt_sha256": "1704b785777a9807088be28f45cb5320c2c9fbaae184644b6c615d22e6614353"
+    },
+    {
+      "suite": "scene-api",
+      "count": 2,
+      "status": "PASS",
+      "receipt_sha256": "99ac7f41212170af4a0c0e1bb52585b65acbf8c54900644a93df02473752784e"
+    },
+    {
+      "suite": "components",
+      "count": 16,
+      "status": "PASS",
+      "receipt_sha256": "98d4ccc6cd7bbd4e843562b21cf966e99ffbfa9e40144417107638761b7141bd"
+    },
+    {
+      "suite": "surfaces",
+      "count": 19,
+      "status": "PASS",
+      "receipt_sha256": "f4279fd6e7499efe535200217ceea6a4df793026e698a243db6c26e713a4b342"
+    },
+    {
+      "suite": "slices",
+      "count": 20,
+      "status": "PASS",
+      "receipt_sha256": "986cd56ba85b582aa6a9a803304c4586cb733d69fbec9aac30c7fd6720732653"
+    },
+    {
+      "suite": "openings",
+      "count": 11,
+      "status": "PASS",
+      "receipt_sha256": "533c3653a98319e3f291cd81400988ad22b81882372ac2c7c17421e04c834ef7"
+    },
+    {
+      "suite": "existing-svg",
+      "count": 17,
+      "status": "PASS",
+      "tests": [
+        {
+          "name": "clear",
+          "status": "PASS"
+        },
+        {
+          "name": "untyped-guide",
+          "status": "PASS"
+        },
+        {
+          "name": "dashed-guide",
+          "status": "PASS"
+        },
+        {
+          "name": "guide-gap",
+          "status": "PASS"
+        },
+        {
+          "name": "placement-shrink",
+          "status": "PASS"
+        },
+        {
+          "name": "transformed",
+          "status": "PASS"
+        },
+        {
+          "name": "css",
+          "status": "PASS"
+        },
+        {
+          "name": "curved-guide",
+          "status": "PASS"
+        },
+        {
+          "name": "missing-font",
+          "status": "PASS"
+        },
+        {
+          "name": "outside-canvas",
+          "status": "PASS"
+        },
+        {
+          "name": "wrong-owner-region",
+          "status": "PASS"
+        },
+        {
+          "name": "correct-owner-region",
+          "status": "PASS"
+        },
+        {
+          "name": "nested-inheritance",
+          "status": "PASS"
+        },
+        {
+          "name": "text-overlap",
+          "status": "PASS"
+        },
+        {
+          "name": "no-text",
+          "status": "PASS"
+        },
+        {
+          "name": "science-never-auto-approved",
+          "status": "PASS"
+        },
+        {
+          "name": "prefixed-root-needs-render-review",
+          "status": "PASS"
+        }
+      ],
+      "receipt_sha256": "cabfa4b30b82a56ce9ee06a0203756035f94bcf6b6d8dc08dd38164a368f4527"
+    }
+  ],
+  "python": "3.12.14",
+  "dependencies": {
+    "lxml": "6.1.1",
+    "python-docx": "1.2.0",
+    "Pillow": "12.3.0",
+    "reportlab": "4.4.9",
+    "pypdf": "6.7.5",
+    "numpy": "2.3.5"
+  },
+  "source_hashes": {
+    "scripts/audit_svg_labels.py": "e9af9e52be265bdf41c414f96d3b3ebe69fc27483426fa64be3ea7f0b8a16356",
+    "scripts/check_figure.py": "62d39eab63fd727d49f6a6c7c771af8e2ebb640ad96ead6c4a66188070eb7838",
+    "scripts/compare_designs.py": "284d07f281c91057a67f3990c95ead46e9dd0830dfdd11faded44887b531ddee",
+    "scripts/figure_core.py": "df88d4b4ef3f556429f9306bb94b2d95a63b09adc9f4852bc33f113ee9c91c0c",
+    "scripts/make_examples.py": "8824b072acb78055de0691cc7bdaa33ba089358de1a1a3941d6ba5d6822e9c64",
+    "scripts/palette_tools.py": "959ddc26b6aad91c91055da4bbe7b0dad353ef98ae83c9b1f4a5594894ce8e5a",
+    "scripts/probe_runtime.py": "98572dcf1612ccba7b9125ed1db6225e0c7355019cfdd21b85df50b217b66f88",
+    "scripts/render_figure.py": "66f27b6868ccaef3e07e4ae4db4e3572d2476e3bad8b46be903501d1ac079426",
+    "scripts/scene_components.py": "8e25fc10a33ea422472c96497b30691fe4a5d5dce2e2a87d54f1ff65acf16f5d",
+    "scripts/semantic_audit.py": "afa83de587cbee148acb647b3430f823089668d5ed75a1a8681d05d7e1287ab1",
+    "tests/run_acceptance.py": "345b6bd0b0680d6c242a5b1fe759a55d748c40211f170526b2756481025b6963",
+    "tests/run_all_tests.py": "1474417286166fae7b86adfe50cd78129179ab71c437dddecbfa561860f05a67",
+    "tests/run_comparison_tests.py": "677c27908dbf843d900cd3c637650b54b4283918bff98723e3375380ba584dc2",
+    "tests/run_component_tests.py": "472cfddb7e9dd059b7ba6dcae84d1e27061440767e2c79a972d3cf457eea8edf",
+    "tests/run_opening_tests.py": "e18ab445a3293c1aaa29411c51142438a30bdae2ac439da21d41d373f728971d",
+    "tests/run_scene_api_tests.py": "82af7b21c8e9ccee79dd6b4c10e1129f9b4b7b2ceb0d96432f230dc896bea718",
+    "tests/run_semantic_acceptance.py": "1811e34ae39a67a0e465933bb2a3294be9cd288aae927dda65d04cbccec34f5c",
+    "tests/run_slice_tests.py": "f800b67e32d7f55fe2a1143b3a030a5a7e9ef45cc949493490c1843672e1e8f8",
+    "tests/run_surface_tests.py": "5af8dcda83e3951d1ccc2cc6386ac4b4a93b9c6da9a427daa074cc3bdad9ea54",
+    "tests/run_svg_label_tests.py": "6ef1a93b7e65150d25df9f7f9685b6cf75a16c158460328e5e4a4500d626bcbb"
+  },
+  "limits": [
+    "Automated regression only; actual artifact review is recorded separately.",
+    "No human acceptance, native Word or physical print is claimed."
+  ]
+}

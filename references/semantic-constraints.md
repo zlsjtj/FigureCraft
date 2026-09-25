@@ -52,7 +52,7 @@
 
 `viewBox字号 × placement_width_mm × 72 / 25.4 / view_width`
 
-默认8pt下限仅是工具检查策略。SegQ本次实际图宽约160mm；其他文稿读取它的真实drawing尺寸，不套用此数值。未提供入稿尺寸时此项为 REVIEW_REQUIRED。提供了尺寸也必须查看最终Word/PDF页，检查裁剪、缩放和实际可读性。
+默认8pt下限仅是工具检查策略。实际图宽读取当前文稿的 drawing 尺寸，不套用示例的160mm。未提供入稿尺寸时此项为 REVIEW_REQUIRED。提供了尺寸也必须查看最终Word/PDF页，检查裁剪、缩放和实际可读性。
 
 ## 外部SVG与其他后端
 
