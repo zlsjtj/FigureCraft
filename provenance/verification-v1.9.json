@@ -1,0 +1,59 @@
+{
+  "version": "1.9.0",
+  "date": "2026-09-25",
+  "technical_regression": {
+    "status": "PASS",
+    "count": 155,
+    "tested_code_matches_release": true,
+    "tested_code_sha256": {
+      "scripts/audit_svg_labels.py": "e9af9e52be265bdf41c414f96d3b3ebe69fc27483426fa64be3ea7f0b8a16356",
+      "scripts/check_figure.py": "62d39eab63fd727d49f6a6c7c771af8e2ebb640ad96ead6c4a66188070eb7838",
+      "scripts/compare_designs.py": "f8bcc1f79c77fec25f9936bc2bcc8f69a607417203587c88ad3213da2c65bc14",
+      "scripts/figure_core.py": "df88d4b4ef3f556429f9306bb94b2d95a63b09adc9f4852bc33f113ee9c91c0c",
+      "scripts/make_examples.py": "8824b072acb78055de0691cc7bdaa33ba089358de1a1a3941d6ba5d6822e9c64",
+      "scripts/palette_tools.py": "959ddc26b6aad91c91055da4bbe7b0dad353ef98ae83c9b1f4a5594894ce8e5a",
+      "scripts/probe_runtime.py": "98572dcf1612ccba7b9125ed1db6225e0c7355019cfdd21b85df50b217b66f88",
+      "scripts/render_figure.py": "66f27b6868ccaef3e07e4ae4db4e3572d2476e3bad8b46be903501d1ac079426",
+      "scripts/scene_components.py": "8e25fc10a33ea422472c96497b30691fe4a5d5dce2e2a87d54f1ff65acf16f5d",
+      "scripts/semantic_audit.py": "afa83de587cbee148acb647b3430f823089668d5ed75a1a8681d05d7e1287ab1",
+      "tests/run_acceptance.py": "345b6bd0b0680d6c242a5b1fe759a55d748c40211f170526b2756481025b6963",
+      "tests/run_all_tests.py": "1474417286166fae7b86adfe50cd78129179ab71c437dddecbfa561860f05a67",
+      "tests/run_comparison_tests.py": "74f6a690c560a636a2a13065ce7e944fb56545b45ef24aab627851198a79cadb",
+      "tests/run_component_tests.py": "472cfddb7e9dd059b7ba6dcae84d1e27061440767e2c79a972d3cf457eea8edf",
+      "tests/run_opening_tests.py": "e18ab445a3293c1aaa29411c51142438a30bdae2ac439da21d41d373f728971d",
+      "tests/run_scene_api_tests.py": "82af7b21c8e9ccee79dd6b4c10e1129f9b4b7b2ceb0d96432f230dc896bea718",
+      "tests/run_semantic_acceptance.py": "1811e34ae39a67a0e465933bb2a3294be9cd288aae927dda65d04cbccec34f5c",
+      "tests/run_slice_tests.py": "f800b67e32d7f55fe2a1143b3a030a5a7e9ef45cc949493490c1843672e1e8f8",
+      "tests/run_surface_tests.py": "5af8dcda83e3951d1ccc2cc6386ac4b4a93b9c6da9a427daa074cc3bdad9ea54",
+      "tests/run_svg_label_tests.py": "6ef1a93b7e65150d25df9f7f9685b6cf75a16c158460328e5e4a4500d626bcbb"
+    }
+  },
+  "official_skill_validator": {
+    "status": "PASS",
+    "stdout": "Skill is valid!",
+    "validator_sha256": "6068513d924ed3559e186dfcdead7439129828dcf402167fd925c06dffbf2806"
+  },
+  "relative_links": {
+    "status": "PASS",
+    "broken": []
+  },
+  "python_syntax": {
+    "status": "PASS",
+    "files": 23
+  },
+  "effect_evidence": "Actual before/after manuscript pilot and one independent-context original optical DEMO, reviewed by agents; see acceptance record.",
+  "author_acceptance": "PENDING",
+  "not_run": [
+    "human study",
+    "native Word UI",
+    "physical print",
+    "new machine",
+    "complete CVD coverage"
+  ],
+  "portable_example": {
+    "status": "PASS",
+    "core_artifacts_identical": 9,
+    "nonempty_output_refused": true,
+    "requires_papercraft_to_rebuild": false
+  }
+}

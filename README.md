@@ -2,9 +2,19 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑 SVG、矢量 PDF、PNG 和检查记录。
 
-当前版本 **1.8.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
+当前版本 **1.9.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
-## 示例
+## 本版的实际变化
+
+明确区分修复与重设计：要求明显升级时，先生成能解释不同关系的候选，按同一入稿尺寸看作品，再判断保留或重画。保留事实与有效解释，不默认冻结旧布局。参考图主要学习共同对象、边界、局部对应和阅读顺序。
+
+新增 [双通道光学读出示例](examples/optical-readout/README.md)。一套装置连接两条光路与同一快门的状态，避免把所有对象画成相同流程卡片；源文件、两种文字叙事和可搬移的重建命令一并提供。
+
+![双通道读出 DEMO](examples/optical-readout/figure.png)
+
+`compare_designs.py` 新增 `--placement-width-mm`，让对照页固定相同宽度并报告有边界的字号换算。浏览器的 CSS 毫米不是校准过的实体尺规，最终仍需检查论文 PDF。
+
+## 其他示例
 
 以下是原创结构示意，包含六个包覆颗粒、两层支撑和同一颗粒的局部视图。尺寸为示意值，不表示实验结果。
 
@@ -56,7 +66,7 @@ python tests/run_all_tests.py --out test-output/core --font (Join-Path $env:WIND
 python tests/run_svg_label_tests.py --out test-output/svg-labels --font $figureFont --bold-font (Join-Path $env:WINDIR 'Fonts/arialbd.ttf')
 ```
 
-原八组回归共 133 项，新增已有 SVG 标签检查 17 项，共 150 项，覆盖数量、状态、连线方向、尺寸、剖面、开口、只换色范围以及失败状态传播。结果见[验收记录](provenance/acceptance-v1.8.md)。
+八组回归共 138 项，加上已有 SVG 标签检查 17 项，共 155 项，覆盖数量、状态、连线方向、尺寸、剖面、开口、只换色范围以及失败状态传播。结果见[验收记录](provenance/acceptance-v1.9.md)。
 
 技术检查、科学内容审阅和视觉审阅分别报告。`status` 是旧技术状态字段；判断完整状态应看 `overall_status`。缺少科学或视觉审阅时保留 `REVIEW_REQUIRED`，脚本不会替作者确认图片。
 

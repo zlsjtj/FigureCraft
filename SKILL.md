@@ -2,7 +2,7 @@
 name: scientific-figure-studio
 description: FigureCraft 根据科学对象、关系和数据制作科研图与语义配色。适用于机制、硬件、分层材料、定量图及整套配图，交付可编辑图源和分别记录的技术、科学与视觉审阅，保留数值、拓扑和修改范围。
 metadata:
-  version: "1.8.0"
+  version: "1.9.0"
 ---
 
 # FigureCraft｜科研绘图与配色
@@ -28,7 +28,7 @@ metadata:
 
 ## 确定修改深度
 
-区分修复、注释调整、布局重设计和表现重设计。科学内容正确的旧图仍可能存在视觉问题。重大重设计且构图未定时，按[构图探索](references/design-exploration.md)制作实质不同方案，同尺寸比较后选择。只换色、小修或用户已选定布局不强制多方案。
+区分修复与解释、审美升级。用户要求明显质量增量时，先用[构图探索](references/design-exploration.md)为一张高影响图制作有实质差异的候选，观察后再决定保留或重画。旧图科学正确、工具链可复用或第一眼方向明确，都不自动免除这次作品比较。只换色、明确局部修复及用户锁定构图时遵守原范围。
 
 ## 实施与检查
 
@@ -60,4 +60,4 @@ python vendor/nature-figure/audit_pdf_text.py NEW_OUTPUT/figure.pdf --min-pt 8 -
 
 交接图要回答的问题、对象关系、锁定数值、源文件与哈希、图注、正文引用及入稿尺寸。已清楚的图可以保留，但要写理由。论文任务须查看确切图件嵌入最终 Word/PDF 后的页面，文档编辑者负责图注、引用和分页；独立图完成与入稿完成分开记录。
 
-保留原稿，所有输出使用新路径。运行说明见 [README](README.md)，当前验收见[记录](provenance/acceptance-v1.8.md)，来源与许可见[说明](provenance/upstream-sources.md)。`status` 是兼容技术字段，科学或视觉审阅待定时 `overall_status` 不能为 PASS。审阅绑定实际文件哈希；未运行的路径明确记为 NOT_RUN，不承诺期刊接受。
+保留原稿，所有输出使用新路径。运行说明见 [README](README.md)，当前验收见[记录](provenance/acceptance-v1.9.md)，来源与许可见[说明](provenance/upstream-sources.md)。`status` 是兼容技术字段，科学或视觉审阅待定时 `overall_status` 不能为 PASS。审阅绑定实际文件哈希；未运行的路径明确记为 NOT_RUN，不承诺期刊接受。

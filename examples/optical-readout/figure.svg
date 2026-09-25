@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="90mm" viewBox="0 0 160 90" role="img">
+  <title>Dual-channel readout teaching DEMO</title>
+  <desc>A single source S sends light rightwards through open shutter H to a tilted splitter B. One arrow turns upwards to reference detector R. A second continues through sample P to transmission detector T. Below this single layout, two horizontal acquisition rows show the same shutter closed with R0, T0 and open with R1, T1. The rows converge on a diamond testing ΔR &gt; 0, where ΔR = R1 − R0. Yes leads to q = (T1 − T0)/ΔR; No leads to INVALID. Each instrument component appears once in the main layout; only H is repeated in explicitly identified state views.</desc>
+  <rect x="0" y="0" width="160" height="90" fill="#FFFFFF" stroke="none" stroke-width="0.3" id="figure-1" />
+  <text x="5" y="7" font-family="Arial" font-size="3.5983333333333327" font-weight="bold" fill="#20353C" text-anchor="start" id="figure-2">One optical setup · H open</text>
+  <text x="155" y="7" font-family="Arial" font-size="3.2102777777777773" font-weight="bold" fill="#53676D" text-anchor="end" id="figure-3">DEMO</text>
+  <line x1="23" y1="31" x2="69" y2="31" stroke="#FBEDCB" fill="none" stroke-width="3.2" id="figure-4" data-role="common-route-highlight" />
+  <line x1="69" y1="31" x2="69" y2="19" stroke="#DCE9F7" fill="none" stroke-width="3.2" id="figure-5" data-role="reference-route-highlight" />
+  <line x1="69" y1="31" x2="138" y2="31" stroke="#DAEFEC" fill="none" stroke-width="3.2" id="figure-6" data-role="measurement-route-highlight" />
+  <line x1="23" y1="31" x2="38.5" y2="31" stroke="#AC7418" fill="none" stroke-width="0.65" id="figure-7" data-relation="S-H" data-part="shaft" />
+  <polygon points="38.5,31 36.7,30.25 36.7,31.75" fill="#AC7418" stroke="none" stroke-width="0.3" id="figure-8" data-relation="S-H" data-part="arrowhead" />
+  <line x1="41.5" y1="31" x2="69" y2="31" stroke="#AC7418" fill="none" stroke-width="0.65" id="figure-9" data-relation="H-B" data-part="shaft" />
+  <polygon points="69,31 67.2,30.25 67.2,31.75" fill="#AC7418" stroke="none" stroke-width="0.3" id="figure-10" data-relation="H-B" data-part="arrowhead" />
+  <line x1="69" y1="31" x2="69" y2="19" stroke="#326AAB" fill="none" stroke-width="0.65" id="figure-11" data-relation="B-R" data-part="shaft" />
+  <polygon points="69,19 68.25,20.8 69.75,20.8" fill="#326AAB" stroke="none" stroke-width="0.3" id="figure-12" data-relation="B-R" data-part="arrowhead" />
+  <line x1="69" y1="31" x2="104" y2="31" stroke="#167D79" fill="none" stroke-width="0.65" id="figure-13" data-relation="B-P" data-part="shaft" />
+  <polygon points="104,31 102.2,30.25 102.2,31.75" fill="#167D79" stroke="none" stroke-width="0.3" id="figure-14" data-relation="B-P" data-part="arrowhead" />
+  <line x1="107" y1="31" x2="138" y2="31" stroke="#167D79" fill="none" stroke-width="0.65" id="figure-15" data-relation="P-T" data-part="shaft" />
+  <polygon points="138,31 136.2,30.25 136.2,31.75" fill="#167D79" stroke="none" stroke-width="0.3" id="figure-16" data-relation="P-T" data-part="arrowhead" />
+  <polygon points="10,26 21,26 23,28 12,28" fill="#F7F9FA" stroke="#53676D" stroke-width="0.25" id="figure-17" data-logical-id="S" data-object-part="decoration" data-entity="optical-component" />
+  <rect x="10" y="28" width="12" height="7" fill="#E6ECEE" stroke="#53676D" stroke-width="0.35" id="figure-18" data-logical-id="S" data-object-part="primary" data-entity="optical-component" />
+  <polygon points="10,35 22,35 23,33 12,33" fill="#9DADB2" stroke="none" stroke-width="0.3" id="figure-19" data-logical-id="S" data-object-part="decoration" data-entity="optical-component" />
+  <ellipse cx="22" cy="31" rx="1.8" ry="4" fill="#F7F9FA" stroke="#53676D" stroke-width="0.35" id="figure-20" data-logical-id="S" data-object-part="decoration" data-entity="optical-component" />
+  <ellipse cx="22" cy="31" rx="0.75" ry="2" fill="#AC7418" stroke="none" stroke-width="0.3" id="figure-21" data-logical-id="S" data-object-part="decoration" data-entity="optical-component" />
+  <rect x="38.6" y="24.3" width="2.8" height="3.8" fill="#E6ECEE" stroke="#53676D" stroke-width="0.35" id="figure-22" data-logical-id="H" data-object-part="primary" data-entity="optical-component" data-state="open" />
+  <rect x="38.6" y="33.7" width="2.8" height="4" fill="#E6ECEE" stroke="#53676D" stroke-width="0.35" id="figure-23" data-logical-id="H" data-object-part="decoration" data-entity="optical-component" />
+  <rect x="40.2" y="21.7" width="1.1" height="5.4" fill="#9DADB2" stroke="#53676D" stroke-width="0.25" id="figure-24" data-logical-id="H" data-object-part="decoration" data-entity="optical-component" />
+  <line x1="38.5" y1="31" x2="41.5" y2="31" stroke="#AC7418" fill="none" stroke-width="0.65" id="figure-25" data-role="open-shutter-through-path" />
+  <polygon points="63.9,35.7 73.9,25.7 74.7,26.5 64.7,36.5" fill="#DCE9F7" stroke="#326AAB" stroke-width="0.4" id="figure-26" data-logical-id="B" data-object-part="primary" data-entity="optical-component" />
+  <line x1="64.7" y1="36.5" x2="74.7" y2="26.5" stroke="#326AAB" fill="none" stroke-width="0.6" id="figure-27" data-logical-id="B" data-object-part="decoration" data-entity="optical-component" />
+  <polygon points="103.5,25 107,26 107,38 103.5,37" fill="#C4E4DB" stroke="#167D79" stroke-width="0.35" id="figure-28" data-logical-id="P" data-object-part="primary" data-entity="optical-component" />
+  <polygon points="107,26 108.6,24.6 108.6,36.6 107,38" fill="#86BFB0" stroke="#167D79" stroke-width="0.25" id="figure-29" data-logical-id="P" data-object-part="decoration" data-entity="optical-component" />
+  <polygon points="103.5,25 105.1,23.6 108.6,24.6 107,26" fill="#F7F9FA" stroke="#167D79" stroke-width="0.25" id="figure-30" data-logical-id="P" data-object-part="decoration" data-entity="optical-component" />
+  <rect x="64" y="11" width="10" height="7" fill="#E6ECEE" stroke="#53676D" stroke-width="0.35" id="figure-31" data-logical-id="R" data-object-part="primary" data-entity="optical-component" />
+  <polygon points="64,11 66,9.8 76,9.8 74,11" fill="#F7F9FA" stroke="#53676D" stroke-width="0.25" id="figure-32" data-logical-id="R" data-object-part="decoration" data-entity="optical-component" />
+  <polygon points="74,11 76,9.8 76,16.8 74,18" fill="#9DADB2" stroke="#53676D" stroke-width="0.25" id="figure-33" data-logical-id="R" data-object-part="decoration" data-entity="optical-component" />
+  <rect x="65" y="18" width="8" height="1.1" fill="#326AAB" stroke="none" stroke-width="0.3" id="figure-34" data-logical-id="R" data-object-part="decoration" data-entity="optical-component" />
+  <text x="80" y="15.7" font-family="Arial" font-size="3.2808333333333333" font-weight="normal" fill="#20353C" text-anchor="start" id="figure-35">Reference R</text>
+  <rect x="138" y="26" width="10" height="10" fill="#E6ECEE" stroke="#53676D" stroke-width="0.35" id="figure-36" data-logical-id="T" data-object-part="primary" data-entity="optical-component" />
+  <polygon points="138,26 140,24.7 150,24.7 148,26" fill="#F7F9FA" stroke="#53676D" stroke-width="0.25" id="figure-37" data-logical-id="T" data-object-part="decoration" data-entity="optical-component" />
+  <polygon points="148,26 150,24.7 150,34.7 148,36" fill="#9DADB2" stroke="#53676D" stroke-width="0.25" id="figure-38" data-logical-id="T" data-object-part="decoration" data-entity="optical-component" />
+  <rect x="137.4" y="27" width="1.2" height="8" fill="#167D79" stroke="none" stroke-width="0.3" id="figure-39" data-logical-id="T" data-object-part="decoration" data-entity="optical-component" />
+  <text x="17" y="44" font-family="Arial" font-size="3.2102777777777773" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-40">Source S</text>
+  <text x="40" y="44" font-family="Arial" font-size="3.2102777777777773" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-41">Shutter H</text>
+  <text x="69" y="44" font-family="Arial" font-size="3.2102777777777773" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-42">Splitter B</text>
+  <text x="106" y="44" font-family="Arial" font-size="3.2102777777777773" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-43">Sample P</text>
+  <text x="141" y="44" font-family="Arial" font-size="3.2102777777777773" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-44">Detector T</text>
+  <line x1="5" y1="49.5" x2="155" y2="49.5" stroke="#C9D2D4" fill="none" stroke-width="0.25" id="figure-45" />
+  <text x="5" y="55.6" font-family="Arial" font-size="3.3866666666666663" font-weight="bold" fill="#20353C" text-anchor="start" id="figure-46">Two readings · same P, R and T</text>
+  <text x="114" y="56.2" font-family="Arial" font-size="3.5983333333333327" font-weight="bold" fill="#20353C" text-anchor="middle" id="figure-47">ΔR = R1 − R0</text>
+  <rect x="5" y="62.3" width="54" height="9.5" fill="#EFF2F3" stroke="none" stroke-width="0.3" id="figure-48" />
+  <text x="17" y="68.3" font-family="Arial" font-size="3.2102777777777773" font-weight="normal" fill="#20353C" text-anchor="start" id="figure-49">H closed</text>
+  <text x="48.7" y="68.3" font-family="Arial" font-size="3.563055555555555" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-50">R0, T0</text>
+  <line x1="7" y1="67.1" x2="10.3" y2="67.1" stroke="#AC7418" fill="none" stroke-width="0.55" id="figure-51" />
+  <rect x="10.3" y="64.2" width="1.3" height="5.6" fill="#53676D" stroke="none" stroke-width="0.3" id="figure-52" data-logical-id="H" data-object-part="detail" data-entity="optical-component" data-state="closed" />
+  <rect x="5" y="75.0" width="54" height="9.5" fill="#FFF2D6" stroke="none" stroke-width="0.3" id="figure-53" />
+  <text x="17" y="81.0" font-family="Arial" font-size="3.2102777777777773" font-weight="normal" fill="#20353C" text-anchor="start" id="figure-54">H open</text>
+  <text x="48.7" y="81.0" font-family="Arial" font-size="3.563055555555555" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-55">R1, T1</text>
+  <line x1="7" y1="79.8" x2="10.3" y2="79.8" stroke="#AC7418" fill="none" stroke-width="0.55" id="figure-56" />
+  <rect x="10.3" y="75.8" width="1.3" height="2.1" fill="#53676D" stroke="none" stroke-width="0.3" id="figure-57" data-logical-id="H" data-object-part="detail" data-entity="optical-component" data-state="open" />
+  <line x1="10.3" y1="79.8" x2="14.6" y2="79.8" stroke="#AC7418" fill="none" stroke-width="0.55" id="figure-58" />
+  <polygon points="14.6,79.8 12.799999999999999,79.05 12.799999999999999,80.55" fill="#AC7418" stroke="none" stroke-width="0.3" id="figure-59" data-relation="reading-flow" data-part="arrowhead" />
+  <line x1="59" y1="67.1" x2="64.0" y2="67.1" stroke="#53676D" fill="none" stroke-width="0.4" id="figure-60" />
+  <line x1="59" y1="79.8" x2="64.0" y2="79.8" stroke="#53676D" fill="none" stroke-width="0.4" id="figure-61" />
+  <line x1="64" y1="67.1" x2="64" y2="79.8" stroke="#53676D" fill="none" stroke-width="0.4" id="figure-62" />
+  <line x1="64" y1="69.5" x2="75.5" y2="69.5" stroke="#53676D" fill="none" stroke-width="0.5" id="figure-63" />
+  <polygon points="75.5,69.5 73.7,68.75 73.7,70.25" fill="#53676D" stroke="none" stroke-width="0.3" id="figure-64" data-relation="reading-flow" data-part="arrowhead" />
+  <polygon points="75.5,69.5 87.5,62.0 99.5,69.5 87.5,77" fill="#F7F9FA" stroke="#53676D" stroke-width="0.4" id="figure-65" data-operation="validate-before-division" />
+  <text x="87.5" y="70.6" font-family="Arial" font-size="3.5277777777777772" font-weight="bold" fill="#20353C" text-anchor="middle" id="figure-66">ΔR &gt; 0</text>
+  <line x1="99.5" y1="69.5" x2="115.0" y2="69.5" stroke="#53676D" fill="none" stroke-width="0.45" stroke-dasharray="1.1 0.7" id="figure-67" data-relation="valid-to-divide" data-part="shaft" />
+  <polygon points="115.0,69.5 113.2,68.75 113.2,70.25" fill="#53676D" stroke="none" stroke-width="0.3" id="figure-68" data-relation="valid-to-divide" data-part="arrowhead" />
+  <text x="107" y="65.9" font-family="Arial" font-size="3.175" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-69">Yes</text>
+  <text x="121" y="70.7" font-family="Arial" font-size="3.880555555555555" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-70">q =</text>
+  <text x="141" y="65.8" font-family="Arial" font-size="3.6688888888888886" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-71">T1 − T0</text>
+  <line x1="130.8" y1="68" x2="151.2" y2="68" stroke="#20353C" fill="none" stroke-width="0.35" id="figure-72" />
+  <text x="141" y="73" font-family="Arial" font-size="3.6688888888888886" font-weight="normal" fill="#20353C" text-anchor="middle" id="figure-73">ΔR</text>
+  <line x1="87.5" y1="77" x2="87.5" y2="85" stroke="#865043" fill="none" stroke-width="0.45" stroke-dasharray="1.1 0.7" id="figure-74" />
+  <line x1="87.5" y1="85" x2="116" y2="85" stroke="#865043" fill="none" stroke-width="0.45" stroke-dasharray="1.1 0.7" id="figure-75" data-relation="invalid-no-division" data-part="shaft" />
+  <polygon points="116,85 114.2,84.25 114.2,85.75" fill="#865043" stroke="none" stroke-width="0.3" id="figure-76" data-relation="invalid-no-division" data-part="arrowhead" />
+  <text x="101" y="81.6" font-family="Arial" font-size="3.175" font-weight="normal" fill="#865043" text-anchor="middle" id="figure-77">No</text>
+  <text x="135" y="86.0" font-family="Arial" font-size="3.563055555555555" font-weight="bold" fill="#865043" text-anchor="middle" id="figure-78">INVALID</text>
+</svg>

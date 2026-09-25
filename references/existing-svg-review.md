@@ -23,6 +23,16 @@ python scripts/audit_svg_labels.py existing.svg --font FONT.ttf --bold-font BOLD
 
 修复前后用同一物理宽度查看，记录保留的内容及删去的重复内容去向。附带脚本不检查科学拓扑、实验观测完整性或美感，这些仍单独审阅。
 
+可用下面的命令生成统一入稿宽度对照：
+
+```text
+python scripts/compare_designs.py --baseline original.svg --candidate revised.svg --placement-width-mm 160 --out new-comparison
+```
+
+指定宽度后，各图以同一 CSS 毫米宽度显示，优先按各自原始 `viewBox` 的比例计算高度；窄窗口横向滚动，不再把图缩到卡片宽度。省略该参数仍采用旧版响应布局。没有有效 `viewBox` 时，仅在原始宽高均可解析为绝对单位时采用其比例，否则高度交给浏览器且明确记为未知。
+
+`comparison.json` 分别记录设计尺寸、放置尺寸和可计算的字号比例。CSS、变换或未知字号单位影响的文字不标为已验证；计算结果也不代表字体替换、墨迹边界或阅读效果已检查。屏幕 CSS 毫米受缩放和显示设置影响，不是实物尺规；最后仍须查看稿件中的实际放置效果。工具不评判构图优劣或美感。
+
 ## 入稿兼容
 
 一次实际入稿中，合法的带前缀 SVG 根节点在当前 LibreOffice 链中出现整图空白，改用默认 SVG 命名空间后复验。检查器对此发出兼容性待审提示，不把合法 XML 判为科学错误。哈希一致不证明渲染可见；SVG、PNG 两种表示都更新后仍须看最终页。默认命名空间应为 `http://www.w3.org/2000/svg`，注册时不要把元素标签的花括号放进 URI。
