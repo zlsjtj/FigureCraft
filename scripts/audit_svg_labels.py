@@ -3,6 +3,7 @@ import argparse,hashlib,json,math,re,xml.etree.ElementTree as E
 from pathlib import Path
 from PIL import ImageFont
 from reportlab.pdfbase.ttfonts import TTFont
+from svg_text_contrast import screen as screen_contrast
 
 NUM=r'[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?'
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -41,7 +42,7 @@ def hit(a,b,r):
         if lo>hi:return False
     return True
 
-def audit(svg,font,bold_font,placement_width_mm,regions=None):
+def audit(svg,font,bold_font,placement_width_mm,regions=None,canvas_background=None):
     placement_width_mm=finite(placement_width_mm)
     if placement_width_mm<=0:raise ValueError('Positive placement width required')
     root=E.parse(svg).getroot();view=list(map(finite,root.get('viewBox','').split()))
@@ -121,10 +122,12 @@ def audit(svg,font,bold_font,placement_width_mm,regions=None):
             ok=len(matches)==1 and all([matches[0]['bounds'][0]>=b[0],matches[0]['bounds'][1]>=b[1],matches[0]['bounds'][2]<=b[2],matches[0]['bounds'][3]<=b[3]])
             region_results.append({'text':rule['text'],'owner':rule['owner'],'status':'PASS' if ok else 'FAIL'})
             if not ok:add('FAIL','label_outside_declared_owner_region',text=rule['text'],owner=rule['owner'])
+    painted=screen_contrast(root,texts,canvas_background)
+    findings.extend(painted['findings'])
     status='FAIL' if any(f['level']=='FAIL' for f in findings) else 'REVIEW_REQUIRED' if findings or not texts else 'PASS'
     return {'status':status,'technical_status':status,'overall_status':'FAIL' if status=='FAIL' else 'REVIEW_REQUIRED',
         'svg_sha256':sha(svg),'placement_width_mm':placement_width_mm,'minimum_font_pt':min((t['font_pt'] for t in texts),default=None),
-        'text':texts,'guide_segments':segments,'findings':findings,'owner_regions':region_results,
+        'text':texts,'guide_segments':segments,'findings':findings,'owner_regions':region_results,'painted_text_contrast':painted,
         'fonts':{k:{'family':v[2],'sha256':v[3]} for k,v in loaded.items()},
         'scientific_review':'NOT_RUN','visual_review':'NOT_RUN','author_acceptance':False,
         'limits':['Measures explicit untransformed text using the supplied matching font.',
@@ -133,10 +136,10 @@ def audit(svg,font,bold_font,placement_width_mm,regions=None):
                   'Owner regions are supplied by an editor; containment cannot establish scientific meaning.']}
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('svg',type=Path);p.add_argument('--font',type=Path,required=True);p.add_argument('--bold-font',type=Path);p.add_argument('--placement-width-mm',type=float,required=True);p.add_argument('--regions',type=Path);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('svg',type=Path);p.add_argument('--font',type=Path,required=True);p.add_argument('--bold-font',type=Path);p.add_argument('--placement-width-mm',type=float,required=True);p.add_argument('--regions',type=Path);p.add_argument('--canvas-background',help='Explicit #RRGGBB canvas; optional solid-paint contrast screen');p.add_argument('--out',type=Path,required=True);a=p.parse_args()
     try:
         if a.out.exists():raise ValueError('Output exists; use a new receipt')
-        r=audit(a.svg,a.font,a.bold_font,a.placement_width_mm,json.loads(a.regions.read_text(encoding='utf-8')) if a.regions else None)
+        r=audit(a.svg,a.font,a.bold_font,a.placement_width_mm,json.loads(a.regions.read_text(encoding='utf-8')) if a.regions else None,a.canvas_background)
         a.out.write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf-8')
         print(json.dumps({k:r[k] for k in ('technical_status','overall_status','minimum_font_pt')},ensure_ascii=False));return 1 if r['status']=='FAIL' else 2 if r['status']=='REVIEW_REQUIRED' else 0
     except (OSError,ValueError,KeyError,E.ParseError) as e:p.exit(2,str(e)+'\n')

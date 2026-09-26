@@ -1,0 +1,1 @@
+DEMO. Three schematic plates are ordered L1, L2 and L3. Their names and order are the only content; plate dimensions and side depth are illustrative. The paired versions preserve geometry and labels. This is a typography and painted-background check, not a material or device performance result.

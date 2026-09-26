@@ -1,6 +1,6 @@
 interface:
   display_name: "FigureCraft｜科研绘图与配色"
   short_description: "按科学对象组织构图，以语义配色、清楚剖面和可编辑矢量交付实图"
-  default_prompt: "使用 $scientific-figure-studio，机制图先确定一个主动作，分配图内、图注与正文的信息；用对象关系承担解释，先做少标签构图，再与原图同尺寸比较主动作是否更清楚，交付可编辑图源及减字、科学和视觉审阅记录。"
+  default_prompt: "使用 $scientific-figure-studio，先确定主要读图结论和必要关系，再分配图、图注与正文的信息。先区分逐项查值与不变、位移、包含或状态关系，让有依据的形状、位置、共同参照和层级承担解释，固定入稿尺寸比较实际构图，交付可编辑源及分开的科学、理解和视觉记录。"
 policy:
   allow_implicit_invocation: true

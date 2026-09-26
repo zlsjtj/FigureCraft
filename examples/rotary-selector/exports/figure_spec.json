@@ -1,0 +1,1722 @@
+{
+  "demo": true,
+  "input_sha256": "ea7fe50471d45b26c8ec905d1af5303da89a466cac383fe8546603dcb72fb06d",
+  "main_message": "Select the inlet while retaining one chamber",
+  "locked_values": {
+    "states": [
+      "A",
+      "B"
+    ],
+    "rotation_degrees": 90,
+    "chambers_per_device": 1,
+    "devices": 1,
+    "stop_flow_before_switching": true
+  },
+  "encoding": {
+    "container": "reservoir or valve housing, with names",
+    "position": "same schematic port topology in both alternative states",
+    "distance": "none; schematic",
+    "blue_straight_arrow": "liquid flow",
+    "rose_curved_arrow": "mechanical rotation",
+    "closed_bar": "sealed inactive inlet",
+    "depth": "housing rim only"
+  },
+  "gain_and_loss": "Direct active and closed paths plus explicit motion; extra state view repeats the device but caption and State labels identify alternatives",
+  "scope": "model-authored transfer demonstration, not a blind independent generation test",
+  "width_mm": 160.0,
+  "height_mm": 85.3722222222222,
+  "items": [
+    {
+      "id": "label-1",
+      "type": "text",
+      "entity": "label",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "14",
+        "y": "21",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "13",
+        "font-weight": "bold",
+        "text-anchor": "start",
+        "id": "label-1",
+        "data-entity": "label",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "One chamber, selectable inlet"
+    },
+    {
+      "id": "label-2",
+      "type": "text",
+      "entity": "label",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "439.5433070866142",
+        "y": "21",
+        "fill": "#69757C",
+        "font-family": "Arial",
+        "font-size": "10.5",
+        "font-weight": "normal",
+        "text-anchor": "end",
+        "id": "label-2",
+        "data-entity": "label",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "DEMO"
+    },
+    {
+      "id": "label-3",
+      "type": "text",
+      "entity": "label",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "36",
+        "y": "48",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "start",
+        "id": "label-3",
+        "data-entity": "label",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "State A"
+    },
+    {
+      "id": "reservoir-AA-4",
+      "type": "rect",
+      "entity": "reservoir-AA",
+      "role": "reservoir",
+      "part": "primary",
+      "attributes": {
+        "x": "83",
+        "y": "66",
+        "width": "34",
+        "height": "24",
+        "fill": "#F0F5F7",
+        "stroke": "#246D86",
+        "stroke-width": "0.75",
+        "id": "reservoir-AA-4",
+        "data-entity": "reservoir-AA",
+        "data-role": "reservoir",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "reservoir-AA-5",
+      "type": "text",
+      "entity": "reservoir-AA",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "100",
+        "y": "83",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "middle",
+        "id": "reservoir-AA-5",
+        "data-entity": "reservoir-AA",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "A"
+    },
+    {
+      "id": "reservoir-AB-6",
+      "type": "rect",
+      "entity": "reservoir-AB",
+      "role": "reservoir",
+      "part": "primary",
+      "attributes": {
+        "x": "83",
+        "y": "182",
+        "width": "34",
+        "height": "24",
+        "fill": "#F0F5F7",
+        "stroke": "#246D86",
+        "stroke-width": "0.75",
+        "id": "reservoir-AB-6",
+        "data-entity": "reservoir-AB",
+        "data-role": "reservoir",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "reservoir-AB-7",
+      "type": "text",
+      "entity": "reservoir-AB",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "100",
+        "y": "199",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "middle",
+        "id": "reservoir-AB-7",
+        "data-entity": "reservoir-AB",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "B"
+    },
+    {
+      "id": "vertical-port-A-8",
+      "type": "line",
+      "entity": "vertical-port-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "90",
+        "x2": "100",
+        "y2": "182",
+        "stroke": "#69757C",
+        "stroke-width": "6",
+        "id": "vertical-port-A-8",
+        "data-entity": "vertical-port-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "vertical-lumen-A-9",
+      "type": "line",
+      "entity": "vertical-lumen-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "90",
+        "x2": "100",
+        "y2": "182",
+        "stroke": "#FFFFFF",
+        "stroke-width": "3.8",
+        "id": "vertical-lumen-A-9",
+        "data-entity": "vertical-lumen-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "output-port-A-10",
+      "type": "line",
+      "entity": "output-port-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "132",
+        "x2": "172",
+        "y2": "132",
+        "stroke": "#69757C",
+        "stroke-width": "6",
+        "id": "output-port-A-10",
+        "data-entity": "output-port-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "output-lumen-A-11",
+      "type": "line",
+      "entity": "output-lumen-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "132",
+        "x2": "172",
+        "y2": "132",
+        "stroke": "#FFFFFF",
+        "stroke-width": "3.8",
+        "id": "output-lumen-A-11",
+        "data-entity": "output-lumen-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "housing-shadow-A-12",
+      "type": "circle",
+      "entity": "housing-shadow-A",
+      "role": "valve",
+      "part": "primary",
+      "attributes": {
+        "cx": "101",
+        "cy": "134",
+        "r": "26",
+        "fill": "#D7DEE1",
+        "stroke": "#A2ADB3",
+        "stroke-width": "0.5",
+        "id": "housing-shadow-A-12",
+        "data-entity": "housing-shadow-A",
+        "data-role": "valve",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "housing-A-13",
+      "type": "circle",
+      "entity": "housing-A",
+      "role": "valve",
+      "part": "primary",
+      "attributes": {
+        "cx": "100",
+        "cy": "132",
+        "r": "26",
+        "fill": "#F3E9D4",
+        "stroke": "#9C773F",
+        "stroke-width": "1",
+        "id": "housing-A-13",
+        "data-entity": "housing-A",
+        "data-role": "valve",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotor-A-14",
+      "type": "circle",
+      "entity": "rotor-A",
+      "role": "valve",
+      "part": "primary",
+      "attributes": {
+        "cx": "100",
+        "cy": "132",
+        "r": "22",
+        "fill": "#F8F2E7",
+        "stroke": "#C7A467",
+        "stroke-width": "0.6",
+        "id": "rotor-A-14",
+        "data-entity": "rotor-A",
+        "data-role": "valve",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "bore-vertical-A-15",
+      "type": "line",
+      "entity": "bore-vertical-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "106",
+        "x2": "100",
+        "y2": "132",
+        "stroke": "#FFFFFF",
+        "stroke-width": "9",
+        "id": "bore-vertical-A-15",
+        "data-entity": "bore-vertical-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "bore-horizontal-A-16",
+      "type": "line",
+      "entity": "bore-horizontal-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "132",
+        "x2": "126",
+        "y2": "132",
+        "stroke": "#FFFFFF",
+        "stroke-width": "9",
+        "id": "bore-horizontal-A-16",
+        "data-entity": "bore-horizontal-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "selected-inlet-A-17",
+      "type": "line",
+      "entity": "selected-inlet-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "93",
+        "x2": "100",
+        "y2": "132",
+        "stroke": "#246D86",
+        "stroke-width": "2",
+        "id": "selected-inlet-A-17",
+        "data-entity": "selected-inlet-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-flow-A-18",
+      "type": "line",
+      "entity": "liquid-flow-A",
+      "role": "flow",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "132",
+        "x2": "165",
+        "y2": "132",
+        "stroke": "#246D86",
+        "stroke-width": "2",
+        "id": "liquid-flow-A-18",
+        "data-entity": "liquid-flow-A",
+        "data-role": "flow",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-flow-A-19",
+      "type": "polygon",
+      "entity": "liquid-flow-A",
+      "role": "flow",
+      "part": "decoration",
+      "attributes": {
+        "points": "165,132 160.0,134.1 160.0,129.9",
+        "fill": "#246D86",
+        "stroke": "#246D86",
+        "stroke-width": "0.4",
+        "id": "liquid-flow-A-19",
+        "data-entity": "liquid-flow-A",
+        "data-role": "flow",
+        "data-object-part": "decoration"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-inlet-A-20",
+      "type": "line",
+      "entity": "liquid-inlet-A",
+      "role": "flow",
+      "part": "primary",
+      "attributes": {
+        "x1": "100",
+        "y1": "93",
+        "x2": "100",
+        "y2": "122",
+        "stroke": "#246D86",
+        "stroke-width": "2",
+        "id": "liquid-inlet-A-20",
+        "data-entity": "liquid-inlet-A",
+        "data-role": "flow",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-inlet-A-21",
+      "type": "polygon",
+      "entity": "liquid-inlet-A",
+      "role": "flow",
+      "part": "decoration",
+      "attributes": {
+        "points": "100,122 98.32,118.0 101.68,118.0",
+        "fill": "#246D86",
+        "stroke": "#246D86",
+        "stroke-width": "0.4",
+        "id": "liquid-inlet-A-21",
+        "data-entity": "liquid-inlet-A",
+        "data-role": "flow",
+        "data-object-part": "decoration"
+      },
+      "text": null
+    },
+    {
+      "id": "closed-port-A-22",
+      "type": "line",
+      "entity": "closed-port-A",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "93",
+        "y1": "156",
+        "x2": "107",
+        "y2": "156",
+        "stroke": "#69757C",
+        "stroke-width": "2.6",
+        "id": "closed-port-A-22",
+        "data-entity": "closed-port-A",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "closed-label-A-23",
+      "type": "text",
+      "entity": "closed-label-A",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "76",
+        "y": "159",
+        "fill": "#69757C",
+        "font-family": "Arial",
+        "font-size": "10.5",
+        "font-weight": "normal",
+        "text-anchor": "end",
+        "id": "closed-label-A-23",
+        "data-entity": "closed-label-A",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "closed"
+    },
+    {
+      "id": "chamber-A-24",
+      "type": "rect",
+      "entity": "chamber-A",
+      "role": "measurement_chamber",
+      "part": "primary",
+      "attributes": {
+        "x": "169",
+        "y": "115",
+        "width": "30",
+        "height": "34",
+        "fill": "#E5F0F2",
+        "stroke": "#246D86",
+        "stroke-width": "0.75",
+        "id": "chamber-A-24",
+        "data-entity": "chamber-A",
+        "data-role": "measurement_chamber",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "chamber-A-25",
+      "type": "text",
+      "entity": "chamber-A",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "184",
+        "y": "135",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "middle",
+        "id": "chamber-A-25",
+        "data-entity": "chamber-A",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "M"
+    },
+    {
+      "id": "chamber-label-A-26",
+      "type": "text",
+      "entity": "chamber-label-A",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "181",
+        "y": "169",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "10.5",
+        "font-weight": "normal",
+        "text-anchor": "middle",
+        "id": "chamber-label-A-26",
+        "data-entity": "chamber-label-A",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "chamber"
+    },
+    {
+      "id": "label-27",
+      "type": "text",
+      "entity": "label",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "260",
+        "y": "48",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "start",
+        "id": "label-27",
+        "data-entity": "label",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "State B"
+    },
+    {
+      "id": "reservoir-BA-28",
+      "type": "rect",
+      "entity": "reservoir-BA",
+      "role": "reservoir",
+      "part": "primary",
+      "attributes": {
+        "x": "307",
+        "y": "66",
+        "width": "34",
+        "height": "24",
+        "fill": "#F0F5F7",
+        "stroke": "#246D86",
+        "stroke-width": "0.75",
+        "id": "reservoir-BA-28",
+        "data-entity": "reservoir-BA",
+        "data-role": "reservoir",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "reservoir-BA-29",
+      "type": "text",
+      "entity": "reservoir-BA",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "324",
+        "y": "83",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "middle",
+        "id": "reservoir-BA-29",
+        "data-entity": "reservoir-BA",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "A"
+    },
+    {
+      "id": "reservoir-BB-30",
+      "type": "rect",
+      "entity": "reservoir-BB",
+      "role": "reservoir",
+      "part": "primary",
+      "attributes": {
+        "x": "307",
+        "y": "182",
+        "width": "34",
+        "height": "24",
+        "fill": "#F0F5F7",
+        "stroke": "#246D86",
+        "stroke-width": "0.75",
+        "id": "reservoir-BB-30",
+        "data-entity": "reservoir-BB",
+        "data-role": "reservoir",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "reservoir-BB-31",
+      "type": "text",
+      "entity": "reservoir-BB",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "324",
+        "y": "199",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "middle",
+        "id": "reservoir-BB-31",
+        "data-entity": "reservoir-BB",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "B"
+    },
+    {
+      "id": "vertical-port-B-32",
+      "type": "line",
+      "entity": "vertical-port-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "90",
+        "x2": "324",
+        "y2": "182",
+        "stroke": "#69757C",
+        "stroke-width": "6",
+        "id": "vertical-port-B-32",
+        "data-entity": "vertical-port-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "vertical-lumen-B-33",
+      "type": "line",
+      "entity": "vertical-lumen-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "90",
+        "x2": "324",
+        "y2": "182",
+        "stroke": "#FFFFFF",
+        "stroke-width": "3.8",
+        "id": "vertical-lumen-B-33",
+        "data-entity": "vertical-lumen-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "output-port-B-34",
+      "type": "line",
+      "entity": "output-port-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "132",
+        "x2": "396",
+        "y2": "132",
+        "stroke": "#69757C",
+        "stroke-width": "6",
+        "id": "output-port-B-34",
+        "data-entity": "output-port-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "output-lumen-B-35",
+      "type": "line",
+      "entity": "output-lumen-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "132",
+        "x2": "396",
+        "y2": "132",
+        "stroke": "#FFFFFF",
+        "stroke-width": "3.8",
+        "id": "output-lumen-B-35",
+        "data-entity": "output-lumen-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "housing-shadow-B-36",
+      "type": "circle",
+      "entity": "housing-shadow-B",
+      "role": "valve",
+      "part": "primary",
+      "attributes": {
+        "cx": "325",
+        "cy": "134",
+        "r": "26",
+        "fill": "#D7DEE1",
+        "stroke": "#A2ADB3",
+        "stroke-width": "0.5",
+        "id": "housing-shadow-B-36",
+        "data-entity": "housing-shadow-B",
+        "data-role": "valve",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "housing-B-37",
+      "type": "circle",
+      "entity": "housing-B",
+      "role": "valve",
+      "part": "primary",
+      "attributes": {
+        "cx": "324",
+        "cy": "132",
+        "r": "26",
+        "fill": "#F3E9D4",
+        "stroke": "#9C773F",
+        "stroke-width": "1",
+        "id": "housing-B-37",
+        "data-entity": "housing-B",
+        "data-role": "valve",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotor-B-38",
+      "type": "circle",
+      "entity": "rotor-B",
+      "role": "valve",
+      "part": "primary",
+      "attributes": {
+        "cx": "324",
+        "cy": "132",
+        "r": "22",
+        "fill": "#F8F2E7",
+        "stroke": "#C7A467",
+        "stroke-width": "0.6",
+        "id": "rotor-B-38",
+        "data-entity": "rotor-B",
+        "data-role": "valve",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "bore-vertical-B-39",
+      "type": "line",
+      "entity": "bore-vertical-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "158",
+        "x2": "324",
+        "y2": "132",
+        "stroke": "#FFFFFF",
+        "stroke-width": "9",
+        "id": "bore-vertical-B-39",
+        "data-entity": "bore-vertical-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "bore-horizontal-B-40",
+      "type": "line",
+      "entity": "bore-horizontal-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "132",
+        "x2": "350",
+        "y2": "132",
+        "stroke": "#FFFFFF",
+        "stroke-width": "9",
+        "id": "bore-horizontal-B-40",
+        "data-entity": "bore-horizontal-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "selected-inlet-B-41",
+      "type": "line",
+      "entity": "selected-inlet-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "171",
+        "x2": "324",
+        "y2": "132",
+        "stroke": "#246D86",
+        "stroke-width": "2",
+        "id": "selected-inlet-B-41",
+        "data-entity": "selected-inlet-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-flow-B-42",
+      "type": "line",
+      "entity": "liquid-flow-B",
+      "role": "flow",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "132",
+        "x2": "389",
+        "y2": "132",
+        "stroke": "#246D86",
+        "stroke-width": "2",
+        "id": "liquid-flow-B-42",
+        "data-entity": "liquid-flow-B",
+        "data-role": "flow",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-flow-B-43",
+      "type": "polygon",
+      "entity": "liquid-flow-B",
+      "role": "flow",
+      "part": "decoration",
+      "attributes": {
+        "points": "389,132 384.0,134.1 384.0,129.9",
+        "fill": "#246D86",
+        "stroke": "#246D86",
+        "stroke-width": "0.4",
+        "id": "liquid-flow-B-43",
+        "data-entity": "liquid-flow-B",
+        "data-role": "flow",
+        "data-object-part": "decoration"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-inlet-B-44",
+      "type": "line",
+      "entity": "liquid-inlet-B",
+      "role": "flow",
+      "part": "primary",
+      "attributes": {
+        "x1": "324",
+        "y1": "171",
+        "x2": "324",
+        "y2": "142",
+        "stroke": "#246D86",
+        "stroke-width": "2",
+        "id": "liquid-inlet-B-44",
+        "data-entity": "liquid-inlet-B",
+        "data-role": "flow",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "liquid-inlet-B-45",
+      "type": "polygon",
+      "entity": "liquid-inlet-B",
+      "role": "flow",
+      "part": "decoration",
+      "attributes": {
+        "points": "324,142 325.68,146.0 322.32,146.0",
+        "fill": "#246D86",
+        "stroke": "#246D86",
+        "stroke-width": "0.4",
+        "id": "liquid-inlet-B-45",
+        "data-entity": "liquid-inlet-B",
+        "data-role": "flow",
+        "data-object-part": "decoration"
+      },
+      "text": null
+    },
+    {
+      "id": "closed-port-B-46",
+      "type": "line",
+      "entity": "closed-port-B",
+      "role": "reuse",
+      "part": "primary",
+      "attributes": {
+        "x1": "317",
+        "y1": "108",
+        "x2": "331",
+        "y2": "108",
+        "stroke": "#69757C",
+        "stroke-width": "2.6",
+        "id": "closed-port-B-46",
+        "data-entity": "closed-port-B",
+        "data-role": "reuse",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "closed-label-B-47",
+      "type": "text",
+      "entity": "closed-label-B",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "300",
+        "y": "111",
+        "fill": "#69757C",
+        "font-family": "Arial",
+        "font-size": "10.5",
+        "font-weight": "normal",
+        "text-anchor": "end",
+        "id": "closed-label-B-47",
+        "data-entity": "closed-label-B",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "closed"
+    },
+    {
+      "id": "chamber-B-48",
+      "type": "rect",
+      "entity": "chamber-B",
+      "role": "measurement_chamber",
+      "part": "primary",
+      "attributes": {
+        "x": "393",
+        "y": "115",
+        "width": "30",
+        "height": "34",
+        "fill": "#E5F0F2",
+        "stroke": "#246D86",
+        "stroke-width": "0.75",
+        "id": "chamber-B-48",
+        "data-entity": "chamber-B",
+        "data-role": "measurement_chamber",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "chamber-B-49",
+      "type": "text",
+      "entity": "chamber-B",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "408",
+        "y": "135",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "bold",
+        "text-anchor": "middle",
+        "id": "chamber-B-49",
+        "data-entity": "chamber-B",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "M"
+    },
+    {
+      "id": "chamber-label-B-50",
+      "type": "text",
+      "entity": "chamber-label-B",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "405",
+        "y": "169",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "10.5",
+        "font-weight": "normal",
+        "text-anchor": "middle",
+        "id": "chamber-label-B-50",
+        "data-entity": "chamber-label-B",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "chamber"
+    },
+    {
+      "id": "rotation-51",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "218.0",
+        "y1": "98.0",
+        "x2": "219.48164762671018",
+        "y2": "98.06469013244032",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-51",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-52",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "219.48164762671018",
+        "y1": "98.06469013244032",
+        "x2": "220.95201902033781",
+        "y2": "98.25826819879246",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-52",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-53",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "220.95201902033781",
+        "y1": "98.25826819879246",
+        "x2": "222.39992376674286",
+        "y2": "98.57926095308584",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-53",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-54",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "222.39992376674286",
+        "y1": "98.57926095308584",
+        "x2": "223.81434243653638",
+        "y2": "99.02522544663955",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-54",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-55",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "223.81434243653638",
+        "y1": "99.02522544663955",
+        "x2": "225.1845104495919",
+        "y2": "99.59276762037695",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-55",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-56",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "225.1845104495919",
+        "y1": "99.59276762037695",
+        "x2": "226.5",
+        "y2": "100.27756813566454",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-56",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-57",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "226.5",
+        "y1": "100.27756813566454",
+        "x2": "227.75079941796778",
+        "y2": "101.07441524708715",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-57",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-58",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "227.75079941796778",
+        "y1": "101.07441524708715",
+        "x2": "228.92738936467117",
+        "y2": "101.97724446697737",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-58",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-59",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "228.92738936467117",
+        "y1": "101.97724446697737",
+        "x2": "230.02081528017132",
+        "y2": "102.9791847198287",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-59",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-60",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "230.02081528017132",
+        "y1": "102.9791847198287",
+        "x2": "231.02275553302263",
+        "y2": "104.07261063532883",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-60",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-61",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "231.02275553302263",
+        "y1": "104.07261063532883",
+        "x2": "231.92558475291287",
+        "y2": "105.24920058203222",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-61",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-62",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "231.92558475291287",
+        "y1": "105.24920058203222",
+        "x2": "232.72243186433545",
+        "y2": "106.5",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-62",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-63",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "232.72243186433545",
+        "y1": "106.5",
+        "x2": "233.40723237962305",
+        "y2": "107.8154895504081",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-63",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-64",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "233.40723237962305",
+        "y1": "107.8154895504081",
+        "x2": "233.97477455336045",
+        "y2": "109.18565756346364",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-64",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-65",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "233.97477455336045",
+        "y1": "109.18565756346364",
+        "x2": "234.42073904691415",
+        "y2": "110.60007623325714",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-65",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-66",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "234.42073904691415",
+        "y1": "110.60007623325714",
+        "x2": "234.74173180120755",
+        "y2": "112.04798097966219",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-66",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-67",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "234.74173180120755",
+        "y1": "112.04798097966219",
+        "x2": "234.93530986755968",
+        "y2": "113.51835237328982",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-67",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-68",
+      "type": "line",
+      "entity": "rotation",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "234.93530986755968",
+        "y1": "113.51835237328982",
+        "x2": "235.0",
+        "y2": "115.0",
+        "stroke": "#8E5E72",
+        "stroke-width": "1.2",
+        "id": "rotation-68",
+        "data-entity": "rotation",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-tip-69",
+      "type": "line",
+      "entity": "rotation-tip",
+      "role": "motion",
+      "part": "primary",
+      "attributes": {
+        "x1": "234.93530986755968",
+        "y1": "113.51835237328982",
+        "x2": "235.0",
+        "y2": "115.0",
+        "stroke": "#8E5E72",
+        "stroke-width": "0.9",
+        "id": "rotation-tip-69",
+        "data-entity": "rotation-tip",
+        "data-role": "motion",
+        "data-object-part": "primary"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-tip-70",
+      "type": "polygon",
+      "entity": "rotation-tip",
+      "role": "motion",
+      "part": "decoration",
+      "attributes": {
+        "points": "235.0,115.0 233.14712143828115,111.07708768444633 236.5039234627962,110.9305265428988",
+        "fill": "#8E5E72",
+        "stroke": "#8E5E72",
+        "stroke-width": "0.4",
+        "id": "rotation-tip-70",
+        "data-entity": "rotation-tip",
+        "data-role": "motion",
+        "data-object-part": "decoration"
+      },
+      "text": null
+    },
+    {
+      "id": "rotation-label-71",
+      "type": "text",
+      "entity": "rotation-label",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "221",
+        "y": "85",
+        "fill": "#8E5E72",
+        "font-family": "Arial",
+        "font-size": "11.25",
+        "font-weight": "normal",
+        "text-anchor": "middle",
+        "id": "rotation-label-71",
+        "data-entity": "rotation-label",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "90°"
+    },
+    {
+      "id": "rotation-label-72",
+      "type": "text",
+      "entity": "rotation-label",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "221",
+        "y": "145",
+        "fill": "#8E5E72",
+        "font-family": "Arial",
+        "font-size": "10.5",
+        "font-weight": "normal",
+        "text-anchor": "middle",
+        "id": "rotation-label-72",
+        "data-entity": "rotation-label",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "rotate"
+    },
+    {
+      "id": "label-73",
+      "type": "text",
+      "entity": "label",
+      "role": "label",
+      "part": "label",
+      "attributes": {
+        "x": "14",
+        "y": "228",
+        "fill": "#253B44",
+        "font-family": "Arial",
+        "font-size": "10.5",
+        "font-weight": "bold",
+        "text-anchor": "start",
+        "id": "label-73",
+        "data-entity": "label",
+        "data-role": "label",
+        "data-object-part": "label"
+      },
+      "text": "Switch only with flow stopped"
+    }
+  ],
+  "text_records": [
+    {
+      "text": "One chamber, selectable inlet",
+      "size_pt": 13,
+      "bbox": [
+        14,
+        11.25,
+        197.51708984375003,
+        24.12
+      ],
+      "entity": "label",
+      "role": "label"
+    },
+    {
+      "text": "DEMO",
+      "size_pt": 10.5,
+      "bbox": [
+        408.0433070866142,
+        13.125,
+        439.5433070866142,
+        23.52
+      ],
+      "entity": "label",
+      "role": "label"
+    },
+    {
+      "text": "State A",
+      "size_pt": 11.25,
+      "bbox": [
+        36,
+        39.5625,
+        74.759765625,
+        50.7
+      ],
+      "entity": "label",
+      "role": "label"
+    },
+    {
+      "text": "A",
+      "size_pt": 11.25,
+      "bbox": [
+        95.93780517578125,
+        74.5625,
+        104.06219482421875,
+        85.7
+      ],
+      "entity": "reservoir-AA",
+      "role": "label"
+    },
+    {
+      "text": "B",
+      "size_pt": 11.25,
+      "bbox": [
+        95.93780517578125,
+        190.5625,
+        104.06219482421875,
+        201.7
+      ],
+      "entity": "reservoir-AB",
+      "role": "label"
+    },
+    {
+      "text": "closed",
+      "size_pt": 10.5,
+      "bbox": [
+        45.6484375,
+        151.125,
+        76.0,
+        161.52
+      ],
+      "entity": "closed-label-A",
+      "role": "label"
+    },
+    {
+      "text": "M",
+      "size_pt": 11.25,
+      "bbox": [
+        179.3143310546875,
+        126.5625,
+        188.6856689453125,
+        137.7
+      ],
+      "entity": "chamber-A",
+      "role": "label"
+    },
+    {
+      "text": "chamber",
+      "size_pt": 10.5,
+      "bbox": [
+        160.57421875,
+        161.125,
+        201.42578125,
+        171.52
+      ],
+      "entity": "chamber-label-A",
+      "role": "label"
+    },
+    {
+      "text": "State B",
+      "size_pt": 11.25,
+      "bbox": [
+        260,
+        39.5625,
+        298.759765625,
+        50.7
+      ],
+      "entity": "label",
+      "role": "label"
+    },
+    {
+      "text": "A",
+      "size_pt": 11.25,
+      "bbox": [
+        319.93780517578125,
+        74.5625,
+        328.06219482421875,
+        85.7
+      ],
+      "entity": "reservoir-BA",
+      "role": "label"
+    },
+    {
+      "text": "B",
+      "size_pt": 11.25,
+      "bbox": [
+        319.93780517578125,
+        190.5625,
+        328.06219482421875,
+        201.7
+      ],
+      "entity": "reservoir-BB",
+      "role": "label"
+    },
+    {
+      "text": "closed",
+      "size_pt": 10.5,
+      "bbox": [
+        269.6484375,
+        103.125,
+        300.0,
+        113.52
+      ],
+      "entity": "closed-label-B",
+      "role": "label"
+    },
+    {
+      "text": "M",
+      "size_pt": 11.25,
+      "bbox": [
+        403.3143310546875,
+        126.5625,
+        412.6856689453125,
+        137.7
+      ],
+      "entity": "chamber-B",
+      "role": "label"
+    },
+    {
+      "text": "chamber",
+      "size_pt": 10.5,
+      "bbox": [
+        384.57421875,
+        161.125,
+        425.42578125,
+        171.52
+      ],
+      "entity": "chamber-label-B",
+      "role": "label"
+    },
+    {
+      "text": "90°",
+      "size_pt": 11.25,
+      "bbox": [
+        212.49383544921875,
+        76.5625,
+        229.50616455078125,
+        87.7
+      ],
+      "entity": "rotation-label",
+      "role": "label"
+    },
+    {
+      "text": "rotate",
+      "size_pt": 10.5,
+      "bbox": [
+        207.5750732421875,
+        137.125,
+        234.4249267578125,
+        147.52
+      ],
+      "entity": "rotation-label",
+      "role": "label"
+    },
+    {
+      "text": "Switch only with flow stopped",
+      "size_pt": 10.5,
+      "bbox": [
+        14,
+        220.125,
+        163.912109375,
+        230.52
+      ],
+      "entity": "label",
+      "role": "label"
+    }
+  ],
+  "palette": {
+    "ink": "#253B44",
+    "quiet": "#5A6D75",
+    "shared_fill": "#E3EFF3",
+    "shared_edge": "#3E7B8F",
+    "shared_side": "#B9D2DC",
+    "address_fill": "#F5EBD5",
+    "address_edge": "#9C773F",
+    "base": "#955D73",
+    "line": "#567580",
+    "rule": "#D7E1E5",
+    "white": "#FFFFFF"
+  }
+}

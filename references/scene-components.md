@@ -50,6 +50,8 @@ s.finish(Path('scene.json'))
 
 只有声明 `component_constraints`、`occlusion_constraints` 才检查相应项目。共享层边、截面、半径、部件绑定和顺序均为有限检查。未知组件需审阅；错误图配错误约束仍可能一致，必须回查原始内容。
 
+`array_grid` 的等宽单元格表达条目顺序或槽位，不自动表达条目之间的数值距离。若本轮要让读者直接看出间隔、平移或不变形状，应另用已给数据计算坐标，并注明尺度和各视图的原点；不要只把数字填入默认网格就视为完成信息设计。原生 line、rect、path 等足以支持这类布局，不需要先为每种论文新增组件。
+
 颗粒后排先画，前排后画；检查每个对象能否辨认。二维包围盒重叠只是辅助，不证明可见性。用轮廓和标签使灰度仍可读，文字保持平面。隐藏内核应在对象模型中逐个绑定；复合颗粒计数不等于验证了全部隐藏子对象。
 
 ## 圆面与旧版切开接口
@@ -96,3 +98,27 @@ opened_coating_particle(s2, 'opening', x=580, y=210, radius=120,
 构图先决定原对象与局部图的位置，再用短且可追踪的无向引线连接。只显示对应需要的 ID，完整对象集合留在元数据中。接触阴影贴合支撑面并绑定颗粒。连线可跨空白支撑面，不必绕整页；改几何后重查端点。
 
 [两种构图的源脚本](../examples/material-polished-v17/build_material_v17.py)可独立生成示例。平面内核曾被错误用于“仅开涂层”的任务，因此现在分别提供剖切和开口接口；回归范围见[验收](../provenance/acceptance-v1.7.md)。
+
+## 共享分支与数值模式
+
+`scripts/relation_components.py` 只复用两种容易反复写错的几何，不包含领域数据、整页布局或自动美感评分。返回 `items` 是原场景格式的独立线、矩形和文字，可 `add_component(scene, result)` 接入 `Scene`/JSON，也可在原生绘图流程中逐项导出。旧接口不变。
+
+```python
+from relation_components import sampled_pattern, branch_bus, add_component
+# 教学数据：同一非均匀采样模式在另一原点应用；不是实验测量。
+shape = sampled_pattern('mask', [0, 3, 11, 14], x=50, y=100,
+    units=8, entity='mask', role='shared')
+result = sampled_pattern('use-a', [0, 3, 11, 14], x=330, y=70,
+    units=8, base=200, labels=[2], entity='use-a', role='applied',
+    source_pattern='mask')
+links = branch_bus('read-mask', source=[185,100], targets=[[315,70],[315,160]],
+    junction_x=240, source_entity='mask', target_entities=['use-a','use-b'],
+    meaning='Both applications refer to the same mask', arrowheads=False)
+# 在自己的场景声明实体、画 use-b、设置字号/最终尺寸后再添加。
+for component in (links, shape, result):
+    add_component(scene, component)
+```
+
+`sampled_pattern` 画数值轴上的采样位置，不画存储这些数值的容器；表项本身用 `array_grid` 或原生等距条目表示。它的 `x` 是局部零点，横位置为 `x + value * units`；`base` 只改变标签数值，不改变间隔。严格递增有限数值和正尺度是前提。`labels=None` 显示全部，`[]` 无数值，索引列表只显示选中项。`source_pattern` 保存来源关系，不推断物理复制、所有权或收益。原点/单位/省略、应用条件及必要校验值由图与图注说明。组件不自动添加断轴，不能将两个视窗接成假连续尺度。
+
+`branch_bus` 要求显式锚点、实体和关系含义；`arrowheads=False` 返回无向关联，适合没有运动或传输含义的共同引用。默认 `True` 保留旧调用的箭头外观，调用者需根据科学含义选择；调用者检查线路是否绕字、终点是否属于正确对象。它不假定分支是时间顺序、真实通道或两份源对象。新几何的边界测试见 `tests/test_relation_components.py`；完整场景的科学与视觉审阅仍另做。

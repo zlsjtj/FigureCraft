@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "checks": {
+    "fixed_housing": true,
+    "fixed_interface-left": true,
+    "fixed_interface-right": true,
+    "fixed_seal": true,
+    "fixed_pipe-left": true,
+    "fixed_pipe-right": true,
+    "cassette_translation_frame": true,
+    "cassette_translation_layer1": true,
+    "cassette_translation_layer2": true,
+    "seated_layer_order": true,
+    "seated_both_layers_within_frame": true,
+    "withdrawn_layer_order": true,
+    "withdrawn_both_layers_within_frame": true,
+    "seated_layers_between_interfaces": true,
+    "no_embedded_bitmap": true
+  },
+  "scope": "Actual exported SVG rectangle coordinates and object IDs only. Candidate panels use independent local origins separated by 286 arbitrary view units. This audit neither recreates nor validates the supplied underlying geometric model.",
+  "input_svg_sha256": "730bba728656c3a121514e2c656d754b3779778770152b5d8e1848b5b2aebba3",
+  "not_verified": [
+    "physical clearance",
+    "ring cross section",
+    "pressure release",
+    "forces",
+    "sealing",
+    "manufacturing",
+    "filtration",
+    "human reading speed"
+  ]
+}

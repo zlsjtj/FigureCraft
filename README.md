@@ -2,19 +2,11 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑 SVG、矢量 PDF、PNG 和检查记录。
 
-当前版本 **1.10.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
+当前版本 **1.15.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
 ## 本版的实际变化
 
-机制图先选一个主动作，再决定图中必须有的对象、变化和几个标签。用[信息分工](references/visual-explanation.md)把次要条件移到图注、推导移到正文，并核对真实去向。已完整的图不必继续增加关系；减去竞争信息、让已有主关系更容易认出，也可以构成实质改善。
-
-每次机制图定稿前保留一次实际减字候选，说明减掉的字由什么形状、位置、连线或相邻文字承接。160 mm 单动作图的文字预算是可调整的起点，不是期刊标准；数字、标识符、单位和解释词分开看。字号合格也可能因解释层级太多而难读。
-
-新增[固定开口示例](examples/aperture-focus-demo/README.md)：同一开口、两种大小的圆盘和结果位置直接表达通过与阻挡。它是二维构造 DEMO，没有真实材料实验、传输性能或三维仿真。
-
-![固定开口 DEMO](examples/aperture-focus-demo/exports/final/figure.png)
-
-`measure_label_load.py` 记录 SVG 声明的文字节点、字母与数值 token、重复标签及尺寸。它不判定美感或理解率，不覆盖任意 CSS、隐藏、裁切和位图文字；结果始终保留效果待审。旧渲染命令与场景规格不变。[光学读出示例](examples/optical-readout/README.md)保留为对象组织示范，不作为图内文字量的模板。
+本次区分构图修复与局部视觉精修，补齐外来 SVG 的实色文字对比筛查，并提供层板文字前后例。实际测试范围见 [当前记录](provenance/current-validation.md)。
 
 ## 其他示例
 
@@ -66,15 +58,15 @@ python scripts/check_figure.py material-A --placement-width-mm 160
 ```powershell
 python tests/run_all_tests.py --out test-output/core --font (Join-Path $env:WINDIR 'Fonts/segoeui.ttf') --cjk-font $figureCjk --pdftoppm $figureRaster
 python tests/run_svg_label_tests.py --out test-output/svg-labels --font $figureFont --bold-font (Join-Path $env:WINDIR 'Fonts/arialbd.ttf')
-python -m unittest discover -s tests -p test_label_load.py
+python -m unittest discover -s tests -p "test_*.py"
 python scripts/measure_label_load.py figure.svg --width-mm 160 --out label-load.json
 ```
 
-八组回归共 138 项，加上已有 SVG 标签检查 17 项，共 155 项，覆盖数量、状态、连线方向、尺寸、剖面、开口、只换色范围以及失败状态传播。本版另有文字负担统计的 6 项边界测试，共 161 项。结果见[验收记录](provenance/acceptance-v1.10.md)。
+旧回归结果作为历史保留。本轮重跑已有 SVG 标签检查，增加实色对比和背景遮挡测试；具体结果见 [当前记录](provenance/current-validation.md)。不使用历史测试总数代替本轮执行。
 
 技术检查、科学内容审阅和视觉审阅分别报告。`status` 是旧技术状态字段；判断完整状态应看 `overall_status`。缺少科学或视觉审阅时保留 `REVIEW_REQUIRED`，脚本不会替作者确认图片。
 
-`examples/` 包含独立场景和示意数据，`templates/` 提供语义契约及审阅模板。重复局部图、装饰面和图例绑定原对象；量化图保持二维。主标签按实际尺寸以 9–10 pt 为起点，小于 8 pt 的情况需要修复或注明。
+`examples/` 包含独立场景和示意数据，`templates/` 提供语义契约及审阅模板。重复局部图、装饰面和图例绑定原对象；量化图保持二维。机制图主标签按实际尺寸以 10–11 pt 为起点，小于 8 pt 的情况需要修复或注明。
 
 ## 来源与边界
 

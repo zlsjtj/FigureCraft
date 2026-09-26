@@ -1,0 +1,1 @@
+Same valve and measurement chamber in two alternative states. Left: A flows down and right to M, B is closed. Right: B flows up and right to M, A is closed. A separate curved arrow marks 90-degree clockwise valve rotation. Switching occurs with flow stopped.

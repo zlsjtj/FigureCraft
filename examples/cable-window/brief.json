@@ -1,0 +1,18 @@
+{
+  "purpose": "Original constructed DEMO for independent skill transfer trial; not research",
+  "input_source": "Task-specific facts supplied to the independent executing agent",
+  "cable_count": 1,
+  "copper_conductor_count": 2,
+  "individual_polymer_insulation_count": 2,
+  "common_outer_sheath_count": 1,
+  "layout": "Both individually insulated copper conductors lie beside one another within the same outer sheath",
+  "operation": "Remove a local window of outer-sheath material only",
+  "preserved_at_window": ["Both individual insulation layers", "Both copper conductors"],
+  "end_section_rule": "Any end-section diagram repeats this same two-core cable; it is not a second cable and is not the local window",
+  "absent": ["Shield", "Twisting", "Third core", "Load", "Current direction"],
+  "no_measurements": ["Dimensions", "Physical scale", "Leakage", "Temperature resistance", "Safety", "Inspection efficiency", "Performance"],
+  "color_and_shape": "Schematic; no actual scale or physical properties",
+  "narrative_priority": ["Only open the sheath to see internal layout; inner layers stay intact", "Two individual insulation layers and one common sheath occupy distinct levels"],
+  "target_size_mm": [160, 70],
+  "baseline_status": "Before is newly constructed in this trial, not supplied by the user and not an earlier manuscript"
+}

@@ -20,6 +20,8 @@
 | items | 按后→前绘制的扁平图元序列，稳定id，独立绑定entity/role/relation |
 | caption, alt_text | 说明范围、DEMO、口径、重复局部图、适当文字替代 |
 
+`relation.kind` 支持 `flow`（流动）、`motion`（同一对象的位置/姿态变化）、`reuse`（共同来源被再次使用）、`dependency`（依赖）、`containment`（包含）、`inhibition`（抑制）、`conditional`（条件）和 `detail`（同对象局部视图）。运动不是依赖，复用不是数据流。类型声明不自动证明动作发生；端点与三角箭头可按语义约束作有限几何检查，未给几何契约时仍为 REVIEW_REQUIRED。1.13 扩展 motion/reuse，不改变旧类型含义。
+
 ## 图元
 
 共同字段：`id,type,fill,stroke,stroke_width,opacity,entity,role,relation`；计数范围内另有 `logical_id/object_part`。颜色是`#RRGGBB`、`none`或`@role.token`；token为base/fill/stroke/highlight/shadow/marker/text。无字体继承的魔法默认。关系可提供 `geometry` 端点与三角箭头定义；没有可审核定义时不声称方向已自动核实。

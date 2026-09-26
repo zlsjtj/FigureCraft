@@ -1,0 +1,37 @@
+{
+  "version": "1.13.0",
+  "library_tests": {
+    "core": 138,
+    "svg_labels": 17,
+    "label_load": 6,
+    "relation_components": 10,
+    "motion_and_reuse_integration": 4,
+    "total": 175,
+    "status": "PASS"
+  },
+  "figure_trial": {
+    "status": "PASS",
+    "checks": 40,
+    "scope": "Declared geometry and frozen arithmetic",
+    "visual_review": "Agent viewed normal, grayscale, deuteranomaly 100 and 160 mm preview",
+    "author_acceptance": "PENDING"
+  },
+  "portable_rebuild": "SVG/PDF/PNG hashes match",
+  "motion_actual_render": {
+    "positive_exit": 0,
+    "reversed_arrow_exit": 2,
+    "scope": "Explicit endpoint and triangle geometry only"
+  },
+  "quick_validator_this_attempt": {
+    "exit": 1,
+    "reason": "ModuleNotFoundError: yaml",
+    "followup": "Parent may use existing local dependency; not counted as first-attempt success"
+  },
+  "documentation_status": "README and records Chinese; filter-cartridge example is supplied by parent",
+  "modified_code_sha256": {
+    "figure_core.py": "bec22e5c9b52ed0a3fa9d4b58f9dd044c3b3dc7d80f781b103ea9d54f8597961",
+    "relation_components.py": "d3038bc3e01be4575d89b39162e5c6db0a4a2a649822bcdfb6d7c4d542013642",
+    "test_relation_components.py": "7954ec2d27f6104450885c7b4efd376dee962af1e9cc52d4ee3e9681de40bc59",
+    "test_motion_relation.py": "3abe8371655a784aa7d2d04d8d3ccf0f6690d8641756c838812c98f89efdea44"
+  }
+}

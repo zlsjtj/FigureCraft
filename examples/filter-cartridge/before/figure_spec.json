@@ -1,0 +1,1041 @@
+{
+  "schema_version": 1,
+  "figure_id": "filter_cartridge_A_three_views",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "After flow is stopped, withdraw the frame and both layers together while keeping the candidate housing, interfaces and sealing ring in place.",
+  "evidence_status": "Constructed teaching DEMO; model check reported by task; raw model and logs not supplied",
+  "source_refs": [
+    {
+      "path": "../source_material.md",
+      "sha256": "d3fa58c3844c97bf7893157e73a1c69649b388c357a58f26e76d146480f5d00b",
+      "scope": "Constructed teaching DEMO; relative packaged source"
+    }
+  ],
+  "forbidden_implications": [
+    "No online or pressurized replacement",
+    "No filtering efficiency, leakage, lifetime, force or time claim",
+    "No fluid simulation, seal test or manufacturing validation",
+    "No real dimensions or performance encoded"
+  ],
+  "entities": [
+    {
+      "id": "ref-housing",
+      "semantic_role": "housing",
+      "description": "Conventional housing; internal details unspecified"
+    },
+    {
+      "id": "ref-interfaces",
+      "semantic_role": "housing",
+      "description": "Two interfaces attached to the conventional housing"
+    },
+    {
+      "id": "ref-pipes",
+      "semantic_role": "pipe",
+      "description": "Pipe ends left behind during conventional housing removal"
+    },
+    {
+      "id": "housing",
+      "semantic_role": "housing",
+      "description": "Fixed candidate housing"
+    },
+    {
+      "id": "interfaces",
+      "semantic_role": "housing",
+      "description": "Two fixed candidate pipe interfaces"
+    },
+    {
+      "id": "pipes",
+      "semantic_role": "pipe",
+      "description": "Candidate pipe sections"
+    },
+    {
+      "id": "seal",
+      "semantic_role": "seal",
+      "description": "One fixed sealing ring at the candidate side opening"
+    },
+    {
+      "id": "frame",
+      "semantic_role": "frame",
+      "description": "Single removable frame carrying both filter layers"
+    },
+    {
+      "id": "layers",
+      "semantic_role": "layer1",
+      "description": "Two different filter layers, layer 1 before layer 2"
+    }
+  ],
+  "relations": [
+    {
+      "id": "whole-housing-removal",
+      "from": "ref-pipes",
+      "to": "ref-housing",
+      "kind": "dependency",
+      "meaning": "Whole conventional housing and its attached interfaces are detached from the pipe; arrow is motion, not flow",
+      "geometry": {
+        "item_id": "whole-housing-removal",
+        "from": [
+          162,
+          278
+        ],
+        "to": [
+          162,
+          231
+        ],
+        "arrow": {
+          "item_id": "whole-housing-removal-tip",
+          "tip": [
+            162,
+            231
+          ],
+          "base": [
+            162.0,
+            242.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "cartridge-withdrawal",
+      "from": "frame",
+      "to": "frame",
+      "kind": "dependency",
+      "meaning": "Candidate frame and both layers translate together along a straight side path, perpendicular to pipe axis",
+      "geometry": {
+        "item_id": "cartridge-withdrawal",
+        "from": [
+          746,
+          266
+        ],
+        "to": [
+          746,
+          305
+        ],
+        "arrow": {
+          "item_id": "cartridge-withdrawal-tip",
+          "tip": [
+            746,
+            305
+          ],
+          "base": [
+            746.0,
+            294.0
+          ]
+        }
+      }
+    }
+  ],
+  "locked_values": {
+    "filter_layers": 2,
+    "candidate_interfaces": 2,
+    "sealing_rings": 1,
+    "layer_order": [
+      "layer1",
+      "layer2"
+    ],
+    "motion": "straight, lateral to pipe axis",
+    "flow_during_replacement": "stopped",
+    "dimensions": "unspecified"
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "housing": {
+      "base": "#A6B6BF"
+    },
+    "frame": {
+      "base": "#387C9F"
+    },
+    "layer1": {
+      "base": "#C99236"
+    },
+    "layer2": {
+      "base": "#4E998E"
+    },
+    "seal": {
+      "base": "#8D6B95"
+    },
+    "pipe": {
+      "base": "#DCE2E5"
+    }
+  },
+  "layout": {
+    "archetype": "unboxed_operation_comparison",
+    "reading_order": "conventional removal, then candidate seated and withdrawn"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "edit_scope": {
+    "allowed": [
+      "composition",
+      "English labels",
+      "semantic colors"
+    ],
+    "protected": [
+      "entities",
+      "attachment relations",
+      "layer order",
+      "evidence boundaries"
+    ]
+  },
+  "output": {
+    "width_mm": 160,
+    "placement_width_mm": 160.0,
+    "view_width": 900,
+    "view_height": 460,
+    "font_profile": "Arial regular"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 460,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Two replacement operations",
+      "x": 28,
+      "y": 35,
+      "size": 23,
+      "align": "left",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "condition",
+      "type": "text",
+      "text": "Flow stopped",
+      "x": 872,
+      "y": 35,
+      "size": 20,
+      "align": "right",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "conventional-heading",
+      "type": "text",
+      "text": "a  Conventional",
+      "x": 28,
+      "y": 85,
+      "size": 22,
+      "align": "left",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "ref-interface-left",
+      "type": "rect",
+      "entity": "ref-interfaces",
+      "logical_id": "ref-interfaces-left",
+      "role": "housing",
+      "object_part": "primary",
+      "x": 71,
+      "y": 152,
+      "w": 27,
+      "h": 26,
+      "fill": "#CAD5DC",
+      "stroke": "#586B75",
+      "stroke_width": 2
+    },
+    {
+      "id": "ref-interface-right",
+      "type": "rect",
+      "entity": "ref-interfaces",
+      "logical_id": "ref-interfaces-right",
+      "role": "housing",
+      "object_part": "primary",
+      "x": 226,
+      "y": 152,
+      "w": 27,
+      "h": 26,
+      "fill": "#CAD5DC",
+      "stroke": "#586B75",
+      "stroke_width": 2
+    },
+    {
+      "id": "ref-housing",
+      "type": "rect",
+      "entity": "ref-housing",
+      "logical_id": "ref-housing",
+      "role": "housing",
+      "object_part": "primary",
+      "x": 98,
+      "y": 115,
+      "w": 128,
+      "h": 100,
+      "radius": 5,
+      "fill": "#CAD5DC",
+      "stroke": "#586B75",
+      "stroke_width": 2.8
+    },
+    {
+      "id": "ref-pipe-left",
+      "type": "rect",
+      "entity": "ref-pipes",
+      "logical_id": "ref-pipes-left",
+      "role": "pipe",
+      "object_part": "primary",
+      "x": 41,
+      "y": 280,
+      "w": 30,
+      "h": 24,
+      "fill": "#EDF1F3",
+      "stroke": "#586B75",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "ref-pipe-right",
+      "type": "rect",
+      "entity": "ref-pipes",
+      "logical_id": "ref-pipes-right",
+      "role": "pipe",
+      "object_part": "primary",
+      "x": 253,
+      "y": 280,
+      "w": 30,
+      "h": 24,
+      "fill": "#EDF1F3",
+      "stroke": "#586B75",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "whole-housing-removal",
+      "type": "line",
+      "points": [
+        [
+          162,
+          278
+        ],
+        [
+          162,
+          231
+        ]
+      ],
+      "stroke": "#243540",
+      "stroke_width": 2.2,
+      "relation": "whole-housing-removal"
+    },
+    {
+      "id": "whole-housing-removal-tip",
+      "type": "polygon",
+      "points": [
+        [
+          162,
+          231
+        ],
+        [
+          167.0,
+          242.0
+        ],
+        [
+          157.0,
+          242.0
+        ]
+      ],
+      "fill": "#243540",
+      "relation": "whole-housing-removal"
+    },
+    {
+      "id": "whole-housing-label",
+      "type": "text",
+      "text": "Detach housing",
+      "x": 162,
+      "y": 354,
+      "size": 21,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "conventional-interfaces",
+      "type": "text",
+      "text": "with both interfaces",
+      "x": 162,
+      "y": 383,
+      "size": 19,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "divider",
+      "type": "line",
+      "points": [
+        [
+          309,
+          66
+        ],
+        [
+          309,
+          421
+        ]
+      ],
+      "stroke": "#DCE3E7",
+      "stroke_width": 1.1
+    },
+    {
+      "id": "candidate-heading",
+      "type": "text",
+      "text": "b  Candidate",
+      "x": 348,
+      "y": 85,
+      "size": 22,
+      "align": "left",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "seated-heading",
+      "type": "text",
+      "text": "Seated",
+      "x": 460,
+      "y": 119,
+      "size": 21,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "withdrawn-heading",
+      "type": "text",
+      "text": "Withdrawn",
+      "x": 746,
+      "y": 119,
+      "size": 21,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "seated-pipe-left",
+      "type": "rect",
+      "entity": "pipes",
+      "logical_id": "pipes-left",
+      "role": "pipe",
+      "object_part": "primary",
+      "x": 339,
+      "y": 184,
+      "w": 30,
+      "h": 24,
+      "fill": "#EDF1F3",
+      "stroke": "#586B75",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "seated-pipe-right",
+      "type": "rect",
+      "entity": "pipes",
+      "logical_id": "pipes-right",
+      "role": "pipe",
+      "object_part": "primary",
+      "x": 551,
+      "y": 184,
+      "w": 30,
+      "h": 24,
+      "fill": "#EDF1F3",
+      "stroke": "#586B75",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "seated-interface-left",
+      "type": "rect",
+      "entity": "interfaces",
+      "logical_id": "interfaces-left",
+      "role": "housing",
+      "object_part": "primary",
+      "x": 369,
+      "y": 183,
+      "w": 27,
+      "h": 26,
+      "fill": "#CAD5DC",
+      "stroke": "#586B75",
+      "stroke_width": 2
+    },
+    {
+      "id": "seated-interface-right",
+      "type": "rect",
+      "entity": "interfaces",
+      "logical_id": "interfaces-right",
+      "role": "housing",
+      "object_part": "primary",
+      "x": 524,
+      "y": 183,
+      "w": 27,
+      "h": 26,
+      "fill": "#CAD5DC",
+      "stroke": "#586B75",
+      "stroke_width": 2
+    },
+    {
+      "id": "seated-housing",
+      "type": "rect",
+      "entity": "housing",
+      "logical_id": "housing",
+      "role": "housing",
+      "object_part": "primary",
+      "x": 396,
+      "y": 146,
+      "w": 128,
+      "h": 100,
+      "radius": 5,
+      "fill": "#F0F4F6",
+      "stroke": "#586B75",
+      "stroke_width": 2.8
+    },
+    {
+      "id": "seated-seal",
+      "type": "rect",
+      "entity": "seal",
+      "logical_id": "seal",
+      "role": "seal",
+      "object_part": "primary",
+      "x": 411,
+      "y": 240,
+      "w": 98,
+      "h": 12,
+      "radius": 3,
+      "fill": "#FFFFFF",
+      "stroke": "#82608C",
+      "stroke_width": 3.4
+    },
+    {
+      "id": "withdrawn-pipe-left",
+      "type": "rect",
+      "entity": "pipes",
+      "logical_id": "pipes-left",
+      "role": "pipe",
+      "object_part": "detail",
+      "x": 625,
+      "y": 184,
+      "w": 30,
+      "h": 24,
+      "fill": "#EDF1F3",
+      "stroke": "#586B75",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "withdrawn-pipe-right",
+      "type": "rect",
+      "entity": "pipes",
+      "logical_id": "pipes-right",
+      "role": "pipe",
+      "object_part": "detail",
+      "x": 837,
+      "y": 184,
+      "w": 30,
+      "h": 24,
+      "fill": "#EDF1F3",
+      "stroke": "#586B75",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "withdrawn-interface-left",
+      "type": "rect",
+      "entity": "interfaces",
+      "logical_id": "interfaces-left",
+      "role": "housing",
+      "object_part": "detail",
+      "x": 655,
+      "y": 183,
+      "w": 27,
+      "h": 26,
+      "fill": "#CAD5DC",
+      "stroke": "#586B75",
+      "stroke_width": 2
+    },
+    {
+      "id": "withdrawn-interface-right",
+      "type": "rect",
+      "entity": "interfaces",
+      "logical_id": "interfaces-right",
+      "role": "housing",
+      "object_part": "detail",
+      "x": 810,
+      "y": 183,
+      "w": 27,
+      "h": 26,
+      "fill": "#CAD5DC",
+      "stroke": "#586B75",
+      "stroke_width": 2
+    },
+    {
+      "id": "withdrawn-housing",
+      "type": "rect",
+      "entity": "housing",
+      "logical_id": "housing",
+      "role": "housing",
+      "object_part": "detail",
+      "x": 682,
+      "y": 146,
+      "w": 128,
+      "h": 100,
+      "radius": 5,
+      "fill": "#F0F4F6",
+      "stroke": "#586B75",
+      "stroke_width": 2.8
+    },
+    {
+      "id": "withdrawn-seal",
+      "type": "rect",
+      "entity": "seal",
+      "logical_id": "seal",
+      "role": "seal",
+      "object_part": "detail",
+      "x": 697,
+      "y": 240,
+      "w": 98,
+      "h": 12,
+      "radius": 3,
+      "fill": "#FFFFFF",
+      "stroke": "#82608C",
+      "stroke_width": 3.4
+    },
+    {
+      "id": "seated-frame",
+      "type": "rect",
+      "entity": "frame",
+      "logical_id": "frame",
+      "role": "frame",
+      "object_part": "primary",
+      "x": 417,
+      "y": 156,
+      "w": 86,
+      "h": 72,
+      "radius": 2,
+      "fill": "#FFFFFF",
+      "stroke": "#327693",
+      "stroke_width": 4,
+      "opacity": 1
+    },
+    {
+      "id": "seated-layer1",
+      "type": "rect",
+      "entity": "layers",
+      "logical_id": "layer1",
+      "role": "layer1",
+      "object_part": "primary",
+      "x": 429,
+      "y": 163,
+      "w": 22,
+      "h": 58,
+      "fill": "#E5BA61",
+      "stroke": "#745526",
+      "stroke_width": 1.8,
+      "opacity": 1
+    },
+    {
+      "id": "seated-layer1-label",
+      "type": "text",
+      "entity": "layers",
+      "logical_id": "layer1",
+      "role": "layer1",
+      "object_part": "decoration",
+      "text": "1",
+      "x": 440,
+      "y": 199,
+      "size": 20,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#E5BA61",
+      "opacity": 1
+    },
+    {
+      "id": "seated-layer2",
+      "type": "rect",
+      "entity": "layers",
+      "logical_id": "layer2",
+      "role": "layer2",
+      "object_part": "primary",
+      "x": 469,
+      "y": 163,
+      "w": 22,
+      "h": 58,
+      "fill": "#80BBB0",
+      "stroke": "#2B6E62",
+      "stroke_width": 1.8,
+      "opacity": 1
+    },
+    {
+      "id": "seated-layer2-label",
+      "type": "text",
+      "entity": "layers",
+      "logical_id": "layer2",
+      "role": "layer2",
+      "object_part": "decoration",
+      "text": "2",
+      "x": 480,
+      "y": 199,
+      "size": 20,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#80BBB0",
+      "opacity": 1
+    },
+    {
+      "id": "withdrawn-frame",
+      "type": "rect",
+      "entity": "frame",
+      "logical_id": "frame",
+      "role": "frame",
+      "object_part": "detail",
+      "x": 703,
+      "y": 322,
+      "w": 86,
+      "h": 72,
+      "radius": 2,
+      "fill": "#FFFFFF",
+      "stroke": "#327693",
+      "stroke_width": 4,
+      "opacity": 1
+    },
+    {
+      "id": "withdrawn-layer1",
+      "type": "rect",
+      "entity": "layers",
+      "logical_id": "layer1",
+      "role": "layer1",
+      "object_part": "detail",
+      "x": 715,
+      "y": 329,
+      "w": 22,
+      "h": 58,
+      "fill": "#E5BA61",
+      "stroke": "#745526",
+      "stroke_width": 1.8,
+      "opacity": 1
+    },
+    {
+      "id": "withdrawn-layer1-label",
+      "type": "text",
+      "entity": "layers",
+      "logical_id": "layer1",
+      "role": "layer1",
+      "object_part": "decoration",
+      "text": "1",
+      "x": 726,
+      "y": 365,
+      "size": 20,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#E5BA61",
+      "opacity": 1
+    },
+    {
+      "id": "withdrawn-layer2",
+      "type": "rect",
+      "entity": "layers",
+      "logical_id": "layer2",
+      "role": "layer2",
+      "object_part": "detail",
+      "x": 755,
+      "y": 329,
+      "w": 22,
+      "h": 58,
+      "fill": "#80BBB0",
+      "stroke": "#2B6E62",
+      "stroke_width": 1.8,
+      "opacity": 1
+    },
+    {
+      "id": "withdrawn-layer2-label",
+      "type": "text",
+      "entity": "layers",
+      "logical_id": "layer2",
+      "role": "layer2",
+      "object_part": "decoration",
+      "text": "2",
+      "x": 766,
+      "y": 365,
+      "size": 20,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#80BBB0",
+      "opacity": 1
+    },
+    {
+      "id": "cartridge-withdrawal",
+      "type": "line",
+      "points": [
+        [
+          746,
+          266
+        ],
+        [
+          746,
+          305
+        ]
+      ],
+      "stroke": "#243540",
+      "stroke_width": 2.2,
+      "relation": "cartridge-withdrawal"
+    },
+    {
+      "id": "cartridge-withdrawal-tip",
+      "type": "polygon",
+      "points": [
+        [
+          746,
+          305
+        ],
+        [
+          741.0,
+          294.0
+        ],
+        [
+          751.0,
+          294.0
+        ]
+      ],
+      "fill": "#243540",
+      "relation": "cartridge-withdrawal"
+    },
+    {
+      "id": "inlet-label",
+      "type": "text",
+      "text": "Inlet",
+      "x": 339,
+      "y": 170,
+      "size": 18,
+      "align": "left",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "outlet-label",
+      "type": "text",
+      "text": "Outlet",
+      "x": 581,
+      "y": 170,
+      "size": 18,
+      "align": "right",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "fixed-label",
+      "type": "text",
+      "text": "Housing stays",
+      "x": 614,
+      "y": 282,
+      "size": 20,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "fixed-leader",
+      "type": "line",
+      "points": [
+        [
+          619,
+          265
+        ],
+        [
+          651,
+          244
+        ],
+        [
+          681,
+          234
+        ]
+      ],
+      "stroke": "#586B75",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "seal-label",
+      "type": "text",
+      "text": "Seal stays",
+      "x": 506,
+      "y": 324,
+      "size": 20,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "seal-leader",
+      "type": "line",
+      "points": [
+        [
+          507,
+          305
+        ],
+        [
+          507,
+          257
+        ]
+      ],
+      "stroke": "#586B75",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "frame-label",
+      "type": "text",
+      "text": "Frame + both layers",
+      "x": 597,
+      "y": 369,
+      "size": 20,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "frame-leader",
+      "type": "line",
+      "points": [
+        [
+          689,
+          362
+        ],
+        [
+          700,
+          362
+        ]
+      ],
+      "stroke": "#586B75",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "layer-legend",
+      "type": "text",
+      "text": "1, 2  Different filter layers; order retained",
+      "x": 610,
+      "y": 435,
+      "size": 19,
+      "align": "center",
+      "fill": "#243540",
+      "background": "#FFFFFF"
+    }
+  ],
+  "caption": "**Figure 1. Two replacement operations in a constructed geometric DEMO.** Flow is stopped before replacement. The conventional sequence first detaches the housing from the pipe (a). In the candidate (b), the seated frame holds layers 1 and 2 between the inlet and outlet; the same frame and both layers are then withdrawn sideways as one cartridge, while the housing, interfaces and sealing ring stay in place. The two candidate views depict successive states of the same components. Arrows show removal motion only. The cutaway geometry and seal outline are schematic and not to scale. Position and layer-order checks do not establish filtration, sealing or manufacturing performance.",
+  "alt_text": "Conventional housing detachment is compared with straight sideways withdrawal of a two-layer cartridge, leaving the candidate housing, its two interfaces and sealing ring in place.",
+  "count_constraints": [
+    {
+      "name": "ref-housing",
+      "expected": 1,
+      "scope": {
+        "entity": "ref-housing"
+      },
+      "expected_logical_ids": [
+        "ref-housing"
+      ]
+    },
+    {
+      "name": "ref-interfaces",
+      "expected": 2,
+      "scope": {
+        "entity": "ref-interfaces"
+      },
+      "expected_logical_ids": [
+        "ref-interfaces-left",
+        "ref-interfaces-right"
+      ]
+    },
+    {
+      "name": "ref-pipes",
+      "expected": 2,
+      "scope": {
+        "entity": "ref-pipes"
+      },
+      "expected_logical_ids": [
+        "ref-pipes-left",
+        "ref-pipes-right"
+      ]
+    },
+    {
+      "name": "housing",
+      "expected": 1,
+      "scope": {
+        "entity": "housing"
+      },
+      "expected_logical_ids": [
+        "housing"
+      ]
+    },
+    {
+      "name": "interfaces",
+      "expected": 2,
+      "scope": {
+        "entity": "interfaces"
+      },
+      "expected_logical_ids": [
+        "interfaces-left",
+        "interfaces-right"
+      ]
+    },
+    {
+      "name": "pipes",
+      "expected": 2,
+      "scope": {
+        "entity": "pipes"
+      },
+      "expected_logical_ids": [
+        "pipes-left",
+        "pipes-right"
+      ]
+    },
+    {
+      "name": "seal",
+      "expected": 1,
+      "scope": {
+        "entity": "seal"
+      },
+      "expected_logical_ids": [
+        "seal"
+      ]
+    },
+    {
+      "name": "frame",
+      "expected": 1,
+      "scope": {
+        "entity": "frame"
+      },
+      "expected_logical_ids": [
+        "frame"
+      ]
+    },
+    {
+      "name": "layers",
+      "expected": 2,
+      "scope": {
+        "entity": "layers"
+      },
+      "expected_logical_ids": [
+        "layer1",
+        "layer2"
+      ]
+    }
+  ],
+  "exact_labels": [
+    "Two replacement operations",
+    "Flow stopped",
+    "a  Conventional",
+    "Detach housing",
+    "with both interfaces",
+    "b  Candidate",
+    "Seated",
+    "Withdrawn",
+    "1",
+    "2",
+    "1",
+    "2",
+    "Inlet",
+    "Outlet",
+    "Housing stays",
+    "Seal stays",
+    "Frame + both layers",
+    "1, 2  Different filter layers; order retained"
+  ]
+}

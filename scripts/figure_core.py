@@ -67,7 +67,7 @@ def validate_spec(s):
     if len(relations)!=len(set(relations)):raise ValueError('Duplicate relation id')
     for r in s['relations']:
         if r['from'] not in ids or r['to'] not in ids:raise ValueError('Relation references an unknown entity')
-        if r['kind'] not in ('flow','dependency','containment','inhibition','conditional','detail'):raise ValueError('Unspecified relation kind')
+        if r['kind'] not in ('flow','dependency','containment','inhibition','conditional','detail','motion','reuse'):raise ValueError('Unspecified relation kind')
     itemids=[p['id'] for p in s['items']]
     if len(itemids)!=len(set(itemids)):raise ValueError('Duplicate drawing id')
     for rule in s.get('count_constraints',[]):
