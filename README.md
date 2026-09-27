@@ -4,7 +4,7 @@ FigureCraft 根据科学对象、关系和数据组织图形。它用于机制�
 
 当前版本 **1.16.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
-## 当前本地维护
+## 本轮改动
 
 1.16 补齐自由路径与关系标签的绑定，并将候选取舍落实到保留优点、修好代价的实际成图。版本号标识功能变化；开发案例与新任务的效果分别记录在[本轮验收](provenance/current-validation.md)。1.15 的上一轮维护提交已发布，语法错误未复现、默认箭头已修复，不重复计作本轮成果。
 
@@ -76,4 +76,4 @@ PDF 字号检查器来自固定版本的 nature-skills，原始许可证和 NOTI
 
 公开仓库保留当前通用代码、示例和测试；本机路径、私人论文、完整代理日志和重复历史输出留在本地归档。
 
-[共享参考与独立记录案例](examples/common-reference-demo/README.md)保留两种实际构图及其代价，没有将新版选作全面优胜者。
+[共享参考与独立记录案例](examples/common-reference-demo/README.md)保留原有两种构图；[继续开发的成图](examples/common-reference-demo/dev/REVIEW.md)把对象辨识和就近标签结合起来。开发成图与独立新任务的效果分开记录，没有将新版选作全面优胜者。
