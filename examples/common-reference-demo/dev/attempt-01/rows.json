@@ -1,0 +1,1413 @@
+{
+  "schema_version": 1,
+  "figure_id": "common-reference-dev-rows",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "Two fixed cameras observe one passive board and write separate corner-residual records.",
+  "evidence_status": "Constructed teaching DEMO; development after inspecting both frozen candidates",
+  "source_refs": [
+    {
+      "file": "E:\\PT-RVV\\RVV\\skill-generation-20260927\\repos\\FigureCraft\\examples\\common-reference-demo\\input\\figure-task.md",
+      "sha256": "c27b9b90dac15588d56ece5d6c773505c6c0f511135acd696fc258e9dceda5e2"
+    }
+  ],
+  "forbidden_implications": [
+    "Digital transmission from Board",
+    "Camera-to-camera communication",
+    "Merged records",
+    "Measured optical positions, viewing angles, focal lengths or performance",
+    "Stereo reconstruction",
+    "Independent validation of this development candidate"
+  ],
+  "entities": [
+    {
+      "id": "Board",
+      "semantic_role": "reference",
+      "description": "One passive checkerboard"
+    },
+    {
+      "id": "C1",
+      "semantic_role": "camera",
+      "description": "Fixed camera 1"
+    },
+    {
+      "id": "C2",
+      "semantic_role": "camera",
+      "description": "Fixed camera 2"
+    },
+    {
+      "id": "L1",
+      "semantic_role": "record",
+      "description": "Own residual record from C1"
+    },
+    {
+      "id": "L2",
+      "semantic_role": "record",
+      "description": "Own residual record from C2"
+    }
+  ],
+  "relations": [
+    {
+      "id": "observe-C1",
+      "from": "C1",
+      "to": "Board",
+      "kind": "reference",
+      "meaning": "C1 observes the same passive Board; logical association, not a ray or signal",
+      "geometry": {
+        "item_id": "observe-C1-line",
+        "from": [
+          347,
+          160
+        ],
+        "to": [
+          203,
+          231
+        ],
+        "arrow_required": false
+      }
+    },
+    {
+      "id": "write-C1",
+      "from": "C1",
+      "to": "L1",
+      "kind": "flow",
+      "meaning": "C1 writes its own computed corner residuals to L1",
+      "geometry": {
+        "item_id": "write-C1-line",
+        "from": [
+          489,
+          160
+        ],
+        "to": [
+          706,
+          160
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "write-C1-head",
+          "tip": [
+            706,
+            160
+          ],
+          "base": [
+            696.0,
+            160.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "observe-C2",
+      "from": "C2",
+      "to": "Board",
+      "kind": "reference",
+      "meaning": "C2 observes the same passive Board; logical association, not a ray or signal",
+      "geometry": {
+        "item_id": "observe-C2-line",
+        "from": [
+          347,
+          360
+        ],
+        "to": [
+          203,
+          289
+        ],
+        "arrow_required": false
+      }
+    },
+    {
+      "id": "write-C2",
+      "from": "C2",
+      "to": "L2",
+      "kind": "flow",
+      "meaning": "C2 writes its own computed corner residuals to L2",
+      "geometry": {
+        "item_id": "write-C2-line",
+        "from": [
+          489,
+          360
+        ],
+        "to": [
+          706,
+          360
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "write-C2-head",
+          "tip": [
+            706,
+            360
+          ],
+          "base": [
+            696.0,
+            360.0
+          ]
+        }
+      }
+    }
+  ],
+  "exact_labels": [
+    "One shared board, two independent records",
+    "Board",
+    "Observe",
+    "Write corner\nresiduals",
+    "C1",
+    "L1",
+    "Observe",
+    "Write corner\nresiduals",
+    "C2",
+    "L2"
+  ],
+  "locked_values": {
+    "Board": 1,
+    "cameras": [
+      "C1",
+      "C2"
+    ],
+    "records": [
+      "L1",
+      "L2"
+    ],
+    "observations": [
+      [
+        "C1",
+        "Board"
+      ],
+      [
+        "C2",
+        "Board"
+      ]
+    ],
+    "writes": [
+      [
+        "C1",
+        "L1"
+      ],
+      [
+        "C2",
+        "L2"
+      ]
+    ],
+    "record_content": "Each camera independently computes its own observed corner residuals",
+    "physical_layout": "Unknown; not encoded",
+    "measurement_data": null
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "camera": {
+      "base": "#C7DEEF"
+    },
+    "record": {
+      "base": "#E1F0EC"
+    },
+    "reference": {
+      "base": "#D7DEE3"
+    },
+    "observation": {
+      "base": "#68747F"
+    },
+    "write": {
+      "base": "#2D8278"
+    }
+  },
+  "layout": {
+    "archetype": "shared-reference-independent-rows",
+    "reading_order": "Board to either camera, then that camera to its own record",
+    "position_semantics": "Logical grouping only. Front-view camera symbols do not encode physical orientation."
+  },
+  "depth": {
+    "mode": "D1_shallow_2_5d",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 160,
+    "view_width": 900,
+    "view_height": 506.25,
+    "font_profile": "generic_readable_draft",
+    "placement_width_mm": 160
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 506.25,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "One shared board, two independent records",
+      "x": 450,
+      "y": 40,
+      "size": 23,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "Board-top",
+      "type": "polygon",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "points": [
+        [
+          55,
+          206
+        ],
+        [
+          62,
+          199
+        ],
+        [
+          202,
+          199
+        ],
+        [
+          195,
+          206
+        ]
+      ],
+      "fill": "#E4E9ED",
+      "stroke": "#4B5863",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "Board-side",
+      "type": "polygon",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "points": [
+        [
+          195,
+          206
+        ],
+        [
+          202,
+          199
+        ],
+        [
+          202,
+          316
+        ],
+        [
+          195,
+          323
+        ]
+      ],
+      "fill": "#A7B2BC",
+      "stroke": "#4B5863",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "Board-body",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "primary",
+      "x": 55,
+      "y": 206,
+      "w": 140,
+      "h": 117,
+      "fill": "#FFFFFF",
+      "stroke": "#4B5863",
+      "stroke_width": 1.7
+    },
+    {
+      "id": "Board-square-0-0",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 62,
+      "y": 219,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-0-2",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 98,
+      "y": 219,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-0-4",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 134,
+      "y": 219,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-0-6",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 170,
+      "y": 219,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-1-1",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 80,
+      "y": 237,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-1-3",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 116,
+      "y": 237,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-1-5",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 152,
+      "y": 237,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-2-0",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 62,
+      "y": 255,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-2-2",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 98,
+      "y": 255,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-2-4",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 134,
+      "y": 255,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-2-6",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 170,
+      "y": 255,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-3-1",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 80,
+      "y": 273,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-3-3",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 116,
+      "y": 273,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-3-5",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 152,
+      "y": 273,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-4-0",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 62,
+      "y": 291,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-4-2",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 98,
+      "y": 291,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-4-4",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 134,
+      "y": 291,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-square-4-6",
+      "type": "rect",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration",
+      "x": 170,
+      "y": 291,
+      "w": 18,
+      "h": 18,
+      "fill": "#34424C"
+    },
+    {
+      "id": "Board-label",
+      "type": "text",
+      "text": "Board",
+      "x": 125,
+      "y": 184,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF",
+      "entity": "Board",
+      "logical_id": "Board",
+      "object_part": "decoration"
+    },
+    {
+      "id": "observe-C1-line",
+      "type": "line",
+      "points": [
+        [
+          347,
+          160
+        ],
+        [
+          259,
+          160
+        ],
+        [
+          259,
+          231
+        ],
+        [
+          203,
+          231
+        ]
+      ],
+      "stroke": "#657580",
+      "stroke_width": 1.8,
+      "relation": "observe-C1",
+      "role": "observation",
+      "dash": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "observe-C1-label",
+      "type": "text",
+      "text": "Observe",
+      "x": 303.0,
+      "y": 148.0,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF",
+      "relation": "observe-C1",
+      "role": "observation",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.5,
+        "offset": [
+          0,
+          -12
+        ],
+        "anchor": [
+          303.0,
+          160.0
+        ]
+      }
+    },
+    {
+      "id": "write-C1-line",
+      "type": "line",
+      "points": [
+        [
+          489,
+          160
+        ],
+        [
+          706,
+          160
+        ]
+      ],
+      "stroke": "#286E65",
+      "stroke_width": 2.3,
+      "relation": "write-C1",
+      "role": "write"
+    },
+    {
+      "id": "write-C1-head",
+      "type": "polygon",
+      "points": [
+        [
+          706,
+          160
+        ],
+        [
+          696.0,
+          164.2
+        ],
+        [
+          696.0,
+          155.8
+        ]
+      ],
+      "fill": "#286E65",
+      "stroke": "#286E65",
+      "stroke_width": 0,
+      "relation": "write-C1",
+      "role": "write"
+    },
+    {
+      "id": "write-C1-label",
+      "type": "text",
+      "text": "Write corner\nresiduals",
+      "x": 597.5,
+      "y": 127.0,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF",
+      "relation": "write-C1",
+      "role": "write",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.5,
+        "offset": [
+          0,
+          -33
+        ],
+        "anchor": [
+          597.5,
+          160.0
+        ]
+      },
+      "leading": 24
+    },
+    {
+      "id": "C1-top",
+      "type": "polygon",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "decoration",
+      "points": [
+        [
+          355,
+          129
+        ],
+        [
+          362,
+          122
+        ],
+        [
+          482,
+          122
+        ],
+        [
+          475,
+          129
+        ]
+      ],
+      "fill": "#E1ECF5",
+      "stroke": "#285673",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "C1-side",
+      "type": "polygon",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "decoration",
+      "points": [
+        [
+          475,
+          129
+        ],
+        [
+          482,
+          122
+        ],
+        [
+          482,
+          192
+        ],
+        [
+          475,
+          199
+        ]
+      ],
+      "fill": "#8DB5CD",
+      "stroke": "#285673",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "C1-body",
+      "type": "rect",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "primary",
+      "x": 355,
+      "y": 129,
+      "w": 120,
+      "h": 70,
+      "radius": 5,
+      "fill": "#C7DEEF",
+      "stroke": "#285673",
+      "stroke_width": 1.9
+    },
+    {
+      "id": "C1-lens-rim",
+      "type": "circle",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "decoration",
+      "x": 422,
+      "y": 164,
+      "r": 27,
+      "fill": "#88B1CB",
+      "stroke": "#285673",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "C1-lens",
+      "type": "circle",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "decoration",
+      "x": 422,
+      "y": 164,
+      "r": 19,
+      "fill": "#30566E",
+      "stroke": "#244257",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "C1-lens-light",
+      "type": "circle",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "decoration",
+      "x": 416,
+      "y": 158,
+      "r": 6,
+      "fill": "#B9D4E7"
+    },
+    {
+      "id": "C1-stand",
+      "type": "line",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "decoration",
+      "points": [
+        [
+          415,
+          199
+        ],
+        [
+          415,
+          213
+        ],
+        [
+          394,
+          222
+        ],
+        [
+          436,
+          222
+        ]
+      ],
+      "stroke": "#285673",
+      "stroke_width": 2
+    },
+    {
+      "id": "C1-label",
+      "type": "text",
+      "text": "C1",
+      "x": 415,
+      "y": 106,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF",
+      "entity": "C1",
+      "logical_id": "C1",
+      "object_part": "decoration"
+    },
+    {
+      "id": "L1-body",
+      "type": "polygon",
+      "entity": "L1",
+      "logical_id": "L1",
+      "object_part": "primary",
+      "points": [
+        [
+          722,
+          121
+        ],
+        [
+          798,
+          121
+        ],
+        [
+          818,
+          141
+        ],
+        [
+          818,
+          199
+        ],
+        [
+          722,
+          199
+        ]
+      ],
+      "fill": "#E1F0EC",
+      "stroke": "#286E65",
+      "stroke_width": 1.9
+    },
+    {
+      "id": "L1-fold",
+      "type": "polygon",
+      "entity": "L1",
+      "logical_id": "L1",
+      "object_part": "decoration",
+      "points": [
+        [
+          798,
+          121
+        ],
+        [
+          798,
+          141
+        ],
+        [
+          818,
+          141
+        ]
+      ],
+      "fill": "#BCD9D1",
+      "stroke": "#286E65",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "L1-label",
+      "type": "text",
+      "text": "L1",
+      "x": 770,
+      "y": 169,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#E1F0EC",
+      "entity": "L1",
+      "logical_id": "L1",
+      "object_part": "decoration"
+    },
+    {
+      "id": "observe-C2-line",
+      "type": "line",
+      "points": [
+        [
+          347,
+          360
+        ],
+        [
+          259,
+          360
+        ],
+        [
+          259,
+          289
+        ],
+        [
+          203,
+          289
+        ]
+      ],
+      "stroke": "#657580",
+      "stroke_width": 1.8,
+      "relation": "observe-C2",
+      "role": "observation",
+      "dash": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "observe-C2-label",
+      "type": "text",
+      "text": "Observe",
+      "x": 303.0,
+      "y": 348.0,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF",
+      "relation": "observe-C2",
+      "role": "observation",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.5,
+        "offset": [
+          0,
+          -12
+        ],
+        "anchor": [
+          303.0,
+          360.0
+        ]
+      }
+    },
+    {
+      "id": "write-C2-line",
+      "type": "line",
+      "points": [
+        [
+          489,
+          360
+        ],
+        [
+          706,
+          360
+        ]
+      ],
+      "stroke": "#286E65",
+      "stroke_width": 2.3,
+      "relation": "write-C2",
+      "role": "write"
+    },
+    {
+      "id": "write-C2-head",
+      "type": "polygon",
+      "points": [
+        [
+          706,
+          360
+        ],
+        [
+          696.0,
+          364.2
+        ],
+        [
+          696.0,
+          355.8
+        ]
+      ],
+      "fill": "#286E65",
+      "stroke": "#286E65",
+      "stroke_width": 0,
+      "relation": "write-C2",
+      "role": "write"
+    },
+    {
+      "id": "write-C2-label",
+      "type": "text",
+      "text": "Write corner\nresiduals",
+      "x": 597.5,
+      "y": 327.0,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF",
+      "relation": "write-C2",
+      "role": "write",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.5,
+        "offset": [
+          0,
+          -33
+        ],
+        "anchor": [
+          597.5,
+          360.0
+        ]
+      },
+      "leading": 24
+    },
+    {
+      "id": "C2-top",
+      "type": "polygon",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "decoration",
+      "points": [
+        [
+          355,
+          329
+        ],
+        [
+          362,
+          322
+        ],
+        [
+          482,
+          322
+        ],
+        [
+          475,
+          329
+        ]
+      ],
+      "fill": "#E1ECF5",
+      "stroke": "#285673",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "C2-side",
+      "type": "polygon",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "decoration",
+      "points": [
+        [
+          475,
+          329
+        ],
+        [
+          482,
+          322
+        ],
+        [
+          482,
+          392
+        ],
+        [
+          475,
+          399
+        ]
+      ],
+      "fill": "#8DB5CD",
+      "stroke": "#285673",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "C2-body",
+      "type": "rect",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "primary",
+      "x": 355,
+      "y": 329,
+      "w": 120,
+      "h": 70,
+      "radius": 5,
+      "fill": "#C7DEEF",
+      "stroke": "#285673",
+      "stroke_width": 1.9
+    },
+    {
+      "id": "C2-lens-rim",
+      "type": "circle",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "decoration",
+      "x": 422,
+      "y": 364,
+      "r": 27,
+      "fill": "#88B1CB",
+      "stroke": "#285673",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "C2-lens",
+      "type": "circle",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "decoration",
+      "x": 422,
+      "y": 364,
+      "r": 19,
+      "fill": "#30566E",
+      "stroke": "#244257",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "C2-lens-light",
+      "type": "circle",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "decoration",
+      "x": 416,
+      "y": 358,
+      "r": 6,
+      "fill": "#B9D4E7"
+    },
+    {
+      "id": "C2-stand",
+      "type": "line",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "decoration",
+      "points": [
+        [
+          415,
+          399
+        ],
+        [
+          415,
+          413
+        ],
+        [
+          394,
+          422
+        ],
+        [
+          436,
+          422
+        ]
+      ],
+      "stroke": "#285673",
+      "stroke_width": 2
+    },
+    {
+      "id": "C2-label",
+      "type": "text",
+      "text": "C2",
+      "x": 415,
+      "y": 306,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#FFFFFF",
+      "entity": "C2",
+      "logical_id": "C2",
+      "object_part": "decoration"
+    },
+    {
+      "id": "L2-body",
+      "type": "polygon",
+      "entity": "L2",
+      "logical_id": "L2",
+      "object_part": "primary",
+      "points": [
+        [
+          722,
+          321
+        ],
+        [
+          798,
+          321
+        ],
+        [
+          818,
+          341
+        ],
+        [
+          818,
+          399
+        ],
+        [
+          722,
+          399
+        ]
+      ],
+      "fill": "#E1F0EC",
+      "stroke": "#286E65",
+      "stroke_width": 1.9
+    },
+    {
+      "id": "L2-fold",
+      "type": "polygon",
+      "entity": "L2",
+      "logical_id": "L2",
+      "object_part": "decoration",
+      "points": [
+        [
+          798,
+          321
+        ],
+        [
+          798,
+          341
+        ],
+        [
+          818,
+          341
+        ]
+      ],
+      "fill": "#BCD9D1",
+      "stroke": "#286E65",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "L2-label",
+      "type": "text",
+      "text": "L2",
+      "x": 770,
+      "y": 369,
+      "size": 20,
+      "align": "center",
+      "fill": "#22313A",
+      "background": "#E1F0EC",
+      "entity": "L2",
+      "logical_id": "L2",
+      "object_part": "decoration"
+    }
+  ],
+  "count_constraints": [
+    {
+      "name": "Board",
+      "expected": 1,
+      "scope": {
+        "entity": "Board"
+      },
+      "expected_logical_ids": [
+        "Board"
+      ]
+    },
+    {
+      "name": "C1",
+      "expected": 1,
+      "scope": {
+        "entity": "C1"
+      },
+      "expected_logical_ids": [
+        "C1"
+      ]
+    },
+    {
+      "name": "C2",
+      "expected": 1,
+      "scope": {
+        "entity": "C2"
+      },
+      "expected_logical_ids": [
+        "C2"
+      ]
+    },
+    {
+      "name": "L1",
+      "expected": 1,
+      "scope": {
+        "entity": "L1"
+      },
+      "expected_logical_ids": [
+        "L1"
+      ]
+    },
+    {
+      "name": "L2",
+      "expected": 1,
+      "scope": {
+        "entity": "L2"
+      },
+      "expected_logical_ids": [
+        "L2"
+      ]
+    }
+  ],
+  "relation_components": [
+    {
+      "id": "observe-C1",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          347,
+          160
+        ],
+        "target": [
+          203,
+          231
+        ]
+      },
+      "data": {
+        "meaning": "C1 observes the same passive Board; logical association, not a ray or signal",
+        "semantics": "common_reference",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.5,
+          "offset": [
+            0,
+            -12
+          ],
+          "anchor": [
+            303.0,
+            160.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "write-C1",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          489,
+          160
+        ],
+        "target": [
+          706,
+          160
+        ]
+      },
+      "data": {
+        "meaning": "C1 writes its own computed corner residuals to L1",
+        "semantics": "data_flow",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.5,
+          "offset": [
+            0,
+            -33
+          ],
+          "anchor": [
+            597.5,
+            160.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "observe-C2",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          347,
+          360
+        ],
+        "target": [
+          203,
+          289
+        ]
+      },
+      "data": {
+        "meaning": "C2 observes the same passive Board; logical association, not a ray or signal",
+        "semantics": "common_reference",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.5,
+          "offset": [
+            0,
+            -12
+          ],
+          "anchor": [
+            303.0,
+            360.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "write-C2",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          489,
+          360
+        ],
+        "target": [
+          706,
+          360
+        ]
+      },
+      "data": {
+        "meaning": "C2 writes its own computed corner residuals to L2",
+        "semantics": "data_flow",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.5,
+          "offset": [
+            0,
+            -33
+          ],
+          "anchor": [
+            597.5,
+            360.0
+          ]
+        }
+      }
+    }
+  ],
+  "caption": "Teaching schematic. Two fixed cameras observe one passive checkerboard Board. Dashed undirected connectors denote observation associations, not optical rays or digital transmission. Each camera independently computes its own observed corner residuals and writes them to its corresponding record (solid arrows). The cameras do not communicate; records are not merged. Front-view symbols, connector bends, positions, and board pattern organize the explanation and do not specify optical geometry, distances, angles, or performance.",
+  "alt_text": "One passive Board is shared by C1 and C2. Separate solid arrows link each camera to only its own residual record, L1 or L2. Dashed elbow connectors denote observation, not rays."
+}

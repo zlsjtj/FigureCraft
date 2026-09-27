@@ -111,6 +111,85 @@ def relation_branch(ident, *, semantics, **geometry):
     return branch_bus(ident,semantics=semantics,**geometry)
 
 
+def relation_path(ident, *, semantics, points, source_entity, target_entity,
+                  meaning, label=None, color='#567580', width=.9, head=4,
+                  dash=None, role='relation'):
+    """An explicitly typed relation on a caller-owned polyline in any direction.
+
+    common_reference has no arrow; value_mapping/data_flow/motion have a head
+    aligned with the final segment. Points are layout, not a measured path.
+    Optional label is anchored to segment/fraction plus an explicit x/y offset:
+    {'text': 'observe', 'segment': 0, 'fraction': .5, 'offset': [0,-8],
+     'size': 18, 'align': 'center'}. It retains this relation ID in native text.
+    No routing, physical pose inference, text fitting or collision avoidance.
+    """
+    kinds={'common_reference':'reference','value_mapping':'mapping',
+           'data_flow':'flow','motion':'motion'}
+    if semantics not in kinds:
+        raise ValueError('Choose explicit relation semantics')
+    if not all(isinstance(v,str) and v.strip() for v in
+               (ident,source_entity,target_entity,meaning)):
+        raise ValueError('Relation ID, entity IDs and meaning must be nonempty strings')
+    points=[list(p) for p in points]
+    if len(points)<2 or any(len(p)!=2 for p in points):
+        raise ValueError('A polyline needs at least two 2D points')
+    _finite(width,head,*(v for p in points for v in p))
+    lengths=[math.dist(a,b) for a,b in zip(points,points[1:])]
+    if min(width,head)<=0 or min(lengths)<=0:
+        raise ValueError('Positive stroke/head and distinct consecutive points required')
+    directed=semantics!='common_reference'
+    if directed and lengths[-1]<head:
+        raise ValueError('Final segment must fit the arrowhead')
+    line=dict(id=ident+'-line',type='line',points=points,stroke=color,
+              stroke_width=width,relation=ident,role=role)
+    if dash is not None:
+        dash=list(dash);_finite(*dash)
+        if not dash or min(dash)<=0:raise ValueError('Positive nonempty dash pattern required')
+        line['dash']=dash
+    items=[line]
+    geometry={'item_id':line['id'],'from':points[0],'to':points[-1],
+              'arrow_required':directed}
+    if directed:
+        x,y=points[-1];px,py=points[-2];length=lengths[-1]
+        ux,uy=(x-px)/length,(y-py)/length
+        base=[x-head*ux,y-head*uy];nx,ny=-uy,ux
+        items.append(dict(id=ident+'-head',type='polygon',
+            points=[[x,y],[base[0]+head*.42*nx,base[1]+head*.42*ny],
+                    [base[0]-head*.42*nx,base[1]-head*.42*ny]],
+            fill=color,stroke=color,stroke_width=0,relation=ident,role=role))
+        geometry['arrow']={'item_id':ident+'-head','tip':[x,y],'base':base}
+    label_binding=None
+    if label is not None:
+        allowed={'text','segment','fraction','offset','size','align','fill','background','leading'}
+        if not isinstance(label,dict) or set(label)-allowed:
+            raise ValueError('Label must use the supported binding fields')
+        label=dict(label);segment=label.get('segment',0);fraction=label.get('fraction',.5)
+        offset=list(label.get('offset',[0,-8]));size=label.get('size',18)
+        if type(segment) is not int or not 0<=segment<len(points)-1 or len(offset)!=2:
+            raise ValueError('Label needs a valid segment and 2D offset')
+        _finite(fraction,size,*offset)
+        if not 0<=fraction<=1 or size<=0 or not isinstance(label.get('text'),str) or not label['text'].strip():
+            raise ValueError('Label requires text, positive size and fraction in [0,1]')
+        align=label.get('align','center')
+        if align not in ('left','center','right'):raise ValueError('Unknown label alignment')
+        if 'leading' in label:
+            _finite(label['leading'])
+            if label['leading']<=0:raise ValueError('Positive label leading required')
+        a,b=points[segment:segment+2]
+        anchor=[a[i]+fraction*(b[i]-a[i]) for i in (0,1)]
+        label_binding={'segment':segment,'fraction':fraction,'offset':offset,'anchor':anchor}
+        items.append(dict(id=ident+'-label',type='text',text=label['text'],
+            x=anchor[0]+offset[0],y=anchor[1]+offset[1],size=size,align=align,
+            fill=label.get('fill','#253B44'),background=label.get('background','#FFFFFF'),
+            relation=ident,role=role,relation_label_binding=label_binding,
+            **({'leading':label['leading']} if 'leading' in label else {})))
+    return {'id':ident,'kind':'relation_path','items':items,
+        'relations':[dict(id=ident,**{'from':source_entity,'to':target_entity},
+                          kind=kinds[semantics],meaning=meaning,geometry=geometry)],
+        'anchors':{'source':points[0],'target':points[-1]},
+        'data':{'meaning':meaning,'semantics':semantics,'label_binding':label_binding}}
+
+
 def add_component(scene, component):
     """Append to Scene or JSON without altering its existing fields or APIs."""
     spec=scene.s if hasattr(scene,'s') else scene

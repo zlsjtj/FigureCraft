@@ -2,11 +2,11 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑 SVG、矢量 PDF、PNG 和检查记录。
 
-当前版本 **1.15.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
+当前版本 **1.16.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
 ## 当前本地维护
 
-本轮核对源码后，公开材料示例的语法问题未复现，实际生成和导出成功。修复共享分支的语义默认值，补齐聚合测试入口；未改版本号冒充效果升级。执行范围见 provenance/current-validation.md。未推送前，GitHub安装命令仍取得远端旧提交。
+1.16 补齐自由路径与关系标签的绑定，并将候选取舍落实到保留优点、修好代价的实际成图。版本号标识功能变化；开发案例与新任务的效果分别记录在[本轮验收](provenance/current-validation.md)。1.15 的上一轮维护提交已发布，语法错误未复现、默认箭头已修复，不重复计作本轮成果。
 
 ## 其他示例
 

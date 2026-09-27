@@ -101,7 +101,7 @@ opened_coating_particle(s2, 'opening', x=580, y=210, radius=120,
 
 ## 共享分支与数值模式
 
-`scripts/relation_components.py` 只复用两种容易反复写错的几何，不包含领域数据、整页布局或自动美感评分。返回 `items` 是原场景格式的独立线、矩形和文字，可 `add_component(scene, result)` 接入 `Scene`/JSON，也可在原生绘图流程中逐项导出。旧接口不变。
+`scripts/relation_components.py` 复用数值采样与显式关系几何，不包含领域数据、整页布局或自动美感评分。返回 `items` 是原场景格式的独立线、矩形和文字，可 `add_component(scene, result)` 接入 `Scene`/JSON，也可在原生绘图流程中逐项导出。旧接口不变。
 
 ```python
 from relation_components import sampled_pattern, relation_branch, add_component
@@ -121,6 +121,20 @@ for component in (links, shape, result):
 
 `sampled_pattern` 画数值轴上的采样位置，不画存储这些数值的容器；表项本身用 `array_grid` 或原生等距条目表示。它的 `x` 是局部零点，横位置为 `x + value * units`；`base` 只改变标签数值，不改变间隔。严格递增有限数值和正尺度是前提。`labels=None` 显示全部，`[]` 无数值，索引列表只显示选中项。`source_pattern` 保存来源关系，不推断物理复制、所有权或收益。原点/单位/省略、应用条件及必要校验值由图与图注说明。组件不自动添加断轴，不能将两个视窗接成假连续尺度。
 
-新调用使用 `relation_branch`，必须给 `semantics`：common_reference 是无箭头共同引用；value_mapping 是数值映射；data_flow 是数据传递；motion 是物体运动。后三者有方向箭头，输出关系分别为 reference/mapping/flow/motion。与显式语义冲突的箭头参数会拒绝。meaning 说明当前关系，锚点与线路仍由调用者按对象安排；组件不推断布局或科学真相。
+左到右的共同源总线使用 `relation_branch`；任意方向、折线或逐关系标签使用 `relation_path`，不必为了适配总线更改正确构图。两者都必须给 `semantics`：common_reference 是无箭头共同引用；value_mapping 是数值映射；data_flow 是数据传递；motion 是物体运动。后三者有方向箭头，输出关系分别为 reference/mapping/flow/motion。meaning 说明当前关系，锚点与线路仍由调用者按对象安排；组件不推断布局或科学真相。
+
+```python
+from relation_components import relation_path, add_component
+link = relation_path('result-to-log', semantics='data_flow',
+    points=[[420,180],[420,240],[260,240]],
+    source_entity='result', target_entity='log', meaning='Write the result to its own log',
+    width=2, head=10, role='output',
+    label={'text':'Write', 'segment':1, 'fraction':.5, 'offset':[0,-12], 'size':20})
+add_component(scene, link)
+```
+
+`points` 按来源到目标排序，末段决定箭头朝向；无向关系保留端点身份但不画箭头。`label` 绑定某段的比例位置，加显式 `[dx,dy]` 偏移，文字保持平面并带 relation ID；换路径后从源码重建，标签随所属段移动。可给 align、fill、background、leading；尺寸使用 viewBox 单位，仍按实际入稿宽度检查。无向虚线另传 `dash=[6,5]`。零长段、装不下箭头的末段、非法标签索引及未知语义拒绝，不静默猜位置。绑定不会自动防碰撞，须检查实际标签墨迹、折点、交叉和所指关系。连接器表达逻辑关联时，不因图标位置或朝向把它变成未经证实的物理路径。
+
+[共同参考开发案例](../examples/common-reference-demo/dev/REVIEW.md)的两种构图由同一源码实际调用此入口；选择横向独立记录行，将对象辨识和标签归属一并修复。它是看到旧候选后的开发改进，不是独立自然语言生成评测。
 
 旧入口 `branch_bus` 作为兼容适配器保留：省略 semantics 的旧调用仍生成 reuse/箭头，并发出 DeprecationWarning；已有 JSON 不被自动重写。新例不使用这个含混默认值。迁移时改入口、选语义，再实际看图，不靠图注修补画面误解。相关边界在 test_branch_semantics.py 和原组件测试中覆盖；科学与视觉审阅另做。
