@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="124mm" viewBox="0 0 160 124">
+<title>Two-site calcium exchange and exact regional populations</title>
+<rect id="element-1" x="0" y="0" width="160" height="124" fill="#FFFFFF" stroke="none" stroke-width="0.25"/>
+<text id="element-2" x="6" y="8" font-family="Segoe UI" font-size="4.2333333333333325" font-weight="700" text-anchor="start" fill="#24363F">Shared sites, different regional occupancy</text>
+<text id="element-3" x="154" y="15" font-family="Segoe UI" font-size="2.998611111111111" font-weight="400" text-anchor="end" fill="#536871">Teaching DEMO</text>
+<rect id="element-4" x="4" y="20" width="61" height="60" fill="#F3F8FA" stroke="none" stroke-width="0.25"/>
+<text id="element-5" x="34.5" y="26" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="700" text-anchor="middle" fill="#24363F">One common bath</text>
+<circle id="bead-shell" data-object-part="region-of-single-bead" data-outer-radius-fraction="1" cx="33" cy="54" r="23" fill="#EDF1EA" stroke="#849A7B" stroke-width="0.4"/>
+<circle id="bead-middle" data-object-part="region-of-single-bead" data-outer-radius-fraction="0.8" cx="33" cy="54" r="18.400000000000002" fill="#D5DED1" stroke="#778F6D" stroke-width="0.4"/>
+<circle id="bead-core" data-object-part="region-of-single-bead" data-outer-radius-fraction="0.45" cx="33" cy="54" r="10.35" fill="#B5C6AE" stroke="#6F8665" stroke-width="0.4"/>
+<path id="pore-open" d="M 36.45 58.14 C 46.8 61.36 46.8 52.85 56.92 54.92" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+<path id="pore-water" data-object-part="schematic-pore" d="M 36.45 58.14 C 46.8 61.36 46.8 52.85 56.92 54.92" fill="none" stroke="#8BABBA" stroke-width="0.34" stroke-linejoin="round"/>
+<text id="element-11" x="77" y="25" font-family="Segoe UI" font-size="3.5277777777777772" font-weight="700" text-anchor="start" fill="#24363F">Occupied sites · later bead</text>
+<text id="element-12" x="77" y="35" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="700" text-anchor="start" fill="#24363F">Shell</text>
+<rect id="shell-Ca-sites" data-site-count="16" data-aggregation="not individual ions" x="77" y="38" width="32.8" height="3.5" fill="#D9825A" stroke="#B8522C" stroke-width="0.25"/>
+<rect id="shell-Na-sites" data-site-count="8" data-aggregation="not individual ions" x="109.8" y="38" width="16.4" height="3.5" fill="#78B5C8" stroke="#267D9D" stroke-width="0.25"/>
+<text id="element-15" x="77" y="47" font-family="Segoe UI" font-size="3.175" font-weight="400" text-anchor="start" fill="#24363F">8 Ca²⁺ + 8 Na⁺   /   24 sites</text>
+<text id="element-16" x="77" y="53" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="700" text-anchor="start" fill="#24363F">Middle</text>
+<rect id="middle-Ca-sites" data-site-count="12" data-aggregation="not individual ions" x="77" y="56" width="24.599999999999998" height="3.5" fill="#D9825A" stroke="#B8522C" stroke-width="0.25"/>
+<rect id="middle-Na-sites" data-site-count="24" data-aggregation="not individual ions" x="101.6" y="56" width="49.199999999999996" height="3.5" fill="#78B5C8" stroke="#267D9D" stroke-width="0.25"/>
+<text id="element-19" x="77" y="65" font-family="Segoe UI" font-size="3.175" font-weight="400" text-anchor="start" fill="#24363F">6 Ca²⁺ + 24 Na⁺   /   36 sites</text>
+<text id="element-20" x="77" y="71" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="700" text-anchor="start" fill="#24363F">Core</text>
+<rect id="core-Ca-sites" data-site-count="4" data-aggregation="not individual ions" x="77" y="74" width="8.2" height="3.5" fill="#D9825A" stroke="#B8522C" stroke-width="0.25"/>
+<rect id="core-Na-sites" data-site-count="16" data-aggregation="not individual ions" x="85.2" y="74" width="32.8" height="3.5" fill="#78B5C8" stroke="#267D9D" stroke-width="0.25"/>
+<text id="element-23" x="77" y="83" font-family="Segoe UI" font-size="3.175" font-weight="400" text-anchor="start" fill="#24363F">2 Ca²⁺ + 16 Na⁺   /   20 sites</text>
+<text id="element-24" x="34" y="86" font-family="Segoe UI" font-size="2.998611111111111" font-weight="400" text-anchor="middle" fill="#536871">Connected water-filled pores</text>
+<path id="element-25" d="M 6 90 L 154 90" fill="none" stroke="#D6E0E4" stroke-width="0.3" stroke-linejoin="round"/>
+<text id="element-26" x="42.7" y="96.0" font-family="Segoe UI" font-size="3.175" font-weight="400" text-anchor="middle" fill="#24363F">Before</text>
+<text id="element-27" x="119.2" y="96.0" font-family="Segoe UI" font-size="3.175" font-weight="400" text-anchor="middle" fill="#24363F">After</text>
+<path id="element-28" d="M 35.5 115.9 L 35.5 119.4" fill="none" stroke="#778F6D" stroke-width="0.45" stroke-linejoin="round"/>
+<circle id="exemplar-before-S0" data-object-part="representative" data-same-site-key="S0" data-region="one unspecified common region" cx="35.5" cy="114.0" r="2.07" fill="#FFFFFF" stroke="#778F6D" stroke-width="0.4"/>
+<text id="element-30" x="35.5" y="115.0" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="400" text-anchor="middle" fill="#24363F">−</text>
+<path id="element-31" d="M 49.900000000000006 115.9 L 49.900000000000006 119.4" fill="none" stroke="#778F6D" stroke-width="0.45" stroke-linejoin="round"/>
+<circle id="exemplar-before-S1" data-object-part="representative" data-same-site-key="S1" data-region="one unspecified common region" cx="49.900000000000006" cy="114.0" r="2.07" fill="#FFFFFF" stroke="#778F6D" stroke-width="0.4"/>
+<text id="element-33" x="49.900000000000006" y="115.0" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="400" text-anchor="middle" fill="#24363F">−</text>
+<path id="element-34" d="M 29.2 119.4 C 36.4 118.5 49.0 120.30000000000001 56.2 119.4" fill="none" stroke="#778F6D" stroke-width="1.0" stroke-linejoin="round"/>
+<path id="element-35" d="M 112.0 115.9 L 112.0 119.4" fill="none" stroke="#778F6D" stroke-width="0.45" stroke-linejoin="round"/>
+<circle id="exemplar-after-S0" data-object-part="representative" data-same-site-key="S0" data-region="one unspecified common region" cx="112.0" cy="114.0" r="2.07" fill="#FFFFFF" stroke="#778F6D" stroke-width="0.4"/>
+<text id="element-37" x="112.0" y="115.0" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="400" text-anchor="middle" fill="#24363F">−</text>
+<path id="element-38" d="M 126.4 115.9 L 126.4 119.4" fill="none" stroke="#778F6D" stroke-width="0.45" stroke-linejoin="round"/>
+<circle id="exemplar-after-S1" data-object-part="representative" data-same-site-key="S1" data-region="one unspecified common region" cx="126.4" cy="114.0" r="2.07" fill="#FFFFFF" stroke="#778F6D" stroke-width="0.4"/>
+<text id="element-40" x="126.4" y="115.0" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="400" text-anchor="middle" fill="#24363F">−</text>
+<path id="element-41" d="M 105.7 119.4 C 112.9 118.5 125.5 120.30000000000001 132.7 119.4" fill="none" stroke="#778F6D" stroke-width="1.0" stroke-linejoin="round"/>
+<path id="element-42" d="M 35.5 108.42 L 35.5 111.93" fill="none" stroke="#267D9D" stroke-width="0.5" stroke-linejoin="round"/>
+<circle id="element-43" cx="35.5" cy="105.0" r="3.87" fill="#E7F2F6" stroke="#267D9D" stroke-width="0.5"/>
+<text id="element-44" x="35.5" y="106.3" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="400" text-anchor="middle" fill="#267D9D">Na⁺</text>
+<path id="element-45" d="M 49.900000000000006 108.42 L 49.900000000000006 111.93" fill="none" stroke="#267D9D" stroke-width="0.5" stroke-linejoin="round"/>
+<circle id="element-46" cx="49.900000000000006" cy="105.0" r="3.87" fill="#E7F2F6" stroke="#267D9D" stroke-width="0.5"/>
+<text id="element-47" x="49.900000000000006" y="106.3" font-family="Segoe UI" font-size="3.3513888888888888" font-weight="400" text-anchor="middle" fill="#267D9D">Na⁺</text>
+<path id="element-48" d="M 119.2 108.14999999999999 L 112.0 111.93" fill="none" stroke="#B8522C" stroke-width="0.65" stroke-linejoin="round"/>
+<path id="element-49" d="M 119.2 108.14999999999999 L 126.4 111.93" fill="none" stroke="#B8522C" stroke-width="0.65" stroke-linejoin="round"/>
+<circle id="element-50" cx="119.2" cy="104.1" r="4.86" fill="#FAEBE2" stroke="#B8522C" stroke-width="0.55"/>
+<text id="element-51" x="119.2" y="105.39999999999999" font-family="Segoe UI" font-size="3.5277777777777772" font-weight="400" text-anchor="middle" fill="#B8522C">Ca²⁺</text>
+<path id="pair-state-change" data-semantics="state transition" d="M 67.0 108.6 L 94.9 108.6" fill="none" stroke="#24363F" stroke-width="0.48" stroke-linejoin="round"/>
+<path id="pair-state-change-head" data-object-part="decoration" data-owner="pair-state-change" d="M 94.9 108.6 L 92.9 107.75 L 92.9 109.44999999999999 Z " fill="#24363F" stroke="none" stroke-width="0.3" stroke-linejoin="round"/>
+<text id="element-54" x="80.95" y="103.2" font-family="Segoe UI" font-size="3.175" font-weight="400" text-anchor="middle" fill="#B8522C">Ca²⁺ in</text>
+<text id="element-55" x="80.95" y="115.8" font-family="Segoe UI" font-size="3.175" font-weight="400" text-anchor="middle" fill="#267D9D">2 Na⁺ out</text>
+<text id="element-56" x="80" y="123" font-family="Segoe UI" font-size="2.998611111111111" font-weight="400" text-anchor="middle" fill="#536871">One representative pair</text>
+</svg>

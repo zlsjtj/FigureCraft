@@ -1,0 +1,461 @@
+{
+  "width_mm": 160,
+  "height_mm": 124,
+  "min_font_pt": 8.5,
+  "labels": [
+    {
+      "text": "One Ca²⁺ replaces two bound Na⁺",
+      "font_pt": 12,
+      "bbox_mm": [
+        6,
+        3.7666666666666675,
+        66.41041666666666,
+        4.2333333333333325
+      ]
+    },
+    {
+      "text": "Teaching DEMO",
+      "font_pt": 8.5,
+      "bbox_mm": [
+        132.67003580729167,
+        12.00138888888889,
+        21.32996419270833,
+        2.998611111111111
+      ]
+    },
+    {
+      "text": "Before",
+      "font_pt": 9,
+      "bbox_mm": [
+        35.45066528320312,
+        17.825,
+        9.09866943359375,
+        3.175
+      ]
+    },
+    {
+      "text": "After",
+      "font_pt": 9,
+      "bbox_mm": [
+        121.55912475585937,
+        17.825,
+        6.8817504882812495,
+        3.175
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        30.853687540690103,
+        38.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        46.8536875406901,
+        38.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        115.8536875406901,
+        38.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        131.85368754069012,
+        38.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Na⁺",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        29.280269368489584,
+        28.94861111111111,
+        5.439461263020833,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Na⁺",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        45.280269368489584,
+        28.94861111111111,
+        5.439461263020833,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Ca²⁺",
+      "font_pt": 10,
+      "bbox_mm": [
+        121.71854654947917,
+        27.772222222222222,
+        6.562906901041666,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "Ca²⁺ in",
+      "font_pt": 9,
+      "bbox_mm": [
+        77.82896728515625,
+        25.825,
+        9.3420654296875,
+        3.175
+      ]
+    },
+    {
+      "text": "2 Na⁺ out",
+      "font_pt": 9,
+      "bbox_mm": [
+        75.83141479492187,
+        39.825,
+        13.337170410156249,
+        3.175
+      ]
+    },
+    {
+      "text": "Same two sites · one region",
+      "font_pt": 9,
+      "bbox_mm": [
+        60.72908325195313,
+        54.825,
+        38.54183349609375,
+        3.175
+      ]
+    },
+    {
+      "text": "One common bath",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        18.345855712890625,
+        69.64861111111111,
+        29.30828857421875,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Pores",
+      "font_pt": 8.5,
+      "bbox_mm": [
+        7,
+        110.00138888888888,
+        7.319363742404513,
+        2.998611111111111
+      ]
+    },
+    {
+      "text": "Later bead",
+      "font_pt": 10.5,
+      "bbox_mm": [
+        72,
+        68.29583333333333,
+        18.41593017578125,
+        3.704166666666666
+      ]
+    },
+    {
+      "text": "Ca²⁺",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        109.6977037217882,
+        75.64861111111111,
+        6.604592556423611,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Na⁺",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        128.09699028862846,
+        75.64861111111111,
+        5.806019422743056,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Sites",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        145.2885986328125,
+        75.64861111111111,
+        7.422802734375,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Shell",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        70,
+        83.64861111111111,
+        7.052971733940972,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "8",
+      "font_pt": 10,
+      "bbox_mm": [
+        112.04915364583333,
+        83.47222222222223,
+        1.901692708333333,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "8",
+      "font_pt": 10,
+      "bbox_mm": [
+        130.04915364583334,
+        83.47222222222223,
+        1.901692708333333,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "24",
+      "font_pt": 10,
+      "bbox_mm": [
+        147.09830729166666,
+        83.47222222222223,
+        3.803385416666666,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "Middle",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        70,
+        93.64861111111111,
+        10.332358127170139,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "6",
+      "font_pt": 10,
+      "bbox_mm": [
+        112.04915364583333,
+        93.47222222222223,
+        1.901692708333333,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "24",
+      "font_pt": 10,
+      "bbox_mm": [
+        129.09830729166666,
+        93.47222222222223,
+        3.803385416666666,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "36",
+      "font_pt": 10,
+      "bbox_mm": [
+        147.09830729166666,
+        93.47222222222223,
+        3.803385416666666,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "Core",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        70,
+        103.64861111111111,
+        6.956422932942709,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "2",
+      "font_pt": 10,
+      "bbox_mm": [
+        112.04915364583333,
+        103.47222222222223,
+        1.901692708333333,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "16",
+      "font_pt": 10,
+      "bbox_mm": [
+        129.09830729166666,
+        103.47222222222223,
+        3.803385416666666,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "20",
+      "font_pt": 10,
+      "bbox_mm": [
+        147.09830729166666,
+        103.47222222222223,
+        3.803385416666666,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "Bath:  Ca²⁺ 40 → 24     Na⁺ 0 → 32     Cl⁻ 80 → 80",
+      "font_pt": 9,
+      "bbox_mm": [
+        46.368719482421874,
+        117.825,
+        67.26256103515625,
+        3.175
+      ]
+    }
+  ],
+  "visual_review": "PENDING",
+  "scientific_review": "PENDING",
+  "demo": true,
+  "scientific_arithmetic": "PASS",
+  "all_input_rows": [
+    {
+      "region": "shell",
+      "radius_inner_fraction": "0.8",
+      "radius_outer_fraction": "1",
+      "negative_groups": "24",
+      "initial_bound_Ca": "0",
+      "initial_bound_Na": "24",
+      "later_bound_Ca": "8",
+      "later_bound_Na": "8",
+      "later_groups_used_by_Ca": "16",
+      "later_groups_used_by_Na": "8",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "region": "middle",
+      "radius_inner_fraction": "0.45",
+      "radius_outer_fraction": "0.8",
+      "negative_groups": "36",
+      "initial_bound_Ca": "0",
+      "initial_bound_Na": "36",
+      "later_bound_Ca": "6",
+      "later_bound_Na": "24",
+      "later_groups_used_by_Ca": "12",
+      "later_groups_used_by_Na": "24",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "region": "core",
+      "radius_inner_fraction": "0",
+      "radius_outer_fraction": "0.45",
+      "negative_groups": "20",
+      "initial_bound_Ca": "0",
+      "initial_bound_Na": "20",
+      "later_bound_Ca": "2",
+      "later_bound_Na": "16",
+      "later_groups_used_by_Ca": "4",
+      "later_groups_used_by_Na": "16",
+      "provenance": "constructed_teaching_values"
+    }
+  ],
+  "system_balance": [
+    {
+      "quantity": "bead_bound_Ca",
+      "initial": "0",
+      "later": "16",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bead_bound_Na",
+      "initial": "80",
+      "later": "48",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bead_fixed_negative_groups",
+      "initial": "80",
+      "later": "80",
+      "unit": "groups",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bath_Ca",
+      "initial": "40",
+      "later": "24",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bath_Na",
+      "initial": "0",
+      "later": "32",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bath_Cl",
+      "initial": "80",
+      "later": "80",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "system_Ca",
+      "initial": "40",
+      "later": "40",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "system_Na",
+      "initial": "80",
+      "later": "80",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "system_Cl",
+      "initial": "80",
+      "later": "80",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    }
+  ],
+  "representation": "Representative local pair plus complete regional/system counts; no full individual-site census in the graphic",
+  "input_sha256": {
+    "mechanism_brief.md": "d9d30136840a445252b2a07ec600c9d99d269f117d0fa566a75dc600f5c8c3bf",
+    "region_populations.csv": "f6442577f154b8b05c305912cd1ae643f341eba883398475aa67f13b12e89da7",
+    "system_balance.csv": "54b9b4ff409e7ecea70daa8e26c841c1c24220d076edea58e6c64f8e5ac61bd2"
+  },
+  "source_sha256": "a401664a7fb9126a6c7ed52bd0d73ebd8bd5ac671afc61841c2ef684cbabef4b",
+  "not_run": [
+    "Human reading test",
+    "author aesthetics approval",
+    "physical printing",
+    "all color-vision conditions",
+    "cross-editor SVG rendering"
+  ]
+}

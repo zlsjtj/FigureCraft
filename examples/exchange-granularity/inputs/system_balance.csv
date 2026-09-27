@@ -1,0 +1,10 @@
+quantity,initial,later,unit,provenance
+bead_bound_Ca,0,16,ions,constructed_teaching_values
+bead_bound_Na,80,48,ions,constructed_teaching_values
+bead_fixed_negative_groups,80,80,groups,constructed_teaching_values
+bath_Ca,40,24,ions,constructed_teaching_values
+bath_Na,0,32,ions,constructed_teaching_values
+bath_Cl,80,80,ions,constructed_teaching_values
+system_Ca,40,40,ions,constructed_teaching_values
+system_Na,80,80,ions,constructed_teaching_values
+system_Cl,80,80,ions,constructed_teaching_values

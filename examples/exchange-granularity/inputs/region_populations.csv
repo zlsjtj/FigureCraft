@@ -1,0 +1,4 @@
+region,radius_inner_fraction,radius_outer_fraction,negative_groups,initial_bound_Ca,initial_bound_Na,later_bound_Ca,later_bound_Na,later_groups_used_by_Ca,later_groups_used_by_Na,provenance
+shell,0.8,1,24,0,24,8,8,16,8,constructed_teaching_values
+middle,0.45,0.8,36,0,36,6,24,12,24,constructed_teaching_values
+core,0,0.45,20,0,20,2,16,4,16,constructed_teaching_values

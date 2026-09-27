@@ -1,0 +1,361 @@
+{
+  "width_mm": 160,
+  "height_mm": 124,
+  "min_font_pt": 8.5,
+  "labels": [
+    {
+      "text": "Shared sites, different regional occupancy",
+      "font_pt": 12,
+      "bbox_mm": [
+        6,
+        3.7666666666666675,
+        83.43883463541665,
+        4.2333333333333325
+      ]
+    },
+    {
+      "text": "Teaching DEMO",
+      "font_pt": 8.5,
+      "bbox_mm": [
+        132.67003580729167,
+        12.00138888888889,
+        21.32996419270833,
+        2.998611111111111
+      ]
+    },
+    {
+      "text": "One common bath",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        19.845855712890625,
+        22.648611111111112,
+        29.30828857421875,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Occupied sites · later bead",
+      "font_pt": 10,
+      "bbox_mm": [
+        77,
+        21.47222222222222,
+        43.48055013020833,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "Shell",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        77,
+        31.648611111111112,
+        7.614263916015625,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "8 Ca²⁺ + 8 Na⁺   /   24 sites",
+      "font_pt": 9,
+      "bbox_mm": [
+        77,
+        43.825,
+        37.08145751953125,
+        3.175
+      ]
+    },
+    {
+      "text": "Middle",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        77,
+        49.64861111111111,
+        11.07529296875,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "6 Ca²⁺ + 24 Na⁺   /   36 sites",
+      "font_pt": 9,
+      "bbox_mm": [
+        77,
+        61.825,
+        38.79298095703125,
+        3.175
+      ]
+    },
+    {
+      "text": "Core",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        77,
+        67.64861111111111,
+        7.28697984483507,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "2 Ca²⁺ + 16 Na⁺   /   20 sites",
+      "font_pt": 9,
+      "bbox_mm": [
+        77,
+        79.825,
+        38.79298095703125,
+        3.175
+      ]
+    },
+    {
+      "text": "Connected water-filled pores",
+      "font_pt": 8.5,
+      "bbox_mm": [
+        14.837000868055558,
+        83.00138888888888,
+        38.325998263888884,
+        2.998611111111111
+      ]
+    },
+    {
+      "text": "Before",
+      "font_pt": 9,
+      "bbox_mm": [
+        38.150665283203125,
+        92.825,
+        9.09866943359375,
+        3.175
+      ]
+    },
+    {
+      "text": "After",
+      "font_pt": 9,
+      "bbox_mm": [
+        115.75912475585938,
+        92.825,
+        6.8817504882812495,
+        3.175
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        34.3536875406901,
+        111.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        48.75368754069011,
+        111.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        110.8536875406901,
+        111.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "−",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        125.25368754069011,
+        111.64861111111111,
+        2.292624918619792,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Na⁺",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        32.780269368489584,
+        102.9486111111111,
+        5.439461263020833,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Na⁺",
+      "font_pt": 9.5,
+      "bbox_mm": [
+        47.18026936848959,
+        102.9486111111111,
+        5.439461263020833,
+        3.3513888888888888
+      ]
+    },
+    {
+      "text": "Ca²⁺",
+      "font_pt": 10,
+      "bbox_mm": [
+        115.91854654947917,
+        101.87222222222222,
+        6.562906901041666,
+        3.5277777777777772
+      ]
+    },
+    {
+      "text": "Ca²⁺ in",
+      "font_pt": 9,
+      "bbox_mm": [
+        76.27896728515626,
+        100.025,
+        9.3420654296875,
+        3.175
+      ]
+    },
+    {
+      "text": "2 Na⁺ out",
+      "font_pt": 9,
+      "bbox_mm": [
+        74.28141479492187,
+        112.625,
+        13.337170410156249,
+        3.175
+      ]
+    },
+    {
+      "text": "One representative pair",
+      "font_pt": 8.5,
+      "bbox_mm": [
+        64.48204108344184,
+        120.00138888888888,
+        31.035917833116315,
+        2.998611111111111
+      ]
+    }
+  ],
+  "visual_review": "PENDING",
+  "scientific_review": "PENDING",
+  "demo": true,
+  "scientific_arithmetic": "PASS",
+  "all_input_rows": [
+    {
+      "region": "shell",
+      "radius_inner_fraction": "0.8",
+      "radius_outer_fraction": "1",
+      "negative_groups": "24",
+      "initial_bound_Ca": "0",
+      "initial_bound_Na": "24",
+      "later_bound_Ca": "8",
+      "later_bound_Na": "8",
+      "later_groups_used_by_Ca": "16",
+      "later_groups_used_by_Na": "8",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "region": "middle",
+      "radius_inner_fraction": "0.45",
+      "radius_outer_fraction": "0.8",
+      "negative_groups": "36",
+      "initial_bound_Ca": "0",
+      "initial_bound_Na": "36",
+      "later_bound_Ca": "6",
+      "later_bound_Na": "24",
+      "later_groups_used_by_Ca": "12",
+      "later_groups_used_by_Na": "24",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "region": "core",
+      "radius_inner_fraction": "0",
+      "radius_outer_fraction": "0.45",
+      "negative_groups": "20",
+      "initial_bound_Ca": "0",
+      "initial_bound_Na": "20",
+      "later_bound_Ca": "2",
+      "later_bound_Na": "16",
+      "later_groups_used_by_Ca": "4",
+      "later_groups_used_by_Na": "16",
+      "provenance": "constructed_teaching_values"
+    }
+  ],
+  "system_balance": [
+    {
+      "quantity": "bead_bound_Ca",
+      "initial": "0",
+      "later": "16",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bead_bound_Na",
+      "initial": "80",
+      "later": "48",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bead_fixed_negative_groups",
+      "initial": "80",
+      "later": "80",
+      "unit": "groups",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bath_Ca",
+      "initial": "40",
+      "later": "24",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bath_Na",
+      "initial": "0",
+      "later": "32",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "bath_Cl",
+      "initial": "80",
+      "later": "80",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "system_Ca",
+      "initial": "40",
+      "later": "40",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "system_Na",
+      "initial": "80",
+      "later": "80",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    },
+    {
+      "quantity": "system_Cl",
+      "initial": "80",
+      "later": "80",
+      "unit": "ions",
+      "provenance": "constructed_teaching_values"
+    }
+  ],
+  "representation": "Representative local pair plus complete regional/system counts; no full individual-site census in the graphic",
+  "input_sha256": {
+    "mechanism_brief.md": "d9d30136840a445252b2a07ec600c9d99d269f117d0fa566a75dc600f5c8c3bf",
+    "region_populations.csv": "f6442577f154b8b05c305912cd1ae643f341eba883398475aa67f13b12e89da7",
+    "system_balance.csv": "54b9b4ff409e7ecea70daa8e26c841c1c24220d076edea58e6c64f8e5ac61bd2"
+  },
+  "source_sha256": "a401664a7fb9126a6c7ed52bd0d73ebd8bd5ac671afc61841c2ef684cbabef4b",
+  "not_run": [
+    "Human reading test",
+    "author aesthetics approval",
+    "physical printing",
+    "all color-vision conditions",
+    "cross-editor SVG rendering"
+  ]
+}
