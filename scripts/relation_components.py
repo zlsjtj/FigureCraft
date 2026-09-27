@@ -6,6 +6,8 @@ Caller-owned labels/units/captions distinguish data from physical objects.
 """
 from __future__ import annotations
 import math
+import warnings
+_UNSPECIFIED=object()
 
 
 def _finite(*numbers):
@@ -53,16 +55,26 @@ def sampled_pattern(ident, values, *, x, y, units, entity, role,
 
 def branch_bus(ident, *, source, targets, junction_x, source_entity,
                target_entities, meaning, color='#567580', width=.9, head=4,
-               arrowheads=True):
+               arrowheads=_UNSPECIFIED, semantics=None):
     """A shared source with a trunk and caller-selected endpoint semantics.
 
     Caller chooses anchors and meaning. Targets must be distinct and lie right
     of the trunk. This represents a relation, not a measured transport path.
-    arrowheads=False gives an undirected association without transport cues.
-    The default preserves existing callers. A named relation is still required;
-    metadata cannot repair a visible arrow that suggests the wrong operation.
+    New calls choose common_reference, value_mapping, data_flow or motion.
+    Common references are undirected; mapping, flow and motion are directed.
+    Omitting semantics retains the old reuse/arrow behavior with a warning.
     No automatic routing, hidden obstruction avoidance or aesthetic scoring.
     """
+    kinds={'common_reference':'reference','value_mapping':'mapping','data_flow':'flow','motion':'motion'}
+    if semantics is None:
+        warnings.warn('branch_bus without semantics uses legacy reuse arrows; choose common_reference, value_mapping, data_flow or motion',DeprecationWarning,stacklevel=2)
+        kind='reuse';arrowheads=True if arrowheads is _UNSPECIFIED else arrowheads
+    else:
+        if semantics not in kinds:raise ValueError('Unknown branch semantics: '+str(semantics))
+        kind=kinds[semantics];directed=semantics!='common_reference'
+        if arrowheads is not _UNSPECIFIED and arrowheads is not directed:
+            raise ValueError('Arrowheads conflict with explicit relation semantics')
+        arrowheads=directed
     source=list(source);targets=[list(p) for p in targets];target_entities=list(target_entities)
     if len(source)!=2 or not targets or any(len(p)!=2 for p in targets):
         raise ValueError('One source and at least one two-coordinate target required')
@@ -84,10 +96,19 @@ def branch_bus(ident, *, source, targets, junction_x, source_entity,
         if arrowheads:
             items.append(dict(id=rid+'-head',type='polygon',points=[[x,y],[x-head,y-head*.42],[x-head,y+head*.42]],fill=color,stroke=color,stroke_width=0,relation=rid,role='shared_relation'))
             geometry['arrow']={'item_id':rid+'-head','tip':[x,y],'base':[x-head,y]}
-        relations.append(dict(id=rid,**{'from':source_entity,'to':entity},kind='reuse',meaning=meaning,
+        relations.append(dict(id=rid,**{'from':source_entity,'to':entity},kind=kind,meaning=meaning,
                               geometry=geometry))
     return {'id':ident,'kind':'branch_bus','items':items,'relations':relations,
-            'anchors':{'source':source,'targets':targets},'data':{'meaning':meaning,'junction_x':junction_x}}
+            'anchors':{'source':source,'targets':targets},'data':{'meaning':meaning,'semantics':semantics or 'legacy_reuse','junction_x':junction_x}}
+
+def relation_branch(ident, *, semantics, **geometry):
+    """Preferred new-call entry. Relation semantics cannot be omitted.
+
+    branch_bus remains the legacy adapter so old sources can be rebuilt.
+    This entry never infers a relation from its free-text meaning or caption.
+    """
+    if semantics is None:raise ValueError('New relation branches need explicit semantics')
+    return branch_bus(ident,semantics=semantics,**geometry)
 
 
 def add_component(scene, component):

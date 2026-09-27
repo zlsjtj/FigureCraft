@@ -1,0 +1,3 @@
+Teaching schematic. Two fixed cameras observe one passive checkerboard (dashed, undirected sight lines). Each camera independently computes its own observed corner residuals and writes them to its corresponding record (solid arrows). The cameras do not communicate and the records remain separate. Positions and object sizes are schematic, not an optical calibration design.
+
+Alt text: One checkerboard Board lies between cameras C1 and C2. Dashed lines without arrowheads connect each lens to that same board. Separate arrows descend from C1 to L1 and from C2 to L2.

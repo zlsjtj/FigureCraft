@@ -104,16 +104,16 @@ opened_coating_particle(s2, 'opening', x=580, y=210, radius=120,
 `scripts/relation_components.py` 只复用两种容易反复写错的几何，不包含领域数据、整页布局或自动美感评分。返回 `items` 是原场景格式的独立线、矩形和文字，可 `add_component(scene, result)` 接入 `Scene`/JSON，也可在原生绘图流程中逐项导出。旧接口不变。
 
 ```python
-from relation_components import sampled_pattern, branch_bus, add_component
+from relation_components import sampled_pattern, relation_branch, add_component
 # 教学数据：同一非均匀采样模式在另一原点应用；不是实验测量。
 shape = sampled_pattern('mask', [0, 3, 11, 14], x=50, y=100,
     units=8, entity='mask', role='shared')
 result = sampled_pattern('use-a', [0, 3, 11, 14], x=330, y=70,
     units=8, base=200, labels=[2], entity='use-a', role='applied',
     source_pattern='mask')
-links = branch_bus('read-mask', source=[185,100], targets=[[315,70],[315,160]],
+links = relation_branch('read-mask', semantics='common_reference', source=[185,100], targets=[[315,70],[315,160]],
     junction_x=240, source_entity='mask', target_entities=['use-a','use-b'],
-    meaning='Both applications refer to the same mask', arrowheads=False)
+    meaning='Both applications refer to the same mask')
 # 在自己的场景声明实体、画 use-b、设置字号/最终尺寸后再添加。
 for component in (links, shape, result):
     add_component(scene, component)
@@ -121,4 +121,6 @@ for component in (links, shape, result):
 
 `sampled_pattern` 画数值轴上的采样位置，不画存储这些数值的容器；表项本身用 `array_grid` 或原生等距条目表示。它的 `x` 是局部零点，横位置为 `x + value * units`；`base` 只改变标签数值，不改变间隔。严格递增有限数值和正尺度是前提。`labels=None` 显示全部，`[]` 无数值，索引列表只显示选中项。`source_pattern` 保存来源关系，不推断物理复制、所有权或收益。原点/单位/省略、应用条件及必要校验值由图与图注说明。组件不自动添加断轴，不能将两个视窗接成假连续尺度。
 
-`branch_bus` 要求显式锚点、实体和关系含义；`arrowheads=False` 返回无向关联，适合没有运动或传输含义的共同引用。默认 `True` 保留旧调用的箭头外观，调用者需根据科学含义选择；调用者检查线路是否绕字、终点是否属于正确对象。它不假定分支是时间顺序、真实通道或两份源对象。新几何的边界测试见 `tests/test_relation_components.py`；完整场景的科学与视觉审阅仍另做。
+新调用使用 `relation_branch`，必须给 `semantics`：common_reference 是无箭头共同引用；value_mapping 是数值映射；data_flow 是数据传递；motion 是物体运动。后三者有方向箭头，输出关系分别为 reference/mapping/flow/motion。与显式语义冲突的箭头参数会拒绝。meaning 说明当前关系，锚点与线路仍由调用者按对象安排；组件不推断布局或科学真相。
+
+旧入口 `branch_bus` 作为兼容适配器保留：省略 semantics 的旧调用仍生成 reuse/箭头，并发出 DeprecationWarning；已有 JSON 不被自动重写。新例不使用这个含混默认值。迁移时改入口、选语义，再实际看图，不靠图注修补画面误解。相关边界在 test_branch_semantics.py 和原组件测试中覆盖；科学与视觉审阅另做。

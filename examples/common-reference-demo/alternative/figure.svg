@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="96mm" viewBox="0 0 453.5433070866142 272.12598425196853">
+<title>Two cameras observe one board and write separate records</title>
+<polygon id="Board-side" points="265,17 270,12 270,73 265,78" fill="#A0ABB3" stroke="#213547" stroke-width="0.9"/>
+<polygon id="Board-top" points="185,17 190,12 270,12 265,17" fill="#E3E9ED" stroke="#213547" stroke-width="0.9"/>
+<rect id="Board" x="185" y="17" width="80" height="61" fill="#FFFFFF" stroke="#213547" stroke-width="1.1"/>
+<rect id="Board-square-0-0" x="190" y="22" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-0-1" x="200" y="22" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-0-2" x="210" y="22" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-0-3" x="220" y="22" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-0-4" x="230" y="22" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-0-5" x="240" y="22" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-0-6" x="250" y="22" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-1-0" x="190" y="32" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-1-1" x="200" y="32" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-1-2" x="210" y="32" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-1-3" x="220" y="32" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-1-4" x="230" y="32" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-1-5" x="240" y="32" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-1-6" x="250" y="32" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-2-0" x="190" y="42" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-2-1" x="200" y="42" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-2-2" x="210" y="42" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-2-3" x="220" y="42" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-2-4" x="230" y="42" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-2-5" x="240" y="42" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-2-6" x="250" y="42" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-3-0" x="190" y="52" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-3-1" x="200" y="52" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-3-2" x="210" y="52" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-3-3" x="220" y="52" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-3-4" x="230" y="52" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-3-5" x="240" y="52" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-3-6" x="250" y="52" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-4-0" x="190" y="62" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-4-1" x="200" y="62" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-4-2" x="210" y="62" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-4-3" x="220" y="62" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-4-4" x="230" y="62" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<rect id="Board-square-4-5" x="240" y="62" width="10" height="10" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect id="Board-square-4-6" x="250" y="62" width="10" height="10" fill="#344857" stroke="none" stroke-width="0"/>
+<text id="Board-label" x="225" y="94" text-anchor="middle" font-family="Arial" font-size="10.5" font-weight="bold" fill="#213547">Board</text>
+<line id="observe-C1" x1="104" y1="117" x2="184" y2="58" stroke="#526572" stroke-width="1.1" stroke-dasharray="4 3"/>
+<line id="observe-C2" x1="346" y1="117" x2="271" y2="58" stroke="#526572" stroke-width="1.1" stroke-dasharray="4 3"/>
+<text id="observe-C1-label" x="110" y="83" text-anchor="middle" font-family="Arial" font-size="10" font-weight="normal" fill="#213547">observe</text>
+<text id="observe-C2-label" x="342" y="83" text-anchor="middle" font-family="Arial" font-size="10" font-weight="normal" fill="#213547">observe</text>
+<polygon id="C1-top" points="58,127 64,121 140,121 134,127" fill="#C4DCEB" stroke="#213547" stroke-width="0.9"/>
+<polygon id="C1-side" points="134,127 140,121 140,157 134,163" fill="#6790AA" stroke="#213547" stroke-width="0.9"/>
+<rect id="C1" x="58" y="127" width="76" height="36" fill="#DDEBF4" stroke="#355F7C" stroke-width="1"/>
+<polygon id="C1-lens" points="86,127 86,116 90,111 102,111 106,116 106,127" fill="#A4BDCC" stroke="#355F7C" stroke-width="0.9"/>
+<text id="C1-label" x="96" y="150" text-anchor="middle" font-family="Arial" font-size="10.5" font-weight="bold" fill="#213547">C1</text>
+<text id="C1-residual" x="96" y="180" text-anchor="middle" font-family="Arial" font-size="10" font-weight="normal" fill="#213547">corner residuals</text>
+<line id="C1-write" x1="96" y1="186" x2="96" y2="211" stroke="#287069" stroke-width="1.4"/>
+<polygon id="C1-arrow" points="92.5,206 96,213 99.5,206" fill="#287069" stroke="none" stroke-width="0"/>
+<text id="C1-write-label" x="123" y="201" text-anchor="middle" font-family="Arial" font-size="10" font-weight="normal" fill="#245F5A">write</text>
+<polygon id="L1" points="60,216 120,216 132,228 132,261 60,261" fill="#EBF5F1" stroke="#287069" stroke-width="1"/>
+<polygon id="L1-fold" points="120,216 120,228 132,228" fill="#BBD9D0" stroke="#287069" stroke-width="0.7"/>
+<text id="L1-label" x="96" y="243" text-anchor="middle" font-family="Arial" font-size="10.5" font-weight="bold" fill="#213547">L1</text>
+<polygon id="C2-top" points="316,127 322,121 398,121 392,127" fill="#C4DCEB" stroke="#213547" stroke-width="0.9"/>
+<polygon id="C2-side" points="392,127 398,121 398,157 392,163" fill="#6790AA" stroke="#213547" stroke-width="0.9"/>
+<rect id="C2" x="316" y="127" width="76" height="36" fill="#DDEBF4" stroke="#355F7C" stroke-width="1"/>
+<polygon id="C2-lens" points="344,127 344,116 348,111 360,111 364,116 364,127" fill="#A4BDCC" stroke="#355F7C" stroke-width="0.9"/>
+<text id="C2-label" x="354" y="150" text-anchor="middle" font-family="Arial" font-size="10.5" font-weight="bold" fill="#213547">C2</text>
+<text id="C2-residual" x="354" y="180" text-anchor="middle" font-family="Arial" font-size="10" font-weight="normal" fill="#213547">corner residuals</text>
+<line id="C2-write" x1="354" y1="186" x2="354" y2="211" stroke="#287069" stroke-width="1.4"/>
+<polygon id="C2-arrow" points="350.5,206 354,213 357.5,206" fill="#287069" stroke="none" stroke-width="0"/>
+<text id="C2-write-label" x="381" y="201" text-anchor="middle" font-family="Arial" font-size="10" font-weight="normal" fill="#245F5A">write</text>
+<polygon id="L2" points="318,216 378,216 390,228 390,261 318,261" fill="#EBF5F1" stroke="#287069" stroke-width="1"/>
+<polygon id="L2-fold" points="378,216 378,228 390,228" fill="#BBD9D0" stroke="#287069" stroke-width="0.7"/>
+<text id="L2-label" x="354" y="243" text-anchor="middle" font-family="Arial" font-size="10.5" font-weight="bold" fill="#213547">L2</text>
+</svg>

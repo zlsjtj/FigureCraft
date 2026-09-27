@@ -39,3 +39,5 @@
 最小脚本API：`Scene.entity/relation/add/text/line/arrow/sphere`在make_examples.py。数组对应、分层板、包覆颗粒及重复剖面另见[组件API](scene-components.md)。其可选`component_constraints`与`occlusion_constraints`只在出现时检查，旧规格仍可渲染。它们提供几何便利，不负责科学推理。需要其他对象可以直接构造JSON图元。
 
 导出每个SVG顶层g的id与场景一一对应，绑定字段使用data属性，文本保留text/tspan；PDF字体按显式路径嵌入。manifest记录源规格、语义、几何、角色和导出SHA。recolor只改主题；对比时几何和语义均必须一致。不要删manifest里未验证的子项来获得更漂亮的状态。
+
+关系类型补充：`reference` 表示共同引用，`mapping` 表示数值对应。旧 `reuse` 规格继续接受；新生成通过明确语义选择画法。类型正确仍不自动证明科学解释正确。

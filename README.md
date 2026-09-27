@@ -4,9 +4,9 @@ FigureCraft 根据科学对象、关系和数据组织图形。它用于机制�
 
 当前版本 **1.15.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
-## 本版的实际变化
+## 当前本地维护
 
-本次区分构图修复与局部视觉精修，补齐外来 SVG 的实色文字对比筛查，并提供层板文字前后例。实际测试范围见 [当前记录](provenance/current-validation.md)。
+本轮核对源码后，公开材料示例的语法问题未复现，实际生成和导出成功。修复共享分支的语义默认值，补齐聚合测试入口；未改版本号冒充效果升级。执行范围见 provenance/current-validation.md。未推送前，GitHub安装命令仍取得远端旧提交。
 
 ## 其他示例
 
@@ -56,13 +56,13 @@ python scripts/check_figure.py material-A --placement-width-mm 160
 ## 检查与复用
 
 ```powershell
-python tests/run_all_tests.py --out test-output/core --font (Join-Path $env:WINDIR 'Fonts/segoeui.ttf') --cjk-font $figureCjk --pdftoppm $figureRaster
+python tests/run_all_tests.py --out test-output/current --font (Join-Path $env:WINDIR 'Fonts/segoeui.ttf') --cjk-font $figureCjk --label-font $figureFont --bold-font (Join-Path $env:WINDIR 'Fonts/arialbd.ttf') --pdftoppm $figureRaster
 python tests/run_svg_label_tests.py --out test-output/svg-labels --font $figureFont --bold-font (Join-Path $env:WINDIR 'Fonts/arialbd.ttf')
 python -m unittest discover -s tests -p "test_*.py"
 python scripts/measure_label_load.py figure.svg --width-mm 160 --out label-load.json
 ```
 
-旧回归结果作为历史保留。本轮重跑已有 SVG 标签检查，增加实色对比和背景遮挡测试；具体结果见 [当前记录](provenance/current-validation.md)。不使用历史测试总数代替本轮执行。
+统一入口已包含语法、原八组回归、SVG标签测试、自动发现的 `test_*.py` 和README材料示例的源码生成/渲染/检查；后两条单独测试命令用于局部复验。原先 run_all_tests.py 只覆盖八组，README另列的单元测试没有被它调用，这个缺口已修复。缺依赖、失败、超时和跳过分别记录；技术通过不意味着科学、视觉或作者审阅通过。具体执行见 [当前记录](provenance/current-validation.md)。
 
 技术检查、科学内容审阅和视觉审阅分别报告。`status` 是旧技术状态字段；判断完整状态应看 `overall_status`。缺少科学或视觉审阅时保留 `REVIEW_REQUIRED`，脚本不会替作者确认图片。
 
@@ -75,3 +75,5 @@ python scripts/measure_label_load.py figure.svg --width-mm 160 --out label-load.
 PDF 字号检查器来自固定版本的 nature-skills，原始许可证和 NOTICE 保留在 `vendor/`，其他来源见[来源说明](provenance/upstream-sources.md)。参考截图和字体未随仓库发布，配色标注不代表任何期刊的官方规范。许可状态见 [LICENSE.md](LICENSE.md)。
 
 公开仓库保留当前通用代码、示例和测试；本机路径、私人论文、完整代理日志和重复历史输出留在本地归档。
+
+[共享参考与独立记录案例](examples/common-reference-demo/README.md)保留两种实际构图及其代价，没有将新版选作全面优胜者。
