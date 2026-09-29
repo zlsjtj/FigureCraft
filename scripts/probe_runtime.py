@@ -11,10 +11,14 @@ def probe(font=None,cjk_font=None,pdftoppm=None):
     native={name:{'path':shutil.which(name),'execution':'NOT_RUN'} for name in ('blender','Rscript','inkscape')}
     core=all(modules[n]['available'] for n in ('reportlab','pypdf'))
     raster=bool(pdftoppm and Path(pdftoppm).is_file())
+    surface_path=Path(__file__).with_name('surface_renderer.py')
+    surface_available=surface_path.is_file() and all(modules[n]['available'] for n in ('numpy','PIL'))
     return {'python':sys.executable,'python_version':platform.python_version(),'platform':platform.platform(),'modules':modules,
       'native':native,'font_paths':{k:{'path':str(v) if v else None,'exists':bool(v and Path(v).is_file())} for k,v in [('latin',font),('cjk',cjk_font)]},
       'core_svg_pdf_available':core,'pdftoppm':{'path':str(pdftoppm) if pdftoppm else None,'available':raster,'execution':'NOT_RUN'},
-      'optional_3d':{'status':'NOT_RUN','reason':'No implemented or tested D2 backend in this package'},
+      'optional_3d':{'status':'NOT_RUN','available':surface_available,'backend':'opaque orthographic surface renderer',
+                     'module_path':str(surface_path),'reason':'Presence/import availability only; run geometry and visibility checks for the requested scene.',
+                     'unsupported':['refraction','physical fields','global illumination','contact shadows']},
       'image_API':{'status':'NOT_RUN','reason':'No external image API used or required'},'journal_rules':'UNVERIFIED'}
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--font',type=Path);p.add_argument('--cjk-font',type=Path);p.add_argument('--pdftoppm',type=Path);p.add_argument('--out',type=Path);a=p.parse_args()

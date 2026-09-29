@@ -1,0 +1,8 @@
+{
+  "title": "DEMO: A cup with a central post",
+  "paragraph": "The illustrative assembly consists of an open-topped cup resting on a planar support plate. A single cylindrical post rises vertically from the centre of the closed cup base, leaving a continuous clearance from the surrounding wall and terminating below the rim (Fig. 1). The cutaway makes the base connection and the separation between the post and wall visible in one view.",
+  "caption": "Cup with a central cylindrical post. The front half of the cup wall is omitted to expose the interior; the closed base and the post are shown intact. Colours distinguish the cup, post and support plate. This fictional structural demonstration is schematic and not to scale; it contains no experimental or performance data.",
+  "baseline_paragraph": "The structure comprises an open-topped circular cup resting on a planar support plate, with a single upright cylindrical post centered inside the cup (Fig. 1). The cup has a finite wall thickness and a closed bottom. The post meets the inner surface of the bottom and terminates below the rim, leaving clearance both above its top and between its side and the surrounding cup wall.",
+  "baseline_caption": "Cup with a centered internal post on a support plate. A portion of the cup wall is omitted in this illustrative cutaway to expose the interior; the complete closed bottom is retained. The cutaway represents one cup, one post, and one plate. Colors distinguish the post and support from the cup, while shading indicates surface orientation. Proportions are schematic and do not represent measured dimensions. This is a fictional teaching structure.",
+  "image": "final/figure.png"
+}

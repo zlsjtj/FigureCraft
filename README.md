@@ -1,14 +1,16 @@
 # FigureCraft｜科研绘图与配色
 
-FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑 SVG、矢量 PDF、PNG 和检查记录。
+FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑源、SVG、PDF、PNG 和检查记录；混合表面的可编辑范围单独说明。
 
-当前版本 **1.17.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
+当前版本 **1.18.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
 ## 本轮改动
 
-1.17 把“画全逻辑对象”改为按读图目的选择逐项展开、汇总或代表结构，避免准确计数挤占主要机制。新增[离子交换完整开发例](examples/exchange-granularity/README.md)：同样材料生成两种实质不同构图，保留选择理由、源码及全部数量。它是固定案例重建器，不是自然语言自动布局器。
+1.18 将[连续表面渲染](references/surface-rendering.md)接入正式绘图路径，明确源码、相机与光向的参数接口，以及位图表面与矢量标注的区别。构图审阅区分局部精修与整幅重设计；旧版“未提供空间后端”的说明已按实际支持范围修正。功能入口可执行不代表每幅作品都达到同一审美水平。
 
-新材料对照没有证明新版全面胜出：旧版膜组件图的两条流路反而更容易在主图追踪。改进范围与退步见[本轮验收](provenance/current-validation.md)，不把回归通过等同于视觉质量达标。
+本轮产物、取舍与未验证部分见[1.18验收](provenance/validation-1.18.md)。[1.17记录](provenance/current-validation.md)保留原有得失，不将旧回归结果冒充本轮执行。离子交换等旧案例仍可重建；新后端不强迫所有图使用立体表达。
+
+新作品可直接看[杯柱构图比较](examples/editorial-cup/README.md)与[一体环桥板迁移试用](examples/ring-bridge/README.md)。均附首稿、未采用方案、最终矢量源、清/黄稿和重建命令；科学关系可读与视觉仍需改进之处分开记录。
 
 ## 其他示例
 

@@ -1,0 +1,97 @@
+{
+  "fictional_demo": true,
+  "view": "oblique",
+  "size_mm": [
+    160,
+    85
+  ],
+  "model": {
+    "outer_radius": 1,
+    "ring_inner_radius": 0.8,
+    "platform_radius": 0.34,
+    "bridge_width": 0.16,
+    "bridge_angles_deg": [
+      90,
+      210,
+      330
+    ],
+    "thickness_projection_mm": 3.4,
+    "units": "illustration ratios; no measured dimensions"
+  },
+  "entities": [
+    {
+      "id": "plate",
+      "actual_object_count": 1,
+      "regions": [
+        "outer ring",
+        "central platform",
+        "three radial bridges"
+      ]
+    }
+  ],
+  "relations": {
+    "bridges": "radial, equal width, evenly spaced, continuous with ring and platform",
+    "open_regions": 3,
+    "thickness": "uniform",
+    "directional_arrows": false
+  },
+  "labels": [
+    {
+      "id": "demo-label",
+      "text": "FICTIONAL DEMO",
+      "font_pt": 9,
+      "x_mm": 6,
+      "baseline_y_mm": 8
+    },
+    {
+      "id": "title",
+      "text": "One-piece plate",
+      "font_pt": 10,
+      "x_mm": 119,
+      "baseline_y_mm": 8
+    },
+    {
+      "id": "central-label",
+      "text": "Central platform",
+      "font_pt": 9.5,
+      "x_mm": 6,
+      "baseline_y_mm": 22
+    },
+    {
+      "id": "ring-label",
+      "text": "Outer ring",
+      "font_pt": 9.5,
+      "x_mm": 125,
+      "baseline_y_mm": 24
+    },
+    {
+      "id": "bridge-label-1",
+      "text": "Three equal-width",
+      "font_pt": 9.5,
+      "x_mm": 6,
+      "baseline_y_mm": 65
+    },
+    {
+      "id": "bridge-label-2",
+      "text": "radial bridges",
+      "font_pt": 9.5,
+      "x_mm": 6,
+      "baseline_y_mm": 69.3
+    },
+    {
+      "id": "opening-label-1",
+      "text": "Through-open",
+      "font_pt": 9.5,
+      "x_mm": 121,
+      "baseline_y_mm": 61
+    },
+    {
+      "id": "opening-label-2",
+      "text": "regions",
+      "font_pt": 9.5,
+      "x_mm": 121,
+      "baseline_y_mm": 65.3
+    }
+  ],
+  "editable": "All shapes are vector paths; SVG text remains text; PDF uses embedded Arial subsets. Font files are external, not redistributed."
+}
