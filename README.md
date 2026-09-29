@@ -2,15 +2,13 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑源、SVG、PDF、PNG 和检查记录；混合表面的可编辑范围单独说明。
 
-当前版本 **1.18.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
+当前版本 **1.19.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
 ## 本轮改动
 
-1.18 将[连续表面渲染](references/surface-rendering.md)接入正式绘图路径，明确源码、相机与光向的参数接口，以及位图表面与矢量标注的区别。构图审阅区分局部精修与整幅重设计；旧版“未提供空间后端”的说明已按实际支持范围修正。功能入口可执行不代表每幅作品都达到同一审美水平。
+1.19把“对象如何变化”落实为完整候选图，而非只安排标签。新的[快照状态案例](examples/snapshot-state/README.md)同时保留两种方案、选择代价、矢量源和实际入稿；与PaperCraft共同核对研究故事。它是逻辑状态图，空间感无助于解释时保留二维。
 
-本轮产物、取舍与未验证部分见[1.18验收](provenance/validation-1.18.md)。[1.17记录](provenance/current-validation.md)保留原有得失，不将旧回归结果冒充本轮执行。离子交换等旧案例仍可重建；新后端不强迫所有图使用立体表达。
-
-新作品可直接看[杯柱构图比较](examples/editorial-cup/README.md)与[一体环桥板迁移试用](examples/ring-bridge/README.md)。均附首稿、未采用方案、最终矢量源、清/黄稿和重建命令；科学关系可读与视觉仍需改进之处分开记录。
+[连续表面入口](references/surface-rendering.md)、[杯柱构图](examples/editorial-cup/README.md)与[环桥板](examples/ring-bridge/README.md)继续可用。当前成果及未验证部分见[1.19记录](provenance/validation-1.19.md)；历史记录不冒充本轮执行。完整生成、固定源码重建、模型评阅和作者认可分别记录。
 
 ## 其他示例
 
@@ -81,3 +79,5 @@ PDF 字号检查器来自固定版本的 nature-skills，原始许可证和 NOTI
 公开仓库保留当前通用代码、示例和测试；本机路径、私人论文、完整代理日志和重复历史输出留在本地归档。
 
 [共享参考与独立记录案例](examples/common-reference-demo/README.md)保留原有两种构图；[继续开发的成图](examples/common-reference-demo/dev/REVIEW.md)把对象辨识和就近标签结合起来。开发成图与独立新任务的效果分开记录，没有将新版选作全面优胜者。
+
+[箱角解锁新材料试用](examples/bin-latch/README.md)保存普通提示、旧技能、新技能的首次产物与匿名比较。新版的状态对照更直接，但并非全面胜出；反馈后修复单独记录。

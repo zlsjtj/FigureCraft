@@ -1,0 +1,6 @@
+reportlab
+pypdf
+Pillow
+numpy
+python-docx
+lxml

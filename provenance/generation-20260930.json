@@ -1,0 +1,189 @@
+{
+  "baseline_commits": {
+    "PaperCraft": "5e613ed55e9ae3f3e41221efb6428cff8401c21b",
+    "FigureCraft": "a69d2c5436ecaabeaf39fd8793333673ce1e7faa"
+  },
+  "generation": "fresh context; same parent model; one self-revision; no exact token/time equality or repeated trials",
+  "loaded_files": [
+    {
+      "path": "PaperCraft/SKILL.md",
+      "sha256": "acefff69ead8753359285bc8d3fdc2d26908743e61e18a2d52c7d9bebc455f8a",
+      "access": "text read",
+      "final_sha256": "e401950cb856570c8ff0a8f84e29db30d3264ca0c70e7db644389a70aaa63259",
+      "unchanged": false,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/SKILL.md",
+      "sha256": "0c3c683a7a197bd56e7d7b081b02515052bc414f33f1c0e7a6f95b76f636e00c",
+      "access": "text read",
+      "final_sha256": "3be32dd2b1b057761ddf6090830d387eccce05198b5519b7f1f5b0b1beed7407",
+      "unchanged": false,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/references/reviewer-method.md",
+      "sha256": "f6aad8307f15f491d97c23c0e68323bebafb76f8f89aa1590e9fa779b33263bc",
+      "access": "text read",
+      "final_sha256": "f6aad8307f15f491d97c23c0e68323bebafb76f8f89aa1590e9fa779b33263bc",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/references/dependencies.md",
+      "sha256": "14e232b04d5f297e7fe906072158490a0d390c6e574becc705724c18e873bfad",
+      "access": "text read",
+      "final_sha256": "14e232b04d5f297e7fe906072158490a0d390c6e574becc705724c18e873bfad",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/references/presentation-review.md",
+      "sha256": "47a186c563623494ea9a2b184d13c4e920f8147a0f336640ab7c17b2366df40d",
+      "access": "text read",
+      "final_sha256": "3e99a9e6a4f4b77224e8e5cae4417a8eedff6dd71afb16cba4f68312950da6d5",
+      "unchanged": false,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/references/integrated-delivery.md",
+      "sha256": "f87ff874933f8d59bbe5febca936e9b73b5c9a5d1eeb9262ce18cac4a0090c0f",
+      "access": "text read",
+      "final_sha256": "f87ff874933f8d59bbe5febca936e9b73b5c9a5d1eeb9262ce18cac4a0090c0f",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/templates/figure-handoff.md",
+      "sha256": "11bfd67c2da08dd679c90349cd24e1829713034b1a2be190b3ccdaee4b86f2fa",
+      "access": "text read",
+      "final_sha256": "11bfd67c2da08dd679c90349cd24e1829713034b1a2be190b3ccdaee4b86f2fa",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/references/story-and-main-figure.md",
+      "sha256": "6f5598d0b5354bcbefcc43be29a85627db020fab43bc0c29edb6288a4f0492b8",
+      "access": "text read",
+      "final_sha256": "6f5598d0b5354bcbefcc43be29a85627db020fab43bc0c29edb6288a4f0492b8",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/examples/heat-story/README.md",
+      "sha256": "d780072fd2e010a576c7ff1c3f036fffa70a046679b4719c715e9802d2885edf",
+      "access": "text read",
+      "final_sha256": "484e31ed2effe3f859079975808fc387ec6c45f4a391c5efc5991bf1ab49fac3",
+      "unchanged": false,
+      "equal_ignoring_line_endings": false
+    },
+    {
+      "path": "PaperCraft/examples/heat-story/manuscript.md",
+      "sha256": "74b441db9ecd16c26897c34348466508204e44df0f88ebdee7e25d618a8dcac5",
+      "access": "text read",
+      "final_sha256": "a76f7a6d126bfa3ee0787a9598e2085733e05883392b2fdd66e3f95d99ecdf19",
+      "unchanged": false,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "PaperCraft/examples/heat-story/figures/figure1_owner_states_final.png",
+      "sha256": "82a3d035d0290222a028b556f77fd6d853a4dd770ae79adcace0730a43945cc6",
+      "access": "image viewed",
+      "final_sha256": "82a3d035d0290222a028b556f77fd6d853a4dd770ae79adcace0730a43945cc6",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/workflow.md",
+      "sha256": "021c527592c27912cac4a313e974de8f26c9b96d27102aac6ea417217f33f5e4",
+      "access": "text read",
+      "final_sha256": "4cecd6b5825949ea3a29bf6ae5ae567a33c7f811eebc62c2a75be89ae9c8208f",
+      "unchanged": false,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/quality-and-acceptance.md",
+      "sha256": "11bb8b44bab22d6e9a1925c3b1c70a4bc7a08981c8669206b8090aa556ebcf4e",
+      "access": "text read",
+      "final_sha256": "11bb8b44bab22d6e9a1925c3b1c70a4bc7a08981c8669206b8090aa556ebcf4e",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/visual-explanation.md",
+      "sha256": "f14d37afef70f1b849482c1713e5cf0dbe38c01a548d2d72569ea9d49de20c5d",
+      "access": "text read",
+      "final_sha256": "5761f7420872ba2c17d0dd3163d376618aee89e456b07765ef2d45a59ff802aa",
+      "unchanged": false,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/drawing-and-depth.md",
+      "sha256": "176c02b5473605b2f7c1267a272bf5e657ce0a6e734c4a23fcff827d2749a044",
+      "access": "text read",
+      "final_sha256": "176c02b5473605b2f7c1267a272bf5e657ce0a6e734c4a23fcff827d2749a044",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/dependencies.md",
+      "sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f",
+      "access": "text read",
+      "final_sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/design-exploration.md",
+      "sha256": "413ac98c73d0b0935d7ea4426cc723d5b657405b09b5b3ed3069fc2c673b3d18",
+      "access": "text read",
+      "final_sha256": "413ac98c73d0b0935d7ea4426cc723d5b657405b09b5b3ed3069fc2c673b3d18",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/semantic-constraints.md",
+      "sha256": "b4332cf5226e5bf71886f0f4a7db65b7b69951aa08f1cd891a8c392fb5f3f4a9",
+      "access": "text read",
+      "final_sha256": "b4332cf5226e5bf71886f0f4a7db65b7b69951aa08f1cd891a8c392fb5f3f4a9",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/references/existing-svg-review.md",
+      "sha256": "4a3cc8a2e33f796235d48019032720b122deb89640d50112bc8500e72f10363c",
+      "access": "text read",
+      "final_sha256": "4a3cc8a2e33f796235d48019032720b122deb89640d50112bc8500e72f10363c",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/scripts/probe_runtime.py",
+      "sha256": "b1bf9b4391fd498de83fc272a2f81decdca7eed483442316f82f0fa0f2498b2e",
+      "access": "text read",
+      "final_sha256": "b1bf9b4391fd498de83fc272a2f81decdca7eed483442316f82f0fa0f2498b2e",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/scripts/audit_svg_labels.py",
+      "sha256": "1a0b99936892a391e62a098c562fa6a67ae96278323f253cd561e1ee6cf720e4",
+      "access": "text read",
+      "final_sha256": "1a0b99936892a391e62a098c562fa6a67ae96278323f253cd561e1ee6cf720e4",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "FigureCraft/vendor/nature-figure/audit_pdf_text.py",
+      "sha256": "11b8f3ec50bc13e2bd8561eeb7cd204307f4ce5a70ac57fa24c809ce1b9c252c",
+      "access": "text read",
+      "final_sha256": "11b8f3ec50bc13e2bd8561eeb7cd204307f4ce5a70ac57fa24c809ce1b9c252c",
+      "unchanged": true,
+      "equal_ignoring_line_endings": true
+    }
+  ],
+  "generation_instruction_content_unchanged": true,
+  "post_freeze_changes": "example document pagination/table widths; feedback-repaired output and comparison archive; validation/README. No change to loaded generation instructions. Package readmes and provenance refined after second video review; previously loaded generation instructions unchanged apart from LF normalization.",
+  "scope": "Demonstration only; not evidence of universal advantage or author approval.",
+  "publication_line_endings": "LF normalized after tests; actual-load hashes retained; instructions unchanged ignoring line endings; technical checks rerun against final bytes."
+}

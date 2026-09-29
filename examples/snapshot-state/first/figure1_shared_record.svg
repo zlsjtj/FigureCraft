@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="96mm" viewBox="0 0 160 96">
+<title>One owner record shared by the face and both endpoint snapshots</title>
+<desc>DEMO FICTION. Logical ownership of a representative inter-group face. A cached coefficient and its two endpoint snapshots retain A's refresh r while B independently refreshes its own face set from s to s+1. Cache geometry is logical, not a physical heat-flow path.</desc>
+<rect id="canvas" x="0" y="0" width="160" height="96" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0.3"/>
+<text id="title" x="4" y="6" font-family="Arial" font-size="3.880556" font-weight="700" text-anchor="start" fill="#233B44">Owner-consistent reuse</text>
+<text id="evidence-label" x="156" y="6" font-family="Arial" font-size="3.175000" font-weight="400" text-anchor="end" fill="#526871">DEMO FICTION</text>
+<rect id="shape-4" data-entity="group-A" data-role="mesh-context" x="39" y="18" width="40.0" height="21" rx="0" fill="#F4F7F7" stroke="none" stroke-width="0.3"/>
+<rect id="shape-5" data-entity="group-B" data-role="mesh-context" x="79.0" y="18" width="40.0" height="21" rx="0" fill="#F4F7F7" stroke="none" stroke-width="0.3"/>
+<line id="shape-6" x1="49" y1="18" x2="49" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-7" x1="59" y1="18" x2="59" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-8" x1="69" y1="18" x2="69" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-9" x1="79" y1="18" x2="79" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-10" x1="89" y1="18" x2="89" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-11" x1="99" y1="18" x2="99" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-12" x1="109" y1="18" x2="109" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-13" x1="39" y1="25" x2="119" y2="25" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-14" x1="39" y1="32" x2="119" y2="32" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-15" x1="39" y1="16.8" x2="39" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-16" x1="39" y1="39" x2="39" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-17" x1="49" y1="16.8" x2="49" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-18" x1="49" y1="39" x2="49" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-19" x1="59" y1="16.8" x2="59" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-20" x1="59" y1="39" x2="59" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-21" x1="69" y1="16.8" x2="69" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-22" x1="69" y1="39" x2="69" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-23" x1="79" y1="16.8" x2="79" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-24" x1="79" y1="39" x2="79" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-25" x1="89" y1="16.8" x2="89" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-26" x1="89" y1="39" x2="89" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-27" x1="99" y1="16.8" x2="99" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-28" x1="99" y1="39" x2="99" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-29" x1="109" y1="16.8" x2="109" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-30" x1="109" y1="39" x2="109" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-31" x1="119" y1="16.8" x2="119" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-32" x1="119" y1="39" x2="119" y2="40.2" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-33" x1="37.8" y1="18" x2="39" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-34" x1="119" y1="18" x2="120.2" y2="18" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-35" x1="37.8" y1="25" x2="39" y2="25" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-36" x1="119" y1="25" x2="120.2" y2="25" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-37" x1="37.8" y1="32" x2="39" y2="32" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-38" x1="119" y1="32" x2="120.2" y2="32" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-39" x1="37.8" y1="39" x2="39" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-40" x1="119" y1="39" x2="120.2" y2="39" stroke="#CBD8DB" stroke-width="0.22" stroke-linecap="round"/>
+<line id="shape-41" data-entity="group-boundary" x1="79.0" y1="16.8" x2="79.0" y2="40.2" stroke="#8BA2A9" stroke-width="0.45" stroke-linecap="round" stroke-dasharray="1.2 1"/>
+<rect id="shape-42" data-entity="cell-i" x="69.0" y="25" width="10" height="7" rx="0" fill="#E1F1ED" stroke="#147A79" stroke-width="0.32"/>
+<rect id="shape-43" data-entity="cell-j" x="79.0" y="25" width="10" height="7" rx="0" fill="#E1F1ED" stroke="#147A79" stroke-width="0.32"/>
+<line id="shape-44" data-entity="face-f" data-role="owned-face" x1="79.0" y1="25" x2="79.0" y2="32" stroke="#147A79" stroke-width="0.9" stroke-linecap="round"/>
+<text id="shape-45" data-entity="cell-i" x="74.0" y="29.7" font-family="Arial" font-size="3.880556" font-weight="700" text-anchor="middle" fill="#233B44">i</text>
+<text id="shape-46" data-entity="cell-j" x="84.0" y="29.7" font-family="Arial" font-size="3.880556" font-weight="700" text-anchor="middle" fill="#233B44">j</text>
+<text id="shape-47" data-entity="face-f" x="79.0" y="15.6" font-family="Arial" font-size="3.527778" font-weight="700" text-anchor="middle" fill="#147A79">Face f</text>
+<text id="shape-48" x="19" y="26" font-family="Arial" font-size="3.704167" font-weight="700" text-anchor="middle" fill="#233B44">Group A</text>
+<text id="shape-49" x="19" y="31.5" font-family="Arial" font-size="3.351389" font-weight="400" text-anchor="middle" fill="#147A79">owns f</text>
+<text id="shape-50" x="138" y="26" font-family="Arial" font-size="3.704167" font-weight="700" text-anchor="middle" fill="#233B44">Group B</text>
+<text id="shape-51" x="138" y="31.5" font-family="Arial" font-size="3.351389" font-weight="400" text-anchor="middle" fill="#526871">i &lt; j</text>
+<path id="shape-52" data-entity="association-i" data-role="logical-reference" d="M 74.0,32.5 L 74.0,40.5 L 29,48.5 L 29,54" fill="none" stroke="#147A79" stroke-width="0.33" stroke-linejoin="round" stroke-dasharray="1.2 1"/>
+<path id="shape-53" data-entity="association-f" data-role="logical-reference" d="M 79.0,32.5 L 79.0,40.5 L 59,48.5 L 59,54" fill="none" stroke="#147A79" stroke-width="0.33" stroke-linejoin="round" stroke-dasharray="1.2 1"/>
+<path id="shape-54" data-entity="association-j" data-role="logical-reference" d="M 84.0,32.5 L 84.0,40.5 L 89,48.5 L 89,54" fill="none" stroke="#147A79" stroke-width="0.33" stroke-linejoin="round" stroke-dasharray="1.2 1"/>
+<text id="shape-55" x="4" y="49.5" font-family="Arial" font-size="3.527778" font-weight="700" text-anchor="start" fill="#233B44">A-owned</text>
+<text id="shape-56" x="4" y="54" font-family="Arial" font-size="3.527778" font-weight="700" text-anchor="start" fill="#233B44">record</text>
+<rect id="shape-57" data-entity="A-record-retained" data-role="retained-cache" x="14" y="58" width="90" height="15" rx="1.0" fill="#E1F1ED" stroke="#147A79" stroke-width="0.35"/>
+<line id="shape-58" x1="44.0" y1="59.5" x2="44.0" y2="71.5" stroke="#147A79" stroke-width="0.25" stroke-linecap="round"/>
+<line id="shape-59" x1="74.0" y1="59.5" x2="74.0" y2="71.5" stroke="#147A79" stroke-width="0.25" stroke-linecap="round"/>
+<text id="shape-60" data-entity="Ti-retained" data-role="same-owner-event" x="29.0" y="66.6" font-family="Arial" font-size="3.527778" font-weight="400" text-anchor="middle" fill="#233B44">Ti(r)</text>
+<text id="shape-61" data-entity="Gf-retained" data-role="same-owner-event" x="59.0" y="66.6" font-family="Arial" font-size="3.527778" font-weight="400" text-anchor="middle" fill="#233B44">Gf(r)</text>
+<text id="shape-62" data-entity="Tj-retained" data-role="same-owner-event" x="89.0" y="66.6" font-family="Arial" font-size="3.527778" font-weight="400" text-anchor="middle" fill="#233B44">Tj(r)</text>
+<path id="shape-63" data-entity="same-refresh-bracket" data-role="common-event" d="M 14,75 L 14,78 L 104,78 L 104,75" fill="none" stroke="#147A79" stroke-width="0.4" stroke-linejoin="round"/>
+<rect id="shape-64" x="40" y="75.8" width="38" height="4.6" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0.3"/>
+<text id="shape-65" x="59" y="79.3" font-family="Arial" font-size="3.527778" font-weight="700" text-anchor="middle" fill="#147A79">same refresh r</text>
+<text id="shape-66" x="59" y="89" font-family="Arial" font-size="3.704167" font-weight="700" text-anchor="middle" fill="#233B44">A reuses</text>
+<text id="shape-67" x="136" y="46.5" font-family="Arial" font-size="3.527778" font-weight="700" text-anchor="middle" fill="#233B44">B-owned</text>
+<text id="shape-68" x="136" y="51" font-family="Arial" font-size="3.527778" font-weight="400" text-anchor="middle" fill="#233B44">face set</text>
+<rect id="shape-69" data-entity="B-cache-before" x="119" y="54" width="34" height="10" rx="1" fill="#F4F7F7" stroke="#8BA2A9" stroke-width="0.35"/>
+<text id="shape-70" x="136" y="60.5" font-family="Arial" font-size="3.880556" font-weight="400" text-anchor="middle" fill="#233B44">s</text>
+<line id="shape-71" data-role="state-transition" x1="136" y1="65.5" x2="136" y2="71" stroke="#A56619" stroke-width="0.45" stroke-linecap="round"/>
+<polygon id="shape-72" points="136,71 136.85,69.2 135.15,69.2" fill="#A56619" stroke="none" stroke-width="0.3"/>
+<rect id="shape-73" data-entity="B-cache-after" x="119" y="72.5" width="34" height="10" rx="1" fill="#F6E9D4" stroke="#A56619" stroke-width="0.5"/>
+<text id="shape-74" x="136" y="79" font-family="Arial" font-size="3.880556" font-weight="700" text-anchor="middle" fill="#233B44">s + 1</text>
+<text id="shape-75" x="136" y="89" font-family="Arial" font-size="3.704167" font-weight="700" text-anchor="middle" fill="#233B44">B refreshes</text>
+</svg>

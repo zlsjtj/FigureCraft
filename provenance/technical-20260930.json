@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "source_unchanged": true,
+  "source_hashes": {
+    "scripts\\audit_svg_labels.py": "1a0b99936892a391e62a098c562fa6a67ae96278323f253cd561e1ee6cf720e4",
+    "scripts\\check_figure.py": "62d39eab63fd727d49f6a6c7c771af8e2ebb640ad96ead6c4a66188070eb7838",
+    "scripts\\compare_designs.py": "f8bcc1f79c77fec25f9936bc2bcc8f69a607417203587c88ad3213da2c65bc14",
+    "scripts\\figure_core.py": "bccd633052a3731126c11b4910197ca16f9dbcb7d686375aed8a58b7dc2033c5",
+    "scripts\\make_examples.py": "8824b072acb78055de0691cc7bdaa33ba089358de1a1a3941d6ba5d6822e9c64",
+    "scripts\\measure_label_load.py": "5d008fedbeadac6a366a6c1286ad868f35d28667dc187f23fc090b308962fb0f",
+    "scripts\\palette_tools.py": "959ddc26b6aad91c91055da4bbe7b0dad353ef98ae83c9b1f4a5594894ce8e5a",
+    "scripts\\probe_runtime.py": "b1bf9b4391fd498de83fc272a2f81decdca7eed483442316f82f0fa0f2498b2e",
+    "scripts\\relation_components.py": "9c239d1c9db16311a58dfa7769df13fdbc265b9e6ebe82f3d944b9ba34f44d01",
+    "scripts\\render_figure.py": "66f27b6868ccaef3e07e4ae4db4e3572d2476e3bad8b46be903501d1ac079426",
+    "scripts\\scene_components.py": "8e25fc10a33ea422472c96497b30691fe4a5d5dce2e2a87d54f1ff65acf16f5d",
+    "scripts\\semantic_audit.py": "afa83de587cbee148acb647b3430f823089668d5ed75a1a8681d05d7e1287ab1",
+    "scripts\\surface_renderer.py": "51417c7cf40180b6842e01a6fdf862b81fcc2c23349ddf186eef9648f3d47578",
+    "scripts\\svg_text_contrast.py": "d1559aba78e53e45ccd7081c6e93a3bef874bd73558e91c9168a651396c4abe0",
+    "tests\\run_acceptance.py": "345b6bd0b0680d6c242a5b1fe759a55d748c40211f170526b2756481025b6963",
+    "tests\\run_all_tests.py": "3c1375081afebc60c3d2192b3d9e5e77bbff6f4c0a3f078134bec05d508fe73e",
+    "tests\\run_comparison_tests.py": "74f6a690c560a636a2a13065ce7e944fb56545b45ef24aab627851198a79cadb",
+    "tests\\run_component_tests.py": "472cfddb7e9dd059b7ba6dcae84d1e27061440767e2c79a972d3cf457eea8edf",
+    "tests\\run_opening_tests.py": "e18ab445a3293c1aaa29411c51142438a30bdae2ac439da21d41d373f728971d",
+    "tests\\run_readme_smoke.py": "0025ef7ee77ba70232f47eb55b7bfe10cb026708e8a0607c95b9c86777202772",
+    "tests\\run_scene_api_tests.py": "82af7b21c8e9ccee79dd6b4c10e1129f9b4b7b2ceb0d96432f230dc896bea718",
+    "tests\\run_semantic_acceptance.py": "1811e34ae39a67a0e465933bb2a3294be9cd288aae927dda65d04cbccec34f5c",
+    "tests\\run_slice_tests.py": "f800b67e32d7f55fe2a1143b3a030a5a7e9ef45cc949493490c1843672e1e8f8",
+    "tests\\run_surface_tests.py": "5af8dcda83e3951d1ccc2cc6386ac4b4a93b9c6da9a427daa074cc3bdad9ea54",
+    "tests\\run_svg_label_tests.py": "6ef1a93b7e65150d25df9f7f9685b6cf75a16c158460328e5e4a4500d626bcbb",
+    "tests\\run_unit_tests.py": "b7b630e37ac81f90bcc53bee286e4b9e4133d7534065daf3eb4ae805d8f15368",
+    "tests\\test_branch_semantics.py": "d1237e6ff766c6ad84205ade847cbaa77813216be105f47c0397dd5ab0832b6c",
+    "tests\\test_label_load.py": "cef23c1f59140600addcf6419543b5d74bc233bf748ca214a5362e512eedcbb5",
+    "tests\\test_motion_relation.py": "97401fdccf010e51ee70a198d2885c1cbaef0f812897f6d02d1839c7f40d3d6b",
+    "tests\\test_relation_components.py": "591684f2b7d62ea6cf92fc9eb792077f9bc77a2076e2e5c8370096a70a897073",
+    "tests\\test_relation_path.py": "240617045ac15dc0e50c92a9a32e1825ec0462d814ec61da6d7c8175f36f963a",
+    "tests\\test_surface_renderer.py": "1c5923621582fbc95150f64ee9cb572a87eebbddb7f1f4031fc391fb42bcfa42",
+    "tests\\test_svg_contrast.py": "de4c7babf326d9d29a2264bf3775cf61d3a07818ec2ca93b01e4b21bfa31ae5d"
+  },
+  "quality_verdict": "NOT_DETERMINED_BY_TESTS",
+  "after": "publication line ending normalization",
+  "total": 215,
+  "suites": [
+    {
+      "suite": "syntax",
+      "status": "PASS"
+    },
+    {
+      "suite": "core",
+      "status": "PASS"
+    },
+    {
+      "suite": "semantic",
+      "status": "PASS"
+    },
+    {
+      "suite": "comparison",
+      "status": "PASS"
+    },
+    {
+      "suite": "scene-api",
+      "status": "PASS"
+    },
+    {
+      "suite": "components",
+      "status": "PASS"
+    },
+    {
+      "suite": "surfaces",
+      "status": "PASS"
+    },
+    {
+      "suite": "slices",
+      "status": "PASS"
+    },
+    {
+      "suite": "openings",
+      "status": "PASS"
+    },
+    {
+      "suite": "svg-labels",
+      "status": "PASS"
+    },
+    {
+      "suite": "unit-discovery",
+      "status": "PASS"
+    },
+    {
+      "suite": "readme-smoke",
+      "status": "PASS"
+    }
+  ]
+}

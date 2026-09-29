@@ -1,0 +1,193 @@
+{
+  "pdf_page_count": 1,
+  "pdf_size_mm": [
+    159.99999749999998,
+    96.00000555555553
+  ],
+  "png_size": [
+    1890,
+    1134
+  ],
+  "font_min_pt": 9,
+  "font_max_pt": 11,
+  "font_coverage_checked": true,
+  "text_bounds_checked": true,
+  "svg_images": 0,
+  "svg_editable_texts": 21,
+  "pdf_searchable_text": "Owner-consistent reuse\nDEMO FICTION\ni\nj\nFace f\nGroup A\nowns f\nGroup B\ni < j\nA-owned\nrecord\nTi(r)\nGf(r)\nTj(r)\nsame refresh r\nA reuses\nB-owned\nface set\ns\ns + 1\nB refreshes\n",
+  "text_items": [
+    {
+      "text": "Owner-consistent reuse",
+      "size_pt": 11,
+      "left": 4.0,
+      "right": 48.20763753255208,
+      "top": 2.119444444444445,
+      "bottom": 6
+    },
+    {
+      "text": "DEMO FICTION",
+      "size_pt": 9,
+      "left": 132.89443359375,
+      "right": 156.0,
+      "top": 2.825,
+      "bottom": 6
+    },
+    {
+      "text": "i",
+      "size_pt": 11,
+      "left": 73.46092868381076,
+      "right": 74.53907131618924,
+      "top": 25.819444444444443,
+      "bottom": 29.7
+    },
+    {
+      "text": "j",
+      "size_pt": 11,
+      "left": 83.46092868381076,
+      "right": 84.53907131618924,
+      "top": 25.819444444444443,
+      "bottom": 29.7
+    },
+    {
+      "text": "Face f",
+      "size_pt": 10,
+      "left": 73.90211995442708,
+      "right": 84.09788004557291,
+      "top": 12.072222222222223,
+      "bottom": 15.6
+    },
+    {
+      "text": "Group A",
+      "size_pt": 10.5,
+      "left": 11.592571004231772,
+      "right": 26.407428995768228,
+      "top": 22.295833333333334,
+      "bottom": 26
+    },
+    {
+      "text": "owns f",
+      "size_pt": 9.5,
+      "left": 14.157013956705729,
+      "right": 23.842986043294268,
+      "top": 28.148611111111112,
+      "bottom": 31.5
+    },
+    {
+      "text": "Group B",
+      "size_pt": 10.5,
+      "left": 130.5925710042318,
+      "right": 145.40742899576824,
+      "top": 22.295833333333334,
+      "bottom": 26
+    },
+    {
+      "text": "i < j",
+      "size_pt": 9.5,
+      "left": 135.34572618272568,
+      "right": 140.6542738172743,
+      "top": 28.148611111111112,
+      "bottom": 31.5
+    },
+    {
+      "text": "A-owned",
+      "size_pt": 10,
+      "left": 4.0,
+      "right": 18.893147786458332,
+      "top": 45.97222222222222,
+      "bottom": 49.5
+    },
+    {
+      "text": "record",
+      "size_pt": 10,
+      "left": 4.0,
+      "right": 14.97951931423611,
+      "top": 50.47222222222222,
+      "bottom": 54
+    },
+    {
+      "text": "Ti(r)",
+      "size_pt": 10,
+      "left": 25.76850043402778,
+      "right": 32.23149956597222,
+      "top": 63.072222222222216,
+      "bottom": 66.6
+    },
+    {
+      "text": "Gf(r)",
+      "size_pt": 10,
+      "left": 55.375759548611114,
+      "right": 62.62424045138889,
+      "top": 63.072222222222216,
+      "bottom": 66.6
+    },
+    {
+      "text": "Tj(r)",
+      "size_pt": 10,
+      "left": 85.76850043402777,
+      "right": 92.23149956597221,
+      "top": 63.072222222222216,
+      "bottom": 66.6
+    },
+    {
+      "text": "same refresh r",
+      "size_pt": 10,
+      "left": 46.841396755642364,
+      "right": 71.15860324435764,
+      "top": 75.77222222222223,
+      "bottom": 79.3
+    },
+    {
+      "text": "A reuses",
+      "size_pt": 10.5,
+      "left": 51.17567138671875,
+      "right": 66.82432861328124,
+      "top": 85.29583333333333,
+      "bottom": 89
+    },
+    {
+      "text": "B-owned",
+      "size_pt": 10,
+      "left": 128.55342610677084,
+      "right": 143.44657389322919,
+      "top": 42.97222222222222,
+      "bottom": 46.5
+    },
+    {
+      "text": "face set",
+      "size_pt": 10,
+      "left": 129.82294379340277,
+      "right": 142.17705620659723,
+      "top": 47.47222222222222,
+      "bottom": 51
+    },
+    {
+      "text": "s",
+      "size_pt": 11,
+      "left": 135.0298611111111,
+      "right": 136.97013888888887,
+      "top": 56.61944444444445,
+      "bottom": 60.5
+    },
+    {
+      "text": "s + 1",
+      "size_pt": 11,
+      "left": 131.63058539496527,
+      "right": 140.3694146050347,
+      "top": 75.11944444444444,
+      "bottom": 79
+    },
+    {
+      "text": "B refreshes",
+      "size_pt": 10.5,
+      "left": 125.80811564127605,
+      "right": 146.19188435872397,
+      "top": 85.29583333333333,
+      "bottom": 89
+    }
+  ],
+  "svg_external_font": "Arial; font not redistributed",
+  "pdf_fonts": "Embedded Arial subsets",
+  "geometry": "D0. Mesh fragment and logical cache views. No heat-flow arrow.",
+  "scientific_status": "REVIEW_REQUIRED",
+  "author_acceptance": "PENDING"
+}

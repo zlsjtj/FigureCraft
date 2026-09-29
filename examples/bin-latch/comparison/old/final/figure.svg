@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="100mm" viewBox="0 0 453.543307 283.464567">
+<title>Housing-stopped sliding shoe, configuration D</title>
+<desc>Two schematic orthogonal sections of the same retention hardware. Left: the engaged tooth and housing stop react outward pull. Right: upward sled travel retracts the shoe transversely after unloading. Preset demo fiction, not measurements.</desc>
+<text id="title" x="12" y="20" font-family="Arial" font-size="11" font-weight="700" fill="#1F2933" text-anchor="start">D  |  A fixed stop holds; a sliding shoe releases</text>
+<text id="panel-a" x="12" y="43" font-family="Arial" font-size="10.5" font-weight="700" fill="#1F2933" text-anchor="start">a  Engaged: outward pull</text>
+<text id="panel-b" x="240" y="43" font-family="Arial" font-size="10.5" font-weight="700" fill="#1F2933" text-anchor="start">b  Release: wall load &lt;2 N</text>
+<polyline id="panel-divider" points="226,53 226,240" fill="none" stroke="#CDD5DA" stroke-width="0.7"/>
+<rect id="housing-a" data-role="housing" x="79" y="91" width="128" height="117" fill="#DCE2E6" stroke="#77838B" stroke-width="1.1"/>
+<rect id="pocket-a" data-role="housing-pocket" x="103" y="107" width="89" height="88" fill="#FFFFFF" stroke="#77838B" stroke-width="0.8"/>
+<rect id="tab-a" data-role="wall-tab" x="20" y="172" width="164" height="26" fill="#E7EAED" stroke="#77838B" stroke-width="1"/>
+<rect id="window-a" data-role="tab-window" x="114" y="172" width="30" height="26" fill="#FFFFFF" stroke="#77838B" stroke-width="0.8"/>
+<rect id="stop-a" data-role="housing-stop" x="119" y="129" width="15" height="43" fill="#ACB6BE" stroke="#77838B" stroke-width="1.1"/>
+<polygon id="shoe-a" data-role="shoe" points="134,137 180,137 180,171 144,171 144,182 134,182" fill="#D5EDF0" stroke="#176E86" stroke-width="1.5"/>
+<polyline id="stop-contact" points="133,139 133,169" fill="none" stroke="#1F2933" stroke-width="2"/>
+<polyline id="tooth-contact" points="145,174 145,181" fill="none" stroke="#1F2933" stroke-width="2"/>
+<polyline id="pull-a-shaft" points="72,184 30,184" fill="none" stroke="#1F2933" stroke-width="1.5"/>
+<polygon id="pull-a-head" data-role="" points="30,184 35.0,181.8 35.0,186.2" fill="#1F2933" stroke="#1F2933" stroke-width="0.4"/>
+<polyline id="shoe-a-release-shaft" points="151,132 151,112" fill="none" stroke="#176E86" stroke-width="1.2"/>
+<polygon id="shoe-a-release-head" data-role="" points="151,112 153.2,117.0 148.8,117.0" fill="#176E86" stroke="#176E86" stroke-width="0.4"/>
+<text id="label-tab" x="14" y="222" font-family="Arial" font-size="9.5" font-weight="400" fill="#1F2933" text-anchor="start">Wall tab</text>
+<polyline id="tab-leader" points="53,216 61,198" fill="none" stroke="#52616C" stroke-width="0.7"/>
+<text id="label-stop" x="15" y="108" font-family="Arial" font-size="9.5" font-weight="400" fill="#1F2933" text-anchor="start">Housing stop</text>
+<polyline id="stop-leader" points="69,112 126,130" fill="none" stroke="#52616C" stroke-width="0.7"/>
+<text id="label-shoe" x="185" y="123" font-family="Arial" font-size="9.5" font-weight="400" fill="#176E86" text-anchor="end">Shoe</text>
+<text id="label-window" x="119" y="222" font-family="Arial" font-size="9.5" font-weight="400" fill="#1F2933" text-anchor="start">Window / tooth</text>
+<polyline id="window-leader" points="147,212 141,183" fill="none" stroke="#52616C" stroke-width="0.7"/>
+<text id="overlap" x="118" y="244" font-family="Arial" font-size="9.5" font-weight="400" fill="#1F2933" text-anchor="start">1.0 mm overlap</text>
+<text id="outward-label" x="15" y="161" font-family="Arial" font-size="9.5" font-weight="400" fill="#1F2933" text-anchor="start">−x pull</text>
+<polyline id="x-a-shaft" points="29,76 51,76" fill="none" stroke="#52616C" stroke-width="0.9"/>
+<polygon id="x-a-head" data-role="" points="51,76 46.0,78.2 46.0,73.8" fill="#52616C" stroke="#52616C" stroke-width="0.4"/>
+<polyline id="y-a-shaft" points="29,76 29,57" fill="none" stroke="#52616C" stroke-width="0.9"/>
+<polygon id="y-a-head" data-role="" points="29,57 31.2,62.0 26.8,62.0" fill="#52616C" stroke="#52616C" stroke-width="0.4"/>
+<text id="axis-x-a" x="56" y="80" font-family="Arial" font-size="9" font-weight="400" fill="#52616C" text-anchor="start">+x</text>
+<text id="axis-y-a" x="23" y="55" font-family="Arial" font-size="9" font-weight="400" fill="#52616C" text-anchor="start">+y</text>
+<rect id="tab-b" data-role="wall-tab" x="248" y="91" width="28" height="112" fill="#E7EAED" stroke="#77838B" stroke-width="1"/>
+<rect id="window-b" data-role="tab-window" x="248" y="132" width="28" height="35" fill="#FFFFFF" stroke="#77838B" stroke-width="0.9"/>
+<polygon id="sled-b" data-role="release-sled" points="291,131 291,195 329.6,195 304,131" fill="#F6D6AE" stroke="#BA651B" stroke-width="1.2"/>
+<polygon id="shoe-b-engaged" data-role="shoe-engaged-reference" points="279,112 350,112 350,166 306,166 292,131 266,131 266,141 279,141" fill="none" stroke="#176E86" stroke-width="1" stroke-dasharray="3 2"/>
+<polygon id="shoe-b-released" data-role="shoe-released" points="291,112 362,112 362,166 318,166 304,131 278,131 278,141 291,141" fill="#D5EDF0" stroke="#176E86" stroke-width="1.5"/>
+<polyline id="sled-up-shaft" points="394,185 394,149" fill="none" stroke="#BA651B" stroke-width="1.6"/>
+<polygon id="sled-up-head" data-role="" points="394,149 396.2,154.0 391.8,154.0" fill="#BA651B" stroke="#BA651B" stroke-width="0.4"/>
+<text id="sled-label" x="308" y="184" font-family="Arial" font-size="9.5" font-weight="400" fill="#713C14" text-anchor="middle">Sled</text>
+<text id="sled-travel" x="432" y="122" font-family="Arial" font-size="9.5" font-weight="400" fill="#BA651B" text-anchor="end">3.0 mm</text>
+<text id="sled-axis" x="403" y="151" font-family="Arial" font-size="9.5" font-weight="400" fill="#BA651B" text-anchor="start">+z</text>
+<polyline id="shoe-out-shaft" points="311,96 350,96" fill="none" stroke="#176E86" stroke-width="1.5"/>
+<polygon id="shoe-out-head" data-role="" points="350,96 345.0,98.2 345.0,93.8" fill="#176E86" stroke="#176E86" stroke-width="0.4"/>
+<text id="shoe-travel" x="300" y="80" font-family="Arial" font-size="9.5" font-weight="400" fill="#176E86" text-anchor="start">1.2 mm +y</text>
+<text id="shoe-b-label" x="327" y="133" font-family="Arial" font-size="9.5" font-weight="700" fill="#176E86" text-anchor="middle">Shoe</text>
+<text id="ramp-label" x="322" y="219" font-family="Arial" font-size="9.5" font-weight="400" fill="#BA651B" text-anchor="start">Straight ramp</text>
+<polyline id="ramp-leader" points="337,209 311,148.5" fill="none" stroke="#52616C" stroke-width="0.7"/>
+<text id="clearance" x="242" y="238" font-family="Arial" font-size="9.5" font-weight="400" fill="#1F2933" text-anchor="start">0.2 mm clear</text>
+<polyline id="clearance-leader" points="276,225 277,143" fill="none" stroke="#52616C" stroke-width="0.7"/>
+<text id="ghost-key" x="342" y="239" font-family="Arial" font-size="9" font-weight="400" fill="#1F2933" text-anchor="start">Dashed: engaged</text>
+<polyline id="z-b-shaft" points="253,78 253,57" fill="none" stroke="#52616C" stroke-width="0.9"/>
+<polygon id="z-b-head" data-role="" points="253,57 255.2,62.0 250.8,62.0" fill="#52616C" stroke="#52616C" stroke-width="0.4"/>
+<polyline id="y-b-shaft" points="253,78 276,78" fill="none" stroke="#52616C" stroke-width="0.9"/>
+<polygon id="y-b-head" data-role="" points="276,78 271.0,80.2 271.0,75.8" fill="#52616C" stroke="#52616C" stroke-width="0.4"/>
+<text id="axis-z-b" x="247" y="55" font-family="Arial" font-size="9" font-weight="400" fill="#52616C" text-anchor="start">+z</text>
+<text id="axis-y-b" x="281" y="82" font-family="Arial" font-size="9" font-weight="400" fill="#52616C" text-anchor="start">+y</text>
+<polyline id="footer-rule" points="12,253 441.5433070866142,253" fill="none" stroke="#CDD5DA" stroke-width="0.7"/>
+<text id="demo" x="12" y="271" font-family="Arial" font-size="9" font-weight="700" fill="#1F2933" text-anchor="start">DEMO FICTION · Preset, not measured</text>
+<text id="schematic" x="441.5433070866142" y="271" font-family="Arial" font-size="9" font-weight="400" fill="#1F2933" text-anchor="end">Orthogonal schematics · Not to scale</text>
+</svg>

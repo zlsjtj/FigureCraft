@@ -1,0 +1,35 @@
+{
+  "evidence": "DEMO FICTION; no solver executed",
+  "stage": "final-a",
+  "builder_sha256": "50c1d4ee3510ff4ebee4062686b90aace2898eff85645c86adb314423c3160e2",
+  "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+  "bold_font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "output_size_mm": [
+    160,
+    96
+  ],
+  "outputs": {
+    "figure1_owner_states_final.pdf": "c48f07b28d4d975b5de468dd66e30c9aa1773107443935dd672e42872216dfa8",
+    "figure1_owner_states_final.png": "82a3d035d0290222a028b556f77fd6d853a4dd770ae79adcace0730a43945cc6",
+    "figure1_owner_states_final.svg": "45972b4acab79801a0a271a66a7ebd26ad417341603ab0b843cbf590d9179cbd",
+    "figure1_owner_states_final_deuteranopia.png": "ecefeb3d0049a956ba05545ec03951f13620049356f916a372debcdd5bac650c",
+    "figure1_owner_states_final_gray.png": "568d8d923388e35494badecf190d346df8770652d795edc4cb7c626210445f60",
+    "figure1_owner_states_final_technical.json": "ae811588be59d43c675658c284724f319c51ee762828df88e93f6206ffe9971c"
+  },
+  "technical_status": "PASS",
+  "scientific_review_status": "REVIEW_REQUIRED",
+  "visual_review_status": "REVIEW_REQUIRED",
+  "author_acceptance": "PENDING",
+  "overall_status": "REVIEW_REQUIRED",
+  "original_build_export_hashes": {
+    "figure1_owner_states_final.pdf": "c48f07b28d4d975b5de468dd66e30c9aa1773107443935dd672e42872216dfa8",
+    "figure1_owner_states_final.png": "82a3d035d0290222a028b556f77fd6d853a4dd770ae79adcace0730a43945cc6",
+    "figure1_owner_states_final.svg": "45972b4acab79801a0a271a66a7ebd26ad417341603ab0b843cbf590d9179cbd",
+    "figure1_owner_states_final_deuteranopia.png": "ecefeb3d0049a956ba05545ec03951f13620049356f916a372debcdd5bac650c",
+    "figure1_owner_states_final_gray.png": "568d8d923388e35494badecf190d346df8770652d795edc4cb7c626210445f60",
+    "figure1_owner_states_final_technical.json": "d9f068bcac6808702a86d39eeca3d1044197e626b3fb5c4eca062f9a35cd5515"
+  },
+  "original_builder_sha256": "50c1d4ee3510ff4ebee4062686b90aace2898eff85645c86adb314423c3160e2",
+  "publication_note": "Package text normalized to LF; Python AST unchanged. Original build identifiers retained separately. Figure2 PDF has run timestamps; its drawing stream, extracted text, SVG and PNG match the source rebuild."
+}

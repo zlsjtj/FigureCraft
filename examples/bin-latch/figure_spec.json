@@ -1,0 +1,1095 @@
+{
+  "evidence_status": "DEMO_FICTION_PRESET",
+  "main_message": "A fixed x-facing stop reacts outward tab loading while an unloaded sled ramp retracts the same shoe along y.",
+  "representation": "D0 orthographic sections, schematic not to scale; same logical objects across views",
+  "output": {
+    "width_mm": 160,
+    "height_mm": 102,
+    "placement_width_mm": 160,
+    "dpi": 300
+  },
+  "roles": {
+    "ink": "#203442",
+    "tab": "#CEE1F1",
+    "tabline": "#456784",
+    "shoe": "#A6D5CE",
+    "shoeline": "#24675E",
+    "housing": "#DDE2E5",
+    "hline": "#66747C",
+    "sled": "#F0D7A4",
+    "sledline": "#88602E",
+    "ghost": "#89949C",
+    "rule": "#BCC7CD",
+    "white": "#FFFFFF"
+  },
+  "locked_values": {
+    "tooth_overlap_mm": 1.0,
+    "shoe_retraction_mm": 1.2,
+    "sled_travel_mm": 3.0,
+    "nominal_gap_mm": 0.2,
+    "release_wall_preload_N": "<2"
+  },
+  "items": [
+    {
+      "kind": "text",
+      "id": "title",
+      "x": 10,
+      "y": 15,
+      "text": "D: stop-supported retention, transverse release",
+      "size": 11,
+      "bold": true,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "top-rule",
+      "x1": 10,
+      "y1": 23,
+      "x2": 443.5433070866142,
+      "y2": 23,
+      "stroke": "#BCC7CD",
+      "sw": 0.6,
+      "dash": false
+    },
+    {
+      "kind": "text",
+      "id": "engaged-title",
+      "x": 10,
+      "y": 39,
+      "text": "a  Engaged: outward load",
+      "size": 10.5,
+      "bold": true,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "rect",
+      "id": "engaged-tab",
+      "x": 20,
+      "y": 118,
+      "w": 176,
+      "h": 20,
+      "fill": "#CEE1F1",
+      "stroke": "#456784",
+      "sw": 0.8,
+      "entity": "tab",
+      "state": "engaged"
+    },
+    {
+      "kind": "rect",
+      "id": "engaged-window",
+      "x": 117,
+      "y": 118,
+      "w": 23,
+      "h": 20,
+      "fill": "#FFFFFF",
+      "stroke": "#456784",
+      "sw": 0.8,
+      "entity": "tab-window",
+      "state": "engaged"
+    },
+    {
+      "kind": "rect",
+      "id": "engaged-stop",
+      "x": 98,
+      "y": 65,
+      "w": 11,
+      "h": 52,
+      "fill": "#DDE2E5",
+      "stroke": "#66747C",
+      "sw": 0.8,
+      "entity": "stop",
+      "state": "engaged"
+    },
+    {
+      "kind": "rect",
+      "id": "engaged-guide",
+      "x": 162,
+      "y": 65,
+      "w": 7,
+      "h": 52,
+      "fill": "#DDE2E5",
+      "stroke": "#66747C",
+      "sw": 0.8,
+      "entity": "guide",
+      "state": "engaged"
+    },
+    {
+      "kind": "polygon",
+      "id": "engaged-shoe",
+      "pts": [
+        [
+          109,
+          83
+        ],
+        [
+          162,
+          83
+        ],
+        [
+          162,
+          118
+        ],
+        [
+          140,
+          118
+        ],
+        [
+          140,
+          128
+        ],
+        [
+          125,
+          128
+        ],
+        [
+          125,
+          118
+        ],
+        [
+          109,
+          118
+        ]
+      ],
+      "fill": "#A6D5CE",
+      "stroke": "#24675E",
+      "sw": 1,
+      "entity": "shoe",
+      "state": "engaged"
+    },
+    {
+      "kind": "text",
+      "id": "engaged-shoe-label",
+      "x": 135.5,
+      "y": 102,
+      "text": "Shoe",
+      "size": 10,
+      "bold": false,
+      "anchor": "middle",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "engaged-tab-label",
+      "x": 52,
+      "y": 131,
+      "text": "Tab",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "stop-label",
+      "x": 10,
+      "y": 58,
+      "text": "Fixed stop",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "stop-leader",
+      "x1": 62,
+      "y1": 61,
+      "x2": 101,
+      "y2": 80,
+      "stroke": "#66747C",
+      "sw": 0.65,
+      "dash": false
+    },
+    {
+      "kind": "text",
+      "id": "guide-label",
+      "x": 153,
+      "y": 58,
+      "text": "Guide",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "guide-leader",
+      "x1": 164,
+      "y1": 60,
+      "x2": 165,
+      "y2": 65,
+      "stroke": "#66747C",
+      "sw": 0.65,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "pull",
+      "x1": 72,
+      "y1": 108,
+      "x2": 24,
+      "y2": 108,
+      "stroke": "#203442",
+      "sw": 1.1,
+      "dash": false,
+      "meaning": "outward load -x"
+    },
+    {
+      "kind": "polygon",
+      "id": "pull-head",
+      "pts": [
+        [
+          24,
+          108
+        ],
+        [
+          28.6,
+          110.2
+        ],
+        [
+          28.6,
+          105.8
+        ]
+      ],
+      "fill": "#203442",
+      "stroke": "#203442",
+      "sw": 0.1
+    },
+    {
+      "kind": "text",
+      "id": "pull-label",
+      "x": 22,
+      "y": 98,
+      "text": "Pull −x",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "engagement-label",
+      "x": 104,
+      "y": 160,
+      "text": "1.0 mm overlap",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "engagement-leader",
+      "x1": 133,
+      "y1": 149,
+      "x2": 133,
+      "y2": 129,
+      "stroke": "#203442",
+      "sw": 0.6,
+      "dash": false
+    },
+    {
+      "kind": "text",
+      "id": "window-label",
+      "x": 29,
+      "y": 157,
+      "text": "Window",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "window-leader",
+      "x1": 68,
+      "y1": 154,
+      "x2": 120,
+      "y2": 136,
+      "stroke": "#456784",
+      "sw": 0.6,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "engaged-x-axis",
+      "x1": 25,
+      "y1": 176,
+      "x2": 48,
+      "y2": 176,
+      "stroke": "#66747C",
+      "sw": 0.7,
+      "dash": false,
+      "meaning": "motion"
+    },
+    {
+      "kind": "polygon",
+      "id": "engaged-x-axis-head",
+      "pts": [
+        [
+          48,
+          176
+        ],
+        [
+          43.4,
+          173.8
+        ],
+        [
+          43.4,
+          178.2
+        ]
+      ],
+      "fill": "#66747C",
+      "stroke": "#66747C",
+      "sw": 0.1
+    },
+    {
+      "kind": "line",
+      "id": "engaged-y-axis",
+      "x1": 25,
+      "y1": 176,
+      "x2": 25,
+      "y2": 159,
+      "stroke": "#66747C",
+      "sw": 0.7,
+      "dash": false,
+      "meaning": "motion"
+    },
+    {
+      "kind": "polygon",
+      "id": "engaged-y-axis-head",
+      "pts": [
+        [
+          25,
+          159
+        ],
+        [
+          22.8,
+          163.6
+        ],
+        [
+          27.2,
+          163.6
+        ]
+      ],
+      "fill": "#66747C",
+      "stroke": "#66747C",
+      "sw": 0.1
+    },
+    {
+      "kind": "text",
+      "id": "engaged-x-label",
+      "x": 52,
+      "y": 179,
+      "text": "+x",
+      "size": 9,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "engaged-y-label",
+      "x": 11,
+      "y": 154,
+      "text": "+y",
+      "size": 9,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "released-title",
+      "x": 236,
+      "y": 39,
+      "text": "b  Unloaded: tooth clear",
+      "size": 10.5,
+      "bold": true,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "rect",
+      "id": "released-tab",
+      "x": 246,
+      "y": 118,
+      "w": 176,
+      "h": 20,
+      "fill": "#CEE1F1",
+      "stroke": "#456784",
+      "sw": 0.8,
+      "entity": "tab",
+      "state": "released"
+    },
+    {
+      "kind": "rect",
+      "id": "released-window",
+      "x": 343,
+      "y": 118,
+      "w": 23,
+      "h": 20,
+      "fill": "#FFFFFF",
+      "stroke": "#456784",
+      "sw": 0.8,
+      "entity": "tab-window",
+      "state": "released"
+    },
+    {
+      "kind": "rect",
+      "id": "released-stop",
+      "x": 324,
+      "y": 65,
+      "w": 11,
+      "h": 52,
+      "fill": "#DDE2E5",
+      "stroke": "#66747C",
+      "sw": 0.8,
+      "entity": "stop",
+      "state": "released"
+    },
+    {
+      "kind": "rect",
+      "id": "released-guide",
+      "x": 388,
+      "y": 65,
+      "w": 7,
+      "h": 52,
+      "fill": "#DDE2E5",
+      "stroke": "#66747C",
+      "sw": 0.8,
+      "entity": "guide",
+      "state": "released"
+    },
+    {
+      "kind": "polygon",
+      "id": "released-shoe",
+      "pts": [
+        [
+          335,
+          71
+        ],
+        [
+          388,
+          71
+        ],
+        [
+          388,
+          106
+        ],
+        [
+          366,
+          106
+        ],
+        [
+          366,
+          116
+        ],
+        [
+          351,
+          116
+        ],
+        [
+          351,
+          106
+        ],
+        [
+          335,
+          106
+        ]
+      ],
+      "fill": "#A6D5CE",
+      "stroke": "#24675E",
+      "sw": 1,
+      "entity": "shoe",
+      "state": "released"
+    },
+    {
+      "kind": "text",
+      "id": "released-shoe-label",
+      "x": 361.5,
+      "y": 90,
+      "text": "Shoe",
+      "size": 10,
+      "bold": false,
+      "anchor": "middle",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "released-tab-label",
+      "x": 278,
+      "y": 131,
+      "text": "Tab",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "shoe-retract",
+      "x1": 407,
+      "y1": 110,
+      "x2": 407,
+      "y2": 74,
+      "stroke": "#24675E",
+      "sw": 1.1,
+      "dash": false,
+      "meaning": "shoe translation +y"
+    },
+    {
+      "kind": "polygon",
+      "id": "shoe-retract-head",
+      "pts": [
+        [
+          407,
+          74
+        ],
+        [
+          404.8,
+          78.6
+        ],
+        [
+          409.2,
+          78.6
+        ]
+      ],
+      "fill": "#24675E",
+      "stroke": "#24675E",
+      "sw": 0.1
+    },
+    {
+      "kind": "text",
+      "id": "shoe-y",
+      "x": 414,
+      "y": 84,
+      "text": "+y",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "gap-label",
+      "x": 324,
+      "y": 160,
+      "text": "0.2 mm nominal gap",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "gap-leader",
+      "x1": 360,
+      "y1": 149,
+      "x2": 360,
+      "y2": 116.9,
+      "stroke": "#203442",
+      "sw": 0.6,
+      "dash": false
+    },
+    {
+      "kind": "text",
+      "id": "preload-label",
+      "x": 237,
+      "y": 59,
+      "text": "Wall preload < 2 N",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "released-x-axis",
+      "x1": 251,
+      "y1": 176,
+      "x2": 274,
+      "y2": 176,
+      "stroke": "#66747C",
+      "sw": 0.7,
+      "dash": false,
+      "meaning": "motion"
+    },
+    {
+      "kind": "polygon",
+      "id": "released-x-axis-head",
+      "pts": [
+        [
+          274,
+          176
+        ],
+        [
+          269.4,
+          173.8
+        ],
+        [
+          269.4,
+          178.2
+        ]
+      ],
+      "fill": "#66747C",
+      "stroke": "#66747C",
+      "sw": 0.1
+    },
+    {
+      "kind": "line",
+      "id": "released-y-axis",
+      "x1": 251,
+      "y1": 176,
+      "x2": 251,
+      "y2": 159,
+      "stroke": "#66747C",
+      "sw": 0.7,
+      "dash": false,
+      "meaning": "motion"
+    },
+    {
+      "kind": "polygon",
+      "id": "released-y-axis-head",
+      "pts": [
+        [
+          251,
+          159
+        ],
+        [
+          248.8,
+          163.6
+        ],
+        [
+          253.2,
+          163.6
+        ]
+      ],
+      "fill": "#66747C",
+      "stroke": "#66747C",
+      "sw": 0.1
+    },
+    {
+      "kind": "text",
+      "id": "released-x-label",
+      "x": 278,
+      "y": 179,
+      "text": "+x",
+      "size": 9,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "released-y-label",
+      "x": 237,
+      "y": 154,
+      "text": "+y",
+      "size": 9,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "panel-split",
+      "x1": 10,
+      "y1": 187,
+      "x2": 443.5433070866142,
+      "y2": 187,
+      "stroke": "#BCC7CD",
+      "sw": 0.6,
+      "dash": false
+    },
+    {
+      "kind": "text",
+      "id": "ramp-title",
+      "x": 10,
+      "y": 202,
+      "text": "c  Ramp action (y–z view)",
+      "size": 10.5,
+      "bold": true,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "polygon",
+      "id": "ramp-initial",
+      "pts": [
+        [
+          105,
+          220
+        ],
+        [
+          129,
+          280
+        ],
+        [
+          105,
+          280
+        ]
+      ],
+      "fill": "#F0D7A4",
+      "stroke": "#F0D7A4",
+      "sw": 0,
+      "entity": "sled",
+      "state": "initial"
+    },
+    {
+      "kind": "line",
+      "id": "ramp-back-initial",
+      "x1": 105,
+      "y1": 220,
+      "x2": 105,
+      "y2": 280,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "ramp-base-initial",
+      "x1": 105,
+      "y1": 280,
+      "x2": 129,
+      "y2": 280,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "ramp-face-upper-initial",
+      "x1": 105,
+      "y1": 220,
+      "x2": 114.4,
+      "y2": 243.5,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "ramp-face-lower-initial",
+      "x1": 115.6,
+      "y1": 246.5,
+      "x2": 129,
+      "y2": 280,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "rect",
+      "id": "shoe-initial",
+      "x": 115.0,
+      "y": 225,
+      "w": 45,
+      "h": 20,
+      "fill": "#A6D5CE",
+      "stroke": "#24675E",
+      "sw": 0.9,
+      "entity": "shoe",
+      "state": "initial"
+    },
+    {
+      "kind": "text",
+      "id": "shoe-label-initial",
+      "x": 137.5,
+      "y": 239,
+      "text": "Shoe",
+      "size": 10,
+      "bold": false,
+      "anchor": "middle",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "state-label-initial",
+      "x": 137.5,
+      "y": 263,
+      "text": "Initial",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "middle",
+      "fill": "#203442"
+    },
+    {
+      "kind": "polygon",
+      "id": "ramp-lifted",
+      "pts": [
+        [
+          326,
+          190
+        ],
+        [
+          350,
+          250
+        ],
+        [
+          326,
+          250
+        ]
+      ],
+      "fill": "#F0D7A4",
+      "stroke": "#F0D7A4",
+      "sw": 0,
+      "entity": "sled",
+      "state": "lifted"
+    },
+    {
+      "kind": "line",
+      "id": "ramp-back-lifted",
+      "x1": 326,
+      "y1": 190,
+      "x2": 326,
+      "y2": 250,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "ramp-base-lifted",
+      "x1": 326,
+      "y1": 250,
+      "x2": 350,
+      "y2": 250,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "ramp-face-upper-lifted",
+      "x1": 326,
+      "y1": 190,
+      "x2": 347.4,
+      "y2": 243.5,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "ramp-face-lower-lifted",
+      "x1": 348.6,
+      "y1": 246.5,
+      "x2": 350,
+      "y2": 250,
+      "stroke": "#88602E",
+      "sw": 0.9,
+      "dash": false
+    },
+    {
+      "kind": "rect",
+      "id": "shoe-lifted",
+      "x": 348.0,
+      "y": 225,
+      "w": 45,
+      "h": 20,
+      "fill": "#A6D5CE",
+      "stroke": "#24675E",
+      "sw": 0.9,
+      "entity": "shoe",
+      "state": "lifted"
+    },
+    {
+      "kind": "text",
+      "id": "shoe-label-lifted",
+      "x": 370.5,
+      "y": 239,
+      "text": "Shoe",
+      "size": 10,
+      "bold": false,
+      "anchor": "middle",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "state-label-lifted",
+      "x": 370.5,
+      "y": 263,
+      "text": "After lift",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "middle",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "sled-label",
+      "x": 60,
+      "y": 249,
+      "text": "Sled",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "sled-leader",
+      "x1": 84,
+      "y1": 246,
+      "x2": 109,
+      "y2": 253,
+      "stroke": "#88602E",
+      "sw": 0.65,
+      "dash": false
+    },
+    {
+      "kind": "line",
+      "id": "sled-up",
+      "x1": 306,
+      "y1": 280,
+      "x2": 306,
+      "y2": 234,
+      "stroke": "#88602E",
+      "sw": 1.1,
+      "dash": false,
+      "meaning": "sled translation +z"
+    },
+    {
+      "kind": "polygon",
+      "id": "sled-up-head",
+      "pts": [
+        [
+          306,
+          234
+        ],
+        [
+          303.8,
+          238.6
+        ],
+        [
+          308.2,
+          238.6
+        ]
+      ],
+      "fill": "#88602E",
+      "stroke": "#88602E",
+      "sw": 0.1
+    },
+    {
+      "kind": "text",
+      "id": "sled-up-label",
+      "x": 242,
+      "y": 253,
+      "text": "+z  3.0 mm",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "shoe-right",
+      "x1": 352,
+      "y1": 219,
+      "x2": 393,
+      "y2": 219,
+      "stroke": "#24675E",
+      "sw": 1.1,
+      "dash": false,
+      "meaning": "shoe translation +y"
+    },
+    {
+      "kind": "polygon",
+      "id": "shoe-right-head",
+      "pts": [
+        [
+          393,
+          219
+        ],
+        [
+          388.4,
+          216.8
+        ],
+        [
+          388.4,
+          221.2
+        ]
+      ],
+      "fill": "#24675E",
+      "stroke": "#24675E",
+      "sw": 0.1
+    },
+    {
+      "kind": "text",
+      "id": "shoe-displacement",
+      "x": 344,
+      "y": 210,
+      "text": "+y  1.2 mm",
+      "size": 10,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "line",
+      "id": "return-left",
+      "x1": 390,
+      "y1": 271,
+      "x2": 360,
+      "y2": 271,
+      "stroke": "#24675E",
+      "sw": 0.8,
+      "dash": false,
+      "meaning": "integral tongue bias -y"
+    },
+    {
+      "kind": "polygon",
+      "id": "return-left-head",
+      "pts": [
+        [
+          360,
+          271
+        ],
+        [
+          364.6,
+          273.2
+        ],
+        [
+          364.6,
+          268.8
+        ]
+      ],
+      "fill": "#24675E",
+      "stroke": "#24675E",
+      "sw": 0.1
+    },
+    {
+      "kind": "text",
+      "id": "return-label",
+      "x": 326,
+      "y": 285,
+      "text": "Tongue biases −y",
+      "size": 9.5,
+      "bold": false,
+      "anchor": "start",
+      "fill": "#203442"
+    },
+    {
+      "kind": "text",
+      "id": "status",
+      "x": 10,
+      "y": 285,
+      "text": "DEMO FICTION",
+      "size": 9,
+      "bold": true,
+      "anchor": "start",
+      "fill": "#203442"
+    }
+  ],
+  "omitted_geometry": [
+    "complete housing",
+    "integral return tongue",
+    "underside relief slot"
+  ],
+  "caption_location": "manuscript.md, Figure 1",
+  "input_csv_sha256": "7c79969299a53b454534349398420a8a5876711a15dc3fa066621abc3f0db1d1"
+}

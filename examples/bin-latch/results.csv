@@ -1,0 +1,9 @@
+evidence_status,configuration,condition,retention_n,retention_median_N,retention_min_N,retention_max_N,release_attempts_n,release_success_n,release_peak_force_success_only_median_N,hardware_mass_g,discrete_hardware_parts_n
+DEMO_FICTION_PRESET,A,clean,6,206,191,220,20,20,19,8.4,2
+DEMO_FICTION_PRESET,A,grit,6,193,177,208,20,14,27,8.4,2
+DEMO_FICTION_PRESET,B,clean,6,382,361,401,20,20,7,10.9,3
+DEMO_FICTION_PRESET,B,grit,6,367,346,390,20,11,13,10.9,3
+DEMO_FICTION_PRESET,C,clean,6,405,379,428,20,18,46,9.2,2
+DEMO_FICTION_PRESET,C,grit,6,391,362,415,20,8,54,9.2,2
+DEMO_FICTION_PRESET,D,clean,6,318,300,336,20,20,12,12.6,3
+DEMO_FICTION_PRESET,D,grit,6,306,284,328,20,18,18,12.6,3

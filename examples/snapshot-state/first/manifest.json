@@ -1,0 +1,31 @@
+{
+  "evidence": "DEMO FICTION; no solver executed",
+  "stage": "first",
+  "builder_sha256": "ba99ab47d786b1a1ec59f4cc062b58284d82faa69a89dae20fed5d9b342ac0bb",
+  "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+  "bold_font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "output_size_mm": [
+    160,
+    96
+  ],
+  "outputs": {
+    "figure1_owner_states.pdf": "c0eb98d9e64ccc344b9db17cc4139a3581bc98f719738d44158b1f291941604b",
+    "figure1_owner_states.png": "663fe689ccb416f99b133fa058922823290d10058aadd97e44117b707f781551",
+    "figure1_owner_states.svg": "51f02770aaf5a4c92df511eaa8d864ae11e24421f06d49b54b37fe099ab0f071",
+    "figure1_owner_states_deuteranopia.png": "8ae75a3a1340f4463b5d02bae55fb0cda557f393c523f463e28845c43a0d2217",
+    "figure1_owner_states_gray.png": "9bdbec792fddd932821af647efd22c54fa8a6133aac46326b473ad1c5e095fad",
+    "figure1_owner_states_technical.json": "f6fdf4e92f28cb21b507a12d09de1fe015b7f93a975f0546a728115b984f1058",
+    "figure1_shared_record.pdf": "4648114f2f8bb42746cdd7c9c740e2f8bbb696ee0add2f4e55e1e023255da8c8",
+    "figure1_shared_record.png": "731abc5e73407c67bc66b8d4177f1634a56d921fe54accc39ea40448afd9f319",
+    "figure1_shared_record.svg": "1d7f3d107a12c6420851764afe7d0cb4767b1f68711a5d8ec602c7c14d3e2fc1",
+    "figure1_shared_record_deuteranopia.png": "f25dd384e6dca1d875e59ac50d5c952a5aecf65b6b2c0250b2849b57b52cdec3",
+    "figure1_shared_record_gray.png": "238e1c93dfdfd67623032a43bbd84700cbe5bcfd1217709fe7dfe85cf1182bb3",
+    "figure1_shared_record_technical.json": "ff7f7961a4061c8e9e9876c0f6c37c22d88250e70adfd6a8bce6937ab2afae44"
+  },
+  "technical_status": "PASS",
+  "scientific_review_status": "REVIEW_REQUIRED",
+  "visual_review_status": "REVIEW_REQUIRED",
+  "author_acceptance": "PENDING",
+  "overall_status": "REVIEW_REQUIRED"
+}

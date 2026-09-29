@@ -1,0 +1,11 @@
+{
+  "version": "1.19.0",
+  "validated_20260930": true,
+  "author_acceptance": "PENDING",
+  "human_or_journal_review": "NOT_EXECUTED",
+  "publication": "commit records source; remote push receipt belongs to release execution",
+  "second_video_review": "video-recheck-20260930.md",
+  "technical": "technical-20260930.json",
+  "generation": "generation-20260930.json",
+  "limits": "No general superiority or top-journal visual certification."
+}
