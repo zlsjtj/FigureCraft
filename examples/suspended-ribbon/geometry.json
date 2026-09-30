@@ -1,0 +1,8 @@
+{
+  "evidence_status": "Fictional geometry DEMO; coordinates have no measurement unit",
+  "frame": {"outer": [0,44,0,30], "opening": [8,36,8,22], "z": [0,4]},
+  "ribbon": {"bounds": [5,39,13,17], "z": [4,4.4]},
+  "metal": {"centerline": [[5,15],[10,15],[10,13.7],[14,13.7],[14,16.3],[18,16.3],[18,13.7],[22,13.7],[22,16.3],[26,16.3],[26,13.7],[30,13.7],[30,16.3],[34,16.3],[34,15],[39,15]], "width": 0.35, "z": [4.4,4.48]},
+  "section_y": 15,
+  "entity_ids": ["frame", "ribbon", "metal"]
+}

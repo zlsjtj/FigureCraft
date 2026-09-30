@@ -1,0 +1,142 @@
+{
+  "baseline_commit": "02cab761e0fbe9299f278f7d0277de7670a238a6",
+  "generation": "Fresh independent context; same inherited model configuration; one first output plus one self-revision. Feedback repairs recorded separately.",
+  "scope": "Only actually loaded skill files; new delivered example files were curated afterwards and not falsely counted as generation inputs.",
+  "loaded": [
+    {
+      "path": "SKILL.md",
+      "generation_sha256": "3be32dd2b1b057761ddf6090830d387eccce05198b5519b7f1f5b0b1beed7407",
+      "published_sha256": "4e7e285ab6413161711951c9975af2006dd09068576d35285119260ebb11b27e",
+      "unchanged": false,
+      "only_version_metadata": true
+    },
+    {
+      "path": "references/workflow.md",
+      "generation_sha256": "441159ca28fd91554f96a483b0cadde396ef230185f4cb0a3fdb513522cfc5b1",
+      "published_sha256": "441159ca28fd91554f96a483b0cadde396ef230185f4cb0a3fdb513522cfc5b1",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "references/quality-and-acceptance.md",
+      "generation_sha256": "11bb8b44bab22d6e9a1925c3b1c70a4bc7a08981c8669206b8090aa556ebcf4e",
+      "published_sha256": "e23c33b3fa377dd2a90a6ecc518ac36db3ec4aeeca4802e1dd61bfcf9d7436b2",
+      "unchanged": false,
+      "only_version_metadata": false,
+      "only_line_endings": true
+    },
+    {
+      "path": "references/dependencies.md",
+      "generation_sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f",
+      "published_sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "references/visual-explanation.md",
+      "generation_sha256": "5761f7420872ba2c17d0dd3163d376618aee89e456b07765ef2d45a59ff802aa",
+      "published_sha256": "5761f7420872ba2c17d0dd3163d376618aee89e456b07765ef2d45a59ff802aa",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "references/drawing-and-depth.md",
+      "generation_sha256": "176c02b5473605b2f7c1267a272bf5e657ce0a6e734c4a23fcff827d2749a044",
+      "published_sha256": "176c02b5473605b2f7c1267a272bf5e657ce0a6e734c4a23fcff827d2749a044",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "references/surface-rendering.md",
+      "generation_sha256": "1ef83f16a8dee10d6d26079ea15107cd9e8f11fa2eba6dd0b9cbaec798831a0e",
+      "published_sha256": "1ef83f16a8dee10d6d26079ea15107cd9e8f11fa2eba6dd0b9cbaec798831a0e",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "references/design-exploration.md",
+      "generation_sha256": "413ac98c73d0b0935d7ea4426cc723d5b657405b09b5b3ed3069fc2c673b3d18",
+      "published_sha256": "ab93c99ec8bfbd11cff3585dc5a91c28fd3794b1eb61953ae6e37446a0a667ca",
+      "unchanged": false,
+      "only_version_metadata": false,
+      "only_line_endings": true
+    },
+    {
+      "path": "references/semantic-constraints.md",
+      "generation_sha256": "b4332cf5226e5bf71886f0f4a7db65b7b69951aa08f1cd891a8c392fb5f3f4a9",
+      "published_sha256": "b4332cf5226e5bf71886f0f4a7db65b7b69951aa08f1cd891a8c392fb5f3f4a9",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "references/color-and-semantics.md",
+      "generation_sha256": "80596ab65fb65c632e915ce6e31c53c4bc101764cdf449e11830db7c4c9df8a8",
+      "published_sha256": "c41cef9b0227f94ae052d11d5caec8e698086932f7d2539e03d6dd6dcf0fe7a0",
+      "unchanged": false,
+      "only_version_metadata": false,
+      "only_line_endings": true
+    },
+    {
+      "path": "references/existing-svg-review.md",
+      "generation_sha256": "4a3cc8a2e33f796235d48019032720b122deb89640d50112bc8500e72f10363c",
+      "published_sha256": "e495998dc26b97b2e3656b0d142ea2aa23d598dacbddba855ec76cc3cc1cad09",
+      "unchanged": false,
+      "only_version_metadata": false,
+      "only_line_endings": true
+    },
+    {
+      "path": "references/figure-spec.md",
+      "generation_sha256": "e028d2abb77ea8b2d7d52da446cc863a430f32baef652ffc43316685df4b023e",
+      "published_sha256": "6f4395ce2818a8c704af2f82ee7e89fbe573323ad087d7ebd1096e955301424c",
+      "unchanged": false,
+      "only_version_metadata": false,
+      "only_line_endings": true
+    },
+    {
+      "path": "scripts/probe_runtime.py",
+      "generation_sha256": "b1bf9b4391fd498de83fc272a2f81decdca7eed483442316f82f0fa0f2498b2e",
+      "published_sha256": "b1bf9b4391fd498de83fc272a2f81decdca7eed483442316f82f0fa0f2498b2e",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "scripts/audit_svg_labels.py",
+      "generation_sha256": "1a0b99936892a391e62a098c562fa6a67ae96278323f253cd561e1ee6cf720e4",
+      "published_sha256": "1a0b99936892a391e62a098c562fa6a67ae96278323f253cd561e1ee6cf720e4",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "scripts/svg_text_contrast.py",
+      "generation_sha256": "d1559aba78e53e45ccd7081c6e93a3bef874bd73558e91c9168a651396c4abe0",
+      "published_sha256": "d1559aba78e53e45ccd7081c6e93a3bef874bd73558e91c9168a651396c4abe0",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "scripts/palette_tools.py",
+      "generation_sha256": "959ddc26b6aad91c91055da4bbe7b0dad353ef98ae83c9b1f4a5594894ce8e5a",
+      "published_sha256": "959ddc26b6aad91c91055da4bbe7b0dad353ef98ae83c9b1f4a5594894ce8e5a",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "scripts/compare_designs.py",
+      "generation_sha256": "f8bcc1f79c77fec25f9936bc2bcc8f69a607417203587c88ad3213da2c65bc14",
+      "published_sha256": "f8bcc1f79c77fec25f9936bc2bcc8f69a607417203587c88ad3213da2c65bc14",
+      "unchanged": true,
+      "only_version_metadata": false
+    },
+    {
+      "path": "vendor/nature-figure/audit_pdf_text.py",
+      "generation_sha256": "11b8f3ec50bc13e2bd8561eeb7cd204307f4ce5a70ac57fa24c809ce1b9c252c",
+      "published_sha256": "11b8f3ec50bc13e2bd8561eeb7cd204307f4ce5a70ac57fa24c809ce1b9c252c",
+      "unchanged": true,
+      "only_version_metadata": false
+    }
+  ],
+  "human_acceptance": false,
+  "ordinary_prompt_condition": "NOT_EXECUTED",
+  "strict_token_control": "NOT_EXECUTED",
+  "publication_normalization": "Repository text attributes store Markdown as LF; any loaded file marked only_line_endings differs only by CRLF to LF."
+}

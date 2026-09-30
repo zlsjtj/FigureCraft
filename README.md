@@ -2,13 +2,15 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑源、SVG、PDF、PNG 和检查记录；混合表面的可编辑范围单独说明。
 
-当前版本 **1.19.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
+当前版本 **1.20.0**，调用标识 **`$scientific-figure-studio`**。论文修改与实际入稿可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
 ## 本轮改动
 
-1.19把“对象如何变化”落实为完整候选图，而非只安排标签。新的[快照状态案例](examples/snapshot-state/README.md)同时保留两种方案、选择代价、矢量源和实际入稿；与PaperCraft共同核对研究故事。它是逻辑状态图，空间感无助于解释时保留二维。
+1.20把整体与局部视图的选择落实到[共卷层合带](examples/co-wound-laminate/README.md)：局部要显露主视图遮住的关系，不能只把同一个表面放大。保留首稿、两种构图、同源几何和实际入稿。另用未参与开发的[悬桥结构](examples/suspended-ribbon/README.md)对照旧、新技能；截面使悬空关系更直接，单视图则更凝练，最终取舍与反馈修复如实保留。
 
-[连续表面入口](references/surface-rendering.md)、[杯柱构图](examples/editorial-cup/README.md)与[环桥板](examples/ring-bridge/README.md)继续可用。当前成果及未验证部分见[1.19记录](provenance/validation-1.19.md)；历史记录不冒充本轮执行。完整生成、固定源码重建、模型评阅和作者认可分别记录。
+此前[快照状态](examples/snapshot-state/README.md)、[连续表面入口](references/surface-rendering.md)等仍可使用。[1.20验收](provenance/validation-1.20.md)区分源码重建、新材料生成、模型评阅和作者认可。图形能力有具体增量，尚未证明在所有新题材上稳定达到同样完成度。
+
+![同一几何的整体与尾端裁切，原创DEMO](examples/co-wound-laminate/selected/figure.png)
 
 ## 其他示例
 

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": {
+    "three_entities_with_one_primary_each": true,
+    "wire_footprint_inside_ribbon": true,
+    "wire_bottom_equals_ribbon_top": true,
+    "ribbon_bottom_equals_frame_top": true,
+    "ribbon_contacts_only_x_5_8_and_36_39": true,
+    "no_bottom_face_or_support_entity": true,
+    "section_uses_same_geometry_footprint": true,
+    "dimensions_160x95_mm": true,
+    "all_label_font_sizes_9_to_11_pt": true,
+    "pdf_physical_dimensions": true,
+    "pdf_has_text": true
+  },
+  "primary_counts": {
+    "frame": 1,
+    "ribbon": 1,
+    "metal": 1
+  },
+  "pdf_size_mm": [
+    159.99999749999998,
+    94.99998638888887
+  ],
+  "label_count": 11,
+  "limitations": [
+    "Analytical construction and exported object checks; not physical validation.",
+    "Clipping and occlusion require visual inspection.",
+    "Section intervals come from the metal footprint, not a continuous longitudinal bar."
+  ]
+}

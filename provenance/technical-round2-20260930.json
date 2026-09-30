@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "suites": [
+    {
+      "suite": "syntax",
+      "status": "PASS"
+    },
+    {
+      "suite": "core",
+      "status": "PASS"
+    },
+    {
+      "suite": "semantic",
+      "status": "PASS"
+    },
+    {
+      "suite": "comparison",
+      "status": "PASS"
+    },
+    {
+      "suite": "scene-api",
+      "status": "PASS"
+    },
+    {
+      "suite": "components",
+      "status": "PASS"
+    },
+    {
+      "suite": "surfaces",
+      "status": "PASS"
+    },
+    {
+      "suite": "slices",
+      "status": "PASS"
+    },
+    {
+      "suite": "openings",
+      "status": "PASS"
+    },
+    {
+      "suite": "svg-labels",
+      "status": "PASS"
+    },
+    {
+      "suite": "unit-discovery",
+      "status": "PASS"
+    },
+    {
+      "suite": "readme-smoke",
+      "status": "PASS"
+    }
+  ],
+  "technical_receipt_sha256": "3e6964df113b26c557b9f00fe69d819cc1ed3525c4c05c7b5b283af857be176c",
+  "effect_judgment": "See validation narrative and artifacts; not inferred from tests.",
+  "official_validator": "PASS",
+  "delivery_receipt_sha256": "2ebed5806317753aa6d0eb1b4e2656c91041dbd2dac0d175127a758cedd628b4",
+  "human_acceptance": false,
+  "total": 215
+}
