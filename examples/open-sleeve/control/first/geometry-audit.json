@@ -1,0 +1,46 @@
+{
+  "topology": {
+    "sleeve": {
+      "faces": 2322,
+      "vertices": 2324,
+      "edges": 4644,
+      "edge_incidence_counts": {
+        "2": 4644
+      },
+      "connected": true,
+      "euler_characteristic": 2
+    },
+    "core": {
+      "faces": 722,
+      "vertices": 1440,
+      "edges": 2160,
+      "edge_incidence_counts": {
+        "2": 2160
+      },
+      "connected": true,
+      "euler_characteristic": 2
+    }
+  },
+  "analytic_visibility": {
+    "main": {
+      "samples": 400,
+      "max_depth_error": 0.0009503613079564488,
+      "tolerance": 0.006,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "axial": {
+      "samples": 400,
+      "max_depth_error": 7.105427357601002e-15,
+      "tolerance": 0.006,
+      "mismatches": [],
+      "status": "PASS"
+    }
+  },
+  "gap": {
+    "minimum_analytic_radius_difference": 4,
+    "contact": false
+  },
+  "status": "PASS",
+  "scope": "Closed-manifold topology plus 400 deterministic visible samples per view; not a proof for every output pixel."
+}

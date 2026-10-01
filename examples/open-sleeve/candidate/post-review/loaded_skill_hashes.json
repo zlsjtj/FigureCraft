@@ -1,0 +1,50 @@
+{
+  "skill_root": "<local-path>/FigureCraft",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "4e7e285ab6413161711951c9975af2006dd09068576d35285119260ebb11b27e"
+    },
+    {
+      "path": "references/workflow.md",
+      "sha256": "441159ca28fd91554f96a483b0cadde396ef230185f4cb0a3fdb513522cfc5b1"
+    },
+    {
+      "path": "references/quality-and-acceptance.md",
+      "sha256": "e23c33b3fa377dd2a90a6ecc518ac36db3ec4aeeca4802e1dd61bfcf9d7436b2"
+    },
+    {
+      "path": "references/dependencies.md",
+      "sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f"
+    },
+    {
+      "path": "references/drawing-and-depth.md",
+      "sha256": "176c02b5473605b2f7c1267a272bf5e657ce0a6e734c4a23fcff827d2749a044"
+    },
+    {
+      "path": "references/surface-rendering.md",
+      "sha256": "1ef83f16a8dee10d6d26079ea15107cd9e8f11fa2eba6dd0b9cbaec798831a0e"
+    },
+    {
+      "path": "references/design-exploration.md",
+      "sha256": "4de3d298b48ec6a16b73150a48f6719743dc8b17abfb5738a38c09a029d8b7a9"
+    },
+    {
+      "path": "references/existing-svg-review.md",
+      "sha256": "e495998dc26b97b2e3656b0d142ea2aa23d598dacbddba855ec76cc3cc1cad09"
+    },
+    {
+      "path": "references/figure-spec.md",
+      "sha256": "6f4395ce2818a8c704af2f82ee7e89fbe573323ad087d7ebd1096e955301424c"
+    },
+    {
+      "path": "scripts/surface_renderer.py",
+      "sha256": "51417c7cf40180b6842e01a6fdf862b81fcc2c23349ddf186eef9648f3d47578"
+    },
+    {
+      "path": "scripts/probe_runtime.py",
+      "sha256": "b1bf9b4391fd498de83fc272a2f81decdca7eed483442316f82f0fa0f2498b2e"
+    }
+  ],
+  "public_record_note": "Absolute runtime locations redacted; original execution receipt retained locally. Hash values and outcomes unchanged."
+}

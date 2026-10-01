@@ -1,0 +1,160 @@
+{
+  "labels": [
+    {
+      "id": "sleeve-label",
+      "text": "Sleeve",
+      "x_mm": 13,
+      "baseline_y_mm": 27,
+      "font_pt": 10.5,
+      "bold": true
+    },
+    {
+      "id": "core-label",
+      "text": "Solid core",
+      "x_mm": 113,
+      "baseline_y_mm": 18,
+      "font_pt": 10.5,
+      "bold": true
+    },
+    {
+      "id": "opening-label",
+      "text": "Longitudinal",
+      "x_mm": 113,
+      "baseline_y_mm": 44,
+      "font_pt": 10.5,
+      "bold": false
+    },
+    {
+      "id": "opening-label-2",
+      "text": "opening",
+      "x_mm": 113,
+      "baseline_y_mm": 48.5,
+      "font_pt": 10.5,
+      "bold": false
+    },
+    {
+      "id": "gap-label",
+      "text": "Radial gap = 4",
+      "x_mm": 8,
+      "baseline_y_mm": 13,
+      "font_pt": 10.5,
+      "bold": false
+    }
+  ],
+  "lines": [
+    {
+      "id": "sleeve-leader",
+      "points": [
+        [
+          31.0,
+          28.0
+        ],
+        [
+          39.0,
+          28.0
+        ],
+        [
+          49.18543281193551,
+          40.910168200685156
+        ]
+      ],
+      "width_mm": 0.27
+    },
+    {
+      "id": "core-leader",
+      "points": [
+        [
+          69.5,
+          24.136428893763195
+        ],
+        [
+          105.0,
+          17.0
+        ],
+        [
+          111.0,
+          17.0
+        ]
+      ],
+      "width_mm": 0.27
+    },
+    {
+      "id": "opening-leader",
+      "points": [
+        [
+          84.02485801963078,
+          52.77083519530526
+        ],
+        [
+          105.0,
+          45.0
+        ],
+        [
+          111.0,
+          45.0
+        ]
+      ],
+      "width_mm": 0.27
+    },
+    {
+      "id": "radial-gap-dimension",
+      "points": [
+        [
+          62.78308473601733,
+          26.069218571359652
+        ],
+        [
+          57.40955252483119,
+          28.04332775955022
+        ]
+      ],
+      "width_mm": 0.3
+    },
+    {
+      "id": "gap-tick-0",
+      "points": [
+        [
+          63.03137088244613,
+          26.745054342454626
+        ],
+        [
+          62.534798589588526,
+          25.39338280026468
+        ]
+      ],
+      "width_mm": 0.3
+    },
+    {
+      "id": "gap-tick-1",
+      "points": [
+        [
+          57.657838671259995,
+          28.719163530645194
+        ],
+        [
+          57.16126637840239,
+          27.367491988455246
+        ]
+      ],
+      "width_mm": 0.3
+    },
+    {
+      "id": "gap-leader",
+      "points": [
+        [
+          60.096318630424264,
+          27.056273165454936
+        ],
+        [
+          40.0,
+          14.0
+        ],
+        [
+          31.0,
+          14.0
+        ]
+      ],
+      "width_mm": 0.27
+    }
+  ]
+}

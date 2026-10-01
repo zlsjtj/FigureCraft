@@ -1,0 +1,90 @@
+{
+  "source_geometry": {
+    "outer_radius": 12,
+    "inner_radius": 9,
+    "core_radius": 5,
+    "gap_recomputed": 4,
+    "wall_thickness_recomputed": 3,
+    "sleeve_angular_span_degrees": 290,
+    "continuous_sleeve": true,
+    "physical_object_count": 2
+  },
+  "pdf_pages": 1,
+  "pdf_size_mm": [
+    159.99999749999998,
+    94.99998638888887
+  ],
+  "all_labels_extract_from_pdf": true,
+  "minimum_font_pt": 10.5,
+  "svg_xml_parsed": true,
+  "svg_text_count": 3,
+  "png_pixels": [
+    1890,
+    1123
+  ],
+  "embedded_surface_effective_dpi": [
+    457.09326756188904,
+    456.9451918413554
+  ],
+  "camera_basis_orthonormal": true,
+  "source_discretization_max_sagitta": {
+    "sleeve": 0.0001142313511861559,
+    "core": 4.759639632756496e-05
+  },
+  "cvd_preview": {
+    "method": "Machado-style deuteranopia severity 1 matrix applied in linear sRGB; approximate",
+    "matrix": [
+      [
+        0.367322,
+        0.860646,
+        -0.227968
+      ],
+      [
+        0.280085,
+        0.672501,
+        0.047413
+      ],
+      [
+        -0.01182,
+        0.04294,
+        0.968881
+      ]
+    ],
+    "scope": "one condition only"
+  },
+  "technical_status": "PASS",
+  "scientific_status": "REVIEW_REQUIRED",
+  "visual_status": "REVIEW_REQUIRED",
+  "author_acceptance": "NOT_RUN",
+  "overall_status": "REVIEW_REQUIRED",
+  "not_verified": [
+    "author acceptance",
+    "independent scientific or visual review",
+    "journal compliance",
+    "printed output",
+    "other CVD conditions",
+    "cross-editor editability",
+    "per-pixel analytic visibility proof"
+  ],
+  "command": [
+    "<local-path>/build_post_review.py",
+    "--skill",
+    "<local-path>/FigureCraft",
+    "--input",
+    "<local-path>/input.md",
+    "--out",
+    "<local-path>/post-review",
+    "--font",
+    "<local-path>/arial.ttf",
+    "--bold-font",
+    "<local-path>/arialbd.ttf",
+    "--pdftoppm",
+    "<local-path>/pdftoppm.exe",
+    "--revision",
+    "post-review",
+    "--review",
+    "<local-path>/assessment.md"
+  ],
+  "exit_code": 0,
+  "public_record_note": "Absolute runtime locations redacted; original execution receipt retained locally. Hash values and outcomes unchanged."
+}

@@ -1,0 +1,22 @@
+{
+  "alt-text.txt": "7150e0bad36651327df8dd5001fbf131a8b36d4d4298f40d4d58b51db4fa59ca",
+  "build-record.json": "79417f099f3ad78a344e771e52a42e792e7566d801afb05d9d46b9efe7aae68d",
+  "build_figure.py": "183d4386abe462dc34b72dde78cf0b007182b0466b52d43788bc24b2c22c42b6",
+  "caption.txt": "c89b0f967084779b54221d815e81922839808edfeb534c8a5fa7d3781c562dea",
+  "checks.json": "b32ecc26f2389c147b87bee92c21a1b8766773fd1c81b6ed6ee20c54e8d4b55e",
+  "figure-deuteranopia-approx.png": "4c79257a3928f536fcf09683a85b97443b54fae8c73b62905567876877fc335f",
+  "figure-grayscale.png": "283252d15b8577e797374b658b14fca0807befadae6f0bc976bcad4624c1272f",
+  "figure.pdf": "f83fbff74d8973ee85f56bb27ec427b7d134b6af93216bafd53a8e83bdd9afd3",
+  "figure.png": "f2fd6a3c845fda55a6b320f2e24134e6aad9b265772de0292137b44475d7b84b",
+  "figure.svg": "aa8591e27120dbb12cf22beeff112a86406903e61579c79d92e6b407b084e790",
+  "figure_spec.json": "e3b9a993d698faa642d50a19fd02af434b029edc58e38c462c2c6def40704bcd",
+  "input.md": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586",
+  "labels.json": "3725f59018513e473ab00d9997ac07a0baaff057cea56616fd4ae65be8ed1b9e",
+  "loaded-skill-hashes.json": "7656f14244b6f96e737db1680dbc50b53cc9288013ff8ddd5d8895b0c022f2b7",
+  "surface-axial-roles.png": "a586b47c0ca808b7fa8e3d46751c87d51d5bea3cd2f6294115d9c5f45701450d",
+  "surface-axial.png": "f7e0b213065214d382f54e25402e8769475975c7c785d205871db4df5c6f7aaa",
+  "surface-main-roles.png": "cb5135bf7d186b788948ccb237bc17f5fb7c6930f496cea709cc402bcd706541",
+  "surface-main.png": "3d35bc7f344ee2df3804a54f16e00f631e01919256759df9adaf5449dd1e7acc",
+  "surface-record-axial.json": "f77e34975b6feed1ece906b4aaf41f01dea34f35f92eac4c9daf6b886f30c8e1",
+  "surface-record-main.json": "1aa787635991eb9739fd959b3592c157dc78dc8ce6a173ccc9b6d17953041c44"
+}

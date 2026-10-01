@@ -1,0 +1,113 @@
+{
+  "type": "original geometric DEMO",
+  "size_mm": [
+    160,
+    95
+  ],
+  "stage": "first",
+  "representation": "hybrid: editable vector text/leaders and embedded raster surfaces; explicit 3D polygon geometry is editable in source",
+  "input_sha256": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586",
+  "entities": [
+    {
+      "id": "sleeve",
+      "outer_radius": 12,
+      "inner_radius": 9,
+      "z": [
+        0,
+        30
+      ],
+      "removed_azimuth_deg": [
+        -35,
+        35
+      ],
+      "ends": "open",
+      "continuous_objects": 1
+    },
+    {
+      "id": "core",
+      "radius": 5,
+      "z": [
+        -3,
+        33
+      ],
+      "solid": true
+    }
+  ],
+  "relation": {
+    "coaxial_axis": "z",
+    "contact": false,
+    "radial_gap_over_retained_wall": 4
+  },
+  "camera": {
+    "azimuth_deg": 17,
+    "elevation_deg": 23,
+    "roll_deg": -18,
+    "right": [
+      -0.39352869831307813,
+      0.8741981619344301,
+      0.28445164312142457
+    ],
+    "up": [
+      -0.26502208502389496,
+      -0.4041619062882683,
+      0.8754521391572587
+    ],
+    "view_toward_observer": [
+      0.8802831692436257,
+      0.269129573209443,
+      0.39073112848927377
+    ],
+    "projection": "orthographic"
+  },
+  "axial_view": {
+    "right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "view": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "observation_direction": "-z",
+    "same_objects": true
+  },
+  "light": [
+    -0.35,
+    -0.7,
+    1.1
+  ],
+  "tessellation": {
+    "sleeve_angular_step_deg": 0.5,
+    "core_angular_step_deg": 0.5,
+    "maximum_radial_chord_error": 0.0001142313511861559
+  },
+  "font_min_pt": 10,
+  "forbidden_additions": [
+    "end caps on sleeve",
+    "supports",
+    "flow",
+    "motion",
+    "physical mechanisms"
+  ],
+  "surface_dpi_main": 476.25,
+  "surface_dpi_axial": 525.5172413793103,
+  "loaded_skill_files_sha256": {
+    "SKILL.md": "4e7e285ab6413161711951c9975af2006dd09068576d35285119260ebb11b27e",
+    "references/workflow.md": "441159ca28fd91554f96a483b0cadde396ef230185f4cb0a3fdb513522cfc5b1",
+    "references/quality-and-acceptance.md": "e23c33b3fa377dd2a90a6ecc518ac36db3ec4aeeca4802e1dd61bfcf9d7436b2",
+    "references/dependencies.md": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f",
+    "references/surface-rendering.md": "1ef83f16a8dee10d6d26079ea15107cd9e8f11fa2eba6dd0b9cbaec798831a0e",
+    "references/drawing-and-depth.md": "176c02b5473605b2f7c1267a272bf5e657ce0a6e734c4a23fcff827d2749a044",
+    "references/design-exploration.md": "ab93c99ec8bfbd11cff3585dc5a91c28fd3794b1eb61953ae6e37446a0a667ca",
+    "references/existing-svg-review.md": "e495998dc26b97b2e3656b0d142ea2aa23d598dacbddba855ec76cc3cc1cad09",
+    "scripts/probe_runtime.py": "b1bf9b4391fd498de83fc272a2f81decdca7eed483442316f82f0fa0f2498b2e",
+    "scripts/surface_renderer.py": "51417c7cf40180b6842e01a6fdf862b81fcc2c23349ddf186eef9648f3d47578"
+  }
+}

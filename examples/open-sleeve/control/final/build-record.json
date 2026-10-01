@@ -1,0 +1,25 @@
+{
+  "command": [
+    "<local-path>/build_figure.py",
+    "--skill",
+    "<local-path>/FigureCraft",
+    "--input",
+    "<local-path>/input.md",
+    "--out",
+    "<local-path>/final",
+    "--stage",
+    "final",
+    "--font",
+    "<local-path>/arial.ttf",
+    "--bold-font",
+    "<local-path>/arialbd.ttf",
+    "--pdftoppm",
+    "<local-path>/pdftoppm.exe"
+  ],
+  "python": "<local-path>/python.exe",
+  "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+  "bold_font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+  "source_sha256": "183d4386abe462dc34b72dde78cf0b007182b0466b52d43788bc24b2c22c42b6",
+  "exit_code": 0,
+  "public_record_note": "Absolute runtime locations redacted; original execution receipt retained locally. Hash values and outcomes unchanged."
+}

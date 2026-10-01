@@ -1,0 +1,22 @@
+{
+  "alt-text.txt": "7150e0bad36651327df8dd5001fbf131a8b36d4d4298f40d4d58b51db4fa59ca",
+  "build-record.json": "d73468edb4bb7c9a8c7cef18a2c25abd1e36ea35ddc3ade6a09821785b88a364",
+  "build_figure.py": "47815fc8b88c92dedb79e140f1128cf08f2f47058bb6055132bb4022d3ba5b5a",
+  "caption.txt": "c89b0f967084779b54221d815e81922839808edfeb534c8a5fa7d3781c562dea",
+  "checks.json": "80ceadb4fa3993beb77f62b52132fb3702431ad52b611297b9ef8a11816d19ec",
+  "figure-deuteranopia-approx.png": "dd62a51798fb5f0f7052a756928abf0428608f23d9682fe792d2d2a2860d140b",
+  "figure-grayscale.png": "4ff68230021a43ff055d15716129785317771aff8b23d06c657b57431e009ae9",
+  "figure.pdf": "e10d59190cf7296c00be33663e76d09a66dc1fa49f1addaedb3181d7dd7b10aa",
+  "figure.png": "ad10826df4ff1442ee15c1aa55b79130c779e62279788376f16d33fb63b89d94",
+  "figure.svg": "7ed89eca9f062bea24605178a7de215872f7d220713998c31da414cb1f7bae17",
+  "figure_spec.json": "f096cf9f7beee2518ee559be9d1a3cdb3296adb23984346c4b07b459532d73eb",
+  "input.md": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586",
+  "labels.json": "0b7d2a54e17dbd128909d8586f6f4a398a894b109eebb9cffb8a5d88acda629e",
+  "loaded-skill-hashes.json": "b29556277554dd746034ffc513b2123cfef718369ea2a87030d29ec311b04c9d",
+  "surface-axial-roles.png": "a586b47c0ca808b7fa8e3d46751c87d51d5bea3cd2f6294115d9c5f45701450d",
+  "surface-axial.png": "f7e0b213065214d382f54e25402e8769475975c7c785d205871db4df5c6f7aaa",
+  "surface-main-roles.png": "cb5135bf7d186b788948ccb237bc17f5fb7c6930f496cea709cc402bcd706541",
+  "surface-main.png": "3d35bc7f344ee2df3804a54f16e00f631e01919256759df9adaf5449dd1e7acc",
+  "surface-record-axial.json": "f77e34975b6feed1ece906b4aaf41f01dea34f35f92eac4c9daf6b886f30c8e1",
+  "surface-record-main.json": "1162130a008e9fb8291483aca676ee92686fd7cc66e2d6faea36f2b84e084be4"
+}

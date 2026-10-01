@@ -1,0 +1,130 @@
+{
+  "figure_id": "longitudinal_open_sleeve",
+  "schema_version": 1,
+  "mode": "new_schematic",
+  "demo": true,
+  "evidence_status": "Original geometry; no measurements or device mechanism",
+  "scientific_message": "A longitudinal opening makes the separate coaxial core and radial clearance visible.",
+  "source_refs": [
+    {
+      "path": "input.md",
+      "sha256": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586"
+    }
+  ],
+  "entities": [
+    {
+      "id": "sleeve",
+      "semantic_role": "sleeve",
+      "description": "One continuous open-ended sleeve"
+    },
+    {
+      "id": "core",
+      "semantic_role": "core",
+      "description": "One solid cylinder"
+    }
+  ],
+  "relations": [
+    {
+      "id": "coaxial",
+      "from": "sleeve",
+      "to": "core",
+      "kind": "geometry",
+      "meaning": "common z axis; no contact"
+    }
+  ],
+  "count_constraints": {
+    "expected_logical_ids": [
+      "sleeve",
+      "core"
+    ],
+    "number_of_physical_objects": 2
+  },
+  "locked_values": {
+    "sleeve_outer_radius": 12,
+    "sleeve_inner_radius": 9,
+    "sleeve_z": [
+      0,
+      30
+    ],
+    "opening_azimuth_degrees": [
+      -35,
+      35
+    ],
+    "core_radius": 5,
+    "core_z": [
+      -3,
+      33
+    ],
+    "radial_gap": 4
+  },
+  "forbidden_implications": [
+    "end caps across sleeve bore",
+    "supports",
+    "flow",
+    "motion",
+    "physical action",
+    "another cutting operation"
+  ],
+  "exact_labels": [
+    "Sleeve",
+    "Solid core",
+    "Longitudinal",
+    "opening",
+    "Radial gap = 4"
+  ],
+  "depth": {
+    "mode": "D2_explicit_mesh_orthographic",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 160,
+    "height_mm": 95,
+    "placement_width_mm": 160,
+    "png_dpi": 300,
+    "editable": "HYBRID: raster surface; native SVG/PDF text and lines; parameterized mesh source"
+  },
+  "camera": {
+    "azimuth_deg": -16,
+    "elevation_deg": 25,
+    "view_toward_observer": [
+      0.8711989604089548,
+      -0.2498122819751382,
+      0.42261826174069944
+    ],
+    "right": [
+      0.27563735581699916,
+      0.9612616959383189,
+      0.0
+    ],
+    "up": [
+      -0.4062467470153691,
+      0.11648938018618285,
+      0.9063077870366499
+    ],
+    "projection": "orthographic",
+    "scale_mm_per_native_unit": 1.78
+  },
+  "light": {
+    "world_direction": [
+      0.65,
+      -0.75,
+      1.2
+    ],
+    "ambient": 0.48,
+    "purpose": "illustrative Lambertian normal shading, no physical simulation"
+  },
+  "mesh": {
+    "sleeve_arc_steps": 580,
+    "core_arc_steps": 720,
+    "face_count": 4482,
+    "end_rims": "only 9 <= r <= 12, retained 290 degree sector",
+    "cut_faces": "two radial rectangles at ±35 degrees",
+    "no_end_caps_over_sleeve_bore": true
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "UNVERIFIED"
+  },
+  "caption": "Original geometric demonstration of a coaxial sleeve and solid core. The sleeve has outer radius 12 and inner radius 9, spans z = 0–30, and has an existing longitudinal opening over azimuth −35° to +35° through its entire wall thickness and length. Azimuth is measured from +x toward +y. The remaining sleeve wall is one continuous body; both axial ends are open. The solid core has radius 5 and spans z = −3–33. It does not contact the sleeve; the radial separation is 4 wherever sleeve material remains. The dimension line marks that radial separation at the upper opening of the sleeve. All coordinates are arbitrary drawing units. Orthographic geometry is rendered with illustrative surface shading. No support, motion, transport, or physical function is specified.",
+  "alt_text": "An oblique view shows a blue-green sleeve surrounding an orange solid cylindrical core. A full-length vertical opening reveals the core, the sleeve inner surface, and the intervening space. The core projects beyond both sleeve ends. The sleeve upper end is an open annular rim, with no cap across the central opening. A short radial dimension at the top marks the separation of 4 between core and inner wall. Labels identify the sleeve, solid core, and longitudinal opening."
+}

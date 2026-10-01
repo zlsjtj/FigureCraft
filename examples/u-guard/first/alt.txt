@@ -1,0 +1,1 @@
+Orthographic geometry DEMO: a teal U-shaped guard sits on a pale rectangular base. An ochre bar runs through its opening, with an 8-unit vertical dimension between the bar top and crossbar underside. The continuous guard, two feet, bar extensions, and open spaces are shown with planar surface shading. A small x-y-z triad identifies orientation.

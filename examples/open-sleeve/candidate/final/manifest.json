@@ -1,0 +1,73 @@
+{
+  "revision": "final",
+  "files": [
+    {
+      "path": "alt_text.txt",
+      "sha256": "5c6be1f24cc83d750e40f6e5cf0aff20e40be269eb651eee722692690798dfc8"
+    },
+    {
+      "path": "annotations.json",
+      "sha256": "8d19b720540c3715e581f240882b265bdeb4c5c76a979db3dbdd7ce1dd9f6139"
+    },
+    {
+      "path": "build_figure.py",
+      "sha256": "5eb931a790d9ac290d421ee7b8b4c6f717becded5033f6dabc1f93afba4f344c"
+    },
+    {
+      "path": "caption.txt",
+      "sha256": "c9b6fd33216a82a0d7e5edfccde1a191e8686649ecbf928cdf206a83dbcab080"
+    },
+    {
+      "path": "checks.json",
+      "sha256": "c2451773416ad4b1601ce628c72b1b33f4149f2ab2b324aa3735445e84fe1a18"
+    },
+    {
+      "path": "figure-deuteranopia-approx.png",
+      "sha256": "d554cadcedd77e1d253af10801c74ea26b62ca4d767b5a52b1979adfef00a859"
+    },
+    {
+      "path": "figure-grayscale.png",
+      "sha256": "18f3d46111545dd8554a80de4a33f1271f9d48d2295c24ea6e27a444f5039133"
+    },
+    {
+      "path": "figure.pdf",
+      "sha256": "3168e9925ecbd3a17f1a3c35027f9ea7bbcfe045f63347e4e9b12b050d217330"
+    },
+    {
+      "path": "figure.png",
+      "sha256": "b0a9870de59e0363d701b266bb34e1688ac9d4f9eb6e03eb2a0b63ea3a11aabc"
+    },
+    {
+      "path": "figure.svg",
+      "sha256": "db07c6875383459d191f0b3975bcdfdac1e4acaa8d3987ab6ce02ea64bc4d935"
+    },
+    {
+      "path": "figure_spec.json",
+      "sha256": "eaf9f76a698dd181806db191fd1bc8914d0f40dbcde9e6c813a54a9cff25932c"
+    },
+    {
+      "path": "input.md",
+      "sha256": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586"
+    },
+    {
+      "path": "loaded_skill_hashes.json",
+      "sha256": "2514837aeedda6017debfc11154f20bb014d9bdd74f1340c9b513817ad9719fb"
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "eac4af822db2aec5169e544d15a5e00b5b91275b69ad6d526cbe25f7043a2721"
+    },
+    {
+      "path": "surface.png",
+      "sha256": "34729dc77b0aa06f2e81c8054639e1919196315687028c94a97bc7ff80724f1c"
+    },
+    {
+      "path": "surface_record.json",
+      "sha256": "9b858458e1e469783cf9cb4ed6400798d1128bfeeaffc98c9b7dbffe1b2edd79"
+    },
+    {
+      "path": "visible_roles.png",
+      "sha256": "647ae459063aa537407f7ca7406331f06cdf1e094f988a8157a64634356b3ba3"
+    }
+  ]
+}

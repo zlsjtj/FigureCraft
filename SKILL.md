@@ -2,7 +2,7 @@
 name: scientific-figure-studio
 description: FigureCraft 根据科学对象、关系和数据制作科研图与语义配色。适用于机制、硬件、分层材料、定量图及整套配图，交付可编辑图源和分别记录的技术、科学与视觉审阅，保留数值、拓扑和修改范围。
 metadata:
-  version: "1.20.0"
+  version: "1.21.0"
 ---
 
 # FigureCraft｜科研绘图与配色

@@ -1,0 +1,191 @@
+{
+  "stage": "one feedback-informed repair",
+  "independent_followup_review": "PENDING",
+  "author_acceptance": "NOT_RUN",
+  "files": [
+    {
+      "path": "alt_text.txt",
+      "sha256": "687f7a92f4cf1d1909c91597f7cd40e935fad7ef95d5f03e2877431aa3ece273"
+    },
+    {
+      "path": "annotations.json",
+      "sha256": "9e395bef83adfb25e9de6af90200fdf7e05180f9a8d01715e03dc228fd558836"
+    },
+    {
+      "path": "build_figure.py",
+      "sha256": "8cc8346e7589a9b3a27932d322ec7a331d113115cb378af1d646ca8aef4f309c"
+    },
+    {
+      "path": "caption.txt",
+      "sha256": "c9b6fd33216a82a0d7e5edfccde1a191e8686649ecbf928cdf206a83dbcab080"
+    },
+    {
+      "path": "checks.json",
+      "sha256": "35e317ed426683f4ced0c305b054b78d576def9b71f35c90c8c5dc8164dcd01c"
+    },
+    {
+      "path": "comparison.html",
+      "sha256": "898d58b6827cffc5e67b02baf82a46d615046a8535b2151bb8920acccf1dc134"
+    },
+    {
+      "path": "DECISION.md",
+      "sha256": "f47fe64245153a69028c4694a32db3294e828a27f2782a6e98d28e2b47d96dce"
+    },
+    {
+      "path": "feedback-assessment.md",
+      "sha256": "c7725ca1f9eaf8b1556d3ad04a24d5ab295e79293c56e344622f131947fff5d3"
+    },
+    {
+      "path": "figure-deuteranopia-approx.png",
+      "sha256": "6a172ba4e77dc74ab24f92e3127e9fa0015eed68f7cf37745ebc2350af21299f"
+    },
+    {
+      "path": "figure-grayscale.png",
+      "sha256": "dba2dbc085175a761cda9befd9e7ffbfc4ca8b54a20bacf871a8080d313d1e6a"
+    },
+    {
+      "path": "figure.pdf",
+      "sha256": "ff54b0cc7e989dcb13459e4abc191098d90d3550a45e561213489c86f3948d34"
+    },
+    {
+      "path": "figure.png",
+      "sha256": "ed541a3d7ec77c21b9a245e1466d737a51baec6cf00dbcef51a7475c9fba323d"
+    },
+    {
+      "path": "figure.svg",
+      "sha256": "81e7340b09ffb6465b1d56afd069072377b448a691841925b5bbe466d34cbf3c"
+    },
+    {
+      "path": "figure_spec.json",
+      "sha256": "550096af4181f73c048610d80f57f5ef1cf05f5a0f186f1e7353056c13a85a3c"
+    },
+    {
+      "path": "input.md",
+      "sha256": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586"
+    },
+    {
+      "path": "loaded_skill_hashes.json",
+      "sha256": "2514837aeedda6017debfc11154f20bb014d9bdd74f1340c9b513817ad9719fb"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "65a12a4a7631c29de6db7f1be6c217199130e3b36cf6c64fb11a0940673c9c8a"
+    },
+    {
+      "path": "qa/portable-rebuild.json",
+      "sha256": "d004877b7fca8bfe120474b855dc6225ad0376603b5a289216605a2d1bb1ad6c"
+    },
+    {
+      "path": "qa/protected-content-check.json",
+      "sha256": "9d9f90bdf52dda5932b369c68e9543d3dad9304cf716843485602387c480c237"
+    },
+    {
+      "path": "qa/rebuild.log",
+      "sha256": "4f1e91cf77a5d5639c545c6e84cc76e6b14645c60895d47581100fed784decc8"
+    },
+    {
+      "path": "qa/rebuilt/alt_text.txt",
+      "sha256": "687f7a92f4cf1d1909c91597f7cd40e935fad7ef95d5f03e2877431aa3ece273"
+    },
+    {
+      "path": "qa/rebuilt/annotations.json",
+      "sha256": "9e395bef83adfb25e9de6af90200fdf7e05180f9a8d01715e03dc228fd558836"
+    },
+    {
+      "path": "qa/rebuilt/build_figure.py",
+      "sha256": "8cc8346e7589a9b3a27932d322ec7a331d113115cb378af1d646ca8aef4f309c"
+    },
+    {
+      "path": "qa/rebuilt/caption.txt",
+      "sha256": "c9b6fd33216a82a0d7e5edfccde1a191e8686649ecbf928cdf206a83dbcab080"
+    },
+    {
+      "path": "qa/rebuilt/checks.json",
+      "sha256": "72ac1c0a94eb741b206c8c7938ede1a0a1beb8b6db73639e59c3f6f165ca9203"
+    },
+    {
+      "path": "qa/rebuilt/feedback-assessment.md",
+      "sha256": "c7725ca1f9eaf8b1556d3ad04a24d5ab295e79293c56e344622f131947fff5d3"
+    },
+    {
+      "path": "qa/rebuilt/figure-deuteranopia-approx.png",
+      "sha256": "6a172ba4e77dc74ab24f92e3127e9fa0015eed68f7cf37745ebc2350af21299f"
+    },
+    {
+      "path": "qa/rebuilt/figure-grayscale.png",
+      "sha256": "dba2dbc085175a761cda9befd9e7ffbfc4ca8b54a20bacf871a8080d313d1e6a"
+    },
+    {
+      "path": "qa/rebuilt/figure.pdf",
+      "sha256": "ea93e8fc22f3ce8f8f7faa4b7024315c1f2bdeaec2d671b2f30a8d19139cd3f7"
+    },
+    {
+      "path": "qa/rebuilt/figure.png",
+      "sha256": "ed541a3d7ec77c21b9a245e1466d737a51baec6cf00dbcef51a7475c9fba323d"
+    },
+    {
+      "path": "qa/rebuilt/figure.svg",
+      "sha256": "81e7340b09ffb6465b1d56afd069072377b448a691841925b5bbe466d34cbf3c"
+    },
+    {
+      "path": "qa/rebuilt/figure_spec.json",
+      "sha256": "550096af4181f73c048610d80f57f5ef1cf05f5a0f186f1e7353056c13a85a3c"
+    },
+    {
+      "path": "qa/rebuilt/input.md",
+      "sha256": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586"
+    },
+    {
+      "path": "qa/rebuilt/loaded_skill_hashes.json",
+      "sha256": "2514837aeedda6017debfc11154f20bb014d9bdd74f1340c9b513817ad9719fb"
+    },
+    {
+      "path": "qa/rebuilt/manifest.json",
+      "sha256": "8b4277a826eb3b0ef95b1c14cc9bcdfa4a849a3e9c69e2e61831af9ee76a3814"
+    },
+    {
+      "path": "qa/rebuilt/runtime.json",
+      "sha256": "eac4af822db2aec5169e544d15a5e00b5b91275b69ad6d526cbe25f7043a2721"
+    },
+    {
+      "path": "qa/rebuilt/surface.png",
+      "sha256": "34729dc77b0aa06f2e81c8054639e1919196315687028c94a97bc7ff80724f1c"
+    },
+    {
+      "path": "qa/rebuilt/surface_record.json",
+      "sha256": "9b858458e1e469783cf9cb4ed6400798d1128bfeeaffc98c9b7dbffe1b2edd79"
+    },
+    {
+      "path": "qa/rebuilt/visible_roles.png",
+      "sha256": "647ae459063aa537407f7ca7406331f06cdf1e094f988a8157a64634356b3ba3"
+    },
+    {
+      "path": "qa/relocated-source/build_figure.py",
+      "sha256": "8cc8346e7589a9b3a27932d322ec7a331d113115cb378af1d646ca8aef4f309c"
+    },
+    {
+      "path": "qa/relocated-source/feedback-assessment.md",
+      "sha256": "c7725ca1f9eaf8b1556d3ad04a24d5ab295e79293c56e344622f131947fff5d3"
+    },
+    {
+      "path": "qa/relocated-source/input.md",
+      "sha256": "5b8312802cff6fc1e1b69463f8954a23f3b4e466eca0f0501c2d27cc65558586"
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "eac4af822db2aec5169e544d15a5e00b5b91275b69ad6d526cbe25f7043a2721"
+    },
+    {
+      "path": "surface.png",
+      "sha256": "34729dc77b0aa06f2e81c8054639e1919196315687028c94a97bc7ff80724f1c"
+    },
+    {
+      "path": "surface_record.json",
+      "sha256": "9b858458e1e469783cf9cb4ed6400798d1128bfeeaffc98c9b7dbffe1b2edd79"
+    },
+    {
+      "path": "visible_roles.png",
+      "sha256": "647ae459063aa537407f7ca7406331f06cdf1e094f988a8157a64634356b3ba3"
+    }
+  ]
+}

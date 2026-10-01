@@ -1,0 +1,33 @@
+{
+  "page_mm": [
+    159.99999749999998,
+    94.99998638888887
+  ],
+  "page_count": 1,
+  "pdf_searchable_labels": "Oblique view\nSleeve\nSolid core\nLongitudinal\nopening\nAxial view\n4\n",
+  "png_px": [
+    1890,
+    1123
+  ],
+  "minimum_font_pt": 10,
+  "mesh_max_radial_error": 0.0001142313511861559,
+  "source_objects": 2,
+  "views_of_same_objects": 2,
+  "svg_image_nodes": 2,
+  "svg_text_nodes": 7,
+  "pdftoppm_exit_code": 0,
+  "cvd_method": "Machado 2009 full-severity deuteranopia 3x3 matrix applied in linear RGB; approximate preview only",
+  "technical_status": "PASS",
+  "scientific_status": "REVIEW_REQUIRED",
+  "visual_status": "REVIEW_REQUIRED",
+  "author_acceptance": "NOT_RUN",
+  "overall_status": "REVIEW_REQUIRED",
+  "unverified": [
+    "pixelwise independent occlusion oracle",
+    "third-party SVG editor roundtrip",
+    "physical print",
+    "all color vision conditions",
+    "author acceptance",
+    "journal acceptance"
+  ]
+}
