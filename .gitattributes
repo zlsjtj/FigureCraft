@@ -3,3 +3,5 @@
 *.yaml text eol=lf
 *.png binary
 *.pdf binary
+# Frozen original DEMO inputs retain exact source bytes.
+examples/complete-fixture/input/* -text

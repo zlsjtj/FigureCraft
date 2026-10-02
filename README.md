@@ -2,15 +2,11 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑源、SVG、PDF、PNG 和检查记录；混合表面的可编辑范围单独说明。
 
-当前内容版本 **1.21.0**，调用标识 **`$scientific-figure-studio`**。这一版保留首稿与候选的得失，补齐[开口套筒的合并修复](examples/open-sleeve/development/README.md)。范围见[1.21验收](provenance/validation-1.21.md)，不以版本号证明审美达标。
+当前内容版本 **1.22.0**，调用标识 **`$scientific-figure-studio`**。
 
-前一轮未推送时的[本地记录](provenance/local-video-20261001.md)保留其历史状态。本次另有[U形护架新材料试用](examples/u-guard/README.md)，其剩余读图问题与改善并列记录。
+本轮用[三腔压力夹具](examples/complete-fixture/README.md)检验完整图文交付：三个隔离样品、闭合隔膜和共同参考空间，由几何关系直接解释；同时保留未选的展开方案与首次引线问题。修复 PDF 字号审计对常见 ASCII85＋Flate 滤镜链的读取，避免无法读取却被当成字号通过。所选图的全部 Word 表示需通过实际写入工具绑定。
 
-## 本轮改动
-
-1.20把整体与局部视图的选择落实到[共卷层合带](examples/co-wound-laminate/README.md)：局部要显露主视图遮住的关系，不能只把同一个表面放大。保留首稿、两种构图、同源几何和实际入稿。另用未参与开发的[悬桥结构](examples/suspended-ribbon/README.md)对照旧、新技能；截面使悬空关系更直接，单视图则更凝练，最终取舍与反馈修复如实保留。
-
-此前[快照状态](examples/snapshot-state/README.md)、[连续表面入口](references/surface-rendering.md)等仍可使用。[1.20验收](provenance/validation-1.20.md)区分源码重建、新材料生成、模型评阅和作者认可。图形能力有具体增量，尚未证明在所有新题材上稳定达到同样完成度。
+[1.22验收](provenance/validation-1.22.md)记录依据和局限。这个例子支持完整流程可执行，不能证明所有新材料都达到同等审美。复杂对象的既有路径继续保留：[整体与局部裁切](examples/co-wound-laminate/README.md)、[开口套筒](examples/open-sleeve/development/README.md)、[连续表面](references/surface-rendering.md)。用剖面还是立体图由解释任务决定，不统一套风格。
 
 ![同一几何的整体与尾端裁切，原创DEMO](examples/co-wound-laminate/selected/figure.png)
 

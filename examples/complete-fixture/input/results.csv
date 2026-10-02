@@ -1,0 +1,10 @@
+condition,assembly,setup_min,max_abs_difference_kPa,leak_check
+C1,three hoses,8.4,0.12,pass
+C1,reference base,3.1,0.13,pass
+C2,three hoses,8.0,0.11,pass
+C2,reference base,3.0,0.12,pass
+C3,three hoses,8.6,0.14,pass
+C3,reference base,3.3,0.14,pass
+C1,base without pins,2.7,NA,fail
+C2,base without pins,2.6,NA,fail
+C3,base without pins,2.8,0.15,pass

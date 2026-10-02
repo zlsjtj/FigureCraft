@@ -1,7 +1,10 @@
-Reused unmodified file: audit_pdf_text.py
+Reused and modified file: audit_pdf_text.py
 Source: Yuan1z0825/nature-skills, skills/nature-figure/scripts/audit_pdf_text.py
 Commit: 79c9f986501ff462f4b9d1294c8223bfee1a5149
 URL: https://github.com/Yuan1z0825/nature-skills/blob/79c9f986501ff462f4b9d1294c8223bfee1a5149/skills/nature-figure/scripts/audit_pdf_text.py
 License: Apache-2.0; see LICENSE retained in this directory.
-Modifications: none. Runtime invocation explicitly supplies --min-pt 8.
+Modifications (2026-10-02): decode declared ASCII85/Flate filter chains in order;
+refuse incomplete/unsupported streams instead of treating partial text as a PASS.
+Runtime invocation explicitly supplies --min-pt 8. This remains a limited Tf
+scanner, not a general PDF parser or a journal compliance certification.
 No upstream endorsement or journal certification is implied.

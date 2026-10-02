@@ -1,0 +1,882 @@
+{
+  "schema_version": 1,
+  "figure_id": "pressure_base_DEMO_alternative",
+  "mode": "new_schematic",
+  "demo": true,
+  "evidence_status": "DEMO_SYNTHETIC_NOT_PHYSICAL",
+  "scientific_message": "Three isolated samples face one connected reference space through closed diaphragms; the reference connection is packaged as an aligned removable base.",
+  "source_refs": [
+    {
+      "path": "source.docx",
+      "resolver": "original input directory supplied with --input",
+      "sha256": "bf2e2a19563b725a808ae38e29cce0092bee3a6f15768c144857b3a2364ee65e"
+    },
+    {
+      "path": "implementation.md",
+      "resolver": "original input directory supplied with --input",
+      "sha256": "192cd2bd8ea2e0c72bdfc2664011ea9e3d4ee096f6f8fe71b5f421edfab558d9"
+    },
+    {
+      "path": "results.csv",
+      "resolver": "original input directory supplied with --input",
+      "sha256": "3ae57d4179519e6cefbca2f40835189853b338b064be26879ef4836f7b81c008"
+    },
+    {
+      "path": "README.md",
+      "resolver": "original input directory supplied with --input",
+      "sha256": "2e7e34c163b4339d986027956710a018be7471eaea2d5879d8c31d7986c467d2"
+    }
+  ],
+  "forbidden_implications": [
+    "No flow crosses a diaphragm.",
+    "No sample-to-sample or sample-to-reference communication.",
+    "No measured geometry, deflection, flow direction, new sensing principle or real-device validation."
+  ],
+  "entities": [
+    {
+      "id": "base",
+      "semantic_role": "housing",
+      "description": "One removable reference base"
+    },
+    {
+      "id": "reference",
+      "semantic_role": "reference",
+      "description": "One connected reference volume"
+    },
+    {
+      "id": "gasket",
+      "semantic_role": "seal",
+      "description": "One gasket around three reference ports"
+    },
+    {
+      "id": "S1",
+      "semantic_role": "sample",
+      "description": "Isolated sample chamber S1"
+    },
+    {
+      "id": "S2",
+      "semantic_role": "sample",
+      "description": "Isolated sample chamber S2"
+    },
+    {
+      "id": "S3",
+      "semantic_role": "sample",
+      "description": "Isolated sample chamber S3"
+    },
+    {
+      "id": "sensor1",
+      "semantic_role": "housing",
+      "description": "Sensor 1"
+    },
+    {
+      "id": "sensor2",
+      "semantic_role": "housing",
+      "description": "Sensor 2"
+    },
+    {
+      "id": "sensor3",
+      "semantic_role": "housing",
+      "description": "Sensor 3"
+    },
+    {
+      "id": "diaphragm1",
+      "semantic_role": "membrane",
+      "description": "Closed separating diaphragm 1"
+    },
+    {
+      "id": "diaphragm2",
+      "semantic_role": "membrane",
+      "description": "Closed separating diaphragm 2"
+    },
+    {
+      "id": "diaphragm3",
+      "semantic_role": "membrane",
+      "description": "Closed separating diaphragm 3"
+    },
+    {
+      "id": "pin1",
+      "semantic_role": "pin",
+      "description": "Locating pin 1"
+    },
+    {
+      "id": "pin2",
+      "semantic_role": "pin",
+      "description": "Locating pin 2"
+    }
+  ],
+  "relations": [
+    {
+      "id": "separation-1",
+      "from": "S1",
+      "to": "reference",
+      "kind": "inhibition",
+      "meaning": "diaphragm1 physically separates the sample from the reference; represented by a closed boundary, without flow arrows"
+    },
+    {
+      "id": "reference-1",
+      "from": "reference",
+      "to": "sensor1",
+      "kind": "reference",
+      "meaning": "Sensor reference side directly faces the same connected cavity; represented by continuous space, without directional arrows"
+    },
+    {
+      "id": "separation-2",
+      "from": "S2",
+      "to": "reference",
+      "kind": "inhibition",
+      "meaning": "diaphragm2 physically separates the sample from the reference; represented by a closed boundary, without flow arrows"
+    },
+    {
+      "id": "reference-2",
+      "from": "reference",
+      "to": "sensor2",
+      "kind": "reference",
+      "meaning": "Sensor reference side directly faces the same connected cavity; represented by continuous space, without directional arrows"
+    },
+    {
+      "id": "separation-3",
+      "from": "S3",
+      "to": "reference",
+      "kind": "inhibition",
+      "meaning": "diaphragm3 physically separates the sample from the reference; represented by a closed boundary, without flow arrows"
+    },
+    {
+      "id": "reference-3",
+      "from": "reference",
+      "to": "sensor3",
+      "kind": "reference",
+      "meaning": "Sensor reference side directly faces the same connected cavity; represented by continuous space, without directional arrows"
+    }
+  ],
+  "exact_labels": [
+    "S1",
+    "S2",
+    "S3",
+    "One connected reference volume",
+    "DEMO"
+  ],
+  "locked_values": {
+    "samples": 3,
+    "sensors": 3,
+    "diaphragms": 3,
+    "connected_reference_volumes": 1,
+    "locating_pins": 2,
+    "gaskets": 1,
+    "sample_modules_move_on_replacement": false,
+    "drawing_scale": "schematic only",
+    "depressurize_before_opening": true
+  },
+  "count_constraints": [
+    {
+      "name": "samples",
+      "expected": 3,
+      "scope": {
+        "id_prefix": "chamber-"
+      },
+      "expected_logical_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "sensors",
+      "expected": 3,
+      "scope": {
+        "id_prefix": "sensor-"
+      },
+      "expected_logical_ids": [
+        "sensor1",
+        "sensor2",
+        "sensor3"
+      ]
+    },
+    {
+      "name": "diaphragms",
+      "expected": 3,
+      "scope": {
+        "id_prefix": "diaphragm-"
+      },
+      "expected_logical_ids": [
+        "diaphragm1",
+        "diaphragm2",
+        "diaphragm3"
+      ]
+    },
+    {
+      "name": "pins",
+      "expected": 2,
+      "scope": {
+        "id_prefix": "pin-"
+      },
+      "expected_logical_ids": [
+        "pin1",
+        "pin2"
+      ]
+    },
+    {
+      "name": "reference volumes",
+      "expected": 1,
+      "scope": {
+        "id_prefix": "reference-cavity"
+      },
+      "expected_logical_ids": [
+        "reference"
+      ]
+    },
+    {
+      "name": "gaskets",
+      "expected": 1,
+      "scope": {
+        "id_prefix": "gasket-section"
+      },
+      "expected_logical_ids": [
+        "gasket"
+      ]
+    },
+    {
+      "name": "base",
+      "expected": 1,
+      "scope": {
+        "id_prefix": "base-body"
+      },
+      "expected_logical_ids": [
+        "base"
+      ]
+    }
+  ],
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "sample": {
+      "base": "#76A8C4"
+    },
+    "reference": {
+      "base": "#5AA59F"
+    },
+    "housing": {
+      "base": "#A7B4BB"
+    },
+    "membrane": {
+      "base": "#334957"
+    },
+    "seal": {
+      "base": "#CB813D"
+    },
+    "pin": {
+      "base": "#778794"
+    }
+  },
+  "layout": {
+    "archetype": "exploded_section",
+    "reading_order": "isolated samples, closed diaphragms, one continuous reference cavity, mounting interface"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "edit_scope": {
+    "allowed": [
+      "replace placeholder with scientific schematic"
+    ],
+    "protected": [
+      "three sample chambers in one row",
+      "one reference base below",
+      "all source topology and DEMO boundaries"
+    ]
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "output": {
+    "width_mm": 160,
+    "placement_width_mm": 160,
+    "view_width": 960,
+    "view_height": 510,
+    "font_profile": "Arial 10.4 pt labels; 9.45 pt supplementary"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 960,
+      "h": 510,
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "stroke_width": 2
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Isolated samples above a removable reference base",
+      "x": 28,
+      "y": 38,
+      "size": 24,
+      "align": "left",
+      "fill": "#243A45",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "text": "DEMO",
+      "x": 931,
+      "y": 38,
+      "size": 20,
+      "align": "right",
+      "fill": "#243A45",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "sample-heading",
+      "type": "text",
+      "text": "Sample chambers",
+      "x": 480,
+      "y": 97,
+      "size": 22,
+      "align": "center",
+      "fill": "#243A45",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "base-body",
+      "type": "rect",
+      "x": 95,
+      "y": 342,
+      "w": 770,
+      "h": 105,
+      "fill": "#E6EBED",
+      "stroke": "#738791",
+      "stroke_width": 2,
+      "entity": "base",
+      "logical_id": "base",
+      "object_part": "primary"
+    },
+    {
+      "id": "sensor-1",
+      "type": "rect",
+      "x": 172,
+      "y": 209,
+      "w": 156,
+      "h": 106,
+      "fill": "#E6EBED",
+      "stroke": "#738791",
+      "stroke_width": 2,
+      "entity": "sensor1",
+      "logical_id": "sensor1",
+      "object_part": "primary"
+    },
+    {
+      "id": "sensor-2",
+      "type": "rect",
+      "x": 402,
+      "y": 209,
+      "w": 156,
+      "h": 106,
+      "fill": "#E6EBED",
+      "stroke": "#738791",
+      "stroke_width": 2,
+      "entity": "sensor2",
+      "logical_id": "sensor2",
+      "object_part": "primary"
+    },
+    {
+      "id": "sensor-3",
+      "type": "rect",
+      "x": 632,
+      "y": 209,
+      "w": 156,
+      "h": 106,
+      "fill": "#E6EBED",
+      "stroke": "#738791",
+      "stroke_width": 2,
+      "entity": "sensor3",
+      "logical_id": "sensor3",
+      "object_part": "primary"
+    },
+    {
+      "id": "reference-cavity",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          115,
+          372
+        ],
+        [
+          "L",
+          195,
+          372
+        ],
+        [
+          "L",
+          195,
+          266
+        ],
+        [
+          "L",
+          305,
+          266
+        ],
+        [
+          "L",
+          305,
+          372
+        ],
+        [
+          "L",
+          425,
+          372
+        ],
+        [
+          "L",
+          425,
+          266
+        ],
+        [
+          "L",
+          535,
+          266
+        ],
+        [
+          "L",
+          535,
+          372
+        ],
+        [
+          "L",
+          655,
+          372
+        ],
+        [
+          "L",
+          655,
+          266
+        ],
+        [
+          "L",
+          765,
+          266
+        ],
+        [
+          "L",
+          765,
+          372
+        ],
+        [
+          "L",
+          845,
+          372
+        ],
+        [
+          "L",
+          845,
+          427
+        ],
+        [
+          "L",
+          115,
+          427
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#D6EFEB",
+      "stroke": "#39837C",
+      "stroke_width": 2,
+      "entity": "reference",
+      "logical_id": "reference",
+      "object_part": "primary"
+    },
+    {
+      "id": "chamber-1",
+      "type": "rect",
+      "x": 185,
+      "y": 127,
+      "w": 130,
+      "h": 108,
+      "fill": "#D9EAF5",
+      "stroke": "#5683A0",
+      "stroke_width": 2,
+      "entity": "S1",
+      "logical_id": "S1",
+      "object_part": "primary"
+    },
+    {
+      "id": "sample-1",
+      "type": "text",
+      "text": "S1",
+      "x": 250,
+      "y": 175,
+      "size": 25,
+      "align": "center",
+      "fill": "#243A45",
+      "background": "#D9EAF5",
+      "entity": "S1"
+    },
+    {
+      "id": "diaphragm-1",
+      "type": "rect",
+      "x": 185,
+      "y": 232,
+      "w": 130,
+      "h": 7,
+      "fill": "#334957",
+      "stroke": "none",
+      "stroke_width": 2,
+      "entity": "diaphragm1",
+      "logical_id": "diaphragm1",
+      "object_part": "primary"
+    },
+    {
+      "id": "chamber-2",
+      "type": "rect",
+      "x": 415,
+      "y": 127,
+      "w": 130,
+      "h": 108,
+      "fill": "#D9EAF5",
+      "stroke": "#5683A0",
+      "stroke_width": 2,
+      "entity": "S2",
+      "logical_id": "S2",
+      "object_part": "primary"
+    },
+    {
+      "id": "sample-2",
+      "type": "text",
+      "text": "S2",
+      "x": 480,
+      "y": 175,
+      "size": 25,
+      "align": "center",
+      "fill": "#243A45",
+      "background": "#D9EAF5",
+      "entity": "S2"
+    },
+    {
+      "id": "diaphragm-2",
+      "type": "rect",
+      "x": 415,
+      "y": 232,
+      "w": 130,
+      "h": 7,
+      "fill": "#334957",
+      "stroke": "none",
+      "stroke_width": 2,
+      "entity": "diaphragm2",
+      "logical_id": "diaphragm2",
+      "object_part": "primary"
+    },
+    {
+      "id": "chamber-3",
+      "type": "rect",
+      "x": 645,
+      "y": 127,
+      "w": 130,
+      "h": 108,
+      "fill": "#D9EAF5",
+      "stroke": "#5683A0",
+      "stroke_width": 2,
+      "entity": "S3",
+      "logical_id": "S3",
+      "object_part": "primary"
+    },
+    {
+      "id": "sample-3",
+      "type": "text",
+      "text": "S3",
+      "x": 710,
+      "y": 175,
+      "size": 25,
+      "align": "center",
+      "fill": "#243A45",
+      "background": "#D9EAF5",
+      "entity": "S3"
+    },
+    {
+      "id": "diaphragm-3",
+      "type": "rect",
+      "x": 645,
+      "y": 232,
+      "w": 130,
+      "h": 7,
+      "fill": "#334957",
+      "stroke": "none",
+      "stroke_width": 2,
+      "entity": "diaphragm3",
+      "logical_id": "diaphragm3",
+      "object_part": "primary"
+    },
+    {
+      "id": "gasket-section",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          105,
+          334
+        ],
+        [
+          "L",
+          195,
+          334
+        ],
+        [
+          "L",
+          195,
+          342
+        ],
+        [
+          "L",
+          105,
+          342
+        ],
+        [
+          "Z"
+        ],
+        [
+          "M",
+          305,
+          334
+        ],
+        [
+          "L",
+          425,
+          334
+        ],
+        [
+          "L",
+          425,
+          342
+        ],
+        [
+          "L",
+          305,
+          342
+        ],
+        [
+          "Z"
+        ],
+        [
+          "M",
+          535,
+          334
+        ],
+        [
+          "L",
+          655,
+          334
+        ],
+        [
+          "L",
+          655,
+          342
+        ],
+        [
+          "L",
+          535,
+          342
+        ],
+        [
+          "Z"
+        ],
+        [
+          "M",
+          765,
+          334
+        ],
+        [
+          "L",
+          855,
+          334
+        ],
+        [
+          "L",
+          855,
+          342
+        ],
+        [
+          "L",
+          765,
+          342
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#CB813D",
+      "stroke": "none",
+      "entity": "gasket",
+      "logical_id": "gasket",
+      "object_part": "primary"
+    },
+    {
+      "id": "pin-1",
+      "type": "rect",
+      "x": 125,
+      "y": 309,
+      "w": 10,
+      "h": 54,
+      "fill": "#778794",
+      "stroke": "#465C68",
+      "stroke_width": 2,
+      "entity": "pin1",
+      "logical_id": "pin1",
+      "object_part": "primary"
+    },
+    {
+      "id": "pin-2",
+      "type": "rect",
+      "x": 825,
+      "y": 309,
+      "w": 10,
+      "h": 54,
+      "fill": "#778794",
+      "stroke": "#465C68",
+      "stroke_width": 2,
+      "entity": "pin2",
+      "logical_id": "pin2",
+      "object_part": "primary"
+    },
+    {
+      "id": "ref-label",
+      "type": "text",
+      "text": "One connected reference volume",
+      "x": 480,
+      "y": 407,
+      "size": 24,
+      "align": "center",
+      "fill": "#243A45",
+      "background": "#D6EFEB",
+      "entity": "reference"
+    },
+    {
+      "id": "annotation-pin-left",
+      "type": "text",
+      "text": "Pin",
+      "x": 106,
+      "y": 270,
+      "size": 20,
+      "align": "center",
+      "fill": "#243A45",
+      "background": "#FFFFFF",
+      "entity": "pin1"
+    },
+    {
+      "id": "annotation-pin-left-leader",
+      "type": "line",
+      "points": [
+        [
+          109,
+          275
+        ],
+        [
+          130,
+          287
+        ]
+      ],
+      "fill": "none",
+      "stroke": "#627680",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "annotation-pin-right",
+      "type": "text",
+      "text": "Pin",
+      "x": 853,
+      "y": 270,
+      "size": 20,
+      "align": "center",
+      "fill": "#243A45",
+      "background": "#FFFFFF",
+      "entity": "pin2"
+    },
+    {
+      "id": "annotation-pin-right-leader",
+      "type": "line",
+      "points": [
+        [
+          850,
+          275
+        ],
+        [
+          830,
+          287
+        ]
+      ],
+      "fill": "none",
+      "stroke": "#627680",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "annotation-sensor-label",
+      "type": "text",
+      "text": "Sensors",
+      "x": 28,
+      "y": 211,
+      "size": 20,
+      "align": "left",
+      "fill": "#243A45",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "annotation-sensor-leader",
+      "type": "line",
+      "points": [
+        [
+          108,
+          214
+        ],
+        [
+          158,
+          214
+        ],
+        [
+          174,
+          221
+        ]
+      ],
+      "fill": "none",
+      "stroke": "#627680",
+      "stroke_width": 1.8
+    },
+    {
+      "id": "annotation-diaphragm-label",
+      "type": "text",
+      "text": "Diaphragms",
+      "x": 931,
+      "y": 210,
+      "size": 20,
+      "align": "right",
+      "fill": "#243A45",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "annotation-diaphragm-leader",
+      "type": "line",
+      "points": [
+        [
+          860,
+          218
+        ],
+        [
+          817,
+          218
+        ],
+        [
+          775,
+          235
+        ]
+      ],
+      "fill": "none",
+      "stroke": "#627680",
+      "stroke_width": 1.8
+    }
+  ],
+  "caption": "Alternative DEMO exploded schematic. Upper and lower components are separated for assembly interpretation; this is not the operating state. Fig. 1. DEMO sectional schematic of the removable reference base, not to scale. Three isolated sample chambers face one connected reference volume across three sensor diaphragms. The diaphragm boundaries remain closed. Two locating pins align the base; the orange segments are sections through one gasket around the three reference ports. The sample modules stay in position during replacement. Housing dimensions and the pin and gasket geometry are illustrative; pressure must be released before opening.",
+  "alt_text": "DEMO sectional diagram. Three separate sample spaces S1, S2 and S3 each terminate at a closed diaphragm. Below all three is a single connected green reference cavity inside a removable base. Two exterior pins align the base; sections through one orange gasket flank the three reference ports. No arrows cross any diaphragm."
+}

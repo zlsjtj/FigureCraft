@@ -2,7 +2,7 @@
 
 ## 直接复用的代码
 
-`vendor/nature-figure/audit_pdf_text.py` 来自 [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills/tree/79c9f986501ff462f4b9d1294c8223bfee1a5149)，固定提交为 `79c9f986501ff462f4b9d1294c8223bfee1a5149`。该文件保持原样，Apache-2.0 LICENSE 和 NOTICE 保留在同目录。
+`vendor/nature-figure/audit_pdf_text.py` 来自 [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills/tree/79c9f986501ff462f4b9d1294c8223bfee1a5149)，固定提交为 `79c9f986501ff462f4b9d1294c8223bfee1a5149`。2026年10月2日在此基础上补充有序 ASCII85/Flate 过滤链解码，并让未完整检查的流不能返回 PASS；Apache-2.0 LICENSE 和修改说明 NOTICE 保留在同目录。
 
 检查器扫描支持的 PDF 流中的 Tf 字号，不考虑全部坐标变换，不能代替通用碰撞检查或科学审阅。本包显式传入 `--min-pt 8`；这个阈值是内部可读性检查，不是 Nature 或其他期刊的官方标准。
 

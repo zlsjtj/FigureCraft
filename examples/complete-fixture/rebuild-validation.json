@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "Fixed public scene rebuild from source in a new output directory",
+  "files": [
+    {
+      "file": "first/figure.svg",
+      "sha256": "482b928c5fbbaedce7c70fea874a0e638f0d90c816c219852c6bf3283a6bae93",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "first/figure.png",
+      "sha256": "35da7de72c6b581a35ebe6f71c56cefd6c693a208a45f9f12e97b62b7ac0f15f",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "first/figure.pdf",
+      "sha256": "51feaae7a788390b752a4a6520455a7f777bc3646d75d2422dbba52b9ec7af82",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "alternative/figure.svg",
+      "sha256": "b375a6eac5b88e5ccb72feda4bd7de5a23243af4fb65f658dfa13917bce7c0cd",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "alternative/figure.png",
+      "sha256": "19bf51e022a152ab8596b92357470224a52d3b2abf2800960b23f064d909d681",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "alternative/figure.pdf",
+      "sha256": "080fe3b78617a3b2edbacf775f9187b75029bda05a837ded357266b2b1ad4c4e",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "selected/figure.svg",
+      "sha256": "aa0fb65489b40fec949781f2c033fd79b958d5e592150f878b3a4c4f2c35eb4b",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "selected/figure.png",
+      "sha256": "c57475ceced1a4e8758dd8eacebb40cff3c4761a42bc5818eff76806a5d4614c",
+      "rebuild_byte_identical": true
+    },
+    {
+      "file": "selected/figure.pdf",
+      "sha256": "da992fd7f3eb64315c2de479eb866915fc4c4321cd0e69ed34e31b3e53e8c16b",
+      "rebuild_byte_identical": true
+    }
+  ],
+  "fresh_model_generation": false
+}

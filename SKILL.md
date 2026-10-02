@@ -2,7 +2,7 @@
 name: scientific-figure-studio
 description: FigureCraft 根据科学对象、关系和数据制作科研图与语义配色。适用于机制、硬件、分层材料、定量图及整套配图，交付可编辑图源和分别记录的技术、科学与视觉审阅，保留数值、拓扑和修改范围。
 metadata:
-  version: "1.21.0"
+  version: "1.22.0"
 ---
 
 # FigureCraft｜科研绘图与配色
@@ -58,6 +58,6 @@ python vendor/nature-figure/audit_pdf_text.py NEW_OUTPUT/figure.pdf --min-pt 8 -
 
 ## 与论文编辑交接
 
-交接图要回答的问题、对象关系、锁定数值、源文件与哈希、图注、正文引用及入稿尺寸。已清楚的图可以保留，但要写理由。论文任务须查看确切图件嵌入最终 Word/PDF 后的页面，文档编辑者负责图注、引用和分页；独立图完成与入稿完成分开记录。
+交接**实际选中的**图源、全部导出表示及哈希、图注、正文引用和入稿尺寸，保留被淘汰候选但不要让多个“final”目录代替明确选择。论文任务由主编辑者接回成稿：配合 PaperCraft 时使用 `apply_figure_edits.py` 同步写入 PNG/SVG，再读确切 Word/PDF 页面；图注、引用和分页必须与选中图一起成立。已清楚的图可以保留并记录理由。独立图完成与入稿完成分开，不能以另一个新示例的美观代替这篇论文的改进。
 
 保留原稿，所有输出使用新路径。运行说明见 [README](README.md)，当前验收见[记录](provenance/current-validation.md)，来源与许可见[说明](provenance/upstream-sources.md)。`status` 是兼容技术字段，科学或视觉审阅待定时 `overall_status` 不能为 PASS。审阅绑定实际文件哈希；未运行的路径明确记为 NOT_RUN，不承诺期刊接受。
