@@ -1,6 +1,6 @@
 # 选择你使用的工具
 
-四个入口使用同一份核心技能。名字是 `scientific-figure-studio`；FigureCraft 是展示名称。本版为 1.28.0；下载包与验证范围见[本轮记录](multihost-validation.md)。
+四个入口使用同一份核心技能。名字是 `scientific-figure-studio`；FigureCraft 是展示名称。本版为 1.28.0；下载包与验证范围见[本轮记录](multihost-validation.md)。 首次安装请沿本页入口下载；GitHub Releases 中的包按历史标签固定，可能早于默认分支，不应混装。
 
 ## Codex
 

@@ -3,15 +3,15 @@
   "version": "1.28.0",
   "packages": {
     "scientific-figure-studio-claude.zip": {
-      "sha256": "c28ec4d6cf343a270c1e852c3c51b9701e1b82f35d46acd288d4229c45d1f806",
-      "bytes": 5220924,
+      "sha256": "913f18798d4b73d12160e6b94e6bf02b5325d68835600eafbcbaeb35c6357987",
+      "bytes": 5221858,
       "host": "claude",
       "files": 159,
       "host_execution": "NOT_RUN_BY_PACKAGER"
     },
     "scientific-figure-studio-workbuddy.zip": {
-      "sha256": "2dd237b981741a8b92f5d9c0e8a5f177737303aac890b7a123b3ec3de18da946",
-      "bytes": 5221034,
+      "sha256": "72f01a751d8801caf7f8b157377b55f7fe7b822a3ecc921af3e5336bed989199",
+      "bytes": 5221969,
       "host": "workbuddy",
       "files": 159,
       "host_execution": "NOT_RUN_BY_PACKAGER"
