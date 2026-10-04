@@ -22,6 +22,8 @@
     "README.md",
     "docs/install.md",
     "docs/first-use.md",
-    "docs/multihost-validation.md"
+    "docs/multihost-validation.md",
+    ".claude-plugin/plugin.json",
+    "docs/client-entry-validation.md"
   ]
 }

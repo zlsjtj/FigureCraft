@@ -11,10 +11,10 @@ body:
   - type: input
     id: input
     attributes:
-      label: 输入类型和技能版本
-      placeholder: 例如 Word 摘要，使用下载包中的版本
+      label: 输入类型和技能版本（不确定可留空）
+      placeholder: 例如 Word 摘要；版本可从包内 SKILL.md 查看
     validations:
-      required: true
+      required: false
   - type: textarea
     id: result
     attributes:

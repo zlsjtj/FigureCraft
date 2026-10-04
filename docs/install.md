@@ -1,6 +1,6 @@
 # 选择你使用的工具
 
-四个入口使用同一份核心技能。名字是 `scientific-figure-studio`；FigureCraft 是展示名称。本版为 1.28.0；下载包与验证范围见[本轮记录](multihost-validation.md)。 首次安装请沿本页入口下载；GitHub Releases 中的包按历史标签固定，可能早于默认分支，不应混装。
+四个入口使用同一份核心技能。名字是 `scientific-figure-studio`；FigureCraft 是展示名称。本版为 1.28.1；[固定版本下载](https://github.com/zlsjtj/FigureCraft/releases/tag/v1.28.1)和[验证范围](client-entry-validation.md)可单独查看。请从同一个版本取得完整包，不混装文件。
 
 ## Codex
 
@@ -25,7 +25,23 @@ git clone https://github.com/zlsjtj/FigureCraft.git "$HOME/.agents/skills/scient
 
 ## Claude Code
 
-将技能放入个人目录 `~/.claude/skills/scientific-figure-studio/`。
+推荐使用插件管理安装；插件直接读取根目录的同一份 `SKILL.md`，没有另一套科学编辑指令。
+
+在 Claude Code 中依次输入：
+
+```text
+/plugin marketplace add zlsjtj/FigureCraft
+/plugin install figurecraft@zlsjtj-figurecraft
+```
+
+如果使用下载后的本地源码，可将第一行的 `zlsjtj/FigureCraft` 换成仓库绝对路径（Windows 可写 `E:/path/to/FigureCraft`）。两种方式只选一种。
+
+启用并打开新会话后，调用 `/figurecraft:scientific-figure-studio`。也可以直接用技能名称描述任务。更新使用客户端插件管理，不把新源码混入旧插件缓存。
+
+<details>
+<summary>沿用个人技能目录安装（已在用的用户不必换）</summary>
+
+PowerShell：
 
 ```powershell
 $skillRoot = Join-Path $env:USERPROFILE '.claude/skills'
@@ -33,9 +49,18 @@ New-Item -ItemType Directory -Force -Path $skillRoot | Out-Null
 git clone https://github.com/zlsjtj/FigureCraft.git (Join-Path $skillRoot 'scientific-figure-studio')
 ```
 
-macOS / Linux 使用 `mkdir -p ~/.claude/skills`，再把仓库克隆到 `~/.claude/skills/scientific-figure-studio`。打开新会话，用 `/scientific-figure-studio` 或在请求中明确技能名。已有目录不要直接覆盖。
+macOS / Linux：
 
-这是本地 Claude Code 入口，不能据此认为网页或 Cowork 已安装。路径和调用规则依据 [Claude Code 官方文档](https://code.claude.com/docs/en/skills)。
+```bash
+mkdir -p "$HOME/.claude/skills"
+git clone https://github.com/zlsjtj/FigureCraft.git "$HOME/.claude/skills/scientific-figure-studio"
+```
+
+已有目录不要覆盖。此入口调用 `/scientific-figure-studio`，与插件命名空间不同。两种方式选一种，避免同名旧副本抢先触发。
+
+</details>
+
+本地目录安装不等于网页账户已安装；网页启用技能向其他 Claude 产品的同步以当前账户与官方说明为准。[Claude Code 技能文档](https://code.claude.com/docs/en/skills) · [插件路径规则](https://code.claude.com/docs/en/plugins-reference)
 
 ### 用收到的 ZIP 安装本地技能
 
@@ -52,9 +77,9 @@ macOS / Linux 使用 `mkdir -p ~/.claude/skills`，再把仓库克隆到 `~/.cla
 
 ## Claude 网页 / Desktop
 
-1. [下载 Claude 技能包](downloads/scientific-figure-studio-claude.zip)，保留 ZIP，不要上传整份 GitHub 源码 ZIP。
+1. [下载 Claude 技能包](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-claude.zip)，保留 ZIP，不要上传整份 GitHub 源码 ZIP。
 2. 在 Claude 的 **Customize → Skills → + → Create skill → Upload a skill** 中导入并启用。账户需要开启代码执行与文件创建；组织策略可能限制导入。
-3. [下载首次试用材料](downloads/scientific-figure-studio-first-use.zip)，解压后上传 TASK.md 和 input/ 内的文件，要求使用 `scientific-figure-studio` 完成任务。
+3. [下载首次试用材料](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-first-use.zip)，解压后上传 TASK.md 和 input/ 内的文件，要求使用 `scientific-figure-studio` 完成任务。
 
 无需在本机先安装 Python。实际执行环境仍需具备相应 Python 包和导出工具；缺少的能力会单独报告。此入口指 Claude 自定义技能，不把本地文件路径当作云端可访问附件。
 
@@ -62,13 +87,25 @@ macOS / Linux 使用 `mkdir -p ~/.claude/skills`，再把仓库克隆到 `~/.cla
 
 ## WorkBuddy
 
-1. [下载 WorkBuddy 技能包](downloads/scientific-figure-studio-workbuddy.zip)。
-2. 在 **技能 → 添加技能 → 上传技能** 导入并启用。
-3. 解压[首次试用材料](downloads/scientific-figure-studio-first-use.zip)，把 TASK.md 和 input/ 交给 WorkBuddy，明确使用 `scientific-figure-studio`。
+1. [下载 WorkBuddy 技能包](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-workbuddy.zip)。
+2. 在 **专家·技能·连接器 → 技能 → 添加技能 → 上传技能** 导入并启用；不同客户端版本可能缩写菜单名。
+3. 解压[首次试用材料](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-first-use.zip)，把 TASK.md 和 input/ 交给 WorkBuddy，明确使用 `scientific-figure-studio`。
 
-不要求手动猜测 WorkBuddy 的内部安装目录。包中补充了它要求的中英文简介、作者和版本字段；核心方法与其他包同源。
+将技能 ZIP 保持压缩状态上传到技能管理；**试用材料 ZIP 要解压后交给对话**，两者用途不同。能看到文件不等于技能已启用；让它报告实际读取的 `scientific-figure-studio/SKILL.md` 和版本，再做首次任务。
+
+包中保留完整脚本和参考，补充中英文简介、作者与版本，不更改研究方法，也不写死 WorkBuddy 内部目录。开放平台字段要求不代表客户端导入已经实测。
 
 [官方安装说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) · [包元信息说明](https://open.workbuddy.cn/en/docs/skill)
+
+## 导入后遇到问题
+
+| 现象 | 先检查 |
+|---|---|
+| 导入时找不到技能定义 | 下载的是本页宿主 ZIP，而不是 GitHub Source code ZIP 或试用材料包；其中应有 `scientific-figure-studio/SKILL.md` |
+| Claude Code 找不到命令 | 插件使用 `/figurecraft:scientific-figure-studio`；个人目录使用 `/scientific-figure-studio`；确认插件已启用并开新会话 |
+| WorkBuddy 只阅读了 ZIP，没有使用技能 | 回到技能管理导入技能 ZIP；对话中只交任务和原始材料 |
+| 报 scripts/ 不存在 | 以本次实际读取的 SKILL.md 定位脚本，不能相对于论文目录运行；包内有运行入口说明 |
+| Word 有了但 PDF/PNG 没有 | 按依赖页检查执行环境中的 LibreOffice/Poppler 与字体，不反复重新导入技能 |
 
 ## 依赖与第一次任务
 

@@ -1,80 +1,65 @@
-# FigureCraft｜科研绘图与配色
+<h1 align="center">FigureCraft</h1>
+<p align="center"><strong>让图形讲明白，让论文更出彩。</strong></p>
+<p align="center">科研绘图与配色 · 机制与结构 · 语义配色 · 可编辑图源</p>
+<p align="center"><a href="#作品与图源">看作品</a> · <a href="#开始使用">下载安装</a> · <a href="docs/examples.md">完整作品集</a> · <a href="LICENSE">MIT</a></p>
 
-把研究中的结构、动作和关系画清楚，交付 **可编辑图源、SVG / PDF / PNG 和重建脚本**。
+给 AI 研究助手使用的科研绘图技能。把研究材料变成**对象可辨、关系清楚、层次分明**的机制图与结构图，交付**可编辑源文件、SVG / PDF / PNG 和重建脚本**。从构图到语义配色，让画面承担解释。
 
-**[拿公开材料画一张图](docs/first-use.md)** · [安装技能](docs/install.md) · [看前后对照](#让对象变化成为主角)
+## 作品与图源
 
-[![三层材料共同卷绕，尾端露出连续结构的层序；点击查看原图](examples/co-wound-laminate/selected/figure.png)](examples/co-wound-laminate/selected/figure.png)
+[![三层连续卷绕结构：尾端展开揭示同一整体的层序](examples/co-wound-laminate/selected/figure.png)](examples/co-wound-laminate/README.md)
 
-三层材料共同卷绕，尾端露出层序。颜色对应材料身份，局部展开仍属于同一整体。
+**一张图，连起整体与局部。** 三层材料共同卷绕，尾端展开露出层序；颜色追踪材料，曲面表达连续结构。
 
-[SVG](examples/co-wound-laminate/selected/figure.svg) · [PDF](examples/co-wound-laminate/selected/figure.pdf) · [Python 源码](examples/co-wound-laminate/build_laminate.py) · [输入与构图选择](examples/co-wound-laminate/README.md)
+**[打开完整案例](examples/co-wound-laminate/README.md)** · [可编辑源码](examples/co-wound-laminate/build_laminate.py) · [SVG](examples/co-wound-laminate/selected/figure.svg) · [PDF](examples/co-wound-laminate/selected/figure.pdf)
 
-本页均为原创构造示例，不代表实验结果。上图的曲面为位图、标签为矢量；曲面可通过源码修改后重建。
+<sub>原创结构演示。曲面为位图、标签为矢量；修改源码可重建曲面。</sub>
+
+### 对象不同，画法也不同
+
+<p>
+<a href="examples/cross-lap-trial/README.md"><img src="examples/cross-lap-trial/selected/figure.png" width="380" alt="装配与剖面：追踪互补缺口及剖切位置，点击查看图源"></a>
+<a href="examples/paired-placement/README.md"><img src="examples/paired-placement/selected/figure.png" width="380" alt="共享记录与对象变化：区分共同读取和重采样，点击查看前后对照"></a>
+</p>
+
+**[装配与剖面](examples/cross-lap-trial/README.md)**：用局部展开讲清互补缺口，沿剖切位置看装配结果。**[共享记录与对象变化](examples/paired-placement/README.md)**：用对象对应讲清变化，区分共同读取与重采样。
+
+案例提供输入材料、首次方案、取舍和最终源码。以上均为原创构造示例。
 
 ## 开始使用
 
-这是在 Codex 等 AI 工具中使用的技能，需要所用工具能够读写文件、执行代码。
+选择你使用的 AI 客户端，安装技能后交给它材料：
 
-先用[公开材料包](docs/downloads/scientific-figure-studio-first-use.zip)做一张机制图：解压后把 TASK.md 和 input/ 交给所用工具，不需要自己先写绘图代码。
+- **Claude 网页 / Desktop**：[下载技能 ZIP](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-claude.zip) · [导入说明](docs/install.md#claude-web)
+- **WorkBuddy**：[下载技能 ZIP](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-workbuddy.zip) · [导入说明](docs/install.md#workbuddy)
+- **Claude Code**：[插件安装，两条命令](docs/install.md#claude-code)
+- **Codex**：[安装到技能目录](docs/install.md#codex)
 
-| 你使用的工具 | 安装入口 |
-|---|---|
-| Codex | [本地安装](docs/install.md#codex) |
-| Claude Code | [本地安装](docs/install.md#claude-code) |
-| Claude 网页 / Desktop | [上传技能 ZIP](docs/install.md#claude-web) |
-| WorkBuddy | [上传技能 ZIP](docs/install.md#workbuddy) |
+**先画一张机制图：**[下载示例材料](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-first-use.zip)，解压后把 `TASK.md` 和 `input/` 交给客户端。技能 ZIP 保持压缩状态导入；示例材料 ZIP 解压后使用。
 
-Codex 已有本地产出；Claude 与 WorkBuddy 的包已检查，客户端实测待完成。[具体范围](docs/multihost-validation.md)
-
-安装后，有自己的材料可以这样说：
+有自己的材料，可以直接说：
 
 ```text
-使用 scientific-figure-studio。
-根据这份材料重画一张机制图。
-先确定最需要看懂的关系，再选择构图。
-保留必要标签、条件和单位。
-按 160 mm 图宽检查，交付可编辑图源、
-SVG/PDF/PNG、图注与前后对照。
+使用 scientific-figure-studio，根据这份材料画一张机制图。
+自行确定最需要看懂的关系，再选择构图。
+保留必要标签、条件和单位；按 160 mm 图宽检查。
+交付可编辑图源、SVG/PDF/PNG、图注和重建方法。
 ```
 
-图宽可以换成你的版式。只想调整配色，也可以明确保留现有内容和构图。[依赖与导出命令](docs/usage.md)
+[完整使用教程](docs/first-use.md) · [安装与常见问题](docs/install.md) · [导出与运行依赖](docs/usage.md)
 
-## 让对象变化成为主角
+## 看图，也能带走源码
 
-两路图像使用同一份放置记录。改图把输入与结果上下对应，共用记录放在中间，读者可以沿对象追踪变化。
+- [支架接触与释放](examples/display-support-contact/README.md)：把整体、接触局部和解除状态连起来。
+- [离子交换示意](examples/exchange-granularity/README.md)：用局部变化解释大量重复单元。
+- [从材料到构图](docs/from-materials-to-paper.md)：保留什么、放进图注什么，以及怎样选择方案。
 
-[![改图：两路输入与结果上下对应，共用记录居中](examples/paired-placement/selected/figure.png)](examples/paired-placement/selected/figure.png)
+[完整作品集](docs/examples.md) · [32 秒作品导览](docs/quick-tour/tour.gif)
 
-<details>
-<summary>展开原图：多个处理步骤占据主画面</summary>
+## 下一张图，一起画好
 
-[![原图：选择、分支和重采样分散在多个处理框中](examples/paired-placement/before/figure.png)](examples/paired-placement/before/figure.png)
+欢迎[带一张难画的图来提 Issue](https://github.com/zlsjtj/FigureCraft/issues/new?template=usage.yml)：附允许公开的材料、目标尺寸，以及你希望读者看懂的关系。
 
-</details>
+**觉得作品和源码有用，点个 Star，留作下次画图的参考。** 论文叙事可搭配 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
-两图均为 **160 × 100 mm**，标签没有缩小。图内保留关键选择条件与坐标例子；无箭头支线表示共同读取，箭头表示重采样。图注补充读图规则与适用边界，手机上可点图放大。
-
-[SVG](examples/paired-placement/selected/figure.svg) · [PDF](examples/paired-placement/selected/figure.pdf) · [图注、输入与源码](examples/paired-placement/README.md)
-
-## 不同结构，换一种画法
-
-- 构件如何装配，缺口是否露得清楚：[交叉搭接与剖面](examples/cross-lap-trial/README.md)。
-- 接触部位怎样解除：[支架整体、局部接触与释放状态](examples/display-support-contact/README.md)。
-- 重复单元很多，怎样解释局部变化：[离子交换示意](examples/exchange-granularity/README.md)。
-
-[更多作品](docs/examples.md) · [构图教程](docs/from-materials-to-paper.md) · [32 秒案例导览](docs/quick-tour/tour.gif)
-
-案例导览展示已完成作品，不是实时生成录像。完整案例保留了首次方案、修改理由和没有解决的取舍。
-
-## 使用边界与反馈
-
-科学关系和数据以材料为准。低分辨率截图不能恢复缺失实验数据；机制示意也不能冒充测量结果。定量图保持准确尺度，最终图仍需按入稿尺寸核对。[验证记录](docs/usage.md#检查与复用)
-
-SVG/PDF 的可编辑范围依绘图方式而定；混合位图会单独说明。案例经过开发和模型审阅，不能代替作者的科学判断与审美认可。
-
-如果一条连线容易读错，或标签入稿后太小，欢迎[提交反馈](https://github.com/zlsjtj/FigureCraft/issues/new?template=usage.yml)，附上允许公开的示例和目标尺寸。
-
-如果这些图和源码对你有用，欢迎点一个 Star，留作绘图参考。论文表达可配合 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
-
-原创代码与文字采用 [MIT](LICENSE) 许可；第三方内容见[许可说明](docs/licensing.md)。
+原创部分采用 [MIT](LICENSE)；[第三方许可](docs/licensing.md)、[实现与验证记录](docs/client-entry-validation.md)另列。

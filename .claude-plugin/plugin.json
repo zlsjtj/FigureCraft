@@ -1,0 +1,13 @@
+{
+  "name": "figurecraft",
+  "version": "1.28.1",
+  "description": "FigureCraft｜科研绘图与配色",
+  "author": {
+    "name": "zlsjtj"
+  },
+  "repository": "https://github.com/zlsjtj/FigureCraft",
+  "license": "MIT",
+  "skills": [
+    "./"
+  ]
+}

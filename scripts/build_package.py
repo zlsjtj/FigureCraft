@@ -90,7 +90,8 @@ def build(root, out, hosts=HOSTS):
         stage = Path(temp)
         reports = {}
         for host in hosts:
-            files = dict(packaged)
+            files = {key: value for key, value in packaged.items()
+                     if host == 'claude-code' or not key.startswith('.claude-plugin/')}
             if host == 'workbuddy':
                 # 只在适配包增加宿主元信息；正文与其他包完全同源。
                 first, front, body = files['SKILL.md'].decode('utf-8').split('---', 2)

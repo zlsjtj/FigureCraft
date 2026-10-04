@@ -45,12 +45,16 @@ def environment():
 HOSTS = ('codex', 'claude-code', 'claude', 'workbuddy')
 
 
-def task_text(root, out, host='codex', portable=False):
+def task_text(root, out, host='codex', portable=False, installation='personal'):
     if host not in HOSTS:
         raise ValueError('未知宿主：' + host)
+    if installation not in ('personal', 'plugin') or (installation == 'plugin' and host != 'claude-code'):
+        raise ValueError('plugin 入口仅适用于 Claude Code。')
     portable = portable or host == 'claude'
     skill = DEMO['skill']
     invocation = ('$' + skill) if host == 'codex' else ('/' + skill) if host == 'claude-code' else skill
+    if installation == 'plugin':
+        invocation = '/figurecraft:' + skill
     location = ('先使用已安装的 `' + skill + '` 技能，读取其实际 SKILL.md。\n') if portable else ('先读取并使用这个目录的技能：`' + str(root / 'SKILL.md') + '`。\n')
     paths = ('输入为本任务包中的 `input/`（或本次上传的同名附件）；输出写入本次工作区的新 `output/`，交付可下载文件。\n') if portable else ('输入目录：`' + str(out / 'input') + '`\n输出目录：`' + str(out / 'output') + '`（新建）。\n')
     return ('# 首次试用：' + DEMO['title'] + '\n\n'
@@ -61,7 +65,7 @@ def task_text(root, out, host='codex', portable=False):
             '保留输入文件；缺少工具时说明确切缺项，不把未渲染文件写成已验收。\n')
 
 
-def prepare(out, root=None, host='codex', portable=False):
+def prepare(out, root=None, host='codex', portable=False, installation='personal'):
     root = (root or Path(__file__).resolve().parents[1]).resolve()
     out = Path(out).resolve()
     if out == root or root in out.parents:
@@ -73,7 +77,7 @@ def prepare(out, root=None, host='codex', portable=False):
     for path in [root / 'SKILL.md', *files]:
         if not path.is_file():
             raise ValueError('缺少试用材料：' + str(path))
-    task = task_text(root, out, host, portable)
+    task = task_text(root, out, host, portable, installation)
     out.parent.mkdir(parents=True, exist_ok=True)
     # A sibling staging directory avoids exposing a half-copied input pack.
     with tempfile.TemporaryDirectory(prefix='.first-use-', dir=out.parent) as temporary:
@@ -83,7 +87,7 @@ def prepare(out, root=None, host='codex', portable=False):
             shutil.copy2(path, stage / 'input' / path.name)
         hashes = {path.name: digest(path) for path in files}
         assert hashes == {p.name: digest(p) for p in (stage / 'input').iterdir()}
-        receipt = {'status': 'PREPARED_ONLY', 'skill': DEMO['skill'], 'host': host,
+        receipt = {'status': 'PREPARED_ONLY', 'skill': DEMO['skill'], 'host': host, 'installation': installation,
                    'skill_entry_sha256': digest(root / 'SKILL.md'),
                    'helper_sha256': digest(Path(__file__)), 'input_sha256': hashes,
                    'generation': 'NOT_RUN', 'human_review': 'NOT_RUN'}
@@ -125,9 +129,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out', type=Path, required=True, help='技能目录之外的新文件夹')
     parser.add_argument('--host', choices=HOSTS, default='codex', help='调用宿主；默认 codex，保留旧命令')
+    parser.add_argument('--portable', action='store_true', help='任务使用相对附件路径，不携带本机路径与环境')
+    parser.add_argument('--installation', choices=('personal', 'plugin'), default='personal', help='Claude Code 的插件调用带命名空间；其他宿主沿用 personal')
     args = parser.parse_args()
     try:
-        prepare(args.out, host=args.host)
+        prepare(args.out, host=args.host, portable=args.portable, installation=args.installation)
     except (ValueError, OSError) as exc:
         parser.exit(2, str(exc) + '\n')
     print('已准备原始材料和 TASK.md：' + str(args.out.resolve()))

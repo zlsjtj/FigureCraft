@@ -1,0 +1,16 @@
+{
+  "name": "zlsjtj-figurecraft",
+  "owner": {
+    "name": "zlsjtj"
+  },
+  "plugins": [
+    {
+      "name": "figurecraft",
+      "source": "./",
+      "description": "FigureCraft｜科研绘图与配色"
+    }
+  ],
+  "metadata": {
+    "description": "FigureCraft 官方仓库的单技能安装入口，由 zlsjtj 维护。"
+  }
+}

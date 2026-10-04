@@ -4,7 +4,7 @@
 
 ## 下载材料，交给所用工具
 
-1. [下载试用材料包](downloads/scientific-figure-studio-first-use.zip)并解压。包内是原始材料与任务，没有成品答案。
+1. [下载试用材料包](https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-first-use.zip)并解压。包内是原始材料与任务，没有成品答案。
 2. 本地工具读取整个目录；Claude 网页端上传 TASK.md 和 input/ 中的文件。
 3. 复制下面这句话：
 
@@ -44,3 +44,14 @@ python scripts/first_run.py --host codex --out ../FigureCraft-try
 提供科学对象、关系、原图或数据，以及最终图宽。风格参考只用于构图与配色，不能代替研究事实。
 
 材料不足时先完成有依据的部分，缺项单独列出。保留原件，新结果另存。
+
+## 换一个客户端准备任务
+
+从任意目录运行技能内脚本的实际路径。WorkBuddy 附件模式不携带维护者路径：
+
+```text
+python /path/to/SKILL_ROOT/scripts/first_run.py --host workbuddy --portable --out ../workbuddy-try
+python /path/to/SKILL_ROOT/scripts/first_run.py --host claude-code --installation plugin --out ../claude-try
+```
+
+插件任务自动使用带命名空间的调用标识；不传 `--installation` 仍是个人技能入口。不传 `--host` 仍是 Codex。输出目录应在技能目录外且未存在。以上命令只准备材料，随后把 TASK.md 交给所选客户端执行。

@@ -1,24 +1,38 @@
 {
   "skill": "scientific-figure-studio",
-  "version": "1.28.0",
+  "version": "1.28.1",
   "packages": {
+    "scientific-figure-studio-codex.zip": {
+      "sha256": "6b586da4847c7fea73afb0eb51721ce50166dce350ac2bf2125df60b916ce2c6",
+      "bytes": 5227776,
+      "host": "codex",
+      "files": 161,
+      "host_execution": "NOT_RUN_BY_PACKAGER"
+    },
+    "scientific-figure-studio-claude-code.zip": {
+      "sha256": "af695f5ba8ba1bc347e113188bb7c23773140b25b8fe6cb6db25ab24308ab4f1",
+      "bytes": 5228206,
+      "host": "claude-code",
+      "files": 162,
+      "host_execution": "NOT_RUN_BY_PACKAGER"
+    },
     "scientific-figure-studio-claude.zip": {
-      "sha256": "913f18798d4b73d12160e6b94e6bf02b5325d68835600eafbcbaeb35c6357987",
-      "bytes": 5221858,
+      "sha256": "5a6b721f71786f493e9d529ab4ef9a97a3cafd2a87301895e95219fa7ec747ab",
+      "bytes": 5227777,
       "host": "claude",
-      "files": 159,
+      "files": 161,
       "host_execution": "NOT_RUN_BY_PACKAGER"
     },
     "scientific-figure-studio-workbuddy.zip": {
-      "sha256": "72f01a751d8801caf7f8b157377b55f7fe7b822a3ecc921af3e5336bed989199",
-      "bytes": 5221969,
+      "sha256": "64b311530891cbc983c0e25cb8028d49aa87ac99290f7709d5ad07d42872b484",
+      "bytes": 5227888,
       "host": "workbuddy",
-      "files": 159,
+      "files": 161,
       "host_execution": "NOT_RUN_BY_PACKAGER"
     },
     "scientific-figure-studio-first-use.zip": {
-      "sha256": "6663bf8b1e37b091a345272658037b065405f209eb5d76d30164360131f299b8",
-      "bytes": 4786,
+      "sha256": "d3537bbf07ce7062c81f58520240219a228ee50bb251823e9064db5a12bf2401",
+      "bytes": 4797,
       "purpose": "RAW_MATERIALS_ONLY",
       "generation": "NOT_RUN"
     }
