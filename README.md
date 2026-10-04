@@ -2,11 +2,13 @@
 
 把研究中的结构、动作和关系画清楚。用于 Codex 的科研绘图 skill，提供可修改的图源和用于论文的导出文件。
 
-[看前后对照](#从处理流程转向对象变化) · [开始使用](#开始使用) · [下载 1.27.1](https://github.com/zlsjtj/FigureCraft/releases/tag/v1.27.1) · [论文精修 PaperCraft](https://github.com/zlsjtj/PaperCraft)
+[看前后对照](#从处理流程转向对象变化) · [开始使用](#开始使用) · [历史版本 1.27.1](https://github.com/zlsjtj/FigureCraft/releases/tag/v1.27.1) · [论文精修 PaperCraft](https://github.com/zlsjtj/PaperCraft)
 
 ![三层材料共同卷绕，尾端局部展示连续结构中的层序](examples/co-wound-laminate/selected/figure.png)
 
 三层材料共同卷绕。主体交代连续结构，尾端局部露出层序，颜色始终对应同一层。[查看输入、源码和其他构图](examples/co-wound-laminate/README.md)。本页均为原创构造示例，不代表实验结果。
+
+[32 秒看一次构图修改与最终文件](docs/quick-tour/tour.gif) · [静态逐步版与源码链接](docs/quick-tour/README.md)
 
 ## 从处理流程转向对象变化
 
@@ -34,13 +36,15 @@
 
 在可以读写本地文件的 Codex 环境中使用。安装前请查看[许可说明](LICENSE.md)，已有同名技能目录时先备份。
 
-下载 [Release 中的技能包](https://github.com/zlsjtj/FigureCraft/releases/latest)，将 `scientific-figure-studio` 放进 `~/.codex/skills/`；设置了 `CODEX_HOME` 时放进该目录下的 `skills/`。也可以用 PowerShell 安装：
+用 PowerShell 安装当前默认分支，包含 MIT 许可证：
 
 ```powershell
 $skillRoot = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { Join-Path $env:USERPROFILE '.codex/skills' }
 New-Item -ItemType Directory -Force -Path $skillRoot | Out-Null
 git clone https://github.com/zlsjtj/FigureCraft.git (Join-Path $skillRoot 'scientific-figure-studio')
 ```
+
+也可以[下载当前源码 ZIP](https://github.com/zlsjtj/FigureCraft/archive/refs/heads/main.zip)，解压后将仓库文件夹改名为 `scientific-figure-studio`，放入 `~/.codex/skills/`；设置了 `CODEX_HOME` 时使用它下面的 `skills/` 目录。
 
 在新的 Codex 会话中附上原图或研究材料，然后这样说：
 
@@ -75,4 +79,4 @@ git clone https://github.com/zlsjtj/FigureCraft.git (Join-Path $skillRoot 'scien
 
 [测试与检查](docs/usage.md#检查与复用) · [来源说明](provenance/upstream-sources.md) · [许可说明](LICENSE.md)
 
-当前自有内容尚未指定开源许可证，相关使用与再分发授权请联系维护者。技能内容版本为 1.27.1；历史发布的文件清单对应其固定 Git 标签。
+自有代码、技能说明和原创示例采用 [MIT 许可](LICENSE)。第三方内容遵循各自许可，详见[许可说明](LICENSE.md)。技能内容版本为 1.27.1；历史发布的文件清单对应其固定 Git 标签。

@@ -1,0 +1,62 @@
+{
+  "scenes": [
+    {
+      "width": 1120,
+      "height": 760,
+      "overflow": [],
+      "images": [
+        {
+          "src": "../../examples/paired-placement/before/figure.png",
+          "width": 1890,
+          "height": 1182
+        }
+      ]
+    },
+    {
+      "width": 1120,
+      "height": 760,
+      "overflow": [],
+      "images": [
+        {
+          "src": "../../examples/paired-placement/selected/figure.png",
+          "width": 1890,
+          "height": 1182
+        }
+      ]
+    },
+    {
+      "width": 1120,
+      "height": 760,
+      "overflow": [],
+      "images": [
+        {
+          "src": "../../examples/co-wound-laminate/selected/figure.png",
+          "width": 1134,
+          "height": 674
+        }
+      ]
+    },
+    {
+      "width": 1120,
+      "height": 760,
+      "overflow": [],
+      "images": []
+    }
+  ],
+  "manual_navigation": "passed",
+  "duration_seconds": 32,
+  "source_sha256": {
+    "../../examples/paired-placement/before/figure.png": "9cb2544e31afaa5824c72ec060908de527fc3cbc79a606837bf4b8e64095eca0",
+    "../../examples/paired-placement/source/inputs/notes.md": "ca208a06b9386b7857908cb94a166ae3e851d1bbdce1faa6d9c83a211493e0a2",
+    "../../examples/paired-placement/selected/figure.png": "55ef60fa443611eed3f6eba60580856512fe1c4483bdd66403aeae76c66677cd",
+    "../../examples/paired-placement/selected/caption.txt": "359258faa077260212d128424fd2d77fa7d4d045ba3a310deb522247aff613f8",
+    "../../examples/co-wound-laminate/selected/figure.png": "9a47a0da5b1a366f5298fb36241adb3b48f79b1202f20ccaa97a90293d0c3650",
+    "../../examples/co-wound-laminate/README.md": "3e3eae2a16cb28d794bdee01b7395acd401460c8e358f2bdaea2df6cbf4ff8f7",
+    "../../examples/paired-placement/selected/figure.svg": "c4dfbfc9f9731965ca32b3e5a1476d17d214da946ea783b3d73fd2442e5e71d2",
+    "../../examples/paired-placement/selected/figure.pdf": "c9bf3d222f20f7b017a596c059f3a1a351b1baea32a6393ffbb20684de48e176",
+    "../../examples/paired-placement/source/build.py": "6a0d875d4340f13dbdbe999b828bec43dbcf503e30c954983815b21347b8b286",
+    "../../examples/paired-placement/model-review.md": "77a13443aa664f1a2be518f2e529986f91f74b007e7d01647ff7f27f1cb2d0cd"
+  },
+  "gif_sha256": "280844d501c675975129a93105af2302ebaff9e7b498079539447648f75e5c7c",
+  "scope": "固定公开案例的展示重建；不评价技能在新任务上的生成质量"
+}
