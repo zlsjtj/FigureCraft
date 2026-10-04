@@ -1,28 +1,40 @@
 # FigureCraft｜科研绘图与配色
 
-FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑源、SVG、PDF、PNG 和检查记录；混合表面的可编辑范围单独说明。
+把研究中的结构、动作和关系画清楚。用于 Codex 的科研绘图 skill，提供可修改的图源和用于论文的导出文件。
 
-当前内容版本 **1.27.1**，调用标识 **`$scientific-figure-studio`**。
+[看前后对照](#从处理流程转向对象变化) · [开始使用](#开始使用) · [下载 1.27.1](https://github.com/zlsjtj/FigureCraft/releases/tag/v1.27.1) · [论文精修 PaperCraft](https://github.com/zlsjtj/PaperCraft)
 
-本轮让对象变化在真实参照环境中领读，比较并合并构图与标签的优点。共享放置图已实际重画；新材料旧、新版比较没有整体胜者，得失与评后改进均保留。
+![三层材料共同卷绕，尾端局部展示连续结构中的层序](examples/co-wound-laminate/selected/figure.png)
 
-本次公开版本汇总近期经过验证的图文交付改进。[验证记录](provenance/validation-1.27.1.md)说明实际得失、技术检查和未验证范围。内容版本用于识别文件，不能代表审稿或审美认证。
+三层材料共同卷绕。主体交代连续结构，尾端局部露出层序，颜色始终对应同一层。[查看输入、源码和其他构图](examples/co-wound-laminate/README.md)。本页均为原创构造示例，不代表实验结果。
 
-![同一几何的整体与尾端裁切，原创DEMO](examples/co-wound-laminate/selected/figure.png)
+## 从处理流程转向对象变化
 
-[可释放支架](examples/seated-support/README.md)补充了一个新材料首图的真实失误与修复：同一几何下，凹槽与脚的隐藏表面怎样被正确遮住。正文、初次图、修后图和源码均保留，评后修复不记为首次成功。
+两路图像使用同一份放置记录。原图把计算、分支和重采样都放在主画面；改图让输入与放置后的对象上下对应，共用记录留在中间。读者可以直接追踪“哪个对象去了哪里”。
 
-## 其他示例
+<table>
+<tr><th width="50%">原图：处理步骤占据主体</th><th width="50%">改图：输入与结果直接对应</th></tr>
+<tr>
+<td><a href="examples/paired-placement/before/figure.png"><img src="examples/paired-placement/before/figure.png" alt="原图：配准选择、重采样及坐标映射分散在多个处理框中"></a></td>
+<td><a href="examples/paired-placement/selected/figure.png"><img src="examples/paired-placement/selected/figure.png" alt="改图：两路图像分别上下对应，共用放置记录通过无箭头支线连接"></a></td>
+</tr>
+</table>
 
-以下是原创结构示意，包含六个包覆颗粒、两层支撑和同一颗粒的局部视图。尺寸为示意值，不表示实验结果。
+两张图都按 **160 × 100 mm** 设计，标签没有缩小。无箭头支线表示读取同一记录，箭头表示重采样；部分选择规则和限定转入图注。上面是缩略预览，点击可看原图。[完整对照、图注和重建方法](examples/paired-placement/README.md)
 
-![整体与斜剖面](examples/material-polished-v17/A/figure.png)
+## 不同的问题，用不同的画法
 
-![涂层开口与完整曲面内核](examples/material-polished-v17/B/figure.png)
+![支架整体、脚槽剖面与抬离后的状态](examples/display-support-contact/selected/candidate-A-final2/figure.png)
 
-A 同时切开涂层和内核；B 只打开涂层，保留内核曲面。两者使用不同几何，局部放大不会算成新增颗粒。[源脚本](examples/material-polished-v17/build_material_v17.py)与导出的 SVG 均可编辑。这是矢量 2.5D，不是三维实体仿真。
+这个支架需要说明的是“撑杆脚可以从开放槽中抬离”。整体图保留装配关系，剖面露出接触方式，释放状态显示间隙。[两种构图的选择过程与源码](examples/display-support-contact/README.md)
 
-## 安装与调用
+机制图、材料结构、硬件连接和定量结果有不同的表达任务。空间感用于解释形体与遮挡；数据图保留准确的尺度、单位和不确定性，不用透视制造差异。更多例子：[包覆与剖面](examples/material-polished-v17/) · [共享参考](examples/common-reference-demo/README.md) · [箱角解锁](examples/bin-latch/README.md)。
+
+## 开始使用
+
+在可以读写本地文件的 Codex 环境中使用。安装前请查看[许可说明](LICENSE.md)，已有同名技能目录时先备份。
+
+下载 [Release 中的技能包](https://github.com/zlsjtj/FigureCraft/releases/latest)，将 `scientific-figure-studio` 放进 `~/.codex/skills/`；设置了 `CODEX_HOME` 时放进该目录下的 `skills/`。也可以用 PowerShell 安装：
 
 ```powershell
 $skillRoot = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { Join-Path $env:USERPROFILE '.codex/skills' }
@@ -30,58 +42,37 @@ New-Item -ItemType Directory -Force -Path $skillRoot | Out-Null
 git clone https://github.com/zlsjtj/FigureCraft.git (Join-Path $skillRoot 'scientific-figure-studio')
 ```
 
-已有同名目录时先备份。在新会话中显式调用，例如：
+在新的 Codex 会话中附上原图或研究材料，然后这样说：
 
-> 使用 $scientific-figure-studio 重画这张机制图。先核对对象、关系和数量，再设计构图与语义配色。按 160 mm 入稿宽度检查字号，保留源文件，给出实际前后对照和未解决项。
-
-160 mm 只是这个例子的目标尺寸，应按实际版式调整。只换色的请求会锁定内容和布局；重设计可以改变构图，但不能擅自补科学机制或测量值。
-
-## 运行示例
-
-需要 Python，以及自己提供的可用字体。PNG 导出需要 Poppler 的 `pdftoppm`；字体和原生工具不随仓库分发。
-
-```powershell
-python -m pip install -r requirements-core.txt
-$figureFont = (Join-Path $env:WINDIR 'Fonts/arial.ttf')
-$figureCjk = (Join-Path $env:WINDIR 'Fonts/msyh.ttc')
-$figureRaster = (Get-Command pdftoppm).Source
-python scripts/probe_runtime.py --font $figureFont --cjk-font $figureCjk --pdftoppm $figureRaster --out runtime.json
-python examples/material-polished-v17/build_material_v17.py --out material-source
-python scripts/render_figure.py material-source/scene_A.json --out material-A --font $figureFont --pdftoppm $figureRaster --qa-views
-python scripts/check_figure.py material-A --placement-width-mm 160
+```text
+使用 $scientific-figure-studio 重画这张机制图。
+先判断读者最需要看懂的关系，再安排对象、连接和必要标签。
+在科学含义不变的前提下，减少图内解释，让图形承担更多说明。
+按 160 mm 入稿宽度检查，给我可编辑图源、SVG/PDF/PNG、图注和前后对照。
 ```
 
-命令在仓库目录执行，输出目录应为新目录。其他系统替换成实际字体及工具路径。`--qa-views` 输出灰度和选定色觉模拟，仍需看图；字体覆盖以实际文本为准。Windows 的 Arial 不覆盖所有数学符号，含下标的测试使用 Segoe UI。
+160 mm 是这个示例的目标宽度，可以换成你的论文版式。只有配色需要调整时，直接说明保留内容与构图即可。
 
-渲染器接收场景 JSON，不直接从自然语言推断科学关系。新图先读材料、确定结构，再编写场景或沿用已有绘图代码。接口见[场景规格](references/figure-spec.md)和[对象组件](references/scene-components.md)。
+读取材料和设计构图由 Codex 完成，导出需要 Python 依赖、字体和 Poppler。[依赖与可直接运行的示例命令](docs/usage.md)
 
-已有 SVG 可直接使用 `audit_svg_labels.py`，不必改成场景 JSON。它检查实际字号、有限直线穿字和声明的标签区域；CSS、曲线等未覆盖内容仍待审，见[使用方法](references/existing-svg-review.md)。
+## 拿到的文件
 
-## 检查与复用
+| 文件 | 用途 |
+|---|---|
+| Python / 场景文件 / SVG | 保留对象、布局、颜色和生成方式，便于继续修改 |
+| PDF 与 PNG | 用于排版、预览和插入稿件 |
+| 图注与前后对照 | 说明如何读图，以及这次改了哪些关系和标签 |
 
-```powershell
-python tests/run_all_tests.py --out test-output/current --font (Join-Path $env:WINDIR 'Fonts/segoeui.ttf') --cjk-font $figureCjk --label-font $figureFont --bold-font (Join-Path $env:WINDIR 'Fonts/arialbd.ttf') --pdftoppm $figureRaster
-python tests/run_svg_label_tests.py --out test-output/svg-labels --font $figureFont --bold-font (Join-Path $env:WINDIR 'Fonts/arialbd.ttf')
-python -m unittest discover -s tests -p "test_*.py"
-python scripts/measure_label_load.py figure.svg --width-mm 160 --out label-load.json
-```
+曲面示例可能采用“位图表面 + 矢量标签”的混合输出，表面要通过源码修改后重建；各示例会说明可编辑范围。字体和第三方原生工具需要自行提供。
 
-统一入口已包含语法、原八组回归、SVG标签测试、自动发现的 `test_*.py` 和README材料示例的源码生成/渲染/检查；后两条单独测试命令用于局部复验。原先 run_all_tests.py 只覆盖八组，README另列的单元测试没有被它调用，这个缺口已修复。缺依赖、失败、超时和跳过分别记录；技术通过不意味着科学、视觉或作者审阅通过。具体执行见 [当前记录](provenance/current-validation.md)。
+## 使用边界与反馈
 
-技术检查、科学内容审阅和视觉审阅分别报告。`status` 是旧技术状态字段；判断完整状态应看 `overall_status`。缺少科学或视觉审阅时保留 `REVIEW_REQUIRED`，脚本不会替作者确认图片。
+科学关系和数据以提供的材料为准。没有源数据时不会从低清曲线图中补造测量值；生成后仍需检查实际入稿页面。示例包含首次方案、修改和模型评阅，尚无真人审美认可的结论，也不代表任何期刊的官方风格。
 
-`examples/` 包含独立场景和示意数据，`templates/` 提供语义契约及审阅模板。重复局部图、装饰面和图例绑定原对象；量化图保持二维。机制图主标签按实际尺寸以 10–11 pt 为起点，小于 8 pt 的情况需要修复或注明。
+如果某条连线容易读错，或某个标签入稿后太小，欢迎[提交 Issue](https://github.com/zlsjtj/FigureCraft/issues/new)，附上允许公开的示例和目标尺寸。请勿上传未获授权的论文或图片。
 
-## 来源与边界
+觉得这些图和源码有用，可以点个 **Star** 留作绘图参考。
 
-当前支持有限可检查的矢量 2.5D，不能自动证明科学含义，也不覆盖任意三维实体、所有 PDF 编辑器和全部色觉条件。每次改图仍需检查最终入稿页面。
+[测试与检查](docs/usage.md#检查与复用) · [来源说明](provenance/upstream-sources.md) · [许可说明](LICENSE.md)
 
-PDF 字号检查器来自固定版本的 nature-skills，原始许可证和 NOTICE 保留在 `vendor/`，其他来源见[来源说明](provenance/upstream-sources.md)。参考截图和字体未随仓库发布，配色标注不代表任何期刊的官方规范。许可状态见 [LICENSE.md](LICENSE.md)。
-
-公开仓库保留当前通用代码、示例和测试；本机路径、私人论文、完整代理日志和重复历史输出留在本地归档。
-
-[共享参考与独立记录案例](examples/common-reference-demo/README.md)保留原有两种构图；[继续开发的成图](examples/common-reference-demo/dev/REVIEW.md)把对象辨识和就近标签结合起来。开发成图与独立新任务的效果分开记录，没有将新版选作全面优胜者。
-
-[箱角解锁新材料试用](examples/bin-latch/README.md)保存普通提示、旧技能、新技能的首次产物与匿名比较。新版的状态对照更直接，但并非全面胜出；反馈后修复单独记录。
-
-[两路共用放置记录](examples/paired-placement/README.md)展示如何从处理框转向对象变化，并保留同尺寸前后图、取舍理由和生成源码。
+当前自有内容尚未指定开源许可证，相关使用与再分发授权请联系维护者。技能内容版本为 1.27.1；历史发布的文件清单对应其固定 Git 标签。
