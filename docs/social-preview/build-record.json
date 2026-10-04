@@ -1,0 +1,107 @@
+{
+  "title": "FigureCraft｜科研绘图与配色",
+  "layout_sha256": "59f630380ecc11cf6a18d93c31b140d9266ee8fdb87ef12aeedce71f1c46dabf",
+  "source_files": {
+    "examples/co-wound-laminate/README.md": "3e3eae2a16cb28d794bdee01b7395acd401460c8e358f2bdaea2df6cbf4ff8f7",
+    "examples/co-wound-laminate/selected/figure.svg": "df4bf38ca3ec2a7cbb806df1dc74f9bc1468e3e4666c62955d1e6dc0ab73646f"
+  },
+  "source_images": [
+    {
+      "source": "examples/co-wound-laminate/selected/figure.svg",
+      "object_id": "assembly",
+      "source_sha256": "df4bf38ca3ec2a7cbb806df1dc74f9bc1468e3e4666c62955d1e6dc0ab73646f",
+      "pixel_file_sha256": "0b3ace38a938be33e12912bbc05a820d46beb918d1d13dfe94a31bac119ee83c"
+    }
+  ],
+  "png_size": [
+    1280,
+    640
+  ],
+  "png_bytes": 96576,
+  "text_bounds": [
+    {
+      "text": "FigureCraft",
+      "x": 56,
+      "baseline": 91,
+      "width": 291.0146484375,
+      "size": 54
+    },
+    {
+      "text": "科研绘图与配色",
+      "x": 59,
+      "baseline": 139,
+      "width": 189.0,
+      "size": 27
+    },
+    {
+      "text": "画清结构",
+      "x": 58,
+      "baseline": 259,
+      "width": 192.0,
+      "size": 48
+    },
+    {
+      "text": "讲明关系",
+      "x": 58,
+      "baseline": 325,
+      "width": 192.0,
+      "size": 48
+    },
+    {
+      "text": "三层材料，共同卷绕。",
+      "x": 61,
+      "baseline": 390,
+      "width": 260.0,
+      "size": 26
+    },
+    {
+      "text": "颜色对应材料，空间感解释结构。",
+      "x": 61,
+      "baseline": 432,
+      "width": 360.0,
+      "size": 24
+    },
+    {
+      "text": "SVG / PDF / PNG · 可编辑图源",
+      "x": 58,
+      "baseline": 551,
+      "width": 348.52294921875,
+      "size": 25
+    },
+    {
+      "text": "原创构造示例 · 原图局部",
+      "x": 58,
+      "baseline": 597,
+      "width": 205.81787109375,
+      "size": 19
+    },
+    {
+      "text": "zlsjtj/FigureCraft",
+      "x": 1040,
+      "baseline": 597,
+      "width": 144.47265625,
+      "size": 20
+    }
+  ],
+  "font_sha256": {
+    "regular": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+    "bold": "4508821b3dffe01f0ef5e5326a3e60df705a44633858811f67b6982dce3f6ee6",
+    "latin": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "latin-bold": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+  },
+  "font_families": {
+    "regular": "Microsoft YaHei",
+    "bold": "Microsoft YaHei",
+    "latin": "Arial",
+    "latin-bold": "Arial"
+  },
+  "pdf_text_checked": true,
+  "files": {
+    "social-preview.pdf": "a5d065e82132f59e6000693a1db08df20576752c306c7c12f0c77091a3c1a1d5",
+    "social-preview.png": "28706a9fb345d8f0e21c3128c47c0c85ff8109f3598da4ef2026eefe12f31021",
+    "social-preview.svg": "0235cfacc32e40295a23dda03cdf5d983a5b0c086d109731b120c133372f86e6"
+  },
+  "scope": "既有公开案例的分享排版，不是新的科研成果、技能新生成或用户转化验证；SVG 文字编辑需要相应字体。",
+  "visual_review": "NOT_PERFORMED_BY_SCRIPT",
+  "published": false
+}

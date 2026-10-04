@@ -1,0 +1,10 @@
+{
+  "PaperCraft": {
+    "base_commit": "a7511f13e72928cbebc1808e4f60f96a395ecde4",
+    "skill_sha256": "326ed097cda73f82c3b8c5c802644188b13e79f4adbbd3e9ec20ca65855bb73a"
+  },
+  "FigureCraft": {
+    "base_commit": "af6ef6cd0528e85b729d6fc9a9852b05987406a1",
+    "skill_sha256": "c14787a78f91e9a5d56eddb43ca21fa7322d0d9d8b95cddbeadd8d6012a04a43"
+  }
+}

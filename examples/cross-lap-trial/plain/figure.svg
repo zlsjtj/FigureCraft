@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="100mm" viewBox="0 0 160 100">
+<title>Cross-lap members: complementary half-depth notches</title>
+<desc>Constructed geometry demonstration. The same two members are shown separated, assembled, and in an enlarged section through the crossing. A occupies the lower half and B the upper half at the centre.</desc>
+<rect x="0" y="0" width="160" height="100" fill="#FFFFFF"/>
+<g id="heading-and-member-key">
+<text x="8" y="8" font-family="Arial, sans-serif" font-size="4.0" fill="#24343B" text-anchor="start">Cross-lap: complementary half-depth notches</text>
+<text x="152" y="8" font-family="Arial, sans-serif" font-size="2.8" fill="#52646B" text-anchor="end">DEMO</text>
+<polygon points="8.0000,12.0000 11.0000,12.0000 11.0000,15.0000 8.0000,15.0000" fill="#62BDC0" stroke="#278C93" stroke-width="0.16" stroke-linejoin="round"/>
+<text x="13" y="14.7" font-family="Arial, sans-serif" font-size="3.0" fill="#24343B" text-anchor="start">A   100 × 20 × 16 mm</text>
+<polygon points="86.0000,12.0000 89.0000,12.0000 89.0000,15.0000 86.0000,15.0000" fill="#F0B971" stroke="#C77C38" stroke-width="0.16" stroke-linejoin="round"/>
+<text x="91" y="14.7" font-family="Arial, sans-serif" font-size="3.0" fill="#24343B" text-anchor="start">B   80 × 20 × 16 mm</text>
+<polyline points="8.0000,19.0000 152.0000,19.0000" fill="none" stroke="#D8E2E5" stroke-width="0.25" stroke-linejoin="round"/>
+<text x="8" y="25" font-family="Arial, sans-serif" font-size="3.3" fill="#24343B" text-anchor="start">(a) Separated for explanation</text>
+<text x="86" y="25" font-family="Arial, sans-serif" font-size="3.3" fill="#24343B" text-anchor="start">(b) Assembled</text>
+</g>
+<g id="separated-same-members">
+<polygon points="22.6000,65.5800 39.0000,72.3800 32.8000,77.1800 16.4000,70.3800" fill="#62BDC0" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="39.0000,76.1400 32.8000,80.9400 32.8000,77.1800 39.0000,72.3800" fill="#278C93" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="39.0000,76.1400 47.2000,79.5400 41.0000,84.3400 32.8000,80.9400" fill="#62BDC0" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="16.4000,77.9000 57.4000,94.9000 57.4000,87.3800 41.0000,80.5800 41.0000,84.3400 32.8000,80.9400 32.8000,77.1800 16.4000,70.3800" fill="#369FA5" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="47.2000,75.7800 63.6000,82.5800 57.4000,87.3800 41.0000,80.5800" fill="#62BDC0" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="63.6000,90.1000 57.4000,94.9000 57.4000,87.3800 63.6000,82.5800" fill="#278C93" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="39.0000,47.0000 47.2000,50.4000 47.2000,46.6400 39.0000,43.2400" fill="#D9934D" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="56.5000,43.2000 47.2000,50.4000 47.2000,46.6400 41.0000,51.4400 41.0000,55.2000 31.7000,62.4000 31.7000,54.8800 56.5000,35.6800" fill="#C77C38" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="48.3000,32.2800 56.5000,35.6800 31.7000,54.8800 23.5000,51.4800" fill="#F0B971" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="23.5000,59.0000 31.7000,62.4000 31.7000,54.8800 23.5000,51.4800" fill="#D9934D" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+</g>
+<g id="assembled-same-members">
+<polygon points="138.8100,37.9940 128.2080,46.2020 128.2080,37.6292 138.8100,29.4212" fill="#C77C38" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="100.1640,26.0012 118.8600,33.7532 111.7920,39.2252 93.0960,31.4732" fill="#62BDC0" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="93.0960,40.0460 111.7920,47.7980 111.7920,39.2252 93.0960,31.4732" fill="#369FA5" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="129.4620,25.5452 138.8100,29.4212 110.5380,51.3092 101.1900,47.4332" fill="#F0B971" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="128.2080,37.6292 146.9040,45.3812 139.8360,50.8532 121.1400,43.1012" fill="#62BDC0" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="121.1400,51.6740 110.5380,59.8820 110.5380,51.3092 121.1400,43.1012" fill="#C77C38" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="121.1400,51.6740 139.8360,59.4260 139.8360,50.8532 121.1400,43.1012" fill="#369FA5" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="146.9040,53.9540 139.8360,59.4260 139.8360,50.8532 146.9040,45.3812" fill="#278C93" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="101.1900,56.0060 110.5380,59.8820 110.5380,51.3092 101.1900,47.4332" fill="#D9934D" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+</g>
+<g id="separation-guide">
+<polyline points="73.0000,69.0000 73.0000,48.0000" fill="none" stroke="#52646B" stroke-width="0.34" stroke-linejoin="round"/>
+<polygon points="73.0000,48.0000 71.9500,50.1000 74.0500,50.1000" fill="#52646B" stroke="#52646B" stroke-width="0.1" stroke-linejoin="round"/>
+<text x="76" y="75" font-family="Arial, sans-serif" font-size="3.0" fill="#52646B" text-anchor="end">Lift B</text>
+</g>
+<g id="centre-section-same-joint">
+<text x="86" y="68.5" font-family="Arial, sans-serif" font-size="3.3" fill="#24343B" text-anchor="start">(c) Same joint: centre section</text>
+<text x="86" y="73" font-family="Arial, sans-serif" font-size="2.9" fill="#52646B" text-anchor="start">Crossing only · y = 0</text>
+<polygon points="87.0000,87.0000 114.5000,87.0000 114.5000,98.0000 87.0000,98.0000" fill="#62BDC0" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<polygon points="87.0000,76.0000 114.5000,76.0000 114.5000,87.0000 87.0000,87.0000" fill="#F0B971" stroke="#36525B" stroke-width="0.2" stroke-linejoin="round"/>
+<text x="100.75" y="83" font-family="Arial, sans-serif" font-size="4.0" fill="#24343B" text-anchor="middle">B</text>
+<text x="100.75" y="94" font-family="Arial, sans-serif" font-size="4.0" fill="#24343B" text-anchor="middle">A</text>
+<polyline points="114.5000,76.0000 119.0000,76.0000" fill="none" stroke="#36525B" stroke-width="0.23" stroke-linejoin="round"/>
+<polyline points="114.5000,87.0000 119.0000,87.0000" fill="none" stroke="#36525B" stroke-width="0.23" stroke-linejoin="round"/>
+<polyline points="114.5000,98.0000 119.0000,98.0000" fill="none" stroke="#36525B" stroke-width="0.23" stroke-linejoin="round"/>
+<text x="121" y="77" font-family="Arial, sans-serif" font-size="2.9" fill="#24343B" text-anchor="start">Flush top · z = 16</text>
+<text x="121" y="88" font-family="Arial, sans-serif" font-size="2.9" fill="#24343B" text-anchor="start">Contact · z = 8</text>
+<text x="121" y="99" font-family="Arial, sans-serif" font-size="2.9" fill="#24343B" text-anchor="start">Flush base · z = 0</text>
+</g>
+</svg>

@@ -2,9 +2,32 @@
 
 第一次使用可先走[短任务入口](first-use.md)；想先看效果，可按问题选[三个代表案例](examples.md)。
 
-[返回首页](../README.md)
+[返回首页](../README.md) · [多宿主安装](install.md) · [安装包与本轮验证](multihost-validation.md)
 
 这里收录依赖、脚本命令和检查方法。命令从仓库根目录运行；输出目录应为新目录。先通过宿主模型完成写作或构图，再用这些工具执行受控修改和导出。
+
+技能 ZIP 包含当前安装、试用和依赖说明，可直接运行包内脚本。下文的 `tests/` 回归命令用于完整源码仓库；上传包不附整套测试。未收录的拓展示例链接指向 GitHub，查看它们需要网络；本地候选新增的下载链接须等对应文件发布后才能在线使用。已有 ZIP 可直接安装，首次材料也可用包内 `scripts/first_run.py` 准备。
+
+## 先确认执行环境
+
+如果只是使用宿主完成任务，直接交给它 TASK.md 与材料即可。下面的命令用于手动运行脚本；准备材料不需要安装整套依赖。
+
+```text
+python -c "import sys; print(sys.executable)"
+```
+
+先看这条命令实际指向哪里。本机就曾指向 LibreOffice 自带的 Python：材料准备成功，绘图却缺少包。若是其他软件的内置环境，先选用宿主提供的运行时或独立 Python；不要直接往办公软件目录安装依赖。`ModuleNotFoundError` 时，应在**执行脚本的同一 Python 环境**中检查包，而不是反复用另一个 pip 安装。
+
+使用自己管理的独立 Python 时，推荐新建隔离环境。Windows PowerShell 示例（先确认 `python` 是你选定的解释器）：
+
+```powershell
+python -m venv ../FigureCraft-env
+$skillPython = (Resolve-Path '../FigureCraft-env/Scripts/python.exe').Path
+& $skillPython -m pip install -r requirements-core.txt
+& $skillPython scripts/first_run.py --out ../FigureCraft-try
+```
+
+不需要激活环境；后面的 `python ...` 命令都改为 `& $skillPython ...`。macOS / Linux 使用同一环境的 `bin/python`。已由宿主准备好依赖时可直接使用其解释器，无需重复创建环境。字体、LibreOffice 和 Poppler 仍是单独的原生依赖；找不到 `pdftoppm` 时提供实际路径，不能把 PDF 已生成当成 PNG 也已导出。
 
 ## 运行示例
 

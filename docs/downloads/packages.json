@@ -1,0 +1,26 @@
+{
+  "skill": "scientific-figure-studio",
+  "version": "1.28.0",
+  "packages": {
+    "scientific-figure-studio-claude.zip": {
+      "sha256": "c28ec4d6cf343a270c1e852c3c51b9701e1b82f35d46acd288d4229c45d1f806",
+      "bytes": 5220924,
+      "host": "claude",
+      "files": 159,
+      "host_execution": "NOT_RUN_BY_PACKAGER"
+    },
+    "scientific-figure-studio-workbuddy.zip": {
+      "sha256": "2dd237b981741a8b92f5d9c0e8a5f177737303aac890b7a123b3ec3de18da946",
+      "bytes": 5221034,
+      "host": "workbuddy",
+      "files": 159,
+      "host_execution": "NOT_RUN_BY_PACKAGER"
+    },
+    "scientific-figure-studio-first-use.zip": {
+      "sha256": "6663bf8b1e37b091a345272658037b065405f209eb5d76d30164360131f299b8",
+      "bytes": 4786,
+      "purpose": "RAW_MATERIALS_ONLY",
+      "generation": "NOT_RUN"
+    }
+  }
+}

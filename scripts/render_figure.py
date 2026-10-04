@@ -1,9 +1,7 @@
 """Render a Studio JSON scene to editable SVG, vector PDF, and optional PNG."""
 from pathlib import Path
-import argparse,json,subprocess,shutil
-from figure_core import fonts,export_scene,sha
+import argparse,importlib.util,json,subprocess,shutil,sys
 from palette_tools import CVD
-from check_figure import check
 
 def qa_views(png,out):
     import numpy as np
@@ -21,6 +19,19 @@ def main():
     p.add_argument('--placement-width-mm',type=float,help='Final document placement width; scaled typography is checked separately')
     p.add_argument('--dpi',type=int,default=300);p.add_argument('--qa-views',action='store_true');p.add_argument('--view',choices=['normal','grayscale','deuteranopia'],default='normal')
     p.add_argument('--library',type=Path,default=Path(__file__).resolve().parents[1]/'assets/reference_palettes.json');a=p.parse_args()
+    # Keep --help usable before optional rendering packages have been installed.
+    required=['reportlab','pypdf']
+    if a.pdftoppm and a.pdftoppm.is_file():
+        required.append('PIL')
+        if a.qa_views:required.append('numpy')
+    missing=[name for name in required if importlib.util.find_spec(name) is None]
+    if missing:
+        p.exit(2,'Missing rendering dependencies: '+', '.join(missing)+'\n'
+               'Python: '+sys.executable+'\n'
+               'Choose the intended Python environment, then install requirements-core.txt there. '
+               'See docs/usage.md. No output was created.\n')
+    from figure_core import fonts,export_scene,sha
+    from check_figure import check
     try:
         if a.out.exists():raise ValueError('Output directory exists; use a new revision directory')
         if not 72<=a.dpi<=1200:raise ValueError('DPI must be 72..1200')

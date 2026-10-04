@@ -55,6 +55,25 @@ class FirstRunTests(unittest.TestCase):
         self.assertTrue(all(value == 'NOT_FOUND' for value in record['modules'].values()))
         self.assertEqual(record['render_execution'], 'NOT_RUN')
 
+    def test_environment_summary_distinguishes_missing_and_unprobed(self):
+        text = first_run.environment_summary({'python': 'selected-python', 'modules': {'PIL': 'NOT_FOUND'}})
+        self.assertIn('selected-python', text)
+        self.assertIn('PIL', text)
+        self.assertIn('材料已备齐', text)
+        text = first_run.environment_summary({'status': 'NOT_PROBED'})
+        self.assertIn('未检查本机环境', text)
+        self.assertNotIn('所用 Python', text)
+
+    def test_preparation_works_with_only_standard_library(self):
+        import subprocess, sys
+        with tempfile.TemporaryDirectory() as temp:
+            out = Path(temp) / '中文 task'
+            result = subprocess.run([sys.executable, '-S', str(ROOT / 'scripts/first_run.py'),
+                                     '--out', str(out)], capture_output=True, encoding='utf-8')
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertIn('未找到部分', result.stdout)
+            self.assertFalse((out / 'output').exists())
+
     def test_copy_failure_does_not_publish(self):
         with tempfile.TemporaryDirectory() as temp:
             out = Path(temp) / 'output'

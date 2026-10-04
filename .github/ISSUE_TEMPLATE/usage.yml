@@ -1,0 +1,29 @@
+name: 使用反馈
+description: 安装、改稿或绘图时遇到的问题
+body:
+  - type: dropdown
+    id: host
+    attributes:
+      label: 使用的工具
+      options: [Codex, Claude Code, Claude 网页或 Desktop, WorkBuddy, 其他]
+    validations:
+      required: true
+  - type: input
+    id: input
+    attributes:
+      label: 输入类型和技能版本
+      placeholder: 例如 Word 摘要，使用下载包中的版本
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期和实际结果
+      description: 写出复现步骤、报错或具体的阅读问题。
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: 可公开的小片段或截图（可选）
+      description: 请勿上传未获授权的全文、个人信息或密钥；匿名小例子即可。

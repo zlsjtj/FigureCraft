@@ -1,0 +1,27 @@
+{
+  "repository_url": "https://github.com/zlsjtj/FigureCraft",
+  "display_name": "FigureCraft｜科研绘图与配色",
+  "description_en": "Design scientific figures with accurate relationships, semantic colors and editable sources.",
+  "include": [
+    "SKILL.md",
+    "LICENSE",
+    "scripts",
+    "references",
+    "templates",
+    "agents",
+    "examples/paired-placement",
+    "examples/co-wound-laminate",
+    "examples/material-polished-v17",
+    "examples/common-reference-demo",
+    "assets",
+    "vendor",
+    "requirements-core.txt",
+    "package-files.json",
+    "docs/licensing.md",
+    "docs/usage.md",
+    "README.md",
+    "docs/install.md",
+    "docs/first-use.md",
+    "docs/multihost-validation.md"
+  ]
+}

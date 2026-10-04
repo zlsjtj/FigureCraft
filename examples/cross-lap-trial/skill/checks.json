@@ -1,0 +1,46 @@
+{
+  "source_sha256": "ef38262f13898c2b6c86d2dea6d8de32d27f4537762ef62058da16b97dbddec0",
+  "revision": "final",
+  "svg_width_mm": 160,
+  "svg_height_mm": 100,
+  "pdf_pages": 1,
+  "pdf_size_mm": [
+    159.99999749999998,
+    100.00001166666667
+  ],
+  "png_pixels": [
+    1890,
+    1182
+  ],
+  "minimum_font_pt": 8.7,
+  "text_bounds_issues": [],
+  "text_pair_bounds_overlaps": [],
+  "geometry_overlap_sample_count": 196,
+  "geometry_overlap_sample_failures": 0,
+  "exact_box_intersection": "A and B intersect only at their common z=8 boundary inside crossing; central occupied intervals [0,8] and [8,16] share no volume.",
+  "svg_image_count": 0,
+  "pdf_text": "a  Complementary notches\nb  Assembled\nA\nB\nUpper notch\nLower notch\nLower B\nEach notch crosses the full width\nFlush top and base\nc\nc  Crossing section\nSame A and B, at y = 0\nB\nA\n16\n8\n0\nz (mm)\ncontact\nTwo members, three views\nDEMO\n",
+  "technical_status": "PASS",
+  "visual_review_status": "SELF_REVIEW_COMPLETED",
+  "scientific_review_status": "PASS_WITHIN_CONSTRUCTED_GEOMETRY_SCOPE",
+  "author_acceptance": "NOT_RUN",
+  "limits": [
+    "Text bounding boxes are a basic screen; arbitrary line/face overlap requires viewing the image.",
+    "Projection visibility and exact visual contact are reviewed manually, not certified by sample-point occupancy.",
+    "Physical printing and editor interoperability are not tested."
+  ],
+  "overall_status": "AUTHOR_REVIEW_REQUIRED",
+  "visual_observations": [
+    "Normal, grayscale and one deuteranopia simulation were opened and inspected. A and B remain identifiable by labels, contour and section placement.",
+    "The final upper-notch leader ends on the visible A notch floor; the lower-notch leader ends on B's lower-notch boundary.",
+    "The central section shows touching z=8 boundaries with no gap or overlapping colored area.",
+    "The separated view retains some projected occlusion; the labeled central section carries the exact contact, and the actual 3D bounds do not intersect.",
+    "Fine antialiasing seams remain between some coplanar polygons in the raster assembly view. These are export seams, not modeled material boundaries."
+  ],
+  "independent_review": "NOT_RUN; later anonymous comparison reserved to parent task",
+  "rebuild_hash_match": {
+    "figure.svg": true,
+    "figure.pdf": true,
+    "figure.png": true
+  }
+}

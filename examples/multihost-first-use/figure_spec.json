@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "figure_id": "paired_translation_first_use",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "A and B read one immutable placement record and are resampled into separate mosaics.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    {
+      "path": "notes.md",
+      "sha256": "ca208a06b9386b7857908cb94a166ae3e851d1bbdce1faa6d9c83a211493e0a2"
+    },
+    {
+      "path": "results.csv",
+      "sha256": "22532073ad4146cbd91946300d2d0d3ae8cd14d04313bca68e04f062fc26d0a9"
+    },
+    {
+      "path": "rough.md",
+      "sha256": "90c57ed8ae7a36f999826fa7a33f3891c90b7efcec7bbb2cd284b6f1f76d3c2f"
+    }
+  ],
+  "forbidden_implications": [
+    "No claim of identical channel intensity or measured specimen appearance",
+    "No rotation correction",
+    "No correction of residual channel-specific shifts",
+    "Shared placement need not be globally correct",
+    "Mosaic frames are coordinate views, not physical positions"
+  ],
+  "entities": [
+    {
+      "id": "tileA",
+      "semantic_role": "A",
+      "description": "T5 channel A acquired plane"
+    },
+    {
+      "id": "tileB",
+      "semantic_role": "B",
+      "description": "T5 channel B acquired plane"
+    },
+    {
+      "id": "outputA",
+      "semantic_role": "A",
+      "description": "Independent A mosaic; one representative T5 placement"
+    },
+    {
+      "id": "outputB",
+      "semantic_role": "B",
+      "description": "Independent B mosaic; same T5 placement"
+    },
+    {
+      "id": "mapA",
+      "semantic_role": "neutral",
+      "description": "Resampling operation for channel A"
+    },
+    {
+      "id": "mapB",
+      "semantic_role": "neutral",
+      "description": "Resampling operation for channel B"
+    },
+    {
+      "id": "record",
+      "semantic_role": "record",
+      "description": "One immutable translation selected for T5"
+    }
+  ],
+  "relations": [
+    {
+      "id": "A-mapping",
+      "from": "tileA",
+      "to": "outputA",
+      "kind": "mapping",
+      "meaning": "Apply the shared translation during separate resampling; no physical motion",
+      "geometry": {
+        "item_id": "A-mapping-line",
+        "from": [
+          203,
+          160
+        ],
+        "to": [
+          472,
+          160
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "A-mapping-head",
+          "tip": [
+            472,
+            160
+          ],
+          "base": [
+            464.0,
+            160.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "B-mapping",
+      "from": "tileB",
+      "to": "outputB",
+      "kind": "mapping",
+      "meaning": "Apply the shared translation during separate resampling; no physical motion",
+      "geometry": {
+        "item_id": "B-mapping-line",
+        "from": [
+          203,
+          368
+        ],
+        "to": [
+          472,
+          368
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "B-mapping-head",
+          "tip": [
+            472,
+            368
+          ],
+          "base": [
+            464.0,
+            368.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "shared-A",
+      "from": "record",
+      "to": "mapA",
+      "kind": "reference",
+      "meaning": "This resampling operation reads the same immutable T5 record",
+      "geometry": {
+        "item_id": "shared-A-line",
+        "from": [
+          344,
+          230
+        ],
+        "to": [
+          344,
+          160
+        ],
+        "arrow_required": false
+      }
+    },
+    {
+      "id": "shared-B",
+      "from": "record",
+      "to": "mapB",
+      "kind": "reference",
+      "meaning": "This resampling operation reads the same immutable T5 record",
+      "geometry": {
+        "item_id": "shared-B-line",
+        "from": [
+          344,
+          294
+        ],
+        "to": [
+          344,
+          368
+        ],
+        "arrow_required": false
+      }
+    }
+  ],
+  "exact_labels": [
+    "One placement, two mosaics",
+    "CONSTRUCTED DEMO",
+    "Paired input planes",
+    "Separate output mosaics",
+    "A",
+    "T5",
+    "T5",
+    "Resample A",
+    "B",
+    "T5",
+    "T5",
+    "Resample B",
+    "T5 placement",
+    "(84, 3) px",
+    "96 × 96 px per plane",
+    "Shared record; separate resampling"
+  ],
+  "locked_values": {
+    "tile_id": "T5",
+    "plane_size_px": [
+      96,
+      96
+    ],
+    "translation_px": [
+      84,
+      3
+    ],
+    "input_fiducial": [
+      10,
+      18
+    ],
+    "output_fiducial": [
+      94,
+      21
+    ],
+    "score_gate": 0.8
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "A": {
+      "base": "#286383"
+    },
+    "B": {
+      "base": "#975426"
+    },
+    "record": {
+      "base": "#596C78"
+    },
+    "neutral": {
+      "base": "#CED7DE"
+    }
+  },
+  "layout": {
+    "archetype": "paired_object_rows_shared_record",
+    "reading_order": "left-to-right within each channel; central record serves both"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 160,
+    "view_width": 800,
+    "view_height": 500,
+    "font_profile": "generic_readable_draft",
+    "placement_width_mm": 160
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 800,
+      "h": 500,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "shared-B-line",
+      "type": "line",
+      "points": [
+        [
+          344,
+          294
+        ],
+        [
+          344,
+          368
+        ]
+      ],
+      "stroke": "#778B99",
+      "stroke_width": 1.6,
+      "relation": "shared-B",
+      "role": "relation"
+    },
+    {
+      "id": "shared-A-line",
+      "type": "line",
+      "points": [
+        [
+          344,
+          230
+        ],
+        [
+          344,
+          160
+        ]
+      ],
+      "stroke": "#778B99",
+      "stroke_width": 1.6,
+      "relation": "shared-A",
+      "role": "relation"
+    },
+    {
+      "id": "heading",
+      "type": "text",
+      "text": "One placement, two mosaics",
+      "x": 34,
+      "y": 39,
+      "size": 24,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "text": "CONSTRUCTED DEMO",
+      "x": 766,
+      "y": 38,
+      "size": 15,
+      "align": "right",
+      "fill": "#596771"
+    },
+    {
+      "id": "left-head",
+      "type": "text",
+      "text": "Paired input planes",
+      "x": 85,
+      "y": 79,
+      "size": 19,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "right-head",
+      "type": "text",
+      "text": "Separate output mosaics",
+      "x": 495,
+      "y": 79,
+      "size": 19,
+      "align": "left",
+      "fill": "#24323B"
+    },
+    {
+      "id": "A-label",
+      "type": "text",
+      "text": "A",
+      "x": 40,
+      "y": 160,
+      "size": 22,
+      "align": "left",
+      "fill": "#286383"
+    },
+    {
+      "id": "A-plane",
+      "type": "rect",
+      "x": 88,
+      "y": 112,
+      "w": 96,
+      "h": 96,
+      "fill": "#E8F2F7",
+      "stroke": "#286383",
+      "stroke_width": 1.8,
+      "entity": "tileA",
+      "role": "A"
+    },
+    {
+      "id": "A-id",
+      "type": "text",
+      "text": "T5",
+      "x": 168,
+      "y": 194,
+      "size": 16,
+      "align": "right",
+      "fill": "#286383",
+      "background": "#E8F2F7",
+      "entity": "tileA"
+    },
+    {
+      "id": "A-fiducial",
+      "type": "circle",
+      "x": 98,
+      "y": 130,
+      "r": 3.8,
+      "fill": "#286383",
+      "background": "#E8F2F7",
+      "entity": "tileA"
+    },
+    {
+      "id": "A-frame",
+      "type": "rect",
+      "x": 498,
+      "y": 109,
+      "w": 238,
+      "h": 116,
+      "fill": "#FBFCFD",
+      "stroke": "#B9C7D0",
+      "stroke_width": 1.3,
+      "entity": "outputA"
+    },
+    {
+      "id": "A-placed",
+      "type": "rect",
+      "x": 582,
+      "y": 112,
+      "w": 96,
+      "h": 96,
+      "fill": "#E8F2F7",
+      "stroke": "#286383",
+      "stroke_width": 1.8,
+      "entity": "outputA",
+      "role": "A"
+    },
+    {
+      "id": "A-placed-id",
+      "type": "text",
+      "text": "T5",
+      "x": 662,
+      "y": 194,
+      "size": 16,
+      "align": "right",
+      "fill": "#286383",
+      "background": "#E8F2F7",
+      "entity": "outputA"
+    },
+    {
+      "id": "A-placed-fiducial",
+      "type": "circle",
+      "x": 592,
+      "y": 130,
+      "r": 3.8,
+      "fill": "#286383",
+      "background": "#E8F2F7",
+      "entity": "outputA"
+    },
+    {
+      "id": "A-mapping-line",
+      "type": "line",
+      "points": [
+        [
+          203,
+          160
+        ],
+        [
+          472,
+          160
+        ]
+      ],
+      "stroke": "#286383",
+      "stroke_width": 1.7,
+      "relation": "A-mapping",
+      "role": "relation"
+    },
+    {
+      "id": "A-mapping-head",
+      "type": "polygon",
+      "points": [
+        [
+          472,
+          160
+        ],
+        [
+          464.0,
+          163.36
+        ],
+        [
+          464.0,
+          156.64
+        ]
+      ],
+      "fill": "#286383",
+      "stroke": "#286383",
+      "stroke_width": 0,
+      "relation": "A-mapping",
+      "role": "relation"
+    },
+    {
+      "id": "A-resample",
+      "type": "text",
+      "text": "Resample A",
+      "x": 344,
+      "y": 143,
+      "size": 18,
+      "align": "center",
+      "fill": "#286383",
+      "entity": "mapA"
+    },
+    {
+      "id": "A-operation-point",
+      "type": "circle",
+      "x": 344,
+      "y": 160,
+      "r": 3.5,
+      "fill": "#286383",
+      "entity": "mapA"
+    },
+    {
+      "id": "B-label",
+      "type": "text",
+      "text": "B",
+      "x": 40,
+      "y": 368,
+      "size": 22,
+      "align": "left",
+      "fill": "#975426"
+    },
+    {
+      "id": "B-plane",
+      "type": "rect",
+      "x": 88,
+      "y": 320,
+      "w": 96,
+      "h": 96,
+      "fill": "#FCF1E8",
+      "stroke": "#975426",
+      "stroke_width": 1.8,
+      "entity": "tileB",
+      "role": "B"
+    },
+    {
+      "id": "B-id",
+      "type": "text",
+      "text": "T5",
+      "x": 168,
+      "y": 402,
+      "size": 16,
+      "align": "right",
+      "fill": "#975426",
+      "background": "#FCF1E8",
+      "entity": "tileB"
+    },
+    {
+      "id": "B-fiducial",
+      "type": "circle",
+      "x": 98,
+      "y": 338,
+      "r": 3.8,
+      "fill": "#975426",
+      "background": "#FCF1E8",
+      "entity": "tileB"
+    },
+    {
+      "id": "B-frame",
+      "type": "rect",
+      "x": 498,
+      "y": 317,
+      "w": 238,
+      "h": 116,
+      "fill": "#FBFCFD",
+      "stroke": "#B9C7D0",
+      "stroke_width": 1.3,
+      "entity": "outputB"
+    },
+    {
+      "id": "B-placed",
+      "type": "rect",
+      "x": 582,
+      "y": 320,
+      "w": 96,
+      "h": 96,
+      "fill": "#FCF1E8",
+      "stroke": "#975426",
+      "stroke_width": 1.8,
+      "entity": "outputB",
+      "role": "B"
+    },
+    {
+      "id": "B-placed-id",
+      "type": "text",
+      "text": "T5",
+      "x": 662,
+      "y": 402,
+      "size": 16,
+      "align": "right",
+      "fill": "#975426",
+      "background": "#FCF1E8",
+      "entity": "outputB"
+    },
+    {
+      "id": "B-placed-fiducial",
+      "type": "circle",
+      "x": 592,
+      "y": 338,
+      "r": 3.8,
+      "fill": "#975426",
+      "background": "#FCF1E8",
+      "entity": "outputB"
+    },
+    {
+      "id": "B-mapping-line",
+      "type": "line",
+      "points": [
+        [
+          203,
+          368
+        ],
+        [
+          472,
+          368
+        ]
+      ],
+      "stroke": "#975426",
+      "stroke_width": 1.7,
+      "relation": "B-mapping",
+      "role": "relation"
+    },
+    {
+      "id": "B-mapping-head",
+      "type": "polygon",
+      "points": [
+        [
+          472,
+          368
+        ],
+        [
+          464.0,
+          371.36
+        ],
+        [
+          464.0,
+          364.64
+        ]
+      ],
+      "fill": "#975426",
+      "stroke": "#975426",
+      "stroke_width": 0,
+      "relation": "B-mapping",
+      "role": "relation"
+    },
+    {
+      "id": "B-resample",
+      "type": "text",
+      "text": "Resample B",
+      "x": 344,
+      "y": 398,
+      "size": 18,
+      "align": "center",
+      "fill": "#975426",
+      "entity": "mapB"
+    },
+    {
+      "id": "B-operation-point",
+      "type": "circle",
+      "x": 344,
+      "y": 368,
+      "r": 3.5,
+      "fill": "#975426",
+      "entity": "mapB"
+    },
+    {
+      "id": "record-face",
+      "type": "rect",
+      "x": 258,
+      "y": 230,
+      "w": 172,
+      "h": 64,
+      "radius": 5,
+      "fill": "#EDF2F5",
+      "stroke": "#6D8290",
+      "stroke_width": 1.4,
+      "entity": "record"
+    },
+    {
+      "id": "record-title",
+      "type": "text",
+      "text": "T5 placement",
+      "x": 344,
+      "y": 254,
+      "size": 18,
+      "align": "center",
+      "fill": "#24323B",
+      "entity": "record"
+    },
+    {
+      "id": "record-value",
+      "type": "text",
+      "text": "(84, 3) px",
+      "x": 344,
+      "y": 279,
+      "size": 20,
+      "align": "center",
+      "fill": "#24323B",
+      "entity": "record"
+    },
+    {
+      "id": "source-size",
+      "type": "text",
+      "text": "96 × 96 px per plane",
+      "x": 88,
+      "y": 449,
+      "size": 17,
+      "align": "left",
+      "fill": "#596771"
+    },
+    {
+      "id": "shared-note",
+      "type": "text",
+      "text": "Shared record; separate resampling",
+      "x": 498,
+      "y": 449,
+      "size": 17,
+      "align": "left",
+      "fill": "#596771"
+    }
+  ],
+  "caption": "CONSTRUCTED DEMO. One T5 example is shown in two coordinate views. A selected translation of (84, 3) pixels is read by both channel resamplers (plain links); arrows denote application of that mapping, not physical motion. A local fiducial at (10, 18) maps to (94, 21) in each output. The planes have different stain intensities; only a representative paired fiducial is drawn. The record comes from A registration if its fixed score is at least 0.8, otherwise from stage metadata; B is not independently registered after fallback. Separate resampling also transforms the masks. Common placement does not correct residual channel-specific shifts or guarantee correct global placement. Frames show coordinate extents for this illustration, not a measured full mosaic boundary.",
+  "alt_text": "A and B read one immutable placement record and are resampled into separate mosaics. CONSTRUCTED DEMO. One T5 example is shown in two coordinate views. A selected translation of (84, 3) pixels is read by both channel resamplers (plain links); arrows denote application of that mapping, not physical motion. A local fiducial at (10, 18) maps to (94, 21) in each output. The planes have different stain intensities; only a representative paired fiducial is drawn. The record comes from A registration if its fixed score is at least 0.8, otherwise from stage metadata; B is not independently registered after fallback. Separate resampling also transforms the masks. Common placement does not correct residual channel-specific shifts or guarantee correct global placement. Frames show coordinate extents for this illustration, not a measured full mosaic boundary."
+}

@@ -1,0 +1,10 @@
+{
+  "paper": {
+    "A": "plain",
+    "B": "skill"
+  },
+  "figure": {
+    "A": "skill",
+    "B": "plain"
+  }
+}

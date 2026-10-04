@@ -1,44 +1,37 @@
-# 第一次用：从材料画一张图
+# 第一次用：画一张机制图
 
-先用公开的两路图像放置材料，做一张 160 × 100 mm 机制图。任务没有预先给出布局，成品和评阅不放入输入。
+先用公开的教学材料完成一个小任务。材料是构造示例，不需要上传未发表论文。先按[工具入口](install.md)安装技能。
 
-## 1. 准备材料
+## 直接拿材料试
 
-按[首页](../README.md#开始使用)安装后，在 PowerShell 运行：
+1. [下载试用材料包](downloads/scientific-figure-studio-first-use.zip)并解压。
+2. 本地工具读取整个目录；Claude 网页端上传 TASK.md 和 input/ 中的文件。
+3. 告诉所用工具：**使用 FigureCraft（scientific-figure-studio），执行 TASK.md，把结果放进独立 output/。**
 
-```powershell
-$skillRoot = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { Join-Path $env:USERPROFILE '.codex/skills' }
-python (Join-Path $skillRoot 'scientific-figure-studio/scripts/first_run.py') --out './FigureCraft-try'
-```
+包中只有原始材料和任务要求，没有改写答案或已选构图。不需要先运行准备脚本。导出文件需要宿主环境中的实际依赖；安装步骤与[依赖说明](usage.md)分开。
 
-`python` 要指向可用的 Python 3；若本机命令是 `python3`，相应替换。输出目录必须不存在，并放在技能文件夹外。命令只复制原始说明、草稿和结果表，生成 `TASK.md`；**不调用模型、不绘图，也不安装依赖**。材料全部是原创教学构造值。
+## 喜欢用命令行时
 
-## 2. 交给 Codex
-
-在一个新的 Codex 会话中，把路径换成上一步打印的绝对路径：
+在已安装技能的根目录运行：
 
 ```text
-请执行 C:/你的试用目录/FigureCraft-try/TASK.md 中的首次试用任务。
+python scripts/first_run.py --host codex --out ../FigureCraft-try
 ```
 
-Codex 应先判断这张图要解释什么，再决定对象、关系与标签，输出源码、SVG/PDF/PNG、英文图注和简短中文选择说明。输出放入独立 `output/`，原始材料保留。
+`--host` 可换成 `claude-code`、`claude` 或 `workbuddy`。不传时仍为 Codex，兼容旧命令。输出目录必须是新目录，且位于技能目录外。
 
-准备命令只需 Python 标准库；现有导出流程使用 ReportLab、Pillow、NumPy、pypdf，另需可用字体和 Poppler。`environment.json` 只是查找记录，未找到可能是程序不在 PATH 上；找到也不等于已导出成功。[依赖与工具说明](usage.md)提供后续命令。字体应使用你有权使用的文件，不随仓库分发。
+这条命令只复制材料、准备 TASK.md，不调用模型、不生成成品、不安装依赖。`claude` 使用相对附件路径；本地宿主的任务会指明实际技能路径。environment.json 是环境查找记录，不是运行结果。命令会显示所用 Python 和缺少的模块；材料准备成功不代表该 Python 已能导出成品。云端任务不检查本机 Python。
 
-## 3. 在实际尺寸下看
+## 拿到什么，怎么看
 
-用 PDF 阅读器按实际大小查看，或将图以 160 mm 宽插入文档。两路输入与输出能对应吗？共用关系和处理动作会不会读混？没有长句提示时，主要关系是否仍然清楚？细节不应靠缩小标签塞进去。
+得到可编辑图源、重建脚本、SVG/PDF/PNG、图注和简短中文说明。两路图像仍须使用同一份放置记录，画面不能引入材料未提供的物理位置。按 160 × 100 mm 看标签、对象和关系，不只检查放大的 PNG。
 
-完成后再看[公开案例](../examples/paired-placement/README.md)。它保留了不同构图及选择理由；不要求新生成图逐像素复刻。比较对象关系和阅读顺序，不只比较颜色。
+字体、模块或 PDF 渲染缺失时，应说明未完成的导出，不把文件存在当作视觉验收。作品效果仍需阅读和看图。
 
-## 只想重建现成图？
+完成后再看[公开案例](../examples/paired-placement/README.md)，比较它怎样组织解释，而非逐句或逐形照抄。首次试用与固定源码重建是两种检查，记录见[本轮范围](multihost-validation.md)。
 
-这与让技能重新生成不同。进入仓库中的 `examples/paired-placement`，先把字体和 Poppler 路径换成自己的，再运行：
+## 换成自己的材料
 
-```powershell
-python source/build.py --out rebuilt --variant vertical --font /path/to/regular.ttf --bold-font /path/to/bold.ttf --pdftoppm /path/to/pdftoppm
-```
+提供科学对象、关系、原图或数据，以及最终图宽。风格参考只用于构图与配色，不能代替研究事实。
 
-这会按已有源码重建选定构图。`rebuilt` 必须是新目录；Windows 可使用 `C:/Windows/Fonts/arial.ttf` 与 `arialbd.ttf`，但仍需确认文件存在及使用权限。输出可用于检查依赖和导出，不证明模型已经理解了新任务。
-
-准备器的保护性检查：`python tests/test_first_run.py`（在仓库根目录）。它也已纳入现有单元测试发现入口。[验证记录](first-use-validation.md)分别记录任务准备和固定源码重建。
+材料不足时先完成有依据的部分，缺项单独列出。保留原件，新结果另存。

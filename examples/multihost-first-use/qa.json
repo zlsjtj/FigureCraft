@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "status_meaning": "Backward-compatible alias of technical_status; use overall_status for readiness",
+  "technical_status": "PASS",
+  "scientific_review_status": "REVIEW_REQUIRED",
+  "visual_review_status": "REVIEW_REQUIRED",
+  "overall_status": "REVIEW_REQUIRED",
+  "scope": "Exact export hashes; emitted-object geometry and font metrics, declared-background contrast, PDF dimensions/text. Not a general rendered collision detector.",
+  "figure_id": "paired_translation_first_use",
+  "findings": [],
+  "semantic_constraints": {
+    "status": "PASS",
+    "scope": "Declared object sets/states and explicit endpoint/triangle geometry only; author meaning remains unverified",
+    "object_counts": [],
+    "directed_relations": [
+      {
+        "id": "A-mapping",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "B-mapping",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "shared-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "shared-B",
+        "status": "PASS",
+        "findings": []
+      }
+    ],
+    "count_scope": "NOT_DECLARED",
+    "findings": []
+  },
+  "placement": {
+    "status": "PASS",
+    "width_mm": 160,
+    "minimum_font_pt": 8.503937007874017,
+    "scope": "Declared scaled font sizes; inspect actual document pages for embedding effects"
+  },
+  "checks": {
+    "glyph_coverage": "PASS",
+    "SVG_parse": "PASS",
+    "PDF": "PASS",
+    "declared_object_counts": "REVIEW_REQUIRED",
+    "directed_relations": "PASS",
+    "placement_size": "PASS",
+    "raster_export": "PASS",
+    "curved_path_collisions": "NOT_AUDITABLE",
+    "generic_PDF_collisions": "NOT_RUN",
+    "scientific_meaning": "REVIEW_REQUIRED",
+    "visual_quality": "REVIEW_REQUIRED",
+    "physical_print_or_all_displays": "NOT_RUN"
+  },
+  "author_acceptance": false
+}

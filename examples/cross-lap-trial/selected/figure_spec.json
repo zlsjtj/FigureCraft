@@ -1,0 +1,203 @@
+{
+  "identity": "DEMO",
+  "source_sha256": "ef38262f13898c2b6c86d2dea6d8de32d27f4537762ef62058da16b97dbddec0",
+  "output_mm": [
+    160,
+    100
+  ],
+  "projection": {
+    "type": "orthographic affine",
+    "screen_x": [
+      0.8,
+      0.6,
+      0.0
+    ],
+    "screen_y": [
+      0.4242640687,
+      -0.5656854249,
+      -0.7071067812
+    ],
+    "eye": [
+      0.4242640687,
+      -0.5656854249,
+      0.7071067812
+    ],
+    "scope": "assembled view; exploded view has its own explicit basis in display_parameters"
+  },
+  "entities": {
+    "A": {
+      "bounds": [
+        [
+          -50,
+          50
+        ],
+        [
+          -10,
+          10
+        ],
+        [
+          0,
+          16
+        ]
+      ],
+      "removed": [
+        [
+          -10,
+          10
+        ],
+        [
+          -10,
+          10
+        ],
+        [
+          8,
+          16
+        ]
+      ],
+      "color_role": "blue"
+    },
+    "B": {
+      "bounds": [
+        [
+          -10,
+          10
+        ],
+        [
+          -40,
+          40
+        ],
+        [
+          0,
+          16
+        ]
+      ],
+      "removed": [
+        [
+          -10,
+          10
+        ],
+        [
+          -10,
+          10
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      "color_role": "ochre"
+    }
+  },
+  "views": {
+    "exploded": {
+      "description": "primary representations of A and B; B translated only along positive z for display",
+      "parameters": {
+        "origin_mm": [
+          47,
+          79
+        ],
+        "scale_mm_per_model_mm": 0.7,
+        "member_translation_mm": {
+          "A": [
+            0,
+            0,
+            0
+          ],
+          "B": [
+            0,
+            0,
+            72
+          ]
+        },
+        "screen_x": [
+          0.8,
+          0.6,
+          0.0
+        ],
+        "screen_y": [
+          0.3,
+          -0.4,
+          -0.8660254037844386
+        ],
+        "eye": [
+          0.5196152422706631,
+          -0.6928203230275509,
+          0.5
+        ]
+      }
+    },
+    "assembled": "same A and B, zero display translation",
+    "section": "same A and B, crossing only at y=0"
+  },
+  "relations": {
+    "assembly-motion": "B lowered along negative z, conceptual assembly only",
+    "contact": "A upper central surface and B lower central surface share z=8",
+    "section-location": "dashed trace at y=0 of crossing"
+  },
+  "locked_values": {
+    "A_length_mm": 100,
+    "B_length_mm": 80,
+    "width_mm": 20,
+    "total_height_mm": 16,
+    "notch_depth_mm": 8,
+    "contact_z_mm": 8,
+    "physical_members": 2
+  },
+  "editable": "All original SVG polygons, polylines and text are vector objects. PDF embeds a subset font. SVG relies on local Arial. No raster is embedded.",
+  "role_palette": {
+    "A": {
+      "top": "#9BC3D6",
+      "side": "#5F98B5",
+      "end": "#397695"
+    },
+    "B": {
+      "top": "#F0CD91",
+      "side": "#DEA450",
+      "end": "#BF813A"
+    }
+  },
+  "design_choice": "Exploded geometry exposes the complementary open notches, assembly establishes flush outer surfaces, and a named section reveals contact hidden inside the assembled cross. The section is a repeat view, not a third member.",
+  "display_parameters": {
+    "exploded": {
+      "origin_mm": [
+        47,
+        79
+      ],
+      "scale_mm_per_model_mm": 0.7,
+      "member_translation_mm": {
+        "A": [
+          0,
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0,
+          72
+        ]
+      },
+      "screen_x": [
+        0.8,
+        0.6,
+        0.0
+      ],
+      "screen_y": [
+        0.3,
+        -0.4,
+        -0.8660254037844386
+      ],
+      "eye": [
+        0.5196152422706631,
+        -0.6928203230275509,
+        0.5
+      ]
+    },
+    "assembled": {
+      "origin_mm": [
+        125,
+        32
+      ],
+      "scale_mm_per_model_mm": 0.54
+    }
+  }
+}
