@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "source_sha256_exact": true,
+    "geometry_sha256_exact": true,
+    "original_geometry_source_unchanged": true,
+    "labels_minimum_10pt": true,
+    "exact_embedded_png": true,
+    "embedded_160mm": true,
+    "caption_exact": true,
+    "one_page_rendered": true,
+    "canvas_160_by_95mm": true,
+    "rebuild_figure.png": true,
+    "rebuild_grayscale.png": true,
+    "rebuild_deuteranopia-approx.png": true,
+    "rebuild_assembly.png": true,
+    "rebuild_detail.png": true,
+    "rebuild_figure.svg": true
+  },
+  "figure_png_sha256": "d9e4e8549ae1528da1227e7e0e15c996d2055d869449afe59648ec91615ae745",
+  "docx_sha256": "4ba962ae1b1e6098565efcda90ad01c41b4412ec0ec715e8b03bb6af373e31dc",
+  "pdf_sha256": "7efc9ccf6e59ac43a2a897b8afe8b210f0db961e5705e6c6de49d209a4d899fa",
+  "review": "维护模型比较直立、斜置与旧图；查看正常色、灰度、近似色觉及精确入稿页；无独立代理或真人评审",
+  "effect": "局部由色条改为同一尾端的角部，主体与端面对应更直接；方向与光照增强曲平转接",
+  "tradeoff": "斜置不如直立便于辨认轴向；透视图不适合逐圈核对路径",
+  "remaining": "表面仍为位图，放大可见像素边；光照不是物理仿真；色觉检查仅一种近似",
+  "attempts": "首次旋转相机的光栅化计算过慢，保留中断记录，改为相同投影的整幅表面放置旋转；第一张斜置稿标签拥挤后修正",
+  "scope": "已有构造案例的继续设计与固定源码重建，不是独立未见任务生成验证"
+}

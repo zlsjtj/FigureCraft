@@ -12,11 +12,11 @@
 
 ## 连续结构怎样展开，又不被误读为另一个对象？
 
-![三层材料共同卷绕及尾端层序](../examples/co-wound-laminate/selected/figure.png)
+![三层材料共同卷绕及尾端层序](../examples/co-wound-editorial/selected/figure.png)
 
-**三层共同卷绕。** 主体交代连续结构，尾端露出层序。三层颜色保持身份，局部展开不是新增一组材料。160 × 95 mm；曲面为位图、标签为矢量，曲面通过源码重建，不冒称全矢量。
+**三层共同卷绕。** 主体交代连续结构，同一尾端角部露出层序。三层颜色保持身份，放大视图不是新增一组材料。160 × 95 mm；曲面为位图、标签为矢量，曲面通过源码重建，不冒称全矢量。
 
-[输入与两种构图](../examples/co-wound-laminate/README.md) · [源码](../examples/co-wound-laminate/build_laminate.py) · [PDF](../examples/co-wound-laminate/selected/figure.pdf)
+[输入与两种构图](../examples/co-wound-editorial/README.md) · [源码](../examples/co-wound-editorial/build_figure.py) · [PDF](../examples/co-wound-editorial/selected/figure.pdf)
 
 ## 重复单元很多，怎样保留数量又不画满小字？
 

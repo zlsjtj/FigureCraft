@@ -1,0 +1,7 @@
+{
+  "image_sha256": "d9e4e8549ae1528da1227e7e0e15c996d2055d869449afe59648ec91615ae745",
+  "docx_sha256": "4ba962ae1b1e6098565efcda90ad01c41b4412ec0ec715e8b03bb6af373e31dc",
+  "image_width_mm": 160,
+  "yellow": "Changed text relative to before.docx; image changes require visual comparison. Not native tracked changes.",
+  "protected_objects": "New original DEMO, no inherited equations, fields or revisions."
+}

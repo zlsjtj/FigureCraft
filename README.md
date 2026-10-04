@@ -7,11 +7,11 @@
 
 ## 作品与图源
 
-[![三层连续卷绕结构：尾端展开揭示同一整体的层序](examples/co-wound-laminate/selected/figure.png)](examples/co-wound-laminate/README.md)
+[![三层连续卷绕：主体与同一尾端的立体局部](examples/co-wound-editorial/selected/figure.png)](examples/co-wound-editorial/README.md)
 
-**一张图，连起整体与局部。** 三层材料共同卷绕，尾端展开露出层序；颜色追踪材料，曲面表达连续结构。
+**一张图，连起整体与局部。** 三层材料共同卷绕，局部放大同一尾端；颜色追踪材料，曲面与端面交代层序，虚线说明两幅视图的对应。
 
-**[打开完整案例](examples/co-wound-laminate/README.md)** · [可编辑源码](examples/co-wound-laminate/build_laminate.py) · [SVG](examples/co-wound-laminate/selected/figure.svg) · [PDF](examples/co-wound-laminate/selected/figure.pdf)
+**[打开完整案例](examples/co-wound-editorial/README.md)** · [可编辑源码](examples/co-wound-editorial/build_figure.py) · [SVG](examples/co-wound-editorial/selected/figure.svg) · [PDF](examples/co-wound-editorial/selected/figure.pdf)
 
 <sub>原创结构演示。曲面为位图、标签为矢量；修改源码可重建曲面。</sub>
 
