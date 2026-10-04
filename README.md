@@ -2,7 +2,7 @@
 
 把研究中的结构、动作和关系画清楚。用于 Codex 的科研绘图 skill，提供可修改的图源和用于论文的导出文件。
 
-[看前后对照](#从处理流程转向对象变化) · [开始使用](#开始使用) · [历史版本 1.27.1](https://github.com/zlsjtj/FigureCraft/releases/tag/v1.27.1) · [论文精修 PaperCraft](https://github.com/zlsjtj/PaperCraft)
+[看前后对照](#从处理流程转向对象变化) · [按问题选案例](docs/examples.md) · [开始使用](#开始使用) · [历史版本 1.27.1](https://github.com/zlsjtj/FigureCraft/releases/tag/v1.27.1) · [论文精修 PaperCraft](https://github.com/zlsjtj/PaperCraft)
 
 ![三层材料共同卷绕，尾端局部展示连续结构中的层序](examples/co-wound-laminate/selected/figure.png)
 
@@ -33,6 +33,8 @@
 机制图、材料结构、硬件连接和定量结果有不同的表达任务。空间感用于解释形体与遮挡；数据图保留准确的尺度、单位和不确定性，不用透视制造差异。更多例子：[包覆与剖面](examples/material-polished-v17/) · [共享参考](examples/common-reference-demo/README.md) · [箱角解锁](examples/bin-latch/README.md)。
 
 ## 开始使用
+
+**还没有合适的材料？[用公开材料完成第一次试用](docs/first-use.md)。** 先做一个小任务，再决定是否处理自己的全文。
 
 在可以读写本地文件的 Codex 环境中使用。安装前请查看[许可说明](docs/licensing.md)，已有同名技能目录时先备份。
 
@@ -68,6 +70,8 @@ git clone https://github.com/zlsjtj/FigureCraft.git (Join-Path $skillRoot 'scien
 | 图注与前后对照 | 说明如何读图，以及这次改了哪些关系和标签 |
 
 曲面示例可能采用“位图表面 + 矢量标签”的混合输出，表面要通过源码修改后重建；各示例会说明可编辑范围。字体和第三方原生工具需要自行提供。
+
+[教程：做了不少工作，为什么论文还是没讲清楚？](docs/from-materials-to-paper.md) 用上面的案例讲清改写和重画的具体选择。
 
 ## 使用边界与反馈
 
