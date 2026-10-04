@@ -1,5 +1,5 @@
 name: 使用反馈
-description: 安装、改稿或绘图时遇到的问题
+description: 记录一次绘图的具体改善，或帮助复现遇到的问题
 body:
   - type: dropdown
     id: host
@@ -12,18 +12,25 @@ body:
     id: input
     attributes:
       label: 输入类型和技能版本（不确定可留空）
-      placeholder: 例如 Word 摘要；版本可从包内 SKILL.md 查看
+      placeholder: 例如卷绕结构图，160 mm 图宽；版本可从包内 SKILL.md 查看
+    validations:
+      required: false
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: 使用进展（可选）
+      options: [尚未生成成品, 已生成，想反馈改进点, 已生成，结果符合预期]
     validations:
       required: false
   - type: textarea
     id: result
     attributes:
       label: 预期和实际结果
-      description: 写出复现步骤、报错或具体的阅读问题。
+      description: 对象、标签与关系是否读对，哪些地方更直观或仍显拥挤；或说明卡在哪一步。 如有报错，请贴复现步骤或报错文字。
     validations:
       required: true
   - type: textarea
     id: material
     attributes:
       label: 可公开的小片段或截图（可选）
-      description: 请勿上传未获授权的全文、个人信息或密钥；匿名小例子即可。
+      description: 有前后对照更容易讨论；只提供获准公开的材料，勿附密钥或个人信息。

@@ -39,6 +39,10 @@ python scripts/first_run.py --host codex --out ../FigureCraft-try
 
 </details>
 
+## 留下一个具体反馈
+
+[打开使用反馈](https://github.com/zlsjtj/FigureCraft/issues/new?template=usage.yml)，写清使用工具和哪处对象或关系更容易读懂、哪处仍有误读或小字负担。结果已经满意也可以记录具体改善；未得到成品时，说明卡在哪一步即可。材料或截图可选，不必上传完整论文。
+
 ## 换成自己的材料
 
 提供科学对象、关系、原图或数据，以及最终图宽。风格参考只用于构图与配色，不能代替研究事实。

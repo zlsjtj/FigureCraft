@@ -62,4 +62,4 @@
 
 **觉得作品和源码有用，点个 Star，留作下次画图的参考。** 论文叙事可搭配 [PaperCraft](https://github.com/zlsjtj/PaperCraft)。
 
-原创部分采用 [MIT](LICENSE)；[第三方许可](docs/licensing.md)、[实现与验证记录](docs/client-entry-validation.md)另列。
+[转发这个案例](docs/from-materials-to-paper.md) · 原创部分采用 [MIT](LICENSE)；[第三方许可](docs/licensing.md)、[实现与验证记录](docs/client-entry-validation.md)另列。
