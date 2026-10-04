@@ -2,13 +2,15 @@
 
 FigureCraft 根据科学对象、关系和数据组织图形。它用于机制图、数组与寄存器图、分层材料、包覆与剖面、定量结果及整套论文配图，交付可编辑源、SVG、PDF、PNG 和检查记录；混合表面的可编辑范围单独说明。
 
-当前内容版本 **1.22.0**，调用标识 **`$scientific-figure-studio`**。
+当前内容版本 **1.27.1**，调用标识 **`$scientific-figure-studio`**。
 
-本轮用[三腔压力夹具](examples/complete-fixture/README.md)检验完整图文交付：三个隔离样品、闭合隔膜和共同参考空间，由几何关系直接解释；同时保留未选的展开方案与首次引线问题。修复 PDF 字号审计对常见 ASCII85＋Flate 滤镜链的读取，避免无法读取却被当成字号通过。所选图的全部 Word 表示需通过实际写入工具绑定。
+本轮让对象变化在真实参照环境中领读，比较并合并构图与标签的优点。共享放置图已实际重画；新材料旧、新版比较没有整体胜者，得失与评后改进均保留。
 
-[1.22验收](provenance/validation-1.22.md)记录依据和局限。这个例子支持完整流程可执行，不能证明所有新材料都达到同等审美。复杂对象的既有路径继续保留：[整体与局部裁切](examples/co-wound-laminate/README.md)、[开口套筒](examples/open-sleeve/development/README.md)、[连续表面](references/surface-rendering.md)。用剖面还是立体图由解释任务决定，不统一套风格。
+本次公开版本汇总近期经过验证的图文交付改进。[验证记录](provenance/validation-1.27.1.md)说明实际得失、技术检查和未验证范围。内容版本用于识别文件，不能代表审稿或审美认证。
 
 ![同一几何的整体与尾端裁切，原创DEMO](examples/co-wound-laminate/selected/figure.png)
+
+[可释放支架](examples/seated-support/README.md)补充了一个新材料首图的真实失误与修复：同一几何下，凹槽与脚的隐藏表面怎样被正确遮住。正文、初次图、修后图和源码均保留，评后修复不记为首次成功。
 
 ## 其他示例
 
@@ -81,3 +83,5 @@ PDF 字号检查器来自固定版本的 nature-skills，原始许可证和 NOTI
 [共享参考与独立记录案例](examples/common-reference-demo/README.md)保留原有两种构图；[继续开发的成图](examples/common-reference-demo/dev/REVIEW.md)把对象辨识和就近标签结合起来。开发成图与独立新任务的效果分开记录，没有将新版选作全面优胜者。
 
 [箱角解锁新材料试用](examples/bin-latch/README.md)保存普通提示、旧技能、新技能的首次产物与匿名比较。新版的状态对照更直接，但并非全面胜出；反馈后修复单独记录。
+
+[两路共用放置记录](examples/paired-placement/README.md)展示如何从处理框转向对象变化，并保留同尺寸前后图、取舍理由和生成源码。

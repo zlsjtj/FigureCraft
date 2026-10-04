@@ -1,0 +1,1262 @@
+{
+  "schema_version": 1,
+  "figure_id": "pressure_fixture_exploded",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "Three isolated samples face one continuous reference cavity across closed diaphragms.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    {
+      "path": "../input/implementation.md",
+      "sha256": "192cd2bd8ea2e0c72bdfc2664011ea9e3d4ee096f6f8fe71b5f421edfab558d9"
+    }
+  ],
+  "forbidden_implications": [
+    "No flow through a diaphragm",
+    "No sample-to-sample connection",
+    "No invented pin socket or fit",
+    "Illustrative shapes are not measured geometry",
+    "No new sensing function; predecessor also shares reference pressure"
+  ],
+  "entities": [
+    {
+      "id": "base",
+      "semantic_role": "housing",
+      "description": "One removable reference base"
+    },
+    {
+      "id": "reference",
+      "semantic_role": "reference",
+      "description": "One connected reference cavity"
+    },
+    {
+      "id": "gasket",
+      "semantic_role": "seal",
+      "description": "One piece sealing all three reference ports"
+    },
+    {
+      "id": "S1",
+      "semantic_role": "sample",
+      "description": "Isolated sample chamber"
+    },
+    {
+      "id": "sensor1",
+      "semantic_role": "housing",
+      "description": "Sensor body, schematic outer profile"
+    },
+    {
+      "id": "diaphragm1",
+      "semantic_role": "membrane",
+      "description": "Closed separating membrane"
+    },
+    {
+      "id": "S2",
+      "semantic_role": "sample",
+      "description": "Isolated sample chamber"
+    },
+    {
+      "id": "sensor2",
+      "semantic_role": "housing",
+      "description": "Sensor body, schematic outer profile"
+    },
+    {
+      "id": "diaphragm2",
+      "semantic_role": "membrane",
+      "description": "Closed separating membrane"
+    },
+    {
+      "id": "S3",
+      "semantic_role": "sample",
+      "description": "Isolated sample chamber"
+    },
+    {
+      "id": "sensor3",
+      "semantic_role": "housing",
+      "description": "Sensor body, schematic outer profile"
+    },
+    {
+      "id": "diaphragm3",
+      "semantic_role": "membrane",
+      "description": "Closed separating membrane"
+    },
+    {
+      "id": "pin1",
+      "semantic_role": "housing",
+      "description": "Alignment pin; mating detail unspecified"
+    },
+    {
+      "id": "pin2",
+      "semantic_role": "housing",
+      "description": "Alignment pin; mating detail unspecified"
+    }
+  ],
+  "relations": [
+    {
+      "id": "reference1",
+      "from": "reference",
+      "to": "sensor1",
+      "kind": "reference",
+      "meaning": "Sensor faces the same continuous reference cavity; no flow implied"
+    },
+    {
+      "id": "reference2",
+      "from": "reference",
+      "to": "sensor2",
+      "kind": "reference",
+      "meaning": "Sensor faces the same continuous reference cavity; no flow implied"
+    },
+    {
+      "id": "reference3",
+      "from": "reference",
+      "to": "sensor3",
+      "kind": "reference",
+      "meaning": "Sensor faces the same continuous reference cavity; no flow implied"
+    }
+  ],
+  "exact_labels": [
+    "Three isolated samples, one reference",
+    "DEMO",
+    "S1",
+    "S2",
+    "S3",
+    "Common reference cavity",
+    "Samples",
+    "Diaphragms",
+    "Alignment pins",
+    "One-piece gasket",
+    "Removable base",
+    "Illustrative cutaway; not to scale"
+  ],
+  "locked_values": {
+    "samples": 3,
+    "sensors": 3,
+    "diaphragms": 3,
+    "pins": 2,
+    "gaskets": 1,
+    "connected_reference_volumes": 1,
+    "dimensions": "unspecified",
+    "module_positions_fixed": true
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "sample": {
+      "base": "#80BDD6"
+    },
+    "reference": {
+      "base": "#85BBAA"
+    },
+    "seal": {
+      "base": "#D9A85F"
+    },
+    "housing": {
+      "base": "#9FAEB4"
+    },
+    "membrane": {
+      "base": "#354B56"
+    }
+  },
+  "layout": {
+    "archetype": "exploded_interface",
+    "reading_order": "three samples to closed membranes to common cavity",
+    "primary_message": "Shared reference does not connect the samples"
+  },
+  "depth": {
+    "mode": "D1_shallow_2_5d",
+    "affects_quantitative_encoding": false,
+    "meaning": "Illustrative cutaway with consistent oblique depth; not measured CAD geometry."
+  },
+  "output": {
+    "width_mm": 160,
+    "view_width": 1000,
+    "view_height": 531.25,
+    "font_profile": "generic_readable_draft",
+    "placement_width_mm": 160
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 1000,
+      "h": 531.25,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Three isolated samples, one reference",
+      "x": 30,
+      "y": 39,
+      "size": 26,
+      "align": "left",
+      "fill": "#243B47"
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "text": "DEMO",
+      "x": 969,
+      "y": 38,
+      "size": 21,
+      "align": "right",
+      "fill": "#243B47"
+    },
+    {
+      "id": "base-top",
+      "type": "polygon",
+      "points": [
+        [
+          118,
+          348
+        ],
+        [
+          173,
+          314
+        ],
+        [
+          873,
+          314
+        ],
+        [
+          818,
+          348
+        ]
+      ],
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "base"
+    },
+    {
+      "id": "base-right",
+      "type": "polygon",
+      "points": [
+        [
+          818,
+          348
+        ],
+        [
+          873,
+          314
+        ],
+        [
+          873,
+          406
+        ],
+        [
+          818,
+          440
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "base"
+    },
+    {
+      "id": "base-section",
+      "type": "rect",
+      "x": 118,
+      "y": 348,
+      "w": 700,
+      "h": 92,
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "base"
+    },
+    {
+      "id": "reference-cut-space",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          140,
+          370
+        ],
+        [
+          "L",
+          238,
+          370
+        ],
+        [
+          "L",
+          238,
+          276
+        ],
+        [
+          "L",
+          322,
+          276
+        ],
+        [
+          "L",
+          322,
+          370
+        ],
+        [
+          "L",
+          438,
+          370
+        ],
+        [
+          "L",
+          438,
+          276
+        ],
+        [
+          "L",
+          522,
+          276
+        ],
+        [
+          "L",
+          522,
+          370
+        ],
+        [
+          "L",
+          638,
+          370
+        ],
+        [
+          "L",
+          638,
+          276
+        ],
+        [
+          "L",
+          722,
+          276
+        ],
+        [
+          "L",
+          722,
+          370
+        ],
+        [
+          "L",
+          796,
+          370
+        ],
+        [
+          "L",
+          796,
+          421
+        ],
+        [
+          "L",
+          140,
+          421
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "stroke": "#438675",
+      "stroke_width": 1.8,
+      "entity": "reference",
+      "role": "reference"
+    },
+    {
+      "id": "gasket-plane",
+      "type": "polygon",
+      "points": [
+        [
+          126,
+          298
+        ],
+        [
+          181,
+          264
+        ],
+        [
+          859,
+          264
+        ],
+        [
+          804,
+          298
+        ]
+      ],
+      "fill": "#DCB372",
+      "stroke": "#B58A46",
+      "stroke_width": 1.7,
+      "entity": "gasket"
+    },
+    {
+      "id": "gasket-right-return",
+      "type": "polygon",
+      "points": [
+        [
+          804,
+          298
+        ],
+        [
+          859,
+          264
+        ],
+        [
+          859,
+          270
+        ],
+        [
+          804,
+          304
+        ]
+      ],
+      "fill": "#BD8F47",
+      "stroke": "none",
+      "stroke_width": 1.7,
+      "entity": "gasket"
+    },
+    {
+      "id": "gasket-front-edge",
+      "type": "rect",
+      "x": 126,
+      "y": 298,
+      "w": 678,
+      "h": 6,
+      "fill": "#C69A54",
+      "stroke": "none",
+      "stroke_width": 1.7,
+      "entity": "gasket"
+    },
+    {
+      "id": "gasket-opening1",
+      "type": "polygon",
+      "points": [
+        [
+          237,
+          298
+        ],
+        [
+          292,
+          264
+        ],
+        [
+          376,
+          264
+        ],
+        [
+          321,
+          298
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "stroke": "#438675",
+      "stroke_width": 1.2,
+      "entity": "reference"
+    },
+    {
+      "id": "opening-guide-left1",
+      "type": "line",
+      "points": [
+        [
+          238,
+          307
+        ],
+        [
+          238,
+          346
+        ]
+      ],
+      "stroke": "#A6AAA8",
+      "stroke_width": 1.2,
+      "entity": "gasket",
+      "dash": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "opening-guide-right1",
+      "type": "line",
+      "points": [
+        [
+          322,
+          307
+        ],
+        [
+          322,
+          346
+        ]
+      ],
+      "stroke": "#A6AAA8",
+      "stroke_width": 1.2,
+      "entity": "gasket",
+      "dash": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "gasket-opening2",
+      "type": "polygon",
+      "points": [
+        [
+          437,
+          298
+        ],
+        [
+          492,
+          264
+        ],
+        [
+          576,
+          264
+        ],
+        [
+          521,
+          298
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "stroke": "#438675",
+      "stroke_width": 1.2,
+      "entity": "reference"
+    },
+    {
+      "id": "opening-guide-left2",
+      "type": "line",
+      "points": [
+        [
+          438,
+          307
+        ],
+        [
+          438,
+          346
+        ]
+      ],
+      "stroke": "#A6AAA8",
+      "stroke_width": 1.2,
+      "entity": "gasket",
+      "dash": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "opening-guide-right2",
+      "type": "line",
+      "points": [
+        [
+          522,
+          307
+        ],
+        [
+          522,
+          346
+        ]
+      ],
+      "stroke": "#A6AAA8",
+      "stroke_width": 1.2,
+      "entity": "gasket",
+      "dash": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "gasket-opening3",
+      "type": "polygon",
+      "points": [
+        [
+          637,
+          298
+        ],
+        [
+          692,
+          264
+        ],
+        [
+          776,
+          264
+        ],
+        [
+          721,
+          298
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "stroke": "#438675",
+      "stroke_width": 1.2,
+      "entity": "reference"
+    },
+    {
+      "id": "opening-guide-left3",
+      "type": "line",
+      "points": [
+        [
+          638,
+          307
+        ],
+        [
+          638,
+          346
+        ]
+      ],
+      "stroke": "#A6AAA8",
+      "stroke_width": 1.2,
+      "entity": "gasket",
+      "dash": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "opening-guide-right3",
+      "type": "line",
+      "points": [
+        [
+          722,
+          307
+        ],
+        [
+          722,
+          346
+        ]
+      ],
+      "stroke": "#A6AAA8",
+      "stroke_width": 1.2,
+      "entity": "gasket",
+      "dash": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "sensor-side1",
+      "type": "polygon",
+      "points": [
+        [
+          332,
+          114
+        ],
+        [
+          357,
+          98
+        ],
+        [
+          357,
+          293
+        ],
+        [
+          332,
+          309
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor1"
+    },
+    {
+      "id": "sensor-left-wall1",
+      "type": "rect",
+      "x": 225,
+      "y": 110,
+      "w": 13,
+      "h": 206,
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor1"
+    },
+    {
+      "id": "sensor-right-wall1",
+      "type": "rect",
+      "x": 322,
+      "y": 110,
+      "w": 13,
+      "h": 206,
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor1"
+    },
+    {
+      "id": "chamber-1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          238,
+          106
+        ],
+        [
+          "C",
+          238,
+          84,
+          322,
+          84,
+          322,
+          106
+        ],
+        [
+          "L",
+          322,
+          240
+        ],
+        [
+          "L",
+          238,
+          240
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#D9EEF6",
+      "stroke": "#558DA6",
+      "stroke_width": 1.7,
+      "entity": "S1",
+      "logical_id": "S1",
+      "object_part": "primary"
+    },
+    {
+      "id": "sample-rim1",
+      "type": "line",
+      "points": [
+        [
+          238,
+          106
+        ],
+        [
+          322,
+          106
+        ]
+      ],
+      "stroke": "#85ACC0",
+      "stroke_width": 1,
+      "entity": "S1"
+    },
+    {
+      "id": "open-reference-stub1",
+      "type": "rect",
+      "x": 238,
+      "y": 245,
+      "w": 84,
+      "h": 42,
+      "fill": "#CCE6DC",
+      "stroke": "#438675",
+      "stroke_width": 1.7,
+      "entity": "reference"
+    },
+    {
+      "id": "membrane-1",
+      "type": "rect",
+      "x": 237,
+      "y": 239,
+      "w": 86,
+      "h": 6,
+      "fill": "#354B56",
+      "stroke": "none",
+      "stroke_width": 1.7,
+      "entity": "diaphragm1"
+    },
+    {
+      "id": "sample-name1",
+      "type": "text",
+      "text": "S1",
+      "x": 280,
+      "y": 172,
+      "size": 25,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "sensor-side2",
+      "type": "polygon",
+      "points": [
+        [
+          532,
+          114
+        ],
+        [
+          557,
+          98
+        ],
+        [
+          557,
+          293
+        ],
+        [
+          532,
+          309
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor2"
+    },
+    {
+      "id": "sensor-left-wall2",
+      "type": "rect",
+      "x": 425,
+      "y": 110,
+      "w": 13,
+      "h": 206,
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor2"
+    },
+    {
+      "id": "sensor-right-wall2",
+      "type": "rect",
+      "x": 522,
+      "y": 110,
+      "w": 13,
+      "h": 206,
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor2"
+    },
+    {
+      "id": "chamber-2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          438,
+          106
+        ],
+        [
+          "C",
+          438,
+          84,
+          522,
+          84,
+          522,
+          106
+        ],
+        [
+          "L",
+          522,
+          240
+        ],
+        [
+          "L",
+          438,
+          240
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#D9EEF6",
+      "stroke": "#558DA6",
+      "stroke_width": 1.7,
+      "entity": "S2",
+      "logical_id": "S2",
+      "object_part": "primary"
+    },
+    {
+      "id": "sample-rim2",
+      "type": "line",
+      "points": [
+        [
+          438,
+          106
+        ],
+        [
+          522,
+          106
+        ]
+      ],
+      "stroke": "#85ACC0",
+      "stroke_width": 1,
+      "entity": "S2"
+    },
+    {
+      "id": "open-reference-stub2",
+      "type": "rect",
+      "x": 438,
+      "y": 245,
+      "w": 84,
+      "h": 42,
+      "fill": "#CCE6DC",
+      "stroke": "#438675",
+      "stroke_width": 1.7,
+      "entity": "reference"
+    },
+    {
+      "id": "membrane-2",
+      "type": "rect",
+      "x": 437,
+      "y": 239,
+      "w": 86,
+      "h": 6,
+      "fill": "#354B56",
+      "stroke": "none",
+      "stroke_width": 1.7,
+      "entity": "diaphragm2"
+    },
+    {
+      "id": "sample-name2",
+      "type": "text",
+      "text": "S2",
+      "x": 480,
+      "y": 172,
+      "size": 25,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "sensor-side3",
+      "type": "polygon",
+      "points": [
+        [
+          732,
+          114
+        ],
+        [
+          757,
+          98
+        ],
+        [
+          757,
+          293
+        ],
+        [
+          732,
+          309
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor3"
+    },
+    {
+      "id": "sensor-left-wall3",
+      "type": "rect",
+      "x": 625,
+      "y": 110,
+      "w": 13,
+      "h": 206,
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor3"
+    },
+    {
+      "id": "sensor-right-wall3",
+      "type": "rect",
+      "x": 722,
+      "y": 110,
+      "w": 13,
+      "h": 206,
+      "fill": "#E5EBEE",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "sensor3"
+    },
+    {
+      "id": "chamber-3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          638,
+          106
+        ],
+        [
+          "C",
+          638,
+          84,
+          722,
+          84,
+          722,
+          106
+        ],
+        [
+          "L",
+          722,
+          240
+        ],
+        [
+          "L",
+          638,
+          240
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#D9EEF6",
+      "stroke": "#558DA6",
+      "stroke_width": 1.7,
+      "entity": "S3",
+      "logical_id": "S3",
+      "object_part": "primary"
+    },
+    {
+      "id": "sample-rim3",
+      "type": "line",
+      "points": [
+        [
+          638,
+          106
+        ],
+        [
+          722,
+          106
+        ]
+      ],
+      "stroke": "#85ACC0",
+      "stroke_width": 1,
+      "entity": "S3"
+    },
+    {
+      "id": "open-reference-stub3",
+      "type": "rect",
+      "x": 638,
+      "y": 245,
+      "w": 84,
+      "h": 42,
+      "fill": "#CCE6DC",
+      "stroke": "#438675",
+      "stroke_width": 1.7,
+      "entity": "reference"
+    },
+    {
+      "id": "membrane-3",
+      "type": "rect",
+      "x": 637,
+      "y": 239,
+      "w": 86,
+      "h": 6,
+      "fill": "#354B56",
+      "stroke": "none",
+      "stroke_width": 1.7,
+      "entity": "diaphragm3"
+    },
+    {
+      "id": "sample-name3",
+      "type": "text",
+      "text": "S3",
+      "x": 680,
+      "y": 172,
+      "size": 25,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "pin-shaft1",
+      "type": "rect",
+      "x": 154,
+      "y": 286,
+      "w": 12,
+      "h": 64,
+      "fill": "#A6B7BF",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "pin1"
+    },
+    {
+      "id": "pin-cap1",
+      "type": "ellipse",
+      "x": 160,
+      "y": 286,
+      "rx": 6,
+      "ry": 3,
+      "fill": "#DCE5E9",
+      "stroke": "#718792",
+      "stroke_width": 1.5,
+      "entity": "pin1"
+    },
+    {
+      "id": "pin-shaft2",
+      "type": "rect",
+      "x": 771,
+      "y": 286,
+      "w": 12,
+      "h": 64,
+      "fill": "#A6B7BF",
+      "stroke": "#718792",
+      "stroke_width": 1.7,
+      "entity": "pin2"
+    },
+    {
+      "id": "pin-cap2",
+      "type": "ellipse",
+      "x": 777,
+      "y": 286,
+      "rx": 6,
+      "ry": 3,
+      "fill": "#DCE5E9",
+      "stroke": "#718792",
+      "stroke_width": 1.5,
+      "entity": "pin2"
+    },
+    {
+      "id": "reference-label",
+      "type": "text",
+      "text": "Common reference cavity",
+      "x": 470,
+      "y": 406,
+      "size": 23,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "sample-label",
+      "type": "text",
+      "text": "Samples",
+      "x": 480,
+      "y": 93,
+      "size": 23,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "diaphragms-label",
+      "type": "text",
+      "text": "Diaphragms",
+      "x": 975,
+      "y": 228,
+      "size": 23,
+      "align": "right",
+      "fill": "#243B47"
+    },
+    {
+      "id": "diaphragm-leader",
+      "type": "line",
+      "points": [
+        [
+          852,
+          236
+        ],
+        [
+          800,
+          236
+        ],
+        [
+          723,
+          239
+        ]
+      ],
+      "stroke": "#243B47",
+      "stroke_width": 1.4,
+      "entity": "diaphragm3"
+    },
+    {
+      "id": "pins-label",
+      "type": "text",
+      "text": "Alignment pins",
+      "x": 42,
+      "y": 255,
+      "size": 22,
+      "align": "left",
+      "fill": "#243B47"
+    },
+    {
+      "id": "pin-label-left",
+      "type": "line",
+      "points": [
+        [
+          157,
+          265
+        ],
+        [
+          160,
+          282
+        ]
+      ],
+      "stroke": "#243B47",
+      "stroke_width": 1.4,
+      "entity": "pin1"
+    },
+    {
+      "id": "gasket-label",
+      "type": "text",
+      "text": "One-piece gasket",
+      "x": 972,
+      "y": 320,
+      "size": 22,
+      "align": "right",
+      "fill": "#243B47"
+    },
+    {
+      "id": "gasket-leader",
+      "type": "line",
+      "points": [
+        [
+          876,
+          328
+        ],
+        [
+          832,
+          301
+        ]
+      ],
+      "stroke": "#243B47",
+      "stroke_width": 1.4,
+      "entity": "gasket"
+    },
+    {
+      "id": "base-label",
+      "type": "text",
+      "text": "Removable base",
+      "x": 470,
+      "y": 485,
+      "size": 23,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "base-leader",
+      "type": "line",
+      "points": [
+        [
+          470,
+          459
+        ],
+        [
+          470,
+          442
+        ]
+      ],
+      "stroke": "#243B47",
+      "stroke_width": 1.4,
+      "entity": "base"
+    },
+    {
+      "id": "scale",
+      "type": "text",
+      "text": "Illustrative cutaway; not to scale",
+      "x": 30,
+      "y": 520,
+      "size": 20,
+      "align": "left",
+      "fill": "#243B47"
+    }
+  ],
+  "count_constraints": [
+    {
+      "name": "samples",
+      "expected": 3,
+      "scope": {
+        "id_prefix": "chamber-"
+      },
+      "expected_logical_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "caption": "DEMO. Three isolated sample chambers face the same connected reference cavity through closed diaphragms. The one-piece gasket seals three reference ports; two pins align the removable base while sample modules stay in place. Cutaway shapes and depths are illustrative, not mechanical dimensions or a pin-fit design. Depressurize before opening. The gasket and modules are separated vertically only to show their correspondence; this is a maintenance view, not operation.",
+  "alt_text": "Three isolated samples face one continuous reference cavity across closed diaphragms. DEMO. Three isolated sample chambers face the same connected reference cavity through closed diaphragms. The one-piece gasket seals three reference ports; two pins align the removable base while sample modules stay in place. Cutaway shapes and depths are illustrative, not mechanical dimensions or a pin-fit design. Depressurize before opening. The gasket and modules are separated vertically only to show their correspondence; this is a maintenance view, not operation."
+}

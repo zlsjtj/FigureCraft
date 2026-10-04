@@ -1,0 +1,2031 @@
+{
+  "schema_version": 1,
+  "figure_id": "reference_interface_replacement",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "The same three isolated sensing modules retain a common reference; three individual hoses are replaced by one aligned removable base.",
+  "evidence_status": "DEMO_constructed_description_not_research",
+  "source_refs": [
+    {
+      "description": "Original synthetic fixture material",
+      "sha256": "192cd2bd8ea2e0c72bdfc2664011ea9e3d4ee096f6f8fe71b5f421edfab558d9"
+    }
+  ],
+  "forbidden_implications": [
+    "No new common-reference function",
+    "No sample communication or flow through membranes",
+    "No real mechanical dimensions",
+    "No pin mating geometry specified",
+    "No motion during operation",
+    "No performance implied by shorter drawn paths"
+  ],
+  "entities": [
+    {
+      "id": "S1",
+      "semantic_role": "sample",
+      "description": "Same isolated sample repeated across two configurations"
+    },
+    {
+      "id": "sensor1",
+      "semantic_role": "housing",
+      "description": "Same sensing module, unchanged position"
+    },
+    {
+      "id": "membrane1",
+      "semantic_role": "membrane",
+      "description": "Same closed diaphragm"
+    },
+    {
+      "id": "hose1",
+      "semantic_role": "reference",
+      "description": "One individual reference hose in prior configuration"
+    },
+    {
+      "id": "S2",
+      "semantic_role": "sample",
+      "description": "Same isolated sample repeated across two configurations"
+    },
+    {
+      "id": "sensor2",
+      "semantic_role": "housing",
+      "description": "Same sensing module, unchanged position"
+    },
+    {
+      "id": "membrane2",
+      "semantic_role": "membrane",
+      "description": "Same closed diaphragm"
+    },
+    {
+      "id": "hose2",
+      "semantic_role": "reference",
+      "description": "One individual reference hose in prior configuration"
+    },
+    {
+      "id": "S3",
+      "semantic_role": "sample",
+      "description": "Same isolated sample repeated across two configurations"
+    },
+    {
+      "id": "sensor3",
+      "semantic_role": "housing",
+      "description": "Same sensing module, unchanged position"
+    },
+    {
+      "id": "membrane3",
+      "semantic_role": "membrane",
+      "description": "Same closed diaphragm"
+    },
+    {
+      "id": "hose3",
+      "semantic_role": "reference",
+      "description": "One individual reference hose in prior configuration"
+    },
+    {
+      "id": "old_reference",
+      "semantic_role": "reference",
+      "description": "Common reference source in prior configuration"
+    },
+    {
+      "id": "new_reference",
+      "semantic_role": "reference",
+      "description": "Common reference cavity in removable base"
+    },
+    {
+      "id": "base",
+      "semantic_role": "housing",
+      "description": "One removable base"
+    },
+    {
+      "id": "gasket",
+      "semantic_role": "seal",
+      "description": "One gasket around three ports"
+    },
+    {
+      "id": "pin1",
+      "semantic_role": "housing",
+      "description": "First alignment pin"
+    },
+    {
+      "id": "pin2",
+      "semantic_role": "housing",
+      "description": "Second alignment pin"
+    }
+  ],
+  "relations": [
+    {
+      "id": "prior_reference1",
+      "from": "old_reference",
+      "to": "sensor1",
+      "kind": "reference",
+      "meaning": "Individual hose connects each reference side to common source, no flow direction stipulated"
+    },
+    {
+      "id": "new_reference1",
+      "from": "new_reference",
+      "to": "sensor1",
+      "kind": "reference",
+      "meaning": "Reference side faces same connected reference cavity, no flow arrow"
+    },
+    {
+      "id": "prior_reference2",
+      "from": "old_reference",
+      "to": "sensor2",
+      "kind": "reference",
+      "meaning": "Individual hose connects each reference side to common source, no flow direction stipulated"
+    },
+    {
+      "id": "new_reference2",
+      "from": "new_reference",
+      "to": "sensor2",
+      "kind": "reference",
+      "meaning": "Reference side faces same connected reference cavity, no flow arrow"
+    },
+    {
+      "id": "prior_reference3",
+      "from": "old_reference",
+      "to": "sensor3",
+      "kind": "reference",
+      "meaning": "Individual hose connects each reference side to common source, no flow direction stipulated"
+    },
+    {
+      "id": "new_reference3",
+      "from": "new_reference",
+      "to": "sensor3",
+      "kind": "reference",
+      "meaning": "Reference side faces same connected reference cavity, no flow arrow"
+    }
+  ],
+  "exact_labels": [
+    "Replace the interface, retain the sensing",
+    "DEMO",
+    "a  Three individual hoses",
+    "b  One aligned base",
+    "Common reference",
+    "S1",
+    "S2",
+    "S3",
+    "S1",
+    "S2",
+    "S3",
+    "Common reference",
+    "Two pins + one gasket",
+    "Same three modules shown in both configurations"
+  ],
+  "locked_values": {
+    "physical_samples": 3,
+    "physical_sensors": 3,
+    "diaphragms_per_state": 3,
+    "baseline_hoses": 3,
+    "new_bases": 1,
+    "new_pins": 2,
+    "new_gaskets": 1,
+    "reference_volumes_per_state": 1,
+    "before_after_views_of_same_samples": true
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "sample": {
+      "base": "#80BDD6"
+    },
+    "reference": {
+      "base": "#85BBAA"
+    },
+    "seal": {
+      "base": "#D9A85F"
+    },
+    "housing": {
+      "base": "#9FAEB4"
+    },
+    "membrane": {
+      "base": "#354B56"
+    }
+  },
+  "layout": {
+    "archetype": "paired_interface_change",
+    "reading_order": "same top modules, different reference interface below",
+    "primary_message": "Changed packaging, preserved sensing and isolation"
+  },
+  "depth": {
+    "mode": "D1_shallow_2_5d",
+    "affects_quantitative_encoding": false,
+    "meaning": "Front cutaway with retained rear shell; illustrative geometry."
+  },
+  "output": {
+    "width_mm": 160,
+    "view_width": 1000,
+    "view_height": 531.25,
+    "font_profile": "generic_readable_draft",
+    "placement_width_mm": 160
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 1000,
+      "h": 531.25,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "Replace the interface, retain the sensing",
+      "x": 30,
+      "y": 40,
+      "size": 26,
+      "align": "left",
+      "fill": "#243B47"
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "text": "DEMO",
+      "x": 975,
+      "y": 39,
+      "size": 21,
+      "align": "right",
+      "fill": "#243B47"
+    },
+    {
+      "id": "prior-title",
+      "type": "text",
+      "text": "a  Three individual hoses",
+      "x": 222,
+      "y": 108,
+      "size": 24,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "base-title",
+      "type": "text",
+      "text": "b  One aligned base",
+      "x": 769,
+      "y": 108,
+      "size": 24,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "old-source",
+      "type": "rect",
+      "x": 40,
+      "y": 370,
+      "w": 375,
+      "h": 42,
+      "fill": "#CCE6DC",
+      "entity": "old_reference",
+      "stroke": "#438675",
+      "stroke_width": 1.7,
+      "radius": 6
+    },
+    {
+      "id": "prior-reference-label",
+      "type": "text",
+      "text": "Common reference",
+      "x": 227,
+      "y": 398,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "hose-outline1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          90,
+          291
+        ],
+        [
+          "C",
+          90,
+          319,
+          120,
+          330,
+          106,
+          348
+        ],
+        [
+          "C",
+          100,
+          356,
+          90,
+          361,
+          90,
+          370
+        ]
+      ],
+      "fill": "none",
+      "entity": "hose1",
+      "stroke": "#438675",
+      "stroke_width": 5
+    },
+    {
+      "id": "hose-fill1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          90,
+          291
+        ],
+        [
+          "C",
+          90,
+          319,
+          120,
+          330,
+          106,
+          348
+        ],
+        [
+          "C",
+          100,
+          356,
+          90,
+          361,
+          90,
+          370
+        ]
+      ],
+      "fill": "none",
+      "entity": "hose1",
+      "stroke": "#CCE6DC",
+      "stroke_width": 2.5
+    },
+    {
+      "id": "hose-outline2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          220,
+          291
+        ],
+        [
+          "C",
+          220,
+          319,
+          250,
+          330,
+          236,
+          348
+        ],
+        [
+          "C",
+          230,
+          356,
+          220,
+          361,
+          220,
+          370
+        ]
+      ],
+      "fill": "none",
+      "entity": "hose2",
+      "stroke": "#438675",
+      "stroke_width": 5
+    },
+    {
+      "id": "hose-fill2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          220,
+          291
+        ],
+        [
+          "C",
+          220,
+          319,
+          250,
+          330,
+          236,
+          348
+        ],
+        [
+          "C",
+          230,
+          356,
+          220,
+          361,
+          220,
+          370
+        ]
+      ],
+      "fill": "none",
+      "entity": "hose2",
+      "stroke": "#CCE6DC",
+      "stroke_width": 2.5
+    },
+    {
+      "id": "hose-outline3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          350,
+          291
+        ],
+        [
+          "C",
+          350,
+          319,
+          380,
+          330,
+          366,
+          348
+        ],
+        [
+          "C",
+          360,
+          356,
+          350,
+          361,
+          350,
+          370
+        ]
+      ],
+      "fill": "none",
+      "entity": "hose3",
+      "stroke": "#438675",
+      "stroke_width": 5
+    },
+    {
+      "id": "hose-fill3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          350,
+          291
+        ],
+        [
+          "C",
+          350,
+          319,
+          380,
+          330,
+          366,
+          348
+        ],
+        [
+          "C",
+          360,
+          356,
+          350,
+          361,
+          350,
+          370
+        ]
+      ],
+      "fill": "none",
+      "entity": "hose3",
+      "stroke": "#CCE6DC",
+      "stroke_width": 2.5
+    },
+    {
+      "id": "base-top",
+      "type": "polygon",
+      "points": [
+        [
+          575,
+          300
+        ],
+        [
+          610,
+          279
+        ],
+        [
+          974,
+          279
+        ],
+        [
+          939,
+          300
+        ]
+      ],
+      "fill": "#E5EBEE",
+      "entity": "base",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "base-side",
+      "type": "polygon",
+      "points": [
+        [
+          939,
+          300
+        ],
+        [
+          974,
+          279
+        ],
+        [
+          974,
+          391
+        ],
+        [
+          939,
+          412
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "entity": "base",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "base-cut-face",
+      "type": "rect",
+      "x": 575,
+      "y": 300,
+      "w": 364,
+      "h": 112,
+      "fill": "#E5EBEE",
+      "entity": "base",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-cavity",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          592,
+          337
+        ],
+        [
+          "L",
+          615,
+          337
+        ],
+        [
+          "L",
+          615,
+          244
+        ],
+        [
+          "L",
+          665,
+          244
+        ],
+        [
+          "L",
+          665,
+          337
+        ],
+        [
+          "L",
+          745,
+          337
+        ],
+        [
+          "L",
+          745,
+          244
+        ],
+        [
+          "L",
+          795,
+          244
+        ],
+        [
+          "L",
+          795,
+          337
+        ],
+        [
+          "L",
+          875,
+          337
+        ],
+        [
+          "L",
+          875,
+          244
+        ],
+        [
+          "L",
+          925,
+          244
+        ],
+        [
+          "L",
+          925,
+          337
+        ],
+        [
+          "L",
+          928,
+          337
+        ],
+        [
+          "L",
+          928,
+          396
+        ],
+        [
+          "L",
+          592,
+          396
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "entity": "new_reference",
+      "stroke": "#438675",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "gasket-sheet",
+      "type": "polygon",
+      "points": [
+        [
+          580,
+          300
+        ],
+        [
+          615,
+          279
+        ],
+        [
+          969,
+          279
+        ],
+        [
+          934,
+          300
+        ]
+      ],
+      "fill": "#DCB372",
+      "entity": "gasket",
+      "stroke": "#B58A46",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "gasket-lip",
+      "type": "rect",
+      "x": 580,
+      "y": 300,
+      "w": 354,
+      "h": 4,
+      "fill": "#C69A54",
+      "entity": "gasket",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "port1",
+      "type": "polygon",
+      "points": [
+        [
+          615,
+          300
+        ],
+        [
+          650,
+          279
+        ],
+        [
+          700,
+          279
+        ],
+        [
+          665,
+          300
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "entity": "new_reference",
+      "stroke": "#438675",
+      "stroke_width": 1
+    },
+    {
+      "id": "port2",
+      "type": "polygon",
+      "points": [
+        [
+          745,
+          300
+        ],
+        [
+          780,
+          279
+        ],
+        [
+          830,
+          279
+        ],
+        [
+          795,
+          300
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "entity": "new_reference",
+      "stroke": "#438675",
+      "stroke_width": 1
+    },
+    {
+      "id": "port3",
+      "type": "polygon",
+      "points": [
+        [
+          875,
+          300
+        ],
+        [
+          910,
+          279
+        ],
+        [
+          960,
+          279
+        ],
+        [
+          925,
+          300
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "entity": "new_reference",
+      "stroke": "#438675",
+      "stroke_width": 1
+    },
+    {
+      "id": "prior-body1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          57,
+          158
+        ],
+        [
+          "C",
+          81,
+          138,
+          137,
+          138,
+          137,
+          158
+        ],
+        [
+          "L",
+          137,
+          280
+        ],
+        [
+          "C",
+          137,
+          290,
+          128,
+          296,
+          123,
+          300
+        ],
+        [
+          "L",
+          57,
+          300
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "entity": "sensor1",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-wall-left1",
+      "type": "rect",
+      "x": 57,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor1",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-wall-right1",
+      "type": "rect",
+      "x": 115,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor1",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-neck1",
+      "type": "rect",
+      "x": 65,
+      "y": 248,
+      "w": 50,
+      "h": 45,
+      "fill": "#CCE6DC",
+      "entity": "old_reference",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-neck-left1",
+      "type": "line",
+      "points": [
+        [
+          65,
+          248
+        ],
+        [
+          65,
+          291
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "old_reference"
+    },
+    {
+      "id": "prior-neck-right1",
+      "type": "line",
+      "points": [
+        [
+          115,
+          248
+        ],
+        [
+          115,
+          291
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "old_reference"
+    },
+    {
+      "id": "prior-neck-taper1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          65,
+          290
+        ],
+        [
+          "L",
+          87,
+          303
+        ],
+        [
+          "L",
+          93,
+          303
+        ],
+        [
+          "L",
+          115,
+          290
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "entity": "old_reference",
+      "stroke": "#438675",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-sample1",
+      "type": "rect",
+      "x": 65,
+      "y": 158,
+      "w": 50,
+      "h": 86,
+      "fill": "#D9EEF6",
+      "entity": "S1",
+      "stroke": "#558DA6",
+      "stroke_width": 1.4
+    },
+    {
+      "id": "prior-sample-rim1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          65,
+          158
+        ],
+        [
+          "C",
+          85,
+          145,
+          129,
+          145,
+          129,
+          158
+        ],
+        [
+          "L",
+          115,
+          158
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#EAF6FA",
+      "entity": "S1",
+      "stroke": "#558DA6",
+      "stroke_width": 1
+    },
+    {
+      "id": "prior-diaphragm1",
+      "type": "rect",
+      "x": 64,
+      "y": 243,
+      "w": 52,
+      "h": 5,
+      "fill": "#354B56",
+      "entity": "membrane1",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-sample-label1",
+      "type": "text",
+      "text": "S1",
+      "x": 90,
+      "y": 210,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "prior-body2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          187,
+          158
+        ],
+        [
+          "C",
+          211,
+          138,
+          267,
+          138,
+          267,
+          158
+        ],
+        [
+          "L",
+          267,
+          280
+        ],
+        [
+          "C",
+          267,
+          290,
+          258,
+          296,
+          253,
+          300
+        ],
+        [
+          "L",
+          187,
+          300
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "entity": "sensor2",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-wall-left2",
+      "type": "rect",
+      "x": 187,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor2",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-wall-right2",
+      "type": "rect",
+      "x": 245,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor2",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-neck2",
+      "type": "rect",
+      "x": 195,
+      "y": 248,
+      "w": 50,
+      "h": 45,
+      "fill": "#CCE6DC",
+      "entity": "old_reference",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-neck-left2",
+      "type": "line",
+      "points": [
+        [
+          195,
+          248
+        ],
+        [
+          195,
+          291
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "old_reference"
+    },
+    {
+      "id": "prior-neck-right2",
+      "type": "line",
+      "points": [
+        [
+          245,
+          248
+        ],
+        [
+          245,
+          291
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "old_reference"
+    },
+    {
+      "id": "prior-neck-taper2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          195,
+          290
+        ],
+        [
+          "L",
+          217,
+          303
+        ],
+        [
+          "L",
+          223,
+          303
+        ],
+        [
+          "L",
+          245,
+          290
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "entity": "old_reference",
+      "stroke": "#438675",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-sample2",
+      "type": "rect",
+      "x": 195,
+      "y": 158,
+      "w": 50,
+      "h": 86,
+      "fill": "#D9EEF6",
+      "entity": "S2",
+      "stroke": "#558DA6",
+      "stroke_width": 1.4
+    },
+    {
+      "id": "prior-sample-rim2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          195,
+          158
+        ],
+        [
+          "C",
+          215,
+          145,
+          259,
+          145,
+          259,
+          158
+        ],
+        [
+          "L",
+          245,
+          158
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#EAF6FA",
+      "entity": "S2",
+      "stroke": "#558DA6",
+      "stroke_width": 1
+    },
+    {
+      "id": "prior-diaphragm2",
+      "type": "rect",
+      "x": 194,
+      "y": 243,
+      "w": 52,
+      "h": 5,
+      "fill": "#354B56",
+      "entity": "membrane2",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-sample-label2",
+      "type": "text",
+      "text": "S2",
+      "x": 220,
+      "y": 210,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "prior-body3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          317,
+          158
+        ],
+        [
+          "C",
+          341,
+          138,
+          397,
+          138,
+          397,
+          158
+        ],
+        [
+          "L",
+          397,
+          280
+        ],
+        [
+          "C",
+          397,
+          290,
+          388,
+          296,
+          383,
+          300
+        ],
+        [
+          "L",
+          317,
+          300
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "entity": "sensor3",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-wall-left3",
+      "type": "rect",
+      "x": 317,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor3",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-wall-right3",
+      "type": "rect",
+      "x": 375,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor3",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-neck3",
+      "type": "rect",
+      "x": 325,
+      "y": 248,
+      "w": 50,
+      "h": 45,
+      "fill": "#CCE6DC",
+      "entity": "old_reference",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-neck-left3",
+      "type": "line",
+      "points": [
+        [
+          325,
+          248
+        ],
+        [
+          325,
+          291
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "old_reference"
+    },
+    {
+      "id": "prior-neck-right3",
+      "type": "line",
+      "points": [
+        [
+          375,
+          248
+        ],
+        [
+          375,
+          291
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "old_reference"
+    },
+    {
+      "id": "prior-neck-taper3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          325,
+          290
+        ],
+        [
+          "L",
+          347,
+          303
+        ],
+        [
+          "L",
+          353,
+          303
+        ],
+        [
+          "L",
+          375,
+          290
+        ]
+      ],
+      "fill": "#CCE6DC",
+      "entity": "old_reference",
+      "stroke": "#438675",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-sample3",
+      "type": "rect",
+      "x": 325,
+      "y": 158,
+      "w": 50,
+      "h": 86,
+      "fill": "#D9EEF6",
+      "entity": "S3",
+      "stroke": "#558DA6",
+      "stroke_width": 1.4
+    },
+    {
+      "id": "prior-sample-rim3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          325,
+          158
+        ],
+        [
+          "C",
+          345,
+          145,
+          389,
+          145,
+          389,
+          158
+        ],
+        [
+          "L",
+          375,
+          158
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#EAF6FA",
+      "entity": "S3",
+      "stroke": "#558DA6",
+      "stroke_width": 1
+    },
+    {
+      "id": "prior-diaphragm3",
+      "type": "rect",
+      "x": 324,
+      "y": 243,
+      "w": 52,
+      "h": 5,
+      "fill": "#354B56",
+      "entity": "membrane3",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "prior-sample-label3",
+      "type": "text",
+      "text": "S3",
+      "x": 350,
+      "y": 210,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "new-body1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          607,
+          158
+        ],
+        [
+          "C",
+          631,
+          138,
+          687,
+          138,
+          687,
+          158
+        ],
+        [
+          "L",
+          687,
+          280
+        ],
+        [
+          "C",
+          687,
+          290,
+          678,
+          296,
+          673,
+          300
+        ],
+        [
+          "L",
+          607,
+          300
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "entity": "sensor1",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-wall-left1",
+      "type": "rect",
+      "x": 607,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor1",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-wall-right1",
+      "type": "rect",
+      "x": 665,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor1",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-neck1",
+      "type": "rect",
+      "x": 615,
+      "y": 248,
+      "w": 50,
+      "h": 61,
+      "fill": "#CCE6DC",
+      "entity": "new_reference",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-neck-left1",
+      "type": "line",
+      "points": [
+        [
+          615,
+          248
+        ],
+        [
+          615,
+          305
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "new_reference"
+    },
+    {
+      "id": "new-neck-right1",
+      "type": "line",
+      "points": [
+        [
+          665,
+          248
+        ],
+        [
+          665,
+          305
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "new_reference"
+    },
+    {
+      "id": "new-sample1",
+      "type": "rect",
+      "x": 615,
+      "y": 158,
+      "w": 50,
+      "h": 86,
+      "fill": "#D9EEF6",
+      "entity": "S1",
+      "stroke": "#558DA6",
+      "stroke_width": 1.4
+    },
+    {
+      "id": "new-sample-rim1",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          615,
+          158
+        ],
+        [
+          "C",
+          635,
+          145,
+          679,
+          145,
+          679,
+          158
+        ],
+        [
+          "L",
+          665,
+          158
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#EAF6FA",
+      "entity": "S1",
+      "stroke": "#558DA6",
+      "stroke_width": 1
+    },
+    {
+      "id": "new-diaphragm1",
+      "type": "rect",
+      "x": 614,
+      "y": 243,
+      "w": 52,
+      "h": 5,
+      "fill": "#354B56",
+      "entity": "membrane1",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-sample-label1",
+      "type": "text",
+      "text": "S1",
+      "x": 640,
+      "y": 210,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "new-body2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          737,
+          158
+        ],
+        [
+          "C",
+          761,
+          138,
+          817,
+          138,
+          817,
+          158
+        ],
+        [
+          "L",
+          817,
+          280
+        ],
+        [
+          "C",
+          817,
+          290,
+          808,
+          296,
+          803,
+          300
+        ],
+        [
+          "L",
+          737,
+          300
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "entity": "sensor2",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-wall-left2",
+      "type": "rect",
+      "x": 737,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor2",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-wall-right2",
+      "type": "rect",
+      "x": 795,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor2",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-neck2",
+      "type": "rect",
+      "x": 745,
+      "y": 248,
+      "w": 50,
+      "h": 61,
+      "fill": "#CCE6DC",
+      "entity": "new_reference",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-neck-left2",
+      "type": "line",
+      "points": [
+        [
+          745,
+          248
+        ],
+        [
+          745,
+          305
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "new_reference"
+    },
+    {
+      "id": "new-neck-right2",
+      "type": "line",
+      "points": [
+        [
+          795,
+          248
+        ],
+        [
+          795,
+          305
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "new_reference"
+    },
+    {
+      "id": "new-sample2",
+      "type": "rect",
+      "x": 745,
+      "y": 158,
+      "w": 50,
+      "h": 86,
+      "fill": "#D9EEF6",
+      "entity": "S2",
+      "stroke": "#558DA6",
+      "stroke_width": 1.4
+    },
+    {
+      "id": "new-sample-rim2",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          745,
+          158
+        ],
+        [
+          "C",
+          765,
+          145,
+          809,
+          145,
+          809,
+          158
+        ],
+        [
+          "L",
+          795,
+          158
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#EAF6FA",
+      "entity": "S2",
+      "stroke": "#558DA6",
+      "stroke_width": 1
+    },
+    {
+      "id": "new-diaphragm2",
+      "type": "rect",
+      "x": 744,
+      "y": 243,
+      "w": 52,
+      "h": 5,
+      "fill": "#354B56",
+      "entity": "membrane2",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-sample-label2",
+      "type": "text",
+      "text": "S2",
+      "x": 770,
+      "y": 210,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "new-body3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          867,
+          158
+        ],
+        [
+          "C",
+          891,
+          138,
+          947,
+          138,
+          947,
+          158
+        ],
+        [
+          "L",
+          947,
+          280
+        ],
+        [
+          "C",
+          947,
+          290,
+          938,
+          296,
+          933,
+          300
+        ],
+        [
+          "L",
+          867,
+          300
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#B6C4CC",
+      "entity": "sensor3",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-wall-left3",
+      "type": "rect",
+      "x": 867,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor3",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-wall-right3",
+      "type": "rect",
+      "x": 925,
+      "y": 158,
+      "w": 8,
+      "h": 142,
+      "fill": "#E5EBEE",
+      "entity": "sensor3",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-neck3",
+      "type": "rect",
+      "x": 875,
+      "y": 248,
+      "w": 50,
+      "h": 61,
+      "fill": "#CCE6DC",
+      "entity": "new_reference",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-neck-left3",
+      "type": "line",
+      "points": [
+        [
+          875,
+          248
+        ],
+        [
+          875,
+          305
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "new_reference"
+    },
+    {
+      "id": "new-neck-right3",
+      "type": "line",
+      "points": [
+        [
+          925,
+          248
+        ],
+        [
+          925,
+          305
+        ]
+      ],
+      "stroke": "#438675",
+      "stroke_width": 1.4,
+      "entity": "new_reference"
+    },
+    {
+      "id": "new-sample3",
+      "type": "rect",
+      "x": 875,
+      "y": 158,
+      "w": 50,
+      "h": 86,
+      "fill": "#D9EEF6",
+      "entity": "S3",
+      "stroke": "#558DA6",
+      "stroke_width": 1.4
+    },
+    {
+      "id": "new-sample-rim3",
+      "type": "path",
+      "commands": [
+        [
+          "M",
+          875,
+          158
+        ],
+        [
+          "C",
+          895,
+          145,
+          939,
+          145,
+          939,
+          158
+        ],
+        [
+          "L",
+          925,
+          158
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#EAF6FA",
+      "entity": "S3",
+      "stroke": "#558DA6",
+      "stroke_width": 1
+    },
+    {
+      "id": "new-diaphragm3",
+      "type": "rect",
+      "x": 874,
+      "y": 243,
+      "w": 52,
+      "h": 5,
+      "fill": "#354B56",
+      "entity": "membrane3",
+      "stroke": "none",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "new-sample-label3",
+      "type": "text",
+      "text": "S3",
+      "x": 900,
+      "y": 210,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "pin1",
+      "type": "rect",
+      "x": 586,
+      "y": 267,
+      "w": 8,
+      "h": 38,
+      "fill": "#A6B7BF",
+      "entity": "pin1",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "pin-cap1",
+      "type": "ellipse",
+      "x": 590,
+      "y": 267,
+      "rx": 4,
+      "ry": 2,
+      "fill": "#DCE5E9",
+      "stroke": "#718792",
+      "stroke_width": 1,
+      "entity": "pin1"
+    },
+    {
+      "id": "pin2",
+      "type": "rect",
+      "x": 959,
+      "y": 248,
+      "w": 8,
+      "h": 38,
+      "fill": "#A6B7BF",
+      "entity": "pin2",
+      "stroke": "#718792",
+      "stroke_width": 1.3
+    },
+    {
+      "id": "pin-cap2",
+      "type": "ellipse",
+      "x": 963,
+      "y": 248,
+      "rx": 4,
+      "ry": 2,
+      "fill": "#DCE5E9",
+      "stroke": "#718792",
+      "stroke_width": 1,
+      "entity": "pin2"
+    },
+    {
+      "id": "new-reference-label",
+      "type": "text",
+      "text": "Common reference",
+      "x": 755,
+      "y": 372,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "aligned-label",
+      "type": "text",
+      "text": "Two pins + one gasket",
+      "x": 765,
+      "y": 458,
+      "size": 22,
+      "align": "center",
+      "fill": "#243B47"
+    },
+    {
+      "id": "scope",
+      "type": "text",
+      "text": "Same three modules shown in both configurations",
+      "x": 30,
+      "y": 514,
+      "size": 20,
+      "align": "left",
+      "fill": "#243B47"
+    }
+  ],
+  "caption": "DEMO. Replacement of the reference interface. (a) Three hoses connect the sensor reference sides to a common source. (b) One removable base supplies the same reference through three sealed ports, aligned by two pins and sealed by one gasket. Both views repeat the same three modules; blue samples remain isolated by the dark closed diaphragms. Pale housings, hose lengths and depths are schematic, not measured geometry or a pin-fit design. No flow direction is implied. Depressurize before opening.",
+  "alt_text": "The same three isolated sensing modules retain a common reference; three individual hoses are replaced by one aligned removable base. DEMO. Replacement of the reference interface. (a) Three hoses connect the sensor reference sides to a common source. (b) One removable base supplies the same reference through three sealed ports, aligned by two pins and sealed by one gasket. Both views repeat the same three modules; blue samples remain isolated by the dark closed diaphragms. Pale housings, hose lengths and depths are schematic, not measured geometry or a pin-fit design. No flow direction is implied. Depressurize before opening."
+}

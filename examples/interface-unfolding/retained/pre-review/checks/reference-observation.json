@@ -1,0 +1,42 @@
+[
+  {
+    "id": "I1",
+    "path": "<local-runtime>/reference_01.jpg",
+    "sha256": "37a268825d846c63b3d46e711d91068ba549ebcf6464a81b954e604c9686be6e",
+    "actually_opened": true,
+    "copied_to_skill": false,
+    "matches_palette_source": true
+  },
+  {
+    "id": "I2",
+    "path": "<local-runtime>/reference_02.jpg",
+    "sha256": "9efada4a9d00e41be0eef8f5da6879e37b4ccf418a333f064cd5789d60459c6a",
+    "actually_opened": true,
+    "copied_to_skill": false,
+    "matches_palette_source": true
+  },
+  {
+    "id": "I3",
+    "path": "<local-runtime>/reference_03.jpg",
+    "sha256": "a3d6601a8183be5a4d6761abc7bc0afe7b5f659c853bf89c8cbda8df939bc8b1",
+    "actually_opened": true,
+    "copied_to_skill": false,
+    "matches_palette_source": true
+  },
+  {
+    "id": "I4",
+    "path": "<local-runtime>/reference_04.jpg",
+    "sha256": "8d6894cb3c7a71b0eae380db228b77cc11cc8b1500ec5aa3e02a580603c565c1",
+    "actually_opened": true,
+    "copied_to_skill": false,
+    "matches_palette_source": true
+  },
+  {
+    "id": "I5",
+    "path": "<local-runtime>/reference_05.jpg",
+    "sha256": "34c67fc02aecff68d1ed2b05ec390bd5f42c6944821a4623a341b9ebab8208c8",
+    "actually_opened": true,
+    "copied_to_skill": false,
+    "matches_palette_source": true
+  }
+]

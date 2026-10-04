@@ -1,0 +1,131 @@
+{
+  "provenance": "DEMO teaching illustration",
+  "width_mm": 160,
+  "height_mm": 80,
+  "placement_width_mm": 160,
+  "main_reading": "One physical rack maps A–F to one electronic concentration list read by two independent analyses.",
+  "objects": {
+    "physical_rack": 1,
+    "vials": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "slots": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "electronic_list": 1,
+    "independent_analyses": [
+      1,
+      2
+    ]
+  },
+  "locked_values": {
+    "provenance": "Original DEMO teaching illustration; extracted from supplied figure-brief.md",
+    "pairs": [
+      [
+        "A",
+        0
+      ],
+      [
+        "B",
+        1
+      ],
+      [
+        "C",
+        4
+      ],
+      [
+        "D",
+        16
+      ],
+      [
+        "E",
+        64
+      ],
+      [
+        "F",
+        256
+      ]
+    ],
+    "unit": "μM",
+    "physical_racks": 1,
+    "vials": 6,
+    "equal_fill_levels": true,
+    "electronic_lists": 1,
+    "analysis_runs": 2,
+    "list_access": "shared read-only"
+  },
+  "relations": [
+    {
+      "kind": "occupancy",
+      "from": "vial A",
+      "to": "slot A"
+    },
+    {
+      "kind": "occupancy",
+      "from": "vial B",
+      "to": "slot B"
+    },
+    {
+      "kind": "occupancy",
+      "from": "vial C",
+      "to": "slot C"
+    },
+    {
+      "kind": "occupancy",
+      "from": "vial D",
+      "to": "slot D"
+    },
+    {
+      "kind": "occupancy",
+      "from": "vial E",
+      "to": "slot E"
+    },
+    {
+      "kind": "occupancy",
+      "from": "vial F",
+      "to": "slot F"
+    },
+    {
+      "kind": "ID correspondence",
+      "from": "physical slots A–F",
+      "to": "reference list A–F"
+    },
+    {
+      "kind": "shared read-only reference",
+      "from": "electronic list",
+      "to": "analysis run 1",
+      "arrow_required": false
+    },
+    {
+      "kind": "shared read-only reference",
+      "from": "electronic list",
+      "to": "analysis run 2",
+      "arrow_required": false
+    }
+  ],
+  "roles": {
+    "glass": "light neutral interior and blue outline",
+    "liquid": "same pale teal at identical level",
+    "rack": "neutral blue-gray",
+    "reference": "light neutral list",
+    "analysis": "white labelled endpoint"
+  },
+  "depth": "D1 schematic rack faces and vial menisci; no scale or physical dimensions",
+  "allowed_changes": "original composition and vector styling only; no new objects, values, process, or temporal encoding",
+  "input": {
+    "path": "<local-runtime>/figure-brief.md",
+    "sha256": "8e065d564a928e1a37bc1b8aac3cea67a21c27957abc9efba47966923e4a9abd"
+  },
+  "selected_svg_sha256": "cc3b28870d2c0c9bc2ed4c7534b15f4e47ee43b2e9ab643aaa8b5e04de23689a",
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

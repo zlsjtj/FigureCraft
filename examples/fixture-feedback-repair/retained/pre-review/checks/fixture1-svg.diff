@@ -1,0 +1,14 @@
+--- retained/final/figure1.svg
+
++++ selected/figure1.svg
+
+@@ -587,7 +587,7 @@
+
+    </g>
+    <g id="line2d_9">
+     <path d="M 401.102362 246.897638 
+-L 360 246.897638 
++L 355.748031 246.897638 
+ " clip-path="url(#p32845edd7a)" style="fill: none; stroke: #566774; stroke-width: 0.7; stroke-linecap: round"/>
+    </g>
+    <g id="text_1">

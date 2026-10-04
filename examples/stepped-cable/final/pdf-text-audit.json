@@ -1,0 +1,12 @@
+{
+  "pdf": "figure.pdf",
+  "auditable": true,
+  "decoding_complete": true,
+  "partial_text_found": false,
+  "minimum_required_pt": 8.0,
+  "minimum_found_pt": 10.5,
+  "text_run_count": 6,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}

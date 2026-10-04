@@ -1,0 +1,20 @@
+{
+  "evidence": "DEMO",
+  "pdf_mm": [
+    159.99999749999998,
+    100.00001166666667
+  ],
+  "png_pixels": [
+    1260,
+    788
+  ],
+  "min_font_pt": 8.5,
+  "svg_text_nodes": 23,
+  "pdf_text": "G \u8def neighbouring fields\nDEMO\nW0 requires (e, 17)\nW1\nboundary\nupdate 17\ninterior work\nstep 18\n(e, 17) READY\nfree slot\nincoming slots\ncopy 17\nmatch\nghost copy\nsource edge \u8def 17\nrelease 17\nwrite 18 when ready\nW0\nW1\nW2\nW3\n(e, 16): no match\nBoth slots live: W1 waits.\n",
+  "all_vector": true,
+  "visual_review": "NOT_YET_VIEWED",
+  "author_acceptance": "NOT_REQUESTED",
+  "checks_scope": "format, dimensions and text presence only",
+  "rendered_at_96dpi": true,
+  "input_sha256": "01a7b6e1cc7a191880e2a95027dfa626523ba0912f4add39f8d652ab99d987b8"
+}

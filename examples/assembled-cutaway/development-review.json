@@ -1,0 +1,41 @@
+{
+  "selected": "interface-final",
+  "status": "DEVELOPMENT_CANDIDATE_REQUIRES_INDEPENDENT_REVIEW",
+  "canvas_mm": [
+    160,
+    85
+  ],
+  "min_font_pt": 9.070866141732285,
+  "scientific_checks": {
+    "physical_samples": 3,
+    "views_of_each_sample": 2,
+    "closed_diaphragms_each_configuration": 3,
+    "prior_individual_hoses": 3,
+    "new_pins": 2,
+    "new_gaskets": 1,
+    "common_reference_both_configurations": true
+  },
+  "generated_alternatives": 2,
+  "repairs": [
+    "gasket floating above contact plane",
+    "rounded side wing replaced by whole half shell contour",
+    "opaque shell no longer occludes reference ports",
+    "gold front lip clipped out of all three openings"
+  ],
+  "failures_preserved": [
+    "exploded-first: cavity incorrectly stayed connected during exploded state; labels crowded",
+    "assembled-contour: decoration identity required by engine",
+    "assembled-contour-bound: shell occluded reference necks",
+    "selected: front lip briefly capped open ports"
+  ],
+  "limits": [
+    "Pin mating geometry is not in the inputs, so it is not drawn.",
+    "No human or author acceptance.",
+    "Model visual review only; not Nature-grade certification.",
+    "Synthetic DEMO; no real-device design or measurement."
+  ],
+  "previous_selection": "object-view",
+  "editorial_selection": "Changed from explaining shared reference to showing the changed interface after editor checked whole-paper claim. This was an execution-scope error, not proof that missing general rules caused it.",
+  "layout_hypotheses": 3,
+  "new_candidate_is_development_not_independent": true
+}

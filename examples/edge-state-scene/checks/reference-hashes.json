@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_hash_matches_palette_registry": {
+    "I1": true,
+    "I2": true,
+    "I3": true,
+    "I4": true,
+    "I5": true
+  },
+  "images_opened_in_this_development": true,
+  "images_bundled": false
+}

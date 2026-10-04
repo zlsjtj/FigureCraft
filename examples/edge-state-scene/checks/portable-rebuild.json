@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "same source rebuilt from another current working directory; not a new generation trial",
+  "cases": {
+    "candidate-A": {
+      "svg_identical": true,
+      "png_identical": true,
+      "pdf_text_identical": true,
+      "pdf_page_box_identical": true,
+      "pdf_byte_hash_equality_not_required": "ReportLab writes run metadata; compare actual SVG/PNG bytes and PDF text/page box."
+    },
+    "candidate-B": {
+      "svg_identical": true,
+      "png_identical": true,
+      "pdf_text_identical": true,
+      "pdf_page_box_identical": true,
+      "pdf_byte_hash_equality_not_required": "ReportLab writes run metadata; compare actual SVG/PNG bytes and PDF text/page box."
+    },
+    "selected": {
+      "svg_identical": true,
+      "png_identical": true,
+      "pdf_text_identical": true,
+      "pdf_page_box_identical": true,
+      "pdf_byte_hash_equality_not_required": "ReportLab writes run metadata; compare actual SVG/PNG bytes and PDF text/page box."
+    }
+  }
+}

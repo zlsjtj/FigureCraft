@@ -1,0 +1,5 @@
+case_id,provenance,support_state,groove_x_mm,panel_angle_deg,P_x_mm,P_z_mm,Q_x_mm,Q_z_mm,T_x_mm,T_z_mm,P_Q_distance_mm,active_foot_groove_contacts,permanent_revolute_joints,physical_experiments
+S1,synthetic_analytic,seated,50.000000,78.463041,12.000000,58.787754,50.000000,0.000000,24.000000,117.575508,70.000000,1,2,0
+S2,synthetic_analytic,seated,75.000000,61.278307,28.833333,52.617857,75.000000,0.000000,57.666667,105.235714,70.000000,1,2,0
+S3,synthetic_analytic,seated,100.000000,43.531152,43.500000,41.324932,100.000000,0.000000,87.000000,82.649864,70.000000,1,2,0
+R,synthetic_analytic,released_externally_held,NA,90.000000,0.000000,60.000000,60.621778,25.000000,0.000000,120.000000,70.000000,0,2,0

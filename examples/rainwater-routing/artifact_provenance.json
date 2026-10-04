@@ -1,0 +1,49 @@
+{
+  "scope": "Public constructed DEMO materials and authored figure artifacts only",
+  "packaging_change": "Source reference paths normalized to example-root relative paths; rendered artifact bytes preserved. No scientific or visual redesign.",
+  "raw_input_sha256": {
+    "README_DEMO.md": "23937b4f1f0302ad3290db540d2657c61fd14afbb066f980524fe2e5944d5139",
+    "rough_paragraphs_v0.md": "6814647c227de030b4b7c6967a3828ccd49aaad494aa9ead8a2d6de7338cca56",
+    "routing_and_operation_record.md": "19d84b752465dc16237d55efe553acdad88e5a728803f8fcaaf31308a87c7fc3",
+    "interval_results.csv": "8519f6f1b54aa73b7bab888128ea7a4ec0dcfd9d6b3f7a01f1a99517382d6855",
+    "construct_transfer.py": "ec155954a40e2fd55b962544b30999adb36f74577485030f9134350a1a0d29f2"
+  },
+  "variants": {
+    "abstract-first": {
+      "artifact_sha256": {
+        "svg": "03e419bd54e5fa235cbd3229abd7823ec2678eb15a95241f670884188afa314d",
+        "pdf": "8933044d2a08bf9097112096160241a110f412dc0fbf32088ea7d43e3fbbe474",
+        "png": "6d4cb12447e4b4a7ae5a5156eb4a2e518d170b0eb25f0eba1b61495a9c53af1a"
+      },
+      "original_spec_sha256": "93294f4353d157b13a9d99f274a295e76faf2571b62d7dd18e933c766dbf6c3c",
+      "packaged_spec_sha256": "9f77eb108e79a03e056e1360134895b9499d840611966ccc611eceaf039699ef"
+    },
+    "abstract-baseline": {
+      "artifact_sha256": {
+        "svg": "19d5ca636537cd760e1f881aeb773e8ba2531da36e1099a964cb7fe5993202f9",
+        "pdf": "c2f30ebd2e0c6b02035f1223fb4f521da26a654f1d3b1241a40f0e250d330f8f",
+        "png": "dcd2806e33086686cd7cf1a3ff3b372655b390ed433899dac75d6930f0a41c33"
+      },
+      "original_spec_sha256": "cc122d7f3e65525916d840cd5c4148128810df01c2c7b79b88a9e0852be3bbc8",
+      "packaged_spec_sha256": "6d6c79df472ce63d56b837f67f8b8e90022fdcfb09a495d198838bdad764b3b5"
+    },
+    "object-first": {
+      "artifact_sha256": {
+        "svg": "fa096769dbd80f125af5c0c0c3b87285beb72d17762ac9c080ad7f52b7351ad2",
+        "pdf": "bd25c654b2609da758a7abbbf6396ffe44ec881f1eeecdb23c5ac09ffcb541ae",
+        "png": "b7d95e34a2b7616a1b869e7435484bf9c3ed9a2876850728c4925fd3e4b7f488"
+      },
+      "original_spec_sha256": "aa24748e5f30a7b0776d67bd4a32ffa424a47c7e078ded6f43ddf44b17207f0c",
+      "packaged_spec_sha256": "bb2ca8324736daf119a62f43f30cbc6dbab2b81524aad77a21aa75c4b717b5ac"
+    },
+    "object-selected": {
+      "artifact_sha256": {
+        "svg": "4241b3651a54aa72cbc8f583dcba687328b44b9863829dbcdaef879ce496ba6b",
+        "pdf": "4bd149dcbcaaf523d00324c8c0f6ca1dfc21811f757ff12df407d085935bfd13",
+        "png": "ef9e150a0dda3276eb06bfaef73edcf6affb4fc7036feeee0b1188a2e5a692c5"
+      },
+      "original_spec_sha256": "d57803ef567dface0a3433463679173147a788ef7bc5528db02ce990ea04b204",
+      "packaged_spec_sha256": "5c8d2874589bb5f35c91df711949261ab496b24d9dbb5d776a697a7f8b86428d"
+    }
+  }
+}

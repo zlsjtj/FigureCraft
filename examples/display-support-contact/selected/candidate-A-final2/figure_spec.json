@@ -1,0 +1,165 @@
+{
+  "source_type": "synthetic_analytical_teaching_DEMO",
+  "physical_experiments": 0,
+  "page_mm": [
+    160,
+    99
+  ],
+  "primary_reading_conclusion": "H and P remain connected while the single integral foot disengages upward from one fixed groove.",
+  "selected": "selected/candidate-A-final2",
+  "editable": "Native SVG geometry and text; vector PDF with embedded font; PNG derivatives",
+  "source_sha256": {
+    "source-input\\derive_records.py": "c4b00fc9dcdbbcbfe5a43ec086fd69a22d501237cae2cc94f76c677d22710541",
+    "source-input\\finite-record.csv": "c9f745dde4abf7343b50cdabf2766c3c74ed6811455eb13fb1226040d5b351b6",
+    "source-input\\geometry-spec.md": "357b4c23eb8111f092270011582bf7862fed4fc96561c70201de1f33f61faafa",
+    "source-input\\raw-manuscript.txt": "2267ccaac37fd80161a79d19f9cc6d7738c4f080d07f76f246dd326ae2c27da0",
+    "source-input\\README.md": "c06b5b5663ddc8bd6b6e373314c30f61a0a21d587afdc043f0dd34619ef1fe1a"
+  },
+  "role_colours": {
+    "ink": "#243B46",
+    "quiet": "#667984",
+    "panel": "#B8DFDA",
+    "panel_side": "#74A9A5",
+    "panel_edge": "#437D7C",
+    "stay": "#DB9E56",
+    "stay_side": "#AE7137",
+    "base": "#E6EDF1",
+    "base_front": "#BECCD5",
+    "base_side": "#CFDBE1",
+    "groove": "#849BA9",
+    "paper": "#FFFFFF"
+  },
+  "bodies": [
+    "base",
+    "panel",
+    "stay_with_integral_foot"
+  ],
+  "permanent_connections": [
+    "H:base-panel",
+    "P:panel-stay"
+  ],
+  "unilateral_contact": "one foot with one of S1 S2 S3 when seated; none in R",
+  "groove_centres_x_mm": [
+    50,
+    75,
+    100
+  ],
+  "main_state": "S2",
+  "other_rendered_state": "R",
+  "state_records": [
+    {
+      "case_id": "S1",
+      "provenance": "synthetic_analytic",
+      "support_state": "seated",
+      "groove_x_mm": "50.000000",
+      "panel_angle_deg": "78.463041",
+      "P_x_mm": "12.000000",
+      "P_z_mm": "58.787754",
+      "Q_x_mm": "50.000000",
+      "Q_z_mm": "0.000000",
+      "T_x_mm": "24.000000",
+      "T_z_mm": "117.575508",
+      "P_Q_distance_mm": "70.000000",
+      "active_foot_groove_contacts": "1",
+      "permanent_revolute_joints": "2",
+      "physical_experiments": "0"
+    },
+    {
+      "case_id": "S2",
+      "provenance": "synthetic_analytic",
+      "support_state": "seated",
+      "groove_x_mm": "75.000000",
+      "panel_angle_deg": "61.278307",
+      "P_x_mm": "28.833333",
+      "P_z_mm": "52.617857",
+      "Q_x_mm": "75.000000",
+      "Q_z_mm": "0.000000",
+      "T_x_mm": "57.666667",
+      "T_z_mm": "105.235714",
+      "P_Q_distance_mm": "70.000000",
+      "active_foot_groove_contacts": "1",
+      "permanent_revolute_joints": "2",
+      "physical_experiments": "0"
+    },
+    {
+      "case_id": "S3",
+      "provenance": "synthetic_analytic",
+      "support_state": "seated",
+      "groove_x_mm": "100.000000",
+      "panel_angle_deg": "43.531152",
+      "P_x_mm": "43.500000",
+      "P_z_mm": "41.324932",
+      "Q_x_mm": "100.000000",
+      "Q_z_mm": "0.000000",
+      "T_x_mm": "87.000000",
+      "T_z_mm": "82.649864",
+      "P_Q_distance_mm": "70.000000",
+      "active_foot_groove_contacts": "1",
+      "permanent_revolute_joints": "2",
+      "physical_experiments": "0"
+    },
+    {
+      "case_id": "R",
+      "provenance": "synthetic_analytic",
+      "support_state": "released_externally_held",
+      "groove_x_mm": "NA",
+      "panel_angle_deg": "90.000000",
+      "P_x_mm": "0.000000",
+      "P_z_mm": "60.000000",
+      "Q_x_mm": "60.621778",
+      "Q_z_mm": "25.000000",
+      "T_x_mm": "0.000000",
+      "T_z_mm": "120.000000",
+      "P_Q_distance_mm": "70.000000",
+      "active_foot_groove_contacts": "0",
+      "permanent_revolute_joints": "2",
+      "physical_experiments": "0"
+    }
+  ],
+  "caption_only_comparison": [
+    "S1 panel angle and outline comparison",
+    "S3 panel angle and outline comparison"
+  ],
+  "local_view": {
+    "identity": "same S2 foot and S2 recess",
+    "section_plane": "y=-36 mm",
+    "view_direction": "along +y toward the centre plane",
+    "section_geometry": "foot radius2, base z=-8..0, groove radius2 centred x75,z0",
+    "base_window_x_mm": [
+      60,
+      90
+    ],
+    "stay_reference_cut_z_mm": 14,
+    "page_scale": 1.1,
+    "note": "Strip cut endpoints retain actual normal thickness; this is a local schematic section of idealized contact, not fit design.",
+    "in_figure_identity": "A \u00b7 S2 section \u00b7 view +y title; main short trace A +y",
+    "integral_section": "Exact union boundary of the same radius-2 circle and width-2 strip; one fill and consistent clipped hatch, no internal joint seam or new gap"
+  },
+  "motion_arrow": "Orange upward arrow explicitly labelled Lift out; qualitative local disengagement only",
+  "assembled_view": {
+    "projection": "unaltered original affine world projection",
+    "page_transform": [
+      0.87,
+      1.5,
+      4
+    ]
+  },
+  "R_view": {
+    "projection": "side x/z",
+    "scale": 0.39,
+    "Q_z_mm": 25,
+    "lowest_foot_z_mm": 23
+  },
+  "boundary": "No new hardware, payload, clearances, stability, manufacturing or performance evidence",
+  "source_renderer_sha256": "c1ae9436c761c54206b92ede08299ea2f814634c1b5ab730ffbe8b22aa08b8e1",
+  "revision_type": "annotation_ownership_repair_only",
+  "parent_candidate": "selected/candidate-A-final",
+  "selected_sha256": {
+    "figure.svg": "9b810ab156658520ac024fbe3d5f10e247d662f025e0e1e6af6990fd5caff69c",
+    "figure.pdf": "d01e10272c325fe088eb8524b8405cc01e05e08e0c89c4c52afb5a25723d4b7a",
+    "figure.png": "81ecc977cca7b78419df461cdac348cc12896e99a40d9fcd718c08ab00623410",
+    "caption.md": "245ad7591a94a0720e8c965af2483feea33b1c6434d7eda1450d141d2ff5249a",
+    "alt.txt": "98b68af1201df587f32349ace124c3031ea098aa4534cb6dbad02a029053b74b",
+    "finite-record.csv": "c9f745dde4abf7343b50cdabf2766c3c74ed6811455eb13fb1226040d5b351b6"
+  }
+}

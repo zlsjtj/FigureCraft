@@ -1,0 +1,89 @@
+[
+  {
+    "example": "fixture",
+    "files": [
+      {
+        "file": "figure1.svg",
+        "exact_sha256_match": true,
+        "sha256": "41d60502248d7b2df4caff627df92749fa92f5118094c3fdee529cfcb9501747"
+      },
+      {
+        "file": "figure1.png",
+        "exact_sha256_match": true,
+        "sha256": "2fcbeecc621f4c24d38c826f6ce42dfbc590c738511eaaa9914727d3c46dd2fd"
+      },
+      {
+        "file": "figure1.pdf",
+        "exact_sha256_match": true,
+        "sha256": "771dda318ded2501136fa8f537db2e7b5db643904c76a08e0efab5970f1750ec"
+      },
+      {
+        "file": "figure2.svg",
+        "exact_sha256_match": true,
+        "sha256": "c5e061cb7c1c87a367543cdbead53521e4f94dd11e995542b1b540267ec68bb5"
+      },
+      {
+        "file": "figure2.png",
+        "exact_sha256_match": true,
+        "sha256": "36ed34fd6346db8754b639c57ffbbdb0353f662464fd3cf8d338d7b6bcbcee25"
+      },
+      {
+        "file": "figure2.pdf",
+        "exact_sha256_match": true,
+        "sha256": "42ffe7004f205585c0fb179fbd538739ac224bf3140bb8c9e0007ecaddb609f2"
+      },
+      {
+        "file": "figure1_gray.png",
+        "exact_sha256_match": true,
+        "sha256": "5427edb2ca12277ce64368d85820020f9d8358ecd5182da91dde495c3774da73"
+      },
+      {
+        "file": "figure1_deuteranopia.png",
+        "exact_sha256_match": true,
+        "sha256": "fffbf314545fae381e913c34287dd3953b6a3d0c43a7fd29c621f48015041859"
+      },
+      {
+        "file": "figure2_gray.png",
+        "exact_sha256_match": true,
+        "sha256": "bda87a4b2843981d41017e76095c2a8fabb49e89e4cf29c175e76471a80a9e20"
+      },
+      {
+        "file": "figure2_deuteranopia.png",
+        "exact_sha256_match": true,
+        "sha256": "bc251336a32f078a1ea99a5c753ec2532d3cad1f992395a2171dad6b9544a143"
+      },
+      {
+        "file": "results.csv",
+        "exact_sha256_match": true,
+        "sha256": "473056a0c8b7080193460c6c8c6cd81ab45dd944c0e46bb656f3a7169aa96c56"
+      },
+      {
+        "file": "article.md",
+        "exact_sha256_match": true,
+        "sha256": "ddf4cb09cee54b3381a80c2dba2369e8fce61913d2f07c67d56ee895f2b4ad27"
+      },
+      {
+        "file": "captions.md",
+        "exact_sha256_match": true,
+        "sha256": "0c24e6dbc08539a5e8e52388048be81f4c04be2233fe1bd3d7a46583a21a1fb9"
+      },
+      {
+        "file": "alt_text.md",
+        "exact_sha256_match": true,
+        "sha256": "1b567d9dab4d4ac5a70b6964a361a5f55760498b8b66a4281d946787e1e5aaa0"
+      },
+      {
+        "file": "results_table.md",
+        "exact_sha256_match": true,
+        "sha256": "86e08f11030cc966e2f725b6d8073de520bad2f481c6e8614479779f3fdc5b5c"
+      },
+      {
+        "file": "plot_coordinates.json",
+        "exact_sha256_match": true,
+        "sha256": "2b234a327aa4e3e0a41c211dd27ba727ea807e53d803c11959b6f27873d7db62"
+      }
+    ],
+    "build_exit_code": 0,
+    "cwd": "<local-runtime>/checks"
+  }
+]

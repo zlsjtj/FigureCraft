@@ -1,0 +1,7 @@
+# Editing and figure task
+
+Use the supplied raw notebook and table to produce an English research-style demonstration manuscript (roughly 900–1300 words excluding the full table and caption), with a title, abstract, introduction, methods, results, and limits. Decide the contribution and evidence structure yourself. Explain the engineering choices in a way a scientifically trained reader can follow; do not inflate routine components into inventions, invent citations or experiments, or hide unfavourable conditions. Retain the complete 14-row table. Mark the work clearly as a constructed DEMO.
+
+Create one editable mechanism figure at 160×100 mm. Choose its main message and visual organization from the materials. Aim for accurate, mature object representation, meaningful colour, clean hierarchy, and readable necessary labels; the figure, caption and text should share explanatory work. Do not invent unprovided hardware or dimensions. Provide SVG, PDF, PNG, source, rebuild command, caption and alt text.
+
+Preserve the first complete manuscript/figure, then perform your own review and one targeted revision if needed. A separate reader may subsequently provide observations; use the source to judge and resolve them, preserving those stages. The final deliverable is the selected manuscript and actual figure, not only a plan or evaluation. Work only in your assigned output directory; do not publish, push, or run research experiments.

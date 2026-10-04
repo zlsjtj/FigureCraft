@@ -1,0 +1,1933 @@
+{
+  "schema_version": 1,
+  "figure_id": "rainwater_diversion_demo",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "A delayed split reduces spill but a fixed tenth split attains the 2 L storage bound; unused space is local to a tank.",
+  "evidence_status": "CONSTRUCTED_DEMO: deterministic balance only; no physical experiment",
+  "source_refs": [
+    {
+      "path": "input/README_DEMO.md",
+      "sha256": "23937b4f1f0302ad3290db540d2657c61fd14afbb066f980524fe2e5944d5139"
+    },
+    {
+      "path": "input/rough_paragraphs_v0.md",
+      "sha256": "6814647c227de030b4b7c6967a3828ccd49aaad494aa9ead8a2d6de7338cca56"
+    },
+    {
+      "path": "input/routing_and_operation_record.md",
+      "sha256": "19d84b752465dc16237d55efe553acdad88e5a728803f8fcaaf31308a87c7fc3"
+    },
+    {
+      "path": "input/interval_results.csv",
+      "sha256": "8519f6f1b54aa73b7bab888128ea7a4ec0dcfd9d6b3f7a01f1a99517382d6855"
+    },
+    {
+      "path": "input/construct_transfer.py",
+      "sha256": "ec155954a40e2fd55b962544b30999adb36f74577485030f9134350a1a0d29f2"
+    }
+  ],
+  "forbidden_implications": [
+    "No measured rainfall or field benefit",
+    "No novel control method demonstrated",
+    "No physical dimensions or valve geometry inferred",
+    "No transfer between tanks",
+    "B is one supply, not duplicated"
+  ],
+  "entities": [
+    {
+      "id": "A",
+      "semantic_role": "source",
+      "description": "West roof branch"
+    },
+    {
+      "id": "B",
+      "semantic_role": "source",
+      "description": "Single central roof branch"
+    },
+    {
+      "id": "C",
+      "semantic_role": "source",
+      "description": "Service roof branch"
+    },
+    {
+      "id": "D",
+      "semantic_role": "source",
+      "description": "One lossless diverter"
+    },
+    {
+      "id": "W",
+      "semantic_role": "west",
+      "description": "West tank"
+    },
+    {
+      "id": "E",
+      "semantic_role": "east",
+      "description": "East tank"
+    },
+    {
+      "id": "LW",
+      "semantic_role": "west",
+      "description": "West served load"
+    },
+    {
+      "id": "LE",
+      "semantic_role": "east",
+      "description": "East served load"
+    },
+    {
+      "id": "SW",
+      "semantic_role": "west",
+      "description": "West spill drain"
+    },
+    {
+      "id": "SE",
+      "semantic_role": "east",
+      "description": "East spill drain"
+    }
+  ],
+  "relations": [
+    {
+      "id": "A-W",
+      "from": "A",
+      "to": "W",
+      "kind": "flow",
+      "meaning": "Water flows from A to W under the declared routing",
+      "geometry": {
+        "item_id": "A-W-line",
+        "from": [
+          130,
+          104
+        ],
+        "to": [
+          130,
+          199
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "A-W-head",
+          "tip": [
+            130,
+            199
+          ],
+          "base": [
+            130.0,
+            191.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C-E",
+      "from": "C",
+      "to": "E",
+      "kind": "flow",
+      "meaning": "Water flows from C to E under the declared routing",
+      "geometry": {
+        "item_id": "C-E-line",
+        "from": [
+          770,
+          104
+        ],
+        "to": [
+          770,
+          199
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "C-E-head",
+          "tip": [
+            770,
+            199
+          ],
+          "base": [
+            770.0,
+            191.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "B-D",
+      "from": "B",
+      "to": "D",
+      "kind": "flow",
+      "meaning": "Water flows from B to D under the declared routing",
+      "geometry": {
+        "item_id": "B-D-line",
+        "from": [
+          450,
+          104
+        ],
+        "to": [
+          450,
+          135
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "B-D-head",
+          "tip": [
+            450,
+            135
+          ],
+          "base": [
+            450.0,
+            127.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D-W",
+      "from": "D",
+      "to": "W",
+      "kind": "flow",
+      "meaning": "Water flows from D to W under the declared routing",
+      "geometry": {
+        "item_id": "D-W-line",
+        "from": [
+          436,
+          149
+        ],
+        "to": [
+          280,
+          199
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "D-W-head",
+          "tip": [
+            280,
+            199
+          ],
+          "base": [
+            280.0,
+            191.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D-E",
+      "from": "D",
+      "to": "E",
+      "kind": "flow",
+      "meaning": "Water flows from D to E under the declared routing",
+      "geometry": {
+        "item_id": "D-E-line",
+        "from": [
+          464,
+          149
+        ],
+        "to": [
+          620,
+          199
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "D-E-head",
+          "tip": [
+            620,
+            199
+          ],
+          "base": [
+            620.0,
+            191.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "W-load",
+      "from": "W",
+      "to": "LW",
+      "kind": "flow",
+      "meaning": "Water flows from W to LW under the declared routing",
+      "geometry": {
+        "item_id": "W-load-line",
+        "from": [
+          140,
+          262
+        ],
+        "to": [
+          140,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "W-load-head",
+          "tip": [
+            140,
+            291
+          ],
+          "base": [
+            140.0,
+            283.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "W-spill",
+      "from": "W",
+      "to": "SW",
+      "kind": "flow",
+      "meaning": "Water flows from W to SW under the declared routing",
+      "geometry": {
+        "item_id": "W-spill-line",
+        "from": [
+          290,
+          262
+        ],
+        "to": [
+          290,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "W-spill-head",
+          "tip": [
+            290,
+            291
+          ],
+          "base": [
+            290.0,
+            283.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "E-load",
+      "from": "E",
+      "to": "LE",
+      "kind": "flow",
+      "meaning": "Water flows from E to LE under the declared routing",
+      "geometry": {
+        "item_id": "E-load-line",
+        "from": [
+          640,
+          262
+        ],
+        "to": [
+          640,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "E-load-head",
+          "tip": [
+            640,
+            291
+          ],
+          "base": [
+            640.0,
+            283.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "E-spill",
+      "from": "E",
+      "to": "SE",
+      "kind": "flow",
+      "meaning": "Water flows from E to SE under the declared routing",
+      "geometry": {
+        "item_id": "E-spill-line",
+        "from": [
+          790,
+          262
+        ],
+        "to": [
+          790,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "E-spill-head",
+          "tip": [
+            790,
+            291
+          ],
+          "base": [
+            790.0,
+            283.0
+          ]
+        }
+      }
+    }
+  ],
+  "exact_labels": [
+    "a  One central supply, two separate tanks",
+    "CONSTRUCTED DEMO",
+    "Roof A",
+    "20 L/min",
+    "Roof B",
+    "30 L/min",
+    "Roof C",
+    "10 L/min",
+    "Split α",
+    "30α L/min",
+    "30(1 − α) L/min",
+    "Tank W",
+    "180 / 200 L",
+    "Tank E",
+    "250 / 300 L",
+    "Initial / capacity",
+    "No transfer",
+    "Load 18 L/min",
+    "Spill",
+    "Load 24 L/min",
+    "Spill",
+    "b  Four-minute outcomes",
+    "Central split α",
+    "Total spill (L)",
+    "Free at 4 min (L)",
+    "W / E",
+    "0",
+    "10",
+    "20",
+    "30",
+    "Fixed third",
+    "1/3 throughout",
+    "28 W",
+    "0 / 26",
+    "Delayed tenth",
+    "1/3 → 0.10 at 60 s",
+    "7 W",
+    "0 / 5",
+    "Fixed tenth",
+    "0.10 throughout",
+    "2 E",
+    "0 / 0",
+    "Net addition 72 L − initial free space 70 L = minimum spill 2 L"
+  ],
+  "locked_values": {
+    "roof_lpm": [
+      20,
+      30,
+      10
+    ],
+    "capacity_l": [
+      200,
+      300
+    ],
+    "initial_l": [
+      180,
+      250
+    ],
+    "load_lpm": [
+      18,
+      24
+    ],
+    "time_min": 4,
+    "switch_s": 60,
+    "minimum_spill_l": 2,
+    "all_schedules": [
+      {
+        "policy": "FIXED_THIRD",
+        "tank": {
+          "W": {
+            "spill_l": 28.0,
+            "final_l": 200,
+            "free_l": 0
+          },
+          "E": {
+            "spill_l": 0,
+            "final_l": 274.0,
+            "free_l": 26.0
+          }
+        },
+        "spill_l": 28.0,
+        "final_l": 474.0
+      },
+      {
+        "policy": "DELAYED_TENTH",
+        "tank": {
+          "W": {
+            "spill_l": 7.0,
+            "final_l": 200,
+            "free_l": 0
+          },
+          "E": {
+            "spill_l": 0,
+            "final_l": 295.0,
+            "free_l": 5.0
+          }
+        },
+        "spill_l": 7.0,
+        "final_l": 495.0
+      },
+      {
+        "policy": "FIXED_TENTH",
+        "tank": {
+          "W": {
+            "spill_l": 0,
+            "final_l": 200,
+            "free_l": 0
+          },
+          "E": {
+            "spill_l": 2.0,
+            "final_l": 300,
+            "free_l": 0
+          }
+        },
+        "spill_l": 2.0,
+        "final_l": 500
+      }
+    ]
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "west": {
+      "base": "#347FA8"
+    },
+    "east": {
+      "base": "#967019"
+    },
+    "source": {
+      "base": "#94A9B3"
+    },
+    "relation": {
+      "base": "#243B46"
+    }
+  },
+  "layout": {
+    "archetype": "shared_source_topology_above_complete_policy_comparison",
+    "reading_order": "top_to_bottom"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "output": {
+    "width_mm": 160,
+    "placement_width_mm": 160,
+    "view_width": 900,
+    "view_height": 560,
+    "font_profile": "Arial; smallest 18 view units = 9.07 pt"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "data_source": "interval_results.csv",
+  "data_sha256": "8519f6f1b54aa73b7bab888128ea7a4ec0dcfd9d6b3f7a01f1a99517382d6855",
+  "data": [
+    {
+      "policy": "FIXED_THIRD",
+      "tank": {
+        "W": {
+          "spill_l": 28.0,
+          "final_l": 200,
+          "free_l": 0
+        },
+        "E": {
+          "spill_l": 0,
+          "final_l": 274.0,
+          "free_l": 26.0
+        }
+      },
+      "spill_l": 28.0,
+      "final_l": 474.0
+    },
+    {
+      "policy": "DELAYED_TENTH",
+      "tank": {
+        "W": {
+          "spill_l": 7.0,
+          "final_l": 200,
+          "free_l": 0
+        },
+        "E": {
+          "spill_l": 0,
+          "final_l": 295.0,
+          "free_l": 5.0
+        }
+      },
+      "spill_l": 7.0,
+      "final_l": 495.0
+    },
+    {
+      "policy": "FIXED_TENTH",
+      "tank": {
+        "W": {
+          "spill_l": 0,
+          "final_l": 200,
+          "free_l": 0
+        },
+        "E": {
+          "spill_l": 2.0,
+          "final_l": 300,
+          "free_l": 0
+        }
+      },
+      "spill_l": 2.0,
+      "final_l": 500
+    }
+  ],
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 560,
+      "fill": "#FFFFFF"
+    },
+    {
+      "id": "panel-a",
+      "type": "text",
+      "text": "a  One central supply, two separate tanks",
+      "x": 24,
+      "y": 27,
+      "size": 21,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "text": "CONSTRUCTED DEMO",
+      "x": 876,
+      "y": 27,
+      "size": 18,
+      "align": "right",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "roof-A",
+      "type": "rect",
+      "x": 51,
+      "y": 47,
+      "w": 158,
+      "h": 57,
+      "radius": 5,
+      "fill": "#EDF2F4",
+      "stroke": "#B8C9D0",
+      "stroke_width": 1,
+      "entity": "A",
+      "logical_id": "A",
+      "object_part": "primary",
+      "role": "source"
+    },
+    {
+      "id": "roof-name-A",
+      "type": "text",
+      "text": "Roof A",
+      "x": 130,
+      "y": 69,
+      "size": 20,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "A",
+      "background": "#EDF2F4",
+      "object_part": "decoration",
+      "logical_id": "A"
+    },
+    {
+      "id": "roof-flow-A",
+      "type": "text",
+      "text": "20 L/min",
+      "x": 130,
+      "y": 93,
+      "size": 18,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "A",
+      "background": "#EDF2F4",
+      "object_part": "decoration",
+      "logical_id": "A"
+    },
+    {
+      "id": "roof-B",
+      "type": "rect",
+      "x": 371,
+      "y": 47,
+      "w": 158,
+      "h": 57,
+      "radius": 5,
+      "fill": "#EDF2F4",
+      "stroke": "#B8C9D0",
+      "stroke_width": 1,
+      "entity": "B",
+      "logical_id": "B",
+      "object_part": "primary",
+      "role": "source"
+    },
+    {
+      "id": "roof-name-B",
+      "type": "text",
+      "text": "Roof B",
+      "x": 450,
+      "y": 69,
+      "size": 20,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "B",
+      "background": "#EDF2F4",
+      "object_part": "decoration",
+      "logical_id": "B"
+    },
+    {
+      "id": "roof-flow-B",
+      "type": "text",
+      "text": "30 L/min",
+      "x": 450,
+      "y": 93,
+      "size": 18,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "B",
+      "background": "#EDF2F4",
+      "object_part": "decoration",
+      "logical_id": "B"
+    },
+    {
+      "id": "roof-C",
+      "type": "rect",
+      "x": 691,
+      "y": 47,
+      "w": 158,
+      "h": 57,
+      "radius": 5,
+      "fill": "#EDF2F4",
+      "stroke": "#B8C9D0",
+      "stroke_width": 1,
+      "entity": "C",
+      "logical_id": "C",
+      "object_part": "primary",
+      "role": "source"
+    },
+    {
+      "id": "roof-name-C",
+      "type": "text",
+      "text": "Roof C",
+      "x": 770,
+      "y": 69,
+      "size": 20,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "C",
+      "background": "#EDF2F4",
+      "object_part": "decoration",
+      "logical_id": "C"
+    },
+    {
+      "id": "roof-flow-C",
+      "type": "text",
+      "text": "10 L/min",
+      "x": 770,
+      "y": 93,
+      "size": 18,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "C",
+      "background": "#EDF2F4",
+      "object_part": "decoration",
+      "logical_id": "C"
+    },
+    {
+      "id": "A-W-line",
+      "type": "line",
+      "points": [
+        [
+          130,
+          104
+        ],
+        [
+          130,
+          199
+        ]
+      ],
+      "stroke": "#347FA8",
+      "stroke_width": 2.3,
+      "relation": "A-W",
+      "role": "relation"
+    },
+    {
+      "id": "A-W-head",
+      "type": "polygon",
+      "points": [
+        [
+          130,
+          199
+        ],
+        [
+          126.64,
+          191.0
+        ],
+        [
+          133.36,
+          191.0
+        ]
+      ],
+      "fill": "#347FA8",
+      "stroke": "#347FA8",
+      "stroke_width": 0,
+      "relation": "A-W",
+      "role": "relation"
+    },
+    {
+      "id": "C-E-line",
+      "type": "line",
+      "points": [
+        [
+          770,
+          104
+        ],
+        [
+          770,
+          199
+        ]
+      ],
+      "stroke": "#967019",
+      "stroke_width": 2.3,
+      "relation": "C-E",
+      "role": "relation"
+    },
+    {
+      "id": "C-E-head",
+      "type": "polygon",
+      "points": [
+        [
+          770,
+          199
+        ],
+        [
+          766.64,
+          191.0
+        ],
+        [
+          773.36,
+          191.0
+        ]
+      ],
+      "fill": "#967019",
+      "stroke": "#967019",
+      "stroke_width": 0,
+      "relation": "C-E",
+      "role": "relation"
+    },
+    {
+      "id": "B-D-line",
+      "type": "line",
+      "points": [
+        [
+          450,
+          104
+        ],
+        [
+          450,
+          135
+        ]
+      ],
+      "stroke": "#243B46",
+      "stroke_width": 2.3,
+      "relation": "B-D",
+      "role": "relation"
+    },
+    {
+      "id": "B-D-head",
+      "type": "polygon",
+      "points": [
+        [
+          450,
+          135
+        ],
+        [
+          446.64,
+          127.0
+        ],
+        [
+          453.36,
+          127.0
+        ]
+      ],
+      "fill": "#243B46",
+      "stroke": "#243B46",
+      "stroke_width": 0,
+      "relation": "B-D",
+      "role": "relation"
+    },
+    {
+      "id": "diverter",
+      "type": "circle",
+      "x": 450,
+      "y": 149,
+      "r": 14,
+      "fill": "#FFFFFF",
+      "stroke": "#243B46",
+      "stroke_width": 2,
+      "entity": "D",
+      "logical_id": "D",
+      "object_part": "primary"
+    },
+    {
+      "id": "diverter-name",
+      "type": "text",
+      "text": "Split α",
+      "x": 450,
+      "y": 188,
+      "size": 18,
+      "align": "center",
+      "fill": "#243B46",
+      "background": "#FFFFFF",
+      "object_part": "decoration",
+      "logical_id": "D"
+    },
+    {
+      "id": "D-W-line",
+      "type": "line",
+      "points": [
+        [
+          436,
+          149
+        ],
+        [
+          280,
+          149
+        ],
+        [
+          280,
+          199
+        ]
+      ],
+      "stroke": "#347FA8",
+      "stroke_width": 2.3,
+      "relation": "D-W",
+      "role": "relation"
+    },
+    {
+      "id": "D-W-head",
+      "type": "polygon",
+      "points": [
+        [
+          280,
+          199
+        ],
+        [
+          276.64,
+          191.0
+        ],
+        [
+          283.36,
+          191.0
+        ]
+      ],
+      "fill": "#347FA8",
+      "stroke": "#347FA8",
+      "stroke_width": 0,
+      "relation": "D-W",
+      "role": "relation"
+    },
+    {
+      "id": "D-W-label",
+      "type": "text",
+      "text": "30α L/min",
+      "x": 361.12,
+      "y": 138.0,
+      "size": 18,
+      "align": "center",
+      "fill": "#347FA8",
+      "background": "#FFFFFF",
+      "relation": "D-W",
+      "role": "relation",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.48,
+        "offset": [
+          0,
+          -11
+        ],
+        "anchor": [
+          361.12,
+          149.0
+        ]
+      }
+    },
+    {
+      "id": "D-E-line",
+      "type": "line",
+      "points": [
+        [
+          464,
+          149
+        ],
+        [
+          620,
+          149
+        ],
+        [
+          620,
+          199
+        ]
+      ],
+      "stroke": "#967019",
+      "stroke_width": 2.3,
+      "relation": "D-E",
+      "role": "relation"
+    },
+    {
+      "id": "D-E-head",
+      "type": "polygon",
+      "points": [
+        [
+          620,
+          199
+        ],
+        [
+          616.64,
+          191.0
+        ],
+        [
+          623.36,
+          191.0
+        ]
+      ],
+      "fill": "#967019",
+      "stroke": "#967019",
+      "stroke_width": 0,
+      "relation": "D-E",
+      "role": "relation"
+    },
+    {
+      "id": "D-E-label",
+      "type": "text",
+      "text": "30(1 − α) L/min",
+      "x": 542.0,
+      "y": 138.0,
+      "size": 18,
+      "align": "center",
+      "fill": "#967019",
+      "background": "#FFFFFF",
+      "relation": "D-E",
+      "role": "relation",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.5,
+        "offset": [
+          0,
+          -11
+        ],
+        "anchor": [
+          542.0,
+          149.0
+        ]
+      }
+    },
+    {
+      "id": "tank-W",
+      "type": "rect",
+      "x": 70,
+      "y": 199,
+      "w": 270,
+      "h": 63,
+      "radius": 3,
+      "fill": "#E1F1F8",
+      "stroke": "#347FA8",
+      "stroke_width": 2,
+      "entity": "W",
+      "logical_id": "W",
+      "object_part": "primary",
+      "role": "west"
+    },
+    {
+      "id": "tank-name-W",
+      "type": "text",
+      "text": "Tank W",
+      "x": 205,
+      "y": 224,
+      "size": 20,
+      "align": "center",
+      "fill": "#347FA8",
+      "entity": "W",
+      "background": "#E1F1F8",
+      "object_part": "decoration",
+      "logical_id": "W"
+    },
+    {
+      "id": "tank-volume-W",
+      "type": "text",
+      "text": "180 / 200 L",
+      "x": 205,
+      "y": 248,
+      "size": 19,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "W",
+      "background": "#E1F1F8",
+      "object_part": "decoration",
+      "logical_id": "W"
+    },
+    {
+      "id": "tank-E",
+      "type": "rect",
+      "x": 560,
+      "y": 199,
+      "w": 270,
+      "h": 63,
+      "radius": 3,
+      "fill": "#FAF1D9",
+      "stroke": "#967019",
+      "stroke_width": 2,
+      "entity": "E",
+      "logical_id": "E",
+      "object_part": "primary",
+      "role": "east"
+    },
+    {
+      "id": "tank-name-E",
+      "type": "text",
+      "text": "Tank E",
+      "x": 695,
+      "y": 224,
+      "size": 20,
+      "align": "center",
+      "fill": "#967019",
+      "entity": "E",
+      "background": "#FAF1D9",
+      "object_part": "decoration",
+      "logical_id": "E"
+    },
+    {
+      "id": "tank-volume-E",
+      "type": "text",
+      "text": "250 / 300 L",
+      "x": 695,
+      "y": 248,
+      "size": 19,
+      "align": "center",
+      "fill": "#243B46",
+      "entity": "E",
+      "background": "#FAF1D9",
+      "object_part": "decoration",
+      "logical_id": "E"
+    },
+    {
+      "id": "volume-key",
+      "type": "text",
+      "text": "Initial / capacity",
+      "x": 450,
+      "y": 232,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "no-transfer",
+      "type": "text",
+      "text": "No transfer",
+      "x": 450,
+      "y": 258,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "W-load-line",
+      "type": "line",
+      "points": [
+        [
+          140,
+          262
+        ],
+        [
+          140,
+          291
+        ]
+      ],
+      "stroke": "#347FA8",
+      "stroke_width": 2.3,
+      "relation": "W-load",
+      "role": "relation"
+    },
+    {
+      "id": "W-load-head",
+      "type": "polygon",
+      "points": [
+        [
+          140,
+          291
+        ],
+        [
+          136.64,
+          283.0
+        ],
+        [
+          143.36,
+          283.0
+        ]
+      ],
+      "fill": "#347FA8",
+      "stroke": "#347FA8",
+      "stroke_width": 0,
+      "relation": "W-load",
+      "role": "relation"
+    },
+    {
+      "id": "W-spill-line",
+      "type": "line",
+      "points": [
+        [
+          290,
+          262
+        ],
+        [
+          290,
+          291
+        ]
+      ],
+      "stroke": "#347FA8",
+      "stroke_width": 2.3,
+      "relation": "W-spill",
+      "role": "relation"
+    },
+    {
+      "id": "W-spill-head",
+      "type": "polygon",
+      "points": [
+        [
+          290,
+          291
+        ],
+        [
+          286.64,
+          283.0
+        ],
+        [
+          293.36,
+          283.0
+        ]
+      ],
+      "fill": "#347FA8",
+      "stroke": "#347FA8",
+      "stroke_width": 0,
+      "relation": "W-spill",
+      "role": "relation"
+    },
+    {
+      "id": "E-load-line",
+      "type": "line",
+      "points": [
+        [
+          640,
+          262
+        ],
+        [
+          640,
+          291
+        ]
+      ],
+      "stroke": "#967019",
+      "stroke_width": 2.3,
+      "relation": "E-load",
+      "role": "relation"
+    },
+    {
+      "id": "E-load-head",
+      "type": "polygon",
+      "points": [
+        [
+          640,
+          291
+        ],
+        [
+          636.64,
+          283.0
+        ],
+        [
+          643.36,
+          283.0
+        ]
+      ],
+      "fill": "#967019",
+      "stroke": "#967019",
+      "stroke_width": 0,
+      "relation": "E-load",
+      "role": "relation"
+    },
+    {
+      "id": "E-spill-line",
+      "type": "line",
+      "points": [
+        [
+          790,
+          262
+        ],
+        [
+          790,
+          291
+        ]
+      ],
+      "stroke": "#967019",
+      "stroke_width": 2.3,
+      "relation": "E-spill",
+      "role": "relation"
+    },
+    {
+      "id": "E-spill-head",
+      "type": "polygon",
+      "points": [
+        [
+          790,
+          291
+        ],
+        [
+          786.64,
+          283.0
+        ],
+        [
+          793.36,
+          283.0
+        ]
+      ],
+      "fill": "#967019",
+      "stroke": "#967019",
+      "stroke_width": 0,
+      "relation": "E-spill",
+      "role": "relation"
+    },
+    {
+      "id": "load-W",
+      "type": "text",
+      "text": "Load 18 L/min",
+      "x": 140,
+      "y": 314,
+      "size": 18,
+      "align": "center",
+      "fill": "#347FA8",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "spill-W",
+      "type": "text",
+      "text": "Spill",
+      "x": 290,
+      "y": 314,
+      "size": 18,
+      "align": "center",
+      "fill": "#347FA8",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "load-E",
+      "type": "text",
+      "text": "Load 24 L/min",
+      "x": 640,
+      "y": 314,
+      "size": 18,
+      "align": "center",
+      "fill": "#967019",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "spill-E",
+      "type": "text",
+      "text": "Spill",
+      "x": 790,
+      "y": 314,
+      "size": 18,
+      "align": "center",
+      "fill": "#967019",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "panel-divider",
+      "type": "line",
+      "points": [
+        [
+          24,
+          334
+        ],
+        [
+          876,
+          334
+        ]
+      ],
+      "stroke": "#B8C9D0",
+      "stroke_width": 1
+    },
+    {
+      "id": "panel-b",
+      "type": "text",
+      "text": "b  Four-minute outcomes",
+      "x": 24,
+      "y": 362,
+      "size": 21,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "schedule-head",
+      "type": "text",
+      "text": "Central split α",
+      "x": 267,
+      "y": 386,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "spill-head",
+      "type": "text",
+      "text": "Total spill (L)",
+      "x": 552,
+      "y": 386,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "free-head",
+      "type": "text",
+      "text": "Free at 4 min (L)",
+      "x": 793,
+      "y": 376,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "free-subhead",
+      "type": "text",
+      "text": "W / E",
+      "x": 793,
+      "y": 397,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "grid-0",
+      "type": "line",
+      "points": [
+        [
+          441,
+          406
+        ],
+        [
+          441,
+          509
+        ]
+      ],
+      "stroke": "#DCE5E9",
+      "stroke_width": 1
+    },
+    {
+      "id": "tick-0",
+      "type": "text",
+      "text": "0",
+      "x": 441,
+      "y": 529,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "grid-10",
+      "type": "line",
+      "points": [
+        [
+          521,
+          406
+        ],
+        [
+          521,
+          509
+        ]
+      ],
+      "stroke": "#DCE5E9",
+      "stroke_width": 1
+    },
+    {
+      "id": "tick-10",
+      "type": "text",
+      "text": "10",
+      "x": 521,
+      "y": 529,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "grid-20",
+      "type": "line",
+      "points": [
+        [
+          601,
+          406
+        ],
+        [
+          601,
+          509
+        ]
+      ],
+      "stroke": "#DCE5E9",
+      "stroke_width": 1
+    },
+    {
+      "id": "tick-20",
+      "type": "text",
+      "text": "20",
+      "x": 601,
+      "y": 529,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "grid-30",
+      "type": "line",
+      "points": [
+        [
+          681,
+          406
+        ],
+        [
+          681,
+          509
+        ]
+      ],
+      "stroke": "#DCE5E9",
+      "stroke_width": 1
+    },
+    {
+      "id": "tick-30",
+      "type": "text",
+      "text": "30",
+      "x": 681,
+      "y": 529,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "policy-0",
+      "type": "text",
+      "text": "Fixed third",
+      "x": 24,
+      "y": 422,
+      "size": 19,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "alpha-0",
+      "type": "text",
+      "text": "1/3 throughout",
+      "x": 267,
+      "y": 422,
+      "size": 18,
+      "align": "center",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "bar-0-W",
+      "type": "rect",
+      "x": 441,
+      "y": 406,
+      "w": 224.0,
+      "h": 21,
+      "fill": "#347FA8",
+      "entity": "W",
+      "role": "west",
+      "data_value_l": 28.0
+    },
+    {
+      "id": "spill-value-0",
+      "type": "text",
+      "text": "28 W",
+      "x": 674.0,
+      "y": 422,
+      "size": 18,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "headroom-0",
+      "type": "text",
+      "text": "0 / 26",
+      "x": 793,
+      "y": 422,
+      "size": 19,
+      "align": "center",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "policy-1",
+      "type": "text",
+      "text": "Delayed tenth",
+      "x": 24,
+      "y": 461,
+      "size": 19,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "alpha-1",
+      "type": "text",
+      "text": "1/3 → 0.10 at 60 s",
+      "x": 267,
+      "y": 461,
+      "size": 18,
+      "align": "center",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "bar-1-W",
+      "type": "rect",
+      "x": 441,
+      "y": 445,
+      "w": 56.0,
+      "h": 21,
+      "fill": "#347FA8",
+      "entity": "W",
+      "role": "west",
+      "data_value_l": 7.0
+    },
+    {
+      "id": "spill-value-1",
+      "type": "text",
+      "text": "7 W",
+      "x": 506.0,
+      "y": 461,
+      "size": 18,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "headroom-1",
+      "type": "text",
+      "text": "0 / 5",
+      "x": 793,
+      "y": 461,
+      "size": 19,
+      "align": "center",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "policy-2",
+      "type": "text",
+      "text": "Fixed tenth",
+      "x": 24,
+      "y": 500,
+      "size": 19,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "alpha-2",
+      "type": "text",
+      "text": "0.10 throughout",
+      "x": 267,
+      "y": 500,
+      "size": 18,
+      "align": "center",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "bar-2-E",
+      "type": "rect",
+      "x": 441,
+      "y": 484,
+      "w": 16.0,
+      "h": 21,
+      "fill": "#967019",
+      "entity": "E",
+      "role": "east",
+      "data_value_l": 2.0
+    },
+    {
+      "id": "spill-value-2",
+      "type": "text",
+      "text": "2 E",
+      "x": 466.0,
+      "y": 500,
+      "size": 18,
+      "align": "left",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "headroom-2",
+      "type": "text",
+      "text": "0 / 0",
+      "x": 793,
+      "y": 500,
+      "size": 19,
+      "align": "center",
+      "fill": "#243B46",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "bound",
+      "type": "text",
+      "text": "Net addition 72 L − initial free space 70 L = minimum spill 2 L",
+      "x": 450,
+      "y": 553,
+      "size": 18,
+      "align": "center",
+      "fill": "#52646D",
+      "background": "#FFFFFF"
+    }
+  ],
+  "relation_components": [
+    {
+      "id": "A-W",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          130,
+          104
+        ],
+        "target": [
+          130,
+          199
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from A to W under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": null
+      }
+    },
+    {
+      "id": "C-E",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          770,
+          104
+        ],
+        "target": [
+          770,
+          199
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from C to E under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": null
+      }
+    },
+    {
+      "id": "B-D",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          450,
+          104
+        ],
+        "target": [
+          450,
+          135
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from B to D under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": null
+      }
+    },
+    {
+      "id": "D-W",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          436,
+          149
+        ],
+        "target": [
+          280,
+          199
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from D to W under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.48,
+          "offset": [
+            0,
+            -11
+          ],
+          "anchor": [
+            361.12,
+            149.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D-E",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          464,
+          149
+        ],
+        "target": [
+          620,
+          199
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from D to E under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.5,
+          "offset": [
+            0,
+            -11
+          ],
+          "anchor": [
+            542.0,
+            149.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "W-load",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          140,
+          262
+        ],
+        "target": [
+          140,
+          291
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from W to LW under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": null
+      }
+    },
+    {
+      "id": "W-spill",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          290,
+          262
+        ],
+        "target": [
+          290,
+          291
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from W to SW under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": null
+      }
+    },
+    {
+      "id": "E-load",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          640,
+          262
+        ],
+        "target": [
+          640,
+          291
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from E to LE under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": null
+      }
+    },
+    {
+      "id": "E-spill",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          790,
+          262
+        ],
+        "target": [
+          790,
+          291
+        ]
+      },
+      "data": {
+        "meaning": "Water flows from E to SE under the declared routing",
+        "semantics": "data_flow",
+        "label_binding": null
+      }
+    }
+  ],
+  "count_constraints": [
+    {
+      "name": "three_roof_branches",
+      "expected": 3,
+      "scope": {
+        "id_prefix": "roof-"
+      },
+      "expected_logical_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "two_tanks",
+      "expected": 2,
+      "scope": {
+        "id_prefix": "tank-"
+      },
+      "expected_logical_ids": [
+        "W",
+        "E"
+      ]
+    },
+    {
+      "name": "one_diverter",
+      "expected": 1,
+      "scope": {
+        "id_prefix": "diverter"
+      },
+      "expected_logical_ids": [
+        "D"
+      ]
+    }
+  ],
+  "caption": "Figure 1. Constructed DEMO of routing-limited rainwater storage. (a) Exactly three roof branches feed two tanks; only the single central branch is split. Arrows show water routing, not pipe dimensions. Tank labels give initial volume / capacity. Loads withdraw continuously and spills leave by separate drains. (b) All three schedules independently start from the same initial state. Bars sum all four one-minute spill records for both tanks; W or E identifies the spilling tank. The right column retains each tank's unused capacity. Net addition exceeds initial free space by 2 L; fixed tenth attains this bound. No field data or forecast uncertainty is represented.",
+  "alt_text": "A single central roof stream splits between two disconnected tanks. Fixed third spills 28 L from W with 26 L free in E; delayed tenth spills 7 L from W with 5 L free in E; fixed tenth spills 2 L from E and fills both tanks. All quantities are constructed DEMO values.",
+  "source_reference_base": "example_root"
+}

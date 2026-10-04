@@ -1,0 +1,15 @@
+{
+  "version": "1.27.1",
+  "baseline_head": "4a833f12184fe3bfcb9a0af3df8e2dfa7abdab85",
+  "tests": {
+    "status": "PASS",
+    "total": 232,
+    "source_unchanged": true
+  },
+  "official_metadata_validation": "PASS",
+  "readme_rebuild": "PASS",
+  "validation_scope": "Local Windows runtime; source rebuild and file checks, not universal quality certification",
+  "new_example": "新增演示保存源码、输入、首次图、选择后的图、灰度与选定色觉模拟，以及匿名模型首评和评后定向复验。图注增加的代价与旧方案优点保留。",
+  "human_acceptance": "NOT_RUN",
+  "private_manuscript_publication": false
+}

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="80mm" viewBox="0 0 453.543307 226.771654">
+<title>One physical rack and one shared reference list</title>
+<desc>Six equal-fill capped vials, A to F, correspond to 0, 1, 4, 16, 64, 256 micromolar. Two independent analyses read one electronic list.</desc>
+<rect id="canvas" x="0" y="0" width="453.5433070866142" height="226.7716535433071" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0.8" />
+<text id="rack-title" x="226.7716535433071" y="17" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#263D4B">One rack · six reference vials</text>
+<path id="rack-top" d="M43 99 L402 99 L410 110 L51 110 Z" fill="#E2E9ED" stroke="#587B89" stroke-width="0.8" stroke-linejoin="round" />
+<ellipse id="slot-A" cx="77" cy="108" rx="19" ry="4.5" fill="#ADBDC6" stroke="#587B89" stroke-width="0.65" data-kind="slot" data-logical-id="slot-A"/>
+<ellipse id="slot-B" cx="137" cy="108" rx="19" ry="4.5" fill="#ADBDC6" stroke="#587B89" stroke-width="0.65" data-kind="slot" data-logical-id="slot-B"/>
+<ellipse id="slot-C" cx="197" cy="108" rx="19" ry="4.5" fill="#ADBDC6" stroke="#587B89" stroke-width="0.65" data-kind="slot" data-logical-id="slot-C"/>
+<ellipse id="slot-D" cx="257" cy="108" rx="19" ry="4.5" fill="#ADBDC6" stroke="#587B89" stroke-width="0.65" data-kind="slot" data-logical-id="slot-D"/>
+<ellipse id="slot-E" cx="317" cy="108" rx="19" ry="4.5" fill="#ADBDC6" stroke="#587B89" stroke-width="0.65" data-kind="slot" data-logical-id="slot-E"/>
+<ellipse id="slot-F" cx="377" cy="108" rx="19" ry="4.5" fill="#ADBDC6" stroke="#587B89" stroke-width="0.65" data-kind="slot" data-logical-id="slot-F"/>
+<path id="vial-A" d="M68 41 L68 47 C68 50 62 51 62 57 L62 109 C62 114 68 116 77 116 C86 116 92 114 92 109 L92 57 C92 51 86 50 86 47 L86 41 Z" fill="#F6FBFC" stroke="#587B89" stroke-width="0.95" stroke-linejoin="round" data-kind="vial" data-logical-id="A" data-fill-level="82"/>
+<path id="liquid-A" d="M64 82 L64 109 C64 113 70 114 77 114 C84 114 90 113 90 109 L90 82 Z" fill="#C1E3DF" stroke="none" stroke-width="0.8" stroke-linejoin="round" data-role="equal-liquid" data-level="82"/>
+<ellipse id="meniscus-A" cx="77" cy="82" rx="13" ry="2.9" fill="#DBF0ED" stroke="#89BEB7" stroke-width="0.6" />
+<line id="glass-highlight-A" x1="67" y1="60" x2="67" y2="103" stroke="#FFFFFF" stroke-width="1.8" />
+<rect id="cap-A" x="65" y="33" width="24" height="10" rx="2" fill="#9AB6C0" stroke="#587B89" stroke-width="0.8" data-kind="cap" data-logical-id="A"/>
+<line id="cap-top-A" x1="67" y1="35" x2="87" y2="35" stroke="#DDEBF0" stroke-width="1" />
+<line id="cap-rib-A--7" x1="70" y1="37" x2="70" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-A--2" x1="75" y1="37" x2="75" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-A-3" x1="80" y1="37" x2="80" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-A-8" x1="85" y1="37" x2="85" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<path id="vial-B" d="M128 41 L128 47 C128 50 122 51 122 57 L122 109 C122 114 128 116 137 116 C146 116 152 114 152 109 L152 57 C152 51 146 50 146 47 L146 41 Z" fill="#F6FBFC" stroke="#587B89" stroke-width="0.95" stroke-linejoin="round" data-kind="vial" data-logical-id="B" data-fill-level="82"/>
+<path id="liquid-B" d="M124 82 L124 109 C124 113 130 114 137 114 C144 114 150 113 150 109 L150 82 Z" fill="#C1E3DF" stroke="none" stroke-width="0.8" stroke-linejoin="round" data-role="equal-liquid" data-level="82"/>
+<ellipse id="meniscus-B" cx="137" cy="82" rx="13" ry="2.9" fill="#DBF0ED" stroke="#89BEB7" stroke-width="0.6" />
+<line id="glass-highlight-B" x1="127" y1="60" x2="127" y2="103" stroke="#FFFFFF" stroke-width="1.8" />
+<rect id="cap-B" x="125" y="33" width="24" height="10" rx="2" fill="#9AB6C0" stroke="#587B89" stroke-width="0.8" data-kind="cap" data-logical-id="B"/>
+<line id="cap-top-B" x1="127" y1="35" x2="147" y2="35" stroke="#DDEBF0" stroke-width="1" />
+<line id="cap-rib-B--7" x1="130" y1="37" x2="130" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-B--2" x1="135" y1="37" x2="135" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-B-3" x1="140" y1="37" x2="140" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-B-8" x1="145" y1="37" x2="145" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<path id="vial-C" d="M188 41 L188 47 C188 50 182 51 182 57 L182 109 C182 114 188 116 197 116 C206 116 212 114 212 109 L212 57 C212 51 206 50 206 47 L206 41 Z" fill="#F6FBFC" stroke="#587B89" stroke-width="0.95" stroke-linejoin="round" data-kind="vial" data-logical-id="C" data-fill-level="82"/>
+<path id="liquid-C" d="M184 82 L184 109 C184 113 190 114 197 114 C204 114 210 113 210 109 L210 82 Z" fill="#C1E3DF" stroke="none" stroke-width="0.8" stroke-linejoin="round" data-role="equal-liquid" data-level="82"/>
+<ellipse id="meniscus-C" cx="197" cy="82" rx="13" ry="2.9" fill="#DBF0ED" stroke="#89BEB7" stroke-width="0.6" />
+<line id="glass-highlight-C" x1="187" y1="60" x2="187" y2="103" stroke="#FFFFFF" stroke-width="1.8" />
+<rect id="cap-C" x="185" y="33" width="24" height="10" rx="2" fill="#9AB6C0" stroke="#587B89" stroke-width="0.8" data-kind="cap" data-logical-id="C"/>
+<line id="cap-top-C" x1="187" y1="35" x2="207" y2="35" stroke="#DDEBF0" stroke-width="1" />
+<line id="cap-rib-C--7" x1="190" y1="37" x2="190" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-C--2" x1="195" y1="37" x2="195" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-C-3" x1="200" y1="37" x2="200" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-C-8" x1="205" y1="37" x2="205" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<path id="vial-D" d="M248 41 L248 47 C248 50 242 51 242 57 L242 109 C242 114 248 116 257 116 C266 116 272 114 272 109 L272 57 C272 51 266 50 266 47 L266 41 Z" fill="#F6FBFC" stroke="#587B89" stroke-width="0.95" stroke-linejoin="round" data-kind="vial" data-logical-id="D" data-fill-level="82"/>
+<path id="liquid-D" d="M244 82 L244 109 C244 113 250 114 257 114 C264 114 270 113 270 109 L270 82 Z" fill="#C1E3DF" stroke="none" stroke-width="0.8" stroke-linejoin="round" data-role="equal-liquid" data-level="82"/>
+<ellipse id="meniscus-D" cx="257" cy="82" rx="13" ry="2.9" fill="#DBF0ED" stroke="#89BEB7" stroke-width="0.6" />
+<line id="glass-highlight-D" x1="247" y1="60" x2="247" y2="103" stroke="#FFFFFF" stroke-width="1.8" />
+<rect id="cap-D" x="245" y="33" width="24" height="10" rx="2" fill="#9AB6C0" stroke="#587B89" stroke-width="0.8" data-kind="cap" data-logical-id="D"/>
+<line id="cap-top-D" x1="247" y1="35" x2="267" y2="35" stroke="#DDEBF0" stroke-width="1" />
+<line id="cap-rib-D--7" x1="250" y1="37" x2="250" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-D--2" x1="255" y1="37" x2="255" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-D-3" x1="260" y1="37" x2="260" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-D-8" x1="265" y1="37" x2="265" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<path id="vial-E" d="M308 41 L308 47 C308 50 302 51 302 57 L302 109 C302 114 308 116 317 116 C326 116 332 114 332 109 L332 57 C332 51 326 50 326 47 L326 41 Z" fill="#F6FBFC" stroke="#587B89" stroke-width="0.95" stroke-linejoin="round" data-kind="vial" data-logical-id="E" data-fill-level="82"/>
+<path id="liquid-E" d="M304 82 L304 109 C304 113 310 114 317 114 C324 114 330 113 330 109 L330 82 Z" fill="#C1E3DF" stroke="none" stroke-width="0.8" stroke-linejoin="round" data-role="equal-liquid" data-level="82"/>
+<ellipse id="meniscus-E" cx="317" cy="82" rx="13" ry="2.9" fill="#DBF0ED" stroke="#89BEB7" stroke-width="0.6" />
+<line id="glass-highlight-E" x1="307" y1="60" x2="307" y2="103" stroke="#FFFFFF" stroke-width="1.8" />
+<rect id="cap-E" x="305" y="33" width="24" height="10" rx="2" fill="#9AB6C0" stroke="#587B89" stroke-width="0.8" data-kind="cap" data-logical-id="E"/>
+<line id="cap-top-E" x1="307" y1="35" x2="327" y2="35" stroke="#DDEBF0" stroke-width="1" />
+<line id="cap-rib-E--7" x1="310" y1="37" x2="310" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-E--2" x1="315" y1="37" x2="315" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-E-3" x1="320" y1="37" x2="320" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-E-8" x1="325" y1="37" x2="325" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<path id="vial-F" d="M368 41 L368 47 C368 50 362 51 362 57 L362 109 C362 114 368 116 377 116 C386 116 392 114 392 109 L392 57 C392 51 386 50 386 47 L386 41 Z" fill="#F6FBFC" stroke="#587B89" stroke-width="0.95" stroke-linejoin="round" data-kind="vial" data-logical-id="F" data-fill-level="82"/>
+<path id="liquid-F" d="M364 82 L364 109 C364 113 370 114 377 114 C384 114 390 113 390 109 L390 82 Z" fill="#C1E3DF" stroke="none" stroke-width="0.8" stroke-linejoin="round" data-role="equal-liquid" data-level="82"/>
+<ellipse id="meniscus-F" cx="377" cy="82" rx="13" ry="2.9" fill="#DBF0ED" stroke="#89BEB7" stroke-width="0.6" />
+<line id="glass-highlight-F" x1="367" y1="60" x2="367" y2="103" stroke="#FFFFFF" stroke-width="1.8" />
+<rect id="cap-F" x="365" y="33" width="24" height="10" rx="2" fill="#9AB6C0" stroke="#587B89" stroke-width="0.8" data-kind="cap" data-logical-id="F"/>
+<line id="cap-top-F" x1="367" y1="35" x2="387" y2="35" stroke="#DDEBF0" stroke-width="1" />
+<line id="cap-rib-F--7" x1="370" y1="37" x2="370" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-F--2" x1="375" y1="37" x2="375" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-F-3" x1="380" y1="37" x2="380" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<line id="cap-rib-F-8" x1="385" y1="37" x2="385" y2="41" stroke="#6A909E" stroke-width="0.5" />
+<rect id="rack-front" x="51" y="110" width="359" height="21" rx="0" fill="#D7E1E7" stroke="#587B89" stroke-width="0.8" />
+<path id="rack-side" d="M43 99 L51 110 L51 131 L43 120 Z" fill="#BACCD5" stroke="#587B89" stroke-width="0.8" stroke-linejoin="round" />
+<text id="slot-label-A" x="77" y="125" font-family="Arial" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263D4B">A</text>
+<text id="slot-label-B" x="137" y="125" font-family="Arial" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263D4B">B</text>
+<text id="slot-label-C" x="197" y="125" font-family="Arial" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263D4B">C</text>
+<text id="slot-label-D" x="257" y="125" font-family="Arial" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263D4B">D</text>
+<text id="slot-label-E" x="317" y="125" font-family="Arial" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263D4B">E</text>
+<text id="slot-label-F" x="377" y="125" font-family="Arial" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263D4B">F</text>
+<text id="list-title" x="226.7716535433071" y="149" font-family="Arial" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263D4B">Electronic reference list · shared, read-only</text>
+<rect id="reference-list" x="47" y="156" width="360" height="31" rx="3" fill="#F2F7F8" stroke="#7E9FAA" stroke-width="0.8" data-kind="electronic-list"/>
+<text id="list-id-A" x="77" y="167" font-family="Arial" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263D4B">A</text>
+<text id="list-value-A" x="77" y="181" font-family="Arial" font-size="10" font-weight="400" text-anchor="middle" fill="#263D4B">0 μM</text>
+<line id="list-divider-B" x1="107" y1="160" x2="107" y2="183" stroke="#CBDADD" stroke-width="0.6" />
+<text id="list-id-B" x="137" y="167" font-family="Arial" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263D4B">B</text>
+<text id="list-value-B" x="137" y="181" font-family="Arial" font-size="10" font-weight="400" text-anchor="middle" fill="#263D4B">1 μM</text>
+<line id="list-divider-C" x1="167" y1="160" x2="167" y2="183" stroke="#CBDADD" stroke-width="0.6" />
+<text id="list-id-C" x="197" y="167" font-family="Arial" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263D4B">C</text>
+<text id="list-value-C" x="197" y="181" font-family="Arial" font-size="10" font-weight="400" text-anchor="middle" fill="#263D4B">4 μM</text>
+<line id="list-divider-D" x1="227" y1="160" x2="227" y2="183" stroke="#CBDADD" stroke-width="0.6" />
+<text id="list-id-D" x="257" y="167" font-family="Arial" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263D4B">D</text>
+<text id="list-value-D" x="257" y="181" font-family="Arial" font-size="10" font-weight="400" text-anchor="middle" fill="#263D4B">16 μM</text>
+<line id="list-divider-E" x1="287" y1="160" x2="287" y2="183" stroke="#CBDADD" stroke-width="0.6" />
+<text id="list-id-E" x="317" y="167" font-family="Arial" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263D4B">E</text>
+<text id="list-value-E" x="317" y="181" font-family="Arial" font-size="10" font-weight="400" text-anchor="middle" fill="#263D4B">64 μM</text>
+<line id="list-divider-F" x1="347" y1="160" x2="347" y2="183" stroke="#CBDADD" stroke-width="0.6" />
+<text id="list-id-F" x="377" y="167" font-family="Arial" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263D4B">F</text>
+<text id="list-value-F" x="377" y="181" font-family="Arial" font-size="10" font-weight="400" text-anchor="middle" fill="#263D4B">256 μM</text>
+<line id="shared-stem" x1="227" y1="187" x2="227" y2="191.33070866141733" stroke="#587B89" stroke-width="1.1" data-relation="shared-read-only"/>
+<line id="shared-left" x1="124" y1="191.33070866141733" x2="227" y2="191.33070866141733" stroke="#587B89" stroke-width="1.1" data-relation="shared-read-only"/>
+<line id="shared-right" x1="227" y1="191.33070866141733" x2="330" y2="191.33070866141733" stroke="#587B89" stroke-width="1.1" data-relation="shared-read-only"/>
+<line id="run-1-link" x1="124" y1="191.33070866141733" x2="124" y2="201.33070866141733" stroke="#587B89" stroke-width="1.1" data-relation="shared-read-only"/>
+<line id="run-2-link" x1="330" y1="191.33070866141733" x2="330" y2="201.33070866141733" stroke="#587B89" stroke-width="1.1" data-relation="shared-read-only"/>
+<rect id="run-1" x="75" y="201.33070866141733" width="98" height="17" rx="3" fill="#FFFFFF" stroke="#587B89" stroke-width="0.8" data-kind="analysis-run" data-logical-id="1"/>
+<text id="run-label-1" x="124" y="213.33070866141733" font-family="Arial" font-size="10.5" font-weight="400" text-anchor="middle" fill="#263D4B">Analysis run 1</text>
+<rect id="run-2" x="281" y="201.33070866141733" width="98" height="17" rx="3" fill="#FFFFFF" stroke="#587B89" stroke-width="0.8" data-kind="analysis-run" data-logical-id="2"/>
+<text id="run-label-2" x="330" y="213.33070866141733" font-family="Arial" font-size="10.5" font-weight="400" text-anchor="middle" fill="#263D4B">Analysis run 2</text>
+</svg>

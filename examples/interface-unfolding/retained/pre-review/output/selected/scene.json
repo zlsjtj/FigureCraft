@@ -1,0 +1,927 @@
+{
+  "width_mm": 160,
+  "height_mm": 100,
+  "viewBox": [
+    0,
+    0,
+    453.5433070866142,
+    283.46456692913387
+  ],
+  "font": "Arial",
+  "evidence": "CONSTRUCTED DEMO",
+  "items": [
+    {
+      "type": "text",
+      "id": "funfolded-000",
+      "x": 16,
+      "y": 22,
+      "text": "G · retain the copy until boundary use ends",
+      "size": 11.5,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "start"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-001",
+      "x": 437,
+      "y": 22,
+      "text": "DEMO",
+      "size": 8.5,
+      "color": "#566D79",
+      "bold": false,
+      "anchor": "end"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-002",
+      "x": 17,
+      "y": 38,
+      "w": 27,
+      "h": 20,
+      "fill": "#DCEAF4",
+      "stroke": "#C4D2DA",
+      "sw": 0.65
+    },
+    {
+      "type": "text",
+      "id": "funfolded-003",
+      "x": 30.5,
+      "y": 51.0,
+      "text": "W0",
+      "size": 8.5,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "middle"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-004",
+      "x": 44,
+      "y": 38,
+      "w": 27,
+      "h": 20,
+      "fill": "#DCEAF4",
+      "stroke": "#C4D2DA",
+      "sw": 0.65
+    },
+    {
+      "type": "text",
+      "id": "funfolded-005",
+      "x": 57.5,
+      "y": 51.0,
+      "text": "W1",
+      "size": 8.5,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "middle"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-006",
+      "x": 17,
+      "y": 58,
+      "w": 27,
+      "h": 20,
+      "fill": "#F5F8FA",
+      "stroke": "#C4D2DA",
+      "sw": 0.65
+    },
+    {
+      "type": "text",
+      "id": "funfolded-007",
+      "x": 30.5,
+      "y": 71.0,
+      "text": "W2",
+      "size": 8.5,
+      "color": "#263D49",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-008",
+      "x": 44,
+      "y": 58,
+      "w": 27,
+      "h": 20,
+      "fill": "#F5F8FA",
+      "stroke": "#C4D2DA",
+      "sw": 0.65
+    },
+    {
+      "type": "text",
+      "id": "funfolded-009",
+      "x": 57.5,
+      "y": 71.0,
+      "text": "W3",
+      "size": 8.5,
+      "color": "#263D49",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "line",
+      "id": "funfolded-010",
+      "x1": 44,
+      "y1": 38,
+      "x2": 44,
+      "y2": 58,
+      "color": "#356FA0",
+      "sw": 2.4,
+      "dash": null
+    },
+    {
+      "type": "text",
+      "id": "funfolded-011",
+      "x": 84,
+      "y": 50,
+      "text": "Selected W1 → W0 interface",
+      "size": 10.5,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "start"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-012",
+      "x": 84,
+      "y": 66,
+      "text": "Unfolded by use; W0 detail rotated 180°",
+      "size": 9.5,
+      "color": "#566D79",
+      "bold": false,
+      "anchor": "start"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-013",
+      "x": 143,
+      "y": 90,
+      "w": 294,
+      "h": 143,
+      "fill": "#F7F9FA",
+      "stroke": "#C4D2DA",
+      "sw": 0.7
+    },
+    {
+      "type": "text",
+      "id": "funfolded-014",
+      "x": 157,
+      "y": 106,
+      "text": "W0 needs (e, 17)",
+      "size": 10.5,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "start"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-015",
+      "x": 23,
+      "y": 106,
+      "text": "W1 source",
+      "size": 10.5,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "start"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-016",
+      "x": 23,
+      "y": 123,
+      "text": "west edge · 17",
+      "size": 9.5,
+      "color": "#263D49",
+      "bold": false,
+      "anchor": "start"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-017",
+      "x": 35,
+      "y": 134,
+      "w": 25,
+      "h": 63,
+      "fill": "#DCEAF4",
+      "stroke": "#356FA0",
+      "sw": 0.8
+    },
+    {
+      "type": "line",
+      "id": "funfolded-018",
+      "x1": 35,
+      "y1": 149.75,
+      "x2": 60,
+      "y2": 149.75,
+      "color": "#356FA0",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-019",
+      "x1": 35,
+      "y1": 165.5,
+      "x2": 60,
+      "y2": 165.5,
+      "color": "#356FA0",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-020",
+      "x1": 35,
+      "y1": 181.25,
+      "x2": 60,
+      "y2": 181.25,
+      "color": "#356FA0",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "text",
+      "id": "funfolded-021",
+      "x": 158,
+      "y": 125,
+      "text": "incoming slots",
+      "size": 9.5,
+      "color": "#263D49",
+      "bold": false,
+      "anchor": "start"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-022",
+      "x": 157,
+      "y": 135,
+      "w": 124,
+      "h": 43,
+      "fill": "#FFFFFF",
+      "stroke": "#356FA0",
+      "sw": 1
+    },
+    {
+      "type": "text",
+      "id": "funfolded-023",
+      "x": 165,
+      "y": 149,
+      "text": "(e, 17)  READY",
+      "size": 10,
+      "color": "#356FA0",
+      "bold": true,
+      "anchor": "start"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-024",
+      "x": 165,
+      "y": 157,
+      "w": 108,
+      "h": 13,
+      "fill": "#DCEAF4",
+      "stroke": "#356FA0",
+      "sw": 0.8
+    },
+    {
+      "type": "line",
+      "id": "funfolded-025",
+      "x1": 192.0,
+      "y1": 157,
+      "x2": 192.0,
+      "y2": 170,
+      "color": "#356FA0",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-026",
+      "x1": 219.0,
+      "y1": 157,
+      "x2": 219.0,
+      "y2": 170,
+      "color": "#356FA0",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-027",
+      "x1": 246.0,
+      "y1": 157,
+      "x2": 246.0,
+      "y2": 170,
+      "color": "#356FA0",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-028",
+      "x": 157,
+      "y": 185,
+      "w": 124,
+      "h": 43,
+      "fill": "#FFFFFF",
+      "stroke": "#C4D2DA",
+      "sw": 0.8
+    },
+    {
+      "type": "text",
+      "id": "funfolded-029",
+      "x": 219.0,
+      "y": 211,
+      "text": "free slot",
+      "size": 10,
+      "color": "#566D79",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "line",
+      "id": "funfolded-030",
+      "x1": 65,
+      "y1": 153,
+      "x2": 152,
+      "y2": 153,
+      "color": "#356FA0",
+      "sw": 1.15,
+      "dash": null
+    },
+    {
+      "type": "polygon",
+      "id": "funfolded-031",
+      "points": [
+        [
+          152,
+          153
+        ],
+        [
+          147.0,
+          150.6
+        ],
+        [
+          147.0,
+          155.4
+        ]
+      ],
+      "fill": "#356FA0",
+      "stroke": null,
+      "sw": 0.8
+    },
+    {
+      "type": "text",
+      "id": "funfolded-032",
+      "x": 104,
+      "y": 145,
+      "text": "copy 17",
+      "size": 9.5,
+      "color": "#356FA0",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-033",
+      "x": 336,
+      "y": 135,
+      "w": 12,
+      "h": 63,
+      "fill": "#DCEAF4",
+      "stroke": "#75688E",
+      "sw": 0.8
+    },
+    {
+      "type": "line",
+      "id": "funfolded-034",
+      "x1": 336,
+      "y1": 150.75,
+      "x2": 348,
+      "y2": 150.75,
+      "color": "#75688E",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-035",
+      "x1": 336,
+      "y1": 166.5,
+      "x2": 348,
+      "y2": 166.5,
+      "color": "#75688E",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-036",
+      "x1": 336,
+      "y1": 182.25,
+      "x2": 348,
+      "y2": 182.25,
+      "color": "#75688E",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-037",
+      "x": 354,
+      "y": 135,
+      "w": 68,
+      "h": 63,
+      "fill": "#F5F8FA",
+      "stroke": "#C4D2DA",
+      "sw": 0.7
+    },
+    {
+      "type": "line",
+      "id": "funfolded-038",
+      "x1": 371.0,
+      "y1": 135,
+      "x2": 371.0,
+      "y2": 198,
+      "color": "#C4D2DA",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-039",
+      "x1": 354,
+      "y1": 150.75,
+      "x2": 422,
+      "y2": 150.75,
+      "color": "#C4D2DA",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-040",
+      "x1": 388.0,
+      "y1": 135,
+      "x2": 388.0,
+      "y2": 198,
+      "color": "#C4D2DA",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-041",
+      "x1": 354,
+      "y1": 166.5,
+      "x2": 422,
+      "y2": 166.5,
+      "color": "#C4D2DA",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-042",
+      "x1": 405.0,
+      "y1": 135,
+      "x2": 405.0,
+      "y2": 198,
+      "color": "#C4D2DA",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-043",
+      "x1": 354,
+      "y1": 182.25,
+      "x2": 422,
+      "y2": 182.25,
+      "color": "#C4D2DA",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-044",
+      "x": 354,
+      "y": 135,
+      "w": 17.0,
+      "h": 63,
+      "fill": "#E3BD70",
+      "stroke": "#9A7538",
+      "sw": 0.8
+    },
+    {
+      "type": "line",
+      "id": "funfolded-045",
+      "x1": 354,
+      "y1": 150.75,
+      "x2": 371.0,
+      "y2": 150.75,
+      "color": "#9A7538",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-046",
+      "x1": 354,
+      "y1": 166.5,
+      "x2": 371.0,
+      "y2": 166.5,
+      "color": "#9A7538",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-047",
+      "x1": 354,
+      "y1": 182.25,
+      "x2": 371.0,
+      "y2": 182.25,
+      "color": "#9A7538",
+      "sw": 0.5,
+      "dash": null
+    },
+    {
+      "type": "text",
+      "id": "funfolded-048",
+      "x": 342,
+      "y": 124,
+      "text": "ghost",
+      "size": 9.5,
+      "color": "#75688E",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "rect",
+      "id": "funfolded-049",
+      "x": 372,
+      "y": 151,
+      "w": 47,
+      "h": 32,
+      "fill": "#FFFFFF",
+      "stroke": null,
+      "sw": 0.7
+    },
+    {
+      "type": "text",
+      "id": "funfolded-050",
+      "x": 394,
+      "y": 164,
+      "text": "east edge",
+      "size": 9,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "middle"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-051",
+      "x": 394,
+      "y": 176,
+      "text": "update 17",
+      "size": 9,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "middle"
+    },
+    {
+      "type": "line",
+      "id": "funfolded-052",
+      "x1": 348,
+      "y1": 183,
+      "x2": 356,
+      "y2": 183,
+      "color": "#75688E",
+      "sw": 1.05,
+      "dash": null
+    },
+    {
+      "type": "polygon",
+      "id": "funfolded-053",
+      "points": [
+        [
+          356,
+          183
+        ],
+        [
+          351.0,
+          180.6
+        ],
+        [
+          351.0,
+          185.4
+        ]
+      ],
+      "fill": "#75688E",
+      "stroke": null,
+      "sw": 0.8
+    },
+    {
+      "type": "line",
+      "id": "funfolded-054",
+      "x1": 286,
+      "y1": 153,
+      "x2": 331,
+      "y2": 153,
+      "color": "#356FA0",
+      "sw": 1.15,
+      "dash": null
+    },
+    {
+      "type": "polygon",
+      "id": "funfolded-055",
+      "points": [
+        [
+          331,
+          153
+        ],
+        [
+          326.0,
+          150.6
+        ],
+        [
+          326.0,
+          155.4
+        ]
+      ],
+      "fill": "#356FA0",
+      "stroke": null,
+      "sw": 0.8
+    },
+    {
+      "type": "text",
+      "id": "funfolded-056",
+      "x": 307,
+      "y": 141,
+      "text": "match",
+      "size": 9.5,
+      "color": "#356FA0",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-057",
+      "x": 311,
+      "y": 191,
+      "text": "(e, 16)",
+      "size": 9,
+      "color": "#A55D34",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "line",
+      "id": "funfolded-058",
+      "x1": 311,
+      "y1": 179,
+      "x2": 311,
+      "y2": 166,
+      "color": "#A55D34",
+      "sw": 0.8,
+      "dash": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "line",
+      "id": "funfolded-059",
+      "x1": 308,
+      "y1": 158,
+      "x2": 314,
+      "y2": 164,
+      "color": "#A55D34",
+      "sw": 1.2,
+      "dash": null
+    },
+    {
+      "type": "line",
+      "id": "funfolded-060",
+      "x1": 308,
+      "y1": 164,
+      "x2": 314,
+      "y2": 158,
+      "color": "#A55D34",
+      "sw": 1.2,
+      "dash": null
+    },
+    {
+      "type": "text",
+      "id": "funfolded-061",
+      "x": 311,
+      "y": 203,
+      "text": "no match",
+      "size": 9,
+      "color": "#A55D34",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "line",
+      "id": "funfolded-062",
+      "x1": 391,
+      "y1": 199,
+      "x2": 391,
+      "y2": 240,
+      "color": "#75688E",
+      "sw": 0.9,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "line",
+      "id": "funfolded-063",
+      "x1": 391,
+      "y1": 240,
+      "x2": 286,
+      "y2": 240,
+      "color": "#75688E",
+      "sw": 0.9,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "line",
+      "id": "funfolded-064",
+      "x1": 286,
+      "y1": 240,
+      "x2": 286,
+      "y2": 174,
+      "color": "#75688E",
+      "sw": 0.9,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "line",
+      "id": "funfolded-065",
+      "x1": 286,
+      "y1": 174,
+      "x2": 281,
+      "y2": 174,
+      "color": "#75688E",
+      "sw": 0.9,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "polygon",
+      "id": "funfolded-066",
+      "points": [
+        [
+          281,
+          174
+        ],
+        [
+          286.0,
+          176.4
+        ],
+        [
+          286.0,
+          171.6
+        ]
+      ],
+      "fill": "#75688E",
+      "stroke": null,
+      "sw": 0.8
+    },
+    {
+      "type": "text",
+      "id": "funfolded-067",
+      "x": 351,
+      "y": 252,
+      "text": "release 17 after use",
+      "size": 9.5,
+      "color": "#75688E",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-068",
+      "x": 23,
+      "y": 223,
+      "text": "preparing 18",
+      "size": 9.5,
+      "color": "#263D49",
+      "bold": false,
+      "anchor": "start"
+    },
+    {
+      "type": "line",
+      "id": "funfolded-069",
+      "x1": 60,
+      "y1": 228,
+      "x2": 60,
+      "y2": 246,
+      "color": "#566D79",
+      "sw": 0.85,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "line",
+      "id": "funfolded-070",
+      "x1": 60,
+      "y1": 246,
+      "x2": 139,
+      "y2": 246,
+      "color": "#566D79",
+      "sw": 0.85,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "line",
+      "id": "funfolded-071",
+      "x1": 139,
+      "y1": 246,
+      "x2": 139,
+      "y2": 207,
+      "color": "#566D79",
+      "sw": 0.85,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "line",
+      "id": "funfolded-072",
+      "x1": 139,
+      "y1": 207,
+      "x2": 152,
+      "y2": 207,
+      "color": "#566D79",
+      "sw": 0.85,
+      "dash": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "polygon",
+      "id": "funfolded-073",
+      "points": [
+        [
+          152,
+          207
+        ],
+        [
+          147.0,
+          204.6
+        ],
+        [
+          147.0,
+          209.4
+        ]
+      ],
+      "fill": "#566D79",
+      "stroke": null,
+      "sw": 0.8
+    },
+    {
+      "type": "text",
+      "id": "funfolded-074",
+      "x": 100,
+      "y": 260,
+      "text": "write 18 when ready",
+      "size": 9,
+      "color": "#566D79",
+      "bold": false,
+      "anchor": "middle"
+    },
+    {
+      "type": "text",
+      "id": "funfolded-075",
+      "x": 16,
+      "y": 278,
+      "text": "If both slots are live, W1 waits.",
+      "size": 10,
+      "color": "#263D49",
+      "bold": true,
+      "anchor": "start"
+    }
+  ]
+}

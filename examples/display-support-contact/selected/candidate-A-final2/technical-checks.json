@@ -1,0 +1,209 @@
+{
+  "physical_mm": [
+    159.99999749999998,
+    98.99999249999999
+  ],
+  "png_px": [
+    1890,
+    1170
+  ],
+  "minimum_font_pt": 8.3,
+  "labels": [
+    {
+      "id": "label-1",
+      "text": "S2 \u00b7 seated",
+      "pt": 10.5,
+      "bounds": [
+        4.0,
+        2.295833333333334,
+        23.559012858072915,
+        6.2
+      ]
+    },
+    {
+      "id": "label-2",
+      "text": "Panel",
+      "pt": 10,
+      "bounds": [
+        4.0,
+        14.472222222222223,
+        13.022705078124998,
+        18.2
+      ]
+    },
+    {
+      "id": "label-4",
+      "text": "Stay",
+      "pt": 10,
+      "bounds": [
+        60.0,
+        49.47222222222222,
+        67.05900065104167,
+        53.2
+      ]
+    },
+    {
+      "id": "label-6",
+      "text": "Base",
+      "pt": 10,
+      "bounds": [
+        70.0,
+        90.47222222222223,
+        78.04085286458333,
+        94.2
+      ]
+    },
+    {
+      "id": "label-8",
+      "text": "H",
+      "pt": 9.5,
+      "bounds": [
+        4.155999999999999,
+        67.34781111111111,
+        6.576265706380207,
+        70.89920000000001
+      ]
+    },
+    {
+      "id": "label-9",
+      "text": "P",
+      "pt": 9.5,
+      "bounds": [
+        11.291437380375001,
+        46.784788736626105,
+        13.526787586538195,
+        50.336177625515
+      ]
+    },
+    {
+      "id": "label-10",
+      "text": "S1",
+      "pt": 8.5,
+      "bounds": [
+        22.394882609049482,
+        80.04688888888889,
+        26.06261739095052,
+        83.2455
+      ]
+    },
+    {
+      "id": "label-11",
+      "text": "S2",
+      "pt": 8.5,
+      "bounds": [
+        31.366757609049483,
+        86.20013888888889,
+        35.034492390950525,
+        89.39875
+      ]
+    },
+    {
+      "id": "label-12",
+      "text": "S3",
+      "pt": 8.5,
+      "bounds": [
+        40.338632609049476,
+        84.35338888888889,
+        44.006367390950516,
+        87.552
+      ]
+    },
+    {
+      "id": "label-15",
+      "text": "A \u00b7 S2 section \u00b7 view +y",
+      "pt": 10.5,
+      "bounds": [
+        105.0,
+        2.295833333333334,
+        146.06958618164063,
+        6.2
+      ]
+    },
+    {
+      "id": "label-29",
+      "text": "R \u00b7 externally held",
+      "pt": 10,
+      "bounds": [
+        102.0,
+        40.47222222222222,
+        132.38746473524304,
+        44.2
+      ]
+    },
+    {
+      "id": "label-36",
+      "text": "P",
+      "pt": 9,
+      "bounds": [
+        101.0,
+        69.825,
+        103.1177001953125,
+        73.2
+      ]
+    },
+    {
+      "id": "label-37",
+      "text": "H",
+      "pt": 9,
+      "bounds": [
+        101.0,
+        89.825,
+        103.29288330078126,
+        93.2
+      ]
+    },
+    {
+      "id": "clearance-value-42",
+      "text": "23 mm",
+      "pt": 8.5,
+      "bounds": [
+        144.0,
+        86.80138888888888,
+        153.164212375217,
+        90.0
+      ]
+    },
+    {
+      "id": "label-43",
+      "text": "Synthetic geometry \u00b7 DEMO",
+      "pt": 8.3,
+      "bounds": [
+        4.0,
+        95.07194444444444,
+        40.449144694010414,
+        98.2
+      ]
+    },
+    {
+      "id": "final2-local-release-label",
+      "text": "Lift out",
+      "pt": 8.5,
+      "bounds": [
+        133.0,
+        16.00138888888889,
+        142.00168999565972,
+        19.2
+      ]
+    },
+    {
+      "id": "final-section-A-identity-76",
+      "text": "A +y",
+      "pt": 9,
+      "bounds": [
+        39.0,
+        73.325,
+        45.79493408203125,
+        76.7
+      ]
+    }
+  ],
+  "text_out_of_bounds": [],
+  "render_returncode": 0,
+  "text": "S2 \u00b7 seated\nPanel\nStay\n Base\nH\nP\nS1\nS2\nS3\nA \u00b7 S2 section \u00b7 view +y\nR \u00b7 externally held\nP\nH\n23 mm\nSynthetic geometry \u00b7 DEMO\nLift out\nA +y\n",
+  "bitmap_in_svg": false,
+  "limitations": [
+    "Agent visual review only; author acceptance pending",
+    "Approximate single deuteranopia matrix; no general CVD certification",
+    "96 dpi preview has nominal physical size; display is not calibrated"
+  ]
+}

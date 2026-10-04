@@ -1,0 +1,20 @@
+{
+  "evidence": "DEMO",
+  "pdf_mm": [
+    159.99999749999998,
+    100.00001166666667
+  ],
+  "png_pixels": [
+    1260,
+    788
+  ],
+  "min_font_pt": 8.5,
+  "svg_text_nodes": 22,
+  "pdf_text": "W1\nW0 requires (e, 17)\nsource edge\nincoming slots\n(e, 17) READY\nfree slot\nghost\nboundary\nupdate 17\ncopy 17\nmatch\npreparing 18\nwrite 18 when ready\nrelease 17\n(e, 16): no match\nG \u8def edge values stay live until release\nDEMO\nW0\nW1\nW2\nW3\nBoth slots live: W1 waits.\n",
+  "all_vector": true,
+  "visual_review": "NOT_YET_VIEWED",
+  "author_acceptance": "NOT_REQUESTED",
+  "checks_scope": "format, dimensions and text presence only",
+  "rendered_at_96dpi": true,
+  "input_sha256": "01a7b6e1cc7a191880e2a95027dfa626523ba0912f4add39f8d652ab99d987b8"
+}

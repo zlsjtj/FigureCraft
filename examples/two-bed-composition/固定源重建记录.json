@@ -1,0 +1,128 @@
+{
+  "pdf": {
+    "pages": 1,
+    "size_mm": [
+      159.99999749999998,
+      100.00001166666667
+    ],
+    "extractable_text": "R · side section\nS · in operation\nSame S · service\nFeed off · drained\nA\nB\nInlet plenum\nCollector\nFeed\nA  12 g\nB  8 g\nRim seal\non ledge\nOutlet\nLid lifted\nSame upper tray · empty\nEmpty upper seat\nLower tray stays\nLift\nTray tab\nChamber guide\nBypasses A + B\nSchematic sections; interface markers are not shapes.\nDEMO\n"
+  },
+  "svg": {
+    "size": [
+      "160mm",
+      "100mm"
+    ],
+    "texts": 24,
+    "min_font_pt": 8.5,
+    "unique_ids": true,
+    "images": 0
+  },
+  "png": {
+    "figure.png": [
+      1890,
+      1182
+    ],
+    "figure-96dpi.png": [
+      605,
+      378
+    ],
+    "figure-gray-96dpi.png": [
+      605,
+      378
+    ],
+    "figure-deuteranomaly100-96dpi.png": [
+      605,
+      378
+    ]
+  },
+  "frozen_figure2_files": {
+    "figure.pdf": true,
+    "figure.png": true,
+    "figure.svg": true,
+    "figure_spec.json": true,
+    "manifest.json": true,
+    "preview.png": true,
+    "qa-deuteranopia.png": true,
+    "qa-grayscale.png": true,
+    "qa.json": true,
+    "results.csv": true
+  },
+  "body_identical": true,
+  "figure2_caption_identical": true,
+  "source_rows": 48,
+  "groups": {
+    "W-L": 6,
+    "W-H": 6,
+    "R-L": 6,
+    "R-H": 6,
+    "S-L": 6,
+    "S-H": 6,
+    "K-L": 6,
+    "K-H": 6
+  },
+  "source_rows_identical": true,
+  "rim_sections": 4,
+  "gasket_contact_checks": [
+    {
+      "seal": "e109",
+      "exact_shared_contact_edge": true
+    },
+    {
+      "seal": "e111",
+      "exact_shared_contact_edge": true
+    },
+    {
+      "seal": "e159",
+      "exact_shared_contact_edge": true
+    },
+    {
+      "seal": "e161",
+      "exact_shared_contact_edge": true
+    }
+  ],
+  "service_tab_owners": [
+    "S-service-upper-tray"
+  ],
+  "service_guide_owners": [
+    "S-service"
+  ],
+  "limitations": [
+    "Vector/label checks do not establish scientific or aesthetic acceptance",
+    "Gray/CVD: one simulated deficiency only; no printer, display range or human reader experiment",
+    "Source-independent Word placement is handled by parent, not validated by this script"
+  ],
+  "portable_rebuild": {
+    "command": [
+      "<local-runtime>/python.exe",
+      "<local-runtime>/build.py",
+      "--params",
+      "<local-runtime>/selected.json",
+      "--out",
+      "<local-runtime>/portable-rebuild",
+      "--font",
+      "C:\\Windows\\Fonts\\arial.ttf",
+      "--bold-font",
+      "C:\\Windows\\Fonts\\arialbd.ttf",
+      "--pdftoppm",
+      "<local-runtime>/pdftoppm.exe"
+    ],
+    "cwd": "<local-runtime>/foreign-cwd",
+    "exit_code": 0,
+    "stdout": "{\"out\": \"E:\\\\PT-RVV\\\\RVV\\\\skill-outcome-20261004\\\\development\\\\two-bed-redesign\\\\checks\\\\portable-rebuild\", \"layout\": \"operation-focus\", \"labels\": 24, \"min_font_pt\": 8.5}\n",
+    "stderr": "",
+    "export_hash_matches": {
+      "figure-96dpi.png": true,
+      "figure-deuteranomaly100-96dpi.png": true,
+      "figure-deuteranomaly100.pdf": true,
+      "figure-deuteranomaly100.svg": true,
+      "figure-gray-96dpi.png": true,
+      "figure-gray.pdf": true,
+      "figure-gray.svg": true,
+      "figure.pdf": true,
+      "figure.png": true,
+      "figure.svg": true
+    }
+  },
+  "file_geometry_and_freeze_status": "PASS in the checks specified above; no whole-figure aesthetic score",
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "fixed_source_reconstruction",
+  "revision": "final",
+  "command": [
+    "<local-runtime>/build_figure.py",
+    "--out",
+    "<local-runtime>/after-figure-v2",
+    "--font",
+    "C:\\Windows\\Fonts\\arial.ttf",
+    "--bold-font",
+    "C:\\Windows\\Fonts\\arialbd.ttf",
+    "--pdftoppm",
+    "<local-runtime>/pdftoppm.exe",
+    "--revision",
+    "final"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "inputs": {
+    "<local-runtime>/finite-record.csv": "c9f745dde4abf7343b50cdabf2766c3c74ed6811455eb13fb1226040d5b351b6",
+    "C:\\Windows\\Fonts\\arial.ttf": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "C:\\Windows\\Fonts\\arialbd.ttf": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+  },
+  "artifacts": {
+    "figure-deuteranopia.png": "1227436514299108a5e493a1a8ba45eed927a39c3a75f9737196ab1e732202a1",
+    "figure-grayscale.png": "dcf48d5ea50fe86169f3be5b11a98f2bd3b26c11d1e2cfa2e1511b0fbf9f289c",
+    "figure.pdf": "9c8c3fe90202de37c8de2e54c58995da0040a356eab3a54a801d2a76efa34ff4",
+    "figure.png": "0ade7b40c27ae5972ca369159143996e6ca064931731a3c7b710f3c66ea31c53",
+    "figure.svg": "521f3cd37600f85a7359f741e58f723551a30708dbb017533345379ba961da27",
+    "scene.json": "7ed6c92381c2f15c7d781bfa534a97e4a51352524880c2c6d09693e00115afe3",
+    "technical-checks.json": "376328dc3c6f4c5dd075a24ccdbcf8060b59a61b8376ac4215c20430ba799879"
+  },
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

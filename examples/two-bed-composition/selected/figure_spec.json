@@ -1,0 +1,399 @@
+{
+  "kind": "Custom native vector specification; not the bundled scene-engine schema",
+  "evidence": "Constructed DEMO; all numerical observations fictional; known-case developer self-review",
+  "size_mm": [
+    160,
+    100
+  ],
+  "placement_width_mm": 160,
+  "editable_source": "source/build.py + source/selected.json; SVG text and shape primitives",
+  "primary_action": "Interrupt the wall-side bypass at both tray levels while retaining removable trays",
+  "views": [
+    {
+      "entity": "R-wall-side-crop",
+      "kind": "cropped D0 section",
+      "purpose": "continuous wall-side route from plenum past A and B to collector",
+      "omitted_context": "left housing, most bed width, lid and external outlet; crop is explicit"
+    },
+    {
+      "entity": "S-operation",
+      "kind": "D0 working section",
+      "purpose": "rim-seal/ledge contacts at both levels; feed A then B, then lower collector/outlet"
+    },
+    {
+      "entity": "S-service",
+      "kind": "same S, stopped/drained service state",
+      "purpose": "same empty upper tray lifts out; lower tray remains",
+      "depth": "shallow D1 depiction identifies empty mesh-bottom tray only; no fitted/rejection geometry"
+    }
+  ],
+  "identity": {
+    "S-operation-upper-tray": "S-service-upper-tray; alternative state, not additional physical bed",
+    "S-operation-lower-tray": "S-service-lower-tray; remains in chamber"
+  },
+  "locked_labels": {
+    "bed_A_mass_g": 12,
+    "bed_B_mass_g": 8,
+    "upper_bed": "A",
+    "lower_bed": "B",
+    "service_condition": "Feed off · drained",
+    "flow_geometry": "available paths, never measured velocity or flow fraction"
+  },
+  "relations": [
+    [
+      "R plenum",
+      "wall-side gap outside A and B",
+      "R collector"
+    ],
+    [
+      "each S tray rim",
+      "continuous gasket on chamber ledge",
+      "side path interrupted at each level"
+    ],
+    [
+      "single S feed",
+      "through A then B",
+      "single lower-side outlet"
+    ],
+    [
+      "upper empty tray",
+      "upward removal after feed stop, drainage and lid lift",
+      "vacant upper seat; lower tray stays"
+    ],
+    [
+      "upper tray tab",
+      "matches asymmetric chamber guide",
+      "ownership shown by separate circular markers; shape unknown"
+    ]
+  ],
+  "geometry_limits": [
+    "No dimensions/grain sizes/compression/flow field inferred",
+    "No new guide/tab rejection shape",
+    "R crop is not a separate new chamber configuration",
+    "D1 empty tray is schematic identification, not a fabrication drawing"
+  ],
+  "sources": {
+    "notes.md": "68d6ea3a875d33668b4c5ba0131d507bd763fa48182d88c9eeb6bd3343f56d87",
+    "results.csv": "d2912e4204b20ab7433884ff31caaf3b1ab4f352f3a93c8d845e6147327c698e",
+    "rough.md": "decc86282bf4d6a83d551485501e0e61ce2aba4827ba15b34f680d32b972ad4a",
+    "task.md": "62a26698bd44b1e154c1d26e8effe60a8b44f645d4db8c23a3d41e13476a6434"
+  },
+  "scope": "Only Figure 1 art/information design and corresponding caption; Figure 2/body/facts frozen",
+  "author_acceptance": false,
+  "exact_labels": [
+    {
+      "id": "e002",
+      "text": "R · side section",
+      "size_pt": 10.5,
+      "bbox": [
+        16,
+        11.915,
+        93.6015625,
+        22.205
+      ],
+      "owner": "R-wall-side-crop",
+      "color": "#AC562E"
+    },
+    {
+      "id": "e003",
+      "text": "S · in operation",
+      "size_pt": 11.8,
+      "bbox": [
+        113,
+        10.914,
+        198.87841796875,
+        22.478
+      ],
+      "owner": "S-operation",
+      "color": "#213945"
+    },
+    {
+      "id": "e004",
+      "text": "Same S · service",
+      "size_pt": 10.5,
+      "bbox": [
+        321,
+        11.915,
+        404.471923828125,
+        22.205
+      ],
+      "owner": "S-service",
+      "color": "#213945"
+    },
+    {
+      "id": "e005",
+      "text": "Feed off · drained",
+      "size_pt": 9.3,
+      "bbox": [
+        321,
+        28.839,
+        394.41005859375,
+        37.953
+      ],
+      "owner": "S-service",
+      "color": "#213945"
+    },
+    {
+      "id": "e022",
+      "text": "A",
+      "size_pt": 10,
+      "bbox": [
+        28,
+        116.5,
+        35.2216796875,
+        126.3
+      ],
+      "owner": "R-wall-side-crop-A",
+      "color": "#213945"
+    },
+    {
+      "id": "e041",
+      "text": "B",
+      "size_pt": 10,
+      "bbox": [
+        28,
+        184.5,
+        35.2216796875,
+        194.29999999999998
+      ],
+      "owner": "R-wall-side-crop-B",
+      "color": "#213945"
+    },
+    {
+      "id": "e047",
+      "text": "Inlet plenum",
+      "size_pt": 8.8,
+      "bbox": [
+        20,
+        66.224,
+        67.940234375,
+        74.848
+      ],
+      "owner": "R-wall-side-crop",
+      "color": "#213945"
+    },
+    {
+      "id": "e048",
+      "text": "Collector",
+      "size_pt": 8.8,
+      "bbox": [
+        20,
+        228.224,
+        54.723046875,
+        236.848
+      ],
+      "owner": "R-wall-side-crop",
+      "color": "#213945"
+    },
+    {
+      "id": "e059",
+      "text": "Feed",
+      "size_pt": 9.2,
+      "bbox": [
+        185.515234375,
+        40.916,
+        206.484765625,
+        49.932
+      ],
+      "owner": "S-operation",
+      "color": "#213945"
+    },
+    {
+      "id": "e108",
+      "text": "A  12 g",
+      "size_pt": 10.4,
+      "bbox": [
+        136,
+        121.78600000000002,
+        170.099609375,
+        131.978
+      ],
+      "owner": "S-operation-upper-tray",
+      "color": "#213945"
+    },
+    {
+      "id": "e158",
+      "text": "B  8 g",
+      "size_pt": 10.4,
+      "bbox": [
+        136,
+        186.916,
+        164.315625,
+        197.108
+      ],
+      "owner": "S-operation-lower-tray",
+      "color": "#213945"
+    },
+    {
+      "id": "e169",
+      "text": "Rim seal",
+      "size_pt": 9.2,
+      "bbox": [
+        282,
+        69.916,
+        317.784765625,
+        78.932
+      ],
+      "owner": "S-operation-upper-tray",
+      "color": "#213945"
+    },
+    {
+      "id": "e170",
+      "text": "on ledge",
+      "size_pt": 9.2,
+      "bbox": [
+        282,
+        81.916,
+        317.299609375,
+        90.932
+      ],
+      "owner": "S-operation",
+      "color": "#213945"
+    },
+    {
+      "id": "e172",
+      "text": "Outlet",
+      "size_pt": 9.1,
+      "bbox": [
+        274,
+        246.993,
+        298.278515625,
+        255.911
+      ],
+      "owner": "S-operation",
+      "color": "#213945"
+    },
+    {
+      "id": "e175",
+      "text": "Lid lifted",
+      "size_pt": 9,
+      "bbox": [
+        362.2392578125,
+        65.07,
+        395.7607421875,
+        73.89
+      ],
+      "owner": "S-service",
+      "color": "#213945"
+    },
+    {
+      "id": "e191",
+      "text": "Same upper tray · empty",
+      "size_pt": 8.8,
+      "bbox": [
+        332,
+        106.224,
+        428.838671875,
+        114.848
+      ],
+      "owner": "S-service-upper-tray",
+      "color": "#213945"
+    },
+    {
+      "id": "e197",
+      "text": "Empty upper seat",
+      "size_pt": 9.2,
+      "bbox": [
+        342.94794921875,
+        182.916,
+        415.05205078125005,
+        191.932
+      ],
+      "owner": "S-service",
+      "color": "#213945"
+    },
+    {
+      "id": "e213",
+      "text": "Lower tray stays",
+      "size_pt": 9.2,
+      "bbox": [
+        345.5107421875,
+        196.916,
+        412.4892578125,
+        205.932
+      ],
+      "owner": "S-service-lower-tray",
+      "color": "#213945"
+    },
+    {
+      "id": "e216",
+      "text": "Lift",
+      "size_pt": 9.4,
+      "bbox": [
+        376.52,
+        131.762,
+        389.059453125,
+        140.974
+      ],
+      "owner": "S-service-upper-tray",
+      "color": "#213945"
+    },
+    {
+      "id": "e218",
+      "text": "Tray tab",
+      "size_pt": 8.5,
+      "bbox": [
+        389.822265625,
+        73.155,
+        421.0,
+        81.485
+      ],
+      "owner": "S-service-upper-tray",
+      "color": "#213945"
+    },
+    {
+      "id": "e221",
+      "text": "Chamber guide",
+      "size_pt": 8.5,
+      "bbox": [
+        359.882080078125,
+        165.455,
+        418.0,
+        173.785
+      ],
+      "owner": "S-service",
+      "color": "#213945"
+    },
+    {
+      "id": "e223",
+      "text": "Bypasses A + B",
+      "size_pt": 9,
+      "bbox": [
+        20,
+        249.07,
+        83.7822265625,
+        257.89
+      ],
+      "owner": "R-wall-side-crop",
+      "color": "#AC562E"
+    },
+    {
+      "id": "e224",
+      "text": "Schematic sections; interface markers are not shapes.",
+      "size_pt": 8.5,
+      "bbox": [
+        16,
+        267.455,
+        220.56445312500003,
+        275.785
+      ],
+      "owner": "scope",
+      "color": "#51636D"
+    },
+    {
+      "id": "e225",
+      "text": "DEMO",
+      "size_pt": 8.5,
+      "bbox": [
+        413.0433070866142,
+        267.455,
+        438.5433070866142,
+        275.785
+      ],
+      "owner": "evidence-status",
+      "color": "#51636D"
+    }
+  ],
+  "generator_sha256": "ba4fe4086707c86967cdc22c5551acff9ae1d33dd46f9d69e0438a51a156b879",
+  "parameters_sha256": "f19e428db4b889aa33d6683b1363b893673ae312747c37cf42750122baadf8b4"
+}

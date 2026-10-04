@@ -1,0 +1,45 @@
+{
+  "views": [
+    {
+      "figure": "fixture1",
+      "opened_by_generating_agent": [
+        "checks/fixture1-normal-96dpi.png",
+        "checks/fixture1-gray-96dpi.png",
+        "checks/fixture1-deuteranopia-96dpi.png",
+        "checks/svg-render/figure1-96dpi.png"
+      ],
+      "independent_svg_import": "LibreOffice SVG import -> PDF -> Poppler 96 dpi",
+      "independent_svg_pdf_mm": [
+        160.26000000000002,
+        100.26000000000013
+      ],
+      "sha256": {
+        "checks/fixture1-normal-96dpi.png": "3b21e5f6ecce4e06bda4ccc4dc2a06dfc42d2d8383f4c1210837865dfe9c63fe",
+        "checks/fixture1-gray-96dpi.png": "c072f75628834799f1e2a69fe017db7dad86dc7b92c097430a1eacd30b4e66ed",
+        "checks/fixture1-deuteranopia-96dpi.png": "cc8263f5231ccaa66af4b39e08fce259b751fb074c3f421451055816856916b2"
+      },
+      "limits": "Generating-agent visual inspection, not independent/human acceptance. CVD is one declared linear-RGB simulation; browser and physical print not certified."
+    },
+    {
+      "figure": "fixture2",
+      "opened_by_generating_agent": [
+        "checks/fixture2-normal-96dpi.png",
+        "checks/fixture2-gray-96dpi.png",
+        "checks/fixture2-deuteranopia-96dpi.png",
+        "checks/svg-render/figure2-96dpi.png"
+      ],
+      "independent_svg_import": "LibreOffice SVG import -> PDF -> Poppler 96 dpi",
+      "independent_svg_pdf_mm": [
+        160.26000000000002,
+        80.26000000000005
+      ],
+      "sha256": {
+        "checks/fixture2-normal-96dpi.png": "1f5a3b7913f9b997e8a38a495e2f653b1d656418bfbaa0278d008e3e0b94e335",
+        "checks/fixture2-gray-96dpi.png": "2ba253a7aed1c312e1a47ee31cdd0ccb9d8fabf193c89668c6bcf94118572852",
+        "checks/fixture2-deuteranopia-96dpi.png": "b9c9c821651c5535f87fe3c266c941feaaec5a4068b45b4a73ca8f62c708a0bc"
+      },
+      "limits": "Generating-agent visual inspection, not independent/human acceptance. CVD is one declared linear-RGB simulation; browser and physical print not certified."
+    }
+  ],
+  "paths": "View filenames below are copied into this checks directory; original review record names retain development provenance."
+}

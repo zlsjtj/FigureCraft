@@ -1,0 +1,1225 @@
+{
+  "status": "FAIL",
+  "technical_status": "FAIL",
+  "overall_status": "FAIL",
+  "svg_sha256": "5e5b3af8313de44c597d623bb18246b10ce2c81068158f27adee2e6542bf12f9",
+  "placement_width_mm": 160.0,
+  "minimum_font_pt": 8.5,
+  "text": [
+    {
+      "id": "fselected-000",
+      "text": "G · edge values stay live until release",
+      "bounds": [
+        16.0,
+        13.2578125,
+        228.9765625,
+        24.53125
+      ],
+      "font_pt": 12.0
+    },
+    {
+      "id": "fselected-001",
+      "text": "DEMO",
+      "bounds": [
+        411.49169921875,
+        15.8076171875,
+        437.0,
+        22.099609375
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "fselected-002",
+      "text": "W1",
+      "bounds": [
+        21.0,
+        45.09375,
+        37.5107421875,
+        53.0
+      ],
+      "font_pt": 11.0
+    },
+    {
+      "id": "fselected-003",
+      "text": "W0 requires (e, 17)",
+      "bounds": [
+        149.0,
+        44.986328125,
+        246.904296875,
+        55.3203125
+      ],
+      "font_pt": 11.0
+    },
+    {
+      "id": "fselected-005",
+      "text": "source edge",
+      "bounds": [
+        42.921875,
+        74.841796875,
+        98.0,
+        84.109375
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "fselected-017",
+      "text": "incoming slots",
+      "bounds": [
+        157.0,
+        74.841796875,
+        220.408203125,
+        84.109375
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "fselected-023",
+      "text": "(e, 17) READY",
+      "bounds": [
+        179.0,
+        109.71484375,
+        245.73828125,
+        119.109375
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "fselected-025",
+      "text": "free slot",
+      "bounds": [
+        194.697265625,
+        166.724609375,
+        230.302734375,
+        174.1171875
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "fselected-026",
+      "text": "ghost",
+      "bounds": [
+        307.7587890625,
+        74.841796875,
+        332.2412109375,
+        84.109375
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "fselected-043",
+      "text": "boundary",
+      "bounds": [
+        366.342041015625,
+        113.19970703125,
+        409.657958984375,
+        122.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "fselected-044",
+      "text": "update 17",
+      "bounds": [
+        365.80859375,
+        127.171875,
+        410.19140625,
+        135.8740234375
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "fselected-047",
+      "text": "copy 17",
+      "bounds": [
+        109.351806640625,
+        96.171875,
+        142.648193359375,
+        105.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "fselected-050",
+      "text": "match",
+      "bounds": [
+        278.05810546875,
+        95.19970703125,
+        303.94189453125,
+        102.111328125
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "fselected-053",
+      "text": "preparing 18",
+      "bounds": [
+        21.0,
+        180.8125,
+        77.201171875,
+        190.109375
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "fselected-058",
+      "text": "write 18 when ready",
+      "bounds": [
+        109.0,
+        229.171875,
+        194.091796875,
+        238.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "fselected-064",
+      "text": "release 17",
+      "bounds": [
+        338.79931640625,
+        177.171875,
+        383.20068359375,
+        184.111328125
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "fselected-067",
+      "text": "(e, 16): no match",
+      "bounds": [
+        304.0,
+        222.08837890625,
+        375.87158203125,
+        231.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "fselected-069",
+      "text": "W0",
+      "bounds": [
+        25.620849609375,
+        245.890625,
+        38.379150390625,
+        252.10791015625
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "fselected-071",
+      "text": "W1",
+      "bounds": [
+        52.620849609375,
+        245.890625,
+        65.379150390625,
+        252.0
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "fselected-073",
+      "text": "W2",
+      "bounds": [
+        25.620849609375,
+        267.890625,
+        38.379150390625,
+        274.0
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "fselected-075",
+      "text": "W3",
+      "bounds": [
+        52.620849609375,
+        267.890625,
+        65.379150390625,
+        274.099609375
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "fselected-080",
+      "text": "Both slots live: W1 waits.",
+      "bounds": [
+        106.0,
+        264.8125,
+        226.126953125,
+        272.1171875
+      ],
+      "font_pt": 10.0
+    }
+  ],
+  "guide_segments": [
+    {
+      "id": "fselected-007",
+      "from": [
+        40.25,
+        97.0
+      ],
+      "to": [
+        40.25,
+        164.0
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-008",
+      "from": [
+        59.5,
+        97.0
+      ],
+      "to": [
+        59.5,
+        164.0
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-009",
+      "from": [
+        78.75,
+        97.0
+      ],
+      "to": [
+        78.75,
+        164.0
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-010",
+      "from": [
+        21.0,
+        113.75
+      ],
+      "to": [
+        98.0,
+        113.75
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-011",
+      "from": [
+        21.0,
+        130.5
+      ],
+      "to": [
+        98.0,
+        130.5
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-012",
+      "from": [
+        21.0,
+        147.25
+      ],
+      "to": [
+        98.0,
+        147.25
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-014",
+      "from": [
+        78.75,
+        113.75
+      ],
+      "to": [
+        98.0,
+        113.75
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-015",
+      "from": [
+        78.75,
+        130.5
+      ],
+      "to": [
+        98.0,
+        130.5
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-016",
+      "from": [
+        78.75,
+        147.25
+      ],
+      "to": [
+        98.0,
+        147.25
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-020",
+      "from": [
+        162.0,
+        106.25
+      ],
+      "to": [
+        171.0,
+        106.25
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-021",
+      "from": [
+        162.0,
+        112.5
+      ],
+      "to": [
+        171.0,
+        112.5
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-022",
+      "from": [
+        162.0,
+        118.75
+      ],
+      "to": [
+        171.0,
+        118.75
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-028",
+      "from": [
+        314.0,
+        113.75
+      ],
+      "to": [
+        326.0,
+        113.75
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-029",
+      "from": [
+        314.0,
+        130.5
+      ],
+      "to": [
+        326.0,
+        130.5
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-030",
+      "from": [
+        314.0,
+        147.25
+      ],
+      "to": [
+        326.0,
+        147.25
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-032",
+      "from": [
+        360.5,
+        97.0
+      ],
+      "to": [
+        360.5,
+        164.0
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-033",
+      "from": [
+        382.0,
+        97.0
+      ],
+      "to": [
+        382.0,
+        164.0
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-034",
+      "from": [
+        403.5,
+        97.0
+      ],
+      "to": [
+        403.5,
+        164.0
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-035",
+      "from": [
+        339.0,
+        113.75
+      ],
+      "to": [
+        425.0,
+        113.75
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-036",
+      "from": [
+        339.0,
+        130.5
+      ],
+      "to": [
+        425.0,
+        130.5
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-037",
+      "from": [
+        339.0,
+        147.25
+      ],
+      "to": [
+        425.0,
+        147.25
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-039",
+      "from": [
+        339.0,
+        113.75
+      ],
+      "to": [
+        360.5,
+        113.75
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-040",
+      "from": [
+        339.0,
+        130.5
+      ],
+      "to": [
+        360.5,
+        130.5
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-041",
+      "from": [
+        339.0,
+        147.25
+      ],
+      "to": [
+        360.5,
+        147.25
+      ],
+      "width": 0.55
+    },
+    {
+      "id": "fselected-045",
+      "from": [
+        101.0,
+        112.0
+      ],
+      "to": [
+        153.0,
+        112.0
+      ],
+      "width": 1.2
+    },
+    {
+      "id": "fselected-048",
+      "from": [
+        271.0,
+        112.0
+      ],
+      "to": [
+        310.0,
+        112.0
+      ],
+      "width": 1.2
+    },
+    {
+      "id": "fselected-051",
+      "from": [
+        324.0,
+        151.0
+      ],
+      "to": [
+        344.0,
+        151.0
+      ],
+      "width": 1.1
+    },
+    {
+      "id": "fselected-054",
+      "from": [
+        60.0,
+        192.0
+      ],
+      "to": [
+        60.0,
+        220.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "fselected-055",
+      "from": [
+        60.0,
+        220.0
+      ],
+      "to": [
+        217.0,
+        220.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "fselected-056",
+      "from": [
+        217.0,
+        220.0
+      ],
+      "to": [
+        217.0,
+        191.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "fselected-059",
+      "from": [
+        397.0,
+        168.0
+      ],
+      "to": [
+        397.0,
+        191.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "fselected-060",
+      "from": [
+        397.0,
+        191.0
+      ],
+      "to": [
+        281.0,
+        191.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "fselected-061",
+      "from": [
+        281.0,
+        191.0
+      ],
+      "to": [
+        281.0,
+        124.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "fselected-062",
+      "from": [
+        281.0,
+        124.0
+      ],
+      "to": [
+        271.0,
+        124.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "fselected-065",
+      "from": [
+        292.0,
+        222.0
+      ],
+      "to": [
+        298.0,
+        229.0
+      ],
+      "width": 1.2
+    },
+    {
+      "id": "fselected-066",
+      "from": [
+        292.0,
+        229.0
+      ],
+      "to": [
+        298.0,
+        222.0
+      ],
+      "width": 1.2
+    },
+    {
+      "id": "fselected-076",
+      "from": [
+        43.0,
+        249.0
+      ],
+      "to": [
+        48.0,
+        249.0
+      ],
+      "width": 1.2
+    },
+    {
+      "id": "fselected-077",
+      "from": [
+        43.0,
+        271.0
+      ],
+      "to": [
+        48.0,
+        271.0
+      ],
+      "width": 0.65
+    },
+    {
+      "id": "fselected-078",
+      "from": [
+        32.0,
+        257.0
+      ],
+      "to": [
+        32.0,
+        263.0
+      ],
+      "width": 0.65
+    },
+    {
+      "id": "fselected-079",
+      "from": [
+        59.0,
+        257.0
+      ],
+      "to": [
+        59.0,
+        263.0
+      ],
+      "width": 0.65
+    }
+  ],
+  "findings": [
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-033",
+      "text": "boundary",
+      "label": "fselected-043",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-033",
+      "text": "update 17",
+      "label": "fselected-044",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-034",
+      "text": "boundary",
+      "label": "fselected-043",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-034",
+      "text": "update 17",
+      "label": "fselected-044",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-035",
+      "text": "boundary",
+      "label": "fselected-043",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-036",
+      "text": "update 17",
+      "label": "fselected-044",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "FAIL",
+      "check": "painted_text_contrast",
+      "object": "fselected-023",
+      "text": "(e, 17) READY",
+      "ratio": 4.270106367792978,
+      "reason": "Below internal 4.5:1 screening threshold"
+    }
+  ],
+  "owner_regions": [],
+  "painted_text_contrast": {
+    "status": "FAIL",
+    "canvas": "#FFFFFF",
+    "labels": [
+      {
+        "id": "fselected-000",
+        "text": "G · edge values stay live until release",
+        "bounds": [
+          16.0,
+          13.2578125,
+          228.9765625,
+          24.53125
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-001",
+        "text": "DEMO",
+        "bounds": [
+          411.49169921875,
+          15.8076171875,
+          437.0,
+          22.099609375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#61727A",
+        "ratio": 5.004490883227963,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-002",
+        "text": "W1",
+        "bounds": [
+          21.0,
+          45.09375,
+          37.5107421875,
+          53.0
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-003",
+        "text": "W0 requires (e, 17)",
+        "bounds": [
+          149.0,
+          44.986328125,
+          246.904296875,
+          55.3203125
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-005",
+        "text": "source edge",
+        "bounds": [
+          42.921875,
+          74.841796875,
+          98.0,
+          84.109375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-017",
+        "text": "incoming slots",
+        "bounds": [
+          157.0,
+          74.841796875,
+          220.408203125,
+          84.109375
+        ],
+        "background": "#F9FBFB",
+        "background_sources": [
+          "fselected-004"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 11.776158954930327,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-023",
+        "text": "(e, 17) READY",
+        "bounds": [
+          179.0,
+          109.71484375,
+          245.73828125,
+          119.109375
+        ],
+        "background": "#E8F4F2",
+        "background_sources": [
+          "fselected-018"
+        ],
+        "status": "FAIL",
+        "foreground": "#087F82",
+        "ratio": 4.270106367792978,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-025",
+        "text": "free slot",
+        "bounds": [
+          194.697265625,
+          166.724609375,
+          230.302734375,
+          174.1171875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "fselected-024"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-026",
+        "text": "ghost",
+        "bounds": [
+          307.7587890625,
+          74.841796875,
+          332.2412109375,
+          84.109375
+        ],
+        "background": "#F9FBFB",
+        "background_sources": [
+          "fselected-004"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 11.776158954930327,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-043",
+        "text": "boundary",
+        "bounds": [
+          366.342041015625,
+          113.19970703125,
+          409.657958984375,
+          122.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "fselected-042"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-044",
+        "text": "update 17",
+        "bounds": [
+          365.80859375,
+          127.171875,
+          410.19140625,
+          135.8740234375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "fselected-042"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-047",
+        "text": "copy 17",
+        "bounds": [
+          109.351806640625,
+          96.171875,
+          142.648193359375,
+          105.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#087F82",
+        "ratio": 4.807235908309602,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-050",
+        "text": "match",
+        "bounds": [
+          278.05810546875,
+          95.19970703125,
+          303.94189453125,
+          102.111328125
+        ],
+        "background": "#F9FBFB",
+        "background_sources": [
+          "fselected-004"
+        ],
+        "status": "PASS",
+        "foreground": "#087F82",
+        "ratio": 4.628641697857453,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-053",
+        "text": "preparing 18",
+        "bounds": [
+          21.0,
+          180.8125,
+          77.201171875,
+          190.109375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-058",
+        "text": "write 18 when ready",
+        "bounds": [
+          109.0,
+          229.171875,
+          194.091796875,
+          238.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#61727A",
+        "ratio": 5.004490883227963,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-064",
+        "text": "release 17",
+        "bounds": [
+          338.79931640625,
+          177.171875,
+          383.20068359375,
+          184.111328125
+        ],
+        "background": "#F9FBFB",
+        "background_sources": [
+          "fselected-004"
+        ],
+        "status": "PASS",
+        "foreground": "#087F82",
+        "ratio": 4.628641697857453,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-067",
+        "text": "(e, 16): no match",
+        "bounds": [
+          304.0,
+          222.08837890625,
+          375.87158203125,
+          231.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#A9672E",
+        "ratio": 4.500108880815574,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-069",
+        "text": "W0",
+        "bounds": [
+          25.620849609375,
+          245.890625,
+          38.379150390625,
+          252.10791015625
+        ],
+        "background": "#E8F4F2",
+        "background_sources": [
+          "fselected-068"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 10.863975789023995,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-071",
+        "text": "W1",
+        "bounds": [
+          52.620849609375,
+          245.890625,
+          65.379150390625,
+          252.0
+        ],
+        "background": "#F4F7F8",
+        "background_sources": [
+          "fselected-070"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 11.360647304364367,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-073",
+        "text": "W2",
+        "bounds": [
+          25.620849609375,
+          267.890625,
+          38.379150390625,
+          274.0
+        ],
+        "background": "#F4F7F8",
+        "background_sources": [
+          "fselected-072"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 11.360647304364367,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-075",
+        "text": "W3",
+        "bounds": [
+          52.620849609375,
+          267.890625,
+          65.379150390625,
+          274.099609375
+        ],
+        "background": "#F4F7F8",
+        "background_sources": [
+          "fselected-074"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 11.360647304364367,
+        "threshold": 4.5
+      },
+      {
+        "id": "fselected-080",
+        "text": "Both slots live: W1 waits.",
+        "bounds": [
+          106.0,
+          264.8125,
+          226.126953125,
+          272.1171875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#243841",
+        "ratio": 12.230537139288023,
+        "threshold": 4.5
+      }
+    ],
+    "findings": [
+      {
+        "level": "FAIL",
+        "check": "painted_text_contrast",
+        "object": "fselected-023",
+        "text": "(e, 17) READY",
+        "ratio": 4.270106367792978,
+        "reason": "Below internal 4.5:1 screening threshold"
+      }
+    ],
+    "scope": "Measured ID-bearing plain text; declared canvas plus supported opaque rect interiors. Unknown/partial/later paint is review, never assumed white. 4.5:1 is an internal screen, not aesthetic approval."
+  },
+  "fonts": {
+    "normal": {
+      "family": "Arial",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    "bold": {
+      "family": "Arial",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    }
+  },
+  "scientific_review": "NOT_RUN",
+  "visual_review": "NOT_RUN",
+  "author_acceptance": false,
+  "limits": [
+    "Measures explicit untransformed text using the supplied matching font.",
+    "Only unfilled straight guides are checked, including auxiliary/dashed lines.",
+    "Dash gaps, z-order, painted backgrounds, curves and arbitrary SVG/CSS need visual review.",
+    "Owner regions are supplied by an editor; containment cannot establish scientific meaning."
+  ]
+}

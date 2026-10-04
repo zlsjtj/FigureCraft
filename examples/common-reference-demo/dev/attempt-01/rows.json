@@ -7,7 +7,7 @@
   "evidence_status": "Constructed teaching DEMO; development after inspecting both frozen candidates",
   "source_refs": [
     {
-      "file": "E:\\PT-RVV\\RVV\\skill-generation-20260927\\repos\\FigureCraft\\examples\\common-reference-demo\\input\\figure-task.md",
+      "file": "FigureCraft/examples/common-reference-demo/input/figure-task.md",
       "sha256": "c27b9b90dac15588d56ece5d6c773505c6c0f511135acd696fc258e9dceda5e2"
     }
   ],
@@ -1409,5 +1409,6 @@
     }
   ],
   "caption": "Teaching schematic. Two fixed cameras observe one passive checkerboard Board. Dashed undirected connectors denote observation associations, not optical rays or digital transmission. Each camera independently computes its own observed corner residuals and writes them to its corresponding record (solid arrows). The cameras do not communicate; records are not merged. Front-view symbols, connector bends, positions, and board pattern organize the explanation and do not specify optical geometry, distances, angles, or performance.",
-  "alt_text": "One passive Board is shared by C1 and C2. Separate solid arrows link each camera to only its own residual record, L1 or L2. Dashed elbow connectors denote observation, not rays."
+  "alt_text": "One passive Board is shared by C1 and C2. Separate solid arrows link each camera to only its own residual record, L1 or L2. Dashed elbow connectors denote observation, not rays.",
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
 }

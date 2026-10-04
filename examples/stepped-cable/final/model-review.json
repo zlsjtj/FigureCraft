@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex generating agent; model review, not human/author aesthetic acceptance",
+  "viewed": [
+    "figure.png",
+    "qa-grayscale.png",
+    "qa-deuteranomaly100.png",
+    "qa-160mm-at96dpi.png"
+  ],
+  "scientific_observations": [
+    "Exactly one connected stepped silhouette, no detached parts or duplicate view.",
+    "Outer jacket ends before shield; shield before insulation; copper continues centrally beyond insulation.",
+    "Visible metal termination is a thin annulus; no braid or net texture.",
+    "Insulation annulus separates the central copper from the shield.",
+    "No flow arrows, voltage, dimensions, performance or manufacturing process is shown."
+  ],
+  "visual_observations": [
+    "Rounded joins remove the observed tangent spikes.",
+    "Shorter copper exposure reads as a terminal tip.",
+    "Direct labels and boundaries remain readable at 605 x 340 px (160 mm at nominal 96 dpi).",
+    "Gray and deuteranomaly views reduce teal/silver color separation; nested contour and separate direct labels retain identity.",
+    "The intact cable leaves the left frame; interior continuity is implied by opacity and shared coaxial geometry."
+  ],
+  "remaining": [
+    "The fixed SVG audit reports REVIEW_REQUIRED for unsupported gradient/path paint; its result is preserved.",
+    "Independent local Edge screenshot attempt returned exit 0 but no screenshot; actual standalone SVG rendering is unverified.",
+    "Screen physical calibration, printing, alternate SVG editors and human reading/aesthetic acceptance not tested.",
+    "D1 editable vector schematic, not physical 3D geometry or an electromagnetic simulation."
+  ],
+  "content_revisions_used": 1,
+  "author_acceptance": false,
+  "artifact_hashes": {
+    "figure.svg": "84b62315dd5053f939d76e461ccc12cc7451ef3e95b24685d30906ee191cef8b",
+    "figure.pdf": "5a1329d737740734826f8d347a0b61ef21fd2bec1e2cc3126a90fbc8a8ff5d9d",
+    "figure.png": "c080eea987cf4986b7fa9add67142f60c743a40202b13d9924287dcc7773dfed",
+    "build_figure.py": "591b573ceeefd77ef8f6d53ceb7ab3d0c7181d7f7f9e9055312b3bbfe5330892"
+  }
+}

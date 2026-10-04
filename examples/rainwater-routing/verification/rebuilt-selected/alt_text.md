@@ -1,0 +1,1 @@
+Three recognizable roof silhouettes feed one diverter and two distinct storage-tank silhouettes. The central branch remains a single source with complementary splits. All three four-minute spill outcomes and tank-specific free volumes are preserved: 28 L/26 L, 7 L/5 L, and 2 L/0 L. Only generic object recognition uses shallow depth; quantities use explicit numbers and flat bars.

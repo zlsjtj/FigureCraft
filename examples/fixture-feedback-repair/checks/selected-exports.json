@@ -1,0 +1,22 @@
+[
+  {
+    "figure": "fixture1",
+    "physical_size_mm": [
+      159.999999999995,
+      99.99999999998803
+    ],
+    "svg_sha256": "41d60502248d7b2df4caff627df92749fa92f5118094c3fdee529cfcb9501747",
+    "pdf_sha256": "771dda318ded2501136fa8f537db2e7b5db643904c76a08e0efab5970f1750ec",
+    "png_sha256": "2fcbeecc621f4c24d38c826f6ce42dfbc590c738511eaaa9914727d3c46dd2fd"
+  },
+  {
+    "figure": "fixture2",
+    "physical_size_mm": [
+      159.999999999995,
+      79.9999999999975
+    ],
+    "svg_sha256": "c5e061cb7c1c87a367543cdbead53521e4f94dd11e995542b1b540267ec68bb5",
+    "pdf_sha256": "42ffe7004f205585c0fb179fbd538739ac224bf3140bb8c9e0007ecaddb609f2",
+    "png_sha256": "36ed34fd6346db8754b639c57ffbbdb0353f662464fd3cf8d338d7b6bcbcee25"
+  }
+]

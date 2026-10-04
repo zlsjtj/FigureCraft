@@ -1,0 +1,1662 @@
+{
+  "points": [
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "1",
+      "source_value": "18",
+      "plot_x": -0.3618423728813559,
+      "plot_y": 18.0,
+      "display_pt": [
+        53.88231227194163,
+        78.00944881889764
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "2",
+      "source_value": "22",
+      "plot_x": -0.4412711864406779,
+      "plot_y": 22.0,
+      "display_pt": [
+        50.28231227194163,
+        82.74645669291338
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "3",
+      "source_value": "21",
+      "plot_x": -0.04412711864406779,
+      "plot_y": 21.0,
+      "display_pt": [
+        68.28231227194162,
+        81.56220472440944
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "4",
+      "source_value": "25",
+      "plot_x": -0.12355593220338981,
+      "plot_y": 25.0,
+      "display_pt": [
+        64.68231227194163,
+        86.2992125984252
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "5",
+      "source_value": "19",
+      "plot_x": -0.20298474576271183,
+      "plot_y": 19.0,
+      "display_pt": [
+        61.082312271941625,
+        79.19370078740157
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "6",
+      "source_value": "24",
+      "plot_x": -0.2824135593220339,
+      "plot_y": 24.0,
+      "display_pt": [
+        57.48231227194162,
+        85.11496062992126
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "1",
+      "source_value": "61",
+      "plot_x": 0.08825423728813558,
+      "plot_y": 61.0,
+      "display_pt": [
+        74.28231227194162,
+        128.93228346456692
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "2",
+      "source_value": "73",
+      "plot_x": 0.15665127118644065,
+      "plot_y": 73.0,
+      "display_pt": [
+        77.38231227194163,
+        143.14330708661416
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "3",
+      "source_value": "68",
+      "plot_x": 0.22504830508474574,
+      "plot_y": 68.0,
+      "display_pt": [
+        80.48231227194162,
+        137.22204724409448
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "4",
+      "source_value": "81",
+      "plot_x": 0.29344533898305086,
+      "plot_y": 81.0,
+      "display_pt": [
+        83.58231227194163,
+        152.61732283464568
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "5",
+      "source_value": "64",
+      "plot_x": 0.3618423728813559,
+      "plot_y": 64.0,
+      "display_pt": [
+        86.68231227194161,
+        132.48503937007874
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "6",
+      "source_value": "77",
+      "plot_x": 0.430239406779661,
+      "plot_y": 77.0,
+      "display_pt": [
+        89.78231227194162,
+        147.8803149606299
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "1",
+      "source_value": "12",
+      "plot_x": 0.558728813559322,
+      "plot_y": 12.0,
+      "display_pt": [
+        95.60591511426927,
+        70.90393700787402
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "2",
+      "source_value": "15",
+      "plot_x": 0.6381576271186441,
+      "plot_y": 15.0,
+      "display_pt": [
+        99.20591511426926,
+        74.45669291338582
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "3",
+      "source_value": "14",
+      "plot_x": 0.7970152542372881,
+      "plot_y": 14.0,
+      "display_pt": [
+        106.40591511426926,
+        73.27244094488188
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "4",
+      "source_value": "11",
+      "plot_x": 0.7175864406779662,
+      "plot_y": 11.0,
+      "display_pt": [
+        102.80591511426927,
+        69.71968503937008
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "5",
+      "source_value": "17",
+      "plot_x": 0.8764440677966102,
+      "plot_y": 17.0,
+      "display_pt": [
+        110.00591511426927,
+        76.8251968503937
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "6",
+      "source_value": "13",
+      "plot_x": 0.9558728813559322,
+      "plot_y": 13.0,
+      "display_pt": [
+        113.60591511426927,
+        72.08818897637795
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "1",
+      "source_value": "16",
+      "plot_x": 1.3640487288135592,
+      "plot_y": 16.0,
+      "display_pt": [
+        132.10591511426927,
+        75.64094488188977
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "2",
+      "source_value": "20",
+      "plot_x": 1.4136917372881355,
+      "plot_y": 20.0,
+      "display_pt": [
+        134.35591511426927,
+        80.37795275590551
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "3",
+      "source_value": "18",
+      "plot_x": 1.2592468220338984,
+      "plot_y": 18.0,
+      "display_pt": [
+        127.35591511426927,
+        78.00944881889764
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "4",
+      "source_value": "22",
+      "plot_x": 1.3088898305084746,
+      "plot_y": 22.0,
+      "display_pt": [
+        129.60591511426927,
+        82.74645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "5",
+      "source_value": "17",
+      "plot_x": 1.126865466101695,
+      "plot_y": 17.0,
+      "display_pt": [
+        121.35591511426927,
+        76.8251968503937
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "6",
+      "source_value": "21",
+      "plot_x": 1.1765084745762713,
+      "plot_y": 21.0,
+      "display_pt": [
+        123.60591511426927,
+        81.56220472440944
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "1",
+      "source_value": "10",
+      "plot_x": 1.87644406779661,
+      "plot_y": 10.0,
+      "display_pt": [
+        155.32951795659687,
+        68.53543307086613
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "2",
+      "source_value": "13",
+      "plot_x": 1.9558728813559323,
+      "plot_y": 13.0,
+      "display_pt": [
+        158.9295179565969,
+        72.08818897637795
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "3",
+      "source_value": "11",
+      "plot_x": 1.7175864406779662,
+      "plot_y": 11.0,
+      "display_pt": [
+        148.1295179565969,
+        69.71968503937008
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "4",
+      "source_value": "14",
+      "plot_x": 1.7970152542372881,
+      "plot_y": 14.0,
+      "display_pt": [
+        151.7295179565969,
+        73.27244094488188
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "5",
+      "source_value": "12",
+      "plot_x": 1.558728813559322,
+      "plot_y": 12.0,
+      "display_pt": [
+        140.9295179565969,
+        70.90393700787402
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "6",
+      "source_value": "15",
+      "plot_x": 1.6381576271186442,
+      "plot_y": 15.0,
+      "display_pt": [
+        144.5295179565969,
+        74.45669291338582
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "1",
+      "source_value": "17",
+      "plot_x": 2.3088898305084746,
+      "plot_y": 17.0,
+      "display_pt": [
+        174.9295179565969,
+        76.8251968503937
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "2",
+      "source_value": "22",
+      "plot_x": 2.126865466101695,
+      "plot_y": 22.0,
+      "display_pt": [
+        166.6795179565969,
+        82.74645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "3",
+      "source_value": "19",
+      "plot_x": 2.4136917372881355,
+      "plot_y": 19.0,
+      "display_pt": [
+        179.6795179565969,
+        79.19370078740157
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "4",
+      "source_value": "24",
+      "plot_x": 2.336469279661017,
+      "plot_y": 24.0,
+      "display_pt": [
+        176.1795179565969,
+        85.11496062992126
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "5",
+      "source_value": "18",
+      "plot_x": 2.1765084745762713,
+      "plot_y": 18.0,
+      "display_pt": [
+        168.9295179565969,
+        78.00944881889764
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "6",
+      "source_value": "21",
+      "plot_x": 2.2592468220338984,
+      "plot_y": 21.0,
+      "display_pt": [
+        172.6795179565969,
+        81.56220472440944
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "1",
+      "source_value": "23",
+      "plot_x": 2.87644406779661,
+      "plot_y": 23.0,
+      "display_pt": [
+        200.6531207989245,
+        83.93070866141731
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "2",
+      "source_value": "27",
+      "plot_x": 2.955872881355932,
+      "plot_y": 27.0,
+      "display_pt": [
+        204.2531207989245,
+        88.66771653543306
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "3",
+      "source_value": "25",
+      "plot_x": 2.717586440677966,
+      "plot_y": 25.0,
+      "display_pt": [
+        193.45312079892452,
+        86.2992125984252
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "4",
+      "source_value": "28",
+      "plot_x": 2.797015254237288,
+      "plot_y": 28.0,
+      "display_pt": [
+        197.0531207989245,
+        89.851968503937
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "5",
+      "source_value": "22",
+      "plot_x": 2.6381576271186438,
+      "plot_y": 22.0,
+      "display_pt": [
+        189.8531207989245,
+        82.74645669291338
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "6",
+      "source_value": "26",
+      "plot_x": 2.5587288135593216,
+      "plot_y": 26.0,
+      "display_pt": [
+        186.2531207989245,
+        87.48346456692913
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "1",
+      "source_value": "54",
+      "plot_x": 3.088254237288136,
+      "plot_y": 54.0,
+      "display_pt": [
+        210.25312079892453,
+        120.64251968503936
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "2",
+      "source_value": "66",
+      "plot_x": 3.156651271186441,
+      "plot_y": 66.0,
+      "display_pt": [
+        213.35312079892452,
+        134.8535433070866
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "3",
+      "source_value": "60",
+      "plot_x": 3.225048305084746,
+      "plot_y": 60.0,
+      "display_pt": [
+        216.45312079892452,
+        127.74803149606299
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "4",
+      "source_value": "70",
+      "plot_x": 3.293445338983051,
+      "plot_y": 70.0,
+      "display_pt": [
+        219.55312079892454,
+        139.59055118110237
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "5",
+      "source_value": "57",
+      "plot_x": 3.3618423728813562,
+      "plot_y": 57.0,
+      "display_pt": [
+        222.65312079892453,
+        124.19527559055118
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "6",
+      "source_value": "64",
+      "plot_x": 3.4302394067796613,
+      "plot_y": 64.0,
+      "display_pt": [
+        225.75312079892456,
+        132.48503937007874
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "1",
+      "source_value": "3",
+      "plot_x": -0.2824135593220339,
+      "plot_y": 3.0,
+      "display_pt": [
+        273.04136739005185,
+        66.68503937007874
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "2",
+      "source_value": "4",
+      "plot_x": -0.20298474576271183,
+      "plot_y": 4.0,
+      "display_pt": [
+        276.64136739005187,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "3",
+      "source_value": "3",
+      "plot_x": -0.12355593220338981,
+      "plot_y": 3.0,
+      "display_pt": [
+        280.2413673900519,
+        66.68503937007874
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "4",
+      "source_value": "5",
+      "plot_x": -0.3618423728813559,
+      "plot_y": 5.0,
+      "display_pt": [
+        269.4413673900519,
+        73.34645669291338
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "5",
+      "source_value": "4",
+      "plot_x": -0.4412711864406779,
+      "plot_y": 4.0,
+      "display_pt": [
+        265.84136739005186,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "A",
+      "installation": "6",
+      "source_value": "4",
+      "plot_x": -0.04412711864406779,
+      "plot_y": 4.0,
+      "display_pt": [
+        283.84136739005186,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "1",
+      "source_value": "5",
+      "plot_x": 0.17650847457627117,
+      "plot_y": 5.0,
+      "display_pt": [
+        293.84136739005186,
+        73.34645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "2",
+      "source_value": "6",
+      "plot_x": 0.2592468220338983,
+      "plot_y": 6.0,
+      "display_pt": [
+        297.59136739005186,
+        76.67716535433071
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "3",
+      "source_value": "5",
+      "plot_x": 0.3419851694915254,
+      "plot_y": 5.0,
+      "display_pt": [
+        301.34136739005186,
+        73.34645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "4",
+      "source_value": "7",
+      "plot_x": 0.17650847457627117,
+      "plot_y": 7.0,
+      "display_pt": [
+        293.84136739005186,
+        80.00787401574803
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "5",
+      "source_value": "6",
+      "plot_x": 0.09377012711864406,
+      "plot_y": 6.0,
+      "display_pt": [
+        290.09136739005186,
+        76.67716535433071
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "A",
+      "installation": "6",
+      "source_value": "6",
+      "plot_x": 0.4247235169491525,
+      "plot_y": 6.0,
+      "display_pt": [
+        305.09136739005186,
+        76.67716535433071
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "1",
+      "source_value": "11",
+      "plot_x": 0.7970152542372879,
+      "plot_y": 11.0,
+      "display_pt": [
+        321.96497023237947,
+        93.33070866141732
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "2",
+      "source_value": "13",
+      "plot_x": 0.7175864406779658,
+      "plot_y": 13.0,
+      "display_pt": [
+        318.36497023237945,
+        99.99212598425197
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "3",
+      "source_value": "10",
+      "plot_x": 0.6381576271186438,
+      "plot_y": 10.0,
+      "display_pt": [
+        314.7649702323795,
+        90.0
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "4",
+      "source_value": "12",
+      "plot_x": 0.5587288135593216,
+      "plot_y": 12.0,
+      "display_pt": [
+        311.16497023237946,
+        96.66141732283464
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "5",
+      "source_value": "15",
+      "plot_x": 0.8764440677966101,
+      "plot_y": 15.0,
+      "display_pt": [
+        325.5649702323795,
+        106.65354330708661
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "B",
+      "installation": "6",
+      "source_value": "12",
+      "plot_x": 0.9558728813559322,
+      "plot_y": 12.0,
+      "display_pt": [
+        329.1649702323795,
+        96.66141732283464
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "1",
+      "source_value": "21",
+      "plot_x": 1.0882542372881356,
+      "plot_y": 21.0,
+      "display_pt": [
+        335.1649702323795,
+        126.63779527559055
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "2",
+      "source_value": "26",
+      "plot_x": 1.1566512711864407,
+      "plot_y": 26.0,
+      "display_pt": [
+        338.2649702323795,
+        143.29133858267716
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "3",
+      "source_value": "23",
+      "plot_x": 1.225048305084746,
+      "plot_y": 23.0,
+      "display_pt": [
+        341.3649702323795,
+        133.29921259842519
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "4",
+      "source_value": "28",
+      "plot_x": 1.2934453389830511,
+      "plot_y": 28.0,
+      "display_pt": [
+        344.4649702323795,
+        149.9527559055118
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "5",
+      "source_value": "22",
+      "plot_x": 1.3618423728813562,
+      "plot_y": 22.0,
+      "display_pt": [
+        347.5649702323795,
+        129.96850393700788
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "B",
+      "installation": "6",
+      "source_value": "25",
+      "plot_x": 1.4302394067796613,
+      "plot_y": 25.0,
+      "display_pt": [
+        350.6649702323795,
+        139.96062992125982
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "1",
+      "source_value": "3",
+      "plot_x": 1.7175864406779664,
+      "plot_y": 3.0,
+      "display_pt": [
+        363.68857307470716,
+        66.68503937007874
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "2",
+      "source_value": "4",
+      "plot_x": 1.7970152542372884,
+      "plot_y": 4.0,
+      "display_pt": [
+        367.28857307470713,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "3",
+      "source_value": "3",
+      "plot_x": 1.8764440677966103,
+      "plot_y": 3.0,
+      "display_pt": [
+        370.88857307470715,
+        66.68503937007874
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "4",
+      "source_value": "4",
+      "plot_x": 1.5587288135593225,
+      "plot_y": 4.0,
+      "display_pt": [
+        356.4885730747072,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "5",
+      "source_value": "5",
+      "plot_x": 1.6381576271186444,
+      "plot_y": 5.0,
+      "display_pt": [
+        360.08857307470714,
+        73.34645669291338
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "C",
+      "installation": "6",
+      "source_value": "4",
+      "plot_x": 1.9558728813559323,
+      "plot_y": 4.0,
+      "display_pt": [
+        374.4885730747072,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "1",
+      "source_value": "4",
+      "plot_x": 2.176508474576271,
+      "plot_y": 4.0,
+      "display_pt": [
+        384.4885730747072,
+        70.01574803149606
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "2",
+      "source_value": "5",
+      "plot_x": 2.259246822033898,
+      "plot_y": 5.0,
+      "display_pt": [
+        388.2385730747071,
+        73.34645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "3",
+      "source_value": "4",
+      "plot_x": 2.341985169491525,
+      "plot_y": 4.0,
+      "display_pt": [
+        391.9885730747071,
+        70.01574803149606
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "4",
+      "source_value": "6",
+      "plot_x": 2.176508474576271,
+      "plot_y": 6.0,
+      "display_pt": [
+        384.4885730747072,
+        76.67716535433071
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "5",
+      "source_value": "5",
+      "plot_x": 2.093770127118644,
+      "plot_y": 5.0,
+      "display_pt": [
+        380.7385730747071,
+        73.34645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "C",
+      "installation": "6",
+      "source_value": "5",
+      "plot_x": 2.424723516949152,
+      "plot_y": 5.0,
+      "display_pt": [
+        395.73857307470706,
+        73.34645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "1",
+      "source_value": "4",
+      "plot_x": 2.717586440677966,
+      "plot_y": 4.0,
+      "display_pt": [
+        409.01217591703477,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "2",
+      "source_value": "5",
+      "plot_x": 2.797015254237288,
+      "plot_y": 5.0,
+      "display_pt": [
+        412.61217591703473,
+        73.34645669291338
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "3",
+      "source_value": "4",
+      "plot_x": 2.87644406779661,
+      "plot_y": 4.0,
+      "display_pt": [
+        416.21217591703476,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "4",
+      "source_value": "5",
+      "plot_x": 2.6381576271186438,
+      "plot_y": 5.0,
+      "display_pt": [
+        405.41217591703474,
+        73.34645669291338
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "5",
+      "source_value": "4",
+      "plot_x": 2.5587288135593216,
+      "plot_y": 4.0,
+      "display_pt": [
+        401.8121759170347,
+        70.01574803149606
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T1",
+      "configuration": "D",
+      "installation": "6",
+      "source_value": "5",
+      "plot_x": 2.955872881355932,
+      "plot_y": 5.0,
+      "display_pt": [
+        419.8121759170347,
+        73.34645669291338
+      ],
+      "marker": "o",
+      "marker_size_pt2": 15
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "1",
+      "source_value": "5",
+      "plot_x": 3.1765084745762713,
+      "plot_y": 5.0,
+      "display_pt": [
+        429.8121759170348,
+        73.34645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "2",
+      "source_value": "6",
+      "plot_x": 3.2592468220338984,
+      "plot_y": 6.0,
+      "display_pt": [
+        433.5621759170348,
+        76.67716535433071
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "3",
+      "source_value": "5",
+      "plot_x": 3.341985169491526,
+      "plot_y": 5.0,
+      "display_pt": [
+        437.31217591703484,
+        73.34645669291338
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "4",
+      "source_value": "7",
+      "plot_x": 3.1765084745762713,
+      "plot_y": 7.0,
+      "display_pt": [
+        429.8121759170348,
+        80.00787401574803
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "5",
+      "source_value": "6",
+      "plot_x": 3.093770127118644,
+      "plot_y": 6.0,
+      "display_pt": [
+        426.06217591703484,
+        76.67716535433071
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "schedule": "T2",
+      "configuration": "D",
+      "installation": "6",
+      "source_value": "6",
+      "plot_x": 3.424723516949153,
+      "plot_y": 6.0,
+      "display_pt": [
+        441.0621759170348,
+        76.67716535433071
+      ],
+      "marker": "D",
+      "marker_size_pt2": 12
+    }
+  ],
+  "minimum_pair_center_distance_pt": 4.904449019741167,
+  "packing": [
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 1.2767430003136715,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 0,
+      "minimum_same_group_shape_clearance_pt": 2.1148923943537925,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 0.3848891832410066,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 25,
+      "minimum_same_group_shape_clearance_pt": 0.6764590327825819,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 0.3848891832410066,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 34,
+      "minimum_same_group_shape_clearance_pt": 0.6764590327825819,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 0.3848891832410066,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 0,
+      "minimum_same_group_shape_clearance_pt": 2.632138220906798,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 0.23146567353377545,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 94,
+      "minimum_same_group_shape_clearance_pt": 0.7427154949567534,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 2.8989702160485873,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 0,
+      "minimum_same_group_shape_clearance_pt": 2.4751271088637843,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 0.23146567353377545,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 94,
+      "minimum_same_group_shape_clearance_pt": 0.7427154949567534,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "lane_point_centers_pt": [
+        -20.0,
+        -2.0
+      ],
+      "search_nodes": 720,
+      "minimum_same_group_shape_clearance_pt": 0.23146567353377456,
+      "required_gap_pt": 0.18,
+      "marker_enclosing_diameter_pt": 4.672983346207417
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "lane_point_centers_pt": [
+        4.0,
+        19.5
+      ],
+      "search_nodes": 94,
+      "minimum_same_group_shape_clearance_pt": 0.7427154949567534,
+      "required_gap_pt": 0.65,
+      "marker_enclosing_diameter_pt": 5.698979485566356
+    }
+  ],
+  "original_large_marker_sizes_restored": {
+    "circle_area_pt2": 15,
+    "diamond_area_pt2": 12,
+    "stroke_width_pt": 0.8
+  },
+  "y_coordinates_equal_source": true,
+  "x_offset_meaning": "layout only, optimized per panel for visibility; not record order or an additional measurement; schedule lanes remain within the configuration category"
+}

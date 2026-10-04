@@ -1,0 +1,264 @@
+{
+  "technical_status": "PASS_WITH_AGENT_REVIEW",
+  "raw_label_audit_status": "REVIEW_REQUIRED",
+  "semantic_record_checks": [
+    {
+      "case": "S1",
+      "checks": {
+        "HP_60": true,
+        "PQ_70": true,
+        "HT_120": true,
+        "two_permanent_joints": true,
+        "zero_experiments": true,
+        "contact_count": true,
+        "angle_matches_formula": true
+      },
+      "pass": true
+    },
+    {
+      "case": "S2",
+      "checks": {
+        "HP_60": true,
+        "PQ_70": true,
+        "HT_120": true,
+        "two_permanent_joints": true,
+        "zero_experiments": true,
+        "contact_count": true,
+        "angle_matches_formula": true
+      },
+      "pass": true
+    },
+    {
+      "case": "S3",
+      "checks": {
+        "HP_60": true,
+        "PQ_70": true,
+        "HT_120": true,
+        "two_permanent_joints": true,
+        "zero_experiments": true,
+        "contact_count": true,
+        "angle_matches_formula": true
+      },
+      "pass": true
+    },
+    {
+      "case": "R",
+      "checks": {
+        "HP_60": true,
+        "PQ_70": true,
+        "HT_120": true,
+        "two_permanent_joints": true,
+        "zero_experiments": true,
+        "contact_count": true,
+        "lowest_point_23": true,
+        "theta_90": true
+      },
+      "pass": true
+    }
+  ],
+  "source_renderer_byte_identical": true,
+  "assembly_geometry_and_order": {
+    "objects": 83,
+    "uniform_transform": [
+      0.87,
+      1.5,
+      4
+    ],
+    "pass": true,
+    "errors": []
+  },
+  "occlusion_probes": {
+    "groove_far_bottom": {
+      "world": [
+        50,
+        -32,
+        -2
+      ],
+      "selected_xy_mm": [
+        27.09975,
+        77.21485
+      ],
+      "expected_visible_surface_rgb": [
+        230,
+        237,
+        241
+      ],
+      "pixel_rgb": [
+        230,
+        237,
+        241
+      ],
+      "max_rgb_delta": 0,
+      "matches_at_probe": true
+    },
+    "foot_far_bottom": {
+      "world": [
+        75,
+        -33,
+        -2
+      ],
+      "selected_xy_mm": [
+        35.71275,
+        79.535575
+      ],
+      "expected_visible_surface_rgb": [
+        230,
+        237,
+        241
+      ],
+      "pixel_rgb": [
+        230,
+        237,
+        241
+      ],
+      "max_rgb_delta": 0,
+      "matches_at_probe": true
+    },
+    "foot_near_hidden": {
+      "world": [
+        76.5,
+        -39,
+        -1.3228756555322954
+      ],
+      "selected_xy_mm": [
+        34.097812499999996,
+        80.36181620111358
+      ],
+      "expected_visible_surface_rgb": [
+        190,
+        204,
+        213
+      ],
+      "pixel_rgb": [
+        190,
+        204,
+        213
+      ],
+      "max_rgb_delta": 0,
+      "matches_at_probe": true
+    },
+    "foot_near_visible": {
+      "world": [
+        75,
+        -39,
+        -1
+      ],
+      "selected_xy_mm": [
+        33.5595,
+        80.08585
+      ],
+      "expected_visible_surface_rgb": [
+        219,
+        158,
+        86
+      ],
+      "pixel_rgb": [
+        219,
+        158,
+        86
+      ],
+      "max_rgb_delta": 0,
+      "matches_at_probe": true
+    },
+    "foot_upper_visible": {
+      "world": [
+        75,
+        -39,
+        1
+      ],
+      "selected_xy_mm": [
+        33.5595,
+        79.1767
+      ],
+      "expected_visible_surface_rgb": [
+        219,
+        158,
+        86
+      ],
+      "pixel_rgb": [
+        219,
+        158,
+        86
+      ],
+      "max_rgb_delta": 0,
+      "matches_at_probe": true
+    }
+  },
+  "svg_images": 0,
+  "text_nodes": 15,
+  "label_audit_findings": [
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-4",
+      "text": "Stay",
+      "ratio": null,
+      "reason": "Later paint may cover text: Q-section-correspondence-14"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-8",
+      "text": "H",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: assembly-base-top-3"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-9",
+      "text": "P",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: assembly-panel-face-70, assembly-panel-near-edge-71"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-10",
+      "text": "S1",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: assembly-base-front-2, assembly-base-top-3"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-11",
+      "text": "S2",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: assembly-base-front-2, assembly-base-top-3"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-12",
+      "text": "S3",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: assembly-base-front-2"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-29",
+      "text": "R \u8def externally held",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: Q-section-correspondence-14"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-36",
+      "text": "P",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: Q-section-correspondence-14"
+    }
+  ],
+  "label_audit_disposition": "Eight conservative background-bounding-box review flags. Agent viewed the exact selected image: labels and correspondence line do not overlap; H/P/S1-S3 have visible dark text on white/light surfaces. Raw audit remains REVIEW_REQUIRED.",
+  "scientific_status": "SOURCE_CONSISTENCY_CHECKED_SYNTHETIC_ONLY",
+  "visual_status": "DEVELOPER_AGENT_REVIEWED",
+  "independent_review": "NOT_RUN",
+  "author_acceptance": false,
+  "overall_status": "REVIEW_REQUIRED",
+  "finite_geometry_all_pass": true,
+  "occlusion_probes_all_match": true,
+  "relocated_rebuild_all_identical": true
+}

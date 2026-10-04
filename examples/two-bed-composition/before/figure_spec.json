@@ -1,0 +1,6480 @@
+{
+  "figure_id": "figure1",
+  "schema_version": 1,
+  "mode": "new_schematic",
+  "scientific_message": "DEMO: resealing tray rims interrupts the bypass while preserving upward tray removal.",
+  "demo": true,
+  "evidence_status": "Constructed fictional DEMO records; no new experiment",
+  "source_refs": [
+    {
+      "path": "data/notes.md",
+      "sha256": "68d6ea3a875d33668b4c5ba0131d507bd763fa48182d88c9eeb6bd3343f56d87"
+    },
+    {
+      "path": "data/results.csv",
+      "sha256": "d2912e4204b20ab7433884ff31caaf3b1ab4f352f3a93c8d845e6147327c698e"
+    },
+    {
+      "path": "data/rough.md",
+      "sha256": "decc86282bf4d6a83d551485501e0e61ce2aba4827ba15b34f680d32b972ad4a"
+    },
+    {
+      "path": "data/task.md",
+      "sha256": "62a26698bd44b1e154c1d26e8effe60a8b44f645d4db8c23a3d41e13476a6434"
+    }
+  ],
+  "forbidden_implications": [
+    "measured performance",
+    "uniform velocity field",
+    "new sorbents",
+    "total downtime",
+    "durability",
+    "independent treatment benefit of guides"
+  ],
+  "entities": [
+    {
+      "id": "R-chamber",
+      "description": "Common enclosure",
+      "semantic_role": "R"
+    },
+    {
+      "id": "R-plenum",
+      "description": "Plenum above A",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-A",
+      "description": "Upper granular bed A, 12 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-B",
+      "description": "Lower granular bed B, 8 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-collector",
+      "description": "Collecting space below B",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-outlet",
+      "description": "Only bottom-side outlet",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-upper-tray",
+      "description": "Upper removable mesh-bottom tray",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-lower-tray",
+      "description": "Lower removable mesh-bottom tray",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-chamber",
+      "description": "Common enclosure",
+      "semantic_role": "S"
+    },
+    {
+      "id": "S-plenum",
+      "description": "Plenum above A",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-A",
+      "description": "Upper granular bed A, 12 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-B",
+      "description": "Lower granular bed B, 8 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-collector",
+      "description": "Collecting space below B",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-outlet",
+      "description": "Only bottom-side outlet",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-upper-tray",
+      "description": "Upper removable mesh-bottom tray",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-lower-tray",
+      "description": "Lower removable mesh-bottom tray",
+      "semantic_role": "shell"
+    }
+  ],
+  "relations": [
+    {
+      "id": "R-feed",
+      "from": "R-plenum",
+      "to": "R-plenum",
+      "kind": "flow",
+      "meaning": "Feed enters the plenum through the single lid port",
+      "geometry": {
+        "item_id": "R-feed-line",
+        "from": [
+          143,
+          143
+        ],
+        "to": [
+          143,
+          177
+        ],
+        "arrow": {
+          "item_id": "R-feed-head",
+          "tip": [
+            143,
+            177
+          ],
+          "base": [
+            143.0,
+            168.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-through-A",
+      "from": "R-plenum",
+      "to": "R-A",
+      "kind": "flow",
+      "meaning": "Intended route enters and traverses bed A",
+      "geometry": {
+        "item_id": "R-through-A-line",
+        "from": [
+          177,
+          193
+        ],
+        "to": [
+          177,
+          290
+        ],
+        "arrow": {
+          "item_id": "R-through-A-head",
+          "tip": [
+            177,
+            290
+          ],
+          "base": [
+            177.0,
+            281.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-through-B",
+      "from": "R-A",
+      "to": "R-B",
+      "kind": "flow",
+      "meaning": "Serial route continues through bed B",
+      "geometry": {
+        "item_id": "R-through-B-line",
+        "from": [
+          177,
+          302
+        ],
+        "to": [
+          177,
+          398
+        ],
+        "arrow": {
+          "item_id": "R-through-B-head",
+          "tip": [
+            177,
+            398
+          ],
+          "base": [
+            177.0,
+            389.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-outlet",
+      "from": "R-B",
+      "to": "R-outlet",
+      "kind": "flow",
+      "meaning": "Treated route enters the collecting space and exits the single lower-side outlet",
+      "geometry": {
+        "item_id": "R-outlet-line",
+        "from": [
+          177,
+          407
+        ],
+        "to": [
+          280,
+          430
+        ],
+        "arrow": {
+          "item_id": "R-outlet-head",
+          "tip": [
+            280,
+            430
+          ],
+          "base": [
+            271.0,
+            430.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-bypass",
+      "from": "R-plenum",
+      "to": "R-collector",
+      "kind": "flow",
+      "meaning": "Continuous tray-to-wall side route bypasses A and B",
+      "geometry": {
+        "item_id": "R-bypass-line",
+        "from": [
+          210,
+          178
+        ],
+        "to": [
+          246,
+          430
+        ],
+        "arrow": {
+          "item_id": "R-bypass-head",
+          "tip": [
+            246,
+            430
+          ],
+          "base": [
+            246.0,
+            421.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-feed",
+      "from": "S-plenum",
+      "to": "S-plenum",
+      "kind": "flow",
+      "meaning": "Feed enters the plenum through the single lid port",
+      "geometry": {
+        "item_id": "S-feed-line",
+        "from": [
+          438,
+          143
+        ],
+        "to": [
+          438,
+          177
+        ],
+        "arrow": {
+          "item_id": "S-feed-head",
+          "tip": [
+            438,
+            177
+          ],
+          "base": [
+            438.0,
+            168.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-through-A",
+      "from": "S-plenum",
+      "to": "S-A",
+      "kind": "flow",
+      "meaning": "Intended route enters and traverses bed A",
+      "geometry": {
+        "item_id": "S-through-A-line",
+        "from": [
+          472,
+          193
+        ],
+        "to": [
+          472,
+          290
+        ],
+        "arrow": {
+          "item_id": "S-through-A-head",
+          "tip": [
+            472,
+            290
+          ],
+          "base": [
+            472.0,
+            281.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-through-B",
+      "from": "S-A",
+      "to": "S-B",
+      "kind": "flow",
+      "meaning": "Serial route continues through bed B",
+      "geometry": {
+        "item_id": "S-through-B-line",
+        "from": [
+          472,
+          302
+        ],
+        "to": [
+          472,
+          398
+        ],
+        "arrow": {
+          "item_id": "S-through-B-head",
+          "tip": [
+            472,
+            398
+          ],
+          "base": [
+            472.0,
+            389.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-outlet",
+      "from": "S-B",
+      "to": "S-outlet",
+      "kind": "flow",
+      "meaning": "Treated route enters the collecting space and exits the single lower-side outlet",
+      "geometry": {
+        "item_id": "S-outlet-line",
+        "from": [
+          472,
+          407
+        ],
+        "to": [
+          575,
+          430
+        ],
+        "arrow": {
+          "item_id": "S-outlet-head",
+          "tip": [
+            575,
+            430
+          ],
+          "base": [
+            566.0,
+            430.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "lift-upper-tray",
+      "from": "S-upper-tray",
+      "to": "S-upper-tray",
+      "kind": "motion",
+      "meaning": "Same empty upper tray lifts upward after feed is stopped, chamber drained and lid lifted",
+      "geometry": {
+        "item_id": "lift-upper-tray-line",
+        "from": [
+          721,
+          303
+        ],
+        "to": [
+          721,
+          229
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "lift-upper-tray-head",
+          "tip": [
+            721,
+            229
+          ],
+          "base": [
+            721.0,
+            239.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "insert-upper-tray",
+      "from": "S-upper-tray",
+      "to": "S-upper-tray",
+      "kind": "motion",
+      "meaning": "Same empty upper tray inserts downward toward its chamber seat; guide and tab shapes are not specified",
+      "geometry": {
+        "item_id": "insert-upper-tray-line",
+        "from": [
+          800,
+          229
+        ],
+        "to": [
+          800,
+          303
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "insert-upper-tray-head",
+          "tip": [
+            800,
+            303
+          ],
+          "base": [
+            800.0,
+            293.0
+          ]
+        }
+      }
+    }
+  ],
+  "exact_labels": [
+    "DEMO"
+  ],
+  "locked_values": {
+    "bed_A_g": 12,
+    "bed_B_g": 8,
+    "feed_mg_L": 100,
+    "endpoint_mL": 300,
+    "rates_mL_min": [
+      20,
+      60
+    ],
+    "criterion_percent": 10
+  },
+  "role_map": {
+    "W": {
+      "base": "#50616A"
+    },
+    "R": {
+      "base": "#A95328"
+    },
+    "S": {
+      "base": "#176D66"
+    },
+    "K": {
+      "base": "#705878"
+    },
+    "ink": {
+      "base": "#23343E"
+    },
+    "flow": {
+      "base": "#2C6885"
+    },
+    "shell": {
+      "base": "#82939B"
+    },
+    "seal": {
+      "base": "#176D66"
+    }
+  },
+  "reference_palette": "yellow_blue_sage",
+  "layout": {
+    "archetype": "paired assembled sections and one service state"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "edit_scope": {
+    "allowed": [
+      "layout",
+      "labels",
+      "vector geometry"
+    ],
+    "protected": [
+      "data",
+      "topology",
+      "conditions"
+    ],
+    "review_correction": "Open tray tops, lid-wall gasket contact, owned guide/tab interfaces and insertion direction only"
+  },
+  "output": {
+    "width_mm": 160,
+    "placement_width_mm": 160,
+    "view_width": 900,
+    "view_height": 562.5,
+    "font_profile": "Arial"
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "items": [
+    {
+      "id": "demo",
+      "type": "text",
+      "x": 873,
+      "y": 26,
+      "text": "DEMO",
+      "size": 17,
+      "align": "right",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "R-title",
+      "type": "text",
+      "x": 40,
+      "y": 36,
+      "text": "R  |  Open side route",
+      "size": 22,
+      "align": "left",
+      "fill": "#A95328",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "R-subtitle",
+      "type": "text",
+      "x": 40,
+      "y": 64,
+      "text": "External lid seal only",
+      "size": 18,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "R-feed-label",
+      "type": "text",
+      "x": 142,
+      "y": 103,
+      "text": "Feed",
+      "size": 19,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "R-lid-left",
+      "type": "rect",
+      "x": 40,
+      "y": 126,
+      "w": 93,
+      "h": 13,
+      "fill": "#D7E0E4",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "R-lid-right",
+      "type": "rect",
+      "x": 153,
+      "y": 126,
+      "w": 111,
+      "h": 13,
+      "fill": "#D7E0E4",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "R-port-left",
+      "type": "line",
+      "points": [
+        [
+          133,
+          110
+        ],
+        [
+          133,
+          147
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "R-port-right",
+      "type": "line",
+      "points": [
+        [
+          153,
+          110
+        ],
+        [
+          153,
+          147
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "R-wall-left",
+      "type": "rect",
+      "x": 40,
+      "y": 142,
+      "w": 8,
+      "h": 321,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "R-wall-right-top",
+      "type": "rect",
+      "x": 256,
+      "y": 142,
+      "w": 8,
+      "h": 276,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "R-wall-right-bottom",
+      "type": "rect",
+      "x": 256,
+      "y": 443,
+      "w": 8,
+      "h": 20,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "R-floor",
+      "type": "rect",
+      "x": 40,
+      "y": 455,
+      "w": 224,
+      "h": 8,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "R-outlet-upper",
+      "type": "line",
+      "points": [
+        [
+          264,
+          418
+        ],
+        [
+          287,
+          418
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "R-outlet-lower",
+      "type": "line",
+      "points": [
+        [
+          264,
+          443
+        ],
+        [
+          287,
+          443
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "R-lid-seal-left",
+      "type": "rect",
+      "x": 40,
+      "y": 139,
+      "w": 8,
+      "h": 3,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "R-lid-seal-right",
+      "type": "rect",
+      "x": 256,
+      "y": 139,
+      "w": 8,
+      "h": 3,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "R-upper-tray",
+      "type": "line",
+      "stroke": "#82939B",
+      "stroke_width": 2,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "primary",
+      "count_scope": "R-trays",
+      "points": [
+        [
+          68,
+          232
+        ],
+        [
+          68,
+          279
+        ],
+        [
+          234,
+          279
+        ],
+        [
+          234,
+          232
+        ]
+      ]
+    },
+    {
+      "id": "R-bed-A",
+      "type": "rect",
+      "x": 71,
+      "y": 236,
+      "w": 160,
+      "h": 38,
+      "fill": "#E9DAB3",
+      "stroke": "#E9DAB3",
+      "stroke_width": 0,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "primary",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-0-0",
+      "type": "circle",
+      "x": 76,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-0-1",
+      "type": "circle",
+      "x": 79,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-0-2",
+      "type": "circle",
+      "x": 76,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-1-0",
+      "type": "circle",
+      "x": 89,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-1-1",
+      "type": "circle",
+      "x": 92,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-1-2",
+      "type": "circle",
+      "x": 89,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-2-0",
+      "type": "circle",
+      "x": 102,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-2-1",
+      "type": "circle",
+      "x": 105,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-2-2",
+      "type": "circle",
+      "x": 102,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-3-0",
+      "type": "circle",
+      "x": 115,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-3-1",
+      "type": "circle",
+      "x": 118,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-3-2",
+      "type": "circle",
+      "x": 115,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-4-0",
+      "type": "circle",
+      "x": 128,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-4-1",
+      "type": "circle",
+      "x": 131,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-4-2",
+      "type": "circle",
+      "x": 128,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-5-0",
+      "type": "circle",
+      "x": 141,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-5-1",
+      "type": "circle",
+      "x": 144,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-5-2",
+      "type": "circle",
+      "x": 141,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-6-0",
+      "type": "circle",
+      "x": 154,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-6-1",
+      "type": "circle",
+      "x": 157,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-6-2",
+      "type": "circle",
+      "x": 154,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-7-0",
+      "type": "circle",
+      "x": 167,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-7-1",
+      "type": "circle",
+      "x": 170,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-7-2",
+      "type": "circle",
+      "x": 167,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-8-0",
+      "type": "circle",
+      "x": 180,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-8-1",
+      "type": "circle",
+      "x": 183,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-8-2",
+      "type": "circle",
+      "x": 180,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-9-0",
+      "type": "circle",
+      "x": 193,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-9-1",
+      "type": "circle",
+      "x": 196,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-9-2",
+      "type": "circle",
+      "x": 193,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-10-0",
+      "type": "circle",
+      "x": 206,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-10-1",
+      "type": "circle",
+      "x": 209,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-10-2",
+      "type": "circle",
+      "x": 206,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-11-0",
+      "type": "circle",
+      "x": 219,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-11-1",
+      "type": "circle",
+      "x": 222,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-grain-11-2",
+      "type": "circle",
+      "x": 219,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-mesh-0",
+      "type": "line",
+      "points": [
+        [
+          70.0,
+          278
+        ],
+        [
+          74.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-1",
+      "type": "line",
+      "points": [
+        [
+          78.5,
+          278
+        ],
+        [
+          82.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-2",
+      "type": "line",
+      "points": [
+        [
+          87.0,
+          278
+        ],
+        [
+          91.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-3",
+      "type": "line",
+      "points": [
+        [
+          95.5,
+          278
+        ],
+        [
+          99.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-4",
+      "type": "line",
+      "points": [
+        [
+          104.0,
+          278
+        ],
+        [
+          108.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-5",
+      "type": "line",
+      "points": [
+        [
+          112.5,
+          278
+        ],
+        [
+          116.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-6",
+      "type": "line",
+      "points": [
+        [
+          121.0,
+          278
+        ],
+        [
+          125.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-7",
+      "type": "line",
+      "points": [
+        [
+          129.5,
+          278
+        ],
+        [
+          133.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-8",
+      "type": "line",
+      "points": [
+        [
+          138.0,
+          278
+        ],
+        [
+          142.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-9",
+      "type": "line",
+      "points": [
+        [
+          146.5,
+          278
+        ],
+        [
+          150.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-10",
+      "type": "line",
+      "points": [
+        [
+          155.0,
+          278
+        ],
+        [
+          159.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-11",
+      "type": "line",
+      "points": [
+        [
+          163.5,
+          278
+        ],
+        [
+          167.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-12",
+      "type": "line",
+      "points": [
+        [
+          172.0,
+          278
+        ],
+        [
+          176.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-13",
+      "type": "line",
+      "points": [
+        [
+          180.5,
+          278
+        ],
+        [
+          184.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-14",
+      "type": "line",
+      "points": [
+        [
+          189.0,
+          278
+        ],
+        [
+          193.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-15",
+      "type": "line",
+      "points": [
+        [
+          197.5,
+          278
+        ],
+        [
+          201.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-16",
+      "type": "line",
+      "points": [
+        [
+          206.0,
+          278
+        ],
+        [
+          210.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-17",
+      "type": "line",
+      "points": [
+        [
+          214.5,
+          278
+        ],
+        [
+          218.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-mesh-18",
+      "type": "line",
+      "points": [
+        [
+          223.0,
+          278
+        ],
+        [
+          227.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-upper-tray",
+      "logical_id": "R-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-A-label-bg",
+      "type": "rect",
+      "x": 80,
+      "y": 242,
+      "w": 77,
+      "h": 24,
+      "fill": "#FFFFFF",
+      "stroke": "#FFFFFF",
+      "stroke_width": 0,
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-A-label",
+      "type": "text",
+      "x": 86,
+      "y": 261,
+      "text": "A  12 g",
+      "size": 20,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF",
+      "entity": "R-A",
+      "logical_id": "R-A",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-lower-tray",
+      "type": "line",
+      "stroke": "#82939B",
+      "stroke_width": 2,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "primary",
+      "count_scope": "R-trays",
+      "points": [
+        [
+          68,
+          342
+        ],
+        [
+          68,
+          389
+        ],
+        [
+          234,
+          389
+        ],
+        [
+          234,
+          342
+        ]
+      ]
+    },
+    {
+      "id": "R-bed-B",
+      "type": "rect",
+      "x": 71,
+      "y": 346,
+      "w": 160,
+      "h": 38,
+      "fill": "#CADBE5",
+      "stroke": "#CADBE5",
+      "stroke_width": 0,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "primary",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-0-0",
+      "type": "circle",
+      "x": 76,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-0-1",
+      "type": "circle",
+      "x": 79,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-0-2",
+      "type": "circle",
+      "x": 76,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-1-0",
+      "type": "circle",
+      "x": 89,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-1-1",
+      "type": "circle",
+      "x": 92,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-1-2",
+      "type": "circle",
+      "x": 89,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-2-0",
+      "type": "circle",
+      "x": 102,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-2-1",
+      "type": "circle",
+      "x": 105,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-2-2",
+      "type": "circle",
+      "x": 102,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-3-0",
+      "type": "circle",
+      "x": 115,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-3-1",
+      "type": "circle",
+      "x": 118,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-3-2",
+      "type": "circle",
+      "x": 115,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-4-0",
+      "type": "circle",
+      "x": 128,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-4-1",
+      "type": "circle",
+      "x": 131,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-4-2",
+      "type": "circle",
+      "x": 128,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-5-0",
+      "type": "circle",
+      "x": 141,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-5-1",
+      "type": "circle",
+      "x": 144,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-5-2",
+      "type": "circle",
+      "x": 141,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-6-0",
+      "type": "circle",
+      "x": 154,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-6-1",
+      "type": "circle",
+      "x": 157,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-6-2",
+      "type": "circle",
+      "x": 154,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-7-0",
+      "type": "circle",
+      "x": 167,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-7-1",
+      "type": "circle",
+      "x": 170,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-7-2",
+      "type": "circle",
+      "x": 167,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-8-0",
+      "type": "circle",
+      "x": 180,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-8-1",
+      "type": "circle",
+      "x": 183,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-8-2",
+      "type": "circle",
+      "x": 180,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-9-0",
+      "type": "circle",
+      "x": 193,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-9-1",
+      "type": "circle",
+      "x": 196,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-9-2",
+      "type": "circle",
+      "x": 193,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-10-0",
+      "type": "circle",
+      "x": 206,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-10-1",
+      "type": "circle",
+      "x": 209,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-10-2",
+      "type": "circle",
+      "x": 206,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-11-0",
+      "type": "circle",
+      "x": 219,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-11-1",
+      "type": "circle",
+      "x": 222,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-grain-11-2",
+      "type": "circle",
+      "x": 219,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-mesh-0",
+      "type": "line",
+      "points": [
+        [
+          70.0,
+          388
+        ],
+        [
+          74.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-1",
+      "type": "line",
+      "points": [
+        [
+          78.5,
+          388
+        ],
+        [
+          82.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-2",
+      "type": "line",
+      "points": [
+        [
+          87.0,
+          388
+        ],
+        [
+          91.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-3",
+      "type": "line",
+      "points": [
+        [
+          95.5,
+          388
+        ],
+        [
+          99.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-4",
+      "type": "line",
+      "points": [
+        [
+          104.0,
+          388
+        ],
+        [
+          108.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-5",
+      "type": "line",
+      "points": [
+        [
+          112.5,
+          388
+        ],
+        [
+          116.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-6",
+      "type": "line",
+      "points": [
+        [
+          121.0,
+          388
+        ],
+        [
+          125.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-7",
+      "type": "line",
+      "points": [
+        [
+          129.5,
+          388
+        ],
+        [
+          133.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-8",
+      "type": "line",
+      "points": [
+        [
+          138.0,
+          388
+        ],
+        [
+          142.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-9",
+      "type": "line",
+      "points": [
+        [
+          146.5,
+          388
+        ],
+        [
+          150.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-10",
+      "type": "line",
+      "points": [
+        [
+          155.0,
+          388
+        ],
+        [
+          159.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-11",
+      "type": "line",
+      "points": [
+        [
+          163.5,
+          388
+        ],
+        [
+          167.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-12",
+      "type": "line",
+      "points": [
+        [
+          172.0,
+          388
+        ],
+        [
+          176.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-13",
+      "type": "line",
+      "points": [
+        [
+          180.5,
+          388
+        ],
+        [
+          184.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-14",
+      "type": "line",
+      "points": [
+        [
+          189.0,
+          388
+        ],
+        [
+          193.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-15",
+      "type": "line",
+      "points": [
+        [
+          197.5,
+          388
+        ],
+        [
+          201.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-16",
+      "type": "line",
+      "points": [
+        [
+          206.0,
+          388
+        ],
+        [
+          210.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-17",
+      "type": "line",
+      "points": [
+        [
+          214.5,
+          388
+        ],
+        [
+          218.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-mesh-18",
+      "type": "line",
+      "points": [
+        [
+          223.0,
+          388
+        ],
+        [
+          227.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "R-lower-tray",
+      "logical_id": "R-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "R-trays"
+    },
+    {
+      "id": "R-B-label-bg",
+      "type": "rect",
+      "x": 80,
+      "y": 352,
+      "w": 77,
+      "h": 24,
+      "fill": "#FFFFFF",
+      "stroke": "#FFFFFF",
+      "stroke_width": 0,
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-B-label",
+      "type": "text",
+      "x": 86,
+      "y": 371,
+      "text": "B  8 g",
+      "size": 20,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF",
+      "entity": "R-B",
+      "logical_id": "R-B",
+      "object_part": "decoration",
+      "count_scope": "R-beds"
+    },
+    {
+      "id": "R-feed-line",
+      "type": "line",
+      "points": [
+        [
+          143,
+          143
+        ],
+        [
+          143,
+          177
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "R-feed",
+      "role": "flow"
+    },
+    {
+      "id": "R-feed-head",
+      "type": "polygon",
+      "points": [
+        [
+          143,
+          177
+        ],
+        [
+          139.2,
+          168.0
+        ],
+        [
+          146.8,
+          168.0
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "R-feed",
+      "role": "flow"
+    },
+    {
+      "id": "R-through-A-line",
+      "type": "line",
+      "points": [
+        [
+          177,
+          193
+        ],
+        [
+          177,
+          290
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "R-through-A",
+      "role": "flow"
+    },
+    {
+      "id": "R-through-A-head",
+      "type": "polygon",
+      "points": [
+        [
+          177,
+          290
+        ],
+        [
+          173.2,
+          281.0
+        ],
+        [
+          180.8,
+          281.0
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "R-through-A",
+      "role": "flow"
+    },
+    {
+      "id": "R-through-B-line",
+      "type": "line",
+      "points": [
+        [
+          177,
+          302
+        ],
+        [
+          177,
+          398
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "R-through-B",
+      "role": "flow"
+    },
+    {
+      "id": "R-through-B-head",
+      "type": "polygon",
+      "points": [
+        [
+          177,
+          398
+        ],
+        [
+          173.2,
+          389.0
+        ],
+        [
+          180.8,
+          389.0
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "R-through-B",
+      "role": "flow"
+    },
+    {
+      "id": "R-outlet-line",
+      "type": "line",
+      "points": [
+        [
+          177,
+          407
+        ],
+        [
+          177,
+          430
+        ],
+        [
+          280,
+          430
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "R-outlet",
+      "role": "flow"
+    },
+    {
+      "id": "R-outlet-head",
+      "type": "polygon",
+      "points": [
+        [
+          280,
+          430
+        ],
+        [
+          271.0,
+          433.8
+        ],
+        [
+          271.0,
+          426.2
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "R-outlet",
+      "role": "flow"
+    },
+    {
+      "id": "R-out-label",
+      "type": "text",
+      "x": 266,
+      "y": 484,
+      "text": "Outlet",
+      "size": 18,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "R-bypass-line",
+      "type": "line",
+      "points": [
+        [
+          210,
+          178
+        ],
+        [
+          246,
+          178
+        ],
+        [
+          246,
+          430
+        ]
+      ],
+      "stroke": "#A95328",
+      "stroke_width": 2.5,
+      "relation": "R-bypass",
+      "role": "flow"
+    },
+    {
+      "id": "R-bypass-head",
+      "type": "polygon",
+      "points": [
+        [
+          246,
+          430
+        ],
+        [
+          242.2,
+          421.0
+        ],
+        [
+          249.8,
+          421.0
+        ]
+      ],
+      "fill": "#A95328",
+      "stroke": "none",
+      "relation": "R-bypass",
+      "role": "flow"
+    },
+    {
+      "id": "R-note",
+      "type": "text",
+      "x": 150,
+      "y": 523,
+      "text": "Gaps bypass both beds",
+      "size": 19,
+      "align": "center",
+      "fill": "#A95328",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "S-title",
+      "type": "text",
+      "x": 335,
+      "y": 36,
+      "text": "S  |  Sealed tray rims",
+      "size": 22,
+      "align": "left",
+      "fill": "#176D66",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "S-subtitle",
+      "type": "text",
+      "x": 335,
+      "y": 64,
+      "text": "Gasket at each tray rim",
+      "size": 18,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "S-feed-label",
+      "type": "text",
+      "x": 437,
+      "y": 103,
+      "text": "Feed",
+      "size": 19,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "S-lid-left",
+      "type": "rect",
+      "x": 335,
+      "y": 126,
+      "w": 93,
+      "h": 13,
+      "fill": "#D7E0E4",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "S-lid-right",
+      "type": "rect",
+      "x": 448,
+      "y": 126,
+      "w": 111,
+      "h": 13,
+      "fill": "#D7E0E4",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "S-port-left",
+      "type": "line",
+      "points": [
+        [
+          428,
+          110
+        ],
+        [
+          428,
+          147
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "S-port-right",
+      "type": "line",
+      "points": [
+        [
+          448,
+          110
+        ],
+        [
+          448,
+          147
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "S-wall-left",
+      "type": "rect",
+      "x": 335,
+      "y": 142,
+      "w": 8,
+      "h": 321,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "S-wall-right-top",
+      "type": "rect",
+      "x": 551,
+      "y": 142,
+      "w": 8,
+      "h": 276,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "S-wall-right-bottom",
+      "type": "rect",
+      "x": 551,
+      "y": 443,
+      "w": 8,
+      "h": 20,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "S-floor",
+      "type": "rect",
+      "x": 335,
+      "y": 455,
+      "w": 224,
+      "h": 8,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "S-outlet-upper",
+      "type": "line",
+      "points": [
+        [
+          559,
+          418
+        ],
+        [
+          582,
+          418
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "S-outlet-lower",
+      "type": "line",
+      "points": [
+        [
+          559,
+          443
+        ],
+        [
+          582,
+          443
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2
+    },
+    {
+      "id": "S-lid-seal-left",
+      "type": "rect",
+      "x": 335,
+      "y": 139,
+      "w": 8,
+      "h": 3,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-lid-seal-right",
+      "type": "rect",
+      "x": 551,
+      "y": 139,
+      "w": 8,
+      "h": 3,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-upper-tray",
+      "type": "line",
+      "stroke": "#82939B",
+      "stroke_width": 2,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "primary",
+      "count_scope": "S-trays",
+      "points": [
+        [
+          363,
+          232
+        ],
+        [
+          363,
+          279
+        ],
+        [
+          529,
+          279
+        ],
+        [
+          529,
+          232
+        ]
+      ]
+    },
+    {
+      "id": "S-bed-A",
+      "type": "rect",
+      "x": 366,
+      "y": 236,
+      "w": 160,
+      "h": 38,
+      "fill": "#E9DAB3",
+      "stroke": "#E9DAB3",
+      "stroke_width": 0,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "primary",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-0-0",
+      "type": "circle",
+      "x": 371,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-0-1",
+      "type": "circle",
+      "x": 374,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-0-2",
+      "type": "circle",
+      "x": 371,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-1-0",
+      "type": "circle",
+      "x": 384,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-1-1",
+      "type": "circle",
+      "x": 387,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-1-2",
+      "type": "circle",
+      "x": 384,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-2-0",
+      "type": "circle",
+      "x": 397,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-2-1",
+      "type": "circle",
+      "x": 400,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-2-2",
+      "type": "circle",
+      "x": 397,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-3-0",
+      "type": "circle",
+      "x": 410,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-3-1",
+      "type": "circle",
+      "x": 413,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-3-2",
+      "type": "circle",
+      "x": 410,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-4-0",
+      "type": "circle",
+      "x": 423,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-4-1",
+      "type": "circle",
+      "x": 426,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-4-2",
+      "type": "circle",
+      "x": 423,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-5-0",
+      "type": "circle",
+      "x": 436,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-5-1",
+      "type": "circle",
+      "x": 439,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-5-2",
+      "type": "circle",
+      "x": 436,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-6-0",
+      "type": "circle",
+      "x": 449,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-6-1",
+      "type": "circle",
+      "x": 452,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-6-2",
+      "type": "circle",
+      "x": 449,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-7-0",
+      "type": "circle",
+      "x": 462,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-7-1",
+      "type": "circle",
+      "x": 465,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-7-2",
+      "type": "circle",
+      "x": 462,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-8-0",
+      "type": "circle",
+      "x": 475,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-8-1",
+      "type": "circle",
+      "x": 478,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-8-2",
+      "type": "circle",
+      "x": 475,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-9-0",
+      "type": "circle",
+      "x": 488,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-9-1",
+      "type": "circle",
+      "x": 491,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-9-2",
+      "type": "circle",
+      "x": 488,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-10-0",
+      "type": "circle",
+      "x": 501,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-10-1",
+      "type": "circle",
+      "x": 504,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-10-2",
+      "type": "circle",
+      "x": 501,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-11-0",
+      "type": "circle",
+      "x": 514,
+      "y": 242,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-11-1",
+      "type": "circle",
+      "x": 517,
+      "y": 253,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-grain-11-2",
+      "type": "circle",
+      "x": 514,
+      "y": 264,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#B3B5A7",
+      "stroke_width": 0.7,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-mesh-0",
+      "type": "line",
+      "points": [
+        [
+          365.0,
+          278
+        ],
+        [
+          369.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-1",
+      "type": "line",
+      "points": [
+        [
+          373.5,
+          278
+        ],
+        [
+          377.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-2",
+      "type": "line",
+      "points": [
+        [
+          382.0,
+          278
+        ],
+        [
+          386.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-3",
+      "type": "line",
+      "points": [
+        [
+          390.5,
+          278
+        ],
+        [
+          394.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-4",
+      "type": "line",
+      "points": [
+        [
+          399.0,
+          278
+        ],
+        [
+          403.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-5",
+      "type": "line",
+      "points": [
+        [
+          407.5,
+          278
+        ],
+        [
+          411.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-6",
+      "type": "line",
+      "points": [
+        [
+          416.0,
+          278
+        ],
+        [
+          420.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-7",
+      "type": "line",
+      "points": [
+        [
+          424.5,
+          278
+        ],
+        [
+          428.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-8",
+      "type": "line",
+      "points": [
+        [
+          433.0,
+          278
+        ],
+        [
+          437.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-9",
+      "type": "line",
+      "points": [
+        [
+          441.5,
+          278
+        ],
+        [
+          445.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-10",
+      "type": "line",
+      "points": [
+        [
+          450.0,
+          278
+        ],
+        [
+          454.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-11",
+      "type": "line",
+      "points": [
+        [
+          458.5,
+          278
+        ],
+        [
+          462.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-12",
+      "type": "line",
+      "points": [
+        [
+          467.0,
+          278
+        ],
+        [
+          471.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-13",
+      "type": "line",
+      "points": [
+        [
+          475.5,
+          278
+        ],
+        [
+          479.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-14",
+      "type": "line",
+      "points": [
+        [
+          484.0,
+          278
+        ],
+        [
+          488.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-15",
+      "type": "line",
+      "points": [
+        [
+          492.5,
+          278
+        ],
+        [
+          496.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-16",
+      "type": "line",
+      "points": [
+        [
+          501.0,
+          278
+        ],
+        [
+          505.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-17",
+      "type": "line",
+      "points": [
+        [
+          509.5,
+          278
+        ],
+        [
+          513.5,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-mesh-18",
+      "type": "line",
+      "points": [
+        [
+          518.0,
+          278
+        ],
+        [
+          522.0,
+          273
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-A-label-bg",
+      "type": "rect",
+      "x": 375,
+      "y": 242,
+      "w": 77,
+      "h": 24,
+      "fill": "#FFFFFF",
+      "stroke": "#FFFFFF",
+      "stroke_width": 0,
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-label",
+      "type": "text",
+      "x": 381,
+      "y": 261,
+      "text": "A  12 g",
+      "size": 20,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF",
+      "entity": "S-A",
+      "logical_id": "S-A",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-A-ledge-left",
+      "type": "rect",
+      "x": 343,
+      "y": 240,
+      "w": 27,
+      "h": 9,
+      "fill": "#82939B",
+      "stroke": "#82939B",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-A-gasket-left",
+      "type": "rect",
+      "x": 343,
+      "y": 231,
+      "w": 27,
+      "h": 9,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-A-ledge-right",
+      "type": "rect",
+      "x": 524,
+      "y": 240,
+      "w": 27,
+      "h": 9,
+      "fill": "#82939B",
+      "stroke": "#82939B",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-A-gasket-right",
+      "type": "rect",
+      "x": 524,
+      "y": 231,
+      "w": 27,
+      "h": 9,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-lower-tray",
+      "type": "line",
+      "stroke": "#82939B",
+      "stroke_width": 2,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "primary",
+      "count_scope": "S-trays",
+      "points": [
+        [
+          363,
+          342
+        ],
+        [
+          363,
+          389
+        ],
+        [
+          529,
+          389
+        ],
+        [
+          529,
+          342
+        ]
+      ]
+    },
+    {
+      "id": "S-bed-B",
+      "type": "rect",
+      "x": 366,
+      "y": 346,
+      "w": 160,
+      "h": 38,
+      "fill": "#CADBE5",
+      "stroke": "#CADBE5",
+      "stroke_width": 0,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "primary",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-0-0",
+      "type": "circle",
+      "x": 371,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-0-1",
+      "type": "circle",
+      "x": 374,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-0-2",
+      "type": "circle",
+      "x": 371,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-1-0",
+      "type": "circle",
+      "x": 384,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-1-1",
+      "type": "circle",
+      "x": 387,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-1-2",
+      "type": "circle",
+      "x": 384,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-2-0",
+      "type": "circle",
+      "x": 397,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-2-1",
+      "type": "circle",
+      "x": 400,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-2-2",
+      "type": "circle",
+      "x": 397,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-3-0",
+      "type": "circle",
+      "x": 410,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-3-1",
+      "type": "circle",
+      "x": 413,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-3-2",
+      "type": "circle",
+      "x": 410,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-4-0",
+      "type": "circle",
+      "x": 423,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-4-1",
+      "type": "circle",
+      "x": 426,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-4-2",
+      "type": "circle",
+      "x": 423,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-5-0",
+      "type": "circle",
+      "x": 436,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-5-1",
+      "type": "circle",
+      "x": 439,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-5-2",
+      "type": "circle",
+      "x": 436,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-6-0",
+      "type": "circle",
+      "x": 449,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-6-1",
+      "type": "circle",
+      "x": 452,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-6-2",
+      "type": "circle",
+      "x": 449,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-7-0",
+      "type": "circle",
+      "x": 462,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-7-1",
+      "type": "circle",
+      "x": 465,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-7-2",
+      "type": "circle",
+      "x": 462,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-8-0",
+      "type": "circle",
+      "x": 475,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-8-1",
+      "type": "circle",
+      "x": 478,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-8-2",
+      "type": "circle",
+      "x": 475,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-9-0",
+      "type": "circle",
+      "x": 488,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-9-1",
+      "type": "circle",
+      "x": 491,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-9-2",
+      "type": "circle",
+      "x": 488,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-10-0",
+      "type": "circle",
+      "x": 501,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-10-1",
+      "type": "circle",
+      "x": 504,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-10-2",
+      "type": "circle",
+      "x": 501,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-11-0",
+      "type": "circle",
+      "x": 514,
+      "y": 352,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-11-1",
+      "type": "circle",
+      "x": 517,
+      "y": 363,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-grain-11-2",
+      "type": "circle",
+      "x": 514,
+      "y": 374,
+      "r": 2.6,
+      "fill": "none",
+      "stroke": "#91AFBD",
+      "stroke_width": 0.7,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-mesh-0",
+      "type": "line",
+      "points": [
+        [
+          365.0,
+          388
+        ],
+        [
+          369.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-1",
+      "type": "line",
+      "points": [
+        [
+          373.5,
+          388
+        ],
+        [
+          377.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-2",
+      "type": "line",
+      "points": [
+        [
+          382.0,
+          388
+        ],
+        [
+          386.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-3",
+      "type": "line",
+      "points": [
+        [
+          390.5,
+          388
+        ],
+        [
+          394.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-4",
+      "type": "line",
+      "points": [
+        [
+          399.0,
+          388
+        ],
+        [
+          403.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-5",
+      "type": "line",
+      "points": [
+        [
+          407.5,
+          388
+        ],
+        [
+          411.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-6",
+      "type": "line",
+      "points": [
+        [
+          416.0,
+          388
+        ],
+        [
+          420.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-7",
+      "type": "line",
+      "points": [
+        [
+          424.5,
+          388
+        ],
+        [
+          428.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-8",
+      "type": "line",
+      "points": [
+        [
+          433.0,
+          388
+        ],
+        [
+          437.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-9",
+      "type": "line",
+      "points": [
+        [
+          441.5,
+          388
+        ],
+        [
+          445.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-10",
+      "type": "line",
+      "points": [
+        [
+          450.0,
+          388
+        ],
+        [
+          454.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-11",
+      "type": "line",
+      "points": [
+        [
+          458.5,
+          388
+        ],
+        [
+          462.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-12",
+      "type": "line",
+      "points": [
+        [
+          467.0,
+          388
+        ],
+        [
+          471.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-13",
+      "type": "line",
+      "points": [
+        [
+          475.5,
+          388
+        ],
+        [
+          479.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-14",
+      "type": "line",
+      "points": [
+        [
+          484.0,
+          388
+        ],
+        [
+          488.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-15",
+      "type": "line",
+      "points": [
+        [
+          492.5,
+          388
+        ],
+        [
+          496.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-16",
+      "type": "line",
+      "points": [
+        [
+          501.0,
+          388
+        ],
+        [
+          505.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-17",
+      "type": "line",
+      "points": [
+        [
+          509.5,
+          388
+        ],
+        [
+          513.5,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-mesh-18",
+      "type": "line",
+      "points": [
+        [
+          518.0,
+          388
+        ],
+        [
+          522.0,
+          383
+        ]
+      ],
+      "stroke": "#667A84",
+      "stroke_width": 0.9,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "decoration",
+      "count_scope": "S-trays"
+    },
+    {
+      "id": "S-B-label-bg",
+      "type": "rect",
+      "x": 375,
+      "y": 352,
+      "w": 77,
+      "h": 24,
+      "fill": "#FFFFFF",
+      "stroke": "#FFFFFF",
+      "stroke_width": 0,
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-label",
+      "type": "text",
+      "x": 381,
+      "y": 371,
+      "text": "B  8 g",
+      "size": 20,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF",
+      "entity": "S-B",
+      "logical_id": "S-B",
+      "object_part": "decoration",
+      "count_scope": "S-beds"
+    },
+    {
+      "id": "S-B-ledge-left",
+      "type": "rect",
+      "x": 343,
+      "y": 350,
+      "w": 27,
+      "h": 9,
+      "fill": "#82939B",
+      "stroke": "#82939B",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-B-gasket-left",
+      "type": "rect",
+      "x": 343,
+      "y": 341,
+      "w": 27,
+      "h": 9,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-B-ledge-right",
+      "type": "rect",
+      "x": 524,
+      "y": 350,
+      "w": 27,
+      "h": 9,
+      "fill": "#82939B",
+      "stroke": "#82939B",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-B-gasket-right",
+      "type": "rect",
+      "x": 524,
+      "y": 341,
+      "w": 27,
+      "h": 9,
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0
+    },
+    {
+      "id": "S-feed-line",
+      "type": "line",
+      "points": [
+        [
+          438,
+          143
+        ],
+        [
+          438,
+          177
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "S-feed",
+      "role": "flow"
+    },
+    {
+      "id": "S-feed-head",
+      "type": "polygon",
+      "points": [
+        [
+          438,
+          177
+        ],
+        [
+          434.2,
+          168.0
+        ],
+        [
+          441.8,
+          168.0
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "S-feed",
+      "role": "flow"
+    },
+    {
+      "id": "S-through-A-line",
+      "type": "line",
+      "points": [
+        [
+          472,
+          193
+        ],
+        [
+          472,
+          290
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "S-through-A",
+      "role": "flow"
+    },
+    {
+      "id": "S-through-A-head",
+      "type": "polygon",
+      "points": [
+        [
+          472,
+          290
+        ],
+        [
+          468.2,
+          281.0
+        ],
+        [
+          475.8,
+          281.0
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "S-through-A",
+      "role": "flow"
+    },
+    {
+      "id": "S-through-B-line",
+      "type": "line",
+      "points": [
+        [
+          472,
+          302
+        ],
+        [
+          472,
+          398
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "S-through-B",
+      "role": "flow"
+    },
+    {
+      "id": "S-through-B-head",
+      "type": "polygon",
+      "points": [
+        [
+          472,
+          398
+        ],
+        [
+          468.2,
+          389.0
+        ],
+        [
+          475.8,
+          389.0
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "S-through-B",
+      "role": "flow"
+    },
+    {
+      "id": "S-outlet-line",
+      "type": "line",
+      "points": [
+        [
+          472,
+          407
+        ],
+        [
+          472,
+          430
+        ],
+        [
+          575,
+          430
+        ]
+      ],
+      "stroke": "#2C6885",
+      "stroke_width": 2.5,
+      "relation": "S-outlet",
+      "role": "flow"
+    },
+    {
+      "id": "S-outlet-head",
+      "type": "polygon",
+      "points": [
+        [
+          575,
+          430
+        ],
+        [
+          566.0,
+          433.8
+        ],
+        [
+          566.0,
+          426.2
+        ]
+      ],
+      "fill": "#2C6885",
+      "stroke": "none",
+      "relation": "S-outlet",
+      "role": "flow"
+    },
+    {
+      "id": "S-out-label",
+      "type": "text",
+      "x": 561,
+      "y": 484,
+      "text": "Outlet",
+      "size": 18,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "S-note",
+      "type": "text",
+      "x": 447,
+      "y": 523,
+      "text": "Seals interrupt the side route",
+      "size": 19,
+      "align": "center",
+      "fill": "#176D66",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "service-title",
+      "type": "text",
+      "x": 636,
+      "y": 64,
+      "text": "S  |  service",
+      "size": 22,
+      "align": "left",
+      "fill": "#176D66",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "service-condition",
+      "type": "text",
+      "x": 636,
+      "y": 93,
+      "text": "Feed off; drained",
+      "size": 18,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "service-lifted-lid",
+      "type": "rect",
+      "x": 657,
+      "y": 121,
+      "w": 190,
+      "h": 10,
+      "fill": "#D7E0E4",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "lid-state",
+      "type": "text",
+      "x": 752,
+      "y": 155,
+      "text": "Lid lifted",
+      "size": 18,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "service-wall-659",
+      "type": "rect",
+      "x": 659,
+      "y": 259,
+      "w": 7,
+      "h": 201,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "service-wall-838",
+      "type": "rect",
+      "x": 838,
+      "y": 259,
+      "w": 7,
+      "h": 201,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "service-base",
+      "type": "rect",
+      "x": 659,
+      "y": 454,
+      "w": 186,
+      "h": 7,
+      "fill": "#E4EAED",
+      "stroke": "#82939B",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "service-upper-removed-U",
+      "type": "line",
+      "points": [
+        [
+          681,
+          195
+        ],
+        [
+          681,
+          215
+        ],
+        [
+          822,
+          215
+        ],
+        [
+          822,
+          195
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-0",
+      "type": "line",
+      "points": [
+        [
+          685,
+          215
+        ],
+        [
+          689,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-1",
+      "type": "line",
+      "points": [
+        [
+          693,
+          215
+        ],
+        [
+          697,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-2",
+      "type": "line",
+      "points": [
+        [
+          701,
+          215
+        ],
+        [
+          705,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-3",
+      "type": "line",
+      "points": [
+        [
+          709,
+          215
+        ],
+        [
+          713,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-4",
+      "type": "line",
+      "points": [
+        [
+          717,
+          215
+        ],
+        [
+          721,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-5",
+      "type": "line",
+      "points": [
+        [
+          725,
+          215
+        ],
+        [
+          729,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-6",
+      "type": "line",
+      "points": [
+        [
+          733,
+          215
+        ],
+        [
+          737,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-7",
+      "type": "line",
+      "points": [
+        [
+          741,
+          215
+        ],
+        [
+          745,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-8",
+      "type": "line",
+      "points": [
+        [
+          749,
+          215
+        ],
+        [
+          753,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-9",
+      "type": "line",
+      "points": [
+        [
+          757,
+          215
+        ],
+        [
+          761,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-10",
+      "type": "line",
+      "points": [
+        [
+          765,
+          215
+        ],
+        [
+          769,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-11",
+      "type": "line",
+      "points": [
+        [
+          773,
+          215
+        ],
+        [
+          777,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-12",
+      "type": "line",
+      "points": [
+        [
+          781,
+          215
+        ],
+        [
+          785,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-13",
+      "type": "line",
+      "points": [
+        [
+          789,
+          215
+        ],
+        [
+          793,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-14",
+      "type": "line",
+      "points": [
+        [
+          797,
+          215
+        ],
+        [
+          801,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-15",
+      "type": "line",
+      "points": [
+        [
+          805,
+          215
+        ],
+        [
+          809,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-upper-removed-mesh-16",
+      "type": "line",
+      "points": [
+        [
+          813,
+          215
+        ],
+        [
+          817,
+          210
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-empty-upper-ledge-left",
+      "type": "rect",
+      "x": 666,
+      "y": 308,
+      "w": 18,
+      "h": 8,
+      "fill": "#82939B",
+      "stroke": "#82939B",
+      "stroke_width": 0
+    },
+    {
+      "id": "service-empty-upper-ledge-right",
+      "type": "rect",
+      "x": 821,
+      "y": 308,
+      "w": 17,
+      "h": 8,
+      "fill": "#82939B",
+      "stroke": "#82939B",
+      "stroke_width": 0
+    },
+    {
+      "id": "empty-upper-seat",
+      "type": "text",
+      "x": 733,
+      "y": 358,
+      "text": "Empty upper seat",
+      "size": 17,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "service-lower-U",
+      "type": "line",
+      "points": [
+        [
+          681,
+          406
+        ],
+        [
+          681,
+          426
+        ],
+        [
+          822,
+          426
+        ],
+        [
+          822,
+          406
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 2,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-0",
+      "type": "line",
+      "points": [
+        [
+          685,
+          426
+        ],
+        [
+          689,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-1",
+      "type": "line",
+      "points": [
+        [
+          693,
+          426
+        ],
+        [
+          697,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-2",
+      "type": "line",
+      "points": [
+        [
+          701,
+          426
+        ],
+        [
+          705,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-3",
+      "type": "line",
+      "points": [
+        [
+          709,
+          426
+        ],
+        [
+          713,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-4",
+      "type": "line",
+      "points": [
+        [
+          717,
+          426
+        ],
+        [
+          721,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-5",
+      "type": "line",
+      "points": [
+        [
+          725,
+          426
+        ],
+        [
+          729,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-6",
+      "type": "line",
+      "points": [
+        [
+          733,
+          426
+        ],
+        [
+          737,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-7",
+      "type": "line",
+      "points": [
+        [
+          741,
+          426
+        ],
+        [
+          745,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-8",
+      "type": "line",
+      "points": [
+        [
+          749,
+          426
+        ],
+        [
+          753,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-9",
+      "type": "line",
+      "points": [
+        [
+          757,
+          426
+        ],
+        [
+          761,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-10",
+      "type": "line",
+      "points": [
+        [
+          765,
+          426
+        ],
+        [
+          769,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-11",
+      "type": "line",
+      "points": [
+        [
+          773,
+          426
+        ],
+        [
+          777,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-12",
+      "type": "line",
+      "points": [
+        [
+          781,
+          426
+        ],
+        [
+          785,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-13",
+      "type": "line",
+      "points": [
+        [
+          789,
+          426
+        ],
+        [
+          793,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-14",
+      "type": "line",
+      "points": [
+        [
+          797,
+          426
+        ],
+        [
+          801,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-15",
+      "type": "line",
+      "points": [
+        [
+          805,
+          426
+        ],
+        [
+          809,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "service-lower-mesh-16",
+      "type": "line",
+      "points": [
+        [
+          813,
+          426
+        ],
+        [
+          817,
+          421
+        ]
+      ],
+      "stroke": "#82939B",
+      "stroke_width": 0.8,
+      "entity": "S-lower-tray",
+      "logical_id": "S-lower-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "upper-state",
+      "type": "text",
+      "x": 752,
+      "y": 185,
+      "text": "Upper tray (removed)",
+      "size": 18,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "lower-state",
+      "type": "text",
+      "x": 752,
+      "y": 394,
+      "text": "Lower tray",
+      "size": 19,
+      "align": "center",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "guide-title",
+      "type": "text",
+      "x": 638,
+      "y": 485,
+      "text": "Asymmetric guide",
+      "size": 18,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "schematic",
+      "type": "text",
+      "x": 42,
+      "y": 552,
+      "text": "Sections and interface markers are schematic; not to scale.",
+      "size": 17,
+      "align": "left",
+      "fill": "#23343E",
+      "background": "#FFFFFF"
+    },
+    {
+      "id": "upper-tab-interface",
+      "type": "circle",
+      "x": 822,
+      "y": 205,
+      "r": 5,
+      "fill": "#FFFFFF",
+      "stroke": "#50616A",
+      "stroke_width": 2,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "upper-tab-label-leader",
+      "type": "line",
+      "points": [
+        [
+          827,
+          205
+        ],
+        [
+          838,
+          205
+        ]
+      ],
+      "stroke": "#50616A",
+      "stroke_width": 1.3,
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "upper-tab-label",
+      "type": "text",
+      "x": 842,
+      "y": 198,
+      "text": "Tray\ntab",
+      "size": 17,
+      "fill": "#23343E",
+      "background": "#FFFFFF",
+      "align": "left",
+      "entity": "S-upper-tray",
+      "logical_id": "S-upper-tray",
+      "object_part": "detail"
+    },
+    {
+      "id": "chamber-guide-attachment",
+      "type": "line",
+      "points": [
+        [
+          827,
+          308
+        ],
+        [
+          841,
+          308
+        ]
+      ],
+      "stroke": "#50616A",
+      "stroke_width": 2,
+      "entity": "S-chamber",
+      "logical_id": "S-chamber",
+      "object_part": "detail"
+    },
+    {
+      "id": "chamber-guide-interface",
+      "type": "circle",
+      "x": 822,
+      "y": 308,
+      "r": 5,
+      "fill": "#FFFFFF",
+      "stroke": "#50616A",
+      "stroke_width": 2,
+      "entity": "S-chamber",
+      "logical_id": "S-chamber",
+      "object_part": "detail"
+    },
+    {
+      "id": "chamber-guide-label-leader",
+      "type": "line",
+      "points": [
+        [
+          817,
+          310
+        ],
+        [
+          805,
+          321
+        ]
+      ],
+      "stroke": "#50616A",
+      "stroke_width": 1.3,
+      "entity": "S-chamber",
+      "logical_id": "S-chamber",
+      "object_part": "detail"
+    },
+    {
+      "id": "chamber-guide-label",
+      "type": "text",
+      "x": 746,
+      "y": 332,
+      "text": "Chamber guide",
+      "size": 17,
+      "fill": "#23343E",
+      "background": "#FFFFFF",
+      "align": "center",
+      "entity": "S-chamber",
+      "logical_id": "S-chamber",
+      "object_part": "detail"
+    },
+    {
+      "id": "interface-limits",
+      "type": "text",
+      "x": 638,
+      "y": 515,
+      "text": "Markers only; shape unspecified",
+      "size": 17,
+      "fill": "#23343E",
+      "background": "#FFFFFF",
+      "align": "left"
+    },
+    {
+      "id": "lift-upper-tray-line",
+      "type": "line",
+      "points": [
+        [
+          721,
+          303
+        ],
+        [
+          721,
+          229
+        ]
+      ],
+      "stroke": "#176D66",
+      "stroke_width": 2.3,
+      "relation": "lift-upper-tray",
+      "role": "S"
+    },
+    {
+      "id": "lift-upper-tray-head",
+      "type": "polygon",
+      "points": [
+        [
+          721,
+          229
+        ],
+        [
+          725.2,
+          239.0
+        ],
+        [
+          716.8,
+          239.0
+        ]
+      ],
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0,
+      "relation": "lift-upper-tray",
+      "role": "S"
+    },
+    {
+      "id": "lift-upper-tray-label",
+      "type": "text",
+      "text": "Lift",
+      "x": 696.0,
+      "y": 271.0,
+      "size": 18,
+      "align": "center",
+      "fill": "#253B44",
+      "background": "#FFFFFF",
+      "relation": "lift-upper-tray",
+      "role": "S",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.5,
+        "offset": [
+          -25,
+          5
+        ],
+        "anchor": [
+          721.0,
+          266.0
+        ]
+      }
+    },
+    {
+      "id": "insert-upper-tray-line",
+      "type": "line",
+      "points": [
+        [
+          800,
+          229
+        ],
+        [
+          800,
+          303
+        ]
+      ],
+      "stroke": "#176D66",
+      "stroke_width": 2.3,
+      "relation": "insert-upper-tray",
+      "role": "S"
+    },
+    {
+      "id": "insert-upper-tray-head",
+      "type": "polygon",
+      "points": [
+        [
+          800,
+          303
+        ],
+        [
+          795.8,
+          293.0
+        ],
+        [
+          804.2,
+          293.0
+        ]
+      ],
+      "fill": "#176D66",
+      "stroke": "#176D66",
+      "stroke_width": 0,
+      "relation": "insert-upper-tray",
+      "role": "S"
+    },
+    {
+      "id": "insert-upper-tray-label",
+      "type": "text",
+      "text": "Insert",
+      "x": 774.0,
+      "y": 271.0,
+      "size": 18,
+      "align": "center",
+      "fill": "#253B44",
+      "background": "#FFFFFF",
+      "relation": "insert-upper-tray",
+      "role": "S",
+      "relation_label_binding": {
+        "segment": 0,
+        "fraction": 0.5,
+        "offset": [
+          -26,
+          5
+        ],
+        "anchor": [
+          800.0,
+          266.0
+        ]
+      }
+    }
+  ],
+  "caption": "Figure 1. Constructed DEMO mechanism, with schematic geometry. In R, tray-to-wall gaps connect the upper plenum to the lower collector, bypassing both beds despite the lid gasket. In S, each continuous rim gasket seats on a ledge and interrupts that route. Trays are open at the top, with mesh bottoms; the media surface is not a lid. Lid-gasket sections lie only at wall contacts. Flow arrows show available paths, not a measured velocity field or flow split. The stopped, drained service view shows the same empty upper tray above its vacant seat, the lower tray remaining and the lid lifted. Circles mark the chamber guide and that tray's tab; they are interfaces, not actual shapes. Lift and insertion directions are shown; rejection geometry is unspecified.",
+  "alt_text": "R and S each have two open-top mesh-bottom trays, A above B. Lid-gasket sections lie only at wall contacts. R has a continuous side bypass and S seals each tray rim. The separate stopped, drained service state shows the same empty upper tray above its vacant seat, lift upward and insertion downward, with the lower tray remaining. A circle on the removed tray marks its tab; a circle attached to the chamber wall ledge marks the chamber guide. The circles mark interfaces, not actual mating shapes or a geometrical proof of reversed-insertion rejection.",
+  "count_constraints": [
+    {
+      "name": "R-A",
+      "expected": 1,
+      "scope": {
+        "entity": "R-A"
+      },
+      "expected_logical_ids": [
+        "R-A"
+      ]
+    },
+    {
+      "name": "R-B",
+      "expected": 1,
+      "scope": {
+        "entity": "R-B"
+      },
+      "expected_logical_ids": [
+        "R-B"
+      ]
+    },
+    {
+      "name": "R-upper-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "R-upper-tray"
+      },
+      "expected_logical_ids": [
+        "R-upper-tray"
+      ]
+    },
+    {
+      "name": "R-lower-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "R-lower-tray"
+      },
+      "expected_logical_ids": [
+        "R-lower-tray"
+      ]
+    },
+    {
+      "name": "S-A",
+      "expected": 1,
+      "scope": {
+        "entity": "S-A"
+      },
+      "expected_logical_ids": [
+        "S-A"
+      ]
+    },
+    {
+      "name": "S-B",
+      "expected": 1,
+      "scope": {
+        "entity": "S-B"
+      },
+      "expected_logical_ids": [
+        "S-B"
+      ]
+    },
+    {
+      "name": "S-upper-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "S-upper-tray"
+      },
+      "expected_logical_ids": [
+        "S-upper-tray"
+      ]
+    },
+    {
+      "name": "S-lower-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "S-lower-tray"
+      },
+      "expected_logical_ids": [
+        "S-lower-tray"
+      ]
+    }
+  ],
+  "relation_components": [
+    {
+      "id": "lift-upper-tray",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          721,
+          303
+        ],
+        "target": [
+          721,
+          229
+        ]
+      },
+      "data": {
+        "meaning": "Same empty upper tray lifts upward after feed is stopped, chamber drained and lid lifted",
+        "semantics": "motion",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.5,
+          "offset": [
+            -25,
+            5
+          ],
+          "anchor": [
+            721.0,
+            266.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "insert-upper-tray",
+      "kind": "relation_path",
+      "anchors": {
+        "source": [
+          800,
+          229
+        ],
+        "target": [
+          800,
+          303
+        ]
+      },
+      "data": {
+        "meaning": "Same empty upper tray inserts downward toward its chamber seat; guide and tab shapes are not specified",
+        "semantics": "motion",
+        "label_binding": {
+          "segment": 0,
+          "fraction": 0.5,
+          "offset": [
+            -26,
+            5
+          ],
+          "anchor": [
+            800.0,
+            266.0
+          ]
+        }
+      }
+    }
+  ]
+}

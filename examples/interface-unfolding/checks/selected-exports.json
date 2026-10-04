@@ -1,0 +1,12 @@
+[
+  {
+    "figure": "edge",
+    "physical_size_mm": [
+      159.99999749999998,
+      100.00001166666667
+    ],
+    "svg_sha256": "c2c9b68c1ab568ffec513edd31106de53b79f590797dfcf2f18215635e1202dc",
+    "pdf_sha256": "7d772ad60feed1ab3dd1896ba10077ec33fc19259c576f91e21c0caa0302bddf",
+    "png_sha256": "ab30fd757e03787c4691708e343e170b6dd8b6b823ddc9fe09213866b91fe377"
+  }
+]

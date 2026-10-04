@@ -1,0 +1,98 @@
+{
+  "review_type": "independent_context_model_artifact_review",
+  "human_participation": false,
+  "author_acceptance": false,
+  "task": "single spatial-transfer cable figure",
+  "prior_anonymous_reports_modified": false,
+  "scope": {
+    "input_read": "input.md",
+    "artifacts_read": ["output/final/qa-160mm-at96dpi.png", "output/final/figure.png", "output/final/caption.txt", "output/final/qa-grayscale.png", "output/final/qa-deuteranomaly100.png"],
+    "artifact_viewed_before_input_and_caption": true,
+    "generator_self_reviews_read": false,
+    "skills_read": false,
+    "other_trials_read": false,
+    "artifacts_modified": false,
+    "network_used": false,
+    "delegation_used": false,
+    "nominal_size_mm": [160, 90],
+    "primary_view_approx_px": [605, 340],
+    "grayscale_and_color_simulation_checked_at_primary_width": true,
+    "not_assessed": ["SVG editability", "PDF vector integrity", "PNG resolution metadata", "rebuild command execution", "physical print reading", "human color-vision testing"]
+  },
+  "generation_context": {
+    "provided_by_parent": "one generation plus at most one content self-repair",
+    "generation_history_independently_verified": false,
+    "older_version_comparison": false,
+    "causal_improvement_claim": false,
+    "cross_task_reliability_claim": false
+  },
+  "first_impression": "One coaxial cable with dark outer jacket, silver shield, pale-green insulation and a short central copper tip; step ends read as nested layers rather than separate parts.",
+  "checks": {
+    "one_cable_four_layers": {
+      "status": "visually_supported",
+      "evidence": "one shared axis, nested radii and no detached pieces or extra views"
+    },
+    "radial_order": {
+      "status": "correct",
+      "inside_to_outside": ["solid copper conductor", "continuous polymer insulation", "continuous solid metal shield sleeve", "outer jacket"]
+    },
+    "continuous_wrapping": {
+      "status": "visually_supported",
+      "evidence": "each inner layer passes through the preceding layer's annular end without a separation gap"
+    },
+    "stepped_termination_order": {
+      "status": "correct",
+      "order": ["outer jacket", "metal shield sleeve", "polymer insulation", "short exposed copper tip"]
+    },
+    "conductor_shield_separation": {
+      "status": "correct",
+      "evidence": "insulation visibly surrounds the central copper conductor and separates it from the shield"
+    },
+    "solid_thin_wall_shield_not_braid": {
+      "status": "correct",
+      "evidence": "solid cylindrical wall with thin annular end; no braid texture"
+    },
+    "label_ownership": {
+      "status": "clear",
+      "evidence": "four leader endpoints lie on corresponding material surfaces; no crossed leaders or text overlap"
+    },
+    "same_layer_two_line_shield_label": {
+      "status": "acceptable",
+      "evidence": "Metal shield and Solid sleeve share one leader and correspond to one annular layer"
+    },
+    "unfounded_dimensions_or_physics": {
+      "status": "none_observed",
+      "evidence": "no numerical dimensions, measurement axes, signal arrows or performance claims"
+    },
+    "caption_alignment": {
+      "status": "correct",
+      "evidence": "describes one cable, successive terminations, leftward continuity and not-to-scale geometry without correcting a conflicting image"
+    }
+  },
+  "visual_assessment": {
+    "actual_size_readability": "good in nominal 160 mm 96 dpi view",
+    "small_explanatory_text_dependency": "low",
+    "shape_maturity": "good",
+    "spatial_depth": "appropriate and restrained",
+    "palette": "coherent low-saturation material differentiation",
+    "occlusion_consistency": "no confirmed inconsistency",
+    "overlap_or_clipping_blockers": [],
+    "left_crop": "intentional continuation of intact cable, not a clipped processed end",
+    "main_reason": "shared axis, annular steps and consistent elliptical faces explain nesting before caption reading"
+  },
+  "accessibility_observations": {
+    "grayscale": "metal shield and polymer tones converge, but outlines, annular step and label endpoints keep the layers distinguishable at 605 px width",
+    "deuteranomaly100": "color distinction between shield and insulation weakens; geometry and labels preserve layer identity",
+    "real_user_validation": false,
+    "optional_improvement": "increase local shield-insulation boundary contrast if low-quality grayscale printing becomes a target"
+  },
+  "mandatory_fixes": [],
+  "optional_improvements": ["slightly strengthen shield-insulation boundary contrast for low-quality grayscale printing", "optionally compact the two-line shield label into an explicitly grouped phrase"],
+  "conclusion": {
+    "scientific_relationships": "supported by inspected artifact",
+    "graphic_readiness": "no mandatory blocker found in this model review",
+    "spatial_transfer_artifact_effect": "effective for this one final figure",
+    "human_or_author_accepted": false,
+    "claim_limit": "does not establish comparative skill superiority, causal improvement, or broad reliability"
+  }
+}

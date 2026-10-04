@@ -1,0 +1,22 @@
+{
+  "evidence": "DEMO",
+  "pdf_mm": [
+    159.99999749999998,
+    100.00001166666667
+  ],
+  "png_pixels": [
+    1260,
+    788
+  ],
+  "min_font_pt": 8.5,
+  "svg_text_nodes": 25,
+  "pdf_text": "G \u00b7 retain the copy until boundary use ends\nDEMO\nW0\nW1\nW2\nW3\nSelected W1 \u2192 W0 interface\nUnfolded by use; W0 detail rotated 180\u00b0\nW0 needs (e, 17)\nW1 source\nwest edge \u00b7 17\nincoming slots\n(e, 17)  READY\nfree slot\ncopy 17\nghost\neast edge\nupdate 17\nmatch\n(e, 16)\nno match\nrelease 17 after use\npreparing 18\nwrite 18 when ready\nIf both slots are live, W1 waits.\n",
+  "all_vector": true,
+  "visual_review": "GENERATING_AGENT_VIEWED_NORMAL_GRAY_CVD_AND_INDEPENDENT_SVG_IMPORT",
+  "author_acceptance": "NOT_REQUESTED",
+  "checks_scope": "format, dimensions and text presence only",
+  "input_sha256": "01a7b6e1cc7a191880e2a95027dfa626523ba0912f4add39f8d652ab99d987b8",
+  "development": true,
+  "revision": "selected",
+  "review_record": "../../../checks/generating-agent-review.json"
+}

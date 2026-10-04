@@ -1,0 +1,1195 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "technical_status": "REVIEW_REQUIRED",
+  "overall_status": "REVIEW_REQUIRED",
+  "svg_sha256": "022ed78905b03b6179c8501d5540c4e0f3bfc0696b8b53309aae88519b7f769e",
+  "placement_width_mm": 160.0,
+  "minimum_font_pt": 8.5,
+  "text": [
+    {
+      "id": "funfolded-000",
+      "text": "G · retain the copy until boundary use ends",
+      "bounds": [
+        16.0,
+        13.6220703125,
+        253.27734375,
+        24.42578125
+      ],
+      "font_pt": 11.5
+    },
+    {
+      "id": "funfolded-001",
+      "text": "DEMO",
+      "bounds": [
+        411.49169921875,
+        15.8076171875,
+        437.0,
+        22.099609375
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "funfolded-003",
+      "text": "W0",
+      "bounds": [
+        24.120849609375,
+        44.890625,
+        36.879150390625,
+        51.10791015625
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "funfolded-005",
+      "text": "W1",
+      "bounds": [
+        51.120849609375,
+        44.890625,
+        63.879150390625,
+        51.0
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "funfolded-007",
+      "text": "W2",
+      "bounds": [
+        24.120849609375,
+        64.890625,
+        36.879150390625,
+        71.0
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "funfolded-009",
+      "text": "W3",
+      "bounds": [
+        51.120849609375,
+        64.890625,
+        63.879150390625,
+        71.099609375
+      ],
+      "font_pt": 8.5
+    },
+    {
+      "id": "funfolded-011",
+      "text": "Selected W1 → W0 interface",
+      "bounds": [
+        84.0,
+        42.3505859375,
+        224.73486328125,
+        50.1435546875
+      ],
+      "font_pt": 10.5
+    },
+    {
+      "id": "funfolded-012",
+      "text": "Unfolded by use; W0 detail rotated 180°",
+      "bounds": [
+        84.0,
+        59.08837890625,
+        252.20751953125,
+        68.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-014",
+      "text": "W0 needs (e, 17)",
+      "bounds": [
+        157.0,
+        98.3505859375,
+        239.34912109375,
+        108.21484375
+      ],
+      "font_pt": 10.5
+    },
+    {
+      "id": "funfolded-015",
+      "text": "W1 source",
+      "bounds": [
+        23.0,
+        98.453125,
+        76.14599609375,
+        106.123046875
+      ],
+      "font_pt": 10.5
+    },
+    {
+      "id": "funfolded-016",
+      "text": "west edge · 17",
+      "bounds": [
+        23.0,
+        116.171875,
+        85.37158203125,
+        125.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-021",
+      "text": "incoming slots",
+      "bounds": [
+        158.0,
+        118.19970703125,
+        218.23779296875,
+        127.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-023",
+      "text": "(e, 17)  READY",
+      "bounds": [
+        165.0,
+        141.71484375,
+        234.521484375,
+        151.109375
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "funfolded-029",
+      "text": "free slot",
+      "bounds": [
+        201.197265625,
+        203.724609375,
+        236.802734375,
+        211.1171875
+      ],
+      "font_pt": 10.0
+    },
+    {
+      "id": "funfolded-032",
+      "text": "copy 17",
+      "bounds": [
+        87.351806640625,
+        138.171875,
+        120.648193359375,
+        147.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-048",
+      "text": "ghost",
+      "bounds": [
+        330.370849609375,
+        117.19970703125,
+        353.629150390625,
+        126.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-050",
+      "text": "east edge",
+      "bounds": [
+        373.22265625,
+        157.5576171875,
+        414.77734375,
+        165.8984375
+      ],
+      "font_pt": 9.0
+    },
+    {
+      "id": "funfolded-051",
+      "text": "update 17",
+      "bounds": [
+        372.9765625,
+        169.53125,
+        415.0234375,
+        177.775390625
+      ],
+      "font_pt": 9.0
+    },
+    {
+      "id": "funfolded-056",
+      "text": "match",
+      "bounds": [
+        294.05810546875,
+        134.19970703125,
+        319.94189453125,
+        141.111328125
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-057",
+      "text": "(e, 16)",
+      "bounds": [
+        297.9833984375,
+        184.4521484375,
+        324.0166015625,
+        192.8984375
+      ],
+      "font_pt": 9.0
+    },
+    {
+      "id": "funfolded-061",
+      "text": "no match",
+      "bounds": [
+        292.47705078125,
+        196.5576171875,
+        329.52294921875,
+        203.10546875
+      ],
+      "font_pt": 9.0
+    },
+    {
+      "id": "funfolded-067",
+      "text": "release 17 after use",
+      "bounds": [
+        308.978271484375,
+        245.08837890625,
+        393.021728515625,
+        252.111328125
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-068",
+      "text": "preparing 18",
+      "bounds": [
+        23.0,
+        216.171875,
+        76.39111328125,
+        225.00390625
+      ],
+      "font_pt": 9.5
+    },
+    {
+      "id": "funfolded-074",
+      "text": "write 18 when ready",
+      "bounds": [
+        59.693359375,
+        253.53125,
+        140.306640625,
+        261.8984375
+      ],
+      "font_pt": 9.0
+    },
+    {
+      "id": "funfolded-075",
+      "text": "If both slots are live, W1 waits.",
+      "bounds": [
+        16.0,
+        270.71484375,
+        161.17578125,
+        279.6015625
+      ],
+      "font_pt": 10.0
+    }
+  ],
+  "guide_segments": [
+    {
+      "id": "funfolded-010",
+      "from": [
+        44.0,
+        38.0
+      ],
+      "to": [
+        44.0,
+        58.0
+      ],
+      "width": 2.4
+    },
+    {
+      "id": "funfolded-018",
+      "from": [
+        35.0,
+        149.75
+      ],
+      "to": [
+        60.0,
+        149.75
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-019",
+      "from": [
+        35.0,
+        165.5
+      ],
+      "to": [
+        60.0,
+        165.5
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-020",
+      "from": [
+        35.0,
+        181.25
+      ],
+      "to": [
+        60.0,
+        181.25
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-025",
+      "from": [
+        192.0,
+        157.0
+      ],
+      "to": [
+        192.0,
+        170.0
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-026",
+      "from": [
+        219.0,
+        157.0
+      ],
+      "to": [
+        219.0,
+        170.0
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-027",
+      "from": [
+        246.0,
+        157.0
+      ],
+      "to": [
+        246.0,
+        170.0
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-030",
+      "from": [
+        65.0,
+        153.0
+      ],
+      "to": [
+        152.0,
+        153.0
+      ],
+      "width": 1.15
+    },
+    {
+      "id": "funfolded-034",
+      "from": [
+        336.0,
+        150.75
+      ],
+      "to": [
+        348.0,
+        150.75
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-035",
+      "from": [
+        336.0,
+        166.5
+      ],
+      "to": [
+        348.0,
+        166.5
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-036",
+      "from": [
+        336.0,
+        182.25
+      ],
+      "to": [
+        348.0,
+        182.25
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-038",
+      "from": [
+        371.0,
+        135.0
+      ],
+      "to": [
+        371.0,
+        198.0
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-039",
+      "from": [
+        354.0,
+        150.75
+      ],
+      "to": [
+        422.0,
+        150.75
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-040",
+      "from": [
+        388.0,
+        135.0
+      ],
+      "to": [
+        388.0,
+        198.0
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-041",
+      "from": [
+        354.0,
+        166.5
+      ],
+      "to": [
+        422.0,
+        166.5
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-042",
+      "from": [
+        405.0,
+        135.0
+      ],
+      "to": [
+        405.0,
+        198.0
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-043",
+      "from": [
+        354.0,
+        182.25
+      ],
+      "to": [
+        422.0,
+        182.25
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-045",
+      "from": [
+        354.0,
+        150.75
+      ],
+      "to": [
+        371.0,
+        150.75
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-046",
+      "from": [
+        354.0,
+        166.5
+      ],
+      "to": [
+        371.0,
+        166.5
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-047",
+      "from": [
+        354.0,
+        182.25
+      ],
+      "to": [
+        371.0,
+        182.25
+      ],
+      "width": 0.5
+    },
+    {
+      "id": "funfolded-052",
+      "from": [
+        348.0,
+        183.0
+      ],
+      "to": [
+        356.0,
+        183.0
+      ],
+      "width": 1.05
+    },
+    {
+      "id": "funfolded-054",
+      "from": [
+        286.0,
+        153.0
+      ],
+      "to": [
+        331.0,
+        153.0
+      ],
+      "width": 1.15
+    },
+    {
+      "id": "funfolded-058",
+      "from": [
+        311.0,
+        179.0
+      ],
+      "to": [
+        311.0,
+        166.0
+      ],
+      "width": 0.8
+    },
+    {
+      "id": "funfolded-059",
+      "from": [
+        308.0,
+        158.0
+      ],
+      "to": [
+        314.0,
+        164.0
+      ],
+      "width": 1.2
+    },
+    {
+      "id": "funfolded-060",
+      "from": [
+        308.0,
+        164.0
+      ],
+      "to": [
+        314.0,
+        158.0
+      ],
+      "width": 1.2
+    },
+    {
+      "id": "funfolded-062",
+      "from": [
+        391.0,
+        199.0
+      ],
+      "to": [
+        391.0,
+        240.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "funfolded-063",
+      "from": [
+        391.0,
+        240.0
+      ],
+      "to": [
+        286.0,
+        240.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "funfolded-064",
+      "from": [
+        286.0,
+        240.0
+      ],
+      "to": [
+        286.0,
+        174.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "funfolded-065",
+      "from": [
+        286.0,
+        174.0
+      ],
+      "to": [
+        281.0,
+        174.0
+      ],
+      "width": 0.9
+    },
+    {
+      "id": "funfolded-069",
+      "from": [
+        60.0,
+        228.0
+      ],
+      "to": [
+        60.0,
+        246.0
+      ],
+      "width": 0.85
+    },
+    {
+      "id": "funfolded-070",
+      "from": [
+        60.0,
+        246.0
+      ],
+      "to": [
+        139.0,
+        246.0
+      ],
+      "width": 0.85
+    },
+    {
+      "id": "funfolded-071",
+      "from": [
+        139.0,
+        246.0
+      ],
+      "to": [
+        139.0,
+        207.0
+      ],
+      "width": 0.85
+    },
+    {
+      "id": "funfolded-072",
+      "from": [
+        139.0,
+        207.0
+      ],
+      "to": [
+        152.0,
+        207.0
+      ],
+      "width": 0.85
+    }
+  ],
+  "findings": [
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "funfolded-040",
+      "text": "east edge",
+      "label": "funfolded-050",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "funfolded-040",
+      "text": "update 17",
+      "label": "funfolded-051",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "funfolded-042",
+      "text": "east edge",
+      "label": "funfolded-050",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "funfolded-042",
+      "text": "update 17",
+      "label": "funfolded-051",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    }
+  ],
+  "owner_regions": [],
+  "painted_text_contrast": {
+    "status": "PASS",
+    "canvas": "#FFFFFF",
+    "labels": [
+      {
+        "id": "funfolded-000",
+        "text": "G · retain the copy until boundary use ends",
+        "bounds": [
+          16.0,
+          13.6220703125,
+          253.27734375,
+          24.42578125
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-001",
+        "text": "DEMO",
+        "bounds": [
+          411.49169921875,
+          15.8076171875,
+          437.0,
+          22.099609375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#566D79",
+        "ratio": 5.4414892469319005,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-003",
+        "text": "W0",
+        "bounds": [
+          24.120849609375,
+          44.890625,
+          36.879150390625,
+          51.10791015625
+        ],
+        "background": "#DCEAF4",
+        "background_sources": [
+          "funfolded-002"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 9.272742697016577,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-005",
+        "text": "W1",
+        "bounds": [
+          51.120849609375,
+          44.890625,
+          63.879150390625,
+          51.0
+        ],
+        "background": "#DCEAF4",
+        "background_sources": [
+          "funfolded-004"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 9.272742697016577,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-007",
+        "text": "W2",
+        "bounds": [
+          24.120849609375,
+          64.890625,
+          36.879150390625,
+          71.0
+        ],
+        "background": "#F5F8FA",
+        "background_sources": [
+          "funfolded-006"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 10.665553588437577,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-009",
+        "text": "W3",
+        "bounds": [
+          51.120849609375,
+          64.890625,
+          63.879150390625,
+          71.099609375
+        ],
+        "background": "#F5F8FA",
+        "background_sources": [
+          "funfolded-008"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 10.665553588437577,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-011",
+        "text": "Selected W1 → W0 interface",
+        "bounds": [
+          84.0,
+          42.3505859375,
+          224.73486328125,
+          50.1435546875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-012",
+        "text": "Unfolded by use; W0 detail rotated 180°",
+        "bounds": [
+          84.0,
+          59.08837890625,
+          252.20751953125,
+          68.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#566D79",
+        "ratio": 5.4414892469319005,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-014",
+        "text": "W0 needs (e, 17)",
+        "bounds": [
+          157.0,
+          98.3505859375,
+          239.34912109375,
+          108.21484375
+        ],
+        "background": "#F7F9FA",
+        "background_sources": [
+          "funfolded-013"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 10.771531555593315,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-015",
+        "text": "W1 source",
+        "bounds": [
+          23.0,
+          98.453125,
+          76.14599609375,
+          106.123046875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-016",
+        "text": "west edge · 17",
+        "bounds": [
+          23.0,
+          116.171875,
+          85.37158203125,
+          125.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-021",
+        "text": "incoming slots",
+        "bounds": [
+          158.0,
+          118.19970703125,
+          218.23779296875,
+          127.00390625
+        ],
+        "background": "#F7F9FA",
+        "background_sources": [
+          "funfolded-013"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 10.771531555593315,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-023",
+        "text": "(e, 17)  READY",
+        "bounds": [
+          165.0,
+          141.71484375,
+          234.521484375,
+          151.109375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "funfolded-022"
+        ],
+        "status": "PASS",
+        "foreground": "#356FA0",
+        "ratio": 5.339753718625112,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-029",
+        "text": "free slot",
+        "bounds": [
+          201.197265625,
+          203.724609375,
+          236.802734375,
+          211.1171875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "funfolded-028"
+        ],
+        "status": "PASS",
+        "foreground": "#566D79",
+        "ratio": 5.4414892469319005,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-032",
+        "text": "copy 17",
+        "bounds": [
+          87.351806640625,
+          138.171875,
+          120.648193359375,
+          147.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#356FA0",
+        "ratio": 5.339753718625112,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-048",
+        "text": "ghost",
+        "bounds": [
+          330.370849609375,
+          117.19970703125,
+          353.629150390625,
+          126.00390625
+        ],
+        "background": "#F7F9FA",
+        "background_sources": [
+          "funfolded-013"
+        ],
+        "status": "PASS",
+        "foreground": "#75688E",
+        "ratio": 4.818274292772429,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-050",
+        "text": "east edge",
+        "bounds": [
+          373.22265625,
+          157.5576171875,
+          414.77734375,
+          165.8984375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "funfolded-049"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-051",
+        "text": "update 17",
+        "bounds": [
+          372.9765625,
+          169.53125,
+          415.0234375,
+          177.775390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "funfolded-049"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-056",
+        "text": "match",
+        "bounds": [
+          294.05810546875,
+          134.19970703125,
+          319.94189453125,
+          141.111328125
+        ],
+        "background": "#F7F9FA",
+        "background_sources": [
+          "funfolded-013"
+        ],
+        "status": "PASS",
+        "foreground": "#356FA0",
+        "ratio": 5.056372885373591,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-057",
+        "text": "(e, 16)",
+        "bounds": [
+          297.9833984375,
+          184.4521484375,
+          324.0166015625,
+          192.8984375
+        ],
+        "background": "#F7F9FA",
+        "background_sources": [
+          "funfolded-013"
+        ],
+        "status": "PASS",
+        "foreground": "#A55D34",
+        "ratio": 4.717583999294478,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-061",
+        "text": "no match",
+        "bounds": [
+          292.47705078125,
+          196.5576171875,
+          329.52294921875,
+          203.10546875
+        ],
+        "background": "#F7F9FA",
+        "background_sources": [
+          "funfolded-013"
+        ],
+        "status": "PASS",
+        "foreground": "#A55D34",
+        "ratio": 4.717583999294478,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-067",
+        "text": "release 17 after use",
+        "bounds": [
+          308.978271484375,
+          245.08837890625,
+          393.021728515625,
+          252.111328125
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#75688E",
+        "ratio": 5.088311059220154,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-068",
+        "text": "preparing 18",
+        "bounds": [
+          23.0,
+          216.171875,
+          76.39111328125,
+          225.00390625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-074",
+        "text": "write 18 when ready",
+        "bounds": [
+          59.693359375,
+          253.53125,
+          140.306640625,
+          261.8984375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#566D79",
+        "ratio": 5.4414892469319005,
+        "threshold": 4.5
+      },
+      {
+        "id": "funfolded-075",
+        "text": "If both slots are live, W1 waits.",
+        "bounds": [
+          16.0,
+          270.71484375,
+          161.17578125,
+          279.6015625
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "declared canvas"
+        ],
+        "status": "PASS",
+        "foreground": "#263D49",
+        "ratio": 11.375214404310585,
+        "threshold": 4.5
+      }
+    ],
+    "findings": [],
+    "scope": "Measured ID-bearing plain text; declared canvas plus supported opaque rect interiors. Unknown/partial/later paint is review, never assumed white. 4.5:1 is an internal screen, not aesthetic approval."
+  },
+  "fonts": {
+    "normal": {
+      "family": "Arial",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    "bold": {
+      "family": "Arial",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    }
+  },
+  "scientific_review": "NOT_RUN",
+  "visual_review": "NOT_RUN",
+  "author_acceptance": false,
+  "limits": [
+    "Measures explicit untransformed text using the supplied matching font.",
+    "Only unfilled straight guides are checked, including auxiliary/dashed lines.",
+    "Dash gaps, z-order, painted backgrounds, curves and arbitrary SVG/CSS need visual review.",
+    "Owner regions are supplied by an editor; containment cannot establish scientific meaning."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "technical_status": "PASS",
+  "scientific_review_status": "REVIEW_REQUIRED",
+  "visual_review_status": "REVIEW_REQUIRED",
+  "author_acceptance": "NOT_REQUESTED_OR_RECEIVED",
+  "overall_status": "REVIEW_REQUIRED",
+  "checks": {
+    "one_pdf_page": true,
+    "vector_pdf_no_images": true,
+    "pdf_width_mm": 159.999997,
+    "pdf_height_mm": 89.999996,
+    "png_pixels": [
+      1890,
+      1063
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ],
+    "labels_searchable": true,
+    "min_label_pt": 10.5,
+    "all_labels_ge_8pt": true,
+    "nesting_radii": true,
+    "ordered_end_positions": true,
+    "distinct_termination_planes": true,
+    "svg_text_nodes": 5,
+    "svg_embedded_images": 0,
+    "svg_primary_materials": 4
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "executable": "current interpreter"
+  },
+  "simulation": {
+    "grayscale": "linear sRGB luminance",
+    "cvd": "Machado 2009 deuteranomaly severity 100",
+    "matrix": [
+      [
+        0.367322,
+        0.860646,
+        -0.227968
+      ],
+      [
+        0.280085,
+        0.672501,
+        0.047413
+      ],
+      [
+        -0.01182,
+        0.04294,
+        0.968881
+      ]
+    ]
+  },
+  "limitations": [
+    "No measured geometry",
+    "No physical render or optical/electrical simulation",
+    "No human reading study or author approval",
+    "No journal-specific rules checked",
+    "SVG cross-platform font substitution not tested",
+    "Curved-surface topology visually reviewed separately"
+  ],
+  "hashes": {
+    "alt_text.txt": "c7736d5fed4713097cb33ec3b4dab151dbb2c8ec84abf57d5255c3518a85ccb8",
+    "caption.txt": "cbf33b1c78c7764836f469d196d83770fc211cb674a253c65e4049341eb94ee1",
+    "figure.pdf": "5a1329d737740734826f8d347a0b61ef21fd2bec1e2cc3126a90fbc8a8ff5d9d",
+    "figure.png": "c080eea987cf4986b7fa9add67142f60c743a40202b13d9924287dcc7773dfed",
+    "figure.svg": "84b62315dd5053f939d76e461ccc12cc7451ef3e95b24685d30906ee191cef8b",
+    "figure_spec.json": "9d8711e8b0da0981fda6e71c75833a7fc1297c17b0208e32c956f95996c7635f",
+    "preview.html": "ab22c4ebbc3db9490467625289e708527bd9c522e4f0ac6e77b2a9b96d788a65",
+    "qa-160mm-at96dpi.png": "1e3278c4c5caa3d3dc6fee60d0885e1cbb54def5f46aa39c65f09e594b71e8e0",
+    "qa-deuteranomaly100.png": "b0226520d0d3dedc8e3446406fb79f68bba6c2b2c668d9e5a6e3d06c8d86748b",
+    "qa-grayscale.png": "d26eb4169930fa9be06407277c9f1417d27468752c6fb4bbc461155650ff0112",
+    "render_receipt.json": "8474924c7d970bc97c721dfa3d46812ef1d728791cacf718e12285779fa47cc8"
+  },
+  "public_packaging_note": "Source and font locations in figure_spec.json made portable; original receipts retained locally. Figure geometry and SVG/PDF/PNG unchanged."
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="100mm" viewBox="0 0 453.5433070866142 283.46456692913387">
+<title>Constructed DEMO</title>
+<text id="fB-000" x="16" y="22" font-family="Arial" font-size="12" font-weight="bold" fill="#243841" text-anchor="start">G · follow the copied values</text>
+<text id="fB-001" x="437" y="22" font-family="Arial" font-size="8.5" font-weight="normal" fill="#61727A" text-anchor="end">DEMO</text>
+<text id="fB-002" x="22" y="57" font-family="Arial" font-size="11" font-weight="bold" fill="#243841" text-anchor="start">W1</text>
+<text id="fB-003" x="307" y="57" font-family="Arial" font-size="10.5" font-weight="bold" fill="#243841" text-anchor="start">W0 requires (e, 17)</text>
+<text id="fB-004" x="24" y="83" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="start">source edge · 17</text>
+<rect id="fB-005" fill="#E8F4F2" stroke="#087F82" stroke-width="0.95" x="53" y="96" width="19" height="65"/>
+<line id="fB-006" x1="53" y1="112.25" x2="72" y2="112.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-007" x1="53" y1="128.5" x2="72" y2="128.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-008" x1="53" y1="144.75" x2="72" y2="144.75" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fB-009" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="153" y="96" width="116" height="35"/>
+<rect id="fB-010" fill="#E8F4F2" stroke="#087F82" stroke-width="0.95" x="158" y="101" width="9" height="25"/>
+<line id="fB-011" x1="158" y1="107.25" x2="167" y2="107.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-012" x1="158" y1="113.5" x2="167" y2="113.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-013" x1="158" y1="119.75" x2="167" y2="119.75" stroke="#087F82" stroke-width="0.55"/>
+<text id="fB-014" x="175" y="118" font-family="Arial" font-size="10" font-weight="bold" fill="#096F72" text-anchor="start">(e, 17) READY</text>
+<rect id="fB-015" fill="#FFFFFF" stroke="#61727A" stroke-width="0.75" x="153" y="150" width="116" height="35"/>
+<text id="fB-016" x="211.0" y="172" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="middle">free slot</text>
+<text id="fB-017" x="211" y="83" font-family="Arial" font-size="10" font-weight="bold" fill="#243841" text-anchor="middle">incoming slots</text>
+<rect id="fB-018" fill="#E8F4F2" stroke="#087F82" stroke-width="0.95" x="317" y="96" width="13" height="65"/>
+<line id="fB-019" x1="317" y1="112.25" x2="330" y2="112.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-020" x1="317" y1="128.5" x2="330" y2="128.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-021" x1="317" y1="144.75" x2="330" y2="144.75" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fB-022" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.65" x="343" y="96" width="88" height="65"/>
+<line id="fB-023" x1="365.0" y1="96" x2="365.0" y2="161" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fB-024" x1="387.0" y1="96" x2="387.0" y2="161" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fB-025" x1="409.0" y1="96" x2="409.0" y2="161" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fB-026" x1="343" y1="112.25" x2="431" y2="112.25" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fB-027" x1="343" y1="128.5" x2="431" y2="128.5" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fB-028" x1="343" y1="144.75" x2="431" y2="144.75" stroke="#CFDADE" stroke-width="0.55"/>
+<rect id="fB-029" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="343" y="96" width="22.0" height="65"/>
+<line id="fB-030" x1="343" y1="112.25" x2="365.0" y2="112.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-031" x1="343" y1="128.5" x2="365.0" y2="128.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fB-032" x1="343" y1="144.75" x2="365.0" y2="144.75" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fB-033" fill="#FFFFFF" stroke="none" stroke-width="0.7" x="361" y="107" width="64" height="33"/>
+<text id="fB-034" x="393" y="119" font-family="Arial" font-size="9.5" font-weight="bold" fill="#243841" text-anchor="middle">boundary</text>
+<text id="fB-035" x="393" y="133" font-family="Arial" font-size="9.5" font-weight="bold" fill="#243841" text-anchor="middle">update 17</text>
+<line id="fB-036" x1="77" y1="112" x2="149" y2="112" stroke="#087F82" stroke-width="1.2"/>
+<polygon id="fB-037" fill="#087F82" stroke="none" stroke-width="0.8" points="149,112 144.0,109.6 144.0,114.4"/>
+<text id="fB-038" x="112" y="102" font-family="Arial" font-size="9.5" font-weight="normal" fill="#087F82" text-anchor="middle">copy 17</text>
+<line id="fB-039" x1="273" y1="112" x2="313" y2="112" stroke="#087F82" stroke-width="1.2"/>
+<polygon id="fB-040" fill="#087F82" stroke="none" stroke-width="0.8" points="313,112 308.0,109.6 308.0,114.4"/>
+<text id="fB-041" x="293" y="101" font-family="Arial" font-size="9.5" font-weight="normal" fill="#087F82" text-anchor="middle">match</text>
+<line id="fB-042" x1="328" y1="152" x2="348" y2="152" stroke="#087F82" stroke-width="1.1"/>
+<polygon id="fB-043" fill="#087F82" stroke="none" stroke-width="0.8" points="348,152 343.0,149.6 343.0,154.4"/>
+<text id="fB-044" x="326" y="178" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="middle">ghost</text>
+<text id="fB-045" x="24" y="197" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="start">preparing 18</text>
+<line id="fB-046" x1="63" y1="202" x2="63" y2="215" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fB-047" x1="63" y1="215" x2="212" y2="215" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fB-048" x1="212" y1="215" x2="212" y2="188" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<polygon id="fB-049" fill="#61727A" stroke="none" stroke-width="0.8" points="212,188 209.6,193.0 214.4,193.0"/>
+<text id="fB-050" x="113" y="230" font-family="Arial" font-size="9.5" font-weight="normal" fill="#61727A" text-anchor="start">write 18 when ready</text>
+<line id="fB-051" x1="406" y1="164" x2="406" y2="201" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fB-052" x1="406" y1="201" x2="281" y2="201" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fB-053" x1="281" y1="201" x2="281" y2="126" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fB-054" x1="281" y1="126" x2="272" y2="126" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<polygon id="fB-055" fill="#087F82" stroke="none" stroke-width="0.8" points="272,126 277.0,128.4 277.0,123.6"/>
+<text id="fB-056" x="357" y="216" font-family="Arial" font-size="9.5" font-weight="normal" fill="#087F82" text-anchor="middle">release 17</text>
+<rect id="fB-057" fill="#E8F4F2" stroke="#CFDADE" stroke-width="0.6" x="22" y="238" width="22" height="16"/>
+<text id="fB-058" x="33" y="249" font-family="Arial" font-size="8.5" font-weight="bold" fill="#243841" text-anchor="middle">W0</text>
+<rect id="fB-059" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="49" y="238" width="22" height="16"/>
+<text id="fB-060" x="60" y="249" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W1</text>
+<rect id="fB-061" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="22" y="260" width="22" height="16"/>
+<text id="fB-062" x="33" y="271" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W2</text>
+<rect id="fB-063" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="49" y="260" width="22" height="16"/>
+<text id="fB-064" x="60" y="271" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W3</text>
+<line id="fB-065" x1="44" y1="246" x2="49" y2="246" stroke="#087F82" stroke-width="1.2"/>
+<line id="fB-066" x1="44" y1="268" x2="49" y2="268" stroke="#61727A" stroke-width="0.65"/>
+<line id="fB-067" x1="33" y1="254" x2="33" y2="260" stroke="#61727A" stroke-width="0.65"/>
+<line id="fB-068" x1="60" y1="254" x2="60" y2="260" stroke="#61727A" stroke-width="0.65"/>
+<line id="fB-069" x1="96" y1="247" x2="102" y2="254" stroke="#A9672E" stroke-width="1.2"/>
+<line id="fB-070" x1="96" y1="254" x2="102" y2="247" stroke="#A9672E" stroke-width="1.2"/>
+<text id="fB-071" x="108" y="254" font-family="Arial" font-size="9.5" font-weight="normal" fill="#A9672E" text-anchor="start">(e, 16): no match</text>
+<text id="fB-072" x="236" y="276" font-family="Arial" font-size="10" font-weight="bold" fill="#243841" text-anchor="start">Both slots live: W1 waits.</text>
+</svg>

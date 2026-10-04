@@ -1,0 +1,6004 @@
+{
+  "version": 2,
+  "figure_id": "figure1",
+  "spec_sha256": "5c48bd1a284d4fdf00f0a6c8634eacc2fad2e151450d4088f4923d4d3f3511cc",
+  "semantic_digest": "46da2023208e43f8a48fcffe4532b27128333dca03920b93b24d754f2180fb3d",
+  "geometry_digest": "a74c2beaf0851702ce0a22ad4723eb14e3fba7a5c78ed5f9482f36a9c1cdc0f2",
+  "source_refs": [
+    {
+      "path": "data/notes.md",
+      "sha256": "68d6ea3a875d33668b4c5ba0131d507bd763fa48182d88c9eeb6bd3343f56d87"
+    },
+    {
+      "path": "data/results.csv",
+      "sha256": "d2912e4204b20ab7433884ff31caaf3b1ab4f352f3a93c8d845e6147327c698e"
+    },
+    {
+      "path": "data/rough.md",
+      "sha256": "decc86282bf4d6a83d551485501e0e61ce2aba4827ba15b34f680d32b972ad4a"
+    },
+    {
+      "path": "data/task.md",
+      "sha256": "62a26698bd44b1e154c1d26e8effe60a8b44f645d4db8c23a3d41e13476a6434"
+    }
+  ],
+  "demo": true,
+  "count_constraints": [
+    {
+      "name": "R-A",
+      "expected": 1,
+      "scope": {
+        "entity": "R-A"
+      },
+      "expected_logical_ids": [
+        "R-A"
+      ]
+    },
+    {
+      "name": "R-B",
+      "expected": 1,
+      "scope": {
+        "entity": "R-B"
+      },
+      "expected_logical_ids": [
+        "R-B"
+      ]
+    },
+    {
+      "name": "R-upper-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "R-upper-tray"
+      },
+      "expected_logical_ids": [
+        "R-upper-tray"
+      ]
+    },
+    {
+      "name": "R-lower-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "R-lower-tray"
+      },
+      "expected_logical_ids": [
+        "R-lower-tray"
+      ]
+    },
+    {
+      "name": "S-A",
+      "expected": 1,
+      "scope": {
+        "entity": "S-A"
+      },
+      "expected_logical_ids": [
+        "S-A"
+      ]
+    },
+    {
+      "name": "S-B",
+      "expected": 1,
+      "scope": {
+        "entity": "S-B"
+      },
+      "expected_logical_ids": [
+        "S-B"
+      ]
+    },
+    {
+      "name": "S-upper-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "S-upper-tray"
+      },
+      "expected_logical_ids": [
+        "S-upper-tray"
+      ]
+    },
+    {
+      "name": "S-lower-tray",
+      "expected": 1,
+      "scope": {
+        "entity": "S-lower-tray"
+      },
+      "expected_logical_ids": [
+        "S-lower-tray"
+      ]
+    }
+  ],
+  "semantic_constraints": {
+    "status": "PASS",
+    "scope": "Declared object sets/states and explicit endpoint/triangle geometry only; author meaning remains unverified",
+    "object_counts": [
+      {
+        "name": "R-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "R-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "R-upper-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "R-lower-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-upper-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-lower-tray",
+        "status": "PASS",
+        "findings": []
+      }
+    ],
+    "directed_relations": [
+      {
+        "id": "R-feed",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-through-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-through-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-outlet",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-bypass",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-feed",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-through-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-through-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-outlet",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "lift-upper-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "insert-upper-tray",
+        "status": "PASS",
+        "findings": []
+      }
+    ],
+    "count_scope": "DECLARED",
+    "findings": []
+  },
+  "placement_width_mm": 160,
+  "entities": [
+    {
+      "id": "R-chamber",
+      "description": "Common enclosure",
+      "semantic_role": "R"
+    },
+    {
+      "id": "R-plenum",
+      "description": "Plenum above A",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-A",
+      "description": "Upper granular bed A, 12 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-B",
+      "description": "Lower granular bed B, 8 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-collector",
+      "description": "Collecting space below B",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-outlet",
+      "description": "Only bottom-side outlet",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-upper-tray",
+      "description": "Upper removable mesh-bottom tray",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "R-lower-tray",
+      "description": "Lower removable mesh-bottom tray",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-chamber",
+      "description": "Common enclosure",
+      "semantic_role": "S"
+    },
+    {
+      "id": "S-plenum",
+      "description": "Plenum above A",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-A",
+      "description": "Upper granular bed A, 12 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-B",
+      "description": "Lower granular bed B, 8 g",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-collector",
+      "description": "Collecting space below B",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-outlet",
+      "description": "Only bottom-side outlet",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-upper-tray",
+      "description": "Upper removable mesh-bottom tray",
+      "semantic_role": "shell"
+    },
+    {
+      "id": "S-lower-tray",
+      "description": "Lower removable mesh-bottom tray",
+      "semantic_role": "shell"
+    }
+  ],
+  "relations": [
+    {
+      "id": "R-feed",
+      "from": "R-plenum",
+      "to": "R-plenum",
+      "kind": "flow",
+      "meaning": "Feed enters the plenum through the single lid port",
+      "geometry": {
+        "item_id": "R-feed-line",
+        "from": [
+          143,
+          143
+        ],
+        "to": [
+          143,
+          177
+        ],
+        "arrow": {
+          "item_id": "R-feed-head",
+          "tip": [
+            143,
+            177
+          ],
+          "base": [
+            143.0,
+            168.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-through-A",
+      "from": "R-plenum",
+      "to": "R-A",
+      "kind": "flow",
+      "meaning": "Intended route enters and traverses bed A",
+      "geometry": {
+        "item_id": "R-through-A-line",
+        "from": [
+          177,
+          193
+        ],
+        "to": [
+          177,
+          290
+        ],
+        "arrow": {
+          "item_id": "R-through-A-head",
+          "tip": [
+            177,
+            290
+          ],
+          "base": [
+            177.0,
+            281.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-through-B",
+      "from": "R-A",
+      "to": "R-B",
+      "kind": "flow",
+      "meaning": "Serial route continues through bed B",
+      "geometry": {
+        "item_id": "R-through-B-line",
+        "from": [
+          177,
+          302
+        ],
+        "to": [
+          177,
+          398
+        ],
+        "arrow": {
+          "item_id": "R-through-B-head",
+          "tip": [
+            177,
+            398
+          ],
+          "base": [
+            177.0,
+            389.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-outlet",
+      "from": "R-B",
+      "to": "R-outlet",
+      "kind": "flow",
+      "meaning": "Treated route enters the collecting space and exits the single lower-side outlet",
+      "geometry": {
+        "item_id": "R-outlet-line",
+        "from": [
+          177,
+          407
+        ],
+        "to": [
+          280,
+          430
+        ],
+        "arrow": {
+          "item_id": "R-outlet-head",
+          "tip": [
+            280,
+            430
+          ],
+          "base": [
+            271.0,
+            430.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "R-bypass",
+      "from": "R-plenum",
+      "to": "R-collector",
+      "kind": "flow",
+      "meaning": "Continuous tray-to-wall side route bypasses A and B",
+      "geometry": {
+        "item_id": "R-bypass-line",
+        "from": [
+          210,
+          178
+        ],
+        "to": [
+          246,
+          430
+        ],
+        "arrow": {
+          "item_id": "R-bypass-head",
+          "tip": [
+            246,
+            430
+          ],
+          "base": [
+            246.0,
+            421.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-feed",
+      "from": "S-plenum",
+      "to": "S-plenum",
+      "kind": "flow",
+      "meaning": "Feed enters the plenum through the single lid port",
+      "geometry": {
+        "item_id": "S-feed-line",
+        "from": [
+          438,
+          143
+        ],
+        "to": [
+          438,
+          177
+        ],
+        "arrow": {
+          "item_id": "S-feed-head",
+          "tip": [
+            438,
+            177
+          ],
+          "base": [
+            438.0,
+            168.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-through-A",
+      "from": "S-plenum",
+      "to": "S-A",
+      "kind": "flow",
+      "meaning": "Intended route enters and traverses bed A",
+      "geometry": {
+        "item_id": "S-through-A-line",
+        "from": [
+          472,
+          193
+        ],
+        "to": [
+          472,
+          290
+        ],
+        "arrow": {
+          "item_id": "S-through-A-head",
+          "tip": [
+            472,
+            290
+          ],
+          "base": [
+            472.0,
+            281.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-through-B",
+      "from": "S-A",
+      "to": "S-B",
+      "kind": "flow",
+      "meaning": "Serial route continues through bed B",
+      "geometry": {
+        "item_id": "S-through-B-line",
+        "from": [
+          472,
+          302
+        ],
+        "to": [
+          472,
+          398
+        ],
+        "arrow": {
+          "item_id": "S-through-B-head",
+          "tip": [
+            472,
+            398
+          ],
+          "base": [
+            472.0,
+            389.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "S-outlet",
+      "from": "S-B",
+      "to": "S-outlet",
+      "kind": "flow",
+      "meaning": "Treated route enters the collecting space and exits the single lower-side outlet",
+      "geometry": {
+        "item_id": "S-outlet-line",
+        "from": [
+          472,
+          407
+        ],
+        "to": [
+          575,
+          430
+        ],
+        "arrow": {
+          "item_id": "S-outlet-head",
+          "tip": [
+            575,
+            430
+          ],
+          "base": [
+            566.0,
+            430.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "lift-upper-tray",
+      "from": "S-upper-tray",
+      "to": "S-upper-tray",
+      "kind": "motion",
+      "meaning": "Same empty upper tray lifts upward after feed is stopped, chamber drained and lid lifted",
+      "geometry": {
+        "item_id": "lift-upper-tray-line",
+        "from": [
+          721,
+          303
+        ],
+        "to": [
+          721,
+          229
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "lift-upper-tray-head",
+          "tip": [
+            721,
+            229
+          ],
+          "base": [
+            721.0,
+            239.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "insert-upper-tray",
+      "from": "S-upper-tray",
+      "to": "S-upper-tray",
+      "kind": "motion",
+      "meaning": "Same empty upper tray inserts downward toward its chamber seat; guide and tab shapes are not specified",
+      "geometry": {
+        "item_id": "insert-upper-tray-line",
+        "from": [
+          800,
+          229
+        ],
+        "to": [
+          800,
+          303
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "insert-upper-tray-head",
+          "tip": [
+            800,
+            303
+          ],
+          "base": [
+            800.0,
+            293.0
+          ]
+        }
+      }
+    }
+  ],
+  "width_mm": 160,
+  "height_mm": 100.0,
+  "view_width": 900,
+  "view_height": 562.5,
+  "scale_pt_per_unit": 0.5039370078740159,
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "roles": {
+    "W": {
+      "base": "#50616A",
+      "fill": "#5C6B72",
+      "stroke": "#293338",
+      "highlight": "#CBD2D6",
+      "shadow": "#2B383E",
+      "marker": "#293338",
+      "text": "#FFFFFF"
+    },
+    "R": {
+      "base": "#A95328",
+      "fill": "#AD6340",
+      "stroke": "#5D2B12",
+      "highlight": "#F2CDBD",
+      "shadow": "#6F300D",
+      "marker": "#5D2B12",
+      "text": "#FFFFFF"
+    },
+    "S": {
+      "base": "#176D66",
+      "fill": "#36756F",
+      "stroke": "#083A36",
+      "highlight": "#BDD8D4",
+      "shadow": "#04403B",
+      "marker": "#083A36",
+      "text": "#FFFFFF"
+    },
+    "K": {
+      "base": "#705878",
+      "fill": "#78647F",
+      "stroke": "#3C2E40",
+      "highlight": "#D8CEDC",
+      "shadow": "#443249",
+      "marker": "#3C2E40",
+      "text": "#FFFFFF"
+    },
+    "ink": {
+      "base": "#23343E",
+      "fill": "#2E3D45",
+      "stroke": "#0F191E",
+      "highlight": "#BCC4C9",
+      "shadow": "#101C24",
+      "marker": "#0F191E",
+      "text": "#FFFFFF"
+    },
+    "flow": {
+      "base": "#2C6885",
+      "fill": "#41718A",
+      "stroke": "#143748",
+      "highlight": "#C0D6E2",
+      "shadow": "#0D3D53",
+      "marker": "#143748",
+      "text": "#FFFFFF"
+    },
+    "shell": {
+      "base": "#82939B",
+      "fill": "#8F9DA4",
+      "stroke": "#465055",
+      "highlight": "#DAE1E5",
+      "shadow": "#59666C",
+      "marker": "#465055",
+      "text": "#24323B"
+    },
+    "seal": {
+      "base": "#176D66",
+      "fill": "#36756F",
+      "stroke": "#083A36",
+      "highlight": "#BDD8D4",
+      "shadow": "#04403B",
+      "marker": "#083A36",
+      "text": "#FFFFFF"
+    }
+  },
+  "view": "normal",
+  "objects": [
+    {
+      "id": "demo",
+      "type": "text",
+      "bounds": [
+        822.0,
+        13.623535156249998,
+        873.0,
+        29.57763671875
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          822.0,
+          13.623535156249998,
+          873.0,
+          29.57763671875
+        ]
+      ],
+      "font_pt": 8.56692913385827,
+      "text": "DEMO",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "R-title",
+      "type": "text",
+      "bounds": [
+        40.0,
+        19.9833984375,
+        242.59765625,
+        40.6298828125
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          40.0,
+          19.9833984375,
+          242.59765625,
+          40.6298828125
+        ]
+      ],
+      "font_pt": 11.086614173228348,
+      "text": "R  |  Open side route",
+      "max_width": null,
+      "foreground": "#A95328",
+      "declared_background": "#FFFFFF",
+      "contrast": 5.30980687567268,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "R-subtitle",
+      "type": "text",
+      "bounds": [
+        40.0,
+        50.8955078125,
+        205.08496093750003,
+        67.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          40.0,
+          50.8955078125,
+          205.08496093750003,
+          67.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "External lid seal only",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "R-feed-label",
+      "type": "text",
+      "bounds": [
+        120.3466796875,
+        89.16748046875,
+        163.6533203125,
+        106.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          120.3466796875,
+          89.16748046875,
+          163.6533203125,
+          106.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Feed",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "R-lid-left",
+      "type": "rect",
+      "bounds": [
+        40,
+        126,
+        133,
+        139
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-lid-right",
+      "type": "rect",
+      "bounds": [
+        153,
+        126,
+        264,
+        139
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-port-left",
+      "type": "line",
+      "bounds": [
+        133,
+        110,
+        133,
+        147
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-port-right",
+      "type": "line",
+      "bounds": [
+        153,
+        110,
+        153,
+        147
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-wall-left",
+      "type": "rect",
+      "bounds": [
+        40,
+        142,
+        48,
+        463
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-wall-right-top",
+      "type": "rect",
+      "bounds": [
+        256,
+        142,
+        264,
+        418
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-wall-right-bottom",
+      "type": "rect",
+      "bounds": [
+        256,
+        443,
+        264,
+        463
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-floor",
+      "type": "rect",
+      "bounds": [
+        40,
+        455,
+        264,
+        463
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-outlet-upper",
+      "type": "line",
+      "bounds": [
+        264,
+        418,
+        287,
+        418
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-outlet-lower",
+      "type": "line",
+      "bounds": [
+        264,
+        443,
+        287,
+        443
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-lid-seal-left",
+      "type": "rect",
+      "bounds": [
+        40,
+        139,
+        48,
+        142
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-lid-seal-right",
+      "type": "rect",
+      "bounds": [
+        256,
+        139,
+        264,
+        142
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "R-upper-tray",
+      "type": "line",
+      "bounds": [
+        68,
+        232,
+        234,
+        279
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-bed-A",
+      "type": "rect",
+      "bounds": [
+        71,
+        236,
+        231,
+        274
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-0-0",
+      "type": "circle",
+      "bounds": [
+        73.4,
+        239.4,
+        78.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-0-1",
+      "type": "circle",
+      "bounds": [
+        76.4,
+        250.4,
+        81.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-0-2",
+      "type": "circle",
+      "bounds": [
+        73.4,
+        261.4,
+        78.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-1-0",
+      "type": "circle",
+      "bounds": [
+        86.4,
+        239.4,
+        91.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-1-1",
+      "type": "circle",
+      "bounds": [
+        89.4,
+        250.4,
+        94.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-1-2",
+      "type": "circle",
+      "bounds": [
+        86.4,
+        261.4,
+        91.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-2-0",
+      "type": "circle",
+      "bounds": [
+        99.4,
+        239.4,
+        104.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-2-1",
+      "type": "circle",
+      "bounds": [
+        102.4,
+        250.4,
+        107.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-2-2",
+      "type": "circle",
+      "bounds": [
+        99.4,
+        261.4,
+        104.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-3-0",
+      "type": "circle",
+      "bounds": [
+        112.4,
+        239.4,
+        117.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-3-1",
+      "type": "circle",
+      "bounds": [
+        115.4,
+        250.4,
+        120.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-3-2",
+      "type": "circle",
+      "bounds": [
+        112.4,
+        261.4,
+        117.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-4-0",
+      "type": "circle",
+      "bounds": [
+        125.4,
+        239.4,
+        130.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-4-1",
+      "type": "circle",
+      "bounds": [
+        128.4,
+        250.4,
+        133.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-4-2",
+      "type": "circle",
+      "bounds": [
+        125.4,
+        261.4,
+        130.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-5-0",
+      "type": "circle",
+      "bounds": [
+        138.4,
+        239.4,
+        143.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-5-1",
+      "type": "circle",
+      "bounds": [
+        141.4,
+        250.4,
+        146.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-5-2",
+      "type": "circle",
+      "bounds": [
+        138.4,
+        261.4,
+        143.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-6-0",
+      "type": "circle",
+      "bounds": [
+        151.4,
+        239.4,
+        156.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-6-1",
+      "type": "circle",
+      "bounds": [
+        154.4,
+        250.4,
+        159.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-6-2",
+      "type": "circle",
+      "bounds": [
+        151.4,
+        261.4,
+        156.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-7-0",
+      "type": "circle",
+      "bounds": [
+        164.4,
+        239.4,
+        169.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-7-1",
+      "type": "circle",
+      "bounds": [
+        167.4,
+        250.4,
+        172.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-7-2",
+      "type": "circle",
+      "bounds": [
+        164.4,
+        261.4,
+        169.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-8-0",
+      "type": "circle",
+      "bounds": [
+        177.4,
+        239.4,
+        182.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-8-1",
+      "type": "circle",
+      "bounds": [
+        180.4,
+        250.4,
+        185.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-8-2",
+      "type": "circle",
+      "bounds": [
+        177.4,
+        261.4,
+        182.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-9-0",
+      "type": "circle",
+      "bounds": [
+        190.4,
+        239.4,
+        195.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-9-1",
+      "type": "circle",
+      "bounds": [
+        193.4,
+        250.4,
+        198.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-9-2",
+      "type": "circle",
+      "bounds": [
+        190.4,
+        261.4,
+        195.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-10-0",
+      "type": "circle",
+      "bounds": [
+        203.4,
+        239.4,
+        208.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-10-1",
+      "type": "circle",
+      "bounds": [
+        206.4,
+        250.4,
+        211.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-10-2",
+      "type": "circle",
+      "bounds": [
+        203.4,
+        261.4,
+        208.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-11-0",
+      "type": "circle",
+      "bounds": [
+        216.4,
+        239.4,
+        221.6,
+        244.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-11-1",
+      "type": "circle",
+      "bounds": [
+        219.4,
+        250.4,
+        224.6,
+        255.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-grain-11-2",
+      "type": "circle",
+      "bounds": [
+        216.4,
+        261.4,
+        221.6,
+        266.6
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-0",
+      "type": "line",
+      "bounds": [
+        70.0,
+        273,
+        74.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-1",
+      "type": "line",
+      "bounds": [
+        78.5,
+        273,
+        82.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-2",
+      "type": "line",
+      "bounds": [
+        87.0,
+        273,
+        91.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-3",
+      "type": "line",
+      "bounds": [
+        95.5,
+        273,
+        99.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-4",
+      "type": "line",
+      "bounds": [
+        104.0,
+        273,
+        108.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-5",
+      "type": "line",
+      "bounds": [
+        112.5,
+        273,
+        116.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-6",
+      "type": "line",
+      "bounds": [
+        121.0,
+        273,
+        125.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-7",
+      "type": "line",
+      "bounds": [
+        129.5,
+        273,
+        133.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-8",
+      "type": "line",
+      "bounds": [
+        138.0,
+        273,
+        142.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-9",
+      "type": "line",
+      "bounds": [
+        146.5,
+        273,
+        150.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-10",
+      "type": "line",
+      "bounds": [
+        155.0,
+        273,
+        159.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-11",
+      "type": "line",
+      "bounds": [
+        163.5,
+        273,
+        167.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-12",
+      "type": "line",
+      "bounds": [
+        172.0,
+        273,
+        176.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-13",
+      "type": "line",
+      "bounds": [
+        180.5,
+        273,
+        184.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-14",
+      "type": "line",
+      "bounds": [
+        189.0,
+        273,
+        193.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-15",
+      "type": "line",
+      "bounds": [
+        197.5,
+        273,
+        201.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-16",
+      "type": "line",
+      "bounds": [
+        206.0,
+        273,
+        210.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-17",
+      "type": "line",
+      "bounds": [
+        214.5,
+        273,
+        218.5,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-mesh-18",
+      "type": "line",
+      "bounds": [
+        223.0,
+        273,
+        227.0,
+        278
+      ],
+      "entity": "R-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "R-A-label-bg",
+      "type": "rect",
+      "bounds": [
+        80,
+        242,
+        157,
+        266
+      ],
+      "entity": "R-A",
+      "relation": null
+    },
+    {
+      "id": "R-A-label",
+      "type": "text",
+      "bounds": [
+        86.0,
+        246.439453125,
+        149.37890625,
+        265.208984375
+      ],
+      "entity": "R-A",
+      "relation": null,
+      "line_bounds": [
+        [
+          86.0,
+          246.439453125,
+          149.37890625,
+          265.208984375
+        ]
+      ],
+      "font_pt": 10.078740157480317,
+      "text": "A  12 g",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "R-lower-tray",
+      "type": "line",
+      "bounds": [
+        68,
+        342,
+        234,
+        389
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-bed-B",
+      "type": "rect",
+      "bounds": [
+        71,
+        346,
+        231,
+        384
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-0-0",
+      "type": "circle",
+      "bounds": [
+        73.4,
+        349.4,
+        78.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-0-1",
+      "type": "circle",
+      "bounds": [
+        76.4,
+        360.4,
+        81.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-0-2",
+      "type": "circle",
+      "bounds": [
+        73.4,
+        371.4,
+        78.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-1-0",
+      "type": "circle",
+      "bounds": [
+        86.4,
+        349.4,
+        91.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-1-1",
+      "type": "circle",
+      "bounds": [
+        89.4,
+        360.4,
+        94.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-1-2",
+      "type": "circle",
+      "bounds": [
+        86.4,
+        371.4,
+        91.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-2-0",
+      "type": "circle",
+      "bounds": [
+        99.4,
+        349.4,
+        104.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-2-1",
+      "type": "circle",
+      "bounds": [
+        102.4,
+        360.4,
+        107.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-2-2",
+      "type": "circle",
+      "bounds": [
+        99.4,
+        371.4,
+        104.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-3-0",
+      "type": "circle",
+      "bounds": [
+        112.4,
+        349.4,
+        117.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-3-1",
+      "type": "circle",
+      "bounds": [
+        115.4,
+        360.4,
+        120.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-3-2",
+      "type": "circle",
+      "bounds": [
+        112.4,
+        371.4,
+        117.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-4-0",
+      "type": "circle",
+      "bounds": [
+        125.4,
+        349.4,
+        130.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-4-1",
+      "type": "circle",
+      "bounds": [
+        128.4,
+        360.4,
+        133.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-4-2",
+      "type": "circle",
+      "bounds": [
+        125.4,
+        371.4,
+        130.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-5-0",
+      "type": "circle",
+      "bounds": [
+        138.4,
+        349.4,
+        143.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-5-1",
+      "type": "circle",
+      "bounds": [
+        141.4,
+        360.4,
+        146.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-5-2",
+      "type": "circle",
+      "bounds": [
+        138.4,
+        371.4,
+        143.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-6-0",
+      "type": "circle",
+      "bounds": [
+        151.4,
+        349.4,
+        156.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-6-1",
+      "type": "circle",
+      "bounds": [
+        154.4,
+        360.4,
+        159.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-6-2",
+      "type": "circle",
+      "bounds": [
+        151.4,
+        371.4,
+        156.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-7-0",
+      "type": "circle",
+      "bounds": [
+        164.4,
+        349.4,
+        169.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-7-1",
+      "type": "circle",
+      "bounds": [
+        167.4,
+        360.4,
+        172.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-7-2",
+      "type": "circle",
+      "bounds": [
+        164.4,
+        371.4,
+        169.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-8-0",
+      "type": "circle",
+      "bounds": [
+        177.4,
+        349.4,
+        182.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-8-1",
+      "type": "circle",
+      "bounds": [
+        180.4,
+        360.4,
+        185.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-8-2",
+      "type": "circle",
+      "bounds": [
+        177.4,
+        371.4,
+        182.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-9-0",
+      "type": "circle",
+      "bounds": [
+        190.4,
+        349.4,
+        195.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-9-1",
+      "type": "circle",
+      "bounds": [
+        193.4,
+        360.4,
+        198.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-9-2",
+      "type": "circle",
+      "bounds": [
+        190.4,
+        371.4,
+        195.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-10-0",
+      "type": "circle",
+      "bounds": [
+        203.4,
+        349.4,
+        208.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-10-1",
+      "type": "circle",
+      "bounds": [
+        206.4,
+        360.4,
+        211.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-10-2",
+      "type": "circle",
+      "bounds": [
+        203.4,
+        371.4,
+        208.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-11-0",
+      "type": "circle",
+      "bounds": [
+        216.4,
+        349.4,
+        221.6,
+        354.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-11-1",
+      "type": "circle",
+      "bounds": [
+        219.4,
+        360.4,
+        224.6,
+        365.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-grain-11-2",
+      "type": "circle",
+      "bounds": [
+        216.4,
+        371.4,
+        221.6,
+        376.6
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-0",
+      "type": "line",
+      "bounds": [
+        70.0,
+        383,
+        74.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-1",
+      "type": "line",
+      "bounds": [
+        78.5,
+        383,
+        82.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-2",
+      "type": "line",
+      "bounds": [
+        87.0,
+        383,
+        91.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-3",
+      "type": "line",
+      "bounds": [
+        95.5,
+        383,
+        99.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-4",
+      "type": "line",
+      "bounds": [
+        104.0,
+        383,
+        108.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-5",
+      "type": "line",
+      "bounds": [
+        112.5,
+        383,
+        116.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-6",
+      "type": "line",
+      "bounds": [
+        121.0,
+        383,
+        125.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-7",
+      "type": "line",
+      "bounds": [
+        129.5,
+        383,
+        133.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-8",
+      "type": "line",
+      "bounds": [
+        138.0,
+        383,
+        142.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-9",
+      "type": "line",
+      "bounds": [
+        146.5,
+        383,
+        150.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-10",
+      "type": "line",
+      "bounds": [
+        155.0,
+        383,
+        159.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-11",
+      "type": "line",
+      "bounds": [
+        163.5,
+        383,
+        167.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-12",
+      "type": "line",
+      "bounds": [
+        172.0,
+        383,
+        176.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-13",
+      "type": "line",
+      "bounds": [
+        180.5,
+        383,
+        184.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-14",
+      "type": "line",
+      "bounds": [
+        189.0,
+        383,
+        193.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-15",
+      "type": "line",
+      "bounds": [
+        197.5,
+        383,
+        201.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-16",
+      "type": "line",
+      "bounds": [
+        206.0,
+        383,
+        210.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-17",
+      "type": "line",
+      "bounds": [
+        214.5,
+        383,
+        218.5,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-mesh-18",
+      "type": "line",
+      "bounds": [
+        223.0,
+        383,
+        227.0,
+        388
+      ],
+      "entity": "R-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "R-B-label-bg",
+      "type": "rect",
+      "bounds": [
+        80,
+        352,
+        157,
+        376
+      ],
+      "entity": "R-B",
+      "relation": null
+    },
+    {
+      "id": "R-B-label",
+      "type": "text",
+      "bounds": [
+        86.0,
+        356.439453125,
+        138.255859375,
+        375.208984375
+      ],
+      "entity": "R-B",
+      "relation": null,
+      "line_bounds": [
+        [
+          86.0,
+          356.439453125,
+          138.255859375,
+          375.208984375
+        ]
+      ],
+      "font_pt": 10.078740157480317,
+      "text": "B  8 g",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "R-feed-line",
+      "type": "line",
+      "bounds": [
+        143,
+        143,
+        143,
+        177
+      ],
+      "entity": null,
+      "relation": "R-feed"
+    },
+    {
+      "id": "R-feed-head",
+      "type": "polygon",
+      "bounds": [
+        139.2,
+        168.0,
+        146.8,
+        177
+      ],
+      "entity": null,
+      "relation": "R-feed"
+    },
+    {
+      "id": "R-through-A-line",
+      "type": "line",
+      "bounds": [
+        177,
+        193,
+        177,
+        290
+      ],
+      "entity": null,
+      "relation": "R-through-A"
+    },
+    {
+      "id": "R-through-A-head",
+      "type": "polygon",
+      "bounds": [
+        173.2,
+        281.0,
+        180.8,
+        290
+      ],
+      "entity": null,
+      "relation": "R-through-A"
+    },
+    {
+      "id": "R-through-B-line",
+      "type": "line",
+      "bounds": [
+        177,
+        302,
+        177,
+        398
+      ],
+      "entity": null,
+      "relation": "R-through-B"
+    },
+    {
+      "id": "R-through-B-head",
+      "type": "polygon",
+      "bounds": [
+        173.2,
+        389.0,
+        180.8,
+        398
+      ],
+      "entity": null,
+      "relation": "R-through-B"
+    },
+    {
+      "id": "R-outlet-line",
+      "type": "line",
+      "bounds": [
+        177,
+        407,
+        280,
+        430
+      ],
+      "entity": null,
+      "relation": "R-outlet"
+    },
+    {
+      "id": "R-outlet-head",
+      "type": "polygon",
+      "bounds": [
+        271.0,
+        426.2,
+        280,
+        433.8
+      ],
+      "entity": null,
+      "relation": "R-outlet"
+    },
+    {
+      "id": "R-out-label",
+      "type": "text",
+      "bounds": [
+        241.98828125,
+        470.8955078125,
+        290.01171875,
+        487.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          241.98828125,
+          470.8955078125,
+          290.01171875,
+          487.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Outlet",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "R-bypass-line",
+      "type": "line",
+      "bounds": [
+        210,
+        178,
+        246,
+        430
+      ],
+      "entity": null,
+      "relation": "R-bypass"
+    },
+    {
+      "id": "R-bypass-head",
+      "type": "polygon",
+      "bounds": [
+        242.2,
+        421.0,
+        249.8,
+        430
+      ],
+      "entity": null,
+      "relation": "R-bypass"
+    },
+    {
+      "id": "R-note",
+      "type": "text",
+      "bounds": [
+        50.18505859375,
+        509.16748046875,
+        249.81494140625,
+        526.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          50.18505859375,
+          509.16748046875,
+          249.81494140625,
+          526.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Gaps bypass both beds",
+      "max_width": null,
+      "foreground": "#A95328",
+      "declared_background": "#FFFFFF",
+      "contrast": 5.30980687567268,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "S-title",
+      "type": "text",
+      "bounds": [
+        335.0,
+        19.9833984375,
+        538.779296875,
+        40.6298828125
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          335.0,
+          19.9833984375,
+          538.779296875,
+          40.6298828125
+        ]
+      ],
+      "font_pt": 11.086614173228348,
+      "text": "S  |  Sealed tray rims",
+      "max_width": null,
+      "foreground": "#176D66",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.147992356022653,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "S-subtitle",
+      "type": "text",
+      "bounds": [
+        335.0,
+        50.8955078125,
+        521.064453125,
+        67.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          335.0,
+          50.8955078125,
+          521.064453125,
+          67.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Gasket at each tray rim",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "S-feed-label",
+      "type": "text",
+      "bounds": [
+        415.3466796875,
+        89.16748046875,
+        458.6533203125,
+        106.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          415.3466796875,
+          89.16748046875,
+          458.6533203125,
+          106.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Feed",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "S-lid-left",
+      "type": "rect",
+      "bounds": [
+        335,
+        126,
+        428,
+        139
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-lid-right",
+      "type": "rect",
+      "bounds": [
+        448,
+        126,
+        559,
+        139
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-port-left",
+      "type": "line",
+      "bounds": [
+        428,
+        110,
+        428,
+        147
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-port-right",
+      "type": "line",
+      "bounds": [
+        448,
+        110,
+        448,
+        147
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-wall-left",
+      "type": "rect",
+      "bounds": [
+        335,
+        142,
+        343,
+        463
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-wall-right-top",
+      "type": "rect",
+      "bounds": [
+        551,
+        142,
+        559,
+        418
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-wall-right-bottom",
+      "type": "rect",
+      "bounds": [
+        551,
+        443,
+        559,
+        463
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-floor",
+      "type": "rect",
+      "bounds": [
+        335,
+        455,
+        559,
+        463
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-outlet-upper",
+      "type": "line",
+      "bounds": [
+        559,
+        418,
+        582,
+        418
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-outlet-lower",
+      "type": "line",
+      "bounds": [
+        559,
+        443,
+        582,
+        443
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-lid-seal-left",
+      "type": "rect",
+      "bounds": [
+        335,
+        139,
+        343,
+        142
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-lid-seal-right",
+      "type": "rect",
+      "bounds": [
+        551,
+        139,
+        559,
+        142
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-upper-tray",
+      "type": "line",
+      "bounds": [
+        363,
+        232,
+        529,
+        279
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-bed-A",
+      "type": "rect",
+      "bounds": [
+        366,
+        236,
+        526,
+        274
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-0-0",
+      "type": "circle",
+      "bounds": [
+        368.4,
+        239.4,
+        373.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-0-1",
+      "type": "circle",
+      "bounds": [
+        371.4,
+        250.4,
+        376.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-0-2",
+      "type": "circle",
+      "bounds": [
+        368.4,
+        261.4,
+        373.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-1-0",
+      "type": "circle",
+      "bounds": [
+        381.4,
+        239.4,
+        386.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-1-1",
+      "type": "circle",
+      "bounds": [
+        384.4,
+        250.4,
+        389.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-1-2",
+      "type": "circle",
+      "bounds": [
+        381.4,
+        261.4,
+        386.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-2-0",
+      "type": "circle",
+      "bounds": [
+        394.4,
+        239.4,
+        399.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-2-1",
+      "type": "circle",
+      "bounds": [
+        397.4,
+        250.4,
+        402.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-2-2",
+      "type": "circle",
+      "bounds": [
+        394.4,
+        261.4,
+        399.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-3-0",
+      "type": "circle",
+      "bounds": [
+        407.4,
+        239.4,
+        412.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-3-1",
+      "type": "circle",
+      "bounds": [
+        410.4,
+        250.4,
+        415.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-3-2",
+      "type": "circle",
+      "bounds": [
+        407.4,
+        261.4,
+        412.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-4-0",
+      "type": "circle",
+      "bounds": [
+        420.4,
+        239.4,
+        425.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-4-1",
+      "type": "circle",
+      "bounds": [
+        423.4,
+        250.4,
+        428.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-4-2",
+      "type": "circle",
+      "bounds": [
+        420.4,
+        261.4,
+        425.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-5-0",
+      "type": "circle",
+      "bounds": [
+        433.4,
+        239.4,
+        438.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-5-1",
+      "type": "circle",
+      "bounds": [
+        436.4,
+        250.4,
+        441.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-5-2",
+      "type": "circle",
+      "bounds": [
+        433.4,
+        261.4,
+        438.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-6-0",
+      "type": "circle",
+      "bounds": [
+        446.4,
+        239.4,
+        451.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-6-1",
+      "type": "circle",
+      "bounds": [
+        449.4,
+        250.4,
+        454.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-6-2",
+      "type": "circle",
+      "bounds": [
+        446.4,
+        261.4,
+        451.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-7-0",
+      "type": "circle",
+      "bounds": [
+        459.4,
+        239.4,
+        464.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-7-1",
+      "type": "circle",
+      "bounds": [
+        462.4,
+        250.4,
+        467.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-7-2",
+      "type": "circle",
+      "bounds": [
+        459.4,
+        261.4,
+        464.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-8-0",
+      "type": "circle",
+      "bounds": [
+        472.4,
+        239.4,
+        477.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-8-1",
+      "type": "circle",
+      "bounds": [
+        475.4,
+        250.4,
+        480.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-8-2",
+      "type": "circle",
+      "bounds": [
+        472.4,
+        261.4,
+        477.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-9-0",
+      "type": "circle",
+      "bounds": [
+        485.4,
+        239.4,
+        490.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-9-1",
+      "type": "circle",
+      "bounds": [
+        488.4,
+        250.4,
+        493.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-9-2",
+      "type": "circle",
+      "bounds": [
+        485.4,
+        261.4,
+        490.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-10-0",
+      "type": "circle",
+      "bounds": [
+        498.4,
+        239.4,
+        503.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-10-1",
+      "type": "circle",
+      "bounds": [
+        501.4,
+        250.4,
+        506.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-10-2",
+      "type": "circle",
+      "bounds": [
+        498.4,
+        261.4,
+        503.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-11-0",
+      "type": "circle",
+      "bounds": [
+        511.4,
+        239.4,
+        516.6,
+        244.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-11-1",
+      "type": "circle",
+      "bounds": [
+        514.4,
+        250.4,
+        519.6,
+        255.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-grain-11-2",
+      "type": "circle",
+      "bounds": [
+        511.4,
+        261.4,
+        516.6,
+        266.6
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-0",
+      "type": "line",
+      "bounds": [
+        365.0,
+        273,
+        369.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-1",
+      "type": "line",
+      "bounds": [
+        373.5,
+        273,
+        377.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-2",
+      "type": "line",
+      "bounds": [
+        382.0,
+        273,
+        386.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-3",
+      "type": "line",
+      "bounds": [
+        390.5,
+        273,
+        394.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-4",
+      "type": "line",
+      "bounds": [
+        399.0,
+        273,
+        403.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-5",
+      "type": "line",
+      "bounds": [
+        407.5,
+        273,
+        411.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-6",
+      "type": "line",
+      "bounds": [
+        416.0,
+        273,
+        420.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-7",
+      "type": "line",
+      "bounds": [
+        424.5,
+        273,
+        428.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-8",
+      "type": "line",
+      "bounds": [
+        433.0,
+        273,
+        437.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-9",
+      "type": "line",
+      "bounds": [
+        441.5,
+        273,
+        445.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-10",
+      "type": "line",
+      "bounds": [
+        450.0,
+        273,
+        454.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-11",
+      "type": "line",
+      "bounds": [
+        458.5,
+        273,
+        462.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-12",
+      "type": "line",
+      "bounds": [
+        467.0,
+        273,
+        471.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-13",
+      "type": "line",
+      "bounds": [
+        475.5,
+        273,
+        479.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-14",
+      "type": "line",
+      "bounds": [
+        484.0,
+        273,
+        488.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-15",
+      "type": "line",
+      "bounds": [
+        492.5,
+        273,
+        496.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-16",
+      "type": "line",
+      "bounds": [
+        501.0,
+        273,
+        505.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-17",
+      "type": "line",
+      "bounds": [
+        509.5,
+        273,
+        513.5,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-mesh-18",
+      "type": "line",
+      "bounds": [
+        518.0,
+        273,
+        522.0,
+        278
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "S-A-label-bg",
+      "type": "rect",
+      "bounds": [
+        375,
+        242,
+        452,
+        266
+      ],
+      "entity": "S-A",
+      "relation": null
+    },
+    {
+      "id": "S-A-label",
+      "type": "text",
+      "bounds": [
+        381.0,
+        246.439453125,
+        444.37890625,
+        265.208984375
+      ],
+      "entity": "S-A",
+      "relation": null,
+      "line_bounds": [
+        [
+          381.0,
+          246.439453125,
+          444.37890625,
+          265.208984375
+        ]
+      ],
+      "font_pt": 10.078740157480317,
+      "text": "A  12 g",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "S-A-ledge-left",
+      "type": "rect",
+      "bounds": [
+        343,
+        240,
+        370,
+        249
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-A-gasket-left",
+      "type": "rect",
+      "bounds": [
+        343,
+        231,
+        370,
+        240
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-A-ledge-right",
+      "type": "rect",
+      "bounds": [
+        524,
+        240,
+        551,
+        249
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-A-gasket-right",
+      "type": "rect",
+      "bounds": [
+        524,
+        231,
+        551,
+        240
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-lower-tray",
+      "type": "line",
+      "bounds": [
+        363,
+        342,
+        529,
+        389
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-bed-B",
+      "type": "rect",
+      "bounds": [
+        366,
+        346,
+        526,
+        384
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-0-0",
+      "type": "circle",
+      "bounds": [
+        368.4,
+        349.4,
+        373.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-0-1",
+      "type": "circle",
+      "bounds": [
+        371.4,
+        360.4,
+        376.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-0-2",
+      "type": "circle",
+      "bounds": [
+        368.4,
+        371.4,
+        373.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-1-0",
+      "type": "circle",
+      "bounds": [
+        381.4,
+        349.4,
+        386.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-1-1",
+      "type": "circle",
+      "bounds": [
+        384.4,
+        360.4,
+        389.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-1-2",
+      "type": "circle",
+      "bounds": [
+        381.4,
+        371.4,
+        386.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-2-0",
+      "type": "circle",
+      "bounds": [
+        394.4,
+        349.4,
+        399.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-2-1",
+      "type": "circle",
+      "bounds": [
+        397.4,
+        360.4,
+        402.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-2-2",
+      "type": "circle",
+      "bounds": [
+        394.4,
+        371.4,
+        399.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-3-0",
+      "type": "circle",
+      "bounds": [
+        407.4,
+        349.4,
+        412.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-3-1",
+      "type": "circle",
+      "bounds": [
+        410.4,
+        360.4,
+        415.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-3-2",
+      "type": "circle",
+      "bounds": [
+        407.4,
+        371.4,
+        412.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-4-0",
+      "type": "circle",
+      "bounds": [
+        420.4,
+        349.4,
+        425.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-4-1",
+      "type": "circle",
+      "bounds": [
+        423.4,
+        360.4,
+        428.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-4-2",
+      "type": "circle",
+      "bounds": [
+        420.4,
+        371.4,
+        425.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-5-0",
+      "type": "circle",
+      "bounds": [
+        433.4,
+        349.4,
+        438.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-5-1",
+      "type": "circle",
+      "bounds": [
+        436.4,
+        360.4,
+        441.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-5-2",
+      "type": "circle",
+      "bounds": [
+        433.4,
+        371.4,
+        438.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-6-0",
+      "type": "circle",
+      "bounds": [
+        446.4,
+        349.4,
+        451.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-6-1",
+      "type": "circle",
+      "bounds": [
+        449.4,
+        360.4,
+        454.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-6-2",
+      "type": "circle",
+      "bounds": [
+        446.4,
+        371.4,
+        451.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-7-0",
+      "type": "circle",
+      "bounds": [
+        459.4,
+        349.4,
+        464.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-7-1",
+      "type": "circle",
+      "bounds": [
+        462.4,
+        360.4,
+        467.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-7-2",
+      "type": "circle",
+      "bounds": [
+        459.4,
+        371.4,
+        464.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-8-0",
+      "type": "circle",
+      "bounds": [
+        472.4,
+        349.4,
+        477.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-8-1",
+      "type": "circle",
+      "bounds": [
+        475.4,
+        360.4,
+        480.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-8-2",
+      "type": "circle",
+      "bounds": [
+        472.4,
+        371.4,
+        477.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-9-0",
+      "type": "circle",
+      "bounds": [
+        485.4,
+        349.4,
+        490.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-9-1",
+      "type": "circle",
+      "bounds": [
+        488.4,
+        360.4,
+        493.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-9-2",
+      "type": "circle",
+      "bounds": [
+        485.4,
+        371.4,
+        490.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-10-0",
+      "type": "circle",
+      "bounds": [
+        498.4,
+        349.4,
+        503.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-10-1",
+      "type": "circle",
+      "bounds": [
+        501.4,
+        360.4,
+        506.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-10-2",
+      "type": "circle",
+      "bounds": [
+        498.4,
+        371.4,
+        503.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-11-0",
+      "type": "circle",
+      "bounds": [
+        511.4,
+        349.4,
+        516.6,
+        354.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-11-1",
+      "type": "circle",
+      "bounds": [
+        514.4,
+        360.4,
+        519.6,
+        365.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-grain-11-2",
+      "type": "circle",
+      "bounds": [
+        511.4,
+        371.4,
+        516.6,
+        376.6
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-0",
+      "type": "line",
+      "bounds": [
+        365.0,
+        383,
+        369.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-1",
+      "type": "line",
+      "bounds": [
+        373.5,
+        383,
+        377.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-2",
+      "type": "line",
+      "bounds": [
+        382.0,
+        383,
+        386.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-3",
+      "type": "line",
+      "bounds": [
+        390.5,
+        383,
+        394.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-4",
+      "type": "line",
+      "bounds": [
+        399.0,
+        383,
+        403.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-5",
+      "type": "line",
+      "bounds": [
+        407.5,
+        383,
+        411.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-6",
+      "type": "line",
+      "bounds": [
+        416.0,
+        383,
+        420.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-7",
+      "type": "line",
+      "bounds": [
+        424.5,
+        383,
+        428.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-8",
+      "type": "line",
+      "bounds": [
+        433.0,
+        383,
+        437.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-9",
+      "type": "line",
+      "bounds": [
+        441.5,
+        383,
+        445.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-10",
+      "type": "line",
+      "bounds": [
+        450.0,
+        383,
+        454.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-11",
+      "type": "line",
+      "bounds": [
+        458.5,
+        383,
+        462.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-12",
+      "type": "line",
+      "bounds": [
+        467.0,
+        383,
+        471.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-13",
+      "type": "line",
+      "bounds": [
+        475.5,
+        383,
+        479.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-14",
+      "type": "line",
+      "bounds": [
+        484.0,
+        383,
+        488.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-15",
+      "type": "line",
+      "bounds": [
+        492.5,
+        383,
+        496.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-16",
+      "type": "line",
+      "bounds": [
+        501.0,
+        383,
+        505.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-17",
+      "type": "line",
+      "bounds": [
+        509.5,
+        383,
+        513.5,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-mesh-18",
+      "type": "line",
+      "bounds": [
+        518.0,
+        383,
+        522.0,
+        388
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "S-B-label-bg",
+      "type": "rect",
+      "bounds": [
+        375,
+        352,
+        452,
+        376
+      ],
+      "entity": "S-B",
+      "relation": null
+    },
+    {
+      "id": "S-B-label",
+      "type": "text",
+      "bounds": [
+        381.0,
+        356.439453125,
+        433.255859375,
+        375.208984375
+      ],
+      "entity": "S-B",
+      "relation": null,
+      "line_bounds": [
+        [
+          381.0,
+          356.439453125,
+          433.255859375,
+          375.208984375
+        ]
+      ],
+      "font_pt": 10.078740157480317,
+      "text": "B  8 g",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "S-B-ledge-left",
+      "type": "rect",
+      "bounds": [
+        343,
+        350,
+        370,
+        359
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-B-gasket-left",
+      "type": "rect",
+      "bounds": [
+        343,
+        341,
+        370,
+        350
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-B-ledge-right",
+      "type": "rect",
+      "bounds": [
+        524,
+        350,
+        551,
+        359
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-B-gasket-right",
+      "type": "rect",
+      "bounds": [
+        524,
+        341,
+        551,
+        350
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "S-feed-line",
+      "type": "line",
+      "bounds": [
+        438,
+        143,
+        438,
+        177
+      ],
+      "entity": null,
+      "relation": "S-feed"
+    },
+    {
+      "id": "S-feed-head",
+      "type": "polygon",
+      "bounds": [
+        434.2,
+        168.0,
+        441.8,
+        177
+      ],
+      "entity": null,
+      "relation": "S-feed"
+    },
+    {
+      "id": "S-through-A-line",
+      "type": "line",
+      "bounds": [
+        472,
+        193,
+        472,
+        290
+      ],
+      "entity": null,
+      "relation": "S-through-A"
+    },
+    {
+      "id": "S-through-A-head",
+      "type": "polygon",
+      "bounds": [
+        468.2,
+        281.0,
+        475.8,
+        290
+      ],
+      "entity": null,
+      "relation": "S-through-A"
+    },
+    {
+      "id": "S-through-B-line",
+      "type": "line",
+      "bounds": [
+        472,
+        302,
+        472,
+        398
+      ],
+      "entity": null,
+      "relation": "S-through-B"
+    },
+    {
+      "id": "S-through-B-head",
+      "type": "polygon",
+      "bounds": [
+        468.2,
+        389.0,
+        475.8,
+        398
+      ],
+      "entity": null,
+      "relation": "S-through-B"
+    },
+    {
+      "id": "S-outlet-line",
+      "type": "line",
+      "bounds": [
+        472,
+        407,
+        575,
+        430
+      ],
+      "entity": null,
+      "relation": "S-outlet"
+    },
+    {
+      "id": "S-outlet-head",
+      "type": "polygon",
+      "bounds": [
+        566.0,
+        426.2,
+        575,
+        433.8
+      ],
+      "entity": null,
+      "relation": "S-outlet"
+    },
+    {
+      "id": "S-out-label",
+      "type": "text",
+      "bounds": [
+        536.98828125,
+        470.8955078125,
+        585.01171875,
+        487.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          536.98828125,
+          470.8955078125,
+          585.01171875,
+          487.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Outlet",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "S-note",
+      "type": "text",
+      "bounds": [
+        325.541015625,
+        509.16748046875,
+        568.458984375,
+        526.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          325.541015625,
+          509.16748046875,
+          568.458984375,
+          526.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Seals interrupt the side route",
+      "max_width": null,
+      "foreground": "#176D66",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.147992356022653,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "service-title",
+      "type": "text",
+      "bounds": [
+        636.0,
+        47.9833984375,
+        750.5224609375,
+        68.6298828125
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          636.0,
+          47.9833984375,
+          750.5224609375,
+          68.6298828125
+        ]
+      ],
+      "font_pt": 11.086614173228348,
+      "text": "S  |  service",
+      "max_width": null,
+      "foreground": "#176D66",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.147992356022653,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "service-condition",
+      "type": "text",
+      "bounds": [
+        636.0,
+        79.8955078125,
+        772.08984375,
+        96.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          636.0,
+          79.8955078125,
+          772.08984375,
+          96.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Feed off; drained",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "service-lifted-lid",
+      "type": "rect",
+      "bounds": [
+        657,
+        121,
+        847,
+        131
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "lid-state",
+      "type": "text",
+      "bounds": [
+        718.478515625,
+        141.8955078125,
+        785.521484375,
+        158.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          718.478515625,
+          141.8955078125,
+          785.521484375,
+          158.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Lid lifted",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "service-wall-659",
+      "type": "rect",
+      "bounds": [
+        659,
+        259,
+        666,
+        460
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "service-wall-838",
+      "type": "rect",
+      "bounds": [
+        838,
+        259,
+        845,
+        460
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "service-base",
+      "type": "rect",
+      "bounds": [
+        659,
+        454,
+        845,
+        461
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-U",
+      "type": "line",
+      "bounds": [
+        681,
+        195,
+        822,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-0",
+      "type": "line",
+      "bounds": [
+        685,
+        210,
+        689,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-1",
+      "type": "line",
+      "bounds": [
+        693,
+        210,
+        697,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-2",
+      "type": "line",
+      "bounds": [
+        701,
+        210,
+        705,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-3",
+      "type": "line",
+      "bounds": [
+        709,
+        210,
+        713,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-4",
+      "type": "line",
+      "bounds": [
+        717,
+        210,
+        721,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-5",
+      "type": "line",
+      "bounds": [
+        725,
+        210,
+        729,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-6",
+      "type": "line",
+      "bounds": [
+        733,
+        210,
+        737,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-7",
+      "type": "line",
+      "bounds": [
+        741,
+        210,
+        745,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-8",
+      "type": "line",
+      "bounds": [
+        749,
+        210,
+        753,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-9",
+      "type": "line",
+      "bounds": [
+        757,
+        210,
+        761,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-10",
+      "type": "line",
+      "bounds": [
+        765,
+        210,
+        769,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-11",
+      "type": "line",
+      "bounds": [
+        773,
+        210,
+        777,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-12",
+      "type": "line",
+      "bounds": [
+        781,
+        210,
+        785,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-13",
+      "type": "line",
+      "bounds": [
+        789,
+        210,
+        793,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-14",
+      "type": "line",
+      "bounds": [
+        797,
+        210,
+        801,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-15",
+      "type": "line",
+      "bounds": [
+        805,
+        210,
+        809,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-upper-removed-mesh-16",
+      "type": "line",
+      "bounds": [
+        813,
+        210,
+        817,
+        215
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "service-empty-upper-ledge-left",
+      "type": "rect",
+      "bounds": [
+        666,
+        308,
+        684,
+        316
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "service-empty-upper-ledge-right",
+      "type": "rect",
+      "bounds": [
+        821,
+        308,
+        838,
+        316
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "empty-upper-seat",
+      "type": "text",
+      "bounds": [
+        666.382080078125,
+        345.62353515625,
+        799.617919921875,
+        361.57763671875
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          666.382080078125,
+          345.62353515625,
+          799.617919921875,
+          361.57763671875
+        ]
+      ],
+      "font_pt": 8.56692913385827,
+      "text": "Empty upper seat",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "service-lower-U",
+      "type": "line",
+      "bounds": [
+        681,
+        406,
+        822,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-0",
+      "type": "line",
+      "bounds": [
+        685,
+        421,
+        689,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-1",
+      "type": "line",
+      "bounds": [
+        693,
+        421,
+        697,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-2",
+      "type": "line",
+      "bounds": [
+        701,
+        421,
+        705,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-3",
+      "type": "line",
+      "bounds": [
+        709,
+        421,
+        713,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-4",
+      "type": "line",
+      "bounds": [
+        717,
+        421,
+        721,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-5",
+      "type": "line",
+      "bounds": [
+        725,
+        421,
+        729,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-6",
+      "type": "line",
+      "bounds": [
+        733,
+        421,
+        737,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-7",
+      "type": "line",
+      "bounds": [
+        741,
+        421,
+        745,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-8",
+      "type": "line",
+      "bounds": [
+        749,
+        421,
+        753,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-9",
+      "type": "line",
+      "bounds": [
+        757,
+        421,
+        761,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-10",
+      "type": "line",
+      "bounds": [
+        765,
+        421,
+        769,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-11",
+      "type": "line",
+      "bounds": [
+        773,
+        421,
+        777,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-12",
+      "type": "line",
+      "bounds": [
+        781,
+        421,
+        785,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-13",
+      "type": "line",
+      "bounds": [
+        789,
+        421,
+        793,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-14",
+      "type": "line",
+      "bounds": [
+        797,
+        421,
+        801,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-15",
+      "type": "line",
+      "bounds": [
+        805,
+        421,
+        809,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "service-lower-mesh-16",
+      "type": "line",
+      "bounds": [
+        813,
+        421,
+        817,
+        426
+      ],
+      "entity": "S-lower-tray",
+      "relation": null
+    },
+    {
+      "id": "upper-state",
+      "type": "text",
+      "bounds": [
+        666.4736328125,
+        171.8955078125,
+        837.5263671875,
+        188.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          666.4736328125,
+          171.8955078125,
+          837.5263671875,
+          188.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Upper tray (removed)",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "lower-state",
+      "type": "text",
+      "bounds": [
+        707.649658203125,
+        380.16748046875,
+        796.350341796875,
+        397.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          707.649658203125,
+          380.16748046875,
+          796.350341796875,
+          397.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Lower tray",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "guide-title",
+      "type": "text",
+      "bounds": [
+        638.0,
+        471.8955078125,
+        781.0419921875,
+        488.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          638.0,
+          471.8955078125,
+          781.0419921875,
+          488.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Asymmetric guide",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "schematic",
+      "type": "text",
+      "bounds": [
+        42.0,
+        539.62353515625,
+        487.98437500000006,
+        555.57763671875
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          42.0,
+          539.62353515625,
+          487.98437500000006,
+          555.57763671875
+        ]
+      ],
+      "font_pt": 8.56692913385827,
+      "text": "Sections and interface markers are schematic; not to scale.",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "upper-tab-interface",
+      "type": "circle",
+      "bounds": [
+        817,
+        200,
+        827,
+        210
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "upper-tab-label-leader",
+      "type": "line",
+      "bounds": [
+        827,
+        205,
+        838,
+        205
+      ],
+      "entity": "S-upper-tray",
+      "relation": null
+    },
+    {
+      "id": "upper-tab-label",
+      "type": "text",
+      "bounds": [
+        842.0,
+        185.62353515625,
+        876.0,
+        223.67763671875
+      ],
+      "entity": "S-upper-tray",
+      "relation": null,
+      "line_bounds": [
+        [
+          842.0,
+          185.62353515625,
+          876.0,
+          201.57763671875
+        ],
+        [
+          842.0,
+          207.72353515625,
+          865.63232421875,
+          223.67763671875
+        ]
+      ],
+      "font_pt": 8.56692913385827,
+      "text": "Tray\ntab",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "chamber-guide-attachment",
+      "type": "line",
+      "bounds": [
+        827,
+        308,
+        841,
+        308
+      ],
+      "entity": "S-chamber",
+      "relation": null
+    },
+    {
+      "id": "chamber-guide-interface",
+      "type": "circle",
+      "bounds": [
+        817,
+        303,
+        827,
+        313
+      ],
+      "entity": "S-chamber",
+      "relation": null
+    },
+    {
+      "id": "chamber-guide-label-leader",
+      "type": "line",
+      "bounds": [
+        805,
+        310,
+        817,
+        321
+      ],
+      "entity": "S-chamber",
+      "relation": null
+    },
+    {
+      "id": "chamber-guide-label",
+      "type": "text",
+      "bounds": [
+        687.882080078125,
+        319.62353515625,
+        804.117919921875,
+        335.57763671875
+      ],
+      "entity": "S-chamber",
+      "relation": null,
+      "line_bounds": [
+        [
+          687.882080078125,
+          319.62353515625,
+          804.117919921875,
+          335.57763671875
+        ]
+      ],
+      "font_pt": 8.56692913385827,
+      "text": "Chamber guide",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "interface-limits",
+      "type": "text",
+      "bounds": [
+        638.0,
+        502.62353515625,
+        881.7939453125,
+        518.57763671875
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          638.0,
+          502.62353515625,
+          881.7939453125,
+          518.57763671875
+        ]
+      ],
+      "font_pt": 8.56692913385827,
+      "text": "Markers only; shape unspecified",
+      "max_width": null,
+      "foreground": "#23343E",
+      "declared_background": "#FFFFFF",
+      "contrast": 12.86589950012135,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "lift-upper-tray-line",
+      "type": "line",
+      "bounds": [
+        721,
+        229,
+        721,
+        303
+      ],
+      "entity": null,
+      "relation": "lift-upper-tray"
+    },
+    {
+      "id": "lift-upper-tray-head",
+      "type": "polygon",
+      "bounds": [
+        716.8,
+        229,
+        725.2,
+        239.0
+      ],
+      "entity": null,
+      "relation": "lift-upper-tray"
+    },
+    {
+      "id": "lift-upper-tray-label",
+      "type": "text",
+      "bounds": [
+        683.994140625,
+        257.8955078125,
+        708.005859375,
+        274.7880859375
+      ],
+      "entity": null,
+      "relation": "lift-upper-tray",
+      "line_bounds": [
+        [
+          683.994140625,
+          257.8955078125,
+          708.005859375,
+          274.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Lift",
+      "max_width": null,
+      "foreground": "#253B44",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.74680706727645,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "insert-upper-tray-line",
+      "type": "line",
+      "bounds": [
+        800,
+        229,
+        800,
+        303
+      ],
+      "entity": null,
+      "relation": "insert-upper-tray"
+    },
+    {
+      "id": "insert-upper-tray-head",
+      "type": "polygon",
+      "bounds": [
+        795.8,
+        293.0,
+        804.2,
+        303
+      ],
+      "entity": null,
+      "relation": "insert-upper-tray"
+    },
+    {
+      "id": "insert-upper-tray-label",
+      "type": "text",
+      "bounds": [
+        751.4912109375,
+        257.8955078125,
+        796.5087890625,
+        274.7880859375
+      ],
+      "entity": null,
+      "relation": "insert-upper-tray",
+      "line_bounds": [
+        [
+          751.4912109375,
+          257.8955078125,
+          796.5087890625,
+          274.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Insert",
+      "max_width": null,
+      "foreground": "#253B44",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.74680706727645,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    }
+  ],
+  "relation_segments": [
+    {
+      "id": "R-feed-line",
+      "from": [
+        143,
+        143
+      ],
+      "to": [
+        143,
+        177
+      ]
+    },
+    {
+      "id": "R-feed-head",
+      "from": [
+        143,
+        177
+      ],
+      "to": [
+        139.2,
+        168.0
+      ]
+    },
+    {
+      "id": "R-feed-head",
+      "from": [
+        139.2,
+        168.0
+      ],
+      "to": [
+        146.8,
+        168.0
+      ]
+    },
+    {
+      "id": "R-through-A-line",
+      "from": [
+        177,
+        193
+      ],
+      "to": [
+        177,
+        290
+      ]
+    },
+    {
+      "id": "R-through-A-head",
+      "from": [
+        177,
+        290
+      ],
+      "to": [
+        173.2,
+        281.0
+      ]
+    },
+    {
+      "id": "R-through-A-head",
+      "from": [
+        173.2,
+        281.0
+      ],
+      "to": [
+        180.8,
+        281.0
+      ]
+    },
+    {
+      "id": "R-through-B-line",
+      "from": [
+        177,
+        302
+      ],
+      "to": [
+        177,
+        398
+      ]
+    },
+    {
+      "id": "R-through-B-head",
+      "from": [
+        177,
+        398
+      ],
+      "to": [
+        173.2,
+        389.0
+      ]
+    },
+    {
+      "id": "R-through-B-head",
+      "from": [
+        173.2,
+        389.0
+      ],
+      "to": [
+        180.8,
+        389.0
+      ]
+    },
+    {
+      "id": "R-outlet-line",
+      "from": [
+        177,
+        407
+      ],
+      "to": [
+        177,
+        430
+      ]
+    },
+    {
+      "id": "R-outlet-line",
+      "from": [
+        177,
+        430
+      ],
+      "to": [
+        280,
+        430
+      ]
+    },
+    {
+      "id": "R-outlet-head",
+      "from": [
+        280,
+        430
+      ],
+      "to": [
+        271.0,
+        433.8
+      ]
+    },
+    {
+      "id": "R-outlet-head",
+      "from": [
+        271.0,
+        433.8
+      ],
+      "to": [
+        271.0,
+        426.2
+      ]
+    },
+    {
+      "id": "R-bypass-line",
+      "from": [
+        210,
+        178
+      ],
+      "to": [
+        246,
+        178
+      ]
+    },
+    {
+      "id": "R-bypass-line",
+      "from": [
+        246,
+        178
+      ],
+      "to": [
+        246,
+        430
+      ]
+    },
+    {
+      "id": "R-bypass-head",
+      "from": [
+        246,
+        430
+      ],
+      "to": [
+        242.2,
+        421.0
+      ]
+    },
+    {
+      "id": "R-bypass-head",
+      "from": [
+        242.2,
+        421.0
+      ],
+      "to": [
+        249.8,
+        421.0
+      ]
+    },
+    {
+      "id": "S-feed-line",
+      "from": [
+        438,
+        143
+      ],
+      "to": [
+        438,
+        177
+      ]
+    },
+    {
+      "id": "S-feed-head",
+      "from": [
+        438,
+        177
+      ],
+      "to": [
+        434.2,
+        168.0
+      ]
+    },
+    {
+      "id": "S-feed-head",
+      "from": [
+        434.2,
+        168.0
+      ],
+      "to": [
+        441.8,
+        168.0
+      ]
+    },
+    {
+      "id": "S-through-A-line",
+      "from": [
+        472,
+        193
+      ],
+      "to": [
+        472,
+        290
+      ]
+    },
+    {
+      "id": "S-through-A-head",
+      "from": [
+        472,
+        290
+      ],
+      "to": [
+        468.2,
+        281.0
+      ]
+    },
+    {
+      "id": "S-through-A-head",
+      "from": [
+        468.2,
+        281.0
+      ],
+      "to": [
+        475.8,
+        281.0
+      ]
+    },
+    {
+      "id": "S-through-B-line",
+      "from": [
+        472,
+        302
+      ],
+      "to": [
+        472,
+        398
+      ]
+    },
+    {
+      "id": "S-through-B-head",
+      "from": [
+        472,
+        398
+      ],
+      "to": [
+        468.2,
+        389.0
+      ]
+    },
+    {
+      "id": "S-through-B-head",
+      "from": [
+        468.2,
+        389.0
+      ],
+      "to": [
+        475.8,
+        389.0
+      ]
+    },
+    {
+      "id": "S-outlet-line",
+      "from": [
+        472,
+        407
+      ],
+      "to": [
+        472,
+        430
+      ]
+    },
+    {
+      "id": "S-outlet-line",
+      "from": [
+        472,
+        430
+      ],
+      "to": [
+        575,
+        430
+      ]
+    },
+    {
+      "id": "S-outlet-head",
+      "from": [
+        575,
+        430
+      ],
+      "to": [
+        566.0,
+        433.8
+      ]
+    },
+    {
+      "id": "S-outlet-head",
+      "from": [
+        566.0,
+        433.8
+      ],
+      "to": [
+        566.0,
+        426.2
+      ]
+    },
+    {
+      "id": "lift-upper-tray-line",
+      "from": [
+        721,
+        303
+      ],
+      "to": [
+        721,
+        229
+      ]
+    },
+    {
+      "id": "lift-upper-tray-head",
+      "from": [
+        721,
+        229
+      ],
+      "to": [
+        725.2,
+        239.0
+      ]
+    },
+    {
+      "id": "lift-upper-tray-head",
+      "from": [
+        725.2,
+        239.0
+      ],
+      "to": [
+        716.8,
+        239.0
+      ]
+    },
+    {
+      "id": "insert-upper-tray-line",
+      "from": [
+        800,
+        229
+      ],
+      "to": [
+        800,
+        303
+      ]
+    },
+    {
+      "id": "insert-upper-tray-head",
+      "from": [
+        800,
+        303
+      ],
+      "to": [
+        795.8,
+        293.0
+      ]
+    },
+    {
+      "id": "insert-upper-tray-head",
+      "from": [
+        795.8,
+        293.0
+      ],
+      "to": [
+        804.2,
+        293.0
+      ]
+    }
+  ],
+  "editability": {
+    "text": "SVG text nodes; PDF subset-embedded font text",
+    "objects": "separate vector primitives with stable IDs",
+    "embedded_raster": false
+  },
+  "gradient_export": {
+    "count": 0,
+    "backends": "native SVG gradients and native PDF shading clipped to the same shape",
+    "interpolation": "encoded sRGB / PDF DeviceRGB",
+    "physical_lighting": false
+  },
+  "fonts": {
+    "latin": {
+      "name": "Studio_latin",
+      "family": "Arial",
+      "path": "C:\\Windows\\Fonts\\arial.ttf",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    }
+  },
+  "files": {
+    "figure.svg": "9fd0fe42da718395d042cd1a9f9a656b81bb50c7e5a4d3c40ad7134dbd44d7ef",
+    "figure.pdf": "89dbba214c9d43abf1b3ab2db42e8323bb2a9fc6a5310f834fc3c14daa943ad0",
+    "figure.png": "32037fc717ad38a2c3e78afc0a832b1c94b0e091d9b33dfc2d4bd9061038b7ea",
+    "preview.png": "f8e01b4564c732df7a8be46b8c00a8024f9a6732e572880e78f6368cece3ac8a",
+    "qa-deuteranopia.png": "bea81b868be8737ddd37c1126ef1919816cf90081618380e7e11f83d981148f0",
+    "qa-grayscale.png": "08e52d877610ce91ada0054dc363a761013978c7a66d70aaee35208c4867eaaa",
+    "figure_spec.json": "0e748b33ecc4015ce1b59422e9be772d5287f3901aaa23ad319b7c92f756813b"
+  },
+  "visual_review": "NOT_RUN",
+  "scientific_author_acceptance": false,
+  "journal_eligibility": "UNVERIFIED",
+  "input_spec_file_sha256": "0e748b33ecc4015ce1b59422e9be772d5287f3901aaa23ad319b7c92f756813b",
+  "source_spec_path": "<local-runtime>/figure1_input.json",
+  "color_vision_previews": {
+    "method": "grayscale: linear-sRGB relative luminance; CVD: Machado 2009 deuteranomaly severity 100, clipped to sRGB",
+    "status": "GENERATED_REVIEW_REQUIRED",
+    "preview_max_px": 1400,
+    "not_all_color_vision_conditions": true
+  },
+  "raster": {
+    "status": "PASS",
+    "command": [
+      "<local-runtime>/pdftoppm.exe",
+      "-png",
+      "-singlefile",
+      "-r",
+      "300",
+      "<local-runtime>/figure.pdf",
+      "<local-runtime>/figure"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "pixel_size": [
+      1890,
+      1182
+    ],
+    "dpi": 300
+  },
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

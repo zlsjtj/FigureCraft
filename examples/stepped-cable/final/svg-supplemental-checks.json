@@ -1,0 +1,43 @@
+{
+  "svg_sha256": "84b62315dd5053f939d76e461ccc12cc7451ef3e95b24685d30906ee191cef8b",
+  "basis": "Actual SVG path control-point hulls; all untransformed paths are inside these bounds. Text ink bounds from candidate audit with same SHA.",
+  "text_curve_intersection_screen": [
+    {
+      "id": "label-jacket",
+      "curve_control_hull_intersections": [],
+      "white_canvas_unobstructed": true
+    },
+    {
+      "id": "label-shield",
+      "curve_control_hull_intersections": [],
+      "white_canvas_unobstructed": true
+    },
+    {
+      "id": "label-shield-type",
+      "curve_control_hull_intersections": [],
+      "white_canvas_unobstructed": true
+    },
+    {
+      "id": "label-conductor",
+      "curve_control_hull_intersections": [],
+      "white_canvas_unobstructed": true
+    },
+    {
+      "id": "label-insulation",
+      "curve_control_hull_intersections": [],
+      "white_canvas_unobstructed": true
+    }
+  ],
+  "foreground": "#24333C",
+  "verified_canvas": "#FFFFFF",
+  "contrast_ratio": 13.012820938579864,
+  "primary_entities": [
+    "jacket",
+    "shield",
+    "insulation",
+    "conductor"
+  ],
+  "embedded_image_count": 0,
+  "text_count": 5,
+  "limitations": "Only this untransformed simple SVG; no general CSS, arbitrary clipping, topology or aesthetics certification."
+}

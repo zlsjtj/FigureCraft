@@ -1,0 +1,5 @@
+# Draft
+
+Two-channel tile imaging needs stitching. We wrote MosaicPair, which reads the metadata, computes image shifts, writes the output images, and saves a log. It uses phase correlation. Phase correlation has been widely used for image registration. The work includes support for offsets, buffers, masks, image types, and output metadata. Channel A and channel B are acquired at the same stage position. They depict different stains. Some tiles have almost no visible features in channel B. The logs have a validity flag for each tile.
+
+The program computes translation values and rounds pixel coordinates. It can use the same translation for both channels. The input is not rotated or scaled. The software also has a fallback for tiles where the alignment score is too low. We tested three methods and got the numbers in the table. Our software gave lower errors in two test groups. Its run time was slightly lower than independently aligning channels. In the final group there was a discrepancy between the channels that was not corrected by the program. More testing would be needed on other microscopes.

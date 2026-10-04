@@ -1,0 +1,25 @@
+{
+  "views": [
+    {
+      "figure": "edge",
+      "opened_by_generating_agent": [
+        "checks/edge-normal-96dpi.png",
+        "checks/edge-gray-96dpi.png",
+        "checks/edge-deuteranopia-96dpi.png",
+        "checks/svg-render/interface-96dpi.png"
+      ],
+      "independent_svg_import": "LibreOffice SVG import -> PDF -> Poppler 96 dpi",
+      "independent_svg_pdf_mm": [
+        160.26000000000002,
+        100.26000000000013
+      ],
+      "sha256": {
+        "checks/edge-normal-96dpi.png": "ff0b5f88213235f21de56a2135b116681241cc51b7cf4cf01e6c9ef7912ecce5",
+        "checks/edge-gray-96dpi.png": "459521cb151945b0f803921f85ee228ce1b54634f985075a4902302e9fdc96d0",
+        "checks/edge-deuteranopia-96dpi.png": "ae18adcb6055a38a3be09482ddfab1e406835718c4f5daf523109c221c4e6a6c"
+      },
+      "limits": "Generating-agent visual inspection, not independent/human acceptance. CVD is one declared linear-RGB simulation; browser and physical print not certified."
+    }
+  ],
+  "paths": "View filenames below are copied into this checks directory; original review record names retain development provenance."
+}

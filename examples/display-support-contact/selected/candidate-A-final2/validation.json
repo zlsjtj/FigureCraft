@@ -1,0 +1,91 @@
+{
+  "kind": "annotation_ownership_repair_only",
+  "command": [
+    "<local-runtime>/build_final2.py",
+    "--out",
+    "<local-runtime>/candidate-A-final2",
+    "--font",
+    "C:\\Windows\\Fonts\\arial.ttf",
+    "--bold-font",
+    "C:\\Windows\\Fonts\\arialbd.ttf",
+    "--pdftoppm",
+    "<local-runtime>/pdftoppm.exe"
+  ],
+  "prior_svg_sha256": "c8d3033b07310c2592dd443e6d3523583ee7d7bd4dac4493926930fb4a00a063",
+  "all_non_text_scene_items_equal": true,
+  "exactly_two_text_items_changed": [
+    {
+      "before": {
+        "kind": "text",
+        "id": "label-15",
+        "role": "label",
+        "x": 105,
+        "y": 6,
+        "s": "A · S2 section",
+        "size": 10.5,
+        "bold": true,
+        "fill": "#243B46",
+        "anchor": "start"
+      },
+      "after": {
+        "kind": "text",
+        "id": "label-15",
+        "role": "label",
+        "x": 105,
+        "y": 6,
+        "s": "A · S2 section · view +y",
+        "size": 10.5,
+        "bold": true,
+        "fill": "#243B46",
+        "anchor": "start"
+      }
+    },
+    {
+      "before": {
+        "kind": "text",
+        "id": "final-section-view-direction-71",
+        "role": "final-section-view-direction",
+        "x": 146,
+        "y": 13,
+        "s": "View +y",
+        "size": 8.5,
+        "bold": false,
+        "fill": "#243B46",
+        "anchor": "end"
+      },
+      "after": {
+        "kind": "text",
+        "id": "final2-local-release-label",
+        "role": "final2-local-release-label",
+        "x": 133,
+        "y": 19,
+        "s": "Lift out",
+        "size": 8.5,
+        "bold": false,
+        "fill": "#243B46",
+        "anchor": "start"
+      }
+    }
+  ],
+  "physical_mm": [
+    159.99999749999998,
+    98.99999249999999
+  ],
+  "min_font_pt": 8.3,
+  "text_out_of_bounds": [],
+  "scientific_checks": "Unchanged geometry and byte-identical CSV retain the prior geometry checks; no new science claim",
+  "csv_byte_equal": true,
+  "retained_five_probes": true,
+  "retained_four_state_checks": true,
+  "source_sha256": {
+    "build_final2.py": "a0656f56afd2dddfca68a67584fdb091e0d549ebd82beeed5bd1910055bdd374",
+    "build_final.py": "8df9a60b1ea0ea9faaa36da4d226d99228a50d1a2349ed59492d82c917f13bc6",
+    "build_candidates.py": "5020220039e50bb8add0f4f46a1ea8b7f004126463c321969c50c799facc35ea",
+    "native_geometry.py": "c1ae9436c761c54206b92ede08299ea2f814634c1b5ab730ffbe8b22aa08b8e1"
+  },
+  "independent_review": "NOT_RUN",
+  "author_acceptance": false,
+  "overall_status": "REVIEW_REQUIRED",
+  "developer_visual_review": "Viewed exact final2 normal colour, grayscale and nominal 96dpi PNG. Title owns view +y; orange arrow owns Lift out. No guide/text collision flags; six polygon background reviews retained.",
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

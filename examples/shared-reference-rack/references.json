@@ -1,0 +1,11 @@
+{
+  "provenance": "Original DEMO teaching illustration; extracted from supplied figure-brief.md",
+  "pairs": [["A", 0], ["B", 1], ["C", 4], ["D", 16], ["E", 64], ["F", 256]],
+  "unit": "μM",
+  "physical_racks": 1,
+  "vials": 6,
+  "equal_fill_levels": true,
+  "electronic_lists": 1,
+  "analysis_runs": 2,
+  "list_access": "shared read-only"
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "example": "edge",
+    "files": [
+      {
+        "file": "figure.svg",
+        "exact_sha256_match": true,
+        "sha256": "022ed78905b03b6179c8501d5540c4e0f3bfc0696b8b53309aae88519b7f769e"
+      },
+      {
+        "file": "figure.png",
+        "exact_sha256_match": true,
+        "sha256": "27b2380f0a147988705eddc4986d936c4f3feb9a603cbaa1c485d7c06a40640b"
+      },
+      {
+        "file": "scene.json",
+        "exact_sha256_match": true,
+        "sha256": "23a850f4a5b7d6a7582b1338028e19abfbc9afb263ed4761ed8eee89cc26364e"
+      },
+      {
+        "file": "caption.md",
+        "exact_sha256_match": true,
+        "sha256": "2f19a59d5f6ed3accfd62b2ca10e9bc8edd7ac273a27aa02c7acedd120930a59"
+      },
+      {
+        "file": "alt_text.md",
+        "exact_sha256_match": true,
+        "sha256": "2cccc562ffbef536c5575663debdac57257cf62e0de53ba26b573a9e1e32feaf"
+      },
+      {
+        "file": "figure_spec.json",
+        "exact_sha256_match": true,
+        "sha256": "efede6f8d66defdb0440aad1abe6dbafb96bcc0f341825e88a479a14ae2d04b4"
+      }
+    ],
+    "pdf_content_stream_and_text_identical": true,
+    "pdf_byte_identity_not_required": "ReportLab creation date/document ID differ; page content stream and text checked exactly."
+  },
+  {
+    "example": "fixture",
+    "files": [
+      {
+        "file": "figure1.svg",
+        "exact_sha256_match": true,
+        "sha256": "80b024b242a433448c34c960836d146d55ce99a1d6e349479053837d1a20e1fd"
+      },
+      {
+        "file": "figure1.png",
+        "exact_sha256_match": true,
+        "sha256": "275e9176ea5fea31d646217ed3e6e27cfcf8b5bb566b563c763037539a2721ea"
+      },
+      {
+        "file": "figure1.pdf",
+        "exact_sha256_match": true,
+        "sha256": "d3170450903eb3adccbd59aa6ac268beaf672410574ce6e34fd8fe86a565a2f2"
+      },
+      {
+        "file": "figure2.svg",
+        "exact_sha256_match": true,
+        "sha256": "72cd969f80138d1d174e10037a1d7031de1a12b6160345b37f187e3153925d55"
+      },
+      {
+        "file": "figure2.png",
+        "exact_sha256_match": true,
+        "sha256": "da4cb89a29e9d36cd96e857cbab7034d99f4188c0f2e69decbff97910204eade"
+      },
+      {
+        "file": "figure2.pdf",
+        "exact_sha256_match": true,
+        "sha256": "af3c442468c42843d6d52696e00e68de7a6e420760403e362046907e5029a358"
+      },
+      {
+        "file": "results.csv",
+        "exact_sha256_match": true,
+        "sha256": "473056a0c8b7080193460c6c8c6cd81ab45dd944c0e46bb656f3a7169aa96c56"
+      },
+      {
+        "file": "article.md",
+        "exact_sha256_match": true,
+        "sha256": "9e9b8b348dd3d5e7babb9158c9932ee5870a3e4c43154511b9a881271ceed772"
+      },
+      {
+        "file": "captions.md",
+        "exact_sha256_match": true,
+        "sha256": "beec775b5ec81bd4ff0a93a13c01306aa67f6abbcc83058f2995572bc2d37fd4"
+      },
+      {
+        "file": "results_table.md",
+        "exact_sha256_match": true,
+        "sha256": "86e08f11030cc966e2f725b6d8073de520bad2f481c6e8614479779f3fdc5b5c"
+      },
+      {
+        "file": "plot_coordinates.json",
+        "exact_sha256_match": true,
+        "sha256": "232c9e293a5baee1be5472ebdce3b5cd5acf2ba76ded80de5c63e4a5d833d715"
+      }
+    ]
+  }
+]

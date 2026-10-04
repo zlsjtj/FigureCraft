@@ -1,0 +1,56 @@
+[
+  {
+    "example": "edge-state",
+    "files": [
+      {
+        "file": "figure.svg",
+        "exact_sha256_match": true,
+        "sha256": "c2c9b68c1ab568ffec513edd31106de53b79f590797dfcf2f18215635e1202dc"
+      },
+      {
+        "file": "figure.png",
+        "exact_sha256_match": true,
+        "sha256": "ab30fd757e03787c4691708e343e170b6dd8b6b823ddc9fe09213866b91fe377"
+      },
+      {
+        "file": "figure-96dpi.png",
+        "exact_sha256_match": true,
+        "sha256": "ff0b5f88213235f21de56a2135b116681241cc51b7cf4cf01e6c9ef7912ecce5"
+      },
+      {
+        "file": "scene.json",
+        "exact_sha256_match": true,
+        "sha256": "14975c2318f3a1ae55417effcf2f8361ebb8f330cdab286f2c0be4c7dfc45491"
+      },
+      {
+        "file": "caption.md",
+        "exact_sha256_match": true,
+        "sha256": "0033b2349e20101e39a0547d6590ed7d5f6cffff8f4ee1dbe4a1746f62f8968d"
+      },
+      {
+        "file": "alt_text.md",
+        "exact_sha256_match": true,
+        "sha256": "c5c622f320cc4f187286345c865f41423dd4d8fb1ab7a67ecac3d5bfb40e12ef"
+      },
+      {
+        "file": "figure_spec.json",
+        "exact_sha256_match": true,
+        "sha256": "3289951eb0dc5dcce9e5b17afbde40226212a9cf447a98639a167331978c287b"
+      },
+      {
+        "file": "qa-gray.png",
+        "exact_sha256_match": true,
+        "sha256": "c38be44e75dbd5fee9bab5d27e86a86d83c7a4d1113ff708b55c7821b713f98c"
+      },
+      {
+        "file": "qa-deuteranopia.png",
+        "exact_sha256_match": true,
+        "sha256": "7df24440d017fcb5610456b037a19b9320c9da3358e06517ea51b48026feaa0b"
+      }
+    ],
+    "build_exit_code": 0,
+    "cwd": "<local-runtime>/checks",
+    "pdf_content_stream_and_text_identical": true,
+    "pdf_byte_identity_not_required": "ReportLab creation date and document ID may differ."
+  }
+]

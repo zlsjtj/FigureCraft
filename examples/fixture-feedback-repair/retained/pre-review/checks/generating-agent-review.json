@@ -1,0 +1,56 @@
+{
+  "scope": "Known-feedback development; generating agent observations, not independent or human review",
+  "normal_views": "all selected PNGs and 96 dpi versions viewed",
+  "color_views": "gray and selected deuteranopia viewed for all three selected figures",
+  "svg_views": [
+    {
+      "source_svg": "<local-runtime>/figure.svg",
+      "svg_sha256": "022ed78905b03b6179c8501d5540c4e0f3bfc0696b8b53309aae88519b7f769e",
+      "renderer": "LibreOffice Draw SVG import -> PDF -> Poppler PNG",
+      "rendered_pdf_sha256": "4d9c154b560ab061110e48912832976c9fc8aec5de173ac57e5fb470c1c226b9",
+      "rendered_size_mm": [
+        160.26000000000002,
+        100.26000000000013
+      ],
+      "actually_opened": true,
+      "observation": "Labels, paths and point symbols visible; no clipping or missing objects noticed. Browser file-protocol path not used."
+    },
+    {
+      "source_svg": "<local-runtime>/figure1.svg",
+      "svg_sha256": "80b024b242a433448c34c960836d146d55ce99a1d6e349479053837d1a20e1fd",
+      "renderer": "LibreOffice Draw SVG import -> PDF -> Poppler PNG",
+      "rendered_pdf_sha256": "e04dd60544c83a9dde5fbb17868aac964fa138686af2b0132a57fd3d4cd70c31",
+      "rendered_size_mm": [
+        160.26000000000002,
+        100.26000000000013
+      ],
+      "actually_opened": true,
+      "observation": "Labels, paths and point symbols visible; no clipping or missing objects noticed. Browser file-protocol path not used."
+    },
+    {
+      "source_svg": "<local-runtime>/figure2.svg",
+      "svg_sha256": "72cd969f80138d1d174e10037a1d7031de1a12b6160345b37f187e3153925d55",
+      "renderer": "LibreOffice Draw SVG import -> PDF -> Poppler PNG",
+      "rendered_pdf_sha256": "a18820f7ca9b6e780a9727786bf6e49a3ce2a371d49a94f925bcf7b9ed374d15",
+      "rendered_size_mm": [
+        160.26000000000002,
+        80.26000000000005
+      ],
+      "actually_opened": true,
+      "observation": "Labels, paths and point symbols visible; no clipping or missing objects noticed. Browser file-protocol path not used."
+    }
+  ],
+  "label_audit": {
+    "raw_result": "REVIEW_REQUIRED",
+    "guide_contacts": 4,
+    "resolution": "Four grid lines are covered by the opaque later text backing; source-order plus both PDF and independently imported SVG renders checked. Raw report preserved.",
+    "color_screen": "no failures; lowest label text contrast exceeds 4.5"
+  },
+  "remaining_tradeoffs": [
+    "Declared 180-degree local rotation requires restoring orientation if spatial arrangement is the reader question",
+    "Smaller quantitative markers and wider nonphysical within-category positions"
+  ],
+  "author_acceptance": "NOT_RUN",
+  "browser_renderer": "NOT_RUN; file protocol blocked; no browser bypass",
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

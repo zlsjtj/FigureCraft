@@ -1,0 +1,2546 @@
+{
+  "version": 2,
+  "figure_id": "rainwater_object_development",
+  "spec_sha256": "8d5a7509b7db07d7e88f18e44194ecd81ad80edf508a961727e4ae356b9937c3",
+  "semantic_digest": "fc23d22632883f5b468378f1a721fa7c1cee72a6077846922c1a8865459a0c83",
+  "geometry_digest": "34dadec86c802372ac7483c28bb645cd28c37803af81e51f41eadfb264a43d5f",
+  "source_refs": [
+    {
+      "path": "input/README_DEMO.md",
+      "sha256": "23937b4f1f0302ad3290db540d2657c61fd14afbb066f980524fe2e5944d5139"
+    },
+    {
+      "path": "input/rough_paragraphs_v0.md",
+      "sha256": "6814647c227de030b4b7c6967a3828ccd49aaad494aa9ead8a2d6de7338cca56"
+    },
+    {
+      "path": "input/routing_and_operation_record.md",
+      "sha256": "19d84b752465dc16237d55efe553acdad88e5a728803f8fcaaf31308a87c7fc3"
+    },
+    {
+      "path": "input/interval_results.csv",
+      "sha256": "8519f6f1b54aa73b7bab888128ea7a4ec0dcfd9d6b3f7a01f1a99517382d6855"
+    },
+    {
+      "path": "input/construct_transfer.py",
+      "sha256": "ec155954a40e2fd55b962544b30999adb36f74577485030f9134350a1a0d29f2"
+    }
+  ],
+  "demo": true,
+  "count_constraints": [
+    {
+      "name": "three_roof_branches",
+      "expected": 3,
+      "scope": {
+        "id_prefix": "roof-"
+      },
+      "expected_logical_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "two_tanks",
+      "expected": 2,
+      "scope": {
+        "id_prefix": "tank-"
+      },
+      "expected_logical_ids": [
+        "W",
+        "E"
+      ]
+    },
+    {
+      "name": "one_diverter",
+      "expected": 1,
+      "scope": {
+        "id_prefix": "diverter"
+      },
+      "expected_logical_ids": [
+        "D"
+      ]
+    }
+  ],
+  "semantic_constraints": {
+    "status": "PASS",
+    "scope": "Declared object sets/states and explicit endpoint/triangle geometry only; author meaning remains unverified",
+    "object_counts": [
+      {
+        "name": "three_roof_branches",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "two_tanks",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "one_diverter",
+        "status": "PASS",
+        "findings": []
+      }
+    ],
+    "directed_relations": [
+      {
+        "id": "A-W",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "C-E",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "B-D",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "D-W",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "D-E",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "W-load",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "W-spill",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "E-load",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "E-spill",
+        "status": "PASS",
+        "findings": []
+      }
+    ],
+    "count_scope": "DECLARED",
+    "findings": []
+  },
+  "placement_width_mm": 160.0,
+  "entities": [
+    {
+      "id": "A",
+      "semantic_role": "source",
+      "description": "West roof branch"
+    },
+    {
+      "id": "B",
+      "semantic_role": "source",
+      "description": "Single central roof branch"
+    },
+    {
+      "id": "C",
+      "semantic_role": "source",
+      "description": "Service roof branch"
+    },
+    {
+      "id": "D",
+      "semantic_role": "source",
+      "description": "One lossless diverter"
+    },
+    {
+      "id": "W",
+      "semantic_role": "west",
+      "description": "West tank"
+    },
+    {
+      "id": "E",
+      "semantic_role": "east",
+      "description": "East tank"
+    },
+    {
+      "id": "LW",
+      "semantic_role": "west",
+      "description": "West served load"
+    },
+    {
+      "id": "LE",
+      "semantic_role": "east",
+      "description": "East served load"
+    },
+    {
+      "id": "SW",
+      "semantic_role": "west",
+      "description": "West spill drain"
+    },
+    {
+      "id": "SE",
+      "semantic_role": "east",
+      "description": "East spill drain"
+    }
+  ],
+  "relations": [
+    {
+      "id": "A-W",
+      "from": "A",
+      "to": "W",
+      "kind": "flow",
+      "meaning": "Water flows from A to W under the declared routing",
+      "geometry": {
+        "item_id": "A-W-line",
+        "from": [
+          130,
+          124
+        ],
+        "to": [
+          130,
+          191
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "A-W-head",
+          "tip": [
+            130,
+            191
+          ],
+          "base": [
+            130.0,
+            183.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C-E",
+      "from": "C",
+      "to": "E",
+      "kind": "flow",
+      "meaning": "Water flows from C to E under the declared routing",
+      "geometry": {
+        "item_id": "C-E-line",
+        "from": [
+          770,
+          124
+        ],
+        "to": [
+          770,
+          191
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "C-E-head",
+          "tip": [
+            770,
+            191
+          ],
+          "base": [
+            770.0,
+            183.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "B-D",
+      "from": "B",
+      "to": "D",
+      "kind": "flow",
+      "meaning": "Water flows from B to D under the declared routing",
+      "geometry": {
+        "item_id": "B-D-line",
+        "from": [
+          450,
+          124
+        ],
+        "to": [
+          450,
+          135
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "B-D-head",
+          "tip": [
+            450,
+            135
+          ],
+          "base": [
+            450.0,
+            127.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D-W",
+      "from": "D",
+      "to": "W",
+      "kind": "flow",
+      "meaning": "Water flows from D to W under the declared routing",
+      "geometry": {
+        "item_id": "D-W-line",
+        "from": [
+          436,
+          149
+        ],
+        "to": [
+          280,
+          191
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "D-W-head",
+          "tip": [
+            280,
+            191
+          ],
+          "base": [
+            280.0,
+            183.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D-E",
+      "from": "D",
+      "to": "E",
+      "kind": "flow",
+      "meaning": "Water flows from D to E under the declared routing",
+      "geometry": {
+        "item_id": "D-E-line",
+        "from": [
+          464,
+          149
+        ],
+        "to": [
+          620,
+          191
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "D-E-head",
+          "tip": [
+            620,
+            191
+          ],
+          "base": [
+            620.0,
+            183.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "W-load",
+      "from": "W",
+      "to": "LW",
+      "kind": "flow",
+      "meaning": "Water flows from W to LW under the declared routing",
+      "geometry": {
+        "item_id": "W-load-line",
+        "from": [
+          140,
+          272
+        ],
+        "to": [
+          140,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "W-load-head",
+          "tip": [
+            140,
+            291
+          ],
+          "base": [
+            140.0,
+            283.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "W-spill",
+      "from": "W",
+      "to": "SW",
+      "kind": "flow",
+      "meaning": "Water flows from W to SW under the declared routing",
+      "geometry": {
+        "item_id": "W-spill-line",
+        "from": [
+          290,
+          272
+        ],
+        "to": [
+          290,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "W-spill-head",
+          "tip": [
+            290,
+            291
+          ],
+          "base": [
+            290.0,
+            283.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "E-load",
+      "from": "E",
+      "to": "LE",
+      "kind": "flow",
+      "meaning": "Water flows from E to LE under the declared routing",
+      "geometry": {
+        "item_id": "E-load-line",
+        "from": [
+          640,
+          272
+        ],
+        "to": [
+          640,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "E-load-head",
+          "tip": [
+            640,
+            291
+          ],
+          "base": [
+            640.0,
+            283.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "E-spill",
+      "from": "E",
+      "to": "SE",
+      "kind": "flow",
+      "meaning": "Water flows from E to SE under the declared routing",
+      "geometry": {
+        "item_id": "E-spill-line",
+        "from": [
+          790,
+          272
+        ],
+        "to": [
+          790,
+          291
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "E-spill-head",
+          "tip": [
+            790,
+            291
+          ],
+          "base": [
+            790.0,
+            283.0
+          ]
+        }
+      }
+    }
+  ],
+  "width_mm": 160,
+  "height_mm": 99.55555555555556,
+  "view_width": 900,
+  "view_height": 560,
+  "scale_pt_per_unit": 0.5039370078740159,
+  "depth": {
+    "mode": "D1_category_contours_and_D0_quantities",
+    "affects_quantitative_encoding": false
+  },
+  "roles": {
+    "west": {
+      "base": "#347FA8",
+      "fill": "#4D89AC",
+      "stroke": "#19445C",
+      "highlight": "#C2DDEE",
+      "shadow": "#185271",
+      "marker": "#19445C",
+      "text": "#FFFFFF"
+    },
+    "east": {
+      "base": "#967019",
+      "fill": "#9C7C3B",
+      "stroke": "#523C09",
+      "highlight": "#E6D7BB",
+      "shadow": "#624807",
+      "marker": "#523C09",
+      "text": "#FFFFFF"
+    },
+    "source": {
+      "base": "#94A9B3",
+      "fill": "#A1B3BC",
+      "stroke": "#465258",
+      "highlight": "#DFE8EC",
+      "shadow": "#6B7B82",
+      "marker": "#465258",
+      "text": "#24323B"
+    },
+    "relation": {
+      "base": "#243B46",
+      "fill": "#30444D",
+      "stroke": "#0F1D23",
+      "highlight": "#BCC6CB",
+      "shadow": "#0C1D25",
+      "marker": "#0F1D23",
+      "text": "#FFFFFF"
+    }
+  },
+  "view": "normal",
+  "objects": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "bounds": [
+        0,
+        0,
+        900,
+        560
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "roof-A",
+      "type": "polygon",
+      "bounds": [
+        25,
+        65,
+        112,
+        118
+      ],
+      "entity": "A",
+      "relation": null
+    },
+    {
+      "id": "roof-A-second-face",
+      "type": "polygon",
+      "bounds": [
+        80,
+        65,
+        162,
+        124
+      ],
+      "entity": "A",
+      "relation": null
+    },
+    {
+      "id": "roof-name-A",
+      "type": "text",
+      "bounds": [
+        29.968749999999986,
+        42.8955078125,
+        170.03125,
+        59.7880859375
+      ],
+      "entity": "A",
+      "relation": null,
+      "line_bounds": [
+        [
+          29.968749999999986,
+          42.8955078125,
+          170.03125,
+          59.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Roof A · 20 L/min",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "roof-B",
+      "type": "polygon",
+      "bounds": [
+        345,
+        65,
+        432,
+        118
+      ],
+      "entity": "B",
+      "relation": null
+    },
+    {
+      "id": "roof-B-second-face",
+      "type": "polygon",
+      "bounds": [
+        400,
+        65,
+        482,
+        124
+      ],
+      "entity": "B",
+      "relation": null
+    },
+    {
+      "id": "roof-name-B",
+      "type": "text",
+      "bounds": [
+        349.96875,
+        42.8955078125,
+        490.03125,
+        59.7880859375
+      ],
+      "entity": "B",
+      "relation": null,
+      "line_bounds": [
+        [
+          349.96875,
+          42.8955078125,
+          490.03125,
+          59.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Roof B · 30 L/min",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "roof-C",
+      "type": "polygon",
+      "bounds": [
+        665,
+        65,
+        752,
+        118
+      ],
+      "entity": "C",
+      "relation": null
+    },
+    {
+      "id": "roof-C-second-face",
+      "type": "polygon",
+      "bounds": [
+        720,
+        65,
+        802,
+        124
+      ],
+      "entity": "C",
+      "relation": null
+    },
+    {
+      "id": "roof-name-C",
+      "type": "text",
+      "bounds": [
+        669.47216796875,
+        42.8955078125,
+        810.52783203125,
+        59.7880859375
+      ],
+      "entity": "C",
+      "relation": null,
+      "line_bounds": [
+        [
+          669.47216796875,
+          42.8955078125,
+          810.52783203125,
+          59.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Roof C · 10 L/min",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "tank-W",
+      "type": "path",
+      "bounds": [
+        85,
+        200,
+        325,
+        279
+      ],
+      "entity": "W",
+      "relation": null
+    },
+    {
+      "id": "tank-W-top",
+      "type": "ellipse",
+      "bounds": [
+        85,
+        188,
+        325,
+        212
+      ],
+      "entity": "W",
+      "relation": null
+    },
+    {
+      "id": "tank-E",
+      "type": "path",
+      "bounds": [
+        575,
+        200,
+        815,
+        279
+      ],
+      "entity": "E",
+      "relation": null
+    },
+    {
+      "id": "tank-E-top",
+      "type": "ellipse",
+      "bounds": [
+        575,
+        188,
+        815,
+        212
+      ],
+      "entity": "E",
+      "relation": null
+    },
+    {
+      "id": "panel-a",
+      "type": "text",
+      "bounds": [
+        24.0,
+        11.711425781249998,
+        410.37744140625,
+        31.41943359375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          24.0,
+          11.711425781249998,
+          410.37744140625,
+          31.41943359375
+        ]
+      ],
+      "font_pt": 10.582677165354333,
+      "text": "a  One central supply, two separate tanks",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "bounds": [
+        679.001953125,
+        13.895507812500002,
+        876.0,
+        30.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          679.001953125,
+          13.895507812500002,
+          876.0,
+          30.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "CONSTRUCTED DEMO",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "diverter",
+      "type": "circle",
+      "bounds": [
+        436,
+        135,
+        464,
+        163
+      ],
+      "entity": "D",
+      "relation": null
+    },
+    {
+      "id": "diverter-name",
+      "type": "text",
+      "bounds": [
+        424.78857421875,
+        174.8955078125,
+        475.21142578125,
+        191.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          424.78857421875,
+          174.8955078125,
+          475.21142578125,
+          191.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Split α",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "D-W-label",
+      "type": "text",
+      "bounds": [
+        321.39783203125,
+        124.8955078125,
+        400.84216796875,
+        141.7880859375
+      ],
+      "entity": null,
+      "relation": "D-W",
+      "line_bounds": [
+        [
+          321.39783203125,
+          124.8955078125,
+          400.84216796875,
+          141.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "30α L/min",
+      "max_width": null,
+      "foreground": "#205C7B",
+      "declared_background": "#FFFFFF",
+      "contrast": 7.296009349176818,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "D-E-label",
+      "type": "text",
+      "bounds": [
+        481.021484375,
+        124.8955078125,
+        602.978515625,
+        141.7880859375
+      ],
+      "entity": null,
+      "relation": "D-E",
+      "line_bounds": [
+        [
+          481.021484375,
+          124.8955078125,
+          602.978515625,
+          141.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "30(1 − α) L/min",
+      "max_width": null,
+      "foreground": "#705218",
+      "declared_background": "#FFFFFF",
+      "contrast": 7.218837082857263,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "tank-name-W",
+      "type": "text",
+      "bounds": [
+        170.5517578125,
+        217.439453125,
+        239.4482421875,
+        236.208984375
+      ],
+      "entity": "W",
+      "relation": null,
+      "line_bounds": [
+        [
+          170.5517578125,
+          217.439453125,
+          239.4482421875,
+          236.208984375
+        ]
+      ],
+      "font_pt": 10.078740157480317,
+      "text": "Tank W",
+      "max_width": null,
+      "foreground": "#205C7B",
+      "declared_background": "#E1F1F8",
+      "contrast": 6.302046639918743,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "tank-volume-W",
+      "type": "text",
+      "bounds": [
+        157.458251953125,
+        242.16748046875,
+        252.541748046875,
+        259.99853515625
+      ],
+      "entity": "W",
+      "relation": null,
+      "line_bounds": [
+        [
+          157.458251953125,
+          242.16748046875,
+          252.541748046875,
+          259.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "180 / 200 L",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#E1F1F8",
+      "contrast": 10.139015295035726,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "tank-name-E",
+      "type": "text",
+      "bounds": [
+        663.3203125,
+        217.439453125,
+        726.6796875,
+        236.208984375
+      ],
+      "entity": "E",
+      "relation": null,
+      "line_bounds": [
+        [
+          663.3203125,
+          217.439453125,
+          726.6796875,
+          236.208984375
+        ]
+      ],
+      "font_pt": 10.078740157480317,
+      "text": "Tank E",
+      "max_width": null,
+      "foreground": "#705218",
+      "declared_background": "#FAF1D9",
+      "contrast": 6.410625806629629,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "tank-volume-E",
+      "type": "text",
+      "bounds": [
+        647.458251953125,
+        242.16748046875,
+        742.541748046875,
+        259.99853515625
+      ],
+      "entity": "E",
+      "relation": null,
+      "line_bounds": [
+        [
+          647.458251953125,
+          242.16748046875,
+          742.541748046875,
+          259.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "250 / 300 L",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FAF1D9",
+      "contrast": 10.42395994664255,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "volume-key",
+      "type": "text",
+      "bounds": [
+        388.47216796875,
+        218.8955078125,
+        511.52783203125,
+        235.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          388.47216796875,
+          218.8955078125,
+          511.52783203125,
+          235.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Initial / capacity",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "no-transfer",
+      "type": "text",
+      "bounds": [
+        405.4833984375,
+        244.8955078125,
+        494.5166015625,
+        261.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          405.4833984375,
+          244.8955078125,
+          494.5166015625,
+          261.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "No transfer",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "load-W",
+      "type": "text",
+      "bounds": [
+        82.958984375,
+        300.8955078125,
+        197.041015625,
+        317.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          82.958984375,
+          300.8955078125,
+          197.041015625,
+          317.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Load 18 L/min",
+      "max_width": null,
+      "foreground": "#205C7B",
+      "declared_background": "#FFFFFF",
+      "contrast": 7.296009349176818,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "spill-W",
+      "type": "text",
+      "bounds": [
+        272.9931640625,
+        300.8955078125,
+        307.0068359375,
+        317.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          272.9931640625,
+          300.8955078125,
+          307.0068359375,
+          317.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Spill",
+      "max_width": null,
+      "foreground": "#205C7B",
+      "declared_background": "#FFFFFF",
+      "contrast": 7.296009349176818,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "load-E",
+      "type": "text",
+      "bounds": [
+        582.958984375,
+        300.8955078125,
+        697.041015625,
+        317.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          582.958984375,
+          300.8955078125,
+          697.041015625,
+          317.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Load 24 L/min",
+      "max_width": null,
+      "foreground": "#705218",
+      "declared_background": "#FFFFFF",
+      "contrast": 7.218837082857263,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "spill-E",
+      "type": "text",
+      "bounds": [
+        772.9931640625,
+        300.8955078125,
+        807.0068359375,
+        317.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          772.9931640625,
+          300.8955078125,
+          807.0068359375,
+          317.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Spill",
+      "max_width": null,
+      "foreground": "#705218",
+      "declared_background": "#FFFFFF",
+      "contrast": 7.218837082857263,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "panel-divider",
+      "type": "line",
+      "bounds": [
+        24,
+        334,
+        876,
+        334
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "panel-b",
+      "type": "text",
+      "bounds": [
+        24.0,
+        346.71142578125,
+        257.43017578125,
+        366.41943359375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          24.0,
+          346.71142578125,
+          257.43017578125,
+          366.41943359375
+        ]
+      ],
+      "font_pt": 10.582677165354333,
+      "text": "b  Four-minute outcomes",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "schedule-head",
+      "type": "text",
+      "bounds": [
+        211.7783203125,
+        372.8955078125,
+        322.2216796875,
+        389.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          211.7783203125,
+          372.8955078125,
+          322.2216796875,
+          389.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Central split α",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "spill-head",
+      "type": "text",
+      "bounds": [
+        500.4873046875,
+        372.8955078125,
+        603.5126953125,
+        389.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          500.4873046875,
+          372.8955078125,
+          603.5126953125,
+          389.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Total spill (L)",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "free-head",
+      "type": "text",
+      "bounds": [
+        726.47998046875,
+        362.8955078125,
+        859.52001953125,
+        379.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          726.47998046875,
+          362.8955078125,
+          859.52001953125,
+          379.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Free at 4 min (L)",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "free-subhead",
+      "type": "text",
+      "bounds": [
+        771.0009765625,
+        383.8955078125,
+        814.9990234375,
+        400.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          771.0009765625,
+          383.8955078125,
+          814.9990234375,
+          400.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "W / E",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "grid-0",
+      "type": "line",
+      "bounds": [
+        441,
+        406,
+        441,
+        509
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "tick-0",
+      "type": "text",
+      "bounds": [
+        435.99462890625,
+        515.8955078125,
+        446.00537109375,
+        532.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          435.99462890625,
+          515.8955078125,
+          446.00537109375,
+          532.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "0",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "grid-10",
+      "type": "line",
+      "bounds": [
+        521,
+        406,
+        521,
+        509
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "tick-10",
+      "type": "text",
+      "bounds": [
+        510.9892578125,
+        515.8955078125,
+        531.0107421875,
+        532.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          510.9892578125,
+          515.8955078125,
+          531.0107421875,
+          532.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "10",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "grid-20",
+      "type": "line",
+      "bounds": [
+        601,
+        406,
+        601,
+        509
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "tick-20",
+      "type": "text",
+      "bounds": [
+        590.9892578125,
+        515.8955078125,
+        611.0107421875,
+        532.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          590.9892578125,
+          515.8955078125,
+          611.0107421875,
+          532.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "20",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "grid-30",
+      "type": "line",
+      "bounds": [
+        681,
+        406,
+        681,
+        509
+      ],
+      "entity": null,
+      "relation": null
+    },
+    {
+      "id": "tick-30",
+      "type": "text",
+      "bounds": [
+        670.9892578125,
+        515.8955078125,
+        691.0107421875,
+        532.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          670.9892578125,
+          515.8955078125,
+          691.0107421875,
+          532.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "30",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "policy-0",
+      "type": "text",
+      "bounds": [
+        24.0,
+        408.16748046875,
+        112.70068359375,
+        425.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          24.0,
+          408.16748046875,
+          112.70068359375,
+          425.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Fixed third",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "alpha-0",
+      "type": "text",
+      "bounds": [
+        208.95263671875,
+        408.8955078125,
+        325.04736328125,
+        425.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          208.95263671875,
+          408.8955078125,
+          325.04736328125,
+          425.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "1/3 throughout",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "bar-0-W",
+      "type": "rect",
+      "bounds": [
+        441,
+        406,
+        665.0,
+        427
+      ],
+      "entity": "W",
+      "relation": null
+    },
+    {
+      "id": "spill-value-0",
+      "type": "text",
+      "bounds": [
+        674.0,
+        408.8955078125,
+        728.0,
+        425.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          674.0,
+          408.8955078125,
+          728.0,
+          425.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "28 (W)",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "headroom-0",
+      "type": "text",
+      "bounds": [
+        769.2314453125,
+        408.16748046875,
+        816.7685546875,
+        425.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          769.2314453125,
+          408.16748046875,
+          816.7685546875,
+          425.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "0 / 26",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "policy-1",
+      "type": "text",
+      "bounds": [
+        24.0,
+        447.16748046875,
+        141.2470703125,
+        464.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          24.0,
+          447.16748046875,
+          141.2470703125,
+          464.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Delayed tenth",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "alpha-1",
+      "type": "text",
+      "bounds": [
+        193.453125,
+        447.8955078125,
+        340.546875,
+        464.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          193.453125,
+          447.8955078125,
+          340.546875,
+          464.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "1/3 → 0.10 at 60 s",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "bar-1-W",
+      "type": "rect",
+      "bounds": [
+        441,
+        445,
+        497.0,
+        466
+      ],
+      "entity": "W",
+      "relation": null
+    },
+    {
+      "id": "spill-value-1",
+      "type": "text",
+      "bounds": [
+        506.0,
+        447.8955078125,
+        549.9892578125,
+        464.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          506.0,
+          447.8955078125,
+          549.9892578125,
+          464.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "7 (W)",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "headroom-1",
+      "type": "text",
+      "bounds": [
+        774.514892578125,
+        447.16748046875,
+        811.485107421875,
+        464.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          774.514892578125,
+          447.16748046875,
+          811.485107421875,
+          464.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "0 / 5",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "policy-2",
+      "type": "text",
+      "bounds": [
+        24.0,
+        486.16748046875,
+        117.998046875,
+        503.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          24.0,
+          486.16748046875,
+          117.998046875,
+          503.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "Fixed tenth",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "alpha-2",
+      "type": "text",
+      "bounds": [
+        203.947265625,
+        486.8955078125,
+        330.052734375,
+        503.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          203.947265625,
+          486.8955078125,
+          330.052734375,
+          503.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "0.10 throughout",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "bar-2-E",
+      "type": "rect",
+      "bounds": [
+        441,
+        484,
+        457.0,
+        505
+      ],
+      "entity": "E",
+      "relation": null
+    },
+    {
+      "id": "spill-value-2",
+      "type": "text",
+      "bounds": [
+        466.0,
+        486.8955078125,
+        505.005859375,
+        503.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          466.0,
+          486.8955078125,
+          505.005859375,
+          503.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "2 (E)",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "headroom-2",
+      "type": "text",
+      "bounds": [
+        774.514892578125,
+        486.16748046875,
+        811.485107421875,
+        503.99853515625
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          774.514892578125,
+          486.16748046875,
+          811.485107421875,
+          503.99853515625
+        ]
+      ],
+      "font_pt": 9.574803149606302,
+      "text": "0 / 0",
+      "max_width": null,
+      "foreground": "#243B46",
+      "declared_background": "#FFFFFF",
+      "contrast": 11.738147083116672,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "bound",
+      "type": "text",
+      "bounds": [
+        206.86816406249997,
+        539.8955078125,
+        693.1318359375,
+        556.7880859375
+      ],
+      "entity": null,
+      "relation": null,
+      "line_bounds": [
+        [
+          206.86816406249997,
+          539.8955078125,
+          693.1318359375,
+          556.7880859375
+        ]
+      ],
+      "font_pt": 9.070866141732285,
+      "text": "Net addition 72 L − initial free space 70 L = minimum spill 2 L",
+      "max_width": null,
+      "foreground": "#52646D",
+      "declared_background": "#FFFFFF",
+      "contrast": 6.17200206614642,
+      "glyph_check": "PASS",
+      "font": [
+        "Arial"
+      ]
+    },
+    {
+      "id": "A-W-line",
+      "type": "line",
+      "bounds": [
+        130,
+        124,
+        130,
+        191
+      ],
+      "entity": null,
+      "relation": "A-W"
+    },
+    {
+      "id": "A-W-head",
+      "type": "polygon",
+      "bounds": [
+        126.64,
+        183.0,
+        133.36,
+        191
+      ],
+      "entity": null,
+      "relation": "A-W"
+    },
+    {
+      "id": "C-E-line",
+      "type": "line",
+      "bounds": [
+        770,
+        124,
+        770,
+        191
+      ],
+      "entity": null,
+      "relation": "C-E"
+    },
+    {
+      "id": "C-E-head",
+      "type": "polygon",
+      "bounds": [
+        766.64,
+        183.0,
+        773.36,
+        191
+      ],
+      "entity": null,
+      "relation": "C-E"
+    },
+    {
+      "id": "B-D-line",
+      "type": "line",
+      "bounds": [
+        450,
+        124,
+        450,
+        135
+      ],
+      "entity": null,
+      "relation": "B-D"
+    },
+    {
+      "id": "B-D-head",
+      "type": "polygon",
+      "bounds": [
+        446.64,
+        127.0,
+        453.36,
+        135
+      ],
+      "entity": null,
+      "relation": "B-D"
+    },
+    {
+      "id": "D-W-line",
+      "type": "line",
+      "bounds": [
+        280,
+        149,
+        436,
+        191
+      ],
+      "entity": null,
+      "relation": "D-W"
+    },
+    {
+      "id": "D-W-head",
+      "type": "polygon",
+      "bounds": [
+        276.64,
+        183.0,
+        283.36,
+        191
+      ],
+      "entity": null,
+      "relation": "D-W"
+    },
+    {
+      "id": "D-E-line",
+      "type": "line",
+      "bounds": [
+        464,
+        149,
+        620,
+        191
+      ],
+      "entity": null,
+      "relation": "D-E"
+    },
+    {
+      "id": "D-E-head",
+      "type": "polygon",
+      "bounds": [
+        616.64,
+        183.0,
+        623.36,
+        191
+      ],
+      "entity": null,
+      "relation": "D-E"
+    },
+    {
+      "id": "W-load-line",
+      "type": "line",
+      "bounds": [
+        140,
+        272,
+        140,
+        291
+      ],
+      "entity": null,
+      "relation": "W-load"
+    },
+    {
+      "id": "W-load-head",
+      "type": "polygon",
+      "bounds": [
+        136.64,
+        283.0,
+        143.36,
+        291
+      ],
+      "entity": null,
+      "relation": "W-load"
+    },
+    {
+      "id": "W-spill-line",
+      "type": "line",
+      "bounds": [
+        290,
+        272,
+        290,
+        291
+      ],
+      "entity": null,
+      "relation": "W-spill"
+    },
+    {
+      "id": "W-spill-head",
+      "type": "polygon",
+      "bounds": [
+        286.64,
+        283.0,
+        293.36,
+        291
+      ],
+      "entity": null,
+      "relation": "W-spill"
+    },
+    {
+      "id": "E-load-line",
+      "type": "line",
+      "bounds": [
+        640,
+        272,
+        640,
+        291
+      ],
+      "entity": null,
+      "relation": "E-load"
+    },
+    {
+      "id": "E-load-head",
+      "type": "polygon",
+      "bounds": [
+        636.64,
+        283.0,
+        643.36,
+        291
+      ],
+      "entity": null,
+      "relation": "E-load"
+    },
+    {
+      "id": "E-spill-line",
+      "type": "line",
+      "bounds": [
+        790,
+        272,
+        790,
+        291
+      ],
+      "entity": null,
+      "relation": "E-spill"
+    },
+    {
+      "id": "E-spill-head",
+      "type": "polygon",
+      "bounds": [
+        786.64,
+        283.0,
+        793.36,
+        291
+      ],
+      "entity": null,
+      "relation": "E-spill"
+    }
+  ],
+  "relation_segments": [
+    {
+      "id": "A-W-line",
+      "from": [
+        130,
+        124
+      ],
+      "to": [
+        130,
+        191
+      ]
+    },
+    {
+      "id": "A-W-head",
+      "from": [
+        130,
+        191
+      ],
+      "to": [
+        126.64,
+        183.0
+      ]
+    },
+    {
+      "id": "A-W-head",
+      "from": [
+        126.64,
+        183.0
+      ],
+      "to": [
+        133.36,
+        183.0
+      ]
+    },
+    {
+      "id": "C-E-line",
+      "from": [
+        770,
+        124
+      ],
+      "to": [
+        770,
+        191
+      ]
+    },
+    {
+      "id": "C-E-head",
+      "from": [
+        770,
+        191
+      ],
+      "to": [
+        766.64,
+        183.0
+      ]
+    },
+    {
+      "id": "C-E-head",
+      "from": [
+        766.64,
+        183.0
+      ],
+      "to": [
+        773.36,
+        183.0
+      ]
+    },
+    {
+      "id": "B-D-line",
+      "from": [
+        450,
+        124
+      ],
+      "to": [
+        450,
+        135
+      ]
+    },
+    {
+      "id": "B-D-head",
+      "from": [
+        450,
+        135
+      ],
+      "to": [
+        446.64,
+        127.0
+      ]
+    },
+    {
+      "id": "B-D-head",
+      "from": [
+        446.64,
+        127.0
+      ],
+      "to": [
+        453.36,
+        127.0
+      ]
+    },
+    {
+      "id": "D-W-line",
+      "from": [
+        436,
+        149
+      ],
+      "to": [
+        280,
+        149
+      ]
+    },
+    {
+      "id": "D-W-line",
+      "from": [
+        280,
+        149
+      ],
+      "to": [
+        280,
+        191
+      ]
+    },
+    {
+      "id": "D-W-head",
+      "from": [
+        280,
+        191
+      ],
+      "to": [
+        276.64,
+        183.0
+      ]
+    },
+    {
+      "id": "D-W-head",
+      "from": [
+        276.64,
+        183.0
+      ],
+      "to": [
+        283.36,
+        183.0
+      ]
+    },
+    {
+      "id": "D-E-line",
+      "from": [
+        464,
+        149
+      ],
+      "to": [
+        620,
+        149
+      ]
+    },
+    {
+      "id": "D-E-line",
+      "from": [
+        620,
+        149
+      ],
+      "to": [
+        620,
+        191
+      ]
+    },
+    {
+      "id": "D-E-head",
+      "from": [
+        620,
+        191
+      ],
+      "to": [
+        616.64,
+        183.0
+      ]
+    },
+    {
+      "id": "D-E-head",
+      "from": [
+        616.64,
+        183.0
+      ],
+      "to": [
+        623.36,
+        183.0
+      ]
+    },
+    {
+      "id": "W-load-line",
+      "from": [
+        140,
+        272
+      ],
+      "to": [
+        140,
+        291
+      ]
+    },
+    {
+      "id": "W-load-head",
+      "from": [
+        140,
+        291
+      ],
+      "to": [
+        136.64,
+        283.0
+      ]
+    },
+    {
+      "id": "W-load-head",
+      "from": [
+        136.64,
+        283.0
+      ],
+      "to": [
+        143.36,
+        283.0
+      ]
+    },
+    {
+      "id": "W-spill-line",
+      "from": [
+        290,
+        272
+      ],
+      "to": [
+        290,
+        291
+      ]
+    },
+    {
+      "id": "W-spill-head",
+      "from": [
+        290,
+        291
+      ],
+      "to": [
+        286.64,
+        283.0
+      ]
+    },
+    {
+      "id": "W-spill-head",
+      "from": [
+        286.64,
+        283.0
+      ],
+      "to": [
+        293.36,
+        283.0
+      ]
+    },
+    {
+      "id": "E-load-line",
+      "from": [
+        640,
+        272
+      ],
+      "to": [
+        640,
+        291
+      ]
+    },
+    {
+      "id": "E-load-head",
+      "from": [
+        640,
+        291
+      ],
+      "to": [
+        636.64,
+        283.0
+      ]
+    },
+    {
+      "id": "E-load-head",
+      "from": [
+        636.64,
+        283.0
+      ],
+      "to": [
+        643.36,
+        283.0
+      ]
+    },
+    {
+      "id": "E-spill-line",
+      "from": [
+        790,
+        272
+      ],
+      "to": [
+        790,
+        291
+      ]
+    },
+    {
+      "id": "E-spill-head",
+      "from": [
+        790,
+        291
+      ],
+      "to": [
+        786.64,
+        283.0
+      ]
+    },
+    {
+      "id": "E-spill-head",
+      "from": [
+        786.64,
+        283.0
+      ],
+      "to": [
+        793.36,
+        283.0
+      ]
+    }
+  ],
+  "editability": {
+    "text": "SVG text nodes; PDF subset-embedded font text",
+    "objects": "separate vector primitives with stable IDs",
+    "embedded_raster": false
+  },
+  "gradient_export": {
+    "count": 2,
+    "backends": "native SVG gradients and native PDF shading clipped to the same shape",
+    "interpolation": "encoded sRGB / PDF DeviceRGB",
+    "physical_lighting": false
+  },
+  "fonts": {
+    "latin": {
+      "name": "Studio_latin",
+      "family": "Arial",
+      "path": "<font>",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    }
+  },
+  "files": {
+    "figure.svg": "3bef2506c9e4debcb5a9c42dbde4bcd4a6e9c81d4013bd53e852fc12bc17b308",
+    "figure.pdf": "4bd149dcbcaaf523d00324c8c0f6ca1dfc21811f757ff12df407d085935bfd13",
+    "figure.png": "ef9e150a0dda3276eb06bfaef73edcf6affb4fc7036feeee0b1188a2e5a692c5",
+    "preview.png": "f2c99bce0e48d73947d42dafcd05fb8fbc4e00c8348d89b6c929a3bab6ee8151",
+    "qa-deuteranopia.png": "cf3951dff993ae5326d3ab408e4469832a79f20637937760eaf5513dd83d7652",
+    "qa-grayscale.png": "5268f5bea9c33a63fd2703599b56c496a1c6009d53bbfd5eaf4813c1a99b51d6",
+    "figure_spec.json": "78eeaa7ba2e596b703abb0c96d3d86fe941439f2d32ca5ecb40dd8feb13f3e98",
+    "interval_results.csv": "8519f6f1b54aa73b7bab888128ea7a4ec0dcfd9d6b3f7a01f1a99517382d6855"
+  },
+  "visual_review": "NOT_RUN",
+  "scientific_author_acceptance": false,
+  "journal_eligibility": "UNVERIFIED",
+  "input_spec_file_sha256": "63e46f1c1de6d1634f4395067bd3796e4d396da26ea38953d0113e1c40310f7f",
+  "source_spec_path": "<output>\\figure_spec.json",
+  "color_vision_previews": {
+    "method": "grayscale: linear-sRGB relative luminance; CVD: Machado 2009 deuteranomaly severity 100, clipped to sRGB",
+    "status": "GENERATED_REVIEW_REQUIRED",
+    "preview_max_px": 1400,
+    "not_all_color_vision_conditions": true
+  },
+  "raster": {
+    "status": "PASS",
+    "command": [
+      "<pdftoppm>",
+      "-png",
+      "-singlefile",
+      "-r",
+      "300",
+      "verification\\rebuilt-selected\\rendered\\figure.pdf",
+      "verification\\rebuilt-selected\\rendered\\figure"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "pixel_size": [
+      1890,
+      1176
+    ],
+    "dpi": 300
+  }
+}

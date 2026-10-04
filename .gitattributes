@@ -1,7 +1,9 @@
 * -text
-*.md text eol=lf
-*.yaml text eol=lf
+*.md -text
+*.yaml -text
 *.png binary
 *.pdf binary
 # Frozen original DEMO inputs retain exact source bytes.
 examples/complete-fixture/input/* -text
+
+# Preserve exact source bytes across clones for input and evidence hashes.

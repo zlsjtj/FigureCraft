@@ -1,0 +1,1 @@
+A single central roof stream splits between two disconnected tanks. Fixed third spills 28 L from W with 26 L free in E; delayed tenth spills 7 L from W with 5 L free in E; fixed tenth spills 2 L from E and fills both tanks. All quantities are constructed DEMO values.

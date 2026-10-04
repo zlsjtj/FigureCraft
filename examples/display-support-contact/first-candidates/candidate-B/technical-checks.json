@@ -1,0 +1,165 @@
+{
+  "physical_mm": [
+    159.99999749999998,
+    98.99999249999999
+  ],
+  "png_px": [
+    1890,
+    1170
+  ],
+  "minimum_font_pt": 8.3,
+  "labels": [
+    {
+      "id": "label-1",
+      "text": "One support \u00b7 four alternative poses",
+      "pt": 10.5,
+      "bounds": [
+        4.0,
+        2.295833333333334,
+        67.80463256835937,
+        6.2
+      ]
+    },
+    {
+      "id": "label-23",
+      "text": "R \u00b7 held",
+      "pt": 9.5,
+      "bounds": [
+        3.0,
+        11.648611111111112,
+        15.287880452473956,
+        15.2
+      ]
+    },
+    {
+      "id": "label-24",
+      "text": "S1",
+      "pt": 9.5,
+      "bounds": [
+        34.0,
+        13.648611111111112,
+        38.09923299153646,
+        17.2
+      ]
+    },
+    {
+      "id": "label-25",
+      "text": "S2",
+      "pt": 9.5,
+      "bounds": [
+        54.0,
+        22.648611111111112,
+        58.09923299153646,
+        26.2
+      ]
+    },
+    {
+      "id": "label-26",
+      "text": "S3",
+      "pt": 9.5,
+      "bounds": [
+        72.0,
+        35.64861111111111,
+        76.09923299153645,
+        39.2
+      ]
+    },
+    {
+      "id": "label-27",
+      "text": "S1",
+      "pt": 8.5,
+      "bounds": [
+        45.66613260904948,
+        94.94138888888888,
+        49.333867390950516,
+        98.14
+      ]
+    },
+    {
+      "id": "label-28",
+      "text": "S2",
+      "pt": 8.5,
+      "bounds": [
+        60.41613260904948,
+        94.94138888888888,
+        64.08386739095052,
+        98.14
+      ]
+    },
+    {
+      "id": "label-29",
+      "text": "S3",
+      "pt": 8.5,
+      "bounds": [
+        75.16613260904948,
+        94.94138888888888,
+        78.83386739095053,
+        98.14
+      ]
+    },
+    {
+      "id": "label-30",
+      "text": "H",
+      "pt": 9.5,
+      "bounds": [
+        10.0,
+        84.64861111111111,
+        12.420265706380208,
+        88.2
+      ]
+    },
+    {
+      "id": "label-34",
+      "text": "23 mm",
+      "pt": 8.5,
+      "bounds": [
+        59.0,
+        75.50138888888888,
+        68.16421237521702,
+        78.7
+      ]
+    },
+    {
+      "id": "label-35",
+      "text": "Assembly \u00b7 S2",
+      "pt": 10,
+      "bounds": [
+        103.0,
+        15.472222222222223,
+        127.11739095052083,
+        19.2
+      ]
+    },
+    {
+      "id": "label-36",
+      "text": "Stay beside panel",
+      "pt": 9,
+      "bounds": [
+        117.37906494140626,
+        76.825,
+        142.62093505859377,
+        80.2
+      ]
+    },
+    {
+      "id": "label-38",
+      "text": "Synthetic geometry \u00b7 DEMO",
+      "pt": 8.3,
+      "bounds": [
+        4.0,
+        95.07194444444444,
+        40.449144694010414,
+        98.2
+      ]
+    }
+  ],
+  "text_out_of_bounds": [],
+  "render_returncode": 0,
+  "text": "One support \u00b7 four alternative poses\nR \u00b7 held\nS1\nS2\nS3\nS1\nS2\nS3\nH\n23 mm\nAssembly \u00b7 S2\nStay beside panel\nSynthetic geometry \u00b7 DEMO\n",
+  "bitmap_in_svg": false,
+  "limitations": [
+    "Agent visual review only; author acceptance pending",
+    "Approximate single deuteranopia matrix; no general CVD certification",
+    "96 dpi preview has nominal physical size; display is not calibrated"
+  ]
+}

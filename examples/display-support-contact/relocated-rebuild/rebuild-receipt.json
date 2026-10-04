@@ -1,0 +1,31 @@
+{
+  "command": [
+    "<local-runtime>/build_candidates.py",
+    "--out",
+    "<local-runtime>/relocated-rebuild",
+    "--refined",
+    "--font",
+    "C:\\Windows\\Fonts\\arial.ttf",
+    "--bold-font",
+    "C:\\Windows\\Fonts\\arialbd.ttf",
+    "--pdftoppm",
+    "<local-runtime>/pdftoppm.exe"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_sha256": {
+    "build_candidates.py": "5020220039e50bb8add0f4f46a1ea8b7f004126463c321969c50c799facc35ea",
+    "native_geometry.py": "c1ae9436c761c54206b92ede08299ea2f814634c1b5ab730ffbe8b22aa08b8e1",
+    "finite-record.csv": "c9f745dde4abf7343b50cdabf2766c3c74ed6811455eb13fb1226040d5b351b6"
+  },
+  "checks": {
+    "candidate-A-refined": {
+      "physical_mm": [
+        159.99999749999998,
+        98.99999249999999
+      ],
+      "minimum_font_pt": 8.3,
+      "text_out_of_bounds": []
+    }
+  },
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

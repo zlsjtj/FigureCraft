@@ -1,0 +1,33 @@
+{
+  "reviewer": "Codex generating agent; model review, not author approval",
+  "viewed": [
+    "figure.png",
+    "qa-grayscale.png",
+    "qa-deuteranomaly100.png",
+    "qa-160mm-at96dpi.png"
+  ],
+  "retained": [
+    "One connected cable and four coaxial layers",
+    "Shared termination-plane ellipses",
+    "Thin continuous solid metal sleeve",
+    "Direct labels without arrows"
+  ],
+  "issues": [
+    {
+      "item": "Conductor tip",
+      "finding": "Exposed segment is comparatively long relative to insulation exposure; shorten for a clearer short tip."
+    },
+    {
+      "item": "Surface cap joins",
+      "finding": "Tiny tangent spikes from miter joins at cylindrical end silhouettes."
+    }
+  ],
+  "content_revision_budget": 1,
+  "next_action": "Shorten copper end from illustrative x=405 to 383; move its leader anchor 385 to 372; round the silhouette joins. No other content redesign.",
+  "artifact_hashes": {
+    "figure.svg": "b14936709c04ae00d4d4ffde74c77fa4236a07a6924a6d90d7f22096d5a9ccef",
+    "figure.pdf": "1b3af59f70d0c60965ab71a814f7dfce7c6a393eb294dbb06b68a86c3ff8e4c7",
+    "figure.png": "8a6abdcba2ed30835548c787b06ea7c312846c28cb4014ff4e3d33ea1743bdec",
+    "build_figure.py": "91f7689c48c9671cedb90ad525d84f368269029aae2b6517d56672bbf6b1a395"
+  }
+}

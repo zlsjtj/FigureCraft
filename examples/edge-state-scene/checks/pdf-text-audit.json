@@ -1,0 +1,13 @@
+{
+  "pdf": "<local-runtime>/figure.pdf",
+  "auditable": true,
+  "decoding_complete": true,
+  "partial_text_found": false,
+  "minimum_required_pt": 8.0,
+  "minimum_found_pt": 8.5,
+  "text_run_count": 23,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": [],
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

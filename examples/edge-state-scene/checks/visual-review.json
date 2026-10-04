@@ -1,0 +1,85 @@
+{
+  "reviewer": "development agent, aware of source and prior feedback; not independent first reading",
+  "evidence": "CONSTRUCTED DEMO",
+  "artifact_hashes": {
+    "figure.svg": "cc1023b2011645e8bf6a07382c1daacea2540d7878b8d65b743f7bbaae8d5a20",
+    "figure.pdf": "468ee9934fe0f09cf4e9e0ff7a1c7256fcfbc109f2aaf4947d3e9ab99bc0dfa6",
+    "figure.png": "f0e17867cd5d336d5ba5cb54c12637e9bd7357fa6db88df72cd0f7818dca4630",
+    "figure-96dpi.png": "73400f80ef55b2016651d9576fe9056ad75c1a6e96401736eecae6dc149eafd7"
+  },
+  "views_opened": [
+    "normal 200 dpi",
+    "PDF raster 96 dpi",
+    "grayscale",
+    "approximate deuteranopia",
+    "Chrome-rendered SVG 605 x 379 px"
+  ],
+  "automatic_labels_status": "REVIEW_REQUIRED",
+  "automatic_findings_preserved": [
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-031",
+      "text": "boundary",
+      "label": "fselected-041",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-031",
+      "text": "update 17",
+      "label": "fselected-042",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-032",
+      "text": "boundary",
+      "label": "fselected-041",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-032",
+      "text": "update 17",
+      "label": "fselected-042",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-033",
+      "text": "boundary",
+      "label": "fselected-041",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "guide_text_contact",
+      "object": "fselected-034",
+      "text": "update 17",
+      "label": "fselected-042",
+      "reason": "Ink bounds and guide overlap; inspect actual stacking/dashes before deciding repair"
+    }
+  ],
+  "visual_resolution": "Six grid-line / label-box intersections are occluded by the opaque white rect drawn after the grid. Actual PDF and browser SVG show no guide through text. No machine status was rewritten.",
+  "scientific_observations": [
+    "Four topological edge adjacencies preserved; W0 stays left and W1 right in the final main scene.",
+    "Source edge -> READY copy -> ghost -> boundary are visible distinct roles; copies do not denote new physical cells.",
+    "copy 17 and future write 18 are attached to separate paths. Release returns to the occupied slot.",
+    "Representative cell marks are not a grid-size encoding; W0 local ownership boundary is not a physical address map."
+  ],
+  "aesthetic_observation": "One contained W0 scene carries the mechanism. The source and short current-value chain are primary; topology and exceptional case are secondary. Right-to-left reading is retained to respect source topology.",
+  "not_verified": [
+    "printed readability",
+    "human reading time",
+    "author aesthetic acceptance",
+    "all editors and all color-vision conditions",
+    "generalization to unseen material"
+  ],
+  "author_acceptance": "NOT_RUN",
+  "overall_status": "REVIEW_REQUIRED"
+}

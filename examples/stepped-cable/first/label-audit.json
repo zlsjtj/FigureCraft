@@ -1,0 +1,365 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "technical_status": "REVIEW_REQUIRED",
+  "overall_status": "REVIEW_REQUIRED",
+  "svg_sha256": "b14936709c04ae00d4d4ffde74c77fa4236a07a6924a6d90d7f22096d5a9ccef",
+  "placement_width_mm": 160.0,
+  "minimum_font_pt": 10.499999999921616,
+  "text": [
+    {
+      "id": "label-jacket",
+      "text": "Outer jacket",
+      "bounds": [
+        57.673583984375,
+        53.3505859375,
+        114.326416015625,
+        63.21484375
+      ],
+      "font_pt": 10.499999999921616
+    },
+    {
+      "id": "label-shield",
+      "text": "Metal shield",
+      "bounds": [
+        196.960693359375,
+        47.48388671875,
+        253.039306640625,
+        55.123046875
+      ],
+      "font_pt": 10.499999999921616
+    },
+    {
+      "id": "label-shield-type",
+      "text": "Solid sleeve",
+      "bounds": [
+        196.66845703125,
+        61.3505859375,
+        253.33154296875,
+        69.123046875
+      ],
+      "font_pt": 10.499999999921616
+    },
+    {
+      "id": "label-conductor",
+      "text": "Copper conductor",
+      "bounds": [
+        323.23583984375,
+        58.3505859375,
+        406.90771484375,
+        68.091796875
+      ],
+      "font_pt": 10.499999999921616
+    },
+    {
+      "id": "label-insulation",
+      "text": "Polymer insulation",
+      "bounds": [
+        244.072021484375,
+        211.48388671875,
+        329.927978515625,
+        221.21484375
+      ],
+      "font_pt": 10.499999999921616
+    }
+  ],
+  "guide_segments": [
+    {
+      "id": "guide-jacket-0",
+      "from": [
+        86.0,
+        70.0
+      ],
+      "to": [
+        106.0,
+        70.0
+      ],
+      "width": 0.7
+    },
+    {
+      "id": "guide-jacket-1",
+      "from": [
+        106.0,
+        70.0
+      ],
+      "to": [
+        127.0,
+        108.0
+      ],
+      "width": 0.7
+    },
+    {
+      "id": "guide-shield-0",
+      "from": [
+        225.0,
+        78.0
+      ],
+      "to": [
+        225.0,
+        91.0
+      ],
+      "width": 0.7
+    },
+    {
+      "id": "guide-shield-1",
+      "from": [
+        225.0,
+        91.0
+      ],
+      "to": [
+        230.0,
+        116.0
+      ],
+      "width": 0.7
+    },
+    {
+      "id": "guide-conductor-0",
+      "from": [
+        365.0,
+        75.0
+      ],
+      "to": [
+        385.0,
+        75.0
+      ],
+      "width": 0.7
+    },
+    {
+      "id": "guide-conductor-1",
+      "from": [
+        385.0,
+        75.0
+      ],
+      "to": [
+        385.0,
+        134.0
+      ],
+      "width": 0.7
+    },
+    {
+      "id": "guide-insulation-0",
+      "from": [
+        287.0,
+        204.0
+      ],
+      "to": [
+        303.0,
+        204.0
+      ],
+      "width": 0.7
+    },
+    {
+      "id": "guide-insulation-1",
+      "from": [
+        303.0,
+        204.0
+      ],
+      "to": [
+        315.0,
+        167.0
+      ],
+      "width": 0.7
+    }
+  ],
+  "findings": [
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "unsupported_svg_feature",
+      "object": "defs-0-0",
+      "tag": "defs"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-jacket",
+      "text": "Outer jacket",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-shield",
+      "text": "Metal shield",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-shield-type",
+      "text": "Solid sleeve",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-conductor",
+      "text": "Copper conductor",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "check": "painted_text_contrast",
+      "object": "label-insulation",
+      "text": "Polymer insulation",
+      "ratio": null,
+      "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+    }
+  ],
+  "owner_regions": [],
+  "painted_text_contrast": {
+    "status": "REVIEW_REQUIRED",
+    "canvas": "#FFFFFF",
+    "labels": [
+      {
+        "id": "label-jacket",
+        "text": "Outer jacket",
+        "bounds": [
+          57.673583984375,
+          53.3505859375,
+          114.326416015625,
+          63.21484375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "canvas"
+        ],
+        "status": "REVIEW_REQUIRED",
+        "foreground": "#24333C",
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "id": "label-shield",
+        "text": "Metal shield",
+        "bounds": [
+          196.960693359375,
+          47.48388671875,
+          253.039306640625,
+          55.123046875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "canvas"
+        ],
+        "status": "REVIEW_REQUIRED",
+        "foreground": "#24333C",
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "id": "label-shield-type",
+        "text": "Solid sleeve",
+        "bounds": [
+          196.66845703125,
+          61.3505859375,
+          253.33154296875,
+          69.123046875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "canvas"
+        ],
+        "status": "REVIEW_REQUIRED",
+        "foreground": "#24333C",
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "id": "label-conductor",
+        "text": "Copper conductor",
+        "bounds": [
+          323.23583984375,
+          58.3505859375,
+          406.90771484375,
+          68.091796875
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "canvas"
+        ],
+        "status": "REVIEW_REQUIRED",
+        "foreground": "#24333C",
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "id": "label-insulation",
+        "text": "Polymer insulation",
+        "bounds": [
+          244.072021484375,
+          211.48388671875,
+          329.927978515625,
+          221.21484375
+        ],
+        "background": "#FFFFFF",
+        "background_sources": [
+          "canvas"
+        ],
+        "status": "REVIEW_REQUIRED",
+        "foreground": "#24333C",
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      }
+    ],
+    "findings": [
+      {
+        "level": "REVIEW_REQUIRED",
+        "check": "painted_text_contrast",
+        "object": "label-jacket",
+        "text": "Outer jacket",
+        "ratio": null,
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "level": "REVIEW_REQUIRED",
+        "check": "painted_text_contrast",
+        "object": "label-shield",
+        "text": "Metal shield",
+        "ratio": null,
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "level": "REVIEW_REQUIRED",
+        "check": "painted_text_contrast",
+        "object": "label-shield-type",
+        "text": "Solid sleeve",
+        "ratio": null,
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "level": "REVIEW_REQUIRED",
+        "check": "painted_text_contrast",
+        "object": "label-conductor",
+        "text": "Copper conductor",
+        "ratio": null,
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      },
+      {
+        "level": "REVIEW_REQUIRED",
+        "check": "painted_text_contrast",
+        "object": "label-insulation",
+        "text": "Polymer insulation",
+        "ratio": null,
+        "reason": "Background intersects unsupported or partial paint: jacket-surface, jacket-termination, shield-surface, shield-termination, insulation-surface, insulation-termination, conductor-surface, conductor-termination"
+      }
+    ],
+    "scope": "Measured ID-bearing plain text; declared canvas plus supported opaque rect interiors. Unknown/partial/later paint is review, never assumed white. 4.5:1 is an internal screen, not aesthetic approval."
+  },
+  "fonts": {
+    "normal": {
+      "family": "Arial",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    "bold": {
+      "family": "Arial",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    }
+  },
+  "scientific_review": "NOT_RUN",
+  "visual_review": "NOT_RUN",
+  "author_acceptance": false,
+  "limits": [
+    "Measures explicit untransformed text using the supplied matching font.",
+    "Only unfilled straight guides are checked, including auxiliary/dashed lines.",
+    "Dash gaps, z-order, painted backgrounds, curves and arbitrary SVG/CSS need visual review.",
+    "Owner regions are supplied by an editor; containment cannot establish scientific meaning."
+  ]
+}

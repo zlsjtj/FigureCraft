@@ -1,0 +1,87 @@
+{
+  "kind": "原创DEMO，新上下文生成",
+  "generation_skills": [
+    {
+      "relative_path": "PaperCraft/SKILL.md",
+      "sha256": "e0d69cc4453ca53a3597d286ed034ba192c2bbe165b6e531a0cb92bf7b0a231b"
+    },
+    {
+      "relative_path": "PaperCraft/references/reviewer-method.md",
+      "sha256": "aac908837c801517615cd66fd21c90aaed2647c54c14d60092f23854eb9cdea5"
+    },
+    {
+      "relative_path": "PaperCraft/references/dependencies.md",
+      "sha256": "d8a13248e63202cdebb10a0cf3957f607af27d0377b0acec87b3043b2e93446e"
+    },
+    {
+      "relative_path": "PaperCraft/references/story-and-main-figure.md",
+      "sha256": "6f5598d0b5354bcbefcc43be29a85627db020fab43bc0c29edb6288a4f0492b8"
+    },
+    {
+      "relative_path": "PaperCraft/references/result-pair-example.md",
+      "sha256": "b543790a035ccf5eb02728e71abcf45bea2a0bfa1ecdac2af994d6f2338265b6"
+    },
+    {
+      "relative_path": "PaperCraft/references/presentation-review.md",
+      "sha256": "3e99a9e6a4f4b77224e8e5cae4417a8eedff6dd71afb16cba4f68312950da6d5"
+    },
+    {
+      "relative_path": "PaperCraft/examples/heat-story/README.md",
+      "sha256": "484e31ed2effe3f859079975808fc387ec6c45f4a391c5efc5991bf1ab49fac3"
+    },
+    {
+      "relative_path": "PaperCraft/examples/heat-story/manuscript.md",
+      "sha256": "a76f7a6d126bfa3ee0787a9598e2085733e05883392b2fdd66e3f95d99ecdf19"
+    },
+    {
+      "relative_path": "PaperCraft/examples/replacement-story/README.md",
+      "sha256": "2d97474cc88d63471f7615460fbf9e241622fa56f81010b546b02d4cbb6d74b0"
+    },
+    {
+      "relative_path": "FigureCraft/SKILL.md",
+      "sha256": "ec5cdafe2f54caf0e0de833ded96288a3a95cd7d84f86c1bbae9e9fb3df6b800"
+    },
+    {
+      "relative_path": "FigureCraft/references/workflow.md",
+      "sha256": "441159ca28fd91554f96a483b0cadde396ef230185f4cb0a3fdb513522cfc5b1"
+    },
+    {
+      "relative_path": "FigureCraft/references/quality-and-acceptance.md",
+      "sha256": "e23c33b3fa377dd2a90a6ecc518ac36db3ec4aeeca4802e1dd61bfcf9d7436b2"
+    },
+    {
+      "relative_path": "FigureCraft/references/dependencies.md",
+      "sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f"
+    },
+    {
+      "relative_path": "FigureCraft/references/visual-explanation.md",
+      "sha256": "da485984c9aac94cec7df2481904bea440131faeaeab3fed3996d8713682223c"
+    },
+    {
+      "relative_path": "FigureCraft/references/drawing-and-depth.md",
+      "sha256": "76f7feb9163e471c6437957411aa2793dc1b9d70d7d7004690251604ca0f1645"
+    },
+    {
+      "relative_path": "FigureCraft/references/design-exploration.md",
+      "sha256": "2308b055296a33a7a26ccd654b6cac3c00e5084d3c13e269736a99b19d00a50a"
+    },
+    {
+      "relative_path": "FigureCraft/references/semantic-constraints.md",
+      "sha256": "b4332cf5226e5bf71886f0f4a7db65b7b69951aa08f1cd891a8c392fb5f3f4a9"
+    },
+    {
+      "relative_path": "FigureCraft/references/existing-svg-review.md",
+      "sha256": "e495998dc26b97b2e3656b0d142ea2aa23d598dacbddba855ec76cc3cc1cad09"
+    },
+    {
+      "relative_path": "FigureCraft/scripts/audit_svg_labels.py",
+      "sha256": "1a0b99936892a391e62a098c562fa6a67ae96278323f253cd561e1ee6cf720e4"
+    }
+  ],
+  "limitations": [
+    "本轮未设普通提示与旧技能平行组",
+    "没有真人接受",
+    "固定源码重建不同于新材料自然语言生成",
+    "reviewed/selected 为评语后修复，首轮产物另保留"
+  ]
+}

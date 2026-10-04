@@ -1,0 +1,36 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "<FigureCraft>/scripts/render_figure.py",
+    "<output>/figure_spec.json",
+    "--out",
+    "<output>/rendered",
+    "--font",
+    "<font>",
+    "--pdftoppm",
+    "<pdftoppm>",
+    "--placement-width-mm",
+    "160",
+    "--qa-views"
+  ],
+  "exit_code": 0,
+  "result": {
+    "output": "verification\\rebuilt-selected\\rendered",
+    "geometry_checks": "PASS",
+    "technical_status": "PASS",
+    "scientific_review_status": "REVIEW_REQUIRED",
+    "overall_status": "REVIEW_REQUIRED",
+    "placement": {
+      "status": "PASS",
+      "width_mm": 160.0,
+      "minimum_font_pt": 9.070866141732285,
+      "scope": "Declared scaled font sizes; inspect actual document pages for embedding effects"
+    },
+    "raster": "PASS",
+    "visual_review": "NOT_RUN"
+  },
+  "stderr": "",
+  "source_sha256": "a1b1536b562a36bf2efcef64e051ab1a74fcc70a51d875443198d690d907e8d3",
+  "packaging_only": true
+}

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="100mm" viewBox="0 0 453.5433070866142 283.46456692913387">
+<title>MosaicPair shared translation mechanism, constructed DEMO</title>
+<desc>One selected translation record for tile T5 is referenced by two separate resamplers. Schematic, not to scale.</desc>
+<rect id="canvas" data-role="decoration" x="0" y="0" width="453.5433070866142" height="283.46456692913387" fill="#FFFFFF" stroke="none" stroke-width="0.75"/>
+<text id="heading" data-role="label" x="13" y="17" font-family="Arial" font-weight="bold" font-size="11" text-anchor="start" fill="#20313D">One placement choice for a tile pair</text>
+<text id="demo" data-role="label" x="440.5433070866142" y="17" font-family="Arial" font-weight="normal" font-size="9" text-anchor="end" fill="#59636C">DEMO</text>
+<rect id="registration-evidence" data-role="A-registration-inputs" x="13" y="28" width="131" height="84" fill="#FAFCFD" stroke="#D8DFE4" stroke-width="0.65"/>
+<text id="input-a-label" data-role="label" x="23" y="42" font-family="Arial" font-weight="bold" font-size="9.5" text-anchor="start" fill="#236B8E">A tile</text>
+<text id="overlap-label" data-role="label" x="86" y="42" font-family="Arial" font-weight="normal" font-size="9" text-anchor="start" fill="#59636C">A overlap</text>
+<rect id="input-A-T5" data-role="tile-A" x="23" y="49" width="52" height="52" fill="#E6F0F5" stroke="#236B8E" stroke-width="1.1"/>
+<ellipse id="input-A-T5-stain-0" data-role="illustrative-stain" cx="41.72" cy="83.84" rx="3.12" ry="5.72" fill="#9CBECB" stroke="none" stroke-width="0.7"/>
+<ellipse id="input-A-T5-stain-1" data-role="illustrative-stain" cx="63.03999999999999" cy="69.02" rx="4.16" ry="2.86" fill="#9CBECB" stroke="none" stroke-width="0.7"/>
+<ellipse id="input-A-T5-stain-2" data-role="illustrative-stain" cx="59.14" cy="90.6" rx="4.94" ry="2.6" fill="#9CBECB" stroke="none" stroke-width="0.7"/>
+<polyline id="input-A-T5-fid-x" data-role="illustrative-fiducial" points="26.116666666666667,58.75 30.71666666666667,58.75" fill="none" stroke="#236B8E" stroke-width="0.9"/>
+<polyline id="input-A-T5-fid-y" data-role="illustrative-fiducial" points="28.416666666666668,56.45 28.416666666666668,61.05" fill="none" stroke="#236B8E" stroke-width="0.9"/>
+<rect id="A-positioned-overlap" data-role="tile-A" x="86" y="51" width="46" height="46" fill="#F4F6F7" stroke="#B9C7CE" stroke-width="1.1"/>
+<ellipse id="A-positioned-overlap-stain-0" data-role="illustrative-stain" cx="102.56" cy="81.82000000000001" rx="2.76" ry="5.06" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<ellipse id="A-positioned-overlap-stain-1" data-role="illustrative-stain" cx="121.42" cy="68.71000000000001" rx="3.68" ry="2.53" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<ellipse id="A-positioned-overlap-stain-2" data-role="illustrative-stain" cx="117.97" cy="87.8" rx="4.37" ry="2.3000000000000003" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<text id="input-b-label" data-role="label" x="377" y="42" font-family="Arial" font-weight="bold" font-size="9.5" text-anchor="start" fill="#86502A">B tile</text>
+<rect id="input-B-T5" data-role="tile-B" x="377" y="49" width="52" height="52" fill="#F6EBDF" stroke="#86502A" stroke-width="1.1"/>
+<ellipse id="input-B-T5-stain-0" data-role="illustrative-stain" cx="414.44" cy="77.86" rx="3.12" ry="2.34" fill="#D8B993" stroke="none" stroke-width="0.7"/>
+<ellipse id="input-B-T5-stain-1" data-role="illustrative-stain" cx="398.58" cy="89.56" rx="1.8200000000000003" ry="4.16" fill="#D8B993" stroke="none" stroke-width="0.7"/>
+<polyline id="input-B-T5-fid-x" data-role="illustrative-fiducial" points="380.1166666666667,58.75 384.7166666666667,58.75" fill="none" stroke="#86502A" stroke-width="0.9"/>
+<polyline id="input-B-T5-fid-y" data-role="illustrative-fiducial" points="382.4166666666667,56.45 382.4166666666667,61.05" fill="none" stroke="#86502A" stroke-width="0.9"/>
+<text id="T5a" data-role="label" x="69" y="62" font-family="Arial" font-weight="normal" font-size="9" text-anchor="end" fill="#236B8E">T5</text>
+<text id="T5b" data-role="label" x="423" y="62" font-family="Arial" font-weight="normal" font-size="9" text-anchor="end" fill="#86502A">T5</text>
+<rect id="phase-correlation" data-role="inherited-estimator" x="158" y="41" width="119" height="41" fill="#ECF1F4" stroke="none" stroke-width="0.75"/>
+<text id="phase-label" data-role="label" x="217.5" y="58" font-family="Arial" font-weight="bold" font-size="10" text-anchor="middle" fill="#20313D">Phase correlation</text>
+<text id="phase-inherited" data-role="label" x="217.5" y="73" font-family="Arial" font-weight="normal" font-size="8.5" text-anchor="middle" fill="#59636C">existing library</text>
+<polyline id="A-evidence-to-estimator" data-role="image-data" points="144,66 158,66" fill="none" stroke="#59636C" stroke-width="1"/>
+<polygon id="A-evidence-to-estimator-arrow" points="158,66 153.0,63.9 153.0,68.1" fill="#59636C"/>
+<rect id="stage-translation" data-role="fallback-source" x="296" y="41" width="68" height="41" fill="#F2F3F4" stroke="none" stroke-width="0.75"/>
+<text id="stage1" data-role="label" x="330" y="57" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#20313D">Stage-grid</text>
+<text id="stage2" data-role="label" x="330" y="71" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#20313D">translation</text>
+<polyline id="accepted-estimate" data-role="conditional-selection" points="217.5,82 217.5,127" fill="none" stroke="#20313D" stroke-width="1"/>
+<polygon id="accepted-estimate-arrow" points="217.5,127 219.6,122.0 215.4,122.0" fill="#20313D"/>
+<text id="score-gate" data-role="relation-label" data-relation="accepted-estimate" x="211" y="106" font-family="Arial" font-weight="normal" font-size="9" text-anchor="end" fill="#20313D">A score ≥ 0.8</text>
+<polyline id="fallback-selection" data-role="conditional-selection" points="363,82 363,115 272,115 272,127" fill="none" stroke="#59636C" stroke-width="0.9"/>
+<polygon id="fallback-selection-arrow" points="272,127 274.1,122.0 269.9,122.0" fill="#59636C"/>
+<text id="fallback-condition" data-role="relation-label" data-relation="fallback-selection" x="328" y="103" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#20313D">A score &lt; 0.8</text>
+<rect id="shared-record" data-role="single-immutable-record" x="162" y="127" width="128" height="42" fill="#ECF1F4" stroke="#455B69" stroke-width="1.2"/>
+<text id="record-value" data-role="label" x="226" y="144" font-family="Arial" font-weight="bold" font-size="10" text-anchor="middle" fill="#20313D">T5 : t = (84, 3) px</text>
+<text id="record-rule" data-role="label" x="226" y="160" font-family="Arial" font-weight="normal" font-size="8.5" text-anchor="middle" fill="#20313D">one immutable record</text>
+<rect id="resample-A" data-role="resampler-A" x="13" y="132" width="86" height="33" fill="#E6F0F5" stroke="none" stroke-width="0.75"/>
+<text id="resample-A-label" data-role="label" x="56" y="145" font-family="Arial" font-weight="normal" font-size="10" text-anchor="middle" fill="#236B8E">Resample A</text>
+<text id="mask-A-label" data-role="label" x="56" y="159" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#236B8E">+ A mask</text>
+<rect id="resample-B" data-role="resampler-B" x="355" y="132" width="86" height="33" fill="#F6EBDF" stroke="none" stroke-width="0.75"/>
+<text id="resample-B-label" data-role="label" x="398" y="145" font-family="Arial" font-weight="normal" font-size="10" text-anchor="middle" fill="#86502A">Resample B</text>
+<text id="mask-B-label" data-role="label" x="398" y="159" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#86502A">+ B mask</text>
+<polyline id="A-input-to-resampler" data-role="image-data" points="49,101 49,132" fill="none" stroke="#236B8E" stroke-width="1.2"/>
+<polygon id="A-input-to-resampler-arrow" points="49,132 51.1,127.0 46.9,127.0" fill="#236B8E"/>
+<polyline id="B-input-to-resampler" data-role="image-data" points="403,101 403,132" fill="none" stroke="#86502A" stroke-width="1.2"/>
+<polygon id="B-input-to-resampler-arrow" points="403,132 405.1,127.0 400.9,127.0" fill="#86502A"/>
+<polyline id="A-record-reference" data-role="shared-reference" points="162,148 99,148" fill="none" stroke="#455B69" stroke-width="1.5"/>
+<polyline id="B-record-reference" data-role="shared-reference" points="290,148 355,148" fill="none" stroke="#455B69" stroke-width="1.5"/>
+<text id="read-t-a" data-role="relation-label" data-relation="A-record-reference" x="130" y="142" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#20313D">read t</text>
+<text id="read-t-b" data-role="relation-label" data-relation="B-record-reference" x="322.5" y="142" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#20313D">read t</text>
+<rect id="mosaic-A" data-role="mosaic-A" x="13" y="198" width="142" height="59" fill="#FFFFFF" stroke="#D8DFE4" stroke-width="0.7"/>
+<rect id="old-tile-A" data-role="tile-A" x="22" y="201" width="52.8" height="52.8" fill="#F4F6F7" stroke="#B9C7CE" stroke-width="1.1"/>
+<ellipse id="old-tile-A-stain-0" data-role="illustrative-stain" cx="41.007999999999996" cy="236.376" rx="3.1679999999999997" ry="5.808" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<ellipse id="old-tile-A-stain-1" data-role="illustrative-stain" cx="62.65599999999999" cy="221.328" rx="4.224" ry="2.904" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<ellipse id="old-tile-A-stain-2" data-role="illustrative-stain" cx="58.69599999999999" cy="243.23999999999998" rx="5.016" ry="2.64" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<rect id="placed-T5-A" data-role="tile-A" x="68.2" y="202.65" width="52.8" height="52.8" fill="#E6F0F5" stroke="#236B8E" stroke-width="1.1"/>
+<ellipse id="placed-T5-A-stain-0" data-role="illustrative-stain" cx="87.20800000000001" cy="238.026" rx="3.1679999999999997" ry="5.808" fill="#9CBECB" stroke="none" stroke-width="0.7"/>
+<ellipse id="placed-T5-A-stain-1" data-role="illustrative-stain" cx="108.85600000000001" cy="222.978" rx="4.224" ry="2.904" fill="#9CBECB" stroke="none" stroke-width="0.7"/>
+<ellipse id="placed-T5-A-stain-2" data-role="illustrative-stain" cx="104.896" cy="244.89" rx="5.016" ry="2.64" fill="#9CBECB" stroke="none" stroke-width="0.7"/>
+<polyline id="placed-T5-A-fid-x" data-role="illustrative-fiducial" points="71.4,212.55 76.0,212.55" fill="none" stroke="#236B8E" stroke-width="0.9"/>
+<polyline id="placed-T5-A-fid-y" data-role="illustrative-fiducial" points="73.7,210.25 73.7,214.85000000000002" fill="none" stroke="#236B8E" stroke-width="0.9"/>
+<text id="placed-id-A" data-role="label" x="115" y="217" font-family="Arial" font-weight="normal" font-size="9" text-anchor="end" fill="#236B8E">T5</text>
+<polyline id="resample-to-mosaic-A" data-role="image-data" points="49,165 49,184 94.6,184 94.6,202.65" fill="none" stroke="#236B8E" stroke-width="1.2"/>
+<polygon id="resample-to-mosaic-A-arrow" points="94.6,202.65 96.69999999999999,197.65 92.5,197.65" fill="#236B8E"/>
+<text id="mosaic-label-A" data-role="label" x="84" y="271" font-family="Arial" font-weight="bold" font-size="10.5" text-anchor="middle" fill="#236B8E">Mosaic A</text>
+<rect id="mosaic-B" data-role="mosaic-B" x="299" y="198" width="142" height="59" fill="#FFFFFF" stroke="#D8DFE4" stroke-width="0.7"/>
+<rect id="old-tile-B" data-role="tile-B" x="308" y="201" width="52.8" height="52.8" fill="#F4F6F7" stroke="#B9C7CE" stroke-width="1.1"/>
+<ellipse id="old-tile-B-stain-0" data-role="illustrative-stain" cx="346.016" cy="230.304" rx="3.1679999999999997" ry="2.376" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<ellipse id="old-tile-B-stain-1" data-role="illustrative-stain" cx="329.91200000000003" cy="242.18399999999997" rx="1.848" ry="4.224" fill="#DCE3E6" stroke="none" stroke-width="0.7"/>
+<rect id="placed-T5-B" data-role="tile-B" x="354.2" y="202.65" width="52.8" height="52.8" fill="#F6EBDF" stroke="#86502A" stroke-width="1.1"/>
+<ellipse id="placed-T5-B-stain-0" data-role="illustrative-stain" cx="392.216" cy="231.954" rx="3.1679999999999997" ry="2.376" fill="#D8B993" stroke="none" stroke-width="0.7"/>
+<ellipse id="placed-T5-B-stain-1" data-role="illustrative-stain" cx="376.112" cy="243.834" rx="1.848" ry="4.224" fill="#D8B993" stroke="none" stroke-width="0.7"/>
+<polyline id="placed-T5-B-fid-x" data-role="illustrative-fiducial" points="357.4,212.55 362.0,212.55" fill="none" stroke="#86502A" stroke-width="0.9"/>
+<polyline id="placed-T5-B-fid-y" data-role="illustrative-fiducial" points="359.7,210.25 359.7,214.85000000000002" fill="none" stroke="#86502A" stroke-width="0.9"/>
+<text id="placed-id-B" data-role="label" x="401" y="217" font-family="Arial" font-weight="normal" font-size="9" text-anchor="end" fill="#86502A">T5</text>
+<polyline id="resample-to-mosaic-B" data-role="image-data" points="403,165 403,184 380.59999999999997,184 380.59999999999997,202.65" fill="none" stroke="#86502A" stroke-width="1.2"/>
+<polygon id="resample-to-mosaic-B-arrow" points="380.59999999999997,202.65 382.7,197.65 378.49999999999994,197.65" fill="#86502A"/>
+<text id="mosaic-label-B" data-role="label" x="370" y="271" font-family="Arial" font-weight="bold" font-size="10.5" text-anchor="middle" fill="#86502A">Mosaic B</text>
+<text id="map-title" data-role="label" x="227" y="204" font-family="Arial" font-weight="bold" font-size="9.5" text-anchor="middle" fill="#20313D">Same coordinate map</text>
+<text id="map-rule" data-role="label" x="227" y="221" font-family="Arial" font-weight="normal" font-size="10" text-anchor="middle" fill="#20313D">p → p + t[T5]</text>
+<text id="map-example" data-role="label" x="227" y="238" font-family="Arial" font-weight="normal" font-size="9" text-anchor="middle" fill="#20313D">(10, 18) → (94, 21)</text>
+<text id="scale-note" data-role="label" x="227" y="274" font-family="Arial" font-weight="normal" font-size="8.5" text-anchor="middle" fill="#59636C">Schematic, not to scale</text>
+</svg>

@@ -1,0 +1,117 @@
+{
+  "groove_far_bottom": {
+    "world": [
+      50,
+      -32,
+      -2
+    ],
+    "projected": [
+      29.425,
+      84.155
+    ],
+    "pixels": {
+      "before-figure": [
+        183,
+        196,
+        206
+      ],
+      "after-figure-v2": [
+        230,
+        237,
+        241
+      ]
+    }
+  },
+  "foot_far_bottom": {
+    "world": [
+      75,
+      -33,
+      -2
+    ],
+    "projected": [
+      39.325,
+      86.82249999999999
+    ],
+    "pixels": {
+      "before-figure": [
+        174,
+        113,
+        55
+      ],
+      "after-figure-v2": [
+        230,
+        237,
+        241
+      ]
+    }
+  },
+  "foot_near_hidden": {
+    "world": [
+      76.5,
+      -39,
+      -1.3228756555322954
+    ],
+    "projected": [
+      37.46875,
+      87.77220253001562
+    ],
+    "pixels": {
+      "before-figure": [
+        149,
+        103,
+        57
+      ],
+      "after-figure-v2": [
+        190,
+        204,
+        213
+      ]
+    }
+  },
+  "foot_near_visible": {
+    "world": [
+      75,
+      -39,
+      -1
+    ],
+    "projected": [
+      36.85,
+      87.455
+    ],
+    "pixels": {
+      "before-figure": [
+        219,
+        158,
+        86
+      ],
+      "after-figure-v2": [
+        219,
+        158,
+        86
+      ]
+    }
+  },
+  "foot_upper_visible": {
+    "world": [
+      75,
+      -39,
+      1
+    ],
+    "projected": [
+      36.85,
+      86.41
+    ],
+    "pixels": {
+      "before-figure": [
+        219,
+        158,
+        86
+      ],
+      "after-figure-v2": [
+        219,
+        158,
+        86
+      ]
+    }
+  }
+}

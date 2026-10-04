@@ -1,0 +1,39 @@
+{
+  "copied_source": "relocated-source",
+  "invocation_cwd": "<local-runtime>/skill-capability-20261003",
+  "all_identical": true,
+  "files": {
+    "figure.svg": {
+      "selected_sha256": "e7dd344083972f7a17d4ae41ee2f15dec3b11541bf70620f068978401c5e8727",
+      "relocated_sha256": "e7dd344083972f7a17d4ae41ee2f15dec3b11541bf70620f068978401c5e8727",
+      "identical": true
+    },
+    "figure.pdf": {
+      "selected_sha256": "3279dd2a74584f404f6c47c1c127ace54f29486d9f483207f3938aa9f12f5e70",
+      "relocated_sha256": "3279dd2a74584f404f6c47c1c127ace54f29486d9f483207f3938aa9f12f5e70",
+      "identical": true
+    },
+    "figure.png": {
+      "selected_sha256": "0c75f00fcf1162dfbe19ea07dfac0d3023a36cd16e9a8e39442a3aac58911bc8",
+      "relocated_sha256": "0c75f00fcf1162dfbe19ea07dfac0d3023a36cd16e9a8e39442a3aac58911bc8",
+      "identical": true
+    },
+    "figure-grayscale.png": {
+      "selected_sha256": "a4304950b35921575a1a8de51bda2a959e7eb317070dd468d3d4af29ae7080a6",
+      "relocated_sha256": "a4304950b35921575a1a8de51bda2a959e7eb317070dd468d3d4af29ae7080a6",
+      "identical": true
+    },
+    "figure-deuteranopia.png": {
+      "selected_sha256": "f34f6af446adfe8258ee2a693d483769d2e49fd8d7649fad0134e35b7fd0f007",
+      "relocated_sha256": "f34f6af446adfe8258ee2a693d483769d2e49fd8d7649fad0134e35b7fd0f007",
+      "identical": true
+    },
+    "scene.json": {
+      "selected_sha256": "4dc4f062a6632acc8837eea30b3ecb2d6a426c55c5c7f9a6d60fc12f97393567",
+      "relocated_sha256": "4dc4f062a6632acc8837eea30b3ecb2d6a426c55c5c7f9a6d60fc12f97393567",
+      "identical": true
+    }
+  },
+  "scope": "Fixed-source reconstruction, not fresh generation or independent review.",
+  "publication_note": "仅将本机绝对路径替换为可公开的位置说明；原始回执在维护者本地归档，数据与结果未改。"
+}

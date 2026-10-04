@@ -1,0 +1,9 @@
+{
+  "layout": "operation-focus",
+  "palette": {
+    "white":"#FFFFFF", "ink":"#213945", "muted":"#51636D", "edge":"#627782",
+    "shell":"#E3EAEE", "lid":"#CCD8DF", "ledge":"#A0B2BD", "mesh":"#7C929C", "meshfill":"#F7FAFB",
+    "bedA":"#ECE0BF", "bedB":"#D7E6ED", "grain":"#9AA9A9",
+    "seal":"#237C70", "flow":"#2D668A", "bypass":"#AC562E", "motion":"#237C70"
+  }
+}

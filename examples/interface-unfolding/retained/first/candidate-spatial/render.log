@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:/Users/15014/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin/pdftoppm.exe",
+    "-png",
+    "-r",
+    "200",
+    "-singlefile",
+    "E:\\PT-RVV\\RVV\\skill-refinement-20261003\\development\\figure\\edge-state\\first\\candidate-spatial\\figure.pdf",
+    "E:\\PT-RVV\\RVV\\skill-refinement-20261003\\development\\figure\\edge-state\\first\\candidate-spatial\\figure"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

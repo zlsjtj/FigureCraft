@@ -1,0 +1,73 @@
+{
+  "evidence": "constructed DEMO; after independent model review; delivery-only repair",
+  "width_mm": 160,
+  "height_mm": 100,
+  "scope": "one W1-west to W0-east interface",
+  "source_sha256": "01a7b6e1cc7a191880e2a95027dfa626523ba0912f4add39f8d652ab99d987b8",
+  "topology": {
+    "W0": "upper left",
+    "W1": "upper right",
+    "W2": "lower left",
+    "W3": "lower right",
+    "diagonal_exchange": false
+  },
+  "view_transform": {
+    "whole_inset": "source topology unchanged",
+    "consumer_detail": "180 degree rotation, declared inside figure",
+    "main_layout": "unfolded by use; no physical layout or packet route"
+  },
+  "states": {
+    "W0_required": [
+      "e",
+      17
+    ],
+    "slot0": {
+      "ready": true,
+      "epoch": "e",
+      "step": 17,
+      "live_until": "consumer release"
+    },
+    "slot1": "free",
+    "W1": "preparing 18",
+    "late_queued_tag": [
+      "e",
+      16
+    ]
+  },
+  "relations": [
+    "W1 source values copied into incoming slot",
+    "ready matching slot supplies ghost copy",
+    "ghost values used by W0 boundary update17",
+    "release acknowledges occupied slot after use",
+    "free slot may receive step18 when ready",
+    "both slots live implies producer waits"
+  ],
+  "not_claimed": [
+    "actual cell count",
+    "physical route",
+    "diagonal exchange",
+    "obsolete-packet discard policy",
+    "unbounded overlap",
+    "optimal slot count",
+    "performance"
+  ],
+  "technical_status": "PASS",
+  "scientific_status": "SOURCE_CHECKED_BY_GENERATING_AGENT",
+  "visual_status": "REVIEWED_BY_GENERATING_AGENT",
+  "author_acceptance": "NOT_RUN",
+  "overall_status": "DEVELOPMENT_CANDIDATE",
+  "review_repairs": [
+    "queued tag explicitly named at the match check",
+    "release starts at the used gold boundary",
+    "ghost data and its use arrow remain blue; purple is release only"
+  ],
+  "release_origin_scene_pt": [
+    362.5,
+    198
+  ],
+  "colors": {
+    "data_copy_and_use": "#356FA0",
+    "receiving_boundary": "#E3BD70",
+    "release_only": "#75688E"
+  }
+}

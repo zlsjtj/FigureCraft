@@ -1,0 +1,20 @@
+{
+  "csv_byte_preserved": true,
+  "rows": 48,
+  "plotted_points": 96,
+  "all_y_equal_source": true,
+  "article_byte_preserved": true,
+  "captions_exactly_two": true,
+  "result_prose_only_in_article": true,
+  "min_marker_center_distance_pt": 3.2907220887202584,
+  "maximum_marker_enclosing_diameter_pt": 3.196,
+  "pin_plan_center": [
+    123.5,
+    12.9
+  ],
+  "pin_plan_radius": 2,
+  "leader_near_endpoint": [
+    125.5,
+    12.9
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "svg_sha256": "72cd969f80138d1d174e10037a1d7031de1a12b6160345b37f187e3153925d55",
+  "method": "Invert each exported scatter-use y using the native linear axis transform; 1e-5 pt tolerance",
+  "values_checked": 96,
+  "coordinate_failures": 0,
+  "records": [
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 148.762205,
+      "expected_svg_y": 148.76220472440946,
+      "source_value": "18"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 144.025197,
+      "expected_svg_y": 144.0251968503937,
+      "source_value": "22"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 145.209449,
+      "expected_svg_y": 145.20944881889764,
+      "source_value": "21"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 140.472441,
+      "expected_svg_y": 140.4724409448819,
+      "source_value": "25"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 147.577953,
+      "expected_svg_y": 147.57795275590553,
+      "source_value": "19"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 141.656693,
+      "expected_svg_y": 141.65669291338583,
+      "source_value": "24"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 97.83937,
+      "expected_svg_y": 97.83937007874016,
+      "source_value": "61"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 83.628346,
+      "expected_svg_y": 83.62834645669292,
+      "source_value": "73"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 89.549606,
+      "expected_svg_y": 89.54960629921261,
+      "source_value": "68"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 74.154331,
+      "expected_svg_y": 74.15433070866142,
+      "source_value": "81"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 94.286614,
+      "expected_svg_y": 94.28661417322834,
+      "source_value": "64"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 78.891339,
+      "expected_svg_y": 78.89133858267716,
+      "source_value": "77"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 155.867717,
+      "expected_svg_y": 155.8677165354331,
+      "source_value": "12"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 152.314961,
+      "expected_svg_y": 152.31496062992127,
+      "source_value": "15"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 153.499213,
+      "expected_svg_y": 153.4992125984252,
+      "source_value": "14"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 157.051969,
+      "expected_svg_y": 157.05196850393702,
+      "source_value": "11"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 149.946457,
+      "expected_svg_y": 149.9464566929134,
+      "source_value": "17"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 154.683465,
+      "expected_svg_y": 154.68346456692916,
+      "source_value": "13"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 151.130709,
+      "expected_svg_y": 151.13070866141732,
+      "source_value": "16"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 146.393701,
+      "expected_svg_y": 146.39370078740157,
+      "source_value": "20"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 148.762205,
+      "expected_svg_y": 148.76220472440946,
+      "source_value": "18"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 144.025197,
+      "expected_svg_y": 144.0251968503937,
+      "source_value": "22"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 149.946457,
+      "expected_svg_y": 149.9464566929134,
+      "source_value": "17"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 145.209449,
+      "expected_svg_y": 145.20944881889764,
+      "source_value": "21"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 158.23622,
+      "expected_svg_y": 158.23622047244095,
+      "source_value": "10"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 154.683465,
+      "expected_svg_y": 154.68346456692916,
+      "source_value": "13"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 157.051969,
+      "expected_svg_y": 157.05196850393702,
+      "source_value": "11"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 153.499213,
+      "expected_svg_y": 153.4992125984252,
+      "source_value": "14"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 155.867717,
+      "expected_svg_y": 155.8677165354331,
+      "source_value": "12"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 152.314961,
+      "expected_svg_y": 152.31496062992127,
+      "source_value": "15"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 149.946457,
+      "expected_svg_y": 149.9464566929134,
+      "source_value": "17"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 144.025197,
+      "expected_svg_y": 144.0251968503937,
+      "source_value": "22"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 147.577953,
+      "expected_svg_y": 147.57795275590553,
+      "source_value": "19"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 141.656693,
+      "expected_svg_y": 141.65669291338583,
+      "source_value": "24"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 148.762205,
+      "expected_svg_y": 148.76220472440946,
+      "source_value": "18"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 145.209449,
+      "expected_svg_y": 145.20944881889764,
+      "source_value": "21"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 142.840945,
+      "expected_svg_y": 142.84094488188978,
+      "source_value": "23"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 138.103937,
+      "expected_svg_y": 138.10393700787404,
+      "source_value": "27"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 140.472441,
+      "expected_svg_y": 140.4724409448819,
+      "source_value": "25"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 136.919685,
+      "expected_svg_y": 136.91968503937008,
+      "source_value": "28"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 144.025197,
+      "expected_svg_y": 144.0251968503937,
+      "source_value": "22"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 139.288189,
+      "expected_svg_y": 139.28818897637797,
+      "source_value": "26"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 106.129134,
+      "expected_svg_y": 106.12913385826772,
+      "source_value": "54"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 91.91811,
+      "expected_svg_y": 91.91811023622049,
+      "source_value": "66"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 99.023622,
+      "expected_svg_y": 99.0236220472441,
+      "source_value": "60"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 87.181102,
+      "expected_svg_y": 87.18110236220473,
+      "source_value": "70"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 102.576378,
+      "expected_svg_y": 102.57637795275592,
+      "source_value": "57"
+    },
+    {
+      "metric": "cooled_drift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 94.286614,
+      "expected_svg_y": 94.28661417322834,
+      "source_value": "64"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 160.086614,
+      "expected_svg_y": 160.08661417322836,
+      "source_value": "3"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 160.086614,
+      "expected_svg_y": 160.08661417322836,
+      "source_value": "3"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 150.094488,
+      "expected_svg_y": 150.09448818897638,
+      "source_value": "6"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 146.76378,
+      "expected_svg_y": 146.76377952755905,
+      "source_value": "7"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 150.094488,
+      "expected_svg_y": 150.09448818897638,
+      "source_value": "6"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "A",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 150.094488,
+      "expected_svg_y": 150.09448818897638,
+      "source_value": "6"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 133.440945,
+      "expected_svg_y": 133.44094488188978,
+      "source_value": "11"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 126.779528,
+      "expected_svg_y": 126.77952755905513,
+      "source_value": "13"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 136.771654,
+      "expected_svg_y": 136.77165354330708,
+      "source_value": "10"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 130.110236,
+      "expected_svg_y": 130.11023622047244,
+      "source_value": "12"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 120.11811,
+      "expected_svg_y": 120.11811023622047,
+      "source_value": "15"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 130.110236,
+      "expected_svg_y": 130.11023622047244,
+      "source_value": "12"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 100.133858,
+      "expected_svg_y": 100.13385826771655,
+      "source_value": "21"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 83.480315,
+      "expected_svg_y": 83.48031496062993,
+      "source_value": "26"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 93.472441,
+      "expected_svg_y": 93.4724409448819,
+      "source_value": "23"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 76.818898,
+      "expected_svg_y": 76.81889763779529,
+      "source_value": "28"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 96.80315,
+      "expected_svg_y": 96.80314960629921,
+      "source_value": "22"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "B",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 86.811024,
+      "expected_svg_y": 86.81102362204724,
+      "source_value": "25"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 160.086614,
+      "expected_svg_y": 160.08661417322836,
+      "source_value": "3"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 160.086614,
+      "expected_svg_y": 160.08661417322836,
+      "source_value": "3"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 150.094488,
+      "expected_svg_y": 150.09448818897638,
+      "source_value": "6"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "C",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "1",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "2",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "3",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "4",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "5",
+      "observed_svg_y": 156.755906,
+      "expected_svg_y": 156.75590551181102,
+      "source_value": "4"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T1",
+      "installation": "6",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "1",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "2",
+      "observed_svg_y": 150.094488,
+      "expected_svg_y": 150.09448818897638,
+      "source_value": "6"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "3",
+      "observed_svg_y": 153.425197,
+      "expected_svg_y": 153.42519685039372,
+      "source_value": "5"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "4",
+      "observed_svg_y": 146.76378,
+      "expected_svg_y": 146.76377952755905,
+      "source_value": "7"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "5",
+      "observed_svg_y": 150.094488,
+      "expected_svg_y": 150.09448818897638,
+      "source_value": "6"
+    },
+    {
+      "metric": "hot_lift_max_um",
+      "configuration": "D",
+      "schedule": "T2",
+      "installation": "6",
+      "observed_svg_y": 150.094488,
+      "expected_svg_y": 150.09448818897638,
+      "source_value": "6"
+    }
+  ]
+}

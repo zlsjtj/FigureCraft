@@ -1,0 +1,146 @@
+[
+  {
+    "schedule": "T1",
+    "configuration": "A",
+    "installations": 6,
+    "qualifying_installations": 6,
+    "cooled_drift_max_um_range": [
+      18.0,
+      25.0
+    ],
+    "hot_lift_max_um_range": [
+      3.0,
+      5.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.03,
+      0.04
+    ]
+  },
+  {
+    "schedule": "T1",
+    "configuration": "B",
+    "installations": 6,
+    "qualifying_installations": 0,
+    "cooled_drift_max_um_range": [
+      11.0,
+      17.0
+    ],
+    "hot_lift_max_um_range": [
+      10.0,
+      15.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.1,
+      0.12
+    ]
+  },
+  {
+    "schedule": "T1",
+    "configuration": "C",
+    "installations": 6,
+    "qualifying_installations": 6,
+    "cooled_drift_max_um_range": [
+      10.0,
+      15.0
+    ],
+    "hot_lift_max_um_range": [
+      3.0,
+      5.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.1,
+      0.12
+    ]
+  },
+  {
+    "schedule": "T1",
+    "configuration": "D",
+    "installations": 6,
+    "qualifying_installations": 6,
+    "cooled_drift_max_um_range": [
+      22.0,
+      28.0
+    ],
+    "hot_lift_max_um_range": [
+      4.0,
+      5.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.02,
+      0.03
+    ]
+  },
+  {
+    "schedule": "T2",
+    "configuration": "A",
+    "installations": 6,
+    "qualifying_installations": 0,
+    "cooled_drift_max_um_range": [
+      61.0,
+      81.0
+    ],
+    "hot_lift_max_um_range": [
+      5.0,
+      7.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.05,
+      0.07
+    ]
+  },
+  {
+    "schedule": "T2",
+    "configuration": "B",
+    "installations": 6,
+    "qualifying_installations": 0,
+    "cooled_drift_max_um_range": [
+      16.0,
+      22.0
+    ],
+    "hot_lift_max_um_range": [
+      21.0,
+      28.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.22,
+      0.25
+    ]
+  },
+  {
+    "schedule": "T2",
+    "configuration": "C",
+    "installations": 6,
+    "qualifying_installations": 6,
+    "cooled_drift_max_um_range": [
+      17.0,
+      24.0
+    ],
+    "hot_lift_max_um_range": [
+      4.0,
+      6.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.22,
+      0.25
+    ]
+  },
+  {
+    "schedule": "T2",
+    "configuration": "D",
+    "installations": 6,
+    "qualifying_installations": 0,
+    "cooled_drift_max_um_range": [
+      54.0,
+      70.0
+    ],
+    "hot_lift_max_um_range": [
+      5.0,
+      7.0
+    ],
+    "hot_axial_travel_median_mm_range": [
+      0.04,
+      0.06
+    ]
+  }
+]

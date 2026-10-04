@@ -1,0 +1,47 @@
+{
+  "data_rows": 48,
+  "unique_installations": 48,
+  "csv_preserved_byte_for_byte": true,
+  "figures": [
+    {
+      "name": "figure1",
+      "svg_text_nodes": 19,
+      "svg_embedded_images": 0,
+      "pdf_pages": 1,
+      "pdf_size_mm": [
+        160.0,
+        100.0
+      ],
+      "pdf_extracted_text": "a  C: assembled holder DEMO\nRound datum\n+ seating washer\nT wo surface fiducials\nReleasable leaf\nbeside the slot\nSupport at x = 8 mm x = 52 mm\nUnsupported span\nb  Before heating\nCenter pin → seat datum\nApply leaf → remove jig\nVerify travel clearance\nJig absent during cycling\nc  Same right slot, top view\nLeaf\n±0.40 mm along x\nPin",
+      "png_pixels": [
+        1889,
+        1181
+      ],
+      "expected_size_mm": [
+        160,
+        100
+      ]
+    },
+    {
+      "name": "figure2",
+      "svg_text_nodes": 27,
+      "svg_embedded_images": 0,
+      "pdf_pages": 1,
+      "pdf_size_mm": [
+        160.0,
+        80.0
+      ],
+      "pdf_extracted_text": "A B C D\n0\n30\n60\n90\nLimit 30\na  Cooled drift (µm)\nA B C D\n0\n8\n16\n24\n32\nLimit 8\nb  Hot lift (µm)\nDEMO · six installations per configuration and schedule\nBoth criteria + no fracture:\nT1  A 6/6 · B 0/6 · C 6/6 · D 6/6 T2  A 0/6 · B 0/6 · C 6/6 · D 0/6\nT1: 25–80–25 °C T2: 25–140–25 °C",
+      "png_pixels": [
+        1889,
+        944
+      ],
+      "expected_size_mm": [
+        160,
+        80
+      ]
+    }
+  ],
+  "article_word_count": 942,
+  "word_count_rule": "All article text including headings and DEMO notice; excludes image markup and standalone Figure captions. Hyphenated or dash-linked tokens count as one."
+}

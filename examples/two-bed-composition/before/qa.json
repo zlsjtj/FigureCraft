@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "status_meaning": "Backward-compatible alias of technical_status; use overall_status for readiness",
+  "technical_status": "PASS",
+  "scientific_review_status": "REVIEW_REQUIRED",
+  "visual_review_status": "REVIEW_REQUIRED",
+  "overall_status": "REVIEW_REQUIRED",
+  "scope": "Exact export hashes; emitted-object geometry and font metrics, declared-background contrast, PDF dimensions/text. Not a general rendered collision detector.",
+  "figure_id": "figure1",
+  "findings": [],
+  "semantic_constraints": {
+    "status": "PASS",
+    "scope": "Declared object sets/states and explicit endpoint/triangle geometry only; author meaning remains unverified",
+    "object_counts": [
+      {
+        "name": "R-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "R-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "R-upper-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "R-lower-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-upper-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "name": "S-lower-tray",
+        "status": "PASS",
+        "findings": []
+      }
+    ],
+    "directed_relations": [
+      {
+        "id": "R-feed",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-through-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-through-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-outlet",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "R-bypass",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-feed",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-through-A",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-through-B",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "S-outlet",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "lift-upper-tray",
+        "status": "PASS",
+        "findings": []
+      },
+      {
+        "id": "insert-upper-tray",
+        "status": "PASS",
+        "findings": []
+      }
+    ],
+    "count_scope": "DECLARED",
+    "findings": []
+  },
+  "placement": {
+    "status": "PASS",
+    "width_mm": 160,
+    "minimum_font_pt": 8.56692913385827,
+    "scope": "Declared scaled font sizes; inspect actual document pages for embedding effects"
+  },
+  "checks": {
+    "glyph_coverage": "PASS",
+    "SVG_parse": "PASS",
+    "PDF": "PASS",
+    "declared_object_counts": "PASS",
+    "directed_relations": "PASS",
+    "placement_size": "PASS",
+    "raster_export": "PASS",
+    "curved_path_collisions": "NOT_AUDITABLE",
+    "generic_PDF_collisions": "NOT_RUN",
+    "scientific_meaning": "REVIEW_REQUIRED",
+    "visual_quality": "REVIEW_REQUIRED",
+    "physical_print_or_all_displays": "NOT_RUN"
+  },
+  "author_acceptance": false
+}

@@ -1,0 +1,1 @@
+Schematic of one layered cable with a stepped exposed end. The outer jacket, solid metal shield sleeve, and polymer insulation terminate successively, leaving a short tip of the solid copper conductor. The concentric layers remain continuous toward the intact cable at left. Illustrative geometry; not to scale.

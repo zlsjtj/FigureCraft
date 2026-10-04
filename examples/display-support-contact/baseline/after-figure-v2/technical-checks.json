@@ -1,0 +1,244 @@
+{
+  "svg_xml": "parsed",
+  "svg_images": 0,
+  "pdf_pages": 1,
+  "pdf_mm": [
+    159.99999749999998,
+    98.99999249999999
+  ],
+  "png_pixels": [
+    1890,
+    1170
+  ],
+  "min_font_pt": 8.2,
+  "text_out_of_bounds": [],
+  "pdf_text": "Assembly \u00b7 S2\nSide profiles\nPanel\nStay\nBase\nH\nP\n S1\nS2\nS3\n\u03b8 = 61.28\u00b0\nS1\n78.46\u00b0\nS2\n61.28\u00b0\nS3\n43.53\u00b0\nR \u00b7 held\n90.00\u00b0\nSynthetic geometry \u00b7 DEMO\n",
+  "labels": [
+    {
+      "id": "label-1",
+      "text": "Assembly \u00b7 S2",
+      "pt": 10.5,
+      "bounds": [
+        4.0,
+        2.295833333333334,
+        29.32326049804687,
+        6.2
+      ]
+    },
+    {
+      "id": "label-2",
+      "text": "Side profiles",
+      "pt": 10.5,
+      "bounds": [
+        102.0,
+        2.295833333333334,
+        124.23042602539063,
+        6.2
+      ]
+    },
+    {
+      "id": "label-86",
+      "text": "Panel",
+      "pt": 10.5,
+      "bounds": [
+        4.0,
+        22.295833333333334,
+        13.47384033203125,
+        26.2
+      ]
+    },
+    {
+      "id": "label-88",
+      "text": "Stay",
+      "pt": 10.5,
+      "bounds": [
+        57.0,
+        50.295833333333334,
+        64.41195068359374,
+        54.2
+      ]
+    },
+    {
+      "id": "label-90",
+      "text": "Base",
+      "pt": 10.5,
+      "bounds": [
+        72.0,
+        85.29583333333333,
+        80.4428955078125,
+        89.2
+      ]
+    },
+    {
+      "id": "label-92",
+      "text": "H",
+      "pt": 9.5,
+      "bounds": [
+        3.8,
+        72.64861111111111,
+        6.220265706380208,
+        76.2
+      ]
+    },
+    {
+      "id": "label-93",
+      "text": "P",
+      "pt": 9.5,
+      "bounds": [
+        12.0,
+        49.14861111111111,
+        14.235350206163194,
+        52.7
+      ]
+    },
+    {
+      "id": "groove-label-94",
+      "text": "S1",
+      "pt": 8.2,
+      "bounds": [
+        25.155857340494794,
+        87.25722222222223,
+        28.69414265950521,
+        90.35000000000001
+      ]
+    },
+    {
+      "id": "groove-label-95",
+      "text": "S2",
+      "pt": 8.2,
+      "bounds": [
+        35.46835734049479,
+        89.73222222222222,
+        39.006642659505204,
+        92.825
+      ]
+    },
+    {
+      "id": "groove-label-96",
+      "text": "S3",
+      "pt": 8.2,
+      "bounds": [
+        45.78085734049479,
+        92.20722222222221,
+        49.319142659505204,
+        95.3
+      ]
+    },
+    {
+      "id": "label-97",
+      "text": "\u03b8 = 61.28\u00b0",
+      "pt": 9.5,
+      "bounds": [
+        5.0,
+        8.648611111111112,
+        20.410170491536455,
+        12.2
+      ]
+    },
+    {
+      "id": "state-label-98",
+      "text": "S1",
+      "pt": 9.5,
+      "bounds": [
+        102.0,
+        11.648611111111112,
+        106.09923299153645,
+        15.2
+      ]
+    },
+    {
+      "id": "angle-label-99",
+      "text": "78.46\u00b0",
+      "pt": 9,
+      "bounds": [
+        102.0,
+        16.825,
+        111.21494140625,
+        20.2
+      ]
+    },
+    {
+      "id": "state-label-106",
+      "text": "S2",
+      "pt": 9.5,
+      "bounds": [
+        132.0,
+        11.648611111111112,
+        136.09923299153647,
+        15.2
+      ]
+    },
+    {
+      "id": "angle-label-107",
+      "text": "61.28\u00b0",
+      "pt": 9,
+      "bounds": [
+        132.0,
+        16.825,
+        141.21494140625,
+        20.2
+      ]
+    },
+    {
+      "id": "state-label-114",
+      "text": "S3",
+      "pt": 9.5,
+      "bounds": [
+        102.0,
+        52.64861111111111,
+        106.09923299153645,
+        56.2
+      ]
+    },
+    {
+      "id": "angle-label-115",
+      "text": "43.53\u00b0",
+      "pt": 9,
+      "bounds": [
+        102.0,
+        57.825,
+        111.21494140625,
+        61.2
+      ]
+    },
+    {
+      "id": "state-label-122",
+      "text": "R \u00b7 held",
+      "pt": 9.5,
+      "bounds": [
+        132.0,
+        52.64861111111111,
+        144.28788045247396,
+        56.2
+      ]
+    },
+    {
+      "id": "angle-label-123",
+      "text": "90.00\u00b0",
+      "pt": 9,
+      "bounds": [
+        132.0,
+        57.825,
+        141.21494140625,
+        61.2
+      ]
+    },
+    {
+      "id": "provenance-label-131",
+      "text": "Synthetic geometry \u00b7 DEMO",
+      "pt": 8.2,
+      "bounds": [
+        101.0,
+        94.10722222222222,
+        137.0099983723958,
+        97.2
+      ]
+    }
+  ],
+  "render_returncode": 0,
+  "limitations": [
+    "No automatic complex-surface occlusion or scientific mechanism validator",
+    "No actual-size Word integration in this subtask",
+    "CVD output is an approximate single-condition screen preview"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "kind": "PORTABLE_PACKAGING_REBUILD_NOT_NEW_GENERATION",
+  "input_bytes_preserved": true,
+  "png_pixel_equal": true,
+  "png_size_px": [
+    1890,
+    1176
+  ],
+  "png_sha256": "ef9e150a0dda3276eb06bfaef73edcf6affb4fc7036feeee0b1188a2e5a692c5",
+  "pdf_page_count_equal": true,
+  "pdf_page_size_equal": true,
+  "pdf_text_equal": true,
+  "pdf_drawing_stream_equal": true,
+  "pdf_sha256": "4bd149dcbcaaf523d00324c8c0f6ca1dfc21811f757ff12df407d085935bfd13",
+  "pdf_byte_identity_required": false,
+  "pdf_note": "Creation timestamps and document IDs are metadata, not drawing content.",
+  "technical_status": "PASS",
+  "author_acceptance": false,
+  "python_version": "3.12.14",
+  "actual_skill_hashes": {
+    "SKILL.md": "1b318e0a6d30db3e06cbd0ddaa78b26a724d038dc3147f99b7319aaba255f1f9",
+    "references/drawing-and-depth.md": "cfca65c5f9b2ccb73377ea06ae8930b3a26c8146b9fcdf7d69cb3d45200ba09c",
+    "scripts/render_figure.py": "66f27b6868ccaef3e07e4ae4db4e3572d2476e3bad8b46be903501d1ac079426",
+    "scripts/figure_core.py": "bccd633052a3731126c11b4910197ca16f9dbcb7d686375aed8a58b7dc2033c5",
+    "scripts/relation_components.py": "9c239d1c9db16311a58dfa7769df13fdbc265b9e6ebe82f3d944b9ba34f44d01"
+  },
+  "packaging_changes_only": [
+    "relative default input/baseline paths",
+    "example-root source references",
+    "public receipts without host absolute paths"
+  ]
+}

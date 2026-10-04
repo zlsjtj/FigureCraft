@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="100mm" viewBox="0 0 453.5433070866142 283.46456692913387">
+<title>Constructed DEMO</title>
+<text id="fselected-000" x="432.5433070866142" y="53" font-family="Arial" font-size="11" font-weight="bold" fill="#243841" text-anchor="end">W1</text>
+<text id="fselected-001" x="304.5433070866142" y="53" font-family="Arial" font-size="11" font-weight="bold" fill="#243841" text-anchor="end">W0 requires (e, 17)</text>
+<rect id="fselected-002" fill="#F9FBFB" stroke="#CFDADE" stroke-width="0.75" x="16.54330708661422" y="64" width="293" height="141"/>
+<text id="fselected-003" x="355.5433070866142" y="82" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="start">source edge</text>
+<rect id="fselected-004" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.65" x="355.5433070866142" y="97" width="77" height="67"/>
+<line id="fselected-005" x1="413.2933070866142" y1="97" x2="413.2933070866142" y2="164" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-006" x1="394.0433070866142" y1="97" x2="394.0433070866142" y2="164" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-007" x1="374.7933070866142" y1="97" x2="374.7933070866142" y2="164" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-008" x1="432.5433070866142" y1="113.75" x2="355.5433070866142" y2="113.75" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-009" x1="432.5433070866142" y1="130.5" x2="355.5433070866142" y2="130.5" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-010" x1="432.5433070866142" y1="147.25" x2="355.5433070866142" y2="147.25" stroke="#CFDADE" stroke-width="0.55"/>
+<rect id="fselected-011" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="355.5433070866142" y="97" width="19.25" height="67"/>
+<line id="fselected-012" x1="374.7933070866142" y1="113.75" x2="355.5433070866142" y2="113.75" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-013" x1="374.7933070866142" y1="130.5" x2="355.5433070866142" y2="130.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-014" x1="374.7933070866142" y1="147.25" x2="355.5433070866142" y2="147.25" stroke="#087F82" stroke-width="0.55"/>
+<text id="fselected-015" x="296.5433070866142" y="82" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="end">incoming slots</text>
+<rect id="fselected-016" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="185.54330708661422" y="95" width="111" height="35"/>
+<rect id="fselected-017" fill="#E8F4F2" stroke="#087F82" stroke-width="0.95" x="282.5433070866142" y="100" width="9" height="25"/>
+<line id="fselected-018" x1="291.5433070866142" y1="106.25" x2="282.5433070866142" y2="106.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-019" x1="291.5433070866142" y1="112.5" x2="282.5433070866142" y2="112.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-020" x1="291.5433070866142" y1="118.75" x2="282.5433070866142" y2="118.75" stroke="#087F82" stroke-width="0.55"/>
+<text id="fselected-021" x="274.5433070866142" y="117" font-family="Arial" font-size="10" font-weight="bold" fill="#096F72" text-anchor="end">(e, 17) READY</text>
+<rect id="fselected-022" fill="#FFFFFF" stroke="#61727A" stroke-width="0.75" x="185.54330708661422" y="152" width="111" height="35"/>
+<text id="fselected-023" x="241.04330708661422" y="174" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="middle">free slot</text>
+<text id="fselected-024" x="133.54330708661422" y="82" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="middle">ghost</text>
+<rect id="fselected-025" fill="#E8F4F2" stroke="#087F82" stroke-width="0.95" x="127.54330708661422" y="97" width="12" height="67"/>
+<line id="fselected-026" x1="139.54330708661422" y1="113.75" x2="127.54330708661422" y2="113.75" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-027" x1="139.54330708661422" y1="130.5" x2="127.54330708661422" y2="130.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-028" x1="139.54330708661422" y1="147.25" x2="127.54330708661422" y2="147.25" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fselected-029" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.65" x="28.54330708661422" y="97" width="86" height="67"/>
+<line id="fselected-030" x1="93.04330708661422" y1="97" x2="93.04330708661422" y2="164" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-031" x1="71.54330708661422" y1="97" x2="71.54330708661422" y2="164" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-032" x1="50.04330708661422" y1="97" x2="50.04330708661422" y2="164" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-033" x1="114.54330708661422" y1="113.75" x2="28.54330708661422" y2="113.75" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-034" x1="114.54330708661422" y1="130.5" x2="28.54330708661422" y2="130.5" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fselected-035" x1="114.54330708661422" y1="147.25" x2="28.54330708661422" y2="147.25" stroke="#CFDADE" stroke-width="0.55"/>
+<rect id="fselected-036" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="93.04330708661422" y="97" width="21.5" height="67"/>
+<line id="fselected-037" x1="114.54330708661422" y1="113.75" x2="93.04330708661422" y2="113.75" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-038" x1="114.54330708661422" y1="130.5" x2="93.04330708661422" y2="130.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fselected-039" x1="114.54330708661422" y1="147.25" x2="93.04330708661422" y2="147.25" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fselected-040" fill="#FFFFFF" stroke="none" stroke-width="0.7" x="33.54330708661422" y="108" width="65" height="32"/>
+<text id="fselected-041" x="65.54330708661422" y="120" font-family="Arial" font-size="9.5" font-weight="bold" fill="#243841" text-anchor="middle">boundary</text>
+<text id="fselected-042" x="65.54330708661422" y="134" font-family="Arial" font-size="9.5" font-weight="bold" fill="#243841" text-anchor="middle">update 17</text>
+<line id="fselected-043" x1="352.5433070866142" y1="112" x2="300.5433070866142" y2="112" stroke="#087F82" stroke-width="1.2"/>
+<polygon id="fselected-044" fill="#087F82" stroke="none" stroke-width="0.8" points="300.5433070866142,112 305.5433070866142,109.6 305.5433070866142,114.4"/>
+<text id="fselected-045" x="327.5433070866142" y="103" font-family="Arial" font-size="9.5" font-weight="normal" fill="#087F82" text-anchor="middle">copy 17</text>
+<line id="fselected-046" x1="182.54330708661422" y1="112" x2="143.54330708661422" y2="112" stroke="#087F82" stroke-width="1.2"/>
+<polygon id="fselected-047" fill="#087F82" stroke="none" stroke-width="0.8" points="143.54330708661422,112 148.54330708661422,109.6 148.54330708661422,114.4"/>
+<text id="fselected-048" x="162.54330708661422" y="102" font-family="Arial" font-size="9.5" font-weight="normal" fill="#087F82" text-anchor="middle">match</text>
+<line id="fselected-049" x1="129.54330708661422" y1="151" x2="109.54330708661422" y2="151" stroke="#087F82" stroke-width="1.1"/>
+<polygon id="fselected-050" fill="#087F82" stroke="none" stroke-width="0.8" points="109.54330708661422,151 114.54330708661422,148.6 114.54330708661422,153.4"/>
+<text id="fselected-051" x="432.5433070866142" y="188" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="end">preparing 18</text>
+<line id="fselected-052" x1="393.5433070866142" y1="192" x2="393.5433070866142" y2="220" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fselected-053" x1="393.5433070866142" y1="220" x2="236.54330708661422" y2="220" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fselected-054" x1="236.54330708661422" y1="220" x2="236.54330708661422" y2="191" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<polygon id="fselected-055" fill="#61727A" stroke="none" stroke-width="0.8" points="236.54330708661422,191 238.94330708661423,196.0 234.14330708661421,196.0"/>
+<text id="fselected-056" x="344.5433070866142" y="236" font-family="Arial" font-size="9.5" font-weight="normal" fill="#61727A" text-anchor="end">write 18 when ready</text>
+<line id="fselected-057" x1="56.54330708661422" y1="168" x2="56.54330708661422" y2="191" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fselected-058" x1="56.54330708661422" y1="191" x2="172.54330708661422" y2="191" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fselected-059" x1="172.54330708661422" y1="191" x2="172.54330708661422" y2="124" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fselected-060" x1="172.54330708661422" y1="124" x2="182.54330708661422" y2="124" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<polygon id="fselected-061" fill="#087F82" stroke="none" stroke-width="0.8" points="182.54330708661422,124 177.54330708661422,126.4 177.54330708661422,121.6"/>
+<text id="fselected-062" x="92.54330708661422" y="184" font-family="Arial" font-size="9.5" font-weight="normal" fill="#087F82" text-anchor="middle">release 17</text>
+<line id="fselected-063" x1="161.54330708661422" y1="222" x2="155.54330708661422" y2="229" stroke="#A9672E" stroke-width="1.2"/>
+<line id="fselected-064" x1="161.54330708661422" y1="229" x2="155.54330708661422" y2="222" stroke="#A9672E" stroke-width="1.2"/>
+<text id="fselected-065" x="149.54330708661422" y="229" font-family="Arial" font-size="9.5" font-weight="normal" fill="#A9672E" text-anchor="end">(e, 16): no match</text>
+<text id="fselected-066" x="16" y="22" font-family="Arial" font-size="12" font-weight="bold" fill="#243841" text-anchor="start">G · edge values stay live until release</text>
+<text id="fselected-067" x="437" y="22" font-family="Arial" font-size="8.5" font-weight="normal" fill="#61727A" text-anchor="end">DEMO</text>
+<rect id="fselected-068" fill="#E8F4F2" stroke="#CFDADE" stroke-width="0.6" x="21" y="241" width="22" height="16"/>
+<text id="fselected-069" x="32" y="252" font-family="Arial" font-size="8.5" font-weight="bold" fill="#243841" text-anchor="middle">W0</text>
+<rect id="fselected-070" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="48" y="241" width="22" height="16"/>
+<text id="fselected-071" x="59" y="252" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W1</text>
+<rect id="fselected-072" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="21" y="263" width="22" height="16"/>
+<text id="fselected-073" x="32" y="274" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W2</text>
+<rect id="fselected-074" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="48" y="263" width="22" height="16"/>
+<text id="fselected-075" x="59" y="274" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W3</text>
+<line id="fselected-076" x1="43" y1="249" x2="48" y2="249" stroke="#087F82" stroke-width="1.2"/>
+<line id="fselected-077" x1="43" y1="271" x2="48" y2="271" stroke="#61727A" stroke-width="0.65"/>
+<line id="fselected-078" x1="32" y1="257" x2="32" y2="263" stroke="#61727A" stroke-width="0.65"/>
+<line id="fselected-079" x1="59" y1="257" x2="59" y2="263" stroke="#61727A" stroke-width="0.65"/>
+<text id="fselected-080" x="106" y="272" font-family="Arial" font-size="10" font-weight="bold" fill="#243841" text-anchor="start">Both slots live: W1 waits.</text>
+</svg>

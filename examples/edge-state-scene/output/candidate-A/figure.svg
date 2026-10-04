@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="100mm" viewBox="0 0 453.5433070866142 283.46456692913387">
+<title>Constructed DEMO</title>
+<text id="fA-000" x="16" y="22" font-family="Arial" font-size="12" font-weight="bold" fill="#243841" text-anchor="start">G · neighbouring fields</text>
+<text id="fA-001" x="437" y="22" font-family="Arial" font-size="8.5" font-weight="normal" fill="#61727A" text-anchor="end">DEMO</text>
+<text id="fA-002" x="18" y="53" font-family="Arial" font-size="10.5" font-weight="bold" fill="#243841" text-anchor="start">W0 requires (e, 17)</text>
+<text id="fA-003" x="321" y="53" font-family="Arial" font-size="10.5" font-weight="bold" fill="#243841" text-anchor="start">W1</text>
+<rect id="fA-004" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.65" x="18" y="77" width="108" height="81"/>
+<line id="fA-005" x1="45.0" y1="77" x2="45.0" y2="158" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-006" x1="72.0" y1="77" x2="72.0" y2="158" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-007" x1="99.0" y1="77" x2="99.0" y2="158" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-008" x1="18" y1="97.25" x2="126" y2="97.25" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-009" x1="18" y1="117.5" x2="126" y2="117.5" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-010" x1="18" y1="137.75" x2="126" y2="137.75" stroke="#CFDADE" stroke-width="0.55"/>
+<rect id="fA-011" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="99.0" y="77" width="27.0" height="81"/>
+<line id="fA-012" x1="99.0" y1="97.25" x2="126.0" y2="97.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-013" x1="99.0" y1="117.5" x2="126.0" y2="117.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-014" x1="99.0" y1="137.75" x2="126.0" y2="137.75" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fA-015" fill="#E8F4F2" stroke="#087F82" stroke-width="0.95" x="138" y="77" width="10" height="81"/>
+<line id="fA-016" x1="138" y1="97.25" x2="148" y2="97.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-017" x1="138" y1="117.5" x2="148" y2="117.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-018" x1="138" y1="137.75" x2="148" y2="137.75" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fA-019" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.65" x="321" y="77" width="112" height="81"/>
+<line id="fA-020" x1="349.0" y1="77" x2="349.0" y2="158" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-021" x1="377.0" y1="77" x2="377.0" y2="158" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-022" x1="405.0" y1="77" x2="405.0" y2="158" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-023" x1="321" y1="97.25" x2="433" y2="97.25" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-024" x1="321" y1="117.5" x2="433" y2="117.5" stroke="#CFDADE" stroke-width="0.55"/>
+<line id="fA-025" x1="321" y1="137.75" x2="433" y2="137.75" stroke="#CFDADE" stroke-width="0.55"/>
+<rect id="fA-026" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="321" y="77" width="28.0" height="81"/>
+<line id="fA-027" x1="321" y1="97.25" x2="349.0" y2="97.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-028" x1="321" y1="117.5" x2="349.0" y2="117.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-029" x1="321" y1="137.75" x2="349.0" y2="137.75" stroke="#087F82" stroke-width="0.55"/>
+<rect id="fA-030" fill="#FFFFFF" stroke="none" stroke-width="0.7" x="26" y="99" width="72" height="32"/>
+<text id="fA-031" x="62" y="110" font-family="Arial" font-size="10" font-weight="bold" fill="#243841" text-anchor="middle">boundary</text>
+<text id="fA-032" x="62" y="124" font-family="Arial" font-size="10" font-weight="bold" fill="#243841" text-anchor="middle">update 17</text>
+<rect id="fA-033" fill="#FFFFFF" stroke="none" stroke-width="0.7" x="353" y="99" width="74" height="32"/>
+<text id="fA-034" x="390" y="110" font-family="Arial" font-size="9.5" font-weight="normal" fill="#243841" text-anchor="middle">interior work</text>
+<text id="fA-035" x="390" y="124" font-family="Arial" font-size="10" font-weight="bold" fill="#243841" text-anchor="middle">step 18</text>
+<rect id="fA-036" fill="#E8F4F2" stroke="#087F82" stroke-width="1" x="187" y="86" width="111" height="35"/>
+<rect id="fA-037" fill="#E8F4F2" stroke="#087F82" stroke-width="0.95" x="192" y="91" width="9" height="25"/>
+<line id="fA-038" x1="192" y1="97.25" x2="201" y2="97.25" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-039" x1="192" y1="103.5" x2="201" y2="103.5" stroke="#087F82" stroke-width="0.55"/>
+<line id="fA-040" x1="192" y1="109.75" x2="201" y2="109.75" stroke="#087F82" stroke-width="0.55"/>
+<text id="fA-041" x="209" y="108" font-family="Arial" font-size="10" font-weight="bold" fill="#096F72" text-anchor="start">(e, 17) READY</text>
+<rect id="fA-042" fill="#FFFFFF" stroke="#61727A" stroke-width="0.75" x="187" y="143" width="111" height="35"/>
+<text id="fA-043" x="242.5" y="165" font-family="Arial" font-size="10" font-weight="normal" fill="#243841" text-anchor="middle">free slot</text>
+<text id="fA-044" x="242" y="72" font-family="Arial" font-size="9.5" font-weight="bold" fill="#243841" text-anchor="middle">incoming slots</text>
+<line id="fA-045" x1="318" y1="103" x2="301" y2="103" stroke="#087F82" stroke-width="1"/>
+<polygon id="fA-046" fill="#087F82" stroke="none" stroke-width="0.8" points="301,103 306.0,105.4 306.0,100.6"/>
+<line id="fA-047" x1="183" y1="103" x2="151" y2="103" stroke="#087F82" stroke-width="1"/>
+<polygon id="fA-048" fill="#087F82" stroke="none" stroke-width="0.8" points="151,103 156.0,105.4 156.0,100.6"/>
+<text id="fA-049" x="309" y="66" font-family="Arial" font-size="9" font-weight="normal" fill="#087F82" text-anchor="middle">copy 17</text>
+<text id="fA-050" x="165" y="66" font-family="Arial" font-size="9" font-weight="normal" fill="#087F82" text-anchor="middle">match</text>
+<line id="fA-051" x1="141" y1="149" x2="121" y2="149" stroke="#087F82" stroke-width="1"/>
+<polygon id="fA-052" fill="#087F82" stroke="none" stroke-width="0.8" points="121,149 126.0,151.4 126.0,146.6"/>
+<text id="fA-053" x="125" y="179" font-family="Arial" font-size="9.5" font-weight="normal" fill="#243841" text-anchor="middle">ghost copy</text>
+<text id="fA-054" x="377" y="179" font-family="Arial" font-size="9.5" font-weight="normal" fill="#243841" text-anchor="middle">source edge · 17</text>
+<line id="fA-055" x1="43" y1="161" x2="43" y2="202" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fA-056" x1="43" y1="202" x2="175" y2="202" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fA-057" x1="175" y1="202" x2="175" y2="113" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fA-058" x1="175" y1="113" x2="184" y2="113" stroke="#087F82" stroke-width="0.9" stroke-dasharray="3,2"/>
+<polygon id="fA-059" fill="#087F82" stroke="none" stroke-width="0.8" points="184,113 179.0,110.6 179.0,115.4"/>
+<text id="fA-060" x="85" y="217" font-family="Arial" font-size="9.5" font-weight="normal" fill="#087F82" text-anchor="start">release 17</text>
+<line id="fA-061" x1="334" y1="160" x2="334" y2="191" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fA-062" x1="334" y1="191" x2="271" y2="191" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<line id="fA-063" x1="271" y1="191" x2="271" y2="181" stroke="#61727A" stroke-width="0.9" stroke-dasharray="3,2"/>
+<polygon id="fA-064" fill="#61727A" stroke="none" stroke-width="0.8" points="271,181 268.6,186.0 273.4,186.0"/>
+<text id="fA-065" x="304" y="207" font-family="Arial" font-size="9.5" font-weight="normal" fill="#243841" text-anchor="middle">write 18 when ready</text>
+<rect id="fA-066" fill="#E8F4F2" stroke="#CFDADE" stroke-width="0.6" x="18" y="235" width="22" height="16"/>
+<text id="fA-067" x="29" y="246" font-family="Arial" font-size="8.5" font-weight="bold" fill="#243841" text-anchor="middle">W0</text>
+<rect id="fA-068" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="45" y="235" width="22" height="16"/>
+<text id="fA-069" x="56" y="246" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W1</text>
+<rect id="fA-070" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="18" y="257" width="22" height="16"/>
+<text id="fA-071" x="29" y="268" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W2</text>
+<rect id="fA-072" fill="#F4F7F8" stroke="#CFDADE" stroke-width="0.6" x="45" y="257" width="22" height="16"/>
+<text id="fA-073" x="56" y="268" font-family="Arial" font-size="8.5" font-weight="normal" fill="#243841" text-anchor="middle">W3</text>
+<line id="fA-074" x1="40" y1="243" x2="45" y2="243" stroke="#087F82" stroke-width="1.2"/>
+<line id="fA-075" x1="40" y1="265" x2="45" y2="265" stroke="#61727A" stroke-width="0.65"/>
+<line id="fA-076" x1="29" y1="251" x2="29" y2="257" stroke="#61727A" stroke-width="0.65"/>
+<line id="fA-077" x1="56" y1="251" x2="56" y2="257" stroke="#61727A" stroke-width="0.65"/>
+<line id="fA-078" x1="283" y1="236" x2="289" y2="243" stroke="#A9672E" stroke-width="1.2"/>
+<line id="fA-079" x1="283" y1="243" x2="289" y2="236" stroke="#A9672E" stroke-width="1.2"/>
+<text id="fA-080" x="295" y="243" font-family="Arial" font-size="9.5" font-weight="normal" fill="#A9672E" text-anchor="start">(e, 16): no match</text>
+<text id="fA-081" x="100" y="270" font-family="Arial" font-size="10" font-weight="bold" fill="#243841" text-anchor="start">Both slots live: W1 waits.</text>
+</svg>

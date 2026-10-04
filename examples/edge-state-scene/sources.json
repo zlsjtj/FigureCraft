@@ -1,0 +1,52 @@
+{
+  "evidence": "CONSTRUCTED DEMO; development using known materials and feedback",
+  "scope": "single W1-to-W0 interface; no performance data plotted",
+  "external_sources": [
+    {
+      "archive_reference": "skill-convergence-20261003\\delivery\\DEMO_final\\input\\notes.md",
+      "sha256": "01a7b6e1cc7a191880e2a95027dfa626523ba0912f4add39f8d652ab99d987b8",
+      "bundled": true
+    },
+    {
+      "archive_reference": "skill-convergence-20261003\\delivery\\DEMO_final\\Figure1_before_after.pdf",
+      "sha256": "2e8ec2ab65cd2dbd0fb3733bb040bba37f82c8d33f14b79cabd703fc38bc30c0",
+      "bundled": false
+    },
+    {
+      "archive_reference": "skill-convergence-20261003\\trial\\figure-post-review.md",
+      "sha256": "c8675182ce92b6b57dfd460e7c7e94984f8bca57a0ee853e5003f3e44fcb5797",
+      "bundled": false
+    },
+    {
+      "archive_reference": "figure-skill-20260924\\input\\Scientific_Figure_and_Color_Brief\\references\\reference_01.jpg",
+      "sha256": "37a268825d846c63b3d46e711d91068ba549ebcf6464a81b954e604c9686be6e",
+      "bundled": false
+    },
+    {
+      "archive_reference": "figure-skill-20260924\\input\\Scientific_Figure_and_Color_Brief\\references\\reference_02.jpg",
+      "sha256": "9efada4a9d00e41be0eef8f5da6879e37b4ccf418a333f064cd5789d60459c6a",
+      "bundled": false
+    },
+    {
+      "archive_reference": "figure-skill-20260924\\input\\Scientific_Figure_and_Color_Brief\\references\\reference_03.jpg",
+      "sha256": "a3d6601a8183be5a4d6761abc7bc0afe7b5f659c853bf89c8cbda8df939bc8b1",
+      "bundled": false
+    },
+    {
+      "archive_reference": "figure-skill-20260924\\input\\Scientific_Figure_and_Color_Brief\\references\\reference_04.jpg",
+      "sha256": "8d6894cb3c7a71b0eae380db228b77cc11cc8b1500ec5aa3e02a580603c565c1",
+      "bundled": false
+    },
+    {
+      "archive_reference": "figure-skill-20260924\\input\\Scientific_Figure_and_Color_Brief\\references\\reference_05.jpg",
+      "sha256": "34c67fc02aecff68d1ed2b05ec390bd5f42c6944821a4623a341b9ebab8208c8",
+      "bundled": false
+    }
+  ],
+  "external_reference_images_copied": false,
+  "font_files_bundled": false,
+  "backend_provenance": "generic drawing_backend.py from the preceding local DEMO; composition newly authored here",
+  "selected": "output/selected",
+  "author_acceptance": "NOT_RUN",
+  "independent_forward_test": "separate parent task; unknown to this developer"
+}

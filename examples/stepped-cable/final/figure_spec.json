@@ -1,0 +1,1022 @@
+{
+  "title": "Layered cable: stepped exposed end",
+  "evidence": "DEMO; no measurements or simulation",
+  "main_reading": "One intact coaxial cable has coverings terminating successively toward one exposed copper tip.",
+  "input": {
+    "path": "../input.md",
+    "sha256": "7b6010d4c2a7e523413a24d7f51724e844b9e74c84ffe6043316a5f1fabf796b"
+  },
+  "output": {
+    "width_mm": 160,
+    "height_mm": 90,
+    "placement_width_mm": 160,
+    "png_dpi": 300
+  },
+  "representation": "D1 vector 2.5D, common elliptical cross-sections, opaque layers, no extra local view",
+  "geometry_basis": "Illustrative layout units only. No real diameter, length, tolerance or cutting method is asserted.",
+  "object_count": 1,
+  "material_count": 4,
+  "layers": [
+    {
+      "id": "jacket",
+      "label": "Outer jacket",
+      "radius": 43,
+      "inner_radius": 35,
+      "end": 190
+    },
+    {
+      "id": "shield",
+      "label": "Metal shield",
+      "radius": 35,
+      "inner_radius": 31,
+      "end": 282
+    },
+    {
+      "id": "insulation",
+      "label": "Polymer insulation",
+      "radius": 31,
+      "inner_radius": 11.5,
+      "end": 350
+    },
+    {
+      "id": "conductor",
+      "label": "Copper conductor",
+      "radius": 11.5,
+      "inner_radius": 0,
+      "end": 383
+    }
+  ],
+  "actual_common_left_start": -30,
+  "relations": [
+    {
+      "type": "contains",
+      "outer": "jacket",
+      "inner": "shield"
+    },
+    {
+      "type": "contains",
+      "outer": "shield",
+      "inner": "insulation"
+    },
+    {
+      "type": "contains",
+      "outer": "insulation",
+      "inner": "conductor"
+    },
+    {
+      "type": "separates",
+      "material": "insulation",
+      "a": "shield",
+      "b": "conductor"
+    },
+    {
+      "type": "termination_order",
+      "left_to_right": [
+        "jacket",
+        "shield",
+        "insulation",
+        "conductor"
+      ]
+    }
+  ],
+  "exact_labels": [
+    "Outer jacket",
+    "Metal shield",
+    "Solid sleeve",
+    "Copper conductor",
+    "Polymer insulation"
+  ],
+  "locked_values": [
+    "one cable",
+    "solid copper core",
+    "continuous polymer insulation",
+    "continuous solid thin-walled metal shield sleeve, not braid",
+    "outer jacket surrounds sleeve",
+    "coaxial nesting",
+    "shield does not touch conductor",
+    "no applied flow or signal",
+    "no physical dimensions"
+  ],
+  "allowed_modifications": "Illustrative viewpoint, geometry proportions, labels, styling; at most one content revision after first render",
+  "semantic_roles": {
+    "jacket": {
+      "base": "#4B657A",
+      "surface": [
+        "#384E62",
+        "#7995AB",
+        "#57748B",
+        "#293E50"
+      ],
+      "face": [
+        "#A2B6C6",
+        "#536F85"
+      ],
+      "stroke": "#2A4153"
+    },
+    "shield": {
+      "base": "#A8B4BD",
+      "surface": [
+        "#7E919F",
+        "#EDF2F4",
+        "#BCC8D0",
+        "#748996"
+      ],
+      "face": [
+        "#DFE7EB",
+        "#82949F"
+      ],
+      "stroke": "#5D717F"
+    },
+    "insulation": {
+      "base": "#7CAFA7",
+      "surface": [
+        "#5E918B",
+        "#C7E0D9",
+        "#A2CBC2",
+        "#65948E"
+      ],
+      "face": [
+        "#DDECE6",
+        "#8AB8AD"
+      ],
+      "stroke": "#477C73"
+    },
+    "conductor": {
+      "base": "#BF773E",
+      "surface": [
+        "#9B5B2D",
+        "#E9B379",
+        "#C8874D",
+        "#8C4C26"
+      ],
+      "face": [
+        "#E8BC8B",
+        "#B9753F"
+      ],
+      "stroke": "#81502F"
+    }
+  },
+  "palette_origin": "New task-specific hand-selected palette; no reference-palette attribution",
+  "fonts": {
+    "latin": "arial.ttf",
+    "bold": "arialbd.ttf",
+    "latin_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "bold_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+  },
+  "revision": "final",
+  "objects": [
+    {
+      "id": "jacket-surface",
+      "type": "path",
+      "entity": "jacket",
+      "object_part": "primary",
+      "commands": [
+        [
+          "M",
+          -30.0,
+          100.0
+        ],
+        [
+          "L",
+          190,
+          100.0
+        ],
+        [
+          "C",
+          178.83832520591966,
+          100.0,
+          169.79,
+          119.25175575727587,
+          169.79,
+          143.0
+        ],
+        [
+          "C",
+          169.79,
+          166.74824424272413,
+          178.83832520591966,
+          186.0,
+          190,
+          186.0
+        ],
+        [
+          "L",
+          -30.0,
+          186.0
+        ],
+        [
+          "C",
+          -41.16167479408034,
+          186.0,
+          -50.209999999999994,
+          166.74824424272413,
+          -50.209999999999994,
+          143.0
+        ],
+        [
+          "C",
+          -50.209999999999994,
+          119.25175575727587,
+          -41.16167479408034,
+          100.0,
+          -30.0,
+          100.0
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#384E62",
+        "#7995AB",
+        "#57748B",
+        "#293E50"
+      ],
+      "positions": [
+        0,
+        0.25,
+        0.6,
+        1
+      ],
+      "bounds": [
+        -50.209999999999994,
+        100.0,
+        190,
+        186.0
+      ],
+      "stroke": "#2A4153",
+      "width": 0.65
+    },
+    {
+      "id": "jacket-termination",
+      "type": "path",
+      "entity": "jacket",
+      "object_part": "decoration",
+      "commands": [
+        [
+          "M",
+          190,
+          100.0
+        ],
+        [
+          "C",
+          201.16167479408034,
+          100.0,
+          210.21,
+          119.25175575727587,
+          210.21,
+          143.0
+        ],
+        [
+          "C",
+          210.21,
+          166.74824424272413,
+          201.16167479408034,
+          186.0,
+          190,
+          186.0
+        ],
+        [
+          "C",
+          178.83832520591966,
+          186.0,
+          169.79,
+          166.74824424272413,
+          169.79,
+          143.0
+        ],
+        [
+          "C",
+          169.79,
+          119.25175575727587,
+          178.83832520591966,
+          100.0,
+          190,
+          100.0
+        ],
+        [
+          "Z"
+        ],
+        [
+          "M",
+          190,
+          108.0
+        ],
+        [
+          "C",
+          199.08508413471657,
+          108.0,
+          206.45,
+          123.67003375592222,
+          206.45,
+          143.0
+        ],
+        [
+          "C",
+          206.45,
+          162.32996624407778,
+          199.08508413471657,
+          178.0,
+          190,
+          178.0
+        ],
+        [
+          "C",
+          180.91491586528343,
+          178.0,
+          173.55,
+          162.32996624407778,
+          173.55,
+          143.0
+        ],
+        [
+          "C",
+          173.55,
+          123.67003375592222,
+          180.91491586528343,
+          108.0,
+          190,
+          108.0
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#A2B6C6",
+        "#536F85"
+      ],
+      "positions": [
+        0,
+        1
+      ],
+      "bounds": [
+        169.79,
+        100.0,
+        210.21,
+        186.0
+      ],
+      "stroke": "#2A4153",
+      "width": 0.65
+    },
+    {
+      "id": "shield-surface",
+      "type": "path",
+      "entity": "shield",
+      "object_part": "primary",
+      "commands": [
+        [
+          "M",
+          190,
+          108.0
+        ],
+        [
+          "L",
+          282,
+          108.0
+        ],
+        [
+          "C",
+          272.91491586528343,
+          108.0,
+          265.55,
+          123.67003375592222,
+          265.55,
+          143.0
+        ],
+        [
+          "C",
+          265.55,
+          162.32996624407778,
+          272.91491586528343,
+          178.0,
+          282,
+          178.0
+        ],
+        [
+          "L",
+          190,
+          178.0
+        ],
+        [
+          "C",
+          180.91491586528343,
+          178.0,
+          173.55,
+          162.32996624407778,
+          173.55,
+          143.0
+        ],
+        [
+          "C",
+          173.55,
+          123.67003375592222,
+          180.91491586528343,
+          108.0,
+          190,
+          108.0
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#7E919F",
+        "#EDF2F4",
+        "#BCC8D0",
+        "#748996"
+      ],
+      "positions": [
+        0,
+        0.25,
+        0.6,
+        1
+      ],
+      "bounds": [
+        173.55,
+        108.0,
+        282,
+        178.0
+      ],
+      "stroke": "#5D717F",
+      "width": 0.65
+    },
+    {
+      "id": "shield-termination",
+      "type": "path",
+      "entity": "shield",
+      "object_part": "decoration",
+      "commands": [
+        [
+          "M",
+          282,
+          108.0
+        ],
+        [
+          "C",
+          291.08508413471657,
+          108.0,
+          298.45,
+          123.67003375592222,
+          298.45,
+          143.0
+        ],
+        [
+          "C",
+          298.45,
+          162.32996624407778,
+          291.08508413471657,
+          178.0,
+          282,
+          178.0
+        ],
+        [
+          "C",
+          272.91491586528343,
+          178.0,
+          265.55,
+          162.32996624407778,
+          265.55,
+          143.0
+        ],
+        [
+          "C",
+          265.55,
+          123.67003375592222,
+          272.91491586528343,
+          108.0,
+          282,
+          108.0
+        ],
+        [
+          "Z"
+        ],
+        [
+          "M",
+          282,
+          112.0
+        ],
+        [
+          "C",
+          290.0467888050347,
+          112.0,
+          296.57,
+          125.8791727552454,
+          296.57,
+          143.0
+        ],
+        [
+          "C",
+          296.57,
+          160.1208272447546,
+          290.0467888050347,
+          174.0,
+          282,
+          174.0
+        ],
+        [
+          "C",
+          273.9532111949653,
+          174.0,
+          267.43,
+          160.1208272447546,
+          267.43,
+          143.0
+        ],
+        [
+          "C",
+          267.43,
+          125.8791727552454,
+          273.9532111949653,
+          112.0,
+          282,
+          112.0
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#DFE7EB",
+        "#82949F"
+      ],
+      "positions": [
+        0,
+        1
+      ],
+      "bounds": [
+        265.55,
+        108.0,
+        298.45,
+        178.0
+      ],
+      "stroke": "#5D717F",
+      "width": 0.65
+    },
+    {
+      "id": "insulation-surface",
+      "type": "path",
+      "entity": "insulation",
+      "object_part": "primary",
+      "commands": [
+        [
+          "M",
+          282,
+          112.0
+        ],
+        [
+          "L",
+          350,
+          112.0
+        ],
+        [
+          "C",
+          341.9532111949653,
+          112.0,
+          335.43,
+          125.8791727552454,
+          335.43,
+          143.0
+        ],
+        [
+          "C",
+          335.43,
+          160.1208272447546,
+          341.9532111949653,
+          174.0,
+          350,
+          174.0
+        ],
+        [
+          "L",
+          282,
+          174.0
+        ],
+        [
+          "C",
+          273.9532111949653,
+          174.0,
+          267.43,
+          160.1208272447546,
+          267.43,
+          143.0
+        ],
+        [
+          "C",
+          267.43,
+          125.8791727552454,
+          273.9532111949653,
+          112.0,
+          282,
+          112.0
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#5E918B",
+        "#C7E0D9",
+        "#A2CBC2",
+        "#65948E"
+      ],
+      "positions": [
+        0,
+        0.25,
+        0.6,
+        1
+      ],
+      "bounds": [
+        267.43,
+        112.0,
+        350,
+        174.0
+      ],
+      "stroke": "#477C73",
+      "width": 0.65
+    },
+    {
+      "id": "insulation-termination",
+      "type": "path",
+      "entity": "insulation",
+      "object_part": "decoration",
+      "commands": [
+        [
+          "M",
+          350,
+          112.0
+        ],
+        [
+          "C",
+          358.0467888050347,
+          112.0,
+          364.57,
+          125.8791727552454,
+          364.57,
+          143.0
+        ],
+        [
+          "C",
+          364.57,
+          160.1208272447546,
+          358.0467888050347,
+          174.0,
+          350,
+          174.0
+        ],
+        [
+          "C",
+          341.9532111949653,
+          174.0,
+          335.43,
+          160.1208272447546,
+          335.43,
+          143.0
+        ],
+        [
+          "C",
+          335.43,
+          125.8791727552454,
+          341.9532111949653,
+          112.0,
+          350,
+          112.0
+        ],
+        [
+          "Z"
+        ],
+        [
+          "M",
+          350,
+          131.5
+        ],
+        [
+          "C",
+          352.98509907283545,
+          131.5,
+          355.405,
+          136.64872537694586,
+          355.405,
+          143.0
+        ],
+        [
+          "C",
+          355.405,
+          149.35127462305414,
+          352.98509907283545,
+          154.5,
+          350,
+          154.5
+        ],
+        [
+          "C",
+          347.01490092716455,
+          154.5,
+          344.595,
+          149.35127462305414,
+          344.595,
+          143.0
+        ],
+        [
+          "C",
+          344.595,
+          136.64872537694586,
+          347.01490092716455,
+          131.5,
+          350,
+          131.5
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#DDECE6",
+        "#8AB8AD"
+      ],
+      "positions": [
+        0,
+        1
+      ],
+      "bounds": [
+        335.43,
+        112.0,
+        364.57,
+        174.0
+      ],
+      "stroke": "#477C73",
+      "width": 0.65
+    },
+    {
+      "id": "conductor-surface",
+      "type": "path",
+      "entity": "conductor",
+      "object_part": "primary",
+      "commands": [
+        [
+          "M",
+          350,
+          131.5
+        ],
+        [
+          "L",
+          383,
+          131.5
+        ],
+        [
+          "C",
+          380.01490092716455,
+          131.5,
+          377.595,
+          136.64872537694586,
+          377.595,
+          143.0
+        ],
+        [
+          "C",
+          377.595,
+          149.35127462305414,
+          380.01490092716455,
+          154.5,
+          383,
+          154.5
+        ],
+        [
+          "L",
+          350,
+          154.5
+        ],
+        [
+          "C",
+          347.01490092716455,
+          154.5,
+          344.595,
+          149.35127462305414,
+          344.595,
+          143.0
+        ],
+        [
+          "C",
+          344.595,
+          136.64872537694586,
+          347.01490092716455,
+          131.5,
+          350,
+          131.5
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#9B5B2D",
+        "#E9B379",
+        "#C8874D",
+        "#8C4C26"
+      ],
+      "positions": [
+        0,
+        0.25,
+        0.6,
+        1
+      ],
+      "bounds": [
+        344.595,
+        131.5,
+        383,
+        154.5
+      ],
+      "stroke": "#81502F",
+      "width": 0.65
+    },
+    {
+      "id": "conductor-termination",
+      "type": "path",
+      "entity": "conductor",
+      "object_part": "decoration",
+      "commands": [
+        [
+          "M",
+          383,
+          131.5
+        ],
+        [
+          "C",
+          385.98509907283545,
+          131.5,
+          388.405,
+          136.64872537694586,
+          388.405,
+          143.0
+        ],
+        [
+          "C",
+          388.405,
+          149.35127462305414,
+          385.98509907283545,
+          154.5,
+          383,
+          154.5
+        ],
+        [
+          "C",
+          380.01490092716455,
+          154.5,
+          377.595,
+          149.35127462305414,
+          377.595,
+          143.0
+        ],
+        [
+          "C",
+          377.595,
+          136.64872537694586,
+          380.01490092716455,
+          131.5,
+          383,
+          131.5
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "gradient": [
+        "#E8BC8B",
+        "#B9753F"
+      ],
+      "positions": [
+        0,
+        1
+      ],
+      "bounds": [
+        377.595,
+        131.5,
+        388.405,
+        154.5
+      ],
+      "stroke": "#81502F",
+      "width": 0.65
+    }
+  ],
+  "labels": [
+    {
+      "id": "label-jacket",
+      "text": "Outer jacket",
+      "x": 86,
+      "y": 61,
+      "anchor": "middle",
+      "owner": "jacket",
+      "size": 10.5
+    },
+    {
+      "id": "label-shield",
+      "text": "Metal shield",
+      "x": 225,
+      "y": 55,
+      "anchor": "middle",
+      "owner": "shield",
+      "size": 10.5
+    },
+    {
+      "id": "label-shield-type",
+      "text": "Solid sleeve",
+      "x": 225,
+      "y": 69,
+      "anchor": "middle",
+      "owner": "shield",
+      "size": 10.5
+    },
+    {
+      "id": "label-conductor",
+      "text": "Copper conductor",
+      "x": 365,
+      "y": 66,
+      "anchor": "middle",
+      "owner": "conductor",
+      "size": 10.5
+    },
+    {
+      "id": "label-insulation",
+      "text": "Polymer insulation",
+      "x": 287,
+      "y": 219,
+      "anchor": "middle",
+      "owner": "insulation",
+      "size": 10.5
+    }
+  ],
+  "leaders": [
+    {
+      "id": "guide-jacket",
+      "owner": "jacket",
+      "points": [
+        [
+          86,
+          70
+        ],
+        [
+          106,
+          70
+        ],
+        [
+          127,
+          108
+        ]
+      ]
+    },
+    {
+      "id": "guide-shield",
+      "owner": "shield",
+      "points": [
+        [
+          225,
+          78
+        ],
+        [
+          225,
+          91
+        ],
+        [
+          230,
+          116
+        ]
+      ]
+    },
+    {
+      "id": "guide-conductor",
+      "owner": "conductor",
+      "points": [
+        [
+          365,
+          75
+        ],
+        [
+          372,
+          75
+        ],
+        [
+          372,
+          134
+        ]
+      ]
+    },
+    {
+      "id": "guide-insulation",
+      "owner": "insulation",
+      "points": [
+        [
+          287,
+          204
+        ],
+        [
+          303,
+          204
+        ],
+        [
+          315,
+          167
+        ]
+      ]
+    }
+  ]
+}
