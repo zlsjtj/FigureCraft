@@ -1,42 +1,57 @@
-# 让图形承担解释
+# 怎样让机制图里的对象和关系更容易看懂？
 
-机制图里放了全部步骤，读者却仍要沿着框和长句来回找关系。这时可以先检查：画面是在解释对象发生了什么，还是只是把实现说明装进框里？
+图里步骤齐全，读者仍要沿着框和长句来回找关系。FigureCraft 先判断画面最需要讲清什么，再安排对象、连接、层次和配色。
 
-下面用一个公开的教学案例说明构图怎么处理。所有数字都是构造值，不是真实实验；链接中保留输入、成品和源码。
+## 让输入和结果直接对应
 
-## 先决定读者该看懂什么
+这个案例有两路图像。它们各自重采样，却读取同一份放置记录。图最需要回答的是：**什么共同使用，什么分别处理？**
 
-这个案例最需要表达的是：两路图像读取同一份放置记录，再各自生成输出。它不要求两通道的强度相同，也不保证共同放置后全局位置一定正确。
+[![两路输入在上、各自输出在下，共用记录位于中央](../examples/paired-placement/selected/figure.png)](../examples/paired-placement/selected/figure.png)
 
-只要画面能直接回答“什么是共同的、什么仍然分开”，就不必把计算步骤、坐标公式和失败条件都挤在主体里。
+*原创构造示例；图像、坐标和条件用于说明关系。*
 
-## 图里也先决定谁是主角
-
-两路图像案例的旧图把选择、计算、分支、重采样都摆在显眼位置。改图让两路输入与放置后的对象上下对应，共用的放置记录放在中间。对象的位置承担了“哪个去了哪里”的解释。
-
-**改图：对象变化占主体**
-
-[![新图让两路对象上下对应](../examples/paired-placement/selected/figure.png)](../examples/paired-placement/selected/figure.png)
+原图让处理框、分支和计算步骤占据主体。改图把每路输入与对应结果上下排列，共用记录留在中间。读者可以沿着同一路对象看见变化，再看两路之间共享了什么。
 
 <details>
-<summary>展开原图：步骤占主体</summary>
+<summary>展开原图，比较两种组织方式</summary>
 
-[![旧图多个处理框并列](../examples/paired-placement/before/figure.png)](../examples/paired-placement/before/figure.png)
+[![原图：处理框、分支和重采样流程占据主体](../examples/paired-placement/before/figure.png)](../examples/paired-placement/before/figure.png)
 
 </details>
 
-无箭头支线表示共同读取，箭头表示重采样。选择条件移到图注，完整计算留在正文。两版都是 160 × 100 mm，没有靠扩大画布或缩小标签取胜。
+## 让连线也有明确分工
 
-这也有代价：图注承担的内容增加了。公开案例记录了这个变化，没有把它说成所有文字都减少了。若任务要比较完整算法步骤，旧结构的一些优点可能更重要。
+无箭头支线表示读取同一记录，向下箭头表示重采样。图内保留关键条件与一组坐标，图注承接完整读图规则和适用边界。
 
-## 自己试时，从一个小任务开始
+两版都是 160 × 100 mm，最低字号 9 pt。改图重新组织了读图路径；图注约从 135 词增至 170 词，承担了更多解释。共用记录也不意味着两路图像数据相同，或全局位置一定正确。
 
-准备对象、关系、必要数值和旧图，先只重画一张机制图。看过实际输出，再决定是否扩大到整套配图。
+**[SVG 图源](../examples/paired-placement/selected/figure.svg)** · [PDF](../examples/paired-placement/selected/figure.pdf) · [图注](../examples/paired-placement/selected/caption.txt) · [前后对照与重建方法](../examples/paired-placement/README.md)
 
-[PaperCraft：拿一份教学稿试改摘要](https://github.com/zlsjtj/PaperCraft/blob/main/docs/first-use.md) · [FigureCraft：从材料画一张图](first-use.md)
+画连续结构时，可以用整体与局部展开；画装配关系时，可以用剖面和状态变化。[卷绕结构](../examples/co-wound-laminate/README.md)与[装配剖面](../examples/cross-lap-trial/README.md)展示了另外两种画法。
 
-拿到结果后，沿着两路对象各读一遍：共享的是记录，还是图像数据？箭头终点与标签归属是否明确？条件移到图注后，画面有没有诱发新的误读？在这些关系准确的前提下，再检查实际图宽下的留白、字号和配色。
+## 用你自己的材料试一次
 
-这两个技能用于改进有依据的表达，不能补出实验，也不保证审稿人认可。上述案例经过开发和模型审阅，尚不能代替真实读者的使用反馈。如果试后仍然更难读，保留原稿，比继续堆说明更有用。
+提供对象、关系、必要数值和旧图，先重画一张机制图：
 
-原始案例：[压头锁止](https://github.com/zlsjtj/PaperCraft/tree/main/examples/clamp-timing) · [两路图像放置](https://github.com/zlsjtj/FigureCraft/tree/main/examples/paired-placement)。
+```text
+使用 scientific-figure-studio，根据材料重画这张机制图。
+先判断读者最需要看懂的关系，再选择构图、对象和必要标签。
+保持科学含义和数据不变，按实际入稿宽度检查。
+交付可编辑图源、SVG/PDF/PNG、图注和前后对照。
+```
+
+**[下载安装](https://github.com/zlsjtj/FigureCraft/releases/latest)** · [拿公开材料试用](first-use.md) · [32 秒作品导览](quick-tour/tour.gif) · [项目首页](https://github.com/zlsjtj/FigureCraft)
+
+导览展示已完成作品；输入材料、不同方案与源码均在案例页。
+
+<details>
+<summary>复制一段短介绍，分享给需要画图的人</summary>
+
+```text
+机制图已经画满，关系还是难读？FigureCraft 从研究材料出发，先理清对象和关系，再设计构图与语义配色。仓库提供机制图、连续结构和装配剖面的案例，附可编辑图源、SVG/PDF/PNG 与重建脚本。Claude、Codex、WorkBuddy 都有安装入口。
+https://github.com/zlsjtj/FigureCraft
+```
+
+配图：[下载分享封面](https://raw.githubusercontent.com/zlsjtj/FigureCraft/main/docs/social-preview/social-preview.png)。
+
+</details>
