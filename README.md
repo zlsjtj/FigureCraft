@@ -1,7 +1,7 @@
-<h1 align="center">FigureCraft</h1>
-<p align="center"><strong>让图形讲明白，让论文更出彩。</strong></p>
-<p align="center">科研绘图与配色 · 机制与结构 · 语义配色 · 可编辑图源</p>
-<p align="center"><a href="#作品与图源">看作品</a> · <a href="#开始使用">下载安装</a> · <a href="docs/examples.md">完整作品集</a> · <a href="LICENSE">MIT</a></p>
+<p align="center">
+  <a href="docs/social-preview/README.md"><img src="docs/social-preview/social-preview.jpg" width="100%" alt="FigureCraft 品牌封面：深墨色、分层曲面与卷绕造型"></a>
+</p>
+<p align="center"><a href="#作品与图源">看作品</a> · <a href="#开始使用">下载安装</a> · <a href="docs/examples.md">案例与源码</a> · <a href="LICENSE">MIT</a></p>
 
 给 AI 研究助手使用的科研绘图技能。把研究材料变成**对象可辨、关系清楚、层次分明**的机制图与结构图，交付**可编辑源文件、SVG / PDF / PNG 和重建脚本**。从构图到语义配色，让画面承担解释。
 

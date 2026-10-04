@@ -1,21 +1,30 @@
-# FigureCraft 分享预览
+# FigureCraft 品牌封面
 
-[PNG](social-preview.png) · [可编辑 SVG](social-preview.svg) · [PDF](social-preview.pdf) · [布局内容](layout.json)
+![FigureCraft 封面](social-preview.jpg)
 
-用于分享仓库链接时的预览，1280 × 640。右侧是[共同卷绕示例](../../examples/co-wound-laminate/README.md)原 SVG 中 `assembly` 主体的原始图像；像素和宽高比保持原样，只调整页面放置。尾端放大和标注见完整原图，因此标为“原图局部”。它是原创构造示意，不是测量图或新生成效果测试。
+这张图用于仓库首页与 GitHub 分享预览。深墨色、分层曲面与卷绕造型构成主视觉，缩小后仍以项目名称和用途为重点。
 
-采用已有作品排版，没有重新生成科研对象。字体、配色和导航层级与 PaperCraft 配套。SVG 的文字和布局可编辑，卷绕主体是原有位图，改变结构应修改原案例的源码后重建；不称为全矢量。打开 SVG 时需要对应字体，PDF 已嵌入所用字形，没有分发字体文件。
+## 文件
 
-## 重建
+- `artwork.png`：选定的原始封面，1774 × 887 像素。
+- `social-preview.jpg`：网页与分享版本，小于 1 MB。
+- `social-preview.png`：无损副本；`preview-400.png`、`preview-640.png` 用于小尺寸检查。
+- `prompt.txt`：本次内置 image_gen 的生成提示词。
+- `build.py`、`build-record.json`：格式导出脚本与文件记录。
 
-需要 Python 的 `reportlab`、`pypdf`，支持中文的 TrueType 字体（可为 TTC），以及 Poppler 的 `pdftoppm`。在仓库根目录执行，将占位替换为本机路径：
+## 重建导出文件
 
-```text
-python docs/social-preview/build.py --out ../FigureCraft-share --font CJK_TTF --bold-font CJK_BOLD_TTF --latin-font LATIN_TTF --latin-bold-font LATIN_BOLD_TTF --pdftoppm PDFTOPPM
+在仓库根目录运行，输出目录必须尚不存在：
+
+```sh
+python -m pip install Pillow
+python docs/social-preview/build.py --out /path/to/new-output
 ```
 
-输出目录必须不存在且在仓库外。工具检查文字越界、PDF 文字、PNG 尺寸和体积；`build-record.json` 保存图元来源、字体及输出哈希。这些检查不能证明版式好看，需要打开实际 PNG 复核。
+脚本从已保存的原图导出 JPEG 和小尺寸预览，不调用图像服务，不改布局。重复运行生成提示词会得到新的候选，不能保证逐像素复现。
 
-生成 PNG 后，在仓库 Settings → Social preview 上传；本地重建不会上传或改设置。[GitHub 说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/customizing-your-repositorys-social-media-preview)
+## 用途与来源
 
-该图未重复插入首页；首页继续展示带局部放大与必要标签的完整卷绕图，科学图内颜色和内容没有为品牌排版而更改。
+本图由内置 image_gen 生成，用于品牌展示。它是位图插画，不是实验结果，也不是 `scientific-figure-studio` 科研产出的验收案例。实际案例、原始材料和可编辑图源见[案例页](../examples.md)。封面中的输出格式指技能交付能力，不表示此封面自身具有独立可编辑的矢量图层。
+
+上一版的通用图标式构图已改为一个更突出的主体，并减少重复的功能说明。设计比较及小尺寸检查属于模型辅助评估，没有记录为真人审美测试。
