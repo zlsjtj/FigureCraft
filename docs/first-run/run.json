@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-05",
+  "host": "Codex desktop, current conversation",
+  "task_type": "documented rerun of public first-use material; not an unseen-task or independent trial",
+  "release": "v1.28.1",
+  "used_skill_files": {
+    "SKILL.md": {
+      "package_sha256": "b0e9f3bbf47fe19a3ed0845a79c19bf648ce0c6879c0ed3f23a2644641ee4382",
+      "repository_sha256": "a2eace8a061a6cdc1d94f74765198ada1ab8b794843a043594ae642d2bdd6323"
+    },
+    "references/host-runtime.md": {
+      "package_sha256": "4e0fb5ed66c18e95a11f276163bdedd000dcae5d05f7b139f090061a788947be",
+      "repository_sha256": "4e0fb5ed66c18e95a11f276163bdedd000dcae5d05f7b139f090061a788947be"
+    },
+    "references/dependencies.md": {
+      "package_sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f",
+      "repository_sha256": "07776a047ebab53957aad58655fdd08fa891c6c9386a5804545da58c5d3ee53f"
+    },
+    "references/workflow.md": {
+      "package_sha256": "f6ea65054a74d44c3ceec49a23adf148f41e602fd571907f6c0288f81cee753b",
+      "repository_sha256": "e3487b88e6a748eb8187e30be40180d902a7a5678e3b1bff4f4bebae9076acb2"
+    },
+    "references/visual-explanation.md": {
+      "package_sha256": "a42fd9d68406e5f5e1b3be785bb3f93fea3ef6233d6592d294dbe303fda48254",
+      "repository_sha256": "1d1c9751f7ee57d11cfe712f7e5f8879fccabc1dba2eb7c94b12362c9b3d09f7"
+    },
+    "references/quality-and-acceptance.md": {
+      "package_sha256": "c26e92f29222a87a9907a83b1d8ea3b36240d582aed3a27c0882d135247f758b",
+      "repository_sha256": "ba87237dbd17e34201b294222993d1d1339a2448d8d83a711c747205174b6822"
+    },
+    "references/drawing-and-depth.md": {
+      "package_sha256": "60a7121c1feeba682f19996459bec2887fc101f21cf22f811b7f33cada1c5b50",
+      "repository_sha256": "cfca65c5f9b2ccb73377ea06ae8930b3a26c8146b9fcdf7d69cb3d45200ba09c"
+    },
+    "references/figure-spec.md": {
+      "package_sha256": "6f4395ce2818a8c704af2f82ee7e89fbe573323ad087d7ebd1096e955301424c",
+      "repository_sha256": "6f4395ce2818a8c704af2f82ee7e89fbe573323ad087d7ebd1096e955301424c"
+    },
+    "scripts/relation_components.py": {
+      "package_sha256": "9c239d1c9db16311a58dfa7769df13fdbc265b9e6ebe82f3d944b9ba34f44d01",
+      "repository_sha256": "9c239d1c9db16311a58dfa7769df13fdbc265b9e6ebe82f3d944b9ba34f44d01"
+    },
+    "scripts/render_figure.py": {
+      "package_sha256": "1a1474fee02005cebdc5bc7186f9a65b52b03fc8d05566658d829b20b3cddb8d",
+      "repository_sha256": "1a1474fee02005cebdc5bc7186f9a65b52b03fc8d05566658d829b20b3cddb8d"
+    }
+  },
+  "package_source_match": "Verified both hashes against package-manifest; packaging rewrites selected reference links.",
+  "downloads": {
+    "first-use": {
+      "url": "https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-first-use.zip",
+      "status": 200,
+      "bytes": 4797,
+      "sha256": "d3537bbf07ce7062c81f58520240219a228ee50bb251823e9064db5a12bf2401",
+      "retrieved_utc": "2026-10-04T17:56:10.040950+00:00"
+    },
+    "codex": {
+      "url": "https://github.com/zlsjtj/FigureCraft/releases/download/v1.28.1/scientific-figure-studio-codex.zip",
+      "status": 200,
+      "bytes": 5227776,
+      "sha256": "6b586da4847c7fea73afb0eb51721ce50166dce350ac2bf2125df60b916ce2c6",
+      "retrieved_utc": "2026-10-04T17:56:11.651594+00:00"
+    }
+  },
+  "human_review": false,
+  "native_client_recording": false,
+  "source": "The maintainer model authored the text edits / figure source in this run. Rendering helpers assemble and export them; they do not perform model generation.",
+  "checks": {
+    "actual_shape_translations_px": [
+      84,
+      3
+    ],
+    "actual_fiducial_output_px": [
+      94,
+      21
+    ],
+    "reference_edges_have_no_arrows": true,
+    "resampling_edges_have_arrows": true,
+    "PDF_size_mm": [
+      160,
+      100
+    ],
+    "min_font_pt": 9.070866141732285,
+    "normal_grayscale_deuteranopia_viewed_by_maintainer_model": true
+  },
+  "artifacts": {
+    "output/figure.pdf": "02c04bb7674a019db0923c121ad9d3147f614d1f8fc648fee6801bd57c6045a1",
+    "output/figure.png": "1e9030f4dc00e738b23321e856dec1b9b9f1edef8df69a183cbb419dde89bbba",
+    "output/figure.svg": "fe72a5ea59bd226e1ec51ecf85ac9944fecd46439520fb638b91bc308ba6cf2b",
+    "output/figure_spec.json": "be0be81fc0a2698e64f65c9d8a968b51153922c66f8cccb8da728b67437cf7dc",
+    "output/qa-deuteranopia.png": "8cb545fca4066d3d09df70104044839277fa198c34966193a414525103683fb9",
+    "output/qa-grayscale.png": "45318b57a2b85cf22d2a87c2541b6b8f43ab90d47bbe7e070d13b10e085c6564"
+  }
+}

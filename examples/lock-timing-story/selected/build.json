@@ -1,0 +1,567 @@
+{
+  "data_sha256": "1a04001a7f3c877630ce51e3f956c33cdd668e3f4ebb265ed35e344e83849abc",
+  "source_sha256": "881b5bdbf45df1a490ac98c83d8a98b5e4b51f5c3c6a33336fc0d585cd3d31e4",
+  "demo": true,
+  "mechanism": {
+    "labels": [
+      {
+        "text": "a",
+        "point_size": 11.339,
+        "x": 35,
+        "y": 33
+      },
+      {
+        "text": "Seat freely",
+        "point_size": 12.246,
+        "x": 75,
+        "y": 33
+      },
+      {
+        "text": "b",
+        "point_size": 11.339,
+        "x": 535,
+        "y": 33
+      },
+      {
+        "text": "Hold contact, then lock",
+        "point_size": 12.246,
+        "x": 575,
+        "y": 33
+      },
+      {
+        "text": "10 N preload",
+        "point_size": 9.978,
+        "x": 175,
+        "y": 65
+      },
+      {
+        "text": "0.20 mm ramp after locking",
+        "point_size": 9.978,
+        "x": 675,
+        "y": 65
+      },
+      {
+        "text": "Open",
+        "point_size": 9.524,
+        "x": 363,
+        "y": 168
+      },
+      {
+        "text": "Closed",
+        "point_size": 9.524,
+        "x": 863,
+        "y": 168
+      },
+      {
+        "text": "Pad",
+        "point_size": 9.978,
+        "x": 36,
+        "y": 345
+      },
+      {
+        "text": "Coupon",
+        "point_size": 9.978,
+        "x": 148,
+        "y": 345
+      },
+      {
+        "text": "Fixed platen",
+        "point_size": 9.978,
+        "x": 287,
+        "y": 345
+      },
+      {
+        "text": "One pitch axis; no roll adjustment",
+        "point_size": 9.978,
+        "x": 595,
+        "y": 345
+      },
+      {
+        "text": "Lock timing",
+        "point_size": 9.978,
+        "x": 35,
+        "y": 400
+      },
+      {
+        "text": "Approach",
+        "point_size": 9.524,
+        "x": 470,
+        "y": 400
+      },
+      {
+        "text": "Ramp",
+        "point_size": 9.524,
+        "x": 695,
+        "y": 400
+      },
+      {
+        "text": "E",
+        "point_size": 9.978,
+        "x": 36,
+        "y": 433
+      },
+      {
+        "text": "Lock before approach",
+        "point_size": 9.978,
+        "x": 75,
+        "y": 433
+      },
+      {
+        "text": "F",
+        "point_size": 9.978,
+        "x": 36,
+        "y": 471
+      },
+      {
+        "text": "Remain free",
+        "point_size": 9.978,
+        "x": 75,
+        "y": 471
+      },
+      {
+        "text": "L",
+        "point_size": 9.978,
+        "x": 36,
+        "y": 509
+      },
+      {
+        "text": "Seat then lock",
+        "point_size": 9.978,
+        "x": 75,
+        "y": 509
+      },
+      {
+        "text": "lock",
+        "point_size": 8.617,
+        "x": 584,
+        "y": 495
+      },
+      {
+        "text": "free",
+        "point_size": 9.524,
+        "x": 823,
+        "y": 439
+      },
+      {
+        "text": "locked",
+        "point_size": 9.524,
+        "x": 823,
+        "y": 477
+      }
+    ],
+    "minimum_font_pt": 8.617,
+    "width_mm": 160,
+    "height_mm": 85.6
+  },
+  "results": {
+    "labels": [
+      {
+        "text": "All conditions, the same three modes",
+        "point_size": 11.792,
+        "x": 32,
+        "y": 33
+      },
+      {
+        "text": "E",
+        "point_size": 9.978,
+        "x": 684,
+        "y": 33
+      },
+      {
+        "text": "F",
+        "point_size": 9.978,
+        "x": 783,
+        "y": 33
+      },
+      {
+        "text": "L",
+        "point_size": 9.978,
+        "x": 882,
+        "y": 33
+      },
+      {
+        "text": "Flat",
+        "point_size": 10.431,
+        "x": 32,
+        "y": 138
+      },
+      {
+        "text": "Pitch 1°",
+        "point_size": 10.431,
+        "x": 32,
+        "y": 245
+      },
+      {
+        "text": "Roll 1°",
+        "point_size": 10.431,
+        "x": 32,
+        "y": 352
+      },
+      {
+        "text": "Endpoint force",
+        "point_size": 9.978,
+        "x": 308.0,
+        "y": 73
+      },
+      {
+        "text": "CV (%)",
+        "point_size": 9.978,
+        "x": 308.0,
+        "y": 98
+      },
+      {
+        "text": "0",
+        "point_size": 8.617,
+        "x": 205.0,
+        "y": 410
+      },
+      {
+        "text": "2",
+        "point_size": 8.617,
+        "x": 256.5,
+        "y": 410
+      },
+      {
+        "text": "4",
+        "point_size": 8.617,
+        "x": 308.0,
+        "y": 410
+      },
+      {
+        "text": "6",
+        "point_size": 8.617,
+        "x": 359.5,
+        "y": 410
+      },
+      {
+        "text": "8",
+        "point_size": 8.617,
+        "x": 411.0,
+        "y": 410
+      },
+      {
+        "text": "Lateral drift",
+        "point_size": 9.978,
+        "x": 587.0,
+        "y": 73
+      },
+      {
+        "text": "(µm)",
+        "point_size": 9.978,
+        "x": 587.0,
+        "y": 98
+      },
+      {
+        "text": "0",
+        "point_size": 8.617,
+        "x": 484.0,
+        "y": 410
+      },
+      {
+        "text": "35",
+        "point_size": 8.617,
+        "x": 535.5,
+        "y": 410
+      },
+      {
+        "text": "70",
+        "point_size": 8.617,
+        "x": 587.0,
+        "y": 410
+      },
+      {
+        "text": "105",
+        "point_size": 8.617,
+        "x": 638.5,
+        "y": 410
+      },
+      {
+        "text": "140",
+        "point_size": 8.617,
+        "x": 690.0,
+        "y": 410
+      },
+      {
+        "text": "Preparation time",
+        "point_size": 9.978,
+        "x": 866.0,
+        "y": 73
+      },
+      {
+        "text": "(s)",
+        "point_size": 9.978,
+        "x": 866.0,
+        "y": 98
+      },
+      {
+        "text": "0",
+        "point_size": 8.617,
+        "x": 763.0,
+        "y": 410
+      },
+      {
+        "text": "7",
+        "point_size": 8.617,
+        "x": 804.2,
+        "y": 410
+      },
+      {
+        "text": "14",
+        "point_size": 8.617,
+        "x": 845.4,
+        "y": 410
+      },
+      {
+        "text": "21",
+        "point_size": 8.617,
+        "x": 886.6,
+        "y": 410
+      },
+      {
+        "text": "28",
+        "point_size": 8.617,
+        "x": 927.8,
+        "y": 410
+      },
+      {
+        "text": "35",
+        "point_size": 8.617,
+        "x": 969.0,
+        "y": 410
+      }
+    ],
+    "minimum_font_pt": 8.617,
+    "width_mm": 160,
+    "height_mm": 71.2,
+    "points": [
+      {
+        "condition": "flat",
+        "mode": "E",
+        "field": "F_cv_percent",
+        "value": 1.3,
+        "x": 238.475,
+        "y": 110
+      },
+      {
+        "condition": "flat",
+        "mode": "F",
+        "field": "F_cv_percent",
+        "value": 1.4,
+        "x": 241.05,
+        "y": 132
+      },
+      {
+        "condition": "flat",
+        "mode": "L",
+        "field": "F_cv_percent",
+        "value": 1.3,
+        "x": 238.475,
+        "y": 154
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "E",
+        "field": "F_cv_percent",
+        "value": 7.2,
+        "x": 390.4,
+        "y": 217
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "F",
+        "field": "F_cv_percent",
+        "value": 2.1,
+        "x": 259.075,
+        "y": 239
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "L",
+        "field": "F_cv_percent",
+        "value": 2.3,
+        "x": 264.225,
+        "y": 261
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "E",
+        "field": "F_cv_percent",
+        "value": 7.0,
+        "x": 385.25,
+        "y": 324
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "F",
+        "field": "F_cv_percent",
+        "value": 6.8,
+        "x": 380.1,
+        "y": 346
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "L",
+        "field": "F_cv_percent",
+        "value": 6.9,
+        "x": 382.675,
+        "y": 368
+      },
+      {
+        "condition": "flat",
+        "mode": "E",
+        "field": "Drift_um",
+        "value": 14.0,
+        "x": 504.6,
+        "y": 110
+      },
+      {
+        "condition": "flat",
+        "mode": "F",
+        "field": "Drift_um",
+        "value": 90.0,
+        "x": 616.4285714285714,
+        "y": 132
+      },
+      {
+        "condition": "flat",
+        "mode": "L",
+        "field": "Drift_um",
+        "value": 16.0,
+        "x": 507.54285714285714,
+        "y": 154
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "E",
+        "field": "Drift_um",
+        "value": 12.0,
+        "x": 501.65714285714284,
+        "y": 217
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "F",
+        "field": "Drift_um",
+        "value": 125.0,
+        "x": 667.9285714285714,
+        "y": 239
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "L",
+        "field": "Drift_um",
+        "value": 19.0,
+        "x": 511.95714285714286,
+        "y": 261
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "E",
+        "field": "Drift_um",
+        "value": 14.0,
+        "x": 504.6,
+        "y": 324
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "F",
+        "field": "Drift_um",
+        "value": 126.0,
+        "x": 669.4,
+        "y": 346
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "L",
+        "field": "Drift_um",
+        "value": 20.0,
+        "x": 513.4285714285714,
+        "y": 368
+      },
+      {
+        "condition": "flat",
+        "mode": "E",
+        "field": "Seat_s",
+        "value": 18.0,
+        "x": 868.9428571428572,
+        "y": 110
+      },
+      {
+        "condition": "flat",
+        "mode": "F",
+        "field": "Seat_s",
+        "value": 17.0,
+        "x": 863.0571428571428,
+        "y": 132
+      },
+      {
+        "condition": "flat",
+        "mode": "L",
+        "field": "Seat_s",
+        "value": 31.0,
+        "x": 945.4571428571428,
+        "y": 154
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "E",
+        "field": "Seat_s",
+        "value": 18.0,
+        "x": 868.9428571428572,
+        "y": 217
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "F",
+        "field": "Seat_s",
+        "value": 17.0,
+        "x": 863.0571428571428,
+        "y": 239
+      },
+      {
+        "condition": "pitch_1deg",
+        "mode": "L",
+        "field": "Seat_s",
+        "value": 32.0,
+        "x": 951.3428571428572,
+        "y": 261
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "E",
+        "field": "Seat_s",
+        "value": 18.0,
+        "x": 868.9428571428572,
+        "y": 324
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "F",
+        "field": "Seat_s",
+        "value": 17.0,
+        "x": 863.0571428571428,
+        "y": 346
+      },
+      {
+        "condition": "roll_1deg",
+        "mode": "L",
+        "field": "Seat_s",
+        "value": 32.0,
+        "x": 951.3428571428572,
+        "y": 368
+      }
+    ]
+  },
+  "visual_review": "PENDING",
+  "human_approval": false,
+  "files": {
+    "mechanism-160mm.png": "b43112c9c8347ad7afef5b70286d0b8fd49402d106cea65623ec22287e491e81",
+    "mechanism.pdf": "4bac733f6409aee9d05329a52afc19a5e1898733ffa5e409b31940097a2b1652",
+    "mechanism.png": "33fcacf882a44bb7d1a9f7479d9321ece3e08a1c6296a77822c0ee94592507c6",
+    "mechanism.svg": "99b10477e9773702db56a1732456b88abffdfe99b105a8fc50446e5f35a81401",
+    "results-160mm.png": "84b607df1d81e5dc5f65a7fa31eda20498f4072ef034667cbae93b24e645cc07",
+    "results.pdf": "6644ab1ec5956664dff85fb3e7beedab76f9d37082d4a13815a01373dd27b5d8",
+    "results.png": "5d89ff3b32f25b6235765d8326f5b5c238f24b192e0646f6b43949bae74b0e70",
+    "results.svg": "fbff3d2bfe8bfba07f451aef121e0807b0bd90277c6d6c040cddd25fa479ae05"
+  }
+}

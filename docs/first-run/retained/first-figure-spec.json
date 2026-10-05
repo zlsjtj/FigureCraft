@@ -1,0 +1,834 @@
+{
+  "schema_version": 1,
+  "figure_id": "first_use_shared_placement",
+  "mode": "new_schematic",
+  "demo": true,
+  "scientific_message": "The two planes of a tile read one selected translation record and are resampled into separate mosaics.",
+  "evidence_status": "constructed_teaching_material_not_research",
+  "source_refs": [
+    {
+      "file": "notes.md",
+      "sha256": "ca208a06b9386b7857908cb94a166ae3e851d1bbdce1faa6d9c83a211493e0a2"
+    },
+    {
+      "file": "results.csv",
+      "sha256": "22532073ad4146cbd91946300d2d0d3ae8cd14d04313bca68e04f062fc26d0a9"
+    },
+    {
+      "file": "rough.md",
+      "sha256": "90c57ed8ae7a36f999826fa7a33f3891c90b7efcec7bbb2cd284b6f1f76d3c2f"
+    }
+  ],
+  "forbidden_implications": [
+    "A and B are not the same stain intensity map.",
+    "Shared placement does not correct residual optical shift or erroneous stage coordinates.",
+    "Canvas extents and marker appearance are schematic; no measured imaging texture is shown."
+  ],
+  "entities": [
+    {
+      "id": "record",
+      "semantic_role": "shared_record",
+      "description": "One immutable selected translation for tile T5"
+    },
+    {
+      "id": "A",
+      "semantic_role": "channel_A",
+      "description": "Acquired plane A"
+    },
+    {
+      "id": "B",
+      "semantic_role": "channel_B",
+      "description": "Acquired plane B"
+    },
+    {
+      "id": "outA",
+      "semantic_role": "channel_A",
+      "description": "A resampled into output mosaic A"
+    },
+    {
+      "id": "outB",
+      "semantic_role": "channel_B",
+      "description": "B resampled into output mosaic B"
+    }
+  ],
+  "relations": [
+    {
+      "id": "shared-0",
+      "from": "record",
+      "to": "A",
+      "kind": "reference",
+      "meaning": "Both planes look up the same immutable tile record",
+      "geometry": {
+        "item_id": "shared-0",
+        "from": [
+          282,
+          181
+        ],
+        "to": [
+          327,
+          181
+        ],
+        "arrow_required": false
+      }
+    },
+    {
+      "id": "shared-1",
+      "from": "record",
+      "to": "B",
+      "kind": "reference",
+      "meaning": "Both planes look up the same immutable tile record",
+      "geometry": {
+        "item_id": "shared-1",
+        "from": [
+          282,
+          375
+        ],
+        "to": [
+          327,
+          375
+        ],
+        "arrow_required": false
+      }
+    },
+    {
+      "id": "resample-A",
+      "from": "A",
+      "to": "outA",
+      "kind": "flow",
+      "meaning": "Separate bilinear resampling into this channel mosaic",
+      "geometry": {
+        "item_id": "resample-A-line",
+        "from": [
+          434,
+          181
+        ],
+        "to": [
+          536,
+          181
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "resample-A-head",
+          "tip": [
+            536,
+            181
+          ],
+          "base": [
+            528.0,
+            181.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "resample-B",
+      "from": "B",
+      "to": "outB",
+      "kind": "flow",
+      "meaning": "Separate bilinear resampling into this channel mosaic",
+      "geometry": {
+        "item_id": "resample-B-line",
+        "from": [
+          434,
+          375
+        ],
+        "to": [
+          536,
+          375
+        ],
+        "arrow_required": true,
+        "arrow": {
+          "item_id": "resample-B-head",
+          "tip": [
+            536,
+            375
+          ],
+          "base": [
+            528.0,
+            375.0
+          ]
+        }
+      }
+    }
+  ],
+  "exact_labels": [
+    "One placement, two channels",
+    "DEMO",
+    "One record",
+    "Tile T5",
+    "Two mosaics",
+    "T5",
+    "Δ = (84, 3) px",
+    "From A, else stage",
+    "A",
+    "A mosaic",
+    "B",
+    "B mosaic",
+    "96 × 96 px each",
+    "Separate resampling"
+  ],
+  "locked_values": {
+    "tile_id": "T5",
+    "selected_translation_px": [
+      84,
+      3
+    ],
+    "tile_side_px": 96,
+    "illustrative_fiducial_local_px": [
+      10,
+      18
+    ],
+    "illustrative_fiducial_output_px": [
+      94,
+      21
+    ],
+    "score_gate": 0.8,
+    "A_geometry": {
+      "input_origin": [
+        335,
+        137
+      ],
+      "output_origin": [
+        550,
+        137
+      ],
+      "scale": 0.9166666666666666,
+      "placed_tile_origin": [
+        627.0,
+        139.75
+      ],
+      "fiducial": [
+        636.1666666666666,
+        156.25
+      ]
+    },
+    "B_geometry": {
+      "input_origin": [
+        335,
+        331
+      ],
+      "output_origin": [
+        550,
+        331
+      ],
+      "scale": 0.9166666666666666,
+      "placed_tile_origin": [
+        627.0,
+        333.75
+      ],
+      "fiducial": [
+        636.1666666666666,
+        350.25
+      ]
+    }
+  },
+  "reference_palette": "blue_gold_coral",
+  "role_map": {
+    "channel_A": {
+      "base": "#087E8B"
+    },
+    "channel_B": {
+      "base": "#BD493D"
+    },
+    "shared_record": {
+      "base": "#A47921"
+    }
+  },
+  "layout": {
+    "archetype": "shared_record_and_paired_images",
+    "reading_order": "record then paired rows then outputs"
+  },
+  "depth": {
+    "mode": "D0",
+    "affects_quantitative_encoding": false
+  },
+  "edit_scope": {
+    "allowed": [
+      "new schematic"
+    ],
+    "protected": [
+      "scientific content"
+    ]
+  },
+  "publication": {
+    "target_journal": null,
+    "eligibility": "unverified"
+  },
+  "output": {
+    "width_mm": 160,
+    "placement_width_mm": 160,
+    "view_width": 800,
+    "view_height": 500,
+    "font_profile": "explicit_Arial"
+  },
+  "items": [
+    {
+      "id": "canvas",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 800,
+      "h": 500,
+      "fill": "#FFFFFF",
+      "stroke": "#FFFFFF",
+      "stroke_width": 1.5
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "One placement, two channels",
+      "x": 26,
+      "y": 37,
+      "size": 26,
+      "fill": "#263D49"
+    },
+    {
+      "id": "demo",
+      "type": "text",
+      "text": "DEMO",
+      "x": 774,
+      "y": 37,
+      "size": 16,
+      "align": "right",
+      "fill": "#5A6D76"
+    },
+    {
+      "id": "record-head",
+      "type": "text",
+      "text": "One record",
+      "x": 26,
+      "y": 97,
+      "size": 21,
+      "fill": "#263D49"
+    },
+    {
+      "id": "pair-head",
+      "type": "text",
+      "text": "Tile T5",
+      "x": 379,
+      "y": 97,
+      "size": 21,
+      "fill": "#263D49",
+      "align": "center"
+    },
+    {
+      "id": "outputs-head",
+      "type": "text",
+      "text": "Two mosaics",
+      "x": 658,
+      "y": 97,
+      "size": 21,
+      "fill": "#263D49",
+      "align": "center"
+    },
+    {
+      "id": "record-shape",
+      "type": "polygon",
+      "points": [
+        [
+          26,
+          220
+        ],
+        [
+          189,
+          220
+        ],
+        [
+          211,
+          242
+        ],
+        [
+          211,
+          294
+        ],
+        [
+          26,
+          294
+        ]
+      ],
+      "fill": "#FCF4DF",
+      "stroke": "#987128",
+      "stroke_width": 1.5,
+      "entity": "record",
+      "role": "shared_record"
+    },
+    {
+      "id": "record-fold",
+      "type": "line",
+      "points": [
+        [
+          189,
+          220
+        ],
+        [
+          189,
+          242
+        ],
+        [
+          211,
+          242
+        ]
+      ],
+      "stroke": "#987128",
+      "stroke_width": 1.6,
+      "entity": "record"
+    },
+    {
+      "id": "record-id",
+      "type": "text",
+      "text": "T5",
+      "x": 43,
+      "y": 246,
+      "size": 20,
+      "fill": "#263D49",
+      "entity": "record"
+    },
+    {
+      "id": "delta",
+      "type": "text",
+      "text": "Δ = (84, 3) px",
+      "x": 43,
+      "y": 276,
+      "size": 20,
+      "fill": "#263D49",
+      "entity": "record"
+    },
+    {
+      "id": "selection",
+      "type": "text",
+      "text": "From A, else stage",
+      "x": 26,
+      "y": 207,
+      "size": 17,
+      "fill": "#263D49"
+    },
+    {
+      "id": "shared-stem",
+      "type": "line",
+      "points": [
+        [
+          211,
+          258
+        ],
+        [
+          282,
+          258
+        ]
+      ],
+      "stroke": "#987128",
+      "stroke_width": 1.8,
+      "entity": "record",
+      "role": "shared_relation"
+    },
+    {
+      "id": "shared-trunk",
+      "type": "line",
+      "points": [
+        [
+          282,
+          181
+        ],
+        [
+          282,
+          375
+        ]
+      ],
+      "stroke": "#987128",
+      "stroke_width": 1.8,
+      "entity": "record",
+      "role": "shared_relation"
+    },
+    {
+      "id": "shared-0",
+      "type": "line",
+      "points": [
+        [
+          282,
+          181
+        ],
+        [
+          327,
+          181
+        ]
+      ],
+      "stroke": "#987128",
+      "stroke_width": 1.8,
+      "relation": "shared-0",
+      "role": "shared_relation"
+    },
+    {
+      "id": "shared-1",
+      "type": "line",
+      "points": [
+        [
+          282,
+          375
+        ],
+        [
+          327,
+          375
+        ]
+      ],
+      "stroke": "#987128",
+      "stroke_width": 1.8,
+      "relation": "shared-1",
+      "role": "shared_relation"
+    },
+    {
+      "id": "A-name",
+      "type": "text",
+      "text": "A",
+      "x": 335,
+      "y": 125,
+      "size": 21,
+      "fill": "#263D49",
+      "entity": "A"
+    },
+    {
+      "id": "A-tile",
+      "type": "rect",
+      "x": 335,
+      "y": 137,
+      "w": 88,
+      "h": 88,
+      "fill": "#E8F3F3",
+      "stroke": "#087E8B",
+      "stroke_width": 1.5,
+      "entity": "A",
+      "role": "channel_A"
+    },
+    {
+      "id": "A-cross-h",
+      "type": "line",
+      "points": [
+        [
+          340.1666666666667,
+          153.5
+        ],
+        [
+          348.1666666666667,
+          153.5
+        ]
+      ],
+      "stroke": "#087E8B",
+      "stroke_width": 1.6,
+      "entity": "A"
+    },
+    {
+      "id": "A-cross-v",
+      "type": "line",
+      "points": [
+        [
+          344.1666666666667,
+          149.5
+        ],
+        [
+          344.1666666666667,
+          157.5
+        ]
+      ],
+      "stroke": "#087E8B",
+      "stroke_width": 1.6,
+      "entity": "A"
+    },
+    {
+      "id": "A-out-name",
+      "type": "text",
+      "text": "A mosaic",
+      "x": 550,
+      "y": 125,
+      "size": 21,
+      "fill": "#263D49",
+      "entity": "outA"
+    },
+    {
+      "id": "A-canvas",
+      "type": "rect",
+      "x": 550,
+      "y": 134,
+      "w": 216,
+      "h": 118,
+      "fill": "#FFFFFF",
+      "stroke": "#AAB7BD",
+      "stroke_width": 1.5,
+      "entity": "outA"
+    },
+    {
+      "id": "A-placed-tile",
+      "type": "rect",
+      "x": 627.0,
+      "y": 139.75,
+      "w": 88,
+      "h": 88,
+      "fill": "#E8F3F3",
+      "stroke": "#087E8B",
+      "stroke_width": 1.5,
+      "entity": "outA",
+      "role": "channel_A"
+    },
+    {
+      "id": "A-out-cross-h",
+      "type": "line",
+      "points": [
+        [
+          632.1666666666666,
+          156.25
+        ],
+        [
+          640.1666666666666,
+          156.25
+        ]
+      ],
+      "stroke": "#087E8B",
+      "stroke_width": 1.6,
+      "entity": "outA"
+    },
+    {
+      "id": "A-out-cross-v",
+      "type": "line",
+      "points": [
+        [
+          636.1666666666666,
+          152.25
+        ],
+        [
+          636.1666666666666,
+          160.25
+        ]
+      ],
+      "stroke": "#087E8B",
+      "stroke_width": 1.6,
+      "entity": "outA"
+    },
+    {
+      "id": "resample-A-line",
+      "type": "line",
+      "points": [
+        [
+          434,
+          181
+        ],
+        [
+          536,
+          181
+        ]
+      ],
+      "stroke": "#087E8B",
+      "stroke_width": 2,
+      "relation": "resample-A",
+      "role": "relation"
+    },
+    {
+      "id": "resample-A-head",
+      "type": "polygon",
+      "points": [
+        [
+          536,
+          181
+        ],
+        [
+          528.0,
+          184.36
+        ],
+        [
+          528.0,
+          177.64
+        ]
+      ],
+      "fill": "#087E8B",
+      "stroke": "#087E8B",
+      "stroke_width": 0,
+      "relation": "resample-A",
+      "role": "relation"
+    },
+    {
+      "id": "B-name",
+      "type": "text",
+      "text": "B",
+      "x": 335,
+      "y": 319,
+      "size": 21,
+      "fill": "#263D49",
+      "entity": "B"
+    },
+    {
+      "id": "B-tile",
+      "type": "rect",
+      "x": 335,
+      "y": 331,
+      "w": 88,
+      "h": 88,
+      "fill": "#FAEEEB",
+      "stroke": "#BD493D",
+      "stroke_width": 1.5,
+      "entity": "B",
+      "role": "channel_B"
+    },
+    {
+      "id": "B-cross-h",
+      "type": "line",
+      "points": [
+        [
+          340.1666666666667,
+          347.5
+        ],
+        [
+          348.1666666666667,
+          347.5
+        ]
+      ],
+      "stroke": "#BD493D",
+      "stroke_width": 1.6,
+      "entity": "B"
+    },
+    {
+      "id": "B-cross-v",
+      "type": "line",
+      "points": [
+        [
+          344.1666666666667,
+          343.5
+        ],
+        [
+          344.1666666666667,
+          351.5
+        ]
+      ],
+      "stroke": "#BD493D",
+      "stroke_width": 1.6,
+      "entity": "B"
+    },
+    {
+      "id": "B-out-name",
+      "type": "text",
+      "text": "B mosaic",
+      "x": 550,
+      "y": 319,
+      "size": 21,
+      "fill": "#263D49",
+      "entity": "outB"
+    },
+    {
+      "id": "B-canvas",
+      "type": "rect",
+      "x": 550,
+      "y": 328,
+      "w": 216,
+      "h": 118,
+      "fill": "#FFFFFF",
+      "stroke": "#AAB7BD",
+      "stroke_width": 1.5,
+      "entity": "outB"
+    },
+    {
+      "id": "B-placed-tile",
+      "type": "rect",
+      "x": 627.0,
+      "y": 333.75,
+      "w": 88,
+      "h": 88,
+      "fill": "#FAEEEB",
+      "stroke": "#BD493D",
+      "stroke_width": 1.5,
+      "entity": "outB",
+      "role": "channel_B"
+    },
+    {
+      "id": "B-out-cross-h",
+      "type": "line",
+      "points": [
+        [
+          632.1666666666666,
+          350.25
+        ],
+        [
+          640.1666666666666,
+          350.25
+        ]
+      ],
+      "stroke": "#BD493D",
+      "stroke_width": 1.6,
+      "entity": "outB"
+    },
+    {
+      "id": "B-out-cross-v",
+      "type": "line",
+      "points": [
+        [
+          636.1666666666666,
+          346.25
+        ],
+        [
+          636.1666666666666,
+          354.25
+        ]
+      ],
+      "stroke": "#BD493D",
+      "stroke_width": 1.6,
+      "entity": "outB"
+    },
+    {
+      "id": "resample-B-line",
+      "type": "line",
+      "points": [
+        [
+          434,
+          375
+        ],
+        [
+          536,
+          375
+        ]
+      ],
+      "stroke": "#BD493D",
+      "stroke_width": 2,
+      "relation": "resample-B",
+      "role": "relation"
+    },
+    {
+      "id": "resample-B-head",
+      "type": "polygon",
+      "points": [
+        [
+          536,
+          375
+        ],
+        [
+          528.0,
+          378.36
+        ],
+        [
+          528.0,
+          371.64
+        ]
+      ],
+      "fill": "#BD493D",
+      "stroke": "#BD493D",
+      "stroke_width": 0,
+      "relation": "resample-B",
+      "role": "relation"
+    },
+    {
+      "id": "size",
+      "type": "text",
+      "text": "96 × 96 px each",
+      "x": 379,
+      "y": 461,
+      "size": 17,
+      "fill": "#263D49",
+      "align": "center"
+    },
+    {
+      "id": "flow-label",
+      "type": "text",
+      "text": "Separate resampling",
+      "x": 658,
+      "y": 480,
+      "size": 18,
+      "fill": "#263D49",
+      "align": "center"
+    }
+  ],
+  "caption": "DEMO. MosaicPair selects one translation for each tile from channel A when the inherited quality score is at least 0.8; otherwise it uses the stage-grid translation. The undirected branches denote common lookup of the immutable T5 record, while arrows denote separate resampling of A and B into their respective mosaics. The example uses Δ = (84, 3) pixels: the marked local fiducial (10, 18) appears at (94, 21) in both output coordinate systems. Image fields are schematic crops; crosses denote paired fiducials, not stain intensity. Masks use the same record, and export refuses missing pairs. Shared placement cannot correct a residual channel-specific shift or an incorrect stage location.",
+  "alt_text": "One translation record at left connects without arrowheads to a pair of image planes. Separate arrows place each plane in its own mosaic using the same displacement."
+}

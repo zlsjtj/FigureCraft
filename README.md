@@ -1,6 +1,5 @@
-<p align="center">
-  <a href="docs/social-preview/README.md"><img src="docs/social-preview/social-preview.jpg" width="100%" alt="FigureCraft 品牌封面：深墨色、分层曲面与卷绕造型"></a>
-</p>
+<h1 align="center">FigureCraft</h1>
+<p align="center"><strong>让图形讲清关系，让作品经得起细看。</strong><br>科研绘图与语义配色 · 可编辑图源 · SVG / PDF / PNG</p>
 <p align="center"><a href="#作品与图源">看作品</a> · <a href="#开始使用">下载安装</a> · <a href="docs/examples.md">案例与源码</a> · <a href="LICENSE">MIT</a></p>
 
 给 AI 研究助手使用的科研绘图技能。把研究材料变成**对象可辨、关系清楚、层次分明**的机制图与结构图，交付**可编辑源文件、SVG / PDF / PNG 和重建脚本**。从构图到语义配色，让画面承担解释。
@@ -15,18 +14,19 @@
 
 <sub>原创结构演示。曲面为位图、标签为矢量；修改源码可重建曲面。</sub>
 
-### 对象不同，画法也不同
+### 同一个问题，两张图接着讲
 
-<p>
-<a href="examples/cross-lap-trial/README.md"><img src="examples/cross-lap-trial/selected/figure.png" width="380" alt="装配与剖面：追踪互补缺口及剖切位置，点击查看图源"></a>
-<a href="examples/paired-placement/README.md"><img src="examples/paired-placement/selected/figure.png" width="380" alt="共享记录与对象变化：区分共同读取和重采样，点击查看前后对照"></a>
-</p>
+[![先自由贴合，再保持接触锁定；条带比较三种操作模式](examples/lock-timing-story/selected/mechanism.png)](examples/lock-timing-story/README.md)
 
-**[装配与剖面](examples/cross-lap-trial/README.md)**：用局部展开讲清互补缺口，沿剖切位置看装配结果。**[共享记录与对象变化](examples/paired-placement/README.md)**：用对象对应讲清变化，区分共同读取与重采样。
+**先解释怎么做，再看值不值得。** 机制图让同一夹具的两个状态接起来，结果图保留九行数据的全部三项指标。两图已经进入 PaperCraft 的三页完整稿，图注、正文与数据可以一起核对。
 
-案例提供输入材料、首次方案、取舍和最终源码。以上均为原创构造示例。
+**[看整套图与取舍](examples/lock-timing-story/README.md)** · [完整结果图](examples/lock-timing-story/selected/results.png) · [可编辑源码](examples/lock-timing-story/build.py) · [看实际论文页面](https://github.com/zlsjtj/PaperCraft/blob/main/examples/clamp-timing/complete/selected/clean.pdf)
+
+<sub>公开教学构造案例。机制图为矢量示意；定量图保持二维，全部数值可从 CSV 核对。</sub>
 
 ## 开始使用
+
+**[看一次完整试用](docs/first-run/README.md)**：从材料包开始，复制任务，再打开实际生成的文件。
 
 选择你使用的 AI 客户端，安装技能后交给它材料：
 
@@ -51,6 +51,8 @@
 ## 看图，也能带走源码
 
 - [支架接触与释放](examples/display-support-contact/README.md)：把整体、接触局部和解除状态连起来。
+- [装配与剖面](examples/cross-lap-trial/README.md)：追踪互补缺口与剖切位置。
+- [共享记录与对象变化](examples/paired-placement/README.md)：区分共同读取与重采样。
 - [离子交换示意](examples/exchange-granularity/README.md)：用局部变化解释大量重复单元。
 - [从材料到构图](docs/from-materials-to-paper.md)：保留什么、放进图注什么，以及怎样选择方案。
 
